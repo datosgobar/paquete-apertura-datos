@@ -10,7 +10,7 @@
             "type": "integer",
             "description": "Identificador único del organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."
         },
-        {
+        {  
             "title": "unidad_operativa_contrataciones_id",
             "type": "integer",
             "description": "Identificador único de la unidad operativa de contrataciones"

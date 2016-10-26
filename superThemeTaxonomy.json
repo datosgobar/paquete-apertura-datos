@@ -2,7 +2,11 @@
 {
 "superThemeTaxonomy":[
 	{
-	"id":"AGRI",
+	 "id":"AGRI",
 	"label":"Agricultura, pesca, silvicultura y alimentación",
 	"description":"Bajo este concepto se incluyen datasets que cubren dominios tales como agricultura, pesca, forestación o alimentos."
-	},
+	}
+
+	
+]
+}
