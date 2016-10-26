@@ -1,0 +1,41 @@
+{
+"title": "Datos Argentina",
+	"description": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+		"dataset": [
+		{
+		"title": "Sistema de contrataciones electrónicas",
+		"description": "Datos correspondiente al Sistema de Contrataciones Electrónicas (Argentina Compra)",
+		"modified": "2016-10-25T20:49:11.364990",
+		"identifier": "dataset-ejemplo-35782",
+		"issued": "2016-04-14T19:48:05.433640",
+		"spatial": "ARG",
+		"temporal": "2015/01/01/2015/12/31",
+		"publisher": {
+		@type: "org:Organization",
+		name: "Ministerio de Mordenización"
+		},
+		"accrualPeriodicity": "R/P1Y",
+		"contactPoint": {
+		@type: "vcard:Contact",
+		fn: "Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.",
+		hasEmail: "mailto:onc-compraselectronicas@modernizacion.gob.ar"
+		},
+		distribution: [
+		{
+			@type: "dcat:Distribution",
+			"format": "CSV",
+			"title": "Convocatorias abiertas durante el año 2015",
+			"description": "Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas",
+			"downloadURL": "http://186.33.211.253/dataset/99db6631-d1c9-470b-a73e-c62daa32c420/resource/4b7447cb-31ff-4352-96c3-589d212e1cc9/download/convocatorias-abiertas-anio-2015.csv"
+		}
+		],
+	"language": [
+		"spa"
+	],
+	"theme": [
+	"a",
+	"b",
+	"c"
+	]
+},
+
