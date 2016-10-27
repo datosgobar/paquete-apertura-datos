@@ -1,12 +1,69 @@
-
 {
-"superThemeTaxonomy":[
-	{
-	 "id":"AGRI",
-	"label":"Agricultura, pesca, silvicultura y alimentación",
-	"description":"Bajo este concepto se incluyen datasets que cubren dominios tales como agricultura, pesca, forestación o alimentos."
-	}
-
-	
-]
+    "superThemeTaxonomy":[
+        {
+            "id":"AGRI",
+            "label":"Agricultura, pesca, silvicultura y alimentación",
+            "description":"Bajo este concepto se incluyen datasets que cubren dominios tales como agricultura, pesca, forestación o alimentos."
+        },
+        {
+            "id":"ECON",
+            "label":"Economía y finanzas",
+            "description":"Bajo este concepto se incluyen datasets que cubren dominios tales como economía o finanzas."
+        },
+        {
+            "id":"EDUC",
+            "label":"Educación, cultura y deportes",
+            "description":"Bajo este concepto se incluyen datasets que cubren dominios tales como educación, cultura o deporte."
+        },
+        {
+            "id":"ENER",
+            "label":"Energía",
+            "description":"Bajo este concepto se incluyen datasets que cubre aspectos de energía."
+        },
+        {
+            "id":"ENVI",
+            "label":"Medio ambiente",
+            "description":"Bajo este concepto se incluyen datasets que cubren aspectos de medioambiente."
+        },
+        {
+            "id":"GOVE",
+            "label":"Gobierno y sector público",
+            "description":"Bajo este concepto se incluyen datasets que cubren dominios tales como gobierno y sector público."
+        },
+        {
+            "id":"HEAL",
+            "label":"Salud",
+            "description":"Bajo este concepto se incluyen datasets que cubren aspectos relacionados a la salud."
+        },
+        {
+            "id":"INTR",
+            "label":"Asuntos internacionales",
+            "description":"Bajo este concepto se incluyen datasets que cubren aspectos relacionados a asuntos internacionales."
+        },
+        {
+            "id":"JUST",
+            "label":"Justicia, sistema judicial y seguridad pública",
+            "description":"Bajo este concepto se incluyen datasets que cubren dominios tales justicia, sistema legal o seguridad pública."
+        },
+        {
+            "id":"REGI",
+            "label":"Regiones y ciudades",
+            "description":"Bajo este concepto se incluyen datasets que cubren dominios tales como regiones o ciudades."
+        },
+        {
+            "id":"SOCI",
+            "label":"Población y sociedad",
+            "description":"Bajo este concepto se incluyen datasets que cubren dominios tales como población o sociedad"
+        },
+        {
+            "id":"TECH",
+            "label":"Ciencia y tecnología",
+            "description":"Bajo este concepto se incluyen datasets que cubren dominios tales como ciencia y tecnología."
+        },
+        {
+            "id":"TRAN",
+            "label":"Transporte",
+            "description":"Bajo este concepto se incluyen datasets que cubren aspectos relacionados al transporte."
+        }
+    ]
 }

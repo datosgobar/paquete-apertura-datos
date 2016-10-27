@@ -1,59 +1,59 @@
 {
-    "field": [
+    "field":[
         {
-            "title": "procedimiento_id",
-            "type": "integer",
-            "description": "Identificador único del procedimiento de contratación"
+            "title":"procedimiento_id",
+            "type":"integer",
+            "description":"Identificador único del procedimiento de contratación"
         },
         {
-            "title": "organismo_unidad_operativa_contrataciones_id",
-            "type": "integer",
-            "description": "Identificador único del organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."
-        },
-        {  
-            "title": "unidad_operativa_contrataciones_id",
-            "type": "integer",
-            "description": "Identificador único de la unidad operativa de contrataciones"
+            "title":"organismo_unidad_operativa_contrataciones_id",
+            "type":"integer",
+            "description":"Identificador único del organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."
         },
         {
-            "title": "organismo_unidad_operativa_contrataciones_desc",
-            "type": "string",
-            "description": "Organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."
+            "title":"unidad_operativa_contrataciones_id",
+            "type":"integer",
+            "description":"Identificador único de la unidad operativa de contrataciones"
         },
         {
-            "title": "unidad_operativa_contrataciones_desc",
-            "type": "string",
-            "description": "Unidad operativa de contrataciones."
+            "title":"organismo_unidad_operativa_contrataciones_desc",
+            "type":"string",
+            "description":"Organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."
         },
         {
-            "title": "tipo_procedimiento_contratacion",
-            "type": "string",
-            "description": "Tipo de procedimiento al que se adecua la contratación."
+            "title":"unidad_operativa_contrataciones_desc",
+            "type":"string",
+            "description":"Unidad operativa de contrataciones."
         },
         {
-            "title": "ejercicio_procedimiento_anio",
-            "type": "date",
-            "description": "Año en el que se inició el proceso de la convocatoria."
+            "title":"tipo_procedimiento_contratacion",
+            "type":"string",
+            "description":"Tipo de procedimiento al que se adecua la contratación."
         },
         {
-            "title": "fecha_publicacion_convocatoria",
-            "type": "date",
-            "description": "Fecha de publicación de la convocatoria en formato AAAA/MM/DD, ISO 8601."
+            "title":"ejercicio_procedimiento_anio",
+            "type":"date",
+            "description":"Año en el que se inició el proceso de la convocatoria."
         },
         {
-            "title": "modalidad_convocatoria",
-            "type": "string",
-            "description": "Modalidad bajo la cual se realiza la convocatoria."
+            "title":"fecha_publicacion_convocatoria",
+            "type":"date",
+            "description":"Fecha de publicación de la convocatoria en formato AAAA/MM/DD, ISO 8601."
         },
         {
-            "title": "clase_convocatoria",
-            "type": "string",
-            "description": "Clase de la convocatoria."
+            "title":"modalidad_convocatoria",
+            "type":"string",
+            "description":"Modalidad bajo la cual se realiza la convocatoria."
         },
         {
-            "title": "objeto_convocatoria",
-            "type": "string",
-            "description": "Objeto/objetivo de la convocatoria"
+            "title":"clase_convocatoria",
+            "type":"string",
+            "description":"Clase de la convocatoria."
+        },
+        {
+            "title":"objeto_convocatoria",
+            "type":"string",
+            "description":"Objeto/objetivo de la convocatoria"
         }
     ]
 }
