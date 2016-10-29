@@ -5,8 +5,8 @@
     "name": "Ministerio de Modernización",
     "mbox": "datos@modernizacion.gob.ar"
   },
-  "issued": "2016-04-14T19:48:05.433640",
-  "modified": "2016-04-19T19:48:05.433640",
+  "issued": "2016-04-14T19:48:05.433640-03:00",
+  "modified": "2016-04-19T19:48:05.433640-03:00",
   "language": [
     "spa"
   ],
@@ -14,32 +14,32 @@
   "themeTaxonomy": [
     {
       "id": "convocatorias",
-      "label": "Categoría convocatorias",
+      "label": "Convocatorias",
       "description": "Datasets sobre licitaciones en estado de convocatoria."
     },
     {
       "id": "compras",
-      "label": "Categoría compras",
+      "label": "Compras",
       "description": "Datasets sobre compras realizadas."
     },
     {
       "id": "contrataciones",
-      "label": "Categoría contrataciones",
+      "label": "Contrataciones",
       "description": "Datasets sobre contrataciones."
     },
     {
       "id": "adjudicaciones",
-      "label": "Categoría adjudicaciones",
+      "label": "Adjudicaciones",
       "description": "Datasets sobre licitaciones adjudicadas."
     },
     {
       "id": "normativa",
-      "label": "Categoría normativa",
+      "label": "Normativa",
       "description": "Datasets sobre normativa para compras y contrataciones."
     },
     {
       "id": "proveedores",
-      "label": "Categoría proveedores",
+      "label": "Proveedores",
       "description": "Datasets sobre proveedores del Estado."
     }
   ],
@@ -73,8 +73,8 @@
         "contrataciones"
       ],
       "accrualPeriodicity": "R/P1Y",
-      "issued": "2016-04-14T19:48:05.433640",
-      "modified": "2016-04-19T19:48:05.433640",
+      "issued": "2016-04-14T19:48:05.433640-03:00",
+      "modified": "2016-04-19T19:48:05.433640-03:00",
       "identifier": "99db6631-d1c9-470b-a73e-c62daa32c420",
       "language": [
         "spa"
@@ -93,8 +93,8 @@
           "title": "Convocatorias abiertas durante el año 2015",
           "license": "Open Data Commons Open Database License 1.0",
           "byteSize": "5120",
-          "issued": "2016-04-14T19:48:05.433640",
-          "modified": "2016-04-19T19:48:05.433640",
+          "issued": "2016-04-14T19:48:05.433640-03:00",
+          "modified": "2016-04-19T19:48:05.433640-03:00",
           "rights": "Derechos especificados en la licencia.",
           "field": [
             {

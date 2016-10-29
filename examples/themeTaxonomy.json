@@ -2,31 +2,31 @@
     {
         "description": "Datasets sobre licitaciones en estado de convocatoria.", 
         "id": "convocatorias", 
-        "label": "Categoría convocatorias"
+        "label": "Convocatorias"
     }, 
     {
         "description": "Datasets sobre compras realizadas.", 
         "id": "compras", 
-        "label": "Categoría compras"
+        "label": "Compras"
     }, 
     {
         "description": "Datasets sobre contrataciones.", 
         "id": "contrataciones", 
-        "label": "Categoría contrataciones"
+        "label": "Contrataciones"
     }, 
     {
         "description": "Datasets sobre licitaciones adjudicadas.", 
         "id": "adjudicaciones", 
-        "label": "Categoría adjudicaciones"
+        "label": "Adjudicaciones"
     }, 
     {
         "description": "Datasets sobre normativa para compras y contrataciones.", 
         "id": "normativa", 
-        "label": "Categoría normativa"
+        "label": "Normativa"
     }, 
     {
         "description": "Datasets sobre proveedores del Estado.", 
         "id": "proveedores", 
-        "label": "Categoría proveedores"
+        "label": "Proveedores"
     }
 ]

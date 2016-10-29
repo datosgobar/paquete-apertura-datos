@@ -7,7 +7,7 @@
     "byteSize": "5120", 
     "format": "CSV", 
     "mediaType": "text/csv", 
-    "modified": "2016-04-19T19:48:05.433640", 
+    "modified": "2016-04-19T19:48:05.433640-03:00", 
     "downloadURL": "http://186.33.211.253/dataset/99db6631-d1c9-470b-a73e-c62daa32c420/resource/4b7447cb-31ff-4352-96c3-589d212e1cc9/download/convocatorias-abiertas-anio-2015.csv", 
     "field": [
         {
@@ -17,7 +17,7 @@
         }, 
         {
             "type": "integer", 
-            "description": "Identificador único del organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.", 
+            "description": "Identificador único del organismo que realiza la convocatoria. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.", 
             "title": "organismo_unidad_operativa_contrataciones_id"
         }, 
         {
@@ -27,7 +27,7 @@
         }, 
         {
             "type": "string", 
-            "description": "Organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.", 
+            "description": "Organismo que realiza la convocatoria. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.", 
             "title": "organismo_unidad_operativa_contrataciones_desc"
         }, 
         {
@@ -66,5 +66,5 @@
             "title": "objeto_convocatoria"
         }
     ], 
-    "issued": "2016-04-14T19:48:05.433640"
+    "issued": "2016-04-14T19:48:05.433640-03:00"
 }
