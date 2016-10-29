@@ -1,0 +1,108 @@
+{
+    "publisher": {
+        "mbox": "onc@modernizacion.gob.ar", 
+        "name": "Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones"
+    }, 
+    "landingPage": "http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra", 
+    "description": "Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Compra)", 
+    "superTheme": [
+        "ECON"
+    ], 
+    "title": "Sistema de contrataciones electrónicas", 
+    "issued": "2016-04-14T19:48:05.433640", 
+    "temporal": "2015-01-01/2015-12-31", 
+    "modified": "2016-04-19T19:48:05.433640", 
+    "language": [
+        "spa"
+    ], 
+    "theme": [
+        "contrataciones", 
+        "compras", 
+        "convocatorias"
+    ], 
+    "keyword": [
+        "bienes", 
+        "compras", 
+        "contrataciones"
+    ], 
+    "accrualPeriodicity": "R/P1Y", 
+    "spatial": "ARG", 
+    "license": "Open Data Commons Open Database License 1.0", 
+    "contactPoint": {
+        "hasEmail": "onc-compraselectronicas@modernizacion.gob.ar", 
+        "fn": "Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas."
+    }, 
+    "identifier": "99db6631-d1c9-470b-a73e-c62daa32c420", 
+    "distribution": [
+        {
+            "accessURL": "http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a", 
+            "rights": "Derechos especificados en la licencia.", 
+            "description": "Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas", 
+            "license": "Open Data Commons Open Database License 1.0", 
+            "title": "Convocatorias abiertas durante el año 2015", 
+            "byteSize": "5120", 
+            "format": "CSV", 
+            "mediaType": "text/csv", 
+            "modified": "2016-04-19T19:48:05.433640", 
+            "downloadURL": "http://186.33.211.253/dataset/99db6631-d1c9-470b-a73e-c62daa32c420/resource/4b7447cb-31ff-4352-96c3-589d212e1cc9/download/convocatorias-abiertas-anio-2015.csv", 
+            "field": [
+                {
+                    "type": "integer", 
+                    "description": "Identificador único del procedimiento de contratación", 
+                    "title": "procedimiento_id"
+                }, 
+                {
+                    "type": "integer", 
+                    "description": "Identificador único del organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.", 
+                    "title": "organismo_unidad_operativa_contrataciones_id"
+                }, 
+                {
+                    "type": "integer", 
+                    "description": "Identificador único de la unidad operativa de contrataciones", 
+                    "title": "unidad_operativa_contrataciones_id"
+                }, 
+                {
+                    "type": "string", 
+                    "description": "Organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.", 
+                    "title": "organismo_unidad_operativa_contrataciones_desc"
+                }, 
+                {
+                    "type": "string", 
+                    "description": "Unidad operativa de contrataciones.", 
+                    "title": "unidad_operativa_contrataciones_desc"
+                }, 
+                {
+                    "type": "string", 
+                    "description": "Tipo de procedimiento al que se adecua la contratación.", 
+                    "title": "tipo_procedimiento_contratacion"
+                }, 
+                {
+                    "type": "date", 
+                    "description": "Año en el que se inició el proceso de la convocatoria.", 
+                    "title": "ejercicio_procedimiento_anio"
+                }, 
+                {
+                    "type": "date", 
+                    "description": "Fecha de publicación de la convocatoria en formato AAAA-MM-DD, ISO 8601.", 
+                    "title": "fecha_publicacion_convocatoria"
+                }, 
+                {
+                    "type": "string", 
+                    "description": "Modalidad bajo la cual se realiza la convocatoria.", 
+                    "title": "modalidad_convocatoria"
+                }, 
+                {
+                    "type": "string", 
+                    "description": "Clase de la convocatoria.", 
+                    "title": "clase_convocatoria"
+                }, 
+                {
+                    "type": "string", 
+                    "description": "Objeto/objetivo de la convocatoria", 
+                    "title": "objeto_convocatoria"
+                }
+            ], 
+            "issued": "2016-04-14T19:48:05.433640"
+        }
+    ]
+}
