@@ -1,0 +1,69 @@
+{
+  "catalog": {
+    "dataset": "Datasets",
+    "title": "Nombre",
+    "description": "Descripción",
+    "publisher": {
+      "name": "Autor",
+      "mbox": "Correo electrónico del autor"
+    },
+    "issued": "Fecha de creación o publicación",
+    "modified": "Fecha de última actualización/modificación",
+    "language": "Idioma(s)",
+    "superThemeTaxonomy": "Taxonomía temática global",
+    "themeTaxonomy": "Taxonomía temática específica",
+    "license": "Licencia",
+    "homepage": "Página web del catálogo",
+    "rights": "Derechos sobre el catálogo",
+    "spatial": "Cobertura geográfica"
+  },
+  "dataset": {
+    "title": "Título",
+    "description": "Descripción",
+    "publisher": {
+      "name": "Autor",
+      "mbox": "Correo electrónico del autor"
+    },
+    "contactPoint": {
+      "fn": "Área/Persona de contacto",
+      "hasEmail": "Correo electrónico del área/persona de contacto"
+    },
+    "superTheme": "Temática(s) globales",
+    "theme": "Temática(s) específicas",
+    "keyword": "Etiqueta(s)",
+    "distribution": "Distribuciones",
+    "accrualPeriodicity": "Frecuencia de actualización",
+    "issued": "Fecha de publicación",
+    "modified": "Fecha de última actualización/ modificación",
+    "identifier": "Identificador",
+    "language": "Idioma(s)",
+    "spatial": "Cobertura geográfica",
+    "temporal": "Cobertura temporal",
+    "landingPage": "Página de referencias",
+    "license": "Licencia"
+  },
+  "distribution": {
+    "accessURL": "URL de acceso",
+    "description": "Descripción",
+    "format": "Formato del archivo",
+    "mediaType": "Tipo de archivo",
+    "downloadURL": "URL de descarga",
+    "title": "Título",
+    "license": "Licencia",
+    "byteSize": "Tamaño",
+    "issued": "Fecha de publicación",
+    "modified": "Fecha de última actualización/ modificación",
+    "rights": "Derechos sobre la distribución",
+    "field": "Campos de la distribución"
+  },
+  "field": {
+    "title": "Nombre",
+    "type": "Tipo",
+    "description": "Descripción"
+  },
+  "theme": {
+    "id": "Identificador",
+    "label": "Etiqueta",
+    "description": "Descripción"
+  }
+}
