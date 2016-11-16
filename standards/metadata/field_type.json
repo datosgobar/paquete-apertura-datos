@@ -1,0 +1,54 @@
+[
+  {
+    "type": "string",
+    "description": "Valores de texto."
+  },
+  {
+    "type": "number",
+    "description": "Números que puedan no ser enteros (incluyen decimales)."
+  },
+  {
+    "type": "integer",
+    "description": "Números que siempre son enteros."
+  },
+  {
+    "type": "date",
+    "description": "Fecha simple expresada según el estándar ISO 8601 incluyendo únicamente año, mes y día (YYYY-MM-DD) como en 2016-02-01."
+  },
+  {
+    "type": "time",
+    "description": "Tiempo expresado según el estándar ISO 8601 incluyendo únicamente horas, minutos y segundos (hh:mm:ss) como en 10:05:00."
+  },
+  {
+    "type": "date-time",
+    "description": "Fecha completa expresada según el estándar ISO 8601 incluyendo año, mes, día, horas, minutos y segundos (YYYY-MM-DDThh:mm:ssZ) como en 2016-02-01T10:05:00+03:00"
+  },
+  {
+    "type": "boolean",
+    "description": "Valores verdadero/falso."
+  },
+  {
+    "type": "binary",
+    "description": "Representación de datos binarios base64."
+  },
+  {
+    "type": "geo_point",
+    "description": "Ver estructura en https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html"
+  },
+  {
+    "type": "geojson",
+    "description": "Ver en http://geojson.org/"
+  },
+  {
+    "type": "array",
+    "description": "Lista de valores."
+  },
+  {
+    "type": "object",
+    "description": "Objeto de JSON."
+  },
+  {
+    "type": "any",
+    "description": "Campo que puede contener valores de cualquier tipo."
+  }
+]

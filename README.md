@@ -18,7 +18,7 @@ Repositorio de ejemplos, documentación y recursos adicionales del Paquete de Ap
 * **assets**: Archivos auxiliares para la generación de ejemplos.
 * **docs**: Documentación y guías de buenas prácticas.
 * **examples**: Ejemplos generados para las guías de buenas prácticas.
-* **standards**: Recursos que compilan estándares recomendados en las guías, en formatos más fáciles de consumir desde un script.
+* **standards**: Recursos que compilan estándares recomendados en las guías o listas curadas de valores admitidos para algún campo (especialmente en metadatos), en formatos fáciles de consumir desde un script.
 
 
 

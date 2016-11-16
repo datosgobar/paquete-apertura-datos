@@ -1,0 +1,78 @@
+[
+  {
+    "id": "R/P10Y",
+    "description": "Cada diez años"
+  },
+  {
+    "id": "R/P4Y",
+    "description": "Cada cuatro años"
+  },
+  {
+    "id": "R/P3Y",
+    "description": "Cada tres años"
+  },
+  {
+    "id": "R/P2Y",
+    "description": "Cada dos años"
+  },
+  {
+    "id": "R/P1Y",
+    "description": "Anualmente"
+  },
+  {
+    "id": "R/P6M",
+    "description": "Cada medio año"
+  },
+  {
+    "id": "R/P4M",
+    "description": "Cuatrimestralmente"
+  },
+  {
+    "id": "R/P3M",
+    "description": "Trimestralmente"
+  },
+  {
+    "id": "R/P2M",
+    "description": "Bimestralmente"
+  },
+  {
+    "id": "R/P1M",
+    "description": "Mensualmente"
+  },
+  {
+    "id": "R/P0.5M",
+    "description": "Cada 15 dias"
+  },
+  {
+    "id": "R/P0.33M",
+    "description": "Tres veces por mes"
+  },
+  {
+    "id": "R/P1W",
+    "description": "Semanalmente"
+  },
+  {
+    "id": "R/P3.5D",
+    "description": "Cada media semana"
+  },
+  {
+    "id": "R/P2W",
+    "description": "Dos veces a la semana"
+  },
+  {
+    "id": "R/P0.33W",
+    "description": "Tres veces a la semana"
+  },
+  {
+    "id": "R/P1D",
+    "description": "Diariamente"
+  },
+  {
+    "id": "R/PT1H",
+    "description": "Cada hora"
+  },
+  {
+    "id": "R/PT1S",
+    "description": "Continuamente actualizado"
+  }
+]
