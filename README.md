@@ -1,27 +1,24 @@
-# pad-estandares
-Recursos adicionales para los estándares del kit de apertura de datos
+# paquete-apertura-datos
+Repositorio de ejemplos, documentación y recursos adicionales del Paquete de Apertura de Datos de la República Argentina.
 
+## Componentes del paquete
 
-##Cuestiones a revisar en los ejemplos
+### Herramientas
 
-###Catalogo
-*revisar themeTaxonomy, inventé un ejemplo que entiendo. Para mi acá debería existir la opcion de que se complete con una url
+* **[Portal Andino](https://github.com/datosgobar/ckan_in_a_box)**: Portal empaquetado y distribuible desarrollado sobre la base de la plataforma CKAN (portal de datos abiertos) diseñado para facilitar la apertura y federación de Activos de Datos en la Argentina.
 
+### Guías de buenas prácticas
 
-###Dataset
-*revisar theme, que adapté a la themeTaxonomy
+* **[Guía para la publicación de datos en formatos abiertos (v0.1)](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/Gu%C3%ADa%20para%20la%20publicaci%C3%B3n%20de%20datos%20en%20formatos%20abiertos%20(v0.1).pdf)**
+* **[Guia para la identificación y uso de entidades interoperables (v0.1)](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/Guia%20para%20la%20identificaci%C3%B3n%20y%20uso%20de%20entidades%20interoperables%20(v0.1).pdf)**
+* **[Guía para el uso y la publicación de metadatos](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/Gu%C3%ADa%20para%20la%20publicaci%C3%B3n%20de%20datos%20en%20formatos%20abiertos%20(v0.1).pdf)**
 
-###Distribución
-*format, acá el criterio DCAT es que si está en IANA no completes format sino mediaType, pero creo que uds habian decidido otra cosa
-*mediaType, en relación al punto anterior.
+## Estructura del repositorio
 
-
-
-
-
-
-
-
+* **assets**: Archivos auxiliares para la generación de ejemplos.
+* **docs**: Documentación y guías de buenas prácticas.
+* **examples**: Ejemplos generados para las guías de buenas prácticas.
+* **standards**: Recursos que compilan estándares recomendados en las guías, en formatos más fáciles de consumir desde un script.
 
 
 
