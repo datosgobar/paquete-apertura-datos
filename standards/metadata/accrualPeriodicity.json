@@ -52,11 +52,7 @@
     "description": "Semanalmente"
   },
   {
-    "id": "R/P3.5D",
-    "description": "Cada media semana"
-  },
-  {
-    "id": "R/P2W",
+    "id": "R/P0.5W",
     "description": "Dos veces a la semana"
   },
   {
