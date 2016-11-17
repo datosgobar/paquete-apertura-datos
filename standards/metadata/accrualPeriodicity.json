@@ -74,5 +74,9 @@
   {
     "id": "R/PT1S",
     "description": "Continuamente actualizado"
+  },
+  {
+    "id": "eventual",
+    "description": "Eventual"
   }
 ]
