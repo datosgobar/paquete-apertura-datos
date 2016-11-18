@@ -5,7 +5,7 @@ Repositorio de ejemplos, documentación y recursos adicionales del Paquete de Ap
 
 ### Herramientas
 
-* **[Portal Andino](https://github.com/datosgobar/ckan_in_a_box)**: Portal empaquetado y distribuible desarrollado sobre la base de la plataforma CKAN (portal de datos abiertos) diseñado para facilitar la apertura y federación de Activos de Datos en la Argentina.
+* **[Portal Andino](https://github.com/datosgobar/portal-andino)**: Portal empaquetado y distribuible desarrollado sobre la base de la plataforma CKAN (portal de datos abiertos) diseñado para facilitar la apertura y federación de Activos de Datos en la Argentina.
 
 ### Guías de buenas prácticas
 
