@@ -162,3 +162,11 @@ td.text-center {
 td.text-right {
     text-align: right;
 }
+
+span.recomendado {
+    color: green;
+}
+
+span.no-recomendado {
+    color: red;
+}

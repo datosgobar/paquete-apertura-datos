@@ -89,6 +89,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#introduccion">Introducción</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#objetivo-de-la-guia">Objetivo de la guía</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#formatos-abiertos-de-archivos">Formatos abiertos de archivos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#csv">CSV</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#json">JSON</a></li>
 </ul>
 </li>
@@ -96,7 +97,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#nomenclatura-de-archivos">Nomenclatura de archivos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#codificacion">Codificación</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#estructura-y-caracteristicas-de-los-datos-tabulares">Estructura y características de los datos tabulares</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#recomendaciones-generales">Recomendaciones <strong>g</strong>enerales</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#recomendaciones-generales">Recomendaciones generales</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#nomenclatura-de-los-campos-nombres-de-las-columnas">Nomenclatura de los campos (nombres de las columnas)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#nivel-de-granularidad-de-los-datos">Nivel de granularidad de los datos</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#usar-orientacion-vertical-en-lugar-de-horizontal">Usar orientación vertical en lugar de horizontal</a></li>
@@ -198,7 +199,7 @@
 <li><a class="reference external" href="#nomenclatura-de-archivos">Nomenclatura de archivos</a></li>
 <li><a class="reference external" href="#codificaci%C3%B3n">Codificación</a></li>
 <li><a class="reference external" href="#estructura-y-caracter%C3%ADsticas-de-los-datos-tabulares">Estructura y características de los datos tabulares</a><ul>
-<li><a class="reference external" href="#recomendaciones-generales">Recomendaciones <strong>g</strong>enerales</a><ul>
+<li><a class="reference external" href="#recomendaciones-generales">Recomendaciones generales</a><ul>
 <li><a class="reference external" href="#nomenclatura-de-los-campos-nombres-de-las-columnas">Nomenclatura de los campos (nombres de las columnas)</a></li>
 <li><a class="reference external" href="#nivel-de-granularidad-de-los-datos">Nivel de granularidad de los datos</a></li>
 <li><a class="reference external" href="#usar-orientaci%C3%B3n-vertical-en-lugar-de-horizontal">Usar orientación vertical en lugar de horizontal</a></li>
@@ -252,7 +253,7 @@
 </ul>
 <p>Esta es <strong>una guía colaborativa y en progreso</strong>. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.</p>
 <p>El documento se estructura así:</p>
-<p>**Formatos abiertos de archivos: **cuáles son los formatos más usuales en los que se publican datos y cuáles son los más recomendables.</p>
+<p><strong>Formatos abiertos de archivos:</strong> cuáles son los formatos más usuales en los que se publican datos y cuáles son los más recomendables.</p>
 <ul class="simple">
 <li><strong>Fragmentación de archivos</strong>: cuáles son los criterios para decidir que un archivo es demasiado grande (y hay que fragmentarlo) o demasiado chico (y hay que juntarlo con otros).</li>
 <li><strong>Nomenclatura de archivos</strong>: cómo nombrar adecuadamente un archivo.</li>
@@ -313,13 +314,14 @@ Es un formato abierto.</td>
   </tr>
 </table><p>Antes de seguir, introduciremos dos conceptos que se usarán a lo largo de toda la guía:</p>
 <ul class="simple">
-<li>**Distribución o Recurso: **Una distribución o recurso es la unidad mínima en la que se publican datos. Se trata de los archivos que pueden ser descargados y re-utilizados por un usuario. Los recursos pueden tener diversos formatos (.csv, .shp, etc.).</li>
-<li>**Dataset: **Un conjunto de datos o dataset agrupa recursos referidos a un mismo tema que respetan una estructura de la información. Los mismos podrían diferir en el formato en que se los presenta (Ej. .csv, .json, .xls, etc.), la fecha a la que se refieren, el área geográfica cubierta o estar separados bajo algún otro criterio.</li>
+<li><strong>Distribución o Recurso:</strong> Una distribución o recurso es la unidad mínima en la que se publican datos. Se trata de los archivos que pueden ser descargados y re-utilizados por un usuario. Los recursos pueden tener diversos formatos (.csv, .shp, etc.).</li>
+<li><strong>Dataset:</strong> Un conjunto de datos o dataset agrupa recursos referidos a un mismo tema que respetan una estructura de la información. Los mismos podrían diferir en el formato en que se los presenta (Ej. .csv, .json, .xls, etc.), la fecha a la que se refieren, el área geográfica cubierta o estar separados bajo algún otro criterio.</li>
 </ul>
 <p>Un recurso en formato tabular es un archivo plano que se ajusta a un esquema predefinido de columnas, incluyendo el nombre de la columna y el tipo de datos.</p>
 <p>En la mayoría de los casos, corresponde a datos que llegan de bases de datos, reportes y planillas de cálculo en general. A diferencia de los formatos tabulares, los archivos JSON siguen una estructura diferente donde se definen listas de objetos con pares &#8220;clave&#8221; - “valor”.</p>
 <p><strong>Recomendamos con énfasis la publicación de los datos en formato CSV y/o JSON</strong>. En caso de utilizar formatos propietarios o aún no estandarizados, es útil indicar software, versión y aplicación que permite procesar esos formatos.</p>
-<p>**CSV **</p>
+<div class="section" id="csv">
+<span id="csv"></span><h3>CSV<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
 <p>El CSV es un formato de archivo de texto plano donde las campos (columnas) se separan por comas; y los registros (filas), por saltos de línea. Algunas versiones alternativas de esta forma de publicar datos usan otros separadores como punto y coma (&#8221;;&#8221;) o pipe (“|”).</p>
 <p>Las recomendaciones, siguiendo lo indicado por la especificación <a class="reference external" href="http://tools.ietf.org/html/rfc4180">RFC4180</a> y las pautas de la <a class="reference external" href="https://www.w3.org/TR/tabular-data-model/">W3C</a>, para la publicación de archivos en formato CSV son:</p>
 <ul class="simple">
@@ -339,6 +341,7 @@ Es un formato abierto.</td>
 <li>Para todos los tipos de datos se considera válido el valor indefinido. Este se expresará con la ausencia de todo caracter y no con un caracter o string especial como podrían ser &#8221;.&#8221;, &#8220;null&#8221;, &#8220;none&#8221;, &#8220;nan&#8221;, etc.</li>
 </ul>
 <p>Ejemplo:</p>
+</div>
 <div class="section" id="json">
 <span id="json"></span><h3>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h3>
 <p>JSON es un formato de texto popular para el intercambio de datos, es un acrónimo de  JavaScript Object Notation. Por su característica de ser un formato de tipo estructurado es especialmente útil para el intercambio de datos entre máquina (<em>machine - readable format</em>).</p>
@@ -349,9 +352,9 @@ Es un formato abierto.</td>
 <span id="fragmentacion-de-archivos"></span><h2>Fragmentación de archivos<a class="headerlink" href="#fragmentacion-de-archivos" title="Permalink to this headline">¶</a></h2>
 <p>Para garantizar la accesibilidad a los datos, <strong>es necesario fragmentar los archivos  excesivamente grandes</strong>, que superen el millón de filas.</p>
 <p>Para esto, recomendamos usar conceptos simples, como ser:</p>
-<p>(a)** por períodos** en caso de tratarse de información temporal (Ej. Años, semestres, trimestres, meses, semanas, días),</p>
-<p>(b)** por zonas **en caso de tratarse de información geográfica (Ej. provincias, municipios, barrios, secciones, o manzanas) o</p>
-<p>(c)** por dimensiones temáticas **propias del dominio particular de la información.</p>
+<p>(a) <strong>por períodos</strong> en caso de tratarse de información temporal (Ej. Años, semestres, trimestres, meses, semanas, días),</p>
+<p>(b) <strong>por zonas</strong> en caso de tratarse de información geográfica (Ej. provincias, municipios, barrios, secciones, o manzanas) o</p>
+<p>(c) <strong>por dimensiones temáticas</strong> propias del dominio particular de la información.</p>
 <p>Sin embargo, siempre que se decida fragmentar un archivo para garantizar su accesibilidad,  recomendamos publicar también una versión no fragmentada que contenga el conjunto de datos completo (aunque sea muy grande), a los fines de evitar la tarea de consolidación.</p>
 <p>Para eso, sugerimos usar protocolos de compresión, en especial para archivos muy grandes, y altamente compresibles. De hacerlo, aconsejamos protocolos sin pérdida, y abiertos.</p>
 </div>
@@ -367,12 +370,12 @@ Es un formato abierto.</td>
 </ul>
 <p>Ejemplos:</p>
 <ul class="simple">
-<li>&#8220;<em>acceso-informacion-publica.csv</em>&#8221;: Versión completa del recurso.</li>
-<li>&#8220;<em>acceso-informacion-publica-2013.csv</em>&#8221;: Versión del recurso fragmentada por año.</li>
-<li>&#8220;<em>acceso-informacion-publica-201302.csv</em>&#8221;: Versión del recurso fragmentada por mes.</li>
-<li>&#8220;<em>acceso-informacion-publica-caba.csv</em>&#8221;: Versión del recurso fragmentada por división político-territorial (provincia o caba).</li>
-<li>&#8220;<em>acceso-informacion-publica-caba-2013.csv</em>&#8221;: Versión del recurso fragmentada por división político-territorial (provincia o caba) y año.</li>
-<li>&#8220;<em>acceso-informacion-publica-jujuy-20130208.csv</em>&#8221;:  Versión del recurso fragmentada por división político-territorial (provincia o caba) y fecha.</li>
+<li><em>acceso-informacion-publica.csv</em>: Versión completa del recurso.</li>
+<li><em>acceso-informacion-publica-2013.csv</em>: Versión del recurso fragmentada por año.</li>
+<li><em>acceso-informacion-publica-201302.csv</em>: Versión del recurso fragmentada por mes.</li>
+<li><em>acceso-informacion-publica-caba.csv</em>: Versión del recurso fragmentada por división político-territorial (provincia o caba).</li>
+<li><em>acceso-informacion-publica-caba-2013.csv</em>: Versión del recurso fragmentada por división político-territorial (provincia o caba) y año.</li>
+<li><em>acceso-informacion-publica-jujuy-20130208.csv</em>:  Versión del recurso fragmentada por división político-territorial (provincia o caba) y fecha.</li>
 </ul>
 <p>Para la fragmentación temporal, recomendamos el estándar de los ejemplos, ya que es compacto y ordena los recursos por tiempo: YYYYMMDD. Por favor, recordá mantener siempre dos dígitos para el mes y el día, incluso si el número es menor a 10.</p>
 <p>Para la fragmentación por zonas, consultá la <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/Guia%20para%20la%20identificaci%C3%B3n%20y%20uso%20de%20entidades%20interoperables%20(v0.1).pdf">Guía para la identificación y  uso de entidades interoperables</a>, y mirá cómo nombrarlas adecuadamente.</p>
@@ -389,7 +392,7 @@ Es un formato abierto.</td>
 <p>(a) Recomendaciones generales para el trabajo con datos y</p>
 <p>(b) Recomendaciones para el trabajo con planillas de cálculo, orientadas tanto a facilitar su exportación a formatos abiertos, como a su propia usabilidad en el contexto de cualquier aplicación de planillas de cálculo.</p>
 <div class="section" id="recomendaciones-generales">
-<span id="recomendaciones-generales"></span><h3>Recomendaciones <strong>g</strong>enerales<a class="headerlink" href="#recomendaciones-generales" title="Permalink to this headline">¶</a></h3>
+<span id="recomendaciones-generales"></span><h3>Recomendaciones generales<a class="headerlink" href="#recomendaciones-generales" title="Permalink to this headline">¶</a></h3>
 <p>Estas son recomendaciones generales para el trabajo con datos tabulares. Sugerimos adoptarlas sea cual sea la tecnología usada.</p>
 <div class="section" id="nomenclatura-de-los-campos-nombres-de-las-columnas">
 <span id="nomenclatura-de-los-campos-nombres-de-las-columnas"></span><h4>Nomenclatura de los campos (nombres de las columnas)<a class="headerlink" href="#nomenclatura-de-los-campos-nombres-de-las-columnas" title="Permalink to this headline">¶</a></h4>
@@ -426,15 +429,15 @@ Es un formato abierto.</td>
 <li>Incluso cuando la entidad de un atributo parezca evidente (ej.: un dataset llamado &#8220;audiencias&#8221; donde todos los campos son atributos de la entidad “audiencia”), se recomienda nombrar el campo incluyendo la entidad a la que hace referencia el atributo.</li>
 </ul>
 </li>
-<li><strong>No recomendado</strong>: &#8220;id&#8221;, “fecha_hora”</li>
-<li><strong>Recomendado</strong>: &#8220;audiencia_id&#8221;, “audiencia_fecha_hora”.</li>
+<li><span class="no-recomendado"><strong>No recomendado</strong></span> “fecha_hora”</li>
+<li><span class="recomendado"><strong>Recomendado</strong></span>: &#8220;audiencia_id&#8221;, “audiencia_fecha_hora”.</li>
 </ul>
 <p>Los campos que sean identificadores o códigos, deberán incluir el sufijo &#8220;_id&#8221; en el nombre del campo, salvo casos excepcionales donde un nombre alternativo sea más conveniente porque ofrece información sobre el sistema de identificación usado.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">En</span> <span class="n">cuanto</span> <span class="n">a</span> <span class="n">los</span> <span class="n">campos</span> <span class="n">que</span> <span class="n">contengan</span> <span class="n">la</span> <span class="n">descripción</span> <span class="n">de</span> <span class="n">ese</span> <span class="n">identificador</span><span class="p">,</span> <span class="n">se</span> <span class="n">recomienda</span> <span class="n">que</span> <span class="n">incluyan</span> <span class="n">el</span> <span class="n">sufijo</span> <span class="s2">&quot;_desc&quot;</span> <span class="p">(</span><span class="n">por</span> <span class="s2">&quot;descripción&quot;</span><span class="p">)</span> <span class="n">en</span> <span class="n">caso</span> <span class="n">de</span> <span class="n">que</span> <span class="n">no</span> <span class="n">exista</span> <span class="n">una</span> <span class="n">forma</span> <span class="n">más</span> <span class="n">conveniente</span> <span class="n">de</span> <span class="n">nombrar</span> <span class="n">el</span> <span class="n">campo</span><span class="o">.</span> 
-</pre></div>
-</div>
+<ul class="simple">
+<li>En cuanto a los campos que contengan la descripción de ese identificador, se recomienda que incluyan el sufijo &#8220;_desc&#8221; (por &#8220;descripción&#8221;) en caso de que no exista una forma más conveniente de nombrar el campo.</li>
+</ul>
+<p><span class="recomendado"><strong>Recomendado</strong></span></p>
 <table>
-  <tr>
     <td>sucursal_id</td>
     <td>sucursal_desc</td>
   </tr>
@@ -455,8 +458,7 @@ Es un formato abierto.</td>
 <span id="nivel-de-granularidad-de-los-datos"></span><h4>Nivel de granularidad de los datos<a class="headerlink" href="#nivel-de-granularidad-de-los-datos" title="Permalink to this headline">¶</a></h4>
 <p>Por favor, no incluir totales, subtotales ni agrupamientos de datos. Un dataset debe ser consistente en el nivel de granularidad de los datos que contiene. Está bien tener un dataset con la cantidad de convenios firmados por provincia y está bien tener un dataset con la cantidad de convenios firmados por municipio. No está bien tener un dataset que mezcle ambos.</p>
 <p>Dicho esto, el dato agregado &#8220;convenios firmados por provincia&#8221; siempre se puede calcular a partir de un proceso del dataset más desagregado, pero esto no es así a la inversa (es imposible recuperar los datos a nivel de municipio desde el dataset provincial).</p>
-<p><strong>No recomendado</strong> - datos con subtotales y/o totales incluidos</p>
-<p>(diferentes niveles de granularidad)</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - datos con subtotales y/o totales incluidos (diferentes niveles de granularidad)</p>
 <table>
   <tr>
     <td>provincia_nombre</td>
@@ -468,7 +470,6 @@ Es un formato abierto.</td>
     <td>Provincia X</td>
     <td>Municipio W</td>
     <td>2011</td>
-    <td>10</td>
   </tr>
   <tr>
     <td>Provincia X</td>
@@ -500,7 +501,7 @@ Es un formato abierto.</td>
     <td>2011</td>
     <td>30</td>
   </tr>
-</table><p><strong>Recomendado</strong> - datos de un mismo nivel de granularidad</p>
+</table><p><span class="recomendado"><strong>Recomendado</strong></span> - datos de un mismo nivel de granularidad</p>
 <table>
   <tr>
     <td>provincia_nombre</td>
@@ -530,7 +531,7 @@ Es un formato abierto.</td>
 <div class="section" id="usar-orientacion-vertical-en-lugar-de-horizontal">
 <span id="usar-orientacion-vertical-en-lugar-de-horizontal"></span><h4>Usar orientación vertical en lugar de horizontal<a class="headerlink" href="#usar-orientacion-vertical-en-lugar-de-horizontal" title="Permalink to this headline">¶</a></h4>
 <p>Es preferible que la orientación de los datos sea &#8220;vertical&#8221; en lugar de “horizontal” en los casos en que esto sea posible. La principal razón es que los datos orientados de manera vertical facilitan el tratamiento y análisis de los datos.</p>
-<p><strong>No recomendado</strong> - Orientación horizontal</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - Orientación horizontal</p>
 <table>
   <tr>
     <td>municipio_nombre</td>
@@ -543,8 +544,7 @@ Es un formato abierto.</td>
     <td>2015</td>
     <td>340</td>
     <td>198</td>
-  </tr>
-</table><p><strong>Recomendado</strong> - Orientación vertical</p>
+</table><p><span class="recomendado"><strong>Recomendado</strong></span> - Orientación vertical</p>
 <table>
   <tr>
     <td>municipio_nombre</td>
@@ -568,7 +568,7 @@ Es un formato abierto.</td>
 <div class="section" id="incluir-solo-un-atributo-por-campo">
 <span id="incluir-solo-un-atributo-por-campo"></span><h4>Incluir sólo un atributo por campo<a class="headerlink" href="#incluir-solo-un-atributo-por-campo" title="Permalink to this headline">¶</a></h4>
 <p>Se recomienda definir los campos de forma atómica de modo de incluir un sólo atributo por elemento, en lugar de datos múltiples, generando campos adicionales de ser necesario.</p>
-<p><strong>No recomendado</strong> - múltiples datos en una celda</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - múltiples datos en una celda</p>
 <table>
   <tr>
     <td>municipio_nombre</td>
@@ -580,8 +580,7 @@ Es un formato abierto.</td>
     <td>2015</td>
     <td>Poda y arbolado - 340
 Recolección de residuos - 198</td>
-  </tr>
-</table><p><strong>Recomendado</strong> - un dato por celda</p>
+</table><p><span class="recomendado"><strong>Recomendado</strong></span> - un dato por celda</p>
 <table>
   <tr>
     <td>municipio_nombre</td>
@@ -607,7 +606,7 @@ Recolección de residuos - 198</td>
 <p>Los valores de los datos deben ser siempre explícitos y respetando el tipo de datos del campo de que se trate. Los elementos o celdas en blanco se interpretarán siempre como &#8220;valor ausente&#8221;.</p>
 <p>Si existen distintas interpretaciones posibles de un &#8220;valor ausente&#8221;, éstas deben ser explicitadas en un campo aparte. Si sólo hay “valores ausentes” (no hay distintas interpretaciones, es siempre un “valor ausente”) no es necesario agregar una columna adicional.</p>
 <p>Es importante destacar, por ejemplo, que cuando un valor numérico sea &#8220;0&#8221; siempre debe ponerse un “0” como dato (y no un valor nulo, en blanco o vacío).</p>
-<p>No recomendado - texto presente en campos numéricos</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - texto presente en campos numéricos</p>
 <table>
   <tr>
     <td>solicitudes_numero</td>
@@ -619,7 +618,6 @@ Recolección de residuos - 198</td>
     <td>NA</td>
   </tr>
   <tr>
-    <td>NS/NC</td>
   </tr>
   <tr>
     <td>...</td>
@@ -633,7 +631,7 @@ Recolección de residuos - 198</td>
   <tr>
     <td>567</td>
   </tr>
-</table><p>Recomendado - texto excluido de campos numéricos</p>
+</table><p><span class="recomendado"><strong>Recomendado</strong></span> - texto excluido de campos numéricos</p>
 <table>
   <tr>
     <td>solicitudes_numero</td>
@@ -675,13 +673,10 @@ Recolección de residuos - 198</td>
 <div class="section" id="usar-celdas-simples">
 <span id="usar-celdas-simples"></span><h4>Usar celdas simples<a class="headerlink" href="#usar-celdas-simples" title="Permalink to this headline">¶</a></h4>
 <p>Recomendamos usar celdas simples y, en ningún caso, combinar celdas.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">No</span> <span class="n">recomendado</span> <span class="o">-</span> <span class="n">celdas</span> <span class="n">combinadas</span>
-</pre></div>
-</div>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - celdas combinadas</p>
 <table>
   <tr>
-    <td>
-proveedor_nombre</td>
+    <td>proveedor_nombre</td>
     <td>contacto_datos</td>
     <td></td>
   </tr>
@@ -690,12 +685,11 @@ proveedor_nombre</td>
     <td>correo_electronico</td>
     <td>telefono</td>
   </tr>
-  <tr>
     <td>Ejemplo Sociedad Anónima</td>
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
-</table><p>Recomendado - celdas simples, sin combinar</p>
+</table><p><span class="recomendado"><strong>Recomendado</strong></span> - celdas simples, sin combinar</p>
 <table>
   <tr>
     <td>proveedor_nombre</td>
@@ -711,7 +705,7 @@ proveedor_nombre</td>
 <div class="section" id="fila-de-encabezado">
 <span id="fila-de-encabezado"></span><h4>Fila de encabezado<a class="headerlink" href="#fila-de-encabezado" title="Permalink to this headline">¶</a></h4>
 <p>Los datos deben contener sólo una fila de encabezado. Desde la segunda fila en adelante, sólo debe haber datos, pero nunca un encabezado.</p>
-<p>No recomendado - múltiples filas de encabezado</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - múltiples filas de encabezado</p>
 <table>
   <tr>
     <td>Nombre del</td>
@@ -723,12 +717,11 @@ proveedor_nombre</td>
     <td>electrónico de contacto</td>
     <td>contacto</td>
   </tr>
-  <tr>
     <td>Ejemplo Sociedad Anónima</td>
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
-</table><p>Recomendado - encabezado de una única fila</p>
+</table><p><span class="recomendado"><strong>Recomendado</strong></span> - encabezado de una única fila</p>
 <table>
   <tr>
     <td>proveedor_nombre</td>
@@ -745,7 +738,7 @@ proveedor_nombre</td>
 <span id="celdas-vacias-en-filas-para-agrupar-conceptos"></span><h4>Celdas vacías en filas para agrupar conceptos<a class="headerlink" href="#celdas-vacias-en-filas-para-agrupar-conceptos" title="Permalink to this headline">¶</a></h4>
 <p>Recomendamos no dejar celdas vacías en filas bajo la presunción de que valores en blanco posteriores a un valor positivo contienen implícitamente a ese mismo valor en una suerte de &#8220;agrupamiento conceptual&#8221;.</p>
 <p>Este error es muy común en la construcción de planillas de cálculo y suele generar problemas graves cuando cambia el orden original de las filas. Además, impide el uso de tablas dinámicas y otras formas de analizar los datos.</p>
-<p>No recomendado - primera celda de la segunda fila vacía</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - primera celda de la segunda fila vacía</p>
 <table>
   <tr>
     <td>municipio_nombre</td>
@@ -757,7 +750,6 @@ proveedor_nombre</td>
     <td>Municipalidad X</td>
     <td>2015</td>
     <td>Poda y arbolado</td>
-    <td>340</td>
   </tr>
   <tr>
     <td></td>
@@ -765,7 +757,7 @@ proveedor_nombre</td>
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
-</table><p>Recomendado - primera celda de la segunda fila completa</p>
+</table><p><span class="recomendado"><strong>Recomendado</strong></span> - primera celda de la segunda fila completa</p>
 <table>
   <tr>
     <td>municipio_nombre</td>
@@ -788,7 +780,7 @@ proveedor_nombre</td>
 </table></div>
 <div class="section" id="formato-de-celdas">
 <span id="formato-de-celdas"></span><h4>Formato de celdas<a class="headerlink" href="#formato-de-celdas" title="Permalink to this headline">¶</a></h4>
-<p>Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de datos de que se trate. Específicamente,** los números **siempre deben estar en celdas de formato/tipo &#8220;número&#8221;, **los campos de tipo textual <strong>deben estar en celdas de formato/tipo “texto” y</strong> los campos de tipo fecha **deben estar en celdas de formato/tipo “fecha”.</p>
+<p>Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de datos de que se trate. Específicamente, <strong>los números</strong> siempre deben estar en celdas de formato/tipo &#8220;número&#8221;, <strong>los campos de tipo textual</strong> deben estar en celdas de formato/tipo “texto” y <strong>los campos de tipo fecha</strong> deben estar en celdas de formato/tipo “fecha”.</p>
 <table>
   <tr>
     <td>audiencia_fecha_hora</td>
@@ -816,8 +808,8 @@ proveedor_nombre</td>
 <span id="exportacion-a-csv"></span><h3>Exportación a CSV<a class="headerlink" href="#exportacion-a-csv" title="Permalink to this headline">¶</a></h3>
 <p>Insistimos: CSV es el formato más recomendado para la publicación de archivos tabulares. A la hora de exportar una planilla de cálculo a CSV hay 3 parámetros que deben ser especificados durante la exportación, independientemente del software de que se use:</p>
 <ul class="simple">
-<li>**Codificación **(encoding, en inglés): siempre debe ser UTF-8.</li>
-<li>**Caracter separador **(separator character, en inglés): siempre debe ser &#8221;,&#8221; (coma).</li>
+<li><strong>Codificación</strong> (encoding, en inglés): siempre debe ser UTF-8.</li>
+<li><strong>Caracter separador</strong> (separator character, en inglés): siempre debe ser &#8221;,&#8221; (coma).</li>
 <li><strong>Caracter calificador</strong> (quote character o enclosing character, en inglés): siempre debe ser &#8221; “ “ (comillas dobles).</li>
 </ul>
 </div>
@@ -834,8 +826,8 @@ proveedor_nombre</td>
 <span id="entidades"></span><h4>Entidades<a class="headerlink" href="#entidades" title="Permalink to this headline">¶</a></h4>
 <p>Las entidades que aparezcan entre los datos de un campo textual deben tener una descripción única. Es decir, toda mención que se realice a una entidad dada debe hacerse usando exactamente la misma cadena de caracteres cada vez:</p>
 <ul class="simple">
-<li>**Las descripciones de entidades **deberían elegirse siempre de forma tal que cumplan con el estándar específico que las describe, en caso de que este exista.</li>
-<li><strong>Cuando este estándar no existe</strong> y hay dudas respecto del criterio a adoptar para elegir la descripción única de una entidad, debe** privilegiarse siempre aquella que sea lo más explícita**, descriptiva y declarativa posible.</li>
+<li><strong>Las descripciones de entidades</strong> deberían elegirse siempre de forma tal que cumplan con el estándar específico que las describe, en caso de que este exista.</li>
+<li><strong>Cuando este estándar no existe</strong> y hay dudas respecto del criterio a adoptar para elegir la descripción única de una entidad, debe <strong>privilegiarse siempre aquella que sea lo más explícita</strong>, descriptiva y declarativa posible.</li>
 </ul>
 </div>
 <div class="section" id="nombres-propios">
@@ -846,7 +838,7 @@ proveedor_nombre</td>
 <span id="siglas"></span><h4>Siglas<a class="headerlink" href="#siglas" title="Permalink to this headline">¶</a></h4>
 <p>Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios intermedios.</p>
 <p>Ejemplo:</p>
-<p>No recomendado</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span></p>
 <table>
   <tr>
     <td>localidad_nombre</td>
@@ -859,11 +851,10 @@ proveedor_nombre</td>
   </tr>
   <tr>
     <td>Capital Federal</td>
-  </tr>
   <tr>
     <td>Ciudad de Buenos Aires</td>
   </tr>
-</table><p>Recomendado - primera celda de la segunda fila completa</p>
+</table><p><span class="recomendado"><strong>Recomendado</strong></span> - primera celda de la segunda fila completa</p>
 <table>
   <tr>
     <td>localidad_nombre</td>
@@ -934,7 +925,7 @@ proveedor_nombre</td>
   </tr>
 </table><p>Esta numeración es válida para los teléfonos móviles, pero dado que para llamar a un móvil desde un teléfono fijo es necesario anteponer &#8220;15&#8221; al número de abonado, es necesario que el registro del número telefónico especifique de alguna manera si se trata de un móvil o de un teléfono fijo.</p>
 <p>Al no existir estándares nacionales para la inclusión de números telefónicos en recursos de datos, los números telefónicos suelen indicarse de múltiples maneras. Por ejemplo:</p>
-<p><strong>No recomendado</strong> - Múltiples formas de indicar un número telefónico</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - Múltiples formas de indicar un número telefónico</p>
 <table>
   <tr>
     <td>proveedor_nombre</td>
@@ -946,7 +937,6 @@ proveedor_nombre</td>
     <td>ejemplo@ejemplo.com.ar</td>
     <td>01143XXXXXX</td>
   </tr>
-  <tr>
     <td>Ejemplo2 Sociedad Anónima</td>
     <td>ejemplo2@ejemplo2.com.ar</td>
     <td>011-45XXXXXX</td>
@@ -968,7 +958,7 @@ proveedor_nombre</td>
 <li>Omitir el agregado de dígitos adicionales en el indicativo interurbano. Recomendamos no indicar cero inicial antes del código de área.</li>
 </ul>
 <p>Con las salvedades que comentaremos al final de este apartado, un posible abordaje sería el de la tabla a continuación:</p>
-<p>Recomendado - adecuado al estándar del Número Nacional Interurbano</p>
+<p><span class="recomendado"><strong>Recomendado</strong></span> - adecuado al estándar del Número Nacional Interurbano</p>
 <table>
   <tr>
     <td>proveedor_nombre</td>
@@ -1016,7 +1006,7 @@ proveedor_nombre</td>
 <div class="section" id="coordenadas">
 <span id="coordenadas"></span><h4>Coordenadas<a class="headerlink" href="#coordenadas" title="Permalink to this headline">¶</a></h4>
 <p>Para registrar datos de coordenadas geográficas de puntos, usamos números decimales. Los campos deberán llamarse &#8220;latitud&#8221; y “longitud”. Cuando sea conveniente especificar el nombre de la entidad de la cual se consignan las coordenadas, se usarán los sufijos “_latitud” y “_longitud”.</p>
-<p>No recomendado</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span></p>
 <table>
   <tr>
     <td>latitud</td>
@@ -1026,7 +1016,7 @@ proveedor_nombre</td>
     <td>34º 11' 30''</td>
     <td>58º 43' 20''</td>
   </tr>
-</table><p>Recomendado</p>
+</table><p><span class="recomendado"><strong>Recomendado</strong></span></p>
 <table>
   <tr>
     <td>latitud</td>

@@ -20,9 +20,9 @@
       - [D. Aglomerados](#d-aglomerados)
       - [E. ¿Cómo nombrar los campos?](#e-%C2%BFc%C3%B3mo-nombrar-los-campos)
     - [Direcciones y lugares](#direcciones-y-lugares)
-    - [**Códigos postales**](#c%C3%B3digos-postales)
-  - [**Personas físicas**](#personas-f%C3%ADsicas)
-  - [**Personas jurídicas**](#personas-jur%C3%ADdicas)
+    - [Códigos postales](#c%C3%B3digos-postales)
+  - [Personas físicas](#personas-f%C3%ADsicas)
+  - [Personas jurídicas](#personas-jur%C3%ADdicas)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -52,7 +52,7 @@ Las entidades interoperables **son aquellas que se repiten y usan frecuentemente
 
 La mayoría de los datasets incluyen campos que responden al dónde, quién, cuándo y qué. Estos campos permiten que los datasets sean interoperables entre sí.
 
-Veamos un ejemplo. Una matriz origen-destino de pasajeros de transporte urbano que dice cuántos viajes se hacen desde la fracción censal A a la fracción censal B, puede interoperar con datos del Censo Nacional sobre las personas que viven en A o en B (desocupación, edad, condiciones de la vivienda, actividad laboral, etc.). Decimos entonces, que la fracción censal es una entidad interoperable.** **
+Veamos un ejemplo. Una matriz origen-destino de pasajeros de transporte urbano que dice cuántos viajes se hacen desde la fracción censal A a la fracción censal B, puede interoperar con datos del Censo Nacional sobre las personas que viven en A o en B (desocupación, edad, condiciones de la vivienda, actividad laboral, etc.). Decimos entonces, que la fracción censal es una entidad interoperable.
 
 Algunos ejemplos de entidades interoperables pueden ser:
 
@@ -98,7 +98,7 @@ A modo de ejemplo, en la Argentina nos referimos a uno de nuestros países vecin
 
 Se recomienda también que el nombre del campo del código sea "pais_id" o, en el caso de que haya más de un campo “país” en el dataset, el nombre de cada campo finalice con “pais_id” (Ej.: “desde_pais_id”, “hasta_pais_id”), mientras que el campo con el nombre completo del país debería ser “pais_nombre”.
 
-**No recomendado**
+<span class="no-recomendado">**No recomendado**</span>
 
 <table>
   <tr>
@@ -118,7 +118,7 @@ Se recomienda también que el nombre del campo del código sea "pais_id" o, en e
   </tr>
 </table>
 
-**Recomendado**
+<span class="recomendado">**Recomendado**</span>
 
 <table>
   <tr>
@@ -227,7 +227,7 @@ Análogamente, debe reemplazarse "_id" por “_nombre” para nombrar los campos
 
 Resaltamos la importancia de que el tipo de datos del campo de un identificador es "textual" y no “numérico”. Esto es así porque un valor de tipo numérico no podría comenzar con ceros.
 
-**No recomendado**
+<span class="no-recomendado">**No recomendado**</span>
 
 <table>
   <tr>
@@ -258,7 +258,7 @@ Resaltamos la importancia de que el tipo de datos del campo de un identificador 
 </table>
 
 
-**Recomendado**
+<span class="recomendado">**Recomendado**</span>
 
 <table>
   <tr>
@@ -312,7 +312,7 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
 * "pais_id"
 * "pais_nombre"
 
-**No recomendado**
+<span class="no-recomendado">**No recomendado**</span>
 
 <table>
   <tr>
@@ -370,7 +370,7 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
 </table>
 
 
-**Recomendado** - coordenadas y dirección normalizada
+<span class="recomendado">**Recomendado**</span> - coordenadas y dirección normalizada
 
 <table>
   <tr>
@@ -412,7 +412,7 @@ El CPA se compone de:
 
 Ej.: C1426BMD
 
-**No recomendado**
+<span class="no-recomendado">**No recomendado**</span>
 
 <table>
   <tr>
@@ -433,7 +433,7 @@ Ej.: C1426BMD
 </table>
 
 
-**Recomendado**
+<span class="recomendado">**Recomendado**</span>
 
 <table>
   <tr>
@@ -475,7 +475,7 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
 * "representante_id"
 * "representante_tipo_id"
 
-**No recomendado**
+<span class="no-recomendado">**No recomendado**</span>
 
 <table>
   <tr>
@@ -537,7 +537,7 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
 </table>
 
 
-**Recomendado**
+<span class="recomendado">**Recomendado**</span>
 
 <table>
   <tr>
@@ -590,7 +590,7 @@ Las entidades con personería jurídica local (Ej.: empresas argentinas, ONGs ar
 * "exportador_cuit"
 * "exportador_razon_social"
 
-**No recomendado**
+<span class="no-recomendado">**No recomendado**</span>
 
 <table>
   <tr>
@@ -611,7 +611,7 @@ Las entidades con personería jurídica local (Ej.: empresas argentinas, ONGs ar
 </table>
 
 
-**Recomendado**
+<span class="recomendado">**Recomendado**</span>
 
 <table>
   <tr>
@@ -649,7 +649,7 @@ En el caso de que el dataset pueda contener personas jurídicas fuera de la juri
 * "inversor_pais_id"
 * "inversor_pais_nombre"
 
-**Recomendado**
+<span class="recomendado">**Recomendado**</span>
 
 <table>
   <tr>
