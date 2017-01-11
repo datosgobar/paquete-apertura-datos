@@ -1182,79 +1182,77 @@ Además del uso de una taxonomía propia de cada catálogo de datos, **recomenda
 **La ventaja de usar una súper taxonomía** temática es que** facilita la clasificación de datasets** por parte de un usuario según un conjunto de categorías temáticas más generales, que son interoperables con las usadas por otros países del mundo. Esto, a su vez, **facilita la clasificación de datasets cosechados por el Portal Nacional de Datos**.
 
 <table>
-  <tr>
-    <td>Código
-(authority code)</td>
-    <td>Etiqueta (label)</td>
-    <td>Descripción (description)</td>
-  </tr>
-  <tr>
-    <td>AGRI</td>
-    <td>Agricultura, pesca, silvicultura y alimentación</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como agricultura, pesca, forestación o alimentos.</td>
-  </tr>
-  <tr>
-    <td>ECON</td>
-    <td>Economía y finanzas</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como economía o finanzas.</td>
-  </tr>
-  <tr>
-    <td>EDUC</td>
-    <td>Educación, cultura y deportes</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como educación, cultura o deporte.</td>
-  </tr>
-  <tr>
-    <td>ENER</td>
-    <td>Energía</td>
-    <td>Bajo este concepto se incluyen datasets que cubre aspectos de energía.</td>
-  </tr>
-  <tr>
-    <td>ENVI</td>
-    <td>Medio ambiente</td>
-    <td>Bajo este concepto se incluyen datasets que cubren aspectos de medioambiente.</td>
-  </tr>
-  <tr>
-    <td>GOVE</td>
-    <td>Gobierno y sector público</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como gobierno y sector público.</td>
-  </tr>
-  <tr>
-    <td>HEAL</td>
-    <td>Salud</td>
-    <td>Bajo este concepto se incluyen datasets que cubren aspectos relacionados a la salud.</td>
-  </tr>
-  <tr>
-    <td>INTR</td>
-    <td>Asuntos internacionales</td>
-    <td>Bajo este concepto se incluyen datasets que cubren aspectos relacionados a asuntos internacionales.</td>
-  </tr>
-  <tr>
-    <td>JUST</td>
-    <td>Justicia, sistema legal y seguridad pública</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales justicia, sistema legal o seguridad pública.</td>
-  </tr>
-  <tr>
-    <td>REGI</td>
-    <td>Regiones y ciudades</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como regiones o ciudades.</td>
-  </tr>
-  <tr>
-    <td>SOCI</td>
-    <td>Población y sociedad</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como sociedad o población.</td>
-  </tr>
-  <tr>
-    <td>TECH</td>
-    <td>Ciencia y tecnología</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como ciencia y tecnología.</td>
-  </tr>
-  <tr>
-    <td>TRAN</td>
-    <td>Transporte</td>
-    <td>Bajo este concepto se incluyen datasets que cubren aspectos relacionados al transporte.</td>
-  </tr>
+    <tr>
+      <td>Código (authority code)</td>
+      <td>Etiqueta (label)</td>
+      <td>Descripción (description)</td>
+    </tr>
+    <tr>
+      <td>AGRI</td>
+      <td>Agroganadería, pesca y forestación</td>
+      <td>Por ejemplo: 'Lechería: precio pagado al productor' o 'Superficie forestada'.</td>
+    </tr>
+    <tr>
+      <td>ECON</td>
+      <td>Economía y finanzas</td>
+      <td>Por ejemplo: 'Deuda pública'.</td>
+    </tr>
+    <tr>
+      <td>EDUC</td>
+      <td>Educación, cultura y deportes</td>
+      <td>Por ejemplo: 'Registro de Establecimientos Educativos'.</td>
+    </tr>
+    <tr>
+      <td>ENER</td>
+      <td>Energía</td>
+      <td>Por ejemplo: 'Productos mineros exportados' o 'Precios del GNC'.</td>
+    </tr>
+    <tr>
+      <td>ENVI</td>
+      <td>Medio ambiente</td>
+      <td>Por ejemplo: 'Operadores de residuos peligrosos'.</td>
+    </tr>
+    <tr>
+      <td>GOVE</td>
+      <td>Gobierno y sector público</td>
+      <td>Por ejemplo: 'Inmuebles del estado Nacional'.</td>
+    </tr>
+    <tr>
+      <td>HEAL</td>
+      <td>Salud</td>
+      <td>Por ejemplo: 'Estadísticas nacionales de VIH/SIDA'.</td>
+    </tr>
+    <tr>
+      <td>INTR</td>
+      <td>Asuntos internacionales</td>
+      <td>Por ejemplo: 'Representaciones argentinas en el exterior'.</td>
+    </tr>
+    <tr>
+      <td>JUST</td>
+      <td>Justicia, seguridad y legales</td>
+      <td>Por ejemplo:'Censo penitenciario'.</td>
+    </tr>
+    <tr>
+      <td>REGI</td>
+      <td>Regiones y ciudades</td>
+      <td>Por ejemplo: 'Departamentos de la provincia de Río Negro'.</td>
+    </tr>
+    <tr>
+      <td>SOCI</td>
+      <td>Población y sociedad</td>
+      <td>Por ejemplo: 'Turistas residentes que viajan por Argentina'.</td>
+    </tr>
+    <tr>
+      <td>TECH</td>
+      <td>Ciencia y tecnología</td>
+      <td>Por ejemplo: 'Recursos humanos en ciencia y tecnología'.</td>
+    </tr>
+    <tr>
+      <td>TRAN</td>
+      <td>Transporte</td>
+      <td>Por ejemplo: 'Estadísticas viales'.</td>
+    </tr>
 </table>
-
 
 ## Anexo II - Pautas para la selección de etiquetas
 
@@ -1539,6 +1537,80 @@ Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura
     }
   ]
 }
+```
+
+## Anexo V - Taxonomía temática global de la APN para los datasets (JSON)
+
+Esta es la [taxonomía temática global](https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/standards/metadata/superThemeTaxonomy.json):
+
+```json
+[
+    {
+        "id": "AGRI",
+        "label": "Agroganadería, pesca y forestación",
+        "description": "Por ejemplo: “Lechería: precio pagado al productor” o “Superficie forestada”."
+    },
+    {
+        "id": "ECON",
+        "label": "Economía y finanzas",
+        "description": "Por ejemplo: “Deuda pública”."
+    },
+    {
+        "id": "EDUC",
+        "label": "Educación, cultura y deportes",
+        "description": "Por ejemplo: “Registro de Establecimientos Educativos”."
+    },
+    {
+        "id": "ENER",
+        "label": "Energía",
+        "description": "Por ejemplo: “Productos mineros exportados” o “Precios del GNC”."
+    },
+    {
+        "id": "ENVI",
+        "label": "Medio ambiente",
+        "description": "Por ejemplo: “Operadores de residuos peligrosos”."
+    },
+    {
+        "id": "GOVE",
+        "label": "Gobierno y sector público",
+        "description": "Por ejemplo: “Inmuebles del estado Nacional”."
+    },
+    {
+        "id": "HEAL",
+        "label": "Salud",
+        "description": "Por ejemplo: “Estadísticas nacionales de VIH/SIDA”."
+    },
+    {
+        "id": "INTR",
+        "label": "Asuntos internacionales",
+        "description": "Por ejemplo: “Representaciones argentinas en el exterior”."
+    },
+    {
+        "id": "JUST",
+        "label": "Justicia, seguridad y legales",
+        "description": "Por ejemplo:”Censo penitenciario”."
+    },
+    {
+        "id": "REGI",
+        "label": "Regiones y ciudades",
+        "description": "Por ejemplo: “Departamentos de la provincia de Río Negro”."
+    },
+    {
+        "id": "SOCI",
+        "label": "Población y sociedad",
+        "description": "Por ejemplo: “Turistas residentes que viajan por Argentina”."
+    },
+    {
+        "id": "TECH",
+        "label": "Ciencia y tecnología",
+        "description": "Por ejemplo: “Recursos humanos en ciencia y tecnología”."
+    },
+    {
+        "id": "TRAN",
+        "label": "Transporte",
+        "description": "Por ejemplo: “Estadísticas viales”."
+    }
+]
 ```
 
 ## Anexo VI - Ejemplo de metadatos como texto

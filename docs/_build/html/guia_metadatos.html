@@ -119,6 +119,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas">Anexo II - Pautas para la selección de etiquetas</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#anexo-iv-ejemplo-de-data-json">Anexo IV - Ejemplo de data.json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json">Anexo V - Taxonomía temática global de la APN para los datasets (JSON)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#anexo-vi-ejemplo-de-metadatos-como-texto">Anexo VI - Ejemplo de metadatos como texto</a></li>
 </ul>
 </li>
@@ -1177,77 +1178,76 @@ any: Campo que puede contener valores de cualquier tipo.</td>
 </ul>
 <p><strong>La ventaja de usar una súper taxonomía</strong> temática es que** facilita la clasificación de datasets** por parte de un usuario según un conjunto de categorías temáticas más generales, que son interoperables con las usadas por otros países del mundo. Esto, a su vez, <strong>facilita la clasificación de datasets cosechados por el Portal Nacional de Datos</strong>.</p>
 <table>
-  <tr>
-    <td>Código
-(authority code)</td>
-    <td>Etiqueta (label)</td>
-    <td>Descripción (description)</td>
-  </tr>
-  <tr>
-    <td>AGRI</td>
-    <td>Agricultura, pesca, silvicultura y alimentación</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como agricultura, pesca, forestación o alimentos.</td>
-  </tr>
-  <tr>
-    <td>ECON</td>
-    <td>Economía y finanzas</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como economía o finanzas.</td>
-  </tr>
-  <tr>
-    <td>EDUC</td>
-    <td>Educación, cultura y deportes</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como educación, cultura o deporte.</td>
-  </tr>
-  <tr>
-    <td>ENER</td>
-    <td>Energía</td>
-    <td>Bajo este concepto se incluyen datasets que cubre aspectos de energía.</td>
-  </tr>
-  <tr>
-    <td>ENVI</td>
-    <td>Medio ambiente</td>
-    <td>Bajo este concepto se incluyen datasets que cubren aspectos de medioambiente.</td>
-  </tr>
-  <tr>
-    <td>GOVE</td>
-    <td>Gobierno y sector público</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como gobierno y sector público.</td>
-  </tr>
-  <tr>
-    <td>HEAL</td>
-    <td>Salud</td>
-    <td>Bajo este concepto se incluyen datasets que cubren aspectos relacionados a la salud.</td>
-  </tr>
-  <tr>
-    <td>INTR</td>
-    <td>Asuntos internacionales</td>
-    <td>Bajo este concepto se incluyen datasets que cubren aspectos relacionados a asuntos internacionales.</td>
-  </tr>
-  <tr>
-    <td>JUST</td>
-    <td>Justicia, sistema legal y seguridad pública</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales justicia, sistema legal o seguridad pública.</td>
-  </tr>
-  <tr>
-    <td>REGI</td>
-    <td>Regiones y ciudades</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como regiones o ciudades.</td>
-  </tr>
-  <tr>
-    <td>SOCI</td>
-    <td>Población y sociedad</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como sociedad o población.</td>
-  </tr>
-  <tr>
-    <td>TECH</td>
-    <td>Ciencia y tecnología</td>
-    <td>Bajo este concepto se incluyen datasets que cubren dominios tales como ciencia y tecnología.</td>
-  </tr>
-  <tr>
-    <td>TRAN</td>
-    <td>Transporte</td>
-    <td>Bajo este concepto se incluyen datasets que cubren aspectos relacionados al transporte.</td>
-  </tr>
+    <tr>
+      <td>Código (authority code)</td>
+      <td>Etiqueta (label)</td>
+      <td>Descripción (description)</td>
+    </tr>
+    <tr>
+      <td>AGRI</td>
+      <td>Agroganadería, pesca y forestación</td>
+      <td>Por ejemplo: 'Lechería: precio pagado al productor' o 'Superficie forestada'.</td>
+    </tr>
+    <tr>
+      <td>ECON</td>
+      <td>Economía y finanzas</td>
+      <td>Por ejemplo: 'Deuda pública'.</td>
+    </tr>
+    <tr>
+      <td>EDUC</td>
+      <td>Educación, cultura y deportes</td>
+      <td>Por ejemplo: 'Registro de Establecimientos Educativos'.</td>
+    </tr>
+    <tr>
+      <td>ENER</td>
+      <td>Energía</td>
+      <td>Por ejemplo: 'Productos mineros exportados' o 'Precios del GNC'.</td>
+    </tr>
+    <tr>
+      <td>ENVI</td>
+      <td>Medio ambiente</td>
+      <td>Por ejemplo: 'Operadores de residuos peligrosos'.</td>
+    </tr>
+    <tr>
+      <td>GOVE</td>
+      <td>Gobierno y sector público</td>
+      <td>Por ejemplo: 'Inmuebles del estado Nacional'.</td>
+    </tr>
+    <tr>
+      <td>HEAL</td>
+      <td>Salud</td>
+      <td>Por ejemplo: 'Estadísticas nacionales de VIH/SIDA'.</td>
+    </tr>
+    <tr>
+      <td>INTR</td>
+      <td>Asuntos internacionales</td>
+      <td>Por ejemplo: 'Representaciones argentinas en el exterior'.</td>
+    </tr>
+    <tr>
+      <td>JUST</td>
+      <td>Justicia, seguridad y legales</td>
+      <td>Por ejemplo:'Censo penitenciario'.</td>
+    </tr>
+    <tr>
+      <td>REGI</td>
+      <td>Regiones y ciudades</td>
+      <td>Por ejemplo: 'Departamentos de la provincia de Río Negro'.</td>
+    </tr>
+    <tr>
+      <td>SOCI</td>
+      <td>Población y sociedad</td>
+      <td>Por ejemplo: 'Turistas residentes que viajan por Argentina'.</td>
+    </tr>
+    <tr>
+      <td>TECH</td>
+      <td>Ciencia y tecnología</td>
+      <td>Por ejemplo: 'Recursos humanos en ciencia y tecnología'.</td>
+    </tr>
+    <tr>
+      <td>TRAN</td>
+      <td>Transporte</td>
+      <td>Por ejemplo: 'Estadísticas viales'.</td>
+    </tr>
 </table></div>
 <div class="section" id="anexo-ii-pautas-para-la-seleccion-de-etiquetas">
 <span id="anexo-ii-pautas-para-la-seleccion-de-etiquetas"></span><h2>Anexo II - Pautas para la selección de etiquetas<a class="headerlink" href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas" title="Permalink to this headline">¶</a></h2>
@@ -1518,6 +1518,79 @@ any: Campo que puede contener valores de cualquier tipo.</td>
     <span class="p">}</span>
   <span class="p">]</span>
 <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json">
+<span id="anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json"></span><h2>Anexo V - Taxonomía temática global de la APN para los datasets (JSON)<a class="headerlink" href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json" title="Permalink to this headline">¶</a></h2>
+<p>Esta es la <a class="reference external" href="https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/standards/metadata/superThemeTaxonomy.json">taxonomía temática global</a>:</p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;AGRI&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Agroganadería, pesca y forestación&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Lechería: precio pagado al productor” o “Superficie forestada”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;ECON&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Economía y finanzas&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Deuda pública”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;EDUC&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación, cultura y deportes&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Registro de Establecimientos Educativos”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;ENER&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Energía&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Productos mineros exportados” o “Precios del GNC”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;ENVI&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Medio ambiente&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Operadores de residuos peligrosos”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;GOVE&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Gobierno y sector público&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Inmuebles del estado Nacional”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;HEAL&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Salud&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Estadísticas nacionales de VIH/SIDA”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;INTR&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Asuntos internacionales&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Representaciones argentinas en el exterior”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;JUST&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Justicia, seguridad y legales&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo:”Censo penitenciario”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;REGI&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Regiones y ciudades&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Departamentos de la provincia de Río Negro”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;SOCI&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Población y sociedad&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Turistas residentes que viajan por Argentina”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;TECH&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Ciencia y tecnología&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Recursos humanos en ciencia y tecnología”.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;TRAN&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Transporte&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Por ejemplo: “Estadísticas viales”.&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </div>
