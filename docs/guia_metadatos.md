@@ -1182,6 +1182,12 @@ Además del uso de una taxonomía propia de cada catálogo de datos, **recomenda
 **La ventaja de usar una súper taxonomía** temática es que** facilita la clasificación de datasets** por parte de un usuario según un conjunto de categorías temáticas más generales, que son interoperables con las usadas por otros países del mundo. Esto, a su vez, **facilita la clasificación de datasets cosechados por el Portal Nacional de Datos**.
 
 <table>
+  <colgroup>
+    <col style="width:33%">
+    <col style="width:33%">
+    <col style="width:33%">
+  </colgroup>
+  <tbody>
     <tr>
       <td>Código (authority code)</td>
       <td>Etiqueta (label)</td>
@@ -1252,6 +1258,7 @@ Además del uso de una taxonomía propia de cada catálogo de datos, **recomenda
       <td>Transporte</td>
       <td>Por ejemplo: 'Estadísticas viales'.</td>
     </tr>
+    </tbody>
 </table>
 
 ## Anexo II - Pautas para la selección de etiquetas
