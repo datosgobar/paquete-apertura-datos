@@ -275,6 +275,13 @@
 <p>Algunos de estos formatos, no siempre se adecuan a los niveles de apertura deseados. Te ofrecemos algunas pautas y recomendaciones que facilitan la adaptación y/o transformación de estos formatos hacia otros más abiertos y fácilmente reutilizables.</p>
 <p>En este cuadro consideramos algunos de los formatos más usados y evaluamos su nivel de apertura:</p>
 <table>
+  <colgroup>
+    <col style="width:17%">
+    <col style="width:49%">
+    <col style="width:17%">
+    <col style="width:17%">
+  </colgroup>
+<tbody>
   <tr>
     <td>Formato</td>
     <td>Descripción breve</td>
@@ -312,6 +319,7 @@ Es un formato abierto.</td>
     <td>Estructurados</td>
     <td>Alta</td>
   </tr>
+</tbody>
 </table><p>Antes de seguir, introduciremos dos conceptos que se usarán a lo largo de toda la guía:</p>
 <ul class="simple">
 <li><strong>Distribución o Recurso:</strong> Una distribución o recurso es la unidad mínima en la que se publican datos. Se trata de los archivos que pueden ser descargados y re-utilizados por un usuario. Los recursos pueden tener diversos formatos (.csv, .shp, etc.).</li>
@@ -438,6 +446,7 @@ Es un formato abierto.</td>
 </ul>
 <p><span class="recomendado"><strong>Recomendado</strong></span></p>
 <table>
+<tbody>
     <td>sucursal_id</td>
     <td>sucursal_desc</td>
   </tr>
@@ -453,6 +462,7 @@ Es un formato abierto.</td>
     <td>3</td>
     <td>La Quiaca</td>
   </tr>
+</tbody>
 </table></div>
 <div class="section" id="nivel-de-granularidad-de-los-datos">
 <span id="nivel-de-granularidad-de-los-datos"></span><h4>Nivel de granularidad de los datos<a class="headerlink" href="#nivel-de-granularidad-de-los-datos" title="Permalink to this headline">¶</a></h4>
@@ -460,6 +470,13 @@ Es un formato abierto.</td>
 <p>Dicho esto, el dato agregado &#8220;convenios firmados por provincia&#8221; siempre se puede calcular a partir de un proceso del dataset más desagregado, pero esto no es así a la inversa (es imposible recuperar los datos a nivel de municipio desde el dataset provincial).</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span> - datos con subtotales y/o totales incluidos (diferentes niveles de granularidad)</p>
 <table>
+  <colgroup>
+    <col style="width:21%">
+    <col style="width:21%">
+    <col style="width:28%">
+    <col style="width:30%">
+  </colgroup>
+<tbody>
   <tr>
     <td>provincia_nombre</td>
     <td>municipio_nombre</td>
@@ -501,8 +518,16 @@ Es un formato abierto.</td>
     <td>2011</td>
     <td>30</td>
   </tr>
+</tbody>
 </table><p><span class="recomendado"><strong>Recomendado</strong></span> - datos de un mismo nivel de granularidad</p>
 <table>
+  <colgroup>
+    <col style="width:21%">
+    <col style="width:21%">
+    <col style="width:28%">
+    <col style="width:30%">
+  </colgroup>
+<tbody>
   <tr>
     <td>provincia_nombre</td>
     <td>municipio_nombre</td>
@@ -527,25 +552,39 @@ Es un formato abierto.</td>
     <td>2011</td>
     <td>5</td>
   </tr>
+</tbody>
 </table></div>
 <div class="section" id="usar-orientacion-vertical-en-lugar-de-horizontal">
 <span id="usar-orientacion-vertical-en-lugar-de-horizontal"></span><h4>Usar orientación vertical en lugar de horizontal<a class="headerlink" href="#usar-orientacion-vertical-en-lugar-de-horizontal" title="Permalink to this headline">¶</a></h4>
 <p>Es preferible que la orientación de los datos sea &#8220;vertical&#8221; en lugar de “horizontal” en los casos en que esto sea posible. La principal razón es que los datos orientados de manera vertical facilitan el tratamiento y análisis de los datos.</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span> - Orientación horizontal</p>
 <table>
+  <colgroup>
+    <col style="width:17%">
+    <col style="width:17%">
+    <col style="width:28%">
+    <col style="width:28%">
+  </colgroup><tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
-    <td>solicitudes_poda_y_arbolado_numero</td>
-    <td>solicitudes_recoleccion_residuos_numero</td>
+    <td style="font-size:11px;">solicitudes_poda_y_arbolado_numero</td>
+    <td style="font-size:11px;">solicitudes_recoleccion_residuos_numero</td>
   </tr>
   <tr>
     <td>Municipalidad X</td>
     <td>2015</td>
     <td>340</td>
     <td>198</td>
+</tbody>
 </table><p><span class="recomendado"><strong>Recomendado</strong></span> - Orientación vertical</p>
 <table>
+  <colgroup>
+    <col style="width:17%">
+    <col style="width:17%">
+    <col style="width:28%">
+    <col style="width:28%">
+  </colgroup><tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
@@ -564,24 +603,28 @@ Es un formato abierto.</td>
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
+</tbody>
 </table></div>
 <div class="section" id="incluir-solo-un-atributo-por-campo">
 <span id="incluir-solo-un-atributo-por-campo"></span><h4>Incluir sólo un atributo por campo<a class="headerlink" href="#incluir-solo-un-atributo-por-campo" title="Permalink to this headline">¶</a></h4>
 <p>Se recomienda definir los campos de forma atómica de modo de incluir un sólo atributo por elemento, en lugar de datos múltiples, generando campos adicionales de ser necesario.</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span> - múltiples datos en una celda</p>
 <table>
+<tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
-    <td>categoria_solicitudes_numero_y_tipo</td>
+    <td style="font-size:11px;">categoria_solicitudes_numero_y_tipo</td>
   </tr>
   <tr>
     <td>Municipalidad X</td>
     <td>2015</td>
     <td>Poda y arbolado - 340
 Recolección de residuos - 198</td>
+</tbody>
 </table><p><span class="recomendado"><strong>Recomendado</strong></span> - un dato por celda</p>
 <table>
+<tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
@@ -600,6 +643,7 @@ Recolección de residuos - 198</td>
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
+</tbody>
 </table></div>
 <div class="section" id="valores-nulos-desconocidos-o-en-blanco-en-campos-numericos">
 <span id="valores-nulos-desconocidos-o-en-blanco-en-campos-numericos"></span><h4>Valores nulos, desconocidos o en blanco en campos numéricos<a class="headerlink" href="#valores-nulos-desconocidos-o-en-blanco-en-campos-numericos" title="Permalink to this headline">¶</a></h4>
@@ -608,6 +652,7 @@ Recolección de residuos - 198</td>
 <p>Es importante destacar, por ejemplo, que cuando un valor numérico sea &#8220;0&#8221; siempre debe ponerse un “0” como dato (y no un valor nulo, en blanco o vacío).</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span> - texto presente en campos numéricos</p>
 <table>
+<tbody>
   <tr>
     <td>solicitudes_numero</td>
   </tr>
@@ -631,8 +676,10 @@ Recolección de residuos - 198</td>
   <tr>
     <td>567</td>
   </tr>
+</tbody>
 </table><p><span class="recomendado"><strong>Recomendado</strong></span> - texto excluido de campos numéricos</p>
 <table>
+<tbody>
   <tr>
     <td>solicitudes_numero</td>
     <td>solicitudes_numero_missing_desc</td>
@@ -665,6 +712,7 @@ Recolección de residuos - 198</td>
     <td>567</td>
     <td></td>
   </tr>
+</tbody>
 </table></div>
 </div>
 <div class="section" id="recomendaciones-para-estructurar-planillas-de-calculo">
@@ -675,6 +723,7 @@ Recolección de residuos - 198</td>
 <p>Recomendamos usar celdas simples y, en ningún caso, combinar celdas.</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span> - celdas combinadas</p>
 <table>
+<tbody>
   <tr>
     <td>proveedor_nombre</td>
     <td>contacto_datos</td>
@@ -689,8 +738,10 @@ Recolección de residuos - 198</td>
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
+</tbody>
 </table><p><span class="recomendado"><strong>Recomendado</strong></span> - celdas simples, sin combinar</p>
 <table>
+<tbody>
   <tr>
     <td>proveedor_nombre</td>
     <td>contacto_correo_electronico</td>
@@ -701,12 +752,14 @@ Recolección de residuos - 198</td>
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
+</tbody>
 </table></div>
 <div class="section" id="fila-de-encabezado">
 <span id="fila-de-encabezado"></span><h4>Fila de encabezado<a class="headerlink" href="#fila-de-encabezado" title="Permalink to this headline">¶</a></h4>
 <p>Los datos deben contener sólo una fila de encabezado. Desde la segunda fila en adelante, sólo debe haber datos, pero nunca un encabezado.</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span> - múltiples filas de encabezado</p>
 <table>
+<tbody>
   <tr>
     <td>Nombre del</td>
     <td>Dirección de correo</td>
@@ -721,8 +774,10 @@ Recolección de residuos - 198</td>
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
+</tbody>
 </table><p><span class="recomendado"><strong>Recomendado</strong></span> - encabezado de una única fila</p>
 <table>
+<tbody>
   <tr>
     <td>proveedor_nombre</td>
     <td>contacto_correo_electronico</td>
@@ -733,6 +788,7 @@ Recolección de residuos - 198</td>
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
+</tbody>
 </table></div>
 <div class="section" id="celdas-vacias-en-filas-para-agrupar-conceptos">
 <span id="celdas-vacias-en-filas-para-agrupar-conceptos"></span><h4>Celdas vacías en filas para agrupar conceptos<a class="headerlink" href="#celdas-vacias-en-filas-para-agrupar-conceptos" title="Permalink to this headline">¶</a></h4>
@@ -740,6 +796,7 @@ Recolección de residuos - 198</td>
 <p>Este error es muy común en la construcción de planillas de cálculo y suele generar problemas graves cuando cambia el orden original de las filas. Además, impide el uso de tablas dinámicas y otras formas de analizar los datos.</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span> - primera celda de la segunda fila vacía</p>
 <table>
+<tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
@@ -757,8 +814,10 @@ Recolección de residuos - 198</td>
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
+</tbody>
 </table><p><span class="recomendado"><strong>Recomendado</strong></span> - primera celda de la segunda fila completa</p>
 <table>
+<tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
@@ -777,11 +836,18 @@ Recolección de residuos - 198</td>
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
+</tbody>
 </table></div>
 <div class="section" id="formato-de-celdas">
 <span id="formato-de-celdas"></span><h4>Formato de celdas<a class="headerlink" href="#formato-de-celdas" title="Permalink to this headline">¶</a></h4>
 <p>Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de datos de que se trate. Específicamente, <strong>los números</strong> siempre deben estar en celdas de formato/tipo &#8220;número&#8221;, <strong>los campos de tipo textual</strong> deben estar en celdas de formato/tipo “texto” y <strong>los campos de tipo fecha</strong> deben estar en celdas de formato/tipo “fecha”.</p>
 <table>
+  <colgroup>
+    <col style="width:30%">
+    <col style="width:40%">
+    <col style="width:30%">
+  </colgroup>
+<tbody>
   <tr>
     <td>audiencia_fecha_hora</td>
     <td>audiencia_sujeto_obligado_nombre</td>
@@ -797,6 +863,7 @@ Recolección de residuos - 198</td>
     <td>Texto</td>
     <td>Número</td>
   </tr>
+</tbody>
 </table><p>Mantener el formato correcto de las celdas según el tipo de datos que contengan:</p>
 <ul class="simple">
 <li>Mejora las las probabilidades de que una exportación a otro formato salga correctamente.</li>
@@ -840,6 +907,7 @@ Recolección de residuos - 198</td>
 <p>Ejemplo:</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span></p>
 <table>
+<tbody>
   <tr>
     <td>localidad_nombre</td>
   </tr>
@@ -854,8 +922,10 @@ Recolección de residuos - 198</td>
   <tr>
     <td>Ciudad de Buenos Aires</td>
   </tr>
+</tbody>
 </table><p><span class="recomendado"><strong>Recomendado</strong></span> - primera celda de la segunda fila completa</p>
 <table>
+<tbody>
   <tr>
     <td>localidad_nombre</td>
   </tr>
@@ -871,6 +941,7 @@ Recolección de residuos - 198</td>
   <tr>
     <td>Ciudad Autónoma de Buenos Aires</td>
   </tr>
+</tbody>
 </table><p>En el ejemplo anterior, los cuatro valores de texto refieren a la misma entidad. Debe elegirse una única forma de referirse a la misma y usarla en todos los casos.</p>
 <p>Siempre que sea posible, la elección deberá fundamentarse en el estándar establecido para ese tipo de entidad (para más información ver el Guía para la identificación y uso de entidades interoperables). En el caso de no existir un estándar, deberá adecuarse a las pautas generales contexto del dataset de que se trate.</p>
 </div>
@@ -903,6 +974,7 @@ Recolección de residuos - 198</td>
 <p>A nivel internacional, el estándar para los números telefónicos fue desarrollado por el &#8220;Sector de Normalización de las Telecomunicaciones de la Unión Internacional de Telecomunicaciones&#8221; (ITU Telecommunication Standardization Sector) bajo la recomendación <a class="reference external" href="https://www.itu.int/rec/T-REC-E.164/es">E.164</a>.</p>
 <p>Para el caso de los números nacionales, el ENACOM tiene la competencia sobre el sistema de numeración telefónica. Este organismo determina que el número nacional de abonado debe estar compuesto por 10 dígitos. Estos 10 dígitos están conformados por un indicativo interurbano más un número de abonado. Pudiendo el indicativo interurbano tener entre 2 y 4 dígitos, y el número de abonado entre 6 y 8 dígitos.</p>
 <table>
+<tbody>
   <tr>
     <td>Indicativo interurbano (ámbito geográfico al que corresponde)</td>
     <td>Número de abonado</td>
@@ -923,10 +995,12 @@ Recolección de residuos - 198</td>
     <td>43XXXX</td>
     <td>383743XXXX</td>
   </tr>
+</tbody>
 </table><p>Esta numeración es válida para los teléfonos móviles, pero dado que para llamar a un móvil desde un teléfono fijo es necesario anteponer &#8220;15&#8221; al número de abonado, es necesario que el registro del número telefónico especifique de alguna manera si se trata de un móvil o de un teléfono fijo.</p>
 <p>Al no existir estándares nacionales para la inclusión de números telefónicos en recursos de datos, los números telefónicos suelen indicarse de múltiples maneras. Por ejemplo:</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span> - Múltiples formas de indicar un número telefónico</p>
 <table>
+<tbody>
   <tr>
     <td>proveedor_nombre</td>
     <td>contacto_correo_electronico</td>
@@ -951,6 +1025,7 @@ Recolección de residuos - 198</td>
     <td>ejemplo4@ejemplo4.com.ar</td>
     <td>011 15 6344-XXXX</td>
   </tr>
+</tbody>
 </table><p>Para los recursos que contengan números telefónicos nacionales recomendamos como mínimo:</p>
 <ul class="simple">
 <li>Respetar el estándar definido por el Número Nacional Interurbano utilizando la conformación de números mediante 10 dígitos.</li>
@@ -960,6 +1035,7 @@ Recolección de residuos - 198</td>
 <p>Con las salvedades que comentaremos al final de este apartado, un posible abordaje sería el de la tabla a continuación:</p>
 <p><span class="recomendado"><strong>Recomendado</strong></span> - adecuado al estándar del Número Nacional Interurbano</p>
 <table>
+<tbody>
   <tr>
     <td>proveedor_nombre</td>
     <td>contacto_correo_electronico</td>
@@ -995,6 +1071,7 @@ Recolección de residuos - 198</td>
     <td>11</td>
     <td>6344XXXX</td>
   </tr>
+</tbody>
 </table><p>Esta recomendación no contempla estos casos específicos:</p>
 <ul class="simple">
 <li>No será aplicable a números de uso público, ejemplo: 100, Bomberos; 911, Policía Federal; etc.</li>
@@ -1008,6 +1085,7 @@ Recolección de residuos - 198</td>
 <p>Para registrar datos de coordenadas geográficas de puntos, usamos números decimales. Los campos deberán llamarse &#8220;latitud&#8221; y “longitud”. Cuando sea conveniente especificar el nombre de la entidad de la cual se consignan las coordenadas, se usarán los sufijos “_latitud” y “_longitud”.</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span></p>
 <table>
+<tbody>
   <tr>
     <td>latitud</td>
     <td>longitud</td>
@@ -1016,8 +1094,10 @@ Recolección de residuos - 198</td>
     <td>34º 11' 30''</td>
     <td>58º 43' 20''</td>
   </tr>
+</tbody>
 </table><p><span class="recomendado"><strong>Recomendado</strong></span></p>
 <table>
+<tbody>
   <tr>
     <td>latitud</td>
     <td>longitud</td>
@@ -1026,6 +1106,7 @@ Recolección de residuos - 198</td>
     <td>-34.6043222</td>
     <td>-58.4134862</td>
   </tr>
+</tbody>
 </table></div>
 </div>
 <div class="section" id="tiempo">

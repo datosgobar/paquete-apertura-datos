@@ -89,6 +89,13 @@ Algunos de estos formatos, no siempre se adecuan a los niveles de apertura desea
 En este cuadro consideramos algunos de los formatos más usados y evaluamos su nivel de apertura:
 
 <table>
+  <colgroup>
+    <col style="width:17%">
+    <col style="width:49%">
+    <col style="width:17%">
+    <col style="width:17%">
+  </colgroup>
+<tbody>
   <tr>
     <td>Formato</td>
     <td>Descripción breve</td>
@@ -126,6 +133,7 @@ Es un formato abierto.</td>
     <td>Estructurados</td>
     <td>Alta</td>
   </tr>
+</tbody>
 </table>
 
 Antes de seguir, introduciremos dos conceptos que se usarán a lo largo de toda la guía:
@@ -294,6 +302,7 @@ Los campos que sean identificadores o códigos, deberán incluir el sufijo "_id"
 <span class="recomendado">**Recomendado**</span>
 
 <table>
+<tbody>
     <td>sucursal_id</td>
     <td>sucursal_desc</td>
   </tr>
@@ -309,6 +318,7 @@ Los campos que sean identificadores o códigos, deberán incluir el sufijo "_id"
     <td>3</td>
     <td>La Quiaca</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -321,6 +331,13 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
 <span class="no-recomendado">**No recomendado**</span> - datos con subtotales y/o totales incluidos (diferentes niveles de granularidad)
 
 <table>
+  <colgroup>
+    <col style="width:21%">
+    <col style="width:21%">
+    <col style="width:28%">
+    <col style="width:30%">
+  </colgroup>
+<tbody>
   <tr>
     <td>provincia_nombre</td>
     <td>municipio_nombre</td>
@@ -362,12 +379,20 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
     <td>2011</td>
     <td>30</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - datos de un mismo nivel de granularidad
 
 <table>
+  <colgroup>
+    <col style="width:21%">
+    <col style="width:21%">
+    <col style="width:28%">
+    <col style="width:30%">
+  </colgroup>
+<tbody>
   <tr>
     <td>provincia_nombre</td>
     <td>municipio_nombre</td>
@@ -392,6 +417,7 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
     <td>2011</td>
     <td>5</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -402,23 +428,40 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
 <span class="no-recomendado">**No recomendado**</span> - Orientación horizontal
 
 <table>
+  <colgroup>
+    <col style="width:17%">
+    <col style="width:17%">
+    <col style="width:28%">
+    <col style="width:28%">
+  </colgroup>
+
+<tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
-    <td>solicitudes_poda_y_arbolado_numero</td>
-    <td>solicitudes_recoleccion_residuos_numero</td>
+    <td style="font-size:11px;">solicitudes_poda_y_arbolado_numero</td>
+    <td style="font-size:11px;">solicitudes_recoleccion_residuos_numero</td>
   </tr>
   <tr>
     <td>Municipalidad X</td>
     <td>2015</td>
     <td>340</td>
     <td>198</td>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - Orientación vertical
 
 <table>
+  <colgroup>
+    <col style="width:17%">
+    <col style="width:17%">
+    <col style="width:28%">
+    <col style="width:28%">
+  </colgroup>
+
+<tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
@@ -437,6 +480,7 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -447,22 +491,25 @@ Se recomienda definir los campos de forma atómica de modo de incluir un sólo a
 <span class="no-recomendado">**No recomendado**</span> - múltiples datos en una celda
 
 <table>
+<tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
-    <td>categoria_solicitudes_numero_y_tipo</td>
+    <td style="font-size:11px;">categoria_solicitudes_numero_y_tipo</td>
   </tr>
   <tr>
     <td>Municipalidad X</td>
     <td>2015</td>
     <td>Poda y arbolado - 340
 Recolección de residuos - 198</td>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - un dato por celda
 
 <table>
+<tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
@@ -481,6 +528,7 @@ Recolección de residuos - 198</td>
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -495,6 +543,7 @@ Es importante destacar, por ejemplo, que cuando un valor numérico sea "0" siemp
 <span class="no-recomendado">**No recomendado**</span> - texto presente en campos numéricos
 
 <table>
+<tbody>
   <tr>
     <td>solicitudes_numero</td>
   </tr>
@@ -518,12 +567,14 @@ Es importante destacar, por ejemplo, que cuando un valor numérico sea "0" siemp
   <tr>
     <td>567</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - texto excluido de campos numéricos
 
 <table>
+<tbody>
   <tr>
     <td>solicitudes_numero</td>
     <td>solicitudes_numero_missing_desc</td>
@@ -556,6 +607,7 @@ Es importante destacar, por ejemplo, que cuando un valor numérico sea "0" siemp
     <td>567</td>
     <td></td>
   </tr>
+</tbody>
 </table>
 
 
@@ -570,6 +622,7 @@ Recomendamos usar celdas simples y, en ningún caso, combinar celdas.
 <span class="no-recomendado">**No recomendado**</span> - celdas combinadas
 
 <table>
+<tbody>
   <tr>
     <td>proveedor_nombre</td>
     <td>contacto_datos</td>
@@ -584,12 +637,14 @@ Recomendamos usar celdas simples y, en ningún caso, combinar celdas.
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - celdas simples, sin combinar
 
 <table>
+<tbody>
   <tr>
     <td>proveedor_nombre</td>
     <td>contacto_correo_electronico</td>
@@ -600,6 +655,7 @@ Recomendamos usar celdas simples y, en ningún caso, combinar celdas.
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -610,6 +666,7 @@ Los datos deben contener sólo una fila de encabezado. Desde la segunda fila en 
 <span class="no-recomendado">**No recomendado**</span> - múltiples filas de encabezado
 
 <table>
+<tbody>
   <tr>
     <td>Nombre del</td>
     <td>Dirección de correo</td>
@@ -624,12 +681,14 @@ Los datos deben contener sólo una fila de encabezado. Desde la segunda fila en 
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - encabezado de una única fila
 
 <table>
+<tbody>
   <tr>
     <td>proveedor_nombre</td>
     <td>contacto_correo_electronico</td>
@@ -640,6 +699,7 @@ Los datos deben contener sólo una fila de encabezado. Desde la segunda fila en 
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -652,6 +712,7 @@ Este error es muy común en la construcción de planillas de cálculo y suele ge
 <span class="no-recomendado">**No recomendado**</span> - primera celda de la segunda fila vacía
 
 <table>
+<tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
@@ -669,12 +730,14 @@ Este error es muy común en la construcción de planillas de cálculo y suele ge
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - primera celda de la segunda fila completa
 
 <table>
+<tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
@@ -693,6 +756,7 @@ Este error es muy común en la construcción de planillas de cálculo y suele ge
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -701,6 +765,12 @@ Este error es muy común en la construcción de planillas de cálculo y suele ge
 Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de datos de que se trate. Específicamente, **los números** siempre deben estar en celdas de formato/tipo "número", **los campos de tipo textual** deben estar en celdas de formato/tipo “texto” y **los campos de tipo fecha** deben estar en celdas de formato/tipo “fecha”.
 
 <table>
+  <colgroup>
+    <col style="width:30%">
+    <col style="width:40%">
+    <col style="width:30%">
+  </colgroup>
+<tbody>
   <tr>
     <td>audiencia_fecha_hora</td>
     <td>audiencia_sujeto_obligado_nombre</td>
@@ -716,6 +786,7 @@ Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de
     <td>Texto</td>
     <td>Número</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -764,6 +835,7 @@ Ejemplo:
 <span class="no-recomendado">**No recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>localidad_nombre</td>
   </tr>
@@ -778,12 +850,14 @@ Ejemplo:
   <tr>
     <td>Ciudad de Buenos Aires</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - primera celda de la segunda fila completa
 
 <table>
+<tbody>
   <tr>
     <td>localidad_nombre</td>
   </tr>
@@ -799,6 +873,7 @@ Ejemplo:
   <tr>
     <td>Ciudad Autónoma de Buenos Aires</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -837,6 +912,7 @@ A nivel internacional, el estándar para los números telefónicos fue desarroll
 Para el caso de los números nacionales, el ENACOM tiene la competencia sobre el sistema de numeración telefónica. Este organismo determina que el número nacional de abonado debe estar compuesto por 10 dígitos. Estos 10 dígitos están conformados por un indicativo interurbano más un número de abonado. Pudiendo el indicativo interurbano tener entre 2 y 4 dígitos, y el número de abonado entre 6 y 8 dígitos.
 
 <table>
+<tbody>
   <tr>
     <td>Indicativo interurbano (ámbito geográfico al que corresponde)</td>
     <td>Número de abonado</td>
@@ -857,6 +933,7 @@ Para el caso de los números nacionales, el ENACOM tiene la competencia sobre el
     <td>43XXXX</td>
     <td>383743XXXX</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -867,6 +944,7 @@ Al no existir estándares nacionales para la inclusión de números telefónicos
 <span class="no-recomendado">**No recomendado**</span> - Múltiples formas de indicar un número telefónico
 
 <table>
+<tbody>
   <tr>
     <td>proveedor_nombre</td>
     <td>contacto_correo_electronico</td>
@@ -891,6 +969,7 @@ Al no existir estándares nacionales para la inclusión de números telefónicos
     <td>ejemplo4@ejemplo4.com.ar</td>
     <td>011 15 6344-XXXX</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -905,6 +984,7 @@ Con las salvedades que comentaremos al final de este apartado, un posible aborda
 <span class="recomendado">**Recomendado**</span> - adecuado al estándar del Número Nacional Interurbano
 
 <table>
+<tbody>
   <tr>
     <td>proveedor_nombre</td>
     <td>contacto_correo_electronico</td>
@@ -940,6 +1020,7 @@ Con las salvedades que comentaremos al final de este apartado, un posible aborda
     <td>11</td>
     <td>6344XXXX</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -957,6 +1038,7 @@ Para registrar datos de coordenadas geográficas de puntos, usamos números deci
 <span class="no-recomendado">**No recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>latitud</td>
     <td>longitud</td>
@@ -965,12 +1047,14 @@ Para registrar datos de coordenadas geográficas de puntos, usamos números deci
     <td>34º 11' 30''</td>
     <td>58º 43' 20''</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>latitud</td>
     <td>longitud</td>
@@ -979,6 +1063,7 @@ Para registrar datos de coordenadas geográficas de puntos, usamos números deci
     <td>-34.6043222</td>
     <td>-58.4134862</td>
   </tr>
+</tbody>
 </table>
 
 

@@ -101,6 +101,7 @@ Se recomienda también que el nombre del campo del código sea "pais_id" o, en e
 <span class="no-recomendado">**No recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>pais_origen</td>
     <td>pais_destino</td>
@@ -116,11 +117,13 @@ Se recomienda también que el nombre del campo del código sea "pais_id" o, en e
     <td>argentina</td>
     <td>2456786</td>
   </tr>
+</tbody>
 </table>
 
 <span class="recomendado">**Recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>origen_pais_id</td>
     <td>origen_pais_nombre</td>
@@ -142,6 +145,7 @@ Se recomienda también que el nombre del campo del código sea "pais_id" o, en e
     <td>Argentina</td>
     <td>2456786</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -230,6 +234,7 @@ Resaltamos la importancia de que el tipo de datos del campo de un identificador 
 <span class="no-recomendado">**No recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>provincia</td>
     <td>flujo_comercial_tipo</td>
@@ -255,12 +260,14 @@ Resaltamos la importancia de que el tipo de datos del campo de un identificador 
     <td>Importación</td>
     <td>44040711</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>provincia_id</td>
     <td>provincia_nombre</td>
@@ -291,6 +298,7 @@ Resaltamos la importancia de que el tipo de datos del campo de un identificador 
     <td>Importación</td>
     <td>440407</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -315,6 +323,7 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
 <span class="no-recomendado">**No recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>lugar_nombre</td>
     <td>calle_nombre</td>
@@ -327,12 +336,14 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
     <td>604</td>
     <td>Ciudad Autónoma de Buenos Aires, CABA</td>
   </tr>
+</tbody>
 </table>
 
 
 **Aceptable 1** - sólo dirección normalizada
 
 <table>
+<tbody>
   <tr>
     <td>lugar_nombre</td>
     <td>calle_nombre</td>
@@ -351,12 +362,14 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
     <td>02</td>
     <td>Ciudad Autónoma de Buenos Aires</td>
   </tr>
+</tbody>
 </table>
 
 
 **Aceptable 2** - sólo coordenadas
 
 <table>
+<tbody>
   <tr>
     <td>lugar_nombre</td>
     <td>latitud</td>
@@ -367,12 +380,14 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
     <td>-34.601041</td>
     <td>-58.383079</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - coordenadas y dirección normalizada
 
 <table>
+<tbody>
   <tr>
     <td>lugar_nombre</td>
     <td>calle_nombre</td>
@@ -395,6 +410,7 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
     <td>-34.601041</td>
     <td>-58.383079</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -415,6 +431,7 @@ Ej.: C1426BMD
 <span class="no-recomendado">**No recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>codigo_postal</td>
   </tr>
@@ -430,12 +447,14 @@ Ej.: C1426BMD
   <tr>
     <td>C1426</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>codigo_postal</td>
   </tr>
@@ -451,6 +470,7 @@ Ej.: C1426BMD
   <tr>
     <td>C1426BMD</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -478,6 +498,7 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
 <span class="no-recomendado">**No recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>sujeto_obligado</td>
     <td>representante</td>
@@ -498,12 +519,14 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
     <td>Pérez, José</td>
     <td>Gómez, Carlos J.</td>
   </tr>
+</tbody>
 </table>
 
 
 **Aceptable**
 
 <table>
+<tbody>
   <tr>
     <td>sujeto_obligado_nombre</td>
     <td>sujeto_obligado_apellido</td>
@@ -534,12 +557,14 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
     <td>Carlos Jorge</td>
     <td>Gómez</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>sujeto_obligado_nombre</td>
     <td>sujeto_obligado_apellido</td>
@@ -580,6 +605,7 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
     <td>ARG</td>
     <td>Argentina</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -593,6 +619,7 @@ Las entidades con personería jurídica local (Ej.: empresas argentinas, ONGs ar
 <span class="no-recomendado">**No recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>exportador</td>
   </tr>
@@ -608,12 +635,14 @@ Las entidades con personería jurídica local (Ej.: empresas argentinas, ONGs ar
   <tr>
     <td>Tomates Andinos</td>
   </tr>
+</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>exportador_cuit</td>
     <td>exportador_razon_social</td>
@@ -634,6 +663,7 @@ Las entidades con personería jurídica local (Ej.: empresas argentinas, ONGs ar
     <td>33111111117</td>
     <td>Los Tomates Andinos SRL</td>
   </tr>
+</tbody>
 </table>
 
 
@@ -652,6 +682,7 @@ En el caso de que el dataset pueda contener personas jurídicas fuera de la juri
 <span class="recomendado">**Recomendado**</span>
 
 <table>
+<tbody>
   <tr>
     <td>inversor_id</td>
     <td>inversor_tipo_id</td>
@@ -687,6 +718,7 @@ En el caso de que el dataset pueda contener personas jurídicas fuera de la juri
     <td>DEU</td>
     <td>Alemania</td>
   </tr>
+</tbody>
 </table>
 
 
