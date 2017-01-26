@@ -5,34 +5,35 @@
 
 ## Indice
 
-- [Introducción](#introducci%C3%B3n)
-- [Objetivo de la guía](#objetivo-de-la-gu%C3%ADa)
+- [Introducción](#introduccion)
+- [Objetivo de la guía](#objetivo-de-la-guia)
 - [Formatos abiertos de archivos](#formatos-abiertos-de-archivos)
+  - [CSV](#csv)
   - [JSON](#json)
-- [Fragmentación de archivos](#fragmentaci%C3%B3n-de-archivos)
+- [Fragmentación de archivos](#fragmentacion-de-archivos)
 - [Nomenclatura de archivos](#nomenclatura-de-archivos)
 - [Codificación](#codificaci%C3%B3n)
-- [Estructura y características de los datos tabulares](#estructura-y-caracter%C3%ADsticas-de-los-datos-tabulares)
+- [Estructura y características de los datos tabulares](#estructura-y-caracteristicas-de-los-datos-tabulares)
   - [Recomendaciones generales](#recomendaciones-generales)
     - [Nomenclatura de los campos (nombres de las columnas)](#nomenclatura-de-los-campos-nombres-de-las-columnas)
     - [Nivel de granularidad de los datos](#nivel-de-granularidad-de-los-datos)
     - [Usar orientación vertical en lugar de horizontal](#usar-orientaci%C3%B3n-vertical-en-lugar-de-horizontal)
     - [Incluir sólo un atributo por campo](#incluir-s%C3%B3lo-un-atributo-por-campo)
-    - [Valores nulos, desconocidos o en blanco en campos numéricos](#valores-nulos-desconocidos-o-en-blanco-en-campos-num%C3%A9ricos)
-  - [Recomendaciones para estructurar planillas de cálculo](#recomendaciones-para-estructurar-planillas-de-c%C3%A1lculo)
+    - [Valores nulos, desconocidos o en blanco en campos numéricos](#valores-nulos-desconocidos-o-en-blanco-en-campos-numericos)
+  - [Recomendaciones para estructurar planillas de cálculo](#recomendaciones-para-estructurar-planillas-de-calculo)
     - [Usar celdas simples](#usar-celdas-simples)
     - [Fila de encabezado](#fila-de-encabezado)
-    - [Celdas vacías en filas para agrupar conceptos](#celdas-vac%C3%ADas-en-filas-para-agrupar-conceptos)
+    - [Celdas vacías en filas para agrupar conceptos](#celdas-vacias-en-filas-para-agrupar-conceptos)
     - [Formato de celdas](#formato-de-celdas)
-  - [Exportación a CSV](#exportaci%C3%B3n-a-csv)
-- [Estándares según el tipo de Datos](#est%C3%A1ndares-seg%C3%BAn-el-tipo-de-datos)
+  - [Exportación a CSV](#exportacion-a-csv)
+- [Estándares según el tipo de Datos](#estandares-segun-el-tipo-de-datos)
   - [Texto](#texto)
     - [Entidades](#entidades)
     - [Nombres propios](#nombres-propios)
     - [Siglas](#siglas)
-  - [Número](#n%C3%BAmero)
+  - [Número](#numero)
     - [Moneda](#moneda)
-    - [Números telefónicos](#n%C3%BAmeros-telef%C3%B3nicos)
+    - [Números telefónicos](#numeros-telefonicos)
     - [Coordenadas](#coordenadas)
   - [Tiempo](#tiempo)
     - [Rangos horarios](#rangos-horarios)
@@ -78,7 +79,7 @@ El documento se estructura así:
 
 Estos son los primeros aspectos importantes para la estandarización de datos.
 
-Para una discusión sobre los estándares recomendados en el manejo de datos básicos y fundamentales, transversales a distintas áreas temáticas, se puede consultar la [Guía para la identificación y uso de entidades interoperables](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/Guia%20para%20la%20identificaci%C3%B3n%20y%20uso%20de%20entidades%20interoperables%20(v0.1).pdf).
+Para una discusión sobre los estándares recomendados en el manejo de datos básicos y fundamentales, transversales a distintas áreas temáticas, se puede consultar la [Guía para la identificación y uso de entidades interoperables](/guia_interoperables.md).
 
 ## Formatos abiertos de archivos
 
@@ -148,6 +149,7 @@ En la mayoría de los casos, corresponde a datos que llegan de bases de datos, r
 
 **Recomendamos con énfasis la publicación de los datos en formato CSV y/o JSON**. En caso de utilizar formatos propietarios o aún no estandarizados, es útil indicar software, versión y aplicación que permite procesar esos formatos.
 
+
 ### CSV
 
 El CSV es un formato de archivo de texto plano donde las campos (columnas) se separan por comas; y los registros (filas), por saltos de línea. Algunas versiones alternativas de esta forma de publicar datos usan otros separadores como punto y coma (";") o pipe (“|”).
@@ -164,17 +166,37 @@ Las recomendaciones, siguiendo lo indicado por la especificación [RFC4180](http
 
 * Tanto los campos como los valores deben estar separados por comas (",").
 
+
 * En el caso de que un valor contenga el caracter separador (",") o cualquiera de los caracteres que separan las líneas ("\r", "\n" o "\r\n"), el valor completo debe ser encerrado entre comillas dobles "". Esto indica que el caracter no cumple el rol de separar columnas o filas, sino que es parte de un valor.
 
 Ejemplo:
+
+```
+col1,col2\r\n
+"La tasa de Juan, está vacía",La tasa de Pablo está llena\r\n
+"La tasa de Juan\nestá vacía",La tasa de Pablo está llena\r\n
+"La tasa de Juan\r\nestá vacía",La tasa de Pablo está llena\r\n
+```
+
 
 * En el caso de que un valor contenga el caracter comilla doble ("), el valor debe ser encerrado entre comillas dobles como en el caso anterior ("") y, además, los caracteres comilla doble que se encuentren dentro del valor deben escribirse dos veces ("").
 
 Ejemplo:
 
+```
+col1,col2\r\n
+"La tasa de ""Juan"" está vacía",La tasa de Pablo está llena\r\n
+```
+
 * Para todos los tipos de datos se considera válido el valor indefinido. Este se expresará con la ausencia de todo caracter y no con un caracter o string especial como podrían ser ".", "null", "none", "nan", etc.
 
 Ejemplo:
+
+```
+col1,col2,col3\r\n
+a,,b\r\n
+a,"",b\r\n
+```
 
 ### JSON
 
@@ -186,7 +208,7 @@ El formato JSON ha sido definido por la especificación [RFC 7159](https://tools
 
 Para garantizar la accesibilidad a los datos, **es necesario fragmentar los archivos  excesivamente grandes**, que superen el millón de filas.
 
-Para esto, recomendamos usar conceptos simples, como ser:
+Para esto, recomendamos usar conceptos simples, fragmentando:
 
 (a) **por períodos** en caso de tratarse de información temporal (Ej. Años, semestres, trimestres, meses, semanas, días),
 
@@ -224,7 +246,7 @@ Ejemplos:
 
 Para la fragmentación temporal, recomendamos el estándar de los ejemplos, ya que es compacto y ordena los recursos por tiempo: YYYYMMDD. Por favor, recordá mantener siempre dos dígitos para el mes y el día, incluso si el número es menor a 10.
 
-Para la fragmentación por zonas, consultá la [Guía para la identificación y  uso de entidades interoperables](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/Guia%20para%20la%20identificaci%C3%B3n%20y%20uso%20de%20entidades%20interoperables%20(v0.1).pdf), y mirá cómo nombrarlas adecuadamente.
+Para la fragmentación por zonas, consultá la [Guía para la identificación y  uso de entidades interoperables](/corregir.md), y mirá cómo nombrarlas adecuadamente.
 
 En el caso de usar dimensiones temáticas propias del dominio particular de la información, podés ver esa guía o usar el mejor estándar identificado para esa temática particular.
 
@@ -238,7 +260,7 @@ Una de las principales razones es que UTF-8 soporta una gran variedad de lenguaj
 
 En esta sección veremos:
 
-(a) Recomendaciones generales para el trabajo con datos y
+(a) Recomendaciones generales para el trabajo con datos, y
 
 (b) Recomendaciones para el trabajo con planillas de cálculo, orientadas tanto a facilitar su exportación a formatos abiertos, como a su propia usabilidad en el contexto de cualquier aplicación de planillas de cálculo.
 
@@ -292,7 +314,7 @@ Los nombres de los campos deben:
 
     * Incluso cuando la entidad de un atributo parezca evidente (ej.: un dataset llamado "audiencias" donde todos los campos son atributos de la entidad “audiencia”), se recomienda nombrar el campo incluyendo la entidad a la que hace referencia el atributo.
 
-* <span class="no-recomendado">**No recomendado**</span> “fecha_hora”
+* <span class="no-recomendado">**No recomendado**</span>: “fecha_hora”
 * <span class="recomendado">**Recomendado**</span>: "audiencia_id", “audiencia_fecha_hora”.
 
 Los campos que sean identificadores o códigos, deberán incluir el sufijo "_id" en el nombre del campo, salvo casos excepcionales donde un nombre alternativo sea más conveniente porque ofrece información sobre el sistema de identificación usado.
@@ -345,6 +367,7 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
     <td>convenios_firmados_numero</td>
   </tr>
   <tr>
+    <td> </td>
     <td>Provincia X</td>
     <td>Municipio W</td>
     <td>2011</td>
@@ -429,18 +452,17 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
 
 <table>
   <colgroup>
+    <col style="width:19%">
     <col style="width:17%">
-    <col style="width:17%">
-    <col style="width:28%">
+    <col style="width:27%">
     <col style="width:28%">
   </colgroup>
-
 <tbody>
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
-    <td style="font-size:11px;">solicitudes_poda_y_arbolado_numero</td>
-    <td style="font-size:11px;">solicitudes_recoleccion_residuos_numero</td>
+    <td style="font-size:10px;">solicitudes_poda_y_arbolado_numero</td>
+    <td style="font-size:10px;">solicitudes_recoleccion_residuos_numero</td>
   </tr>
   <tr>
     <td>Municipalidad X</td>
@@ -455,9 +477,9 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
 
 <table>
   <colgroup>
+    <col style="width:19%">
     <col style="width:17%">
-    <col style="width:17%">
-    <col style="width:28%">
+    <col style="width:27%">
     <col style="width:28%">
   </colgroup>
 
@@ -465,8 +487,8 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
   <tr>
     <td>municipio_nombre</td>
     <td>solicitudes_anio</td>
-    <td>solicitudes_categoria</td>
-    <td>solicitudes_numero</td>
+    <td style="font-size:11px;">solicitudes_categoria</td>
+    <td style="font-size:11px;">solicitudes_numero</td>
   </tr>
   <tr>
     <td>Municipalidad X</td>
@@ -625,8 +647,7 @@ Recomendamos usar celdas simples y, en ningún caso, combinar celdas.
 <tbody>
   <tr>
     <td>proveedor_nombre</td>
-    <td>contacto_datos</td>
-    <td></td>
+    <td colspan="2">contacto_datos</td>
   </tr>
   <tr>
     <td></td>
@@ -723,6 +744,7 @@ Este error es muy común en la construcción de planillas de cálculo y suele ge
     <td>Municipalidad X</td>
     <td>2015</td>
     <td>Poda y arbolado</td>
+    <td> </td>
   </tr>
   <tr>
     <td></td>
@@ -782,9 +804,9 @@ Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de
     <td>3456</td>
   </tr>
   <tr>
-    <td>Fecha</td>
-    <td>Texto</td>
-    <td>Número</td>
+    <td>(Fecha)</td>
+    <td>(Texto)</td>
+    <td>(Número)</td>
   </tr>
 </tbody>
 </table>
@@ -829,8 +851,6 @@ Las entidades que aparezcan entre los datos de un campo textual deben tener una 
 #### Siglas
 
 Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios intermedios.
-
-Ejemplo:
 
 <span class="no-recomendado">**No recomendado**</span>
 
@@ -984,38 +1004,45 @@ Con las salvedades que comentaremos al final de este apartado, un posible aborda
 <span class="recomendado">**Recomendado**</span> - adecuado al estándar del Número Nacional Interurbano
 
 <table>
+  <colgroup>
+    <col style="width:16%">
+    <col style="width:22%">
+    <col style="width:18%">
+    <col style="width:26%">
+    <col style="width:18%">
+      </colgroup>
 <tbody>
   <tr>
-    <td>proveedor_nombre</td>
-    <td>contacto_correo_electronico</td>
-    <td>tipo_numero_telefono</td>
-    <td>contacto_telefono_indicativo_interurbano</td>
-    <td>contacto_telefono_numero_abonado</td>
+    <td >proveedor_nombre</td>
+    <td >contacto_correo_electronico</td>
+    <td >tipo_numero_telefono</td>
+    <td >contacto_telefono_indicativo_interurbano</td>
+    <td >contacto_telefono_numero_abonado</td>
   </tr>
   <tr>
     <td>Ejemplo Sociedad Anónima</td>
-    <td>ejemplo@ejemplo.com.ar</td>
+    <td  style="font-size:11px;">ejemplo@ejemplo.com.ar</td>
     <td>Fijo</td>
     <td>11</td>
     <td>43XXXXXX</td>
   </tr>
   <tr>
     <td>Ejemplo2 Sociedad Anónima</td>
-    <td>ejemplo2@ejemplo2.com.ar</td>
+    <td style="font-size:11px;">ejemplo2@ejemplo2.com.ar</td>
     <td>Fijo</td>
     <td>11</td>
     <td>45XXXXXX</td>
   </tr>
   <tr>
     <td>Ejemplo3 Sociedad Anónima</td>
-    <td>ejemplo3@ejemplo3.com.ar</td>
+    <td style="font-size:11px;">ejemplo3@ejemplo3.com.ar</td>
     <td>Fijo</td>
     <td>351</td>
     <td>434XXXX</td>
   </tr>
   <tr>
     <td>Ejemplo4 Sociedad Anónima</td>
-    <td>ejemplo4@ejemplo4.com.ar</td>
+    <td style="font-size:11px;">ejemplo4@ejemplo4.com.ar</td>
     <td>Móvil</td>
     <td>11</td>
     <td>6344XXXX</td>
@@ -1069,7 +1096,7 @@ Para registrar datos de coordenadas geográficas de puntos, usamos números deci
 
 ### Tiempo
 
-Se usará el estándar [ISO 8601](https://en.xn--wikipeda-i2a.org/wiki/ISO_8601) (YYYY-MM-DDTHH:MM:SS[.mmmmmm][+HH:MM]). A menos que se indique lo contrario, se asumirá que la zona horaria es UTC-03:00 (Argentina).
+Se usará el estándar [ISO 8601](https://es.wikipedia.org/wiki/ISO_8601) (YYYY-MM-DDTHH:MM:SS[.mmmmmm][+HH:MM]). A menos que se indique lo contrario, se asumirá que la zona horaria es UTC-03:00 (Argentina).
 
 * Fecha: YYYY-MM-DD
 * Hora: HH:MM:SS[.mmmmmm][+HH:MM]
@@ -1090,11 +1117,32 @@ Se usará el estándar [ISO 8601](https://en.xn--wikipeda-i2a.org/wiki/ISO_8601)
 
 Ejemplos de formatos válidos para días:
 
+```
+DAY: Un solo día
+DAY1-DAY2: Entre entre DAY1 y DAY2
+DAY1_DAY2: DAY1 y DAY2
+DAY1-DAY2_DAY3: DAY1 a DAY2 y DAY3
+```
+
 * La hora se indica mediante rangos, separando los horarios con guiones medios ("-"). También se pueden indicar varios horarios con el guión bajo "_".
 
 Ejemplos de formatos válidos para horas:
 
+```
+HH:MM-HH:MM : Rango simple
+HH:MM-HH:MM_HH:MM-HH:MM : Dos rangos
+```
+
 Más ejemplos de formatos válidos completos:
+
+```
+HH:MM-HH:MM para indicar un rango que ocurre todos los días.
+DAY para indicar que el rango ocupa todo el día DAY.
+DAY__HH:MM-HH:MM para indicar un rango que ocurre los días DAY entre HH:MM y HH:MM.
+DAY__HH:MM-HH:MM_HH:MM-HH:MM para indicar mas un rango horario en el mismo día
+DAY1-DAY2__HH:MM-HH:MM para indicar un rango que ocurre los días DAY1 a DAY2 entre HH:MM y HH:MM
+DAY1-DAY2__HH:MM-HH:MM_HH:MM-HH:MM para indicar mas un rango horario en el mismo rango de días
+```
 
 * En caso de que se necesite cubrir más de una franja horaria y esta sintaxis sea insuficiente, se pueden incluir varias separadas por espacios.
 
@@ -1102,13 +1150,26 @@ Más ejemplos de formatos válidos completos:
 
 Ejemplos:
 
+```
+24hs -> "00:00-23:59" 
+Jueves 24hs -> "JUE" 
+Jueves de 14:30 a 17 hs -> "JUE__14:30-17:00" 
+Jueves de 8 a 12 hs y de 16 a 20 hs -> "JUE__08:12-17:00_16:00-20:00" 
+Jueves de 8 a 15 hs y Viernes de 8 a 15 hs -> "JUE__08:00-15:00 VIE_08:00-15:00" 
+Lunes a Viernes 7:30 a 17 hs y Sábados 8 a 12 hs -> "LUN-VIE__07:30-17:00 SAB__08:00-12:00" 
+Lunes a Viernes 8 a 11 y 14 a 18 hs -> "LUN-VIE__08:00-11:00_14:00-18:00" 
+Lunes y Miercoles 8 a 11 y 14 a 18 hs -> "LUN_MIE__08:00-11:00_14:00-18:00" 
+Lunes a Miercoles y Viernes 8 a 11 y 14 a 18 hs -> "LUN-MIE_VIE__08:00-11:00_14:00-18:00"
+Lunes a Miercoles 8 a 11 y de Viernes a Domingo 9 a 10 -> "LUN-MIE__08:00-11:00 VIE-DOM__09:00-10:00"
+```
+
 ### Booleano
 
 * A menos que se indique lo contrario, se identificarán con los valores *true* o *false*.
 
-    * Esta convención puede variar en algunos rubros específicos de datos, pero en caso de no existir una convención clara y definida aplicable al rubro o contexto del dataset, se recomienda utilizar* true* o *false*.
+    * Esta convención puede variar en algunos rubros específicos de datos, pero en caso de no existir una convención clara y definida aplicable al rubro o contexto del dataset, se recomienda utilizar *true* o *false*.
 
 * Este campo puede contener "valores ausentes". En ese caso, el campo deberá estar totalmente vacío, no conteniendo ningún caracter.
 
-* Si existe la posibilidad de que haya otro valor que no sea *true*, *false *o "valor ausente" significa que se eligió un tipo de datos incorrecto: este no es booleano, el tipo de dato booleano es binario y sólo admite 2 valores de verdad (aparte del caso del “valor ausente”).
+* Si existe la posibilidad de que haya otro valor que no sea *true*, *false* o "valor ausente" significa que se eligió un tipo de datos incorrecto: este no es booleano, el tipo de dato booleano es binario y sólo admite 2 valores de verdad (aparte del caso del “valor ausente”).
 

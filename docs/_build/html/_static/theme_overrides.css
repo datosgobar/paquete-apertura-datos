@@ -129,6 +129,7 @@ td {
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
     border-right: 1px solid #C1C3D1;
     white-space: normal;
+    overflow-wrap: break-word;
 }
 
 tr:first-child td {
@@ -177,4 +178,10 @@ table {
 }
 td {
     text-align: center;
+}
+
+table.six-columns td{
+    font-size: 11px;
+    padding: 7px 3px 7px 3px;
+
 }

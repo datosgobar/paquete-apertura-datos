@@ -6,30 +6,30 @@
 ## Indice
 
 - [Glosario](#glosario)
-- [Introducción](#introducci%C3%B3n)
-  - [Objetivo de esta guía](#objetivo-de-esta-gu%C3%ADa)
-  - [¿Qué son los metadatos?](#%C2%BFqu%C3%A9-son-los-metadatos)
-  - [¿Cómo se publican los metadatos?](#%C2%BFc%C3%B3mo-se-publican-los-metadatos)
-  - [Público objetivo de esta guía](#p%C3%BAblico-objetivo-de-esta-gu%C3%ADa)
+- [Introducción](#introduccion)
+  - [Objetivo de esta guía](#objetivo-de-esta-guia)
+  - [¿Qué son los metadatos?](#que-son-los-metadatos)
+  - [¿Cómo se publican los metadatos?](#como-se-publican-los-metadatos)
+  - [Público objetivo de esta guía](#publico-objetivo-de-esta-guia)
 - [Portal Andino](#portal-andino)
-  - [Catálogo](#cat%C3%A1logo)
+  - [Catálogo](#catalogo)
   - [Dataset](#dataset)
-  - [Distribución](#distribuci%C3%B3n)
+  - [Distribución](#distribucion)
   - [Campo](#campo)
   - [Tema](#tema)
-- [Otros catálogos](#otros-cat%C3%A1logos)
-  - [Estándar usado](#est%C3%A1ndar-usado)
+- [Otros catálogos](#otros-catalogos)
+  - [Estándar usado](#estandar-usado)
   - [Campos del perfil](#campos-del-perfil)
-    - [Catálogo](#cat%C3%A1logo-1)
+    - [Catálogo](#catalogo-1)
     - [Dataset](#dataset-1)
-    - [Distribución](#distribuci%C3%B3n-1)
+    - [Distribución](#distribucion-1)
     - [Campo](#campo-1)
     - [Tema](#tema-1)
-- [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i---taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-tabla)
-- [Anexo II - Pautas para la selección de etiquetas](#anexo-ii---pautas-para-la-selecci%C3%B3n-de-etiquetas)
-- [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii---especificaci%C3%B3n-de-frecuencias-seg%C3%BAn-iso-8601)
+- [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i---taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
+- [Anexo II - Pautas para la selección de etiquetas](#anexo-ii---pautas-para-la-seleccion-de-etiquetas)
+- [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii---especificacion-de-frecuencias-segun-iso-8601)
 - [Anexo IV - Ejemplo de data.json](#anexo-iv---ejemplo-de-datajson)
-- [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v---taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-json)
+- [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v---taxonomia-tematica-global-de-la-apn-para-los-datasets-json)
 - [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi---ejemplo-de-metadatos-como-texto)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -124,7 +124,7 @@ Si estás dentro de este grupo, **recomendamos leer la sección "_Portal Andino_
 
 En [entidad] recomendamos usar un nombre simple y breve que represente a la organización que publica el catálogo (por ejemplo: datos.jus.gob.ar, datos.tucuman.gob.ar, datos.pilar.gob.ar).
 
-Si la apertura de tus datos se inscribe en esta modalidad, **te sugerimos leer la sección** "_Otros catálogos_". Te ayudará a comprender cómo generar y publicar un archivo *data.json* que cumpla con el perfil de metadatos de la Administración Pública Nacional.
+Si la apertura de tus datos se inscribe en esta modalidad, **te sugerimos leer la sección "_Otros catálogos_"**. Te ayudará a comprender cómo generar y publicar un archivo *data.json* que cumpla con el perfil de metadatos de la Administración Pública Nacional.
 
 ## Portal Andino
 
@@ -153,6 +153,12 @@ Recomendamos ver un [ejemplo textual](https://github.com/datosgobar/paquete-aper
 Estos son los metadatos necesarios para describir el catálogo:
 
 <table>
+<colgroup>
+    <col style="width:18%">
+    <col style="width:19%">
+    <col style="width:38%">
+    <col style="width:25%">
+  </colgroup>
   <tr>
     <td>Nombre</td>
     <td>Requerido</td>
@@ -187,44 +193,36 @@ Estos son los metadatos necesarios para describir el catálogo:
     <td>Fecha de creación o publicación</td>
     <td>Recomendado</td>
     <td>Fecha de creación o publicación del catálogo. Se escribe según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-14T19:48:05.433640" para especificar fecha y hora
- 
-"2016-04-14" para especificar fecha únicamente</td>
+    <td>"2016-04-14T19:48:05.433640" para especificar fecha y hora<br/><br/>
+    "2016-04-14" para especificar fecha únicamente</td>
   </tr>
   <tr>
     <td>Fecha de última actualización/ modificación</td>
     <td>Recomendado</td>
     <td>Fecha de última actualización/modificación del catálogo. Se escribe según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-19T19:48:05.433640" para especificar fecha y hora
- 
-"2016-04-19" para especificar fecha únicamente</td>
+    <td>"2016-04-19T19:48:05.433640" para especificar fecha y hora<br/><br/> "2016-04-19" para especificar fecha únicamente</td>
   </tr>
   <tr>
     <td>Idioma(s)</td>
     <td>Recomendado</td>
-    <td>Lenguaje para la descripción de los metadatos de los datasets contenidos en el catálogo. Hay dos estándares ISO que pueden ser usados para este campo:
- 
-(a) ISO 639-1 (2 letras)
-(b) ISO 639-2/T (3 letras) es el más recomendado.
- 
-Puede definirse uno o más lenguajes en una lista. (Link a los estándares ISO: https://www.loc.gov/standards/iso639-2/php/code_list.php)</td>
-    <td>["es"] para un lenguaje ISO 639-1
- 
-["spa", "eng"] para dos lenguajes ISO 639-2</td>
+    <td>Lenguaje para la descripción de los metadatos de los datasets contenidos en el catálogo. Hay dos estándares ISO que pueden ser usados para este campo:<br/>
+    (a) ISO 639-1 (2 letras)<br/>
+    (b) ISO 639-2/T (3 letras) es el más recomendado.<br/>
+    Puede definirse uno o más lenguajes en una lista.
+    <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php">Link a los estándares ISO</a> </td>
+    <td>["es"] para un lenguaje ISO 639-1<br/>["spa", "eng"] para dos lenguajes ISO 639-2</td>
   </tr>
   <tr>
     <td>Taxonomía temática global</td>
     <td>Sí</td>
-    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en "http://datos.gob.ar/superThemeTaxonomy.json".</td>
+    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en  "http://datos.gob.ar/superThemeTaxonomy.json".</td>
     <td>http://datos.gob.ar/superThemeTaxonomy.json</td>
   </tr>
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
     <td>Indica la licencia bajo la cual todos los datasets y distribuciones del catálogo están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/ . recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset o distribución que especifique una licencia diferente, sobreescribe a la licencia general del catálogo.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace
- 
-"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
   </tr>
   <tr>
     <td>Página web del catálogo</td>
@@ -241,22 +239,12 @@ Puede definirse uno o más lenguajes en una lista. (Link a los estándares ISO: 
   <tr>
     <td>Cobertura geográfica</td>
     <td>No</td>
-    <td>El área geográfica cubierta por el catálogo.
-Una región o un lugar determinado. Puede tomar valores:
-a) De países y, provincias y municipios argentinos, según las recomendaciones de la "Guía para la identificación y uso de entidades interoperables”.
-b) Un área de coordenadas representada por latitud/ longitud en el orden: mínima longitud, mínima latitud, máxima longitud, máxima latitud.
-c) Un punto geográfico representado por latitud/longitud.
-d) Si la referencia geográfico no está identificada en la “Guía para la identificación y uso de entidades interoperables” indicar la URIs según geonames.org; ej :
-http://sws.geonames.org/6255146</td>
-    <td>"ARG" es el código para la República Argentina.
- 
-"06007" es el código de un departamento
- 
-[-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box
- 
-[-58.111111, -35.111111] es un punto geográfico
- 
-"http://sws.geonames.org/6255146"</td>
+    <td>El área geográfica cubierta por el catálogo. Una región o un lugar determinado. Puede tomar valores:<br/>
+    a) De países y, provincias y municipios argentinos, según las recomendaciones de la "Guía para la identificación y uso de entidades interoperables”.<br/>
+    b) Un área de coordenadas representada por latitud/ longitud en el orden: mínima longitud, mínima latitud, máxima longitud, máxima latitud.<br/>
+    c) Un punto geográfico representado por latitud/longitud.<br/>
+    d) Si la referencia geográfico no está identificada en la “Guía para la identificación y uso de entidades interoperables” indicar la URIs según geonames.org; ej : http://sws.geonames.org/6255146</td>
+    <td>"ARG" es el código para la República Argentina.<br/>"06007" es el código de un departamento<br/>[-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box. <br/>[-58.111111, -35.111111] es un punto geográfico. <br/>"http://sws.geonames.org/6255146"</td>
   </tr>
 </table>
 
@@ -268,11 +256,14 @@ Recomendamos ver un[ ejemplo textual](https://github.com/datosgobar/paquete-aper
 A continuación, describimos los metadatos que se deben completar para describir un dataset a la hora de su carga o actualización en el catálogo:
 
  
-
- 
-
 <table>
-  <tr>
+<colgroup>
+    <col style="width:18%">
+    <col style="width:19%">
+    <col style="width:38%">
+    <col style="width:25%">
+  </colgroup>
+   <tr>
     <td>Nombre</td>
     <td>Requerido</td>
     <td>Descripción</td>
@@ -342,52 +333,43 @@ A continuación, describimos los metadatos que se deben completar para describir
     <td>Fecha de publicación</td>
     <td>Sí</td>
     <td>Fecha de publicación del dataset. Según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-14T19:48:05.433640" para especificar fecha y hora
- 
-"2016-04-14" para especificar fecha únicamente</td>
+    <td>"2016-04-14T19:48:05.433640" para especificar fecha y hora<br/> "2016-04-14" para especificar fecha únicamente</td>
   </tr>
   <tr>
     <td>Idioma</td>
     <td>No</td>
-    <td>Lenguaje para la descripción de los metadatos del dataset. Hay dos estándares ISO que pueden ser utilizados para este campo:
- 
-(a) ISO 639-1 (2 letras)
-(b) ISO 639-2/T (3 letras) es el más recomendado.
- 
-Puede definirse uno o más lenguajes en una lista. Los lenguajes especificados para un dataset, sobreesriben a los del catálogo. Si este campo está vacío el dataset hereda los lenguajes del catálogo. (Link a los estándares ISO: https://www.loc.gov/standards/iso639-2/php/code_list.php)</td>
-    <td>["es"] para un lenguaje ISO 639-1
- 
-["spa", ”eng"] para dos lenguajes ISO 639-2</td>
+    <td>Lenguaje para la descripción de los metadatos del dataset. Hay dos estándares ISO que pueden ser utilizados para este campo:<br/>
+    (a) ISO 639-1 (2 letras)
+    (b) ISO 639-2/T (3 letras) es el más recomendado.<br/>
+    Puede definirse uno o más lenguajes en una lista. Los lenguajes especificados para un dataset, sobreesriben a los del catálogo. Si este campo está vacío el dataset hereda los lenguajes del catálogo. (Link a los estándares ISO: https://www.loc.gov/standards/iso639-2/php/code_list.php)
+    </td>
+    <td>
+    ["es"] para un lenguaje ISO 639-1<br/>
+    ["spa", ”eng"] para dos lenguajes ISO 639-2
+    </td>
   </tr>
   <tr>
     <td>Cobertura geográfica</td>
     <td>No</td>
     <td>Una región o lugar determinado al que el dataset haga referencia.
- 
-Una región o un lugar determinado. Puede tomar valores:
- 
-a) De países y, provincias y municipios argentinos, según las recomendaciones de la “Guía para la identificación y uso de entidades interoperables”.
-b) Un área de coordenadas representada por latitud/ longitud en el orden: minima longitud, mínima latitud, máxima longitud, máxima latitud.
-c) Un punto geográfico representado por latitud/longitud.
-d) Si la referencia geográfica no está identificada en la “Guía para la identificación y uso de entidades interoperables” indicar la URIs según geonames.org; ej :
-http://sws.geonames.org/6255146"</td>
-    <td>"ARG" es el código para la República Argentina.
- 
-"06007" es el código de un departamento
- 
-[-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box
- 
-[-58.111111, -35.111111] es un punto geográfico
- 
+    Una región o un lugar determinado. Puede tomar valores:<br/>
+    a) De países y, provincias y municipios argentinos, según las recomendaciones de la “Guía para la identificación y uso de entidades interoperables”.<br/>
+    b) Un área de coordenadas representada por latitud/ longitud en el orden: minima longitud, mínima latitud, máxima longitud, máxima latitud.<br/>
+    c) Un punto geográfico representado por latitud/longitud.<br/>
+    d) Si la referencia geográfica no está identificada en la “Guía para la identificación y uso de entidades interoperables” indicar la URIs según geonames.org; ej:
+    http://sws.geonames.org/6255146"</td>
+    <td>"ARG" es el código para la República Argentina.<br/>
+    "06007" es el código de un departamento<br/>
+    [-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box<br/>
+    [-58.111111, -35.111111] es un punto geográfico <br/>
 "http://sws.geonames.org/6255146"</td>
   </tr>
   <tr>
     <td>Cobertura temporal</td>
     <td>Recomendado</td>
     <td>Período de tiempo cubierto por el dataset. El intervalo de tiempo está formado por una fecha de inicio y una de fin separadas por “/”, en formato ISO 8601, con el nivel de especificidad requerido por el dataset.</td>
-    <td>2015-01-01/2015-12-31
- 
-2015-01-01T00:45:00Z/2016-01-15T00:06:00Z</td>
+    <td>2015-01-01/2015-12-31<br/>2015-01-01T00:45:00Z/2016-01-15T00:06:00Z
+    </td>
   </tr>
   <tr>
     <td>Fuente</td>
@@ -399,9 +381,7 @@ http://sws.geonames.org/6255146"</td>
     <td>Licencia</td>
     <td>Recomendado</td>
     <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/. Recomendamos usar  la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace
- 
-"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
   </tr>
 </table>
 
@@ -415,7 +395,13 @@ Recomendamos ver un[ ejemplo textual](https://github.com/datosgobar/paquete-aper
 Estos son los metadatos que se deben completar al cargar o actualizar una distribución de un dataset en el catálogo para describirla:
 
 <table>
-  <tr>
+<colgroup>
+    <col style="width:18%">
+    <col style="width:19%">
+    <col style="width:38%">
+    <col style="width:25%">
+  </colgroup>
+    <tr>
     <td>Nombre</td>
     <td>Requerido</td>
     <td>Descripción</td>
@@ -431,9 +417,7 @@ Estos son los metadatos que se deben completar al cargar o actualizar una distri
     <td>Formato</td>
     <td>Recomendado</td>
     <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
-    <td>"text/csv" definición de IANA
- 
-"csv" caracteres finales después del punto</td>
+    <td>"text/csv" definición de IANA "csv" caracteres finales después del punto</td>
   </tr>
   <tr>
     <td>Título del recurso</td>
@@ -444,10 +428,8 @@ Estos son los metadatos que se deben completar al cargar o actualizar una distri
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/ . recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace
- 
-"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
+    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
   </tr>
   <tr>
     <td>Derechos sobre la distribución</td>
@@ -475,6 +457,12 @@ Estos son los metadatos que el responsable de cargar o actualizar una distribuci
  
 
 <table>
+<colgroup>
+    <col style="width:18%">
+    <col style="width:19%">
+    <col style="width:38%">
+    <col style="width:25%">
+  </colgroup>
   <tr>
     <td>Nombre</td>
     <td>Requerido</td>
@@ -491,22 +479,20 @@ Estos son los metadatos que el responsable de cargar o actualizar una distribuci
     <td>Tipo</td>
     <td>Recomendado</td>
     <td>El tipo de dato contenido en el campo según la lista por la librería recline.js (http://okfnlabs.org/recline/docs/models.html#types).
-
-Los tipos incluidos en esta lista son:
-
-string (text): valores de texto.
-number (double, float, numeric): números que puedan no ser enteros (incluyen decimales).
-integer (int): números que siempre son enteros.
-date: fecha simple expresada según el estándar ISO 8601 incluyendo únicamente año, mes y día (YYYY-MM-DD) como en "2016-02-01".
-time: tiempo expresado según el estándar ISO 8601 incluyendo únicamente horas, minutos y segundos (hh:mm:ss) como en "10:05:00".
-date-time (datetime, timestamp): fecha completa expresada según el estándar ISO 8601 incluyendo año, mes, día, horas, minutos y segundos (YYYY-MM-DDThh:mm:ssZ) como en "2016-02-01T10:05:00+03:00"
-boolean (bool): valores verdadero/falso.
-binary: representación de datos binarios base64.
-geo_point: ver estructura en https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html.
-geojson: ver en http://geojson.org/
-array: lista de valores.
-object (json): objeto de JSON.
-any: campo que puede contener valores de cualquier tipo.</td>
+    Los tipos incluidos en esta lista son:<br/>
+    string (text): valores de texto.
+    number (double, float, numeric): números que puedan no ser enteros (incluyen decimales).<br/>
+    integer (int): números que siempre son enteros.<br/>
+    date: fecha simple expresada según el estándar ISO 8601 incluyendo únicamente año, mes y día (YYYY-MM-DD) como en "2016-02-01".<br/>
+    time: tiempo expresado según el estándar ISO 8601 incluyendo únicamente horas, minutos y segundos (hh:mm:ss) como en "10:05:00".<br/>
+    date-time (datetime, timestamp): fecha completa expresada según el estándar ISO 8601 incluyendo año, mes, día, horas, minutos y segundos (YYYY-MM-DDThh:mm:ssZ) como en "2016-02-01T10:05:00+03:00"<br/>
+    boolean (bool): valores verdadero/falso.<br/>
+    binary: representación de datos binarios base64.<br/>
+    geo_point: ver estructura en https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html.<br/>
+    geojson: ver en http://geojson.org/<br/>
+    array: lista de valores.<br/>
+    object (json): objeto de JSON.<br/>
+    any: campo que puede contener valores de cualquier tipo.</td>
     <td>Ejemplo para el campo "unidad_operativa_contrataciones_desc" de la distribución "Convocatorias abiertas durante el año 2015", valor para tipo: "string"</td>
   </tr>
   <tr>
@@ -525,6 +511,12 @@ Cada catálogo de datos puede tener su propia taxonomía temática que permite c
 Estos son metadatos que el responsable de cargar o actualizar la taxonomía temática de un catálogo debe completar para describir los temas de la misma:
 
 <table>
+<colgroup>
+    <col style="width:20%">
+    <col style="width:20%">
+    <col style="width:30%">
+    <col style="width:30%">
+  </colgroup>
   <tr>
     <td>Nombre</td>
     <td>Requerido</td>
@@ -557,6 +549,7 @@ Los usuarios que opten por una solución alternativa al Portal Andino para publi
 
 Este archivo deberá estar construido tal como se puede ver en el ejemplo del **[Anexo IV - Ejemplo de data.json](#heading=h.ysmgi6nkdgyt)**, respetando el perfil de metadatos de la Administración Pública Nacional tal como se lo describe más adelante en la sección "*Campos del perfil*".
 
+
 ### Estándar usado
 
 **El perfil de metadatos recomendado en esta guía es una adaptación del estándar DCAT - AP**, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.
@@ -569,6 +562,7 @@ El perfil de metadatos propuesto para la Administración Pública Nacional se co
 
 A continuación, describimos los metadatos que el *data.json* debe contener, para cada una de estas clases.
 
+
 ### Campos del perfil
 
 #### Catálogo 
@@ -577,7 +571,15 @@ Recomendamos [ver un ejemplo de metadatos de un catálogo en JSON](https://githu
 
 Estos son los metadatos que el *data.json* debe contener, a nivel de catálogo:
 
-<table>
+<table class="six-columns" >
+<colgroup>
+    <col style="width:13%">
+    <col style="width:13%">
+    <col style="width:28%">
+    <col style="width:20%">
+    <col style="width:13%">
+    <col style="width:13%">
+  </colgroup>
   <tr>
     <td>Nombre</td>
     <td>Requerido</td>
@@ -630,9 +632,7 @@ Estos son los metadatos que el *data.json* debe contener, a nivel de catálogo:
     <td>Fecha de creación o publicación</td>
     <td>Recomendado</td>
     <td>Fecha de creación o publicación del catálogo. Se escribe según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-14T19:48:05.433640" para especificar fecha y hora
-
-"2016-04-14" para especificar fecha únicamente</td>
+    <td>"2016-04-14T19:48:05.433640" para especificar fecha y hora<br/>"2016-04-14" para especificar fecha únicamente</td>
     <td>issued</td>
     <td>String</td>
   </tr>
@@ -640,22 +640,19 @@ Estos son los metadatos que el *data.json* debe contener, a nivel de catálogo:
     <td>Fecha de última actualización/ modificación</td>
     <td>Recomendado</td>
     <td>Fecha de última actualización/modificación del catálogo. Se escribe según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-19T19:48:05.433640" para especificar fecha y hora
-
-"2016-04-19" para especificar fecha únicamente</td>
+    <td>"2016-04-19T19:48:05.433640" para especificar fecha y hora<br/>"2016-04-19" para especificar fecha únicamente</td>
     <td>modified</td>
     <td>String</td>
   </tr>
   <tr>
     <td>Idioma(s)</td>
     <td>Recomendado</td>
-    <td>Lenguaje para la descripción de los metadatos de los datasets contenidos en el catálogo. Hay 2 estándares ISO que pueden ser utilizados para este campo:
-(a) ISO 639-1 (2 letras)
-(b) ISO 639-2/T (3 letras) es el más recomendado.
-Puede definirse 1 o más lenguajes en una lista. (Link a los estándares ISO: https://www.loc.gov/standards/iso639-2/php/code_list.php)</td>
-    <td>["es"] para un lenguaje ISO 639-1
-
-["spa", "eng"] para dos lenguajes ISO 639-2</td>
+    <td>Lenguaje para la descripción de los metadatos de los datasets contenidos en el catálogo. Hay 2 estándares ISO que pueden ser utilizados para este campo:<br/>
+    (a) ISO 639-1 (2 letras)<br/>
+    (b) ISO 639-2/T (3 letras) es el más recomendado.<br/>
+    Puede definirse 1 o más lenguajes en una lista. (Link a los estándares ISO: https://www.loc.gov/standards/iso639-2/php/code_list.php)</td>
+    <td>["es"] para un lenguaje ISO 639-1<br/>
+    ["spa", "eng"] para dos lenguajes ISO 639-2</td>
     <td>language</td>
     <td>Array</td>
   </tr>
@@ -679,9 +676,7 @@ Puede definirse 1 o más lenguajes en una lista. (Link a los estándares ISO: ht
     <td>Licencia</td>
     <td>Recomendado</td>
     <td>Indica la licencia bajo la cual todos los datasets y distribuciones del catálogo están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/ . recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset o distribución que especifique una licencia diferente, sobreescribe a la licencia general del catálogo.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace
-
-"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
   </tr>
@@ -704,27 +699,20 @@ Puede definirse 1 o más lenguajes en una lista. (Link a los estándares ISO: ht
   <tr>
     <td>Cobertura geográfica</td>
     <td>No</td>
-    <td>El área geográfica cubierta por el catálogo.
-Una región o un lugar determinado. Puede tomar valores:
-a) De países y, provincias y municipios argentinos, según las recomendaciones de la Guía para la identificación y uso de entidades interoperables.
-b) Un área de coordenadas representada por latitud/ longitud en el orden: minima longitud, mínima latitud, máxima longitud, máxima latitud.
-c) Un punto geográfico representado por latitud/longitud.
-d) Si la referencia geográfico no está identificada en la Guía para la identificación y uso de entidades interoperables indicar la URIs según geonames.org; ej :
-http://sws.geonames.org/6255146</td>
-    <td>"ARG" es el código para la República Argentina.
-
-"06007" es el código de un departamento
-
-[-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box
-
-[-58.111111, -35.111111] es un punto geográfico
-
-"http://sws.geonames.org/6255146"</td>
+    <td>El área geográfica cubierta por el catálogo. Una región o un lugar determinado. Puede tomar valores:<br/>
+    a) De países y, provincias y municipios argentinos, según las recomendaciones de la Guía para la identificación y uso de entidades interoperables.<br/>
+    b) Un área de coordenadas representada por latitud/ longitud en el orden: minima longitud, mínima latitud, máxima longitud, máxima latitud.<br/>
+    c) Un punto geográfico representado por latitud/longitud.<br/>
+    d) Si la referencia geográfico no está identificada en la Guía para la identificación y uso de entidades interoperables indicar la URIs según geonames.org; ej : 
+    http://sws.geonames.org/6255146</td>
+    <td>"ARG" es el código para la República Argentina.<br/>
+    "06007" es el código de un departamento<br/>
+    [-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box<br/>
+    [-58.111111, -35.111111] es un punto geográfico<br/>"http://sws.geonames.org/6255146"</td>
     <td>spatial</td>
     <td>String or Array</td>
   </tr>
 </table>
-
 
 Es importante poner atención a los dos campos que contienen una lista de objetos: **dataset** y **themeTaxonomy**.
 
@@ -738,7 +726,15 @@ Recomendamos [ver un ejemplo de metadatos de un dataset en JSON](https://github.
 
 Detallamos los metadatos que el *data.json* debe contener, para describir a un dataset dentro de la lista contenida en el campo **dataset** del catálogo:
 
-<table>
+<table  class="six-columns">
+<colgroup>
+    <col style="width:13%">
+    <col style="width:13%">
+    <col style="width:28%">
+    <col style="width:20%">
+    <col style="width:13%">
+    <col style="width:13%">
+  </colgroup>
   <tr>
     <td>Nombre</td>
     <td>Requerido</td>
@@ -839,9 +835,7 @@ Detallamos los metadatos que el *data.json* debe contener, para describir a un d
     <td>Fecha de publicación</td>
     <td>Sí</td>
     <td>Fecha de publicación del dataset. Según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-14T19:48:05.433640" para especificar fecha y hora
-
-"2016-04-14" para especificar fecha únicamente</td>
+    <td>"2016-04-14T19:48:05.433640" para especificar fecha y hora<br/>"2016-04-14" para especificar fecha únicamente</td>
     <td>issued</td>
     <td>String</td>
   </tr>
@@ -849,9 +843,7 @@ Detallamos los metadatos que el *data.json* debe contener, para describir a un d
     <td>Fecha de última actualización/ modificación</td>
     <td>Recomendado</td>
     <td>Fecha de última actualización/modificación del dataset (ya sea de sus datos o de sus metadatos). Según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-19T19:48:05.433640" para especificar fecha y hora
-
-"2016-04-19" para especificar fecha únicamente</td>
+    <td>"2016-04-19T19:48:05.433640" para especificar fecha y hora<br/>"2016-04-19" para especificar fecha únicamente</td>
     <td>modified</td>
     <td>String</td>
   </tr>
@@ -859,48 +851,34 @@ Detallamos los metadatos que el *data.json* debe contener, para describir a un d
     <td>Identificador</td>
     <td>No</td>
     <td>Identificador único del dataset, este identificador debe ser único para todo el catálogo.</td>
-    <td>Un identificador único para el dataset. La URI u otro identificador único en el contexto del catálogo, ejemplo:
-
-"dataset-ejemplo-35782”</td>
+    <td>Un identificador único para el dataset. La URI u otro identificador único en el contexto del catálogo, ejemplo:<br/>"dataset-ejemplo-35782”</td>
     <td>identifier</td>
     <td>String</td>
   </tr>
   <tr>
     <td>Idioma(s)</td>
     <td>No</td>
-    <td>Lenguaje para la descripción de los metadatos del dataset. Hay 2 estándares ISO que pueden ser utilizados para este campo:
-
-(a) ISO 639-1 (2 letras)
-(b) ISO 639-2/T (3 letras) es el más recomendado.
-
-Puede definirse 1 o más lenguajes en una lista. Los lenguajes especificados para un dataset, sobreesriben a los del catálogo. Si este campo está vacío el dataset hereda los lenguajes del catálogo. (Link a los estándares ISO: https://www.loc.gov/standards/iso639-2/php/code_list.php)</td>
-    <td>["es"] para un lenguaje ISO 639-1
-
-["spa", ”eng"] para dos lenguajes ISO 639-2</td>
+    <td>Lenguaje para la descripción de los metadatos del dataset. Hay 2 estándares ISO que pueden ser utilizados para este campo:<br/>
+    (a) ISO 639-1 (2 letras)<br/>
+    (b) ISO 639-2/T (3 letras) es el más recomendado.<br/>
+    Puede definirse 1 o más lenguajes en una lista. Los lenguajes especificados para un dataset, sobreesriben a los del catálogo. Si este campo está vacío el dataset hereda los lenguajes del catálogo. (Link a los estándares ISO: https://www.loc.gov/standards/iso639-2/php/code_list.php)</td>
+    <td>["es"] para un lenguaje ISO 639-1<br/>
+    ["spa", ”eng"] para dos lenguajes ISO 639-2</td>
     <td>language</td>
     <td>Array</td>
   </tr>
   <tr>
     <td>Cobertura geográfica</td>
     <td>No</td>
-    <td>Una región o lugar determinado al que el dataset haga referencia.
-
-Una región o un lugar determinado. Puede tomar valores:
-
-a) De países y, provincias y municipios argentinos, según las recomendaciones de la Guía para la identificación y uso de entidades interoperables.
-b) Un área de coordenadas representada por latitud/ longitud en el orden: minima longitud, minima latitud, maxima longitud, maxima latitud.
-c) Un punto geográfico representado por latitud/longitud.
-d) Si la referencia geográfico no está identificada en la Guía para la identificación y uso de entidades interoperables indicar la URIs según geonames.org; ej :
-http://sws.geonames.org/6255146"</td>
-    <td>"ARG" es el código para la República Argentina.
-
-"06007" es el código de un departamento
-
-[-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box
-
-[-58.111111, -35.111111] es un punto geográfico
-
-"http://sws.geonames.org/6255146"</td>
+    <td>Una región o lugar determinado al que el dataset haga referencia.Una región o un lugar determinado. Puede tomar valores:<br/>
+    a) De países y, provincias y municipios argentinos, según las recomendaciones de la Guía para la identificación y uso de entidades interoperables.<br/>
+    b) Un área de coordenadas representada por latitud/ longitud en el orden: minima longitud, minima latitud, maxima longitud, maxima latitud.<br/>
+    c) Un punto geográfico representado por latitud/longitud.<br/>
+    d) Si la referencia geográfico no está identificada en la Guía para la identificación y uso de entidades interoperables indicar la URIs según geonames.org; ej : http://sws.geonames.org/6255146"</td>
+    <td>"ARG" es el código para la República Argentina.<br/>
+    "06007" es el código de un departamento<br/>
+    [-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box<br/>[-58.111111, -35.111111] es un punto geográfico<br/>
+    "http://sws.geonames.org/6255146"</td>
     <td>spatial</td>
     <td>Array or String</td>
   </tr>
@@ -908,9 +886,7 @@ http://sws.geonames.org/6255146"</td>
     <td>Cobertura temporal</td>
     <td>Recomendado</td>
     <td>Período de tiempo cubierto por el dataset. El intervalo de tiempo está formado por una fecha de inicio y una de fin separadas por “/”, en formato ISO 8601, con el nivel de especificidad requerido por el dataset.</td>
-    <td>2015-01-01/2015-12-31
-
-2015-01-01T00:45:00Z/2016-01-15T00:06:00Z</td>
+    <td>2015-01-01/2015-12-31<br/>2015-01-01T00:45:00Z/2016-01-15T00:06:00Z</td>
     <td>temporal</td>
     <td>String</td>
   </tr>
@@ -925,10 +901,8 @@ http://sws.geonames.org/6255146"</td>
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/ . recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace
-
-"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
+    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
   </tr>
@@ -943,7 +917,15 @@ Recomendamos [ver un ejemplo de metadatos de una distribución en JSON](https://
 
 Estos son los metadatos que el *data.json* debe contener, para describir a una distribución dentro de la lista contenida en el campo **_distribution_*** *de un dataset:
 
-<table>
+<table  class="six-columns">
+<colgroup>
+    <col style="width:13%">
+    <col style="width:13%">
+    <col style="width:28%">
+    <col style="width:20%">
+    <col style="width:13%">
+    <col style="width:13%">
+  </colgroup>
   <tr>
     <td>Nombre</td>
     <td>Requerido</td>
@@ -972,9 +954,7 @@ Estos son los metadatos que el *data.json* debe contener, para describir a una d
     <td>Formato del archivo</td>
     <td>Recomendado</td>
     <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
-    <td>"text/csv" definición de IANA
-
-"csv" caracteres finales después del punto</td>
+    <td>"text/csv" definición de IANA "csv" caracteres finales después del punto</td>
     <td>format</td>
     <td>String</td>
   </tr>
@@ -982,9 +962,7 @@ Estos son los metadatos que el *data.json* debe contener, para describir a una d
     <td>Tipo de archivo</td>
     <td>No</td>
     <td>Indica el tipo de archivo de la distribución, sólo si este está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml). En caso contrario este campo permanece vacío.</td>
-    <td>"text/csv" definición de IANA
-
-"" cuando el formato no tiene definición en IANA</td>
+    <td>"text/csv" definición de IANA "" cuando el formato no tiene definición en IANA</td>
     <td>mediaType</td>
     <td>String</td>
   </tr>
@@ -1007,10 +985,8 @@ Estos son los metadatos que el *data.json* debe contener, para describir a una d
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/ . recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace
-
-"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
+    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
   </tr>
@@ -1026,9 +1002,7 @@ Estos son los metadatos que el *data.json* debe contener, para describir a una d
     <td>Fecha de publicación</td>
     <td>Sí</td>
     <td>Fecha de publicación de la distribución. Según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-14T19:48:05.433640" para especificar fecha y hora
-
-"2016-04-14" para especificar fecha únicamente</td>
+    <td>"2016-04-14T19:48:05.433640" para especificar fecha y hora<br/>"2016-04-14" para especificar fecha únicamente</td>
     <td>issued</td>
     <td>String</td>
   </tr>
@@ -1036,9 +1010,7 @@ Estos son los metadatos que el *data.json* debe contener, para describir a una d
     <td>Fecha de última actualización/ modificación</td>
     <td>Recomendado</td>
     <td>Fecha de última actualización/modificación de la distribución. Según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-19T19:48:05.433640" para especificar fecha y hora
-
-"2016-04-19" para especificar fecha únicamente</td>
+    <td>"2016-04-19T19:48:05.433640" para especificar fecha y hora<br/>"2016-04-19" para especificar fecha únicamente</td>
     <td>modified</td>
     <td>String</td>
   </tr>
@@ -1069,7 +1041,15 @@ Recomendamos [ver un ejemplo de metadatos de un campo en JSON](https://github.co
 
 Estos son los metadatos que el *data.json* debe contener para describir a un campo de una distribución tabular dentro de la lista contenida en el campo de metadatos **_field_** de una distribución:
 
-<table>
+<table  class="six-columns">
+<colgroup>
+    <col style="width:13%">
+    <col style="width:13%">
+    <col style="width:28%">
+    <col style="width:20%">
+    <col style="width:13%">
+    <col style="width:13%">
+  </colgroup>
   <tr>
     <td>Nombre</td>
     <td>Requerido</td>
@@ -1090,22 +1070,20 @@ Estos son los metadatos que el *data.json* debe contener para describir a un cam
     <td>Tipo</td>
     <td>Recomendado</td>
     <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (http://okfnlabs.org/recline/docs/models.html#types).
-
-Los tipos incluidos en esta lista son:
-
-string (text): Valores de texto.
-number (double, float, numeric): Números que puedan no ser enteros (incluyen decimales).
-integer (int): Números que siempre son enteros.
-date: Fecha simple expresada según el estándar ISO 8601 incluyendo únicamente año, mes y día (YYYY-MM-DD) como en "2016-02-01".
-time: Tiempo expresado según el estándar ISO 8601 incluyendo únicamente horas, minutos y segundos (hh:mm:ss) como en "10:05:00".
-date-time (datetime, timestamp): Fecha completa expresada según el estándar ISO 8601 incluyendo año, mes, día, horas, minutos y segundos (YYYY-MM-DDThh:mm:ssZ) como en "2016-02-01T10:05:00+03:00"
-boolean (bool): Valores verdadero/falso.
-binary: Representación de datos binarios base64.
-geo_point: Ver estructura en https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html.
-geojson: Ver en http://geojson.org/
-array: Lista de valores.
-object (json): Objeto de JSON.
-any: Campo que puede contener valores de cualquier tipo.</td>
+    Los tipos incluidos en esta lista son:<br/>
+    string (text): Valores de texto.<br/>
+    number (double, float, numeric): Números que puedan no ser enteros (incluyen decimales).<br/>
+    integer (int): Números que siempre son enteros.<br/>
+    date: Fecha simple expresada según el estándar ISO 8601 incluyendo únicamente año, mes y día (YYYY-MM-DD) como en "2016-02-01".<br/>
+    time: Tiempo expresado según el estándar ISO 8601 incluyendo únicamente horas, minutos y segundos (hh:mm:ss) como en "10:05:00".<br/>
+    date-time (datetime, timestamp): Fecha completa expresada según el estándar ISO 8601 incluyendo año, mes, día, horas, minutos y segundos (YYYY-MM-DDThh:mm:ssZ) como en "2016-02-01T10:05:00+03:00"<br/>
+    boolean (bool): Valores verdadero/falso.<br/>
+    binary: Representación de datos binarios base64.<br/>
+    geo_point: Ver estructura en https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html.<br/>
+    geojson: Ver en http://geojson.org/<br/>
+    array: Lista de valores.<br/>
+    object (json): Objeto de JSON.<br/>
+    any: Campo que puede contener valores de cualquier tipo.</td>
     <td>Ejemplo para el campo "unidad_operativa_contrataciones_desc" de la distribución "Convocatorias abiertas durante el año 2015", valor para tipo: "string"</td>
     <td>type</td>
     <td>String</td>

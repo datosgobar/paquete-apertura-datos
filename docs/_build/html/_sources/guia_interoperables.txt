@@ -5,24 +5,24 @@
 
 ## Indice
 
-- [Introducción](#introducci%C3%B3n)
-- [Objetivo de esta guía](#objetivo-de-esta-gu%C3%ADa)
+- [Introducción](#introduccion)
+- [Objetivo de esta guía](#objetivo-de-esta-guia)
 - [Datos de entidades interoperables](#datos-de-entidades-interoperables)
-  - [¿Qué son?](#%C2%BFqu%C3%A9-son)
-  - [¿Por qué es importante estandarizarlos?](#%C2%BFpor-qu%C3%A9-es-importante-estandarizarlos)
+  - [¿Qué son?](#que-son)
+  - [¿Por qué es importante estandarizarlos?](#por-que-es-importante-estandarizarlos)
 - [Tipos de entidades interoperables](#tipos-de-entidades-interoperables)
-  - [Geográficas](#geogr%C3%A1ficas)
-    - [Países o territorios internacionales](#pa%C3%ADses-o-territorios-internacionales)
+  - [Geográficas](#geograficas)
+    - [Países o territorios internacionales](#paises-o-territorios-internacionales)
     - [Divisiones o unidades territoriales internas](#divisiones-o-unidades-territoriales-internas)
       - [A. Provincias -> Departamentos -> Fracciones Censales -> Radios Censales (PDFR)](#a-provincias---departamentos---fracciones-censales---radios-censales-pdfr)
       - [B. Provincias -> Municipios (PM)](#b-provincias---municipios-pm)
       - [C. Provincias -> Departamentos -> Localidades (PDL)](#c-provincias---departamentos---localidades-pdl)
       - [D. Aglomerados](#d-aglomerados)
-      - [E. ¿Cómo nombrar los campos?](#e-%C2%BFc%C3%B3mo-nombrar-los-campos)
+      - [E. ¿Cómo nombrar los campos?](#e-como-nombrar-los-campos)
     - [Direcciones y lugares](#direcciones-y-lugares)
-    - [Códigos postales](#c%C3%B3digos-postales)
-  - [Personas físicas](#personas-f%C3%ADsicas)
-  - [Personas jurídicas](#personas-jur%C3%ADdicas)
+    - [Códigos postales](#codigos-postales)
+  - [Personas físicas](#personas-fisicas)
+  - [Personas jurídicas](#personas-juridicas)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -123,6 +123,13 @@ Se recomienda también que el nombre del campo del código sea "pais_id" o, en e
 <span class="recomendado">**Recomendado**</span>
 
 <table>
+ <colgroup>
+    <col style="width:18%">
+    <col style="width:22%">
+    <col style="width:18%">
+    <col style="width:24%">
+    <col style="width:18%">
+  </colgroup>
 <tbody>
   <tr>
     <td>origen_pais_id</td>
@@ -182,6 +189,9 @@ El tamaño de las fracciones y los radios en áreas urbanas se determina según 
 Para bordes de localidades el radio urbano puede bajar a 200 viviendas, aproximadamente, y en localidades aisladas a 100 viviendas. En zonas rurales las fracciones y radios se determinan por la conjunción de distintos factores: características del terreno, accesibilidad y distancia entre las viviendas.
 
 Los identificadores de cada una de estas divisiones se componen, sucesivamente, así:
+
+![CIdentificadores de divisiones geográficas](pictures/codigo-geo-indec.png)
+
 
 * **Provincia**: 2 dígitos. Ej.: "06" es la Provincia de “Buenos Aires”.
 
@@ -323,6 +333,7 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
 <span class="no-recomendado">**No recomendado**</span>
 
 <table>
+
 <tbody>
   <tr>
     <td>lugar_nombre</td>
@@ -343,15 +354,24 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
 **Aceptable 1** - sólo dirección normalizada
 
 <table>
+ <colgroup>
+    <col style="width:14%">
+    <col style="width:14%">
+    <col style="width:14%">
+    <col style="width:14%">
+     <col style="width:15%">
+    <col style="width:13%">
+    <col style="width:16%">
+  </colgroup>
 <tbody>
   <tr>
-    <td>lugar_nombre</td>
-    <td>calle_nombre</td>
-    <td>calle_numero</td>
-    <td>localidad_id</td>
-    <td>localidad_nombre</td>
-    <td>provincia_id</td>
-    <td>provincia_nombre</td>
+    <td style="font-size:10px;">lugar_nombre</td>
+    <td style="font-size:10px;">calle_nombre</td>
+    <td style="font-size:10px;">calle_numero</td>
+    <td style="font-size:10px;">localidad_id</td>
+    <td style="font-size:10px;">localidad_nombre</td>
+    <td style="font-size:10px;">provincia_id</td>
+    <td style="font-size:10px;">provincia_nombre</td>
   </tr>
   <tr>
     <td>Teatro Colón</td>
@@ -389,26 +409,26 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
 <table>
 <tbody>
   <tr>
-    <td>lugar_nombre</td>
-    <td>calle_nombre</td>
-    <td>calle_numero</td>
-    <td>localidad_id</td>
-    <td>localidad_nombre</td>
-    <td>provincia_id</td>
-    <td>provincia_nombre</td>
-    <td>latitud</td>
-    <td>longitud</td>
+    <td  style="font-size:9px;">lugar_nombre</td>
+    <td style="font-size:9px;">calle_nombre</td>
+    <td style="font-size:9px;">calle_numero</td>
+    <td style="font-size:9px;">localidad_id</td>
+    <td style="font-size:9px;">localidad_nombre</td>
+    <td style="font-size:9px;">provincia_id</td>
+    <td style="font-size:9px;">provincia_nombre</td>
+    <td style="font-size:9px;">latitud</td>
+    <td style="font-size:9px;">longitud</td>
   </tr>
   <tr>
-    <td>Teatro Colón</td>
-    <td>Cerrito</td>
-    <td>604</td>
-    <td>02001010</td>
-    <td>Ciudad de Buenos Aires</td>
-    <td>02</td>
-    <td>Ciudad Autónoma de Buenos Aires</td>
-    <td>-34.601041</td>
-    <td>-58.383079</td>
+    <td style="font-size:10px;">Teatro Colón</td>
+    <td style="font-size:10px;">Cerrito</td>
+    <td style="font-size:10px;">604</td>
+    <td style="font-size:10px;">02001010</td>
+    <td style="font-size:10px;">Ciudad de Buenos Aires</td>
+    <td style="font-size:10px;">02</td>
+    <td style="font-size:10px;">Ciudad Autónoma de Buenos Aires</td>
+    <td style="font-size:10px;">-34.601041</td>
+    <td style="font-size:10px;">-58.383079</td>
   </tr>
 </tbody>
 </table>
@@ -528,10 +548,10 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
 <table>
 <tbody>
   <tr>
-    <td>sujeto_obligado_nombre</td>
-    <td>sujeto_obligado_apellido</td>
-    <td>representante_nombre</td>
-    <td>representante_apellido</td>
+    <td  style="font-size:11px;">sujeto_obligado_nombre</td>
+    <td style="font-size:11px;">sujeto_obligado_apellido</td>
+    <td style="font-size:11px;">representante_nombre</td>
+    <td style="font-size:11px;">representante_apellido</td>
   </tr>
   <tr>
     <td>José</td>
@@ -564,14 +584,22 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
 <span class="recomendado">**Recomendado**</span>
 
 <table>
-<tbody>
+<colgroup>
+    <col style="width:20%">
+    <col style="width:15%">
+    <col style="width:15%">
+    <col style="width:15%">
+    <col style="width:15%">
+    <col style="width:20%">
+  </colgroup>
+  <tbody>
   <tr>
-    <td>sujeto_obligado_nombre</td>
-    <td>sujeto_obligado_apellido</td>
-    <td>sujeto_obligado_id</td>
-    <td>sujeto_obligado_tipo_id</td>
-    <td>sujeto_obligado_pais_id</td>
-    <td>sujeto_obligado_pais_nombre</td>
+    <td style="font-size:10px;">sujeto_obligado_nombre</td>
+    <td style="font-size:10px;">sujeto_obligado_apellido</td>
+    <td style="font-size:10px;">sujeto_obligado_id</td>
+    <td style="font-size:10px;">sujeto_obligado_tipo_id</td>
+    <td style="font-size:10px;">sujeto_obligado_pais_id</td>
+    <td style="font-size:10px;">sujeto_obligado_pais_nombre</td>
   </tr>
   <tr>
     <td>José</td>
@@ -682,6 +710,13 @@ En el caso de que el dataset pueda contener personas jurídicas fuera de la juri
 <span class="recomendado">**Recomendado**</span>
 
 <table>
+ <colgroup>
+    <col style="width:20%">
+    <col style="width:20%">
+    <col style="width:17%">
+    <col style="width:20%">
+    <col style="width:23%">
+  </colgroup>
 <tbody>
   <tr>
     <td>inversor_id</td>
