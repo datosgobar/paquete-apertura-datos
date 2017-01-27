@@ -94,7 +94,7 @@ Listado de las convocatorias abiertas durante el año 2015 en el sistema de cont
 
 * **Fecha de última actualización/ modificación:** 2016-04-19T19:48:05.433640-03:00
 
-* **URL de descarga:** http://186.33.211.253/dataset/99db6631-d1c9-470b-a73e-c62daa32c420/resource/4b7447cb-31ff-4352-96c3-589d212e1cc9/download/convocatorias-abiertas-anio-2015.csv
+* **URL de descarga:**  http://datos.gob.ar/dataset/069b5833-e57d-4d7a-859b-67a80cfdff20/resource/fa3603b3-0af7-43cc-9da9-90a512217d8a/download/convocatorias-2015.csv
 
 * **Fecha de publicación:** 2016-04-14T19:48:05.433640-03:00
 
