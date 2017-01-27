@@ -79,7 +79,7 @@ El documento se estructura así:
 
 Estos son los primeros aspectos importantes para la estandarización de datos.
 
-Para una discusión sobre los estándares recomendados en el manejo de datos básicos y fundamentales, transversales a distintas áreas temáticas, se puede consultar la [Guía para la identificación y uso de entidades interoperables](/guia_interoperables.md).
+Para una discusión sobre los estándares recomendados en el manejo de datos básicos y fundamentales, transversales a distintas áreas temáticas, se puede consultar la **Guía para la identificación y uso de entidades interoperables**.
 
 ## Formatos abiertos de archivos
 
@@ -131,7 +131,7 @@ Es un formato abierto.</td>
   <tr>
     <td>JSON</td>
     <td>Es un formato para el intercambio de datos. En mayor medida que los formatos anteriores, JSON es especialmente útil para datos entre máquinas. Es un formato abierto basado en la especificación RFC 7159. </td>
-    <td>Estructurados</td>
+    <td style="font-size: 12px" >Estructurados</td>
     <td>Alta</td>
   </tr>
 </tbody>
@@ -246,7 +246,7 @@ Ejemplos:
 
 Para la fragmentación temporal, recomendamos el estándar de los ejemplos, ya que es compacto y ordena los recursos por tiempo: YYYYMMDD. Por favor, recordá mantener siempre dos dígitos para el mes y el día, incluso si el número es menor a 10.
 
-Para la fragmentación por zonas, consultá la [Guía para la identificación y  uso de entidades interoperables](/corregir.md), y mirá cómo nombrarlas adecuadamente.
+Para la fragmentación por zonas, consultá la **Guía para la identificación y  uso de entidades interoperables**, y mirá cómo nombrarlas adecuadamente.
 
 En el caso de usar dimensiones temáticas propias del dominio particular de la información, podés ver esa guía o usar el mejor estándar identificado para esa temática particular.
 
@@ -361,10 +361,10 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
   </colgroup>
 <tbody>
   <tr>
-    <td>provincia_nombre</td>
-    <td>municipio_nombre</td>
-    <td>convenios_firmados_anio</td>
-    <td>convenios_firmados_numero</td>
+    <td style="font-size: 11px">provincia_nombre</td>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">convenios_firmados_anio</td>
+    <td style="font-size: 11px">convenios_firmados_numero</td>
   </tr>
   <tr>
     <td> </td>
@@ -417,10 +417,10 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
   </colgroup>
 <tbody>
   <tr>
-    <td>provincia_nombre</td>
-    <td>municipio_nombre</td>
-    <td>convenios_firmados_anio</td>
-    <td>convenios_firmados_numero</td>
+    <td style="font-size: 11px">provincia_nombre</td>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">convenios_firmados_anio</td>
+    <td style="font-size: 11px">convenios_firmados_numero</td>
   </tr>
   <tr>
     <td>Provincia X</td>
@@ -459,10 +459,10 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
   </colgroup>
 <tbody>
   <tr>
-    <td>municipio_nombre</td>
-    <td>solicitudes_anio</td>
-    <td style="font-size:10px;">solicitudes_poda_y_arbolado_numero</td>
-    <td style="font-size:10px;">solicitudes_recoleccion_residuos_numero</td>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">solicitudes_anio</td>
+    <td style="font-size:11px;">solicitudes_poda_y_arbolado_numero</td>
+    <td style="font-size:11px;">solicitudes_recoleccion_residuos_numero</td>
   </tr>
   <tr>
     <td>Municipalidad X</td>
@@ -485,8 +485,8 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
 
 <tbody>
   <tr>
-    <td>municipio_nombre</td>
-    <td>solicitudes_anio</td>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">solicitudes_anio</td>
     <td style="font-size:11px;">solicitudes_categoria</td>
     <td style="font-size:11px;">solicitudes_numero</td>
   </tr>
@@ -564,7 +564,7 @@ Es importante destacar, por ejemplo, que cuando un valor numérico sea "0" siemp
 
 <span class="no-recomendado">**No recomendado**</span> - texto presente en campos numéricos
 
-<table>
+<table id="una-columna">
 <tbody>
   <tr>
     <td>solicitudes_numero</td>
@@ -854,7 +854,7 @@ Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios interme
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table>
+<table id="una-columna">
 <tbody>
   <tr>
     <td>localidad_nombre</td>
@@ -876,7 +876,7 @@ Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios interme
 
 <span class="recomendado">**Recomendado**</span> - primera celda de la segunda fila completa
 
-<table>
+<table  id="una-columna">
 <tbody>
   <tr>
     <td>localidad_nombre</td>

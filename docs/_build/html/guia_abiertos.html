@@ -268,7 +268,7 @@
 <li><strong>Estándares según el tipo de datos</strong>: cuáles son los estándares recomendados para manejar distintos tipos de datos.</li>
 </ul>
 <p>Estos son los primeros aspectos importantes para la estandarización de datos.</p>
-<p>Para una discusión sobre los estándares recomendados en el manejo de datos básicos y fundamentales, transversales a distintas áreas temáticas, se puede consultar la <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/tree/master/docs..\..\..\guia_interoperables.md">Guía para la identificación y uso de entidades interoperables</a>.</p>
+<p>Para una discusión sobre los estándares recomendados en el manejo de datos básicos y fundamentales, transversales a distintas áreas temáticas, se puede consultar la <strong>Guía para la identificación y uso de entidades interoperables</strong>.</p>
 </div>
 <div class="section" id="formatos-abiertos-de-archivos">
 <span id="formatos-abiertos-de-archivos"></span><h2>Formatos abiertos de archivos<a class="headerlink" href="#formatos-abiertos-de-archivos" title="Permalink to this headline">¶</a></h2>
@@ -317,7 +317,7 @@ Es un formato abierto.</td>
   <tr>
     <td>JSON</td>
     <td>Es un formato para el intercambio de datos. En mayor medida que los formatos anteriores, JSON es especialmente útil para datos entre máquinas. Es un formato abierto basado en la especificación RFC 7159. </td>
-    <td>Estructurados</td>
+    <td style="font-size: 12px" >Estructurados</td>
     <td>Alta</td>
   </tr>
 </tbody>
@@ -404,7 +404,7 @@ Es un formato abierto.</td>
 <li><em>acceso-informacion-publica-jujuy-20130208.csv</em>:  Versión del recurso fragmentada por división político-territorial (provincia o caba) y fecha.</li>
 </ul>
 <p>Para la fragmentación temporal, recomendamos el estándar de los ejemplos, ya que es compacto y ordena los recursos por tiempo: YYYYMMDD. Por favor, recordá mantener siempre dos dígitos para el mes y el día, incluso si el número es menor a 10.</p>
-<p>Para la fragmentación por zonas, consultá la <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/tree/master/docs..\..\..\corregir.md">Guía para la identificación y  uso de entidades interoperables</a>, y mirá cómo nombrarlas adecuadamente.</p>
+<p>Para la fragmentación por zonas, consultá la <strong>Guía para la identificación y  uso de entidades interoperables</strong>, y mirá cómo nombrarlas adecuadamente.</p>
 <p>En el caso de usar dimensiones temáticas propias del dominio particular de la información, podés ver esa guía o usar el mejor estándar identificado para esa temática particular.</p>
 </div>
 <div class="section" id="codificacion">
@@ -496,10 +496,10 @@ Es un formato abierto.</td>
   </colgroup>
 <tbody>
   <tr>
-    <td>provincia_nombre</td>
-    <td>municipio_nombre</td>
-    <td>convenios_firmados_anio</td>
-    <td>convenios_firmados_numero</td>
+    <td style="font-size: 11px">provincia_nombre</td>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">convenios_firmados_anio</td>
+    <td style="font-size: 11px">convenios_firmados_numero</td>
   </tr>
   <tr>
     <td> </td>
@@ -548,10 +548,10 @@ Es un formato abierto.</td>
   </colgroup>
 <tbody>
   <tr>
-    <td>provincia_nombre</td>
-    <td>municipio_nombre</td>
-    <td>convenios_firmados_anio</td>
-    <td>convenios_firmados_numero</td>
+    <td style="font-size: 11px">provincia_nombre</td>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">convenios_firmados_anio</td>
+    <td style="font-size: 11px">convenios_firmados_numero</td>
   </tr>
   <tr>
     <td>Provincia X</td>
@@ -586,10 +586,10 @@ Es un formato abierto.</td>
   </colgroup>
 <tbody>
   <tr>
-    <td>municipio_nombre</td>
-    <td>solicitudes_anio</td>
-    <td style="font-size:10px;">solicitudes_poda_y_arbolado_numero</td>
-    <td style="font-size:10px;">solicitudes_recoleccion_residuos_numero</td>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">solicitudes_anio</td>
+    <td style="font-size:11px;">solicitudes_poda_y_arbolado_numero</td>
+    <td style="font-size:11px;">solicitudes_recoleccion_residuos_numero</td>
   </tr>
   <tr>
     <td>Municipalidad X</td>
@@ -606,8 +606,8 @@ Es un formato abierto.</td>
     <col style="width:28%">
   </colgroup><tbody>
   <tr>
-    <td>municipio_nombre</td>
-    <td>solicitudes_anio</td>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">solicitudes_anio</td>
     <td style="font-size:11px;">solicitudes_categoria</td>
     <td style="font-size:11px;">solicitudes_numero</td>
   </tr>
@@ -671,7 +671,7 @@ Recolección de residuos - 198</td>
 <p>Si existen distintas interpretaciones posibles de un &#8220;valor ausente&#8221;, éstas deben ser explicitadas en un campo aparte. Si sólo hay “valores ausentes” (no hay distintas interpretaciones, es siempre un “valor ausente”) no es necesario agregar una columna adicional.</p>
 <p>Es importante destacar, por ejemplo, que cuando un valor numérico sea &#8220;0&#8221; siempre debe ponerse un “0” como dato (y no un valor nulo, en blanco o vacío).</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span> - texto presente en campos numéricos</p>
-<table>
+<table id="una-columna">
 <tbody>
   <tr>
     <td>solicitudes_numero</td>
@@ -925,7 +925,7 @@ Recolección de residuos - 198</td>
 <span id="siglas"></span><h4>Siglas<a class="headerlink" href="#siglas" title="Permalink to this headline">¶</a></h4>
 <p>Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios intermedios.</p>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span></p>
-<table>
+<table id="una-columna">
 <tbody>
   <tr>
     <td>localidad_nombre</td>
@@ -943,7 +943,7 @@ Recolección de residuos - 198</td>
   </tr>
 </tbody>
 </table><p><span class="recomendado"><strong>Recomendado</strong></span> - primera celda de la segunda fila completa</p>
-<table>
+<table  id="una-columna">
 <tbody>
   <tr>
     <td>localidad_nombre</td>

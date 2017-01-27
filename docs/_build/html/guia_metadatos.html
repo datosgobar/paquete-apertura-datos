@@ -234,7 +234,7 @@
 <p>Esta es <strong>una guía de recomendaciones y buenas prácticas, para el uso y la publicación de metadatos</strong>.</p>
 <p>Para hacer estas recomendaciones, nos basamos en estándares usados a nivel nacional e internacional y en la experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública del Ministerio de Modernización de la Nación.</p>
 <p>Esta es <strong>una guía colaborativa y en progreso</strong>. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.</p>
-<p>Este documento se complementa con la <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/Gu%C3%ADa%20para%20la%20publicaci%C3%B3n%20de%20datos%20en%20formatos%20abiertos%20(v0.1).pdf">Guía para la publicación de datos en formatos abiertos</a> y la <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/Guia%20para%20la%20identificaci%C3%B3n%20y%20uso%20de%20entidades%20interoperables%20(v0.1).pdf">Guía para la identificación y uso de entidades interoperables</a>.</p>
+<p>Este documento se complementa con la <strong>Guía para la publicación de datos en formatos abiertos</strong> y la <strong>Guía para la identificación y uso de entidades interoperables</strong>.</p>
 </div>
 <div class="section" id="que-son-los-metadatos">
 <span id="que-son-los-metadatos"></span><h3>¿Qué son los metadatos?<a class="headerlink" href="#que-son-los-metadatos" title="Permalink to this headline">¶</a></h3>
@@ -254,10 +254,10 @@
 </div>
 <div class="section" id="como-se-publican-los-metadatos">
 <span id="como-se-publican-los-metadatos"></span><h3>¿Cómo se publican los metadatos?<a class="headerlink" href="#como-se-publican-los-metadatos" title="Permalink to this headline">¶</a></h3>
-<p><strong>La publicación de los metadatos puede ser muy diversa</strong> en detalle, calidad y forma. <strong>Una publicación muy elemental es un documento de texto</strong> que ofrece una descripción del dataset y de cada uno de los recursos que lo componen. Es posible ver un <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md">ejemplo textual</a> de los metadatos de un catálogo de datos en el <a class="reference external" href="#heading=h.y9fd00u5dicd">Anexo VI - Ejemplo de metadatos como texto</a>.</p>
+<p><strong>La publicación de los metadatos puede ser muy diversa</strong> en detalle, calidad y forma. <strong>Una publicación muy elemental es un documento de texto</strong> que ofrece una descripción del dataset y de cada uno de los recursos que lo componen. Es posible ver un <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md">ejemplo textual</a> de los metadatos de un catálogo de datos en el <strong>Anexo VI - Ejemplo de metadatos como texto</strong>.</p>
 <p>Sin embargo, <strong>las computadoras no pueden leer fácilmente documentos de texto</strong>. La organización sistemática de colecciones de datasets (es decir, la creación de un <strong>catálogo</strong> de datos) exige un nivel de complejidad mayor para facilitar su descubrimiento, indexación, y reutilización por parte de scripts y aplicaciones de todo tipo.</p>
 <p>La potencial reutilización de los conjuntos de datos y la posibilidad de que los mismos sean correctamente federados desde el Portal Nacional de Datos Abiertos (datos.gob.ar) dependerá de la calidad de sus metadatos. Adoptar y/o desarrollar estándares y vocabularios controlados es importante para la lectura e interpretación de los conjuntos de datos por personas y por aplicaciones informáticas.</p>
-<p>Para esto, <strong>los catálogos de datos publican sus metadatos en un formato estructurado (JSON)</strong> respetando un determinado perfil estandarizado. Recomendamos ver un <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json">ejemplo en JSON</a> de los metadatos de un catálogo de datos en el <a class="reference external" href="#heading=h.ysmgi6nkdgyt">Anexo IV - Ejemplo de data.json</a>.</p>
+<p>Para esto, <strong>los catálogos de datos publican sus metadatos en un formato estructurado (JSON)</strong> respetando un determinado perfil estandarizado. Recomendamos ver un <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json">ejemplo en JSON</a> de los metadatos de un catálogo de datos en el <strong>Anexo IV - Ejemplo de data.json</strong>.</p>
 <p>En el resto de este documento detallamos las características de los estándares y vocabularios controlados adoptados para catálogos de datos, datasets y distribuciones.</p>
 </div>
 <div class="section" id="publico-objetivo-de-esta-guia">
@@ -356,13 +356,14 @@
   <tr>
     <td>Taxonomía temática global</td>
     <td>Sí</td>
-    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en  "http://datos.gob.ar/superThemeTaxonomy.json".</td>
+    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en 
+    <a href="http://datos.gob.ar/superThemeTaxonomy.json">http://datos.gob.ar/superThemeTaxonomy.json</a> </td>
     <td>http://datos.gob.ar/superThemeTaxonomy.json</td>
   </tr>
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual todos los datasets y distribuciones del catálogo están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/ . recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset o distribución que especifique una licencia diferente, sobreescribe a la licencia general del catálogo.</td>
+    <td>Indica la licencia bajo la cual todos los datasets y distribuciones del catálogo están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset o distribución que especifique una licencia diferente, sobreescribe a la licencia general del catálogo.</td>
     <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
   </tr>
   <tr>
@@ -420,7 +421,7 @@
   <tr>
     <td>Responsable</td>
     <td>Sí</td>
-    <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (http://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
+    <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (<a href="http://datos.gob.ar/dataset/estructura-organica-pen">http://datos.gob.ar/dataset/estructura-organica-pen</a>), deberá utilizarse la denominación allí documentada.</td>
     <td>Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones.</td>
   </tr>
   <tr>
@@ -477,7 +478,7 @@
     <td>Lenguaje para la descripción de los metadatos del dataset. Hay dos estándares ISO que pueden ser utilizados para este campo:<br/>
     (a) ISO 639-1 (2 letras)
     (b) ISO 639-2/T (3 letras) es el más recomendado.<br/>
-    Puede definirse uno o más lenguajes en una lista. Los lenguajes especificados para un dataset, sobreesriben a los del catálogo. Si este campo está vacío el dataset hereda los lenguajes del catálogo. (Link a los estándares ISO: https://www.loc.gov/standards/iso639-2/php/code_list.php)
+    Puede definirse uno o más lenguajes en una lista. Los lenguajes especificados para un dataset, sobreesriben a los del catálogo. Si este campo está vacío el dataset hereda los lenguajes del catálogo. <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php">Link a los estándares ISO</a>
     </td>
     <td>
     ["es"] para un lenguaje ISO 639-1<br/>
@@ -516,7 +517,7 @@
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/. Recomendamos usar  la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
+    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar  la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
     <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
   </tr>
 </table></div>
@@ -546,7 +547,7 @@
   <tr>
     <td>Formato</td>
     <td>Recomendado</td>
-    <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
+    <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (<a href="http://www.iana.org/assignments/media-types/media-types.xml">http://www.iana.org/assignments/media-types/media-types.xml</a>) debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
     <td>"text/csv" definición de IANA "csv" caracteres finales después del punto</td>
   </tr>
   <tr>
@@ -558,7 +559,7 @@
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
+    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
     <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
   </tr>
   <tr>
@@ -600,7 +601,7 @@
   <tr>
     <td>Tipo</td>
     <td>Recomendado</td>
-    <td>El tipo de dato contenido en el campo según la lista por la librería recline.js (http://okfnlabs.org/recline/docs/models.html#types).
+    <td>El tipo de dato contenido en el campo según la lista por la librería recline.js (<a href="http://okfnlabs.org/recline/docs/models.html#types">http://okfnlabs.org/recline/docs/models.html#types</a>).
     Los tipos incluidos en esta lista son:<br/>
     string (text): valores de texto.
     number (double, float, numeric): números que puedan no ser enteros (incluyen decimales).<br/>
@@ -610,8 +611,8 @@
     date-time (datetime, timestamp): fecha completa expresada según el estándar ISO 8601 incluyendo año, mes, día, horas, minutos y segundos (YYYY-MM-DDThh:mm:ssZ) como en "2016-02-01T10:05:00+03:00"<br/>
     boolean (bool): valores verdadero/falso.<br/>
     binary: representación de datos binarios base64.<br/>
-    geo_point: ver estructura en https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html.<br/>
-    geojson: ver en http://geojson.org/<br/>
+    geo_point: ver estructura en  <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html">https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html.</a><br/>
+    geojson: ver en <a href="http://geojson.org/">http://geojson.org/</a><br/>
     array: lista de valores.<br/>
     object (json): objeto de JSON.<br/>
     any: campo que puede contener valores de cualquier tipo.</td>
@@ -664,14 +665,14 @@
 <div class="section" id="otros-catalogos">
 <span id="otros-catalogos"></span><h2>Otros catálogos<a class="headerlink" href="#otros-catalogos" title="Permalink to this headline">¶</a></h2>
 <p>Los usuarios que opten por una solución alternativa al Portal Andino para publicar sus datos, deberán publicar los metadatos de su Catálogo en un archivo <em>data.json</em> en una URL como la siguiente: <em>http://datos.[entidad].gob.ar/data.json</em>.</p>
-<p>Este archivo deberá estar construido tal como se puede ver en el ejemplo del <strong><a class="reference external" href="#heading=h.ysmgi6nkdgyt">Anexo IV - Ejemplo de data.json</a></strong>, respetando el perfil de metadatos de la Administración Pública Nacional tal como se lo describe más adelante en la sección &#8220;<em>Campos del perfil</em>&#8221;.</p>
+<p>Este archivo deberá estar construido tal como se puede ver en el ejemplo del <strong>Anexo IV - Ejemplo de data.json</strong>, respetando el perfil de metadatos de la Administración Pública Nacional tal como se lo describe más adelante en la sección &#8220;<em>Campos del perfil</em>&#8221;.</p>
 <div class="section" id="estandar-usado">
 <span id="estandar-usado"></span><h3>Estándar usado<a class="headerlink" href="#estandar-usado" title="Permalink to this headline">¶</a></h3>
 <p><strong>El perfil de metadatos recomendado en esta guía es una adaptación del estándar DCAT - AP</strong>, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.</p>
 <p>Según la W3C: &#8220;Mediante la utilización de DCAT para describir datasets en catálogos de datos, quienes publican aumentan la posibilidad de descubrimiento (<em>discoverability</em>) y permiten a aplicaciones informáticas consumir metadatos de manera simple desde múltiples catálogos. Además permite la publicación descentralizada de catálogos y favorece la búsqueda ‘federada’ de datasets a través de varios sitios.&#8221;</p>
 <p>El perfil de metadatos propuesto para la Administración Pública Nacional se compone de 3 clases principales (<em>Catalog, Dataset y Distribution</em>) y 2 auxiliares (<em>Field</em> y <em>Theme</em>) que se relacionan según el siguiente esquema:</p>
-<p><img alt="image alt text" src="_images/der_perfil_metadatos.png" /></p>
-<p>A continuación, describimos los metadatos que el <em>data.json</em> debe contener, para cada una de estas clases.</p>
+<div id="perfil-de-metadatos"><p><img alt="Perfil de Metadatos" src="_images/der_perfil_metadatos.png" /></p>
+</div><p>A continuación, describimos los metadatos que el <em>data.json</em> debe contener, para cada una de estas clases.</p>
 </div>
 <div class="section" id="campos-del-perfil">
 <span id="campos-del-perfil"></span><h3>Campos del perfil<a class="headerlink" href="#campos-del-perfil" title="Permalink to this headline">¶</a></h3>
@@ -758,7 +759,7 @@
     <td>Lenguaje para la descripción de los metadatos de los datasets contenidos en el catálogo. Hay 2 estándares ISO que pueden ser utilizados para este campo:<br/>
     (a) ISO 639-1 (2 letras)<br/>
     (b) ISO 639-2/T (3 letras) es el más recomendado.<br/>
-    Puede definirse 1 o más lenguajes en una lista. (Link a los estándares ISO: https://www.loc.gov/standards/iso639-2/php/code_list.php)</td>
+    Puede definirse 1 o más lenguajes en una lista. (<a href="https://www.loc.gov/standards/iso639-2/php/code_list.php">Link a los estándares ISO</a>)</td>
     <td>["es"] para un lenguaje ISO 639-1<br/>
     ["spa", "eng"] para dos lenguajes ISO 639-2</td>
     <td>language</td>
@@ -767,7 +768,7 @@
   <tr>
     <td>Taxonomía temática global</td>
     <td>Sí</td>
-    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en "http://datos.gob.ar/superThemeTaxonomy.json".</td>
+    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en <a href="http://datos.gob.ar/superThemeTaxonomy.json">http://datos.gob.ar/superThemeTaxonomy.json</a>.</td>
     <td>http://datos.gob.ar/superThemeTaxonomy.json</td>
     <td>superThemeTaxonomy</td>
     <td>String</td>
@@ -783,7 +784,7 @@
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual todos los datasets y distribuciones del catálogo están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/ . recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset o distribución que especifique una licencia diferente, sobreescribe a la licencia general del catálogo.</td>
+    <td>Indica la licencia bajo la cual todos los datasets y distribuciones del catálogo están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a> . recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset o distribución que especifique una licencia diferente, sobreescribe a la licencia general del catálogo.</td>
     <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
@@ -864,7 +865,7 @@
   <tr>
     <td>Autor</td>
     <td>Sí</td>
-    <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (http://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
+    <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (<a href="http://datos.gob.ar/dataset/estructura-organica-pen">http://datos.gob.ar/dataset/estructura-organica-pen</a>), deberá utilizarse la denominación allí documentada.</td>
     <td>Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones.</td>
     <td>publisher -> name</td>
     <td>String</td>
@@ -963,7 +964,7 @@
     <td>Lenguaje para la descripción de los metadatos del dataset. Hay 2 estándares ISO que pueden ser utilizados para este campo:<br/>
     (a) ISO 639-1 (2 letras)<br/>
     (b) ISO 639-2/T (3 letras) es el más recomendado.<br/>
-    Puede definirse 1 o más lenguajes en una lista. Los lenguajes especificados para un dataset, sobreesriben a los del catálogo. Si este campo está vacío el dataset hereda los lenguajes del catálogo. (Link a los estándares ISO: https://www.loc.gov/standards/iso639-2/php/code_list.php)</td>
+    Puede definirse 1 o más lenguajes en una lista. Los lenguajes especificados para un dataset, sobreesriben a los del catálogo. Si este campo está vacío el dataset hereda los lenguajes del catálogo. (<a href="https://www.loc.gov/standards/iso639-2/php/code_list.php">Link a los estándares ISO</a>)</td>
     <td>["es"] para un lenguaje ISO 639-1<br/>
     ["spa", ”eng"] para dos lenguajes ISO 639-2</td>
     <td>language</td>
@@ -1003,7 +1004,7 @@
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
+    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
     <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
@@ -1082,7 +1083,7 @@
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de http://opendefinition.org/licenses/. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
+    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
     <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
@@ -1161,7 +1162,7 @@
   <tr>
     <td>Tipo</td>
     <td>Recomendado</td>
-    <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (http://okfnlabs.org/recline/docs/models.html#types).
+    <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (<a href="http://okfnlabs.org/recline/docs/models.html#types">http://okfnlabs.org/recline/docs/models.html#types</a>).
     Los tipos incluidos en esta lista son:<br/>
     string (text): Valores de texto.<br/>
     number (double, float, numeric): Números que puedan no ser enteros (incluyen decimales).<br/>
@@ -1171,8 +1172,8 @@
     date-time (datetime, timestamp): Fecha completa expresada según el estándar ISO 8601 incluyendo año, mes, día, horas, minutos y segundos (YYYY-MM-DDThh:mm:ssZ) como en "2016-02-01T10:05:00+03:00"<br/>
     boolean (bool): Valores verdadero/falso.<br/>
     binary: Representación de datos binarios base64.<br/>
-    geo_point: Ver estructura en https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html.<br/>
-    geojson: Ver en http://geojson.org/<br/>
+    geo_point: Ver estructura en  <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html">https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html.</a><br/>
+    geojson: ver en <a href="http://geojson.org/">http://geojson.org/</a><br/>
     array: Lista de valores.<br/>
     object (json): Objeto de JSON.<br/>
     any: Campo que puede contener valores de cualquier tipo.</td>
@@ -1193,7 +1194,7 @@
 <span id="id5"></span><h4>Tema<a class="headerlink" href="#tema" title="Permalink to this headline">¶</a></h4>
 <p>Recomendamos <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/theme.json">ver un ejemplo de metadatos de un campo en JSON</a>.</p>
 <p>Estos son los metadatos que el <em>data.json</em> debe contener, para describir a un tema de la taxonomía temática de un catálogo:</p>
-<table>
+<table class="six-columns">
   <tr>
     <td>Nombre</td>
     <td>Requerido</td>
@@ -1725,7 +1726,7 @@
 <li><strong>Formato del archivo</strong>: CSV</li>
 <li><strong>Tipo de archivo</strong>: text/csv</li>
 <li><strong>Fecha de última actualización/ modificación</strong>: 2016-04-19T19:48:05.433640-03:00</li>
-<li><strong>URL de descarga</strong>: <a class="reference external" href="http://186.33.211.253/dataset/99db6631-d1c9-470b-a73e-c62daa32c420/resource/4b7447cb-31ff-4352-96c3-589d212e1cc9/download/convocatorias-abiertas-anio-2015.csv">http://186.33.211.253/dataset/99db6631-d1c9-470b-a73e-c62daa32c420/resource/4b7447cb-31ff-4352-96c3-589d212e1cc9/download/convocatorias-abiertas-anio-2015.csv</a></li>
+<li><strong>URL de descarga</strong>: <a class="reference external" href="http://datos.gob.ar/dataset/069b5833-e57d-4d7a-859b-67a80cfdff20/resource/fa3603b3-0af7-43cc-9da9-90a512217d8a/download/convocatorias-2015.csv">http://datos.gob.ar/dataset/069b5833-e57d-4d7a-859b-67a80cfdff20/resource/fa3603b3-0af7-43cc-9da9-90a512217d8a/download/convocatorias-2015.csv</a></li>
 <li><strong>Fecha de publicación</strong>: 2016-04-14T19:48:05.433640-03:00</li>
 </ul>
 <p><em>Campos de la distribución</em></p>

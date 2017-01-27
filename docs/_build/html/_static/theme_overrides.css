@@ -185,3 +185,35 @@ table.six-columns td{
     padding: 7px 3px 7px 3px;
 
 }
+
+table#identificadores-geograficos {
+    border: solid 2px #4a9ace;
+}
+
+table#identificadores-geograficos tbody tr td {
+    background: #fcfcfc;
+    color: black;
+    border-right: solid 2px #4a9ace;
+    font-weight: normal;
+}
+
+table#identificadores-geograficos tbody tr td bold {
+    font-weight: bold;
+}
+
+table#identificadores-geograficos tbody tr:hover td {
+    backgroud: #fcfcfc;
+    border-top: none;
+    border-bottom: none;
+}
+
+ table#una-columna{
+    width: 40%;
+ }
+
+ div#perfil-de-metadatos img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+ }

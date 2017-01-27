@@ -14,7 +14,7 @@
   - [Geográficas](#geograficas)
     - [Países o territorios internacionales](#paises-o-territorios-internacionales)
     - [Divisiones o unidades territoriales internas](#divisiones-o-unidades-territoriales-internas)
-      - [A. Provincias -> Departamentos -> Fracciones Censales -> Radios Censales (PDFR)](#a-provincias---departamentos---fracciones-censales---radios-censales-pdfr)
+      - [A. Provincias -> Departamentos -> Fracciones Censales -> Radios Censales (PDFR)](#a-provincias-departamentos-fracciones-censales-radios-censales-pdfr)
       - [B. Provincias -> Municipios (PM)](#b-provincias---municipios-pm)
       - [C. Provincias -> Departamentos -> Localidades (PDL)](#c-provincias---departamentos---localidades-pdl)
       - [D. Aglomerados](#d-aglomerados)
@@ -38,7 +38,7 @@ Para hacer estas recomendaciones, nos basamos en estándares usados a nivel naci
 
 Esta es **una guía colaborativa y en progreso**. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.
 
-Para una discusión sobre la estandarización de datos, recomendamos consultar la *[Guía para la publicación de datos en formatos abiertos](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/Gu%C3%ADa%20para%20la%20publicaci%C3%B3n%20de%20datos%20en%20formatos%20abiertos%20(v0.1).pdf)*. Este documento se complementa con esa guía y la *[Guía para el uso y la publicación de metadatos](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/Gu%C3%ADa%20para%20el%20uso%20y%20la%20publicaci%C3%B3n%20de%20metadatos%20(v0.1).pdf)*.
+Para una discusión sobre la estandarización de datos, recomendamos consultar la **Guía para la publicación de datos en formatos abiertos**. Este documento se complementa con esa guía y la **Guía para el uso y la publicación de metadatos**.
 
 ## Datos de entidades interoperables
 
@@ -190,7 +190,28 @@ Para bordes de localidades el radio urbano puede bajar a 200 viviendas, aproxima
 
 Los identificadores de cada una de estas divisiones se componen, sucesivamente, así:
 
-![CIdentificadores de divisiones geográficas](pictures/codigo-geo-indec.png)
+<table id="identificadores-geograficos">
+  <tr>
+    <td><bold>Provincia</bold><br/>
+    2 dígitos<br/>
+    "06"<br/>
+    Buenos Aires
+    </td>
+    <td><bold>Departamento</bold><br/>
+    5 dígitos<br/>
+    "06007"<br/>
+    Adolfo Alsina
+    </td>
+    <td><bold>Fracción Censal</bold><br/>
+    7 dígitos<br/>
+    "0600702"
+    </td>
+    <td><bold>Radio Censal</bold><br/>
+    9 dígitos<br/>
+    "060070201"
+    </td>
+  </tr>
+</table>
 
 
 * **Provincia**: 2 dígitos. Ej.: "06" es la Provincia de “Buenos Aires”.
@@ -365,22 +386,22 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
   </colgroup>
 <tbody>
   <tr>
-    <td style="font-size:10px;">lugar_nombre</td>
-    <td style="font-size:10px;">calle_nombre</td>
-    <td style="font-size:10px;">calle_numero</td>
-    <td style="font-size:10px;">localidad_id</td>
-    <td style="font-size:10px;">localidad_nombre</td>
-    <td style="font-size:10px;">provincia_id</td>
-    <td style="font-size:10px;">provincia_nombre</td>
+    <td style="font-size:11px;">lugar_nombre</td>
+    <td style="font-size:11px;">calle_nombre</td>
+    <td style="font-size:11px;">calle_numero</td>
+    <td style="font-size:11px;">localidad_id</td>
+    <td style="font-size:11px;">localidad_nombre</td>
+    <td style="font-size:11px;">provincia_id</td>
+    <td style="font-size:11px;">provincia_nombre</td>
   </tr>
   <tr>
     <td>Teatro Colón</td>
     <td>Cerrito</td>
     <td>604</td>
     <td>02001010</td>
-    <td>Ciudad de Buenos Aires</td>
+    <td style="font-size:11px;">Ciudad de Buenos Aires</td>
     <td>02</td>
-    <td>Ciudad Autónoma de Buenos Aires</td>
+    <td style="font-size:11px;">Ciudad Autónoma de Buenos Aires</td>
   </tr>
 </tbody>
 </table>
@@ -409,19 +430,19 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
 <table>
 <tbody>
   <tr>
-    <td  style="font-size:9px;">lugar_nombre</td>
-    <td style="font-size:9px;">calle_nombre</td>
-    <td style="font-size:9px;">calle_numero</td>
-    <td style="font-size:9px;">localidad_id</td>
-    <td style="font-size:9px;">localidad_nombre</td>
-    <td style="font-size:9px;">provincia_id</td>
-    <td style="font-size:9px;">provincia_nombre</td>
-    <td style="font-size:9px;">latitud</td>
-    <td style="font-size:9px;">longitud</td>
+    <td  style="font-size:11px;">lugar_nombre</td>
+    <td style="font-size:11px;">calle_nombre</td>
+    <td style="font-size:11px;">calle_numero</td>
+    <td style="font-size:11px;">localidad_id</td>
+    <td style="font-size:11px;">localidad_nombre</td>
+    <td style="font-size:11px;">provincia_id</td>
+    <td style="font-size:11px;">provincia_nombre</td>
+    <td style="font-size:11px;">latitud</td>
+    <td style="font-size:11px;">longitud</td>
   </tr>
   <tr>
     <td style="font-size:10px;">Teatro Colón</td>
-    <td style="font-size:10px;">Cerrito</td>
+    <td style="font-size:9px;">Cerrito</td>
     <td style="font-size:10px;">604</td>
     <td style="font-size:10px;">02001010</td>
     <td style="font-size:10px;">Ciudad de Buenos Aires</td>
@@ -450,7 +471,7 @@ Ej.: C1426BMD
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table>
+<table  id="una-columna">
 <tbody>
   <tr>
     <td>codigo_postal</td>
@@ -473,7 +494,7 @@ Ej.: C1426BMD
 
 <span class="recomendado">**Recomendado**</span>
 
-<table>
+<table id="una-columna">
 <tbody>
   <tr>
     <td>codigo_postal</td>
@@ -604,7 +625,7 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
   <tr>
     <td>José</td>
     <td>Pérez</td>
-    <td>11111111</td>
+    <td style="font-size:10px;">11111111</td>
     <td>DNI</td>
     <td>ARG</td>
     <td>Argentina</td>
@@ -612,7 +633,7 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
   <tr>
     <td>José</td>
     <td>Pérez</td>
-    <td>11111111</td>
+    <td style="font-size:10px;">11111111</td>
     <td>DNI</td>
     <td>ARG</td>
     <td>Argentina</td>
@@ -620,7 +641,7 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
   <tr>
     <td>José</td>
     <td>Pérez</td>
-    <td>11111111</td>
+    <td style="font-size:10px;">11111111</td>
     <td>DNI</td>
     <td>ARG</td>
     <td>Argentina</td>
@@ -628,7 +649,7 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
   <tr>
     <td>José</td>
     <td>Pérez</td>
-    <td>11111111</td>
+    <td style="font-size:10px;">11111111</td>
     <td>DNI</td>
     <td>ARG</td>
     <td>Argentina</td>
@@ -646,7 +667,7 @@ Las entidades con personería jurídica local (Ej.: empresas argentinas, ONGs ar
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table>
+<table id="una-columna">
 <tbody>
   <tr>
     <td>exportador</td>
@@ -680,15 +701,15 @@ Las entidades con personería jurídica local (Ej.: empresas argentinas, ONGs ar
     <td>Los Tomates Andinos SRL</td>
   </tr>
   <tr>
-    <td>33111111117</td>
+    <td >33111111117</td>
     <td>Los Tomates Andinos SRL</td>
   </tr>
   <tr>
-    <td>33111111117</td>
+    <td >33111111117</td>
     <td>Los Tomates Andinos SRL</td>
   </tr>
   <tr>
-    <td>33111111117</td>
+    <td >33111111117</td>
     <td>Los Tomates Andinos SRL</td>
   </tr>
 </tbody>
@@ -726,28 +747,28 @@ En el caso de que el dataset pueda contener personas jurídicas fuera de la juri
     <td>inversor_pais_nombre</td>
   </tr>
   <tr>
-    <td>33111111117</td>
+    <td style="font-size:11px;">33111111117</td>
     <td>CUIT</td>
     <td>Los Tomates Andinos SRL</td>
     <td>ARG</td>
     <td>Argentina</td>
   </tr>
   <tr>
-    <td>33111111117</td>
+    <td style="font-size:11px;">33111111117</td>
     <td>CUIT</td>
     <td>Los Tomates Andinos SRL</td>
     <td>ARG</td>
     <td>Argentina</td>
   </tr>
   <tr>
-    <td>1234567890</td>
+    <td style="font-size:11px;">1234567890</td>
     <td>TIN</td>
     <td>Tomatoes Inc.</td>
     <td>USA</td>
     <td>Estados Unidos</td>
   </tr>
   <tr>
-    <td>987654321</td>
+    <td style="font-size:11px;">987654321</td>
     <td>Steuer-Id</td>
     <td>Tomate</td>
     <td>DEU</td>
