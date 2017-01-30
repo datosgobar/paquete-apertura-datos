@@ -306,10 +306,10 @@ texinfo_documents = [
 github_doc_root = 'https://github.com/datosgobar/paquete-apertura-datos/tree/master/docs'
 
 
-# def setup(app):
-#     app.add_config_value('recommonmark_config', {
-#         'url_resolver': lambda url: github_doc_root + url,
-#         'auto_toc_tree_section': 'Contenidos',
-#         'enable_auto_doc_ref': True
-#     }, True)
-#     app.add_transform(AutoStructify)
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+        'url_resolver': lambda url: github_doc_root + url,
+        'auto_toc_tree_section': 'Contenidos',
+        'enable_auto_doc_ref': True
+    }, True)
+    app.add_transform(AutoStructify)
