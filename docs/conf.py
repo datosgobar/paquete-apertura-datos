@@ -43,7 +43,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 else:
-    html_theme = 'sphinx_rtd_theme'
+    html_theme = 'default'
 
 # otherwise, readthedocs.org uses their theme by default, so no need to
 # specify it
@@ -165,6 +165,8 @@ pygments_style = 'sphinx'
 html_static_path = ['_static']
 html_context = {
     'css_files': [
+        'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
+        'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
         '_static/theme_overrides.css',  # overrides for wide tables in RTD theme
     ],
 }
