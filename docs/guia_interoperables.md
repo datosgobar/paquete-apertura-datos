@@ -230,11 +230,52 @@ Sin embargo, un municipio siempre está completamente contenido por una sola pro
 
 Los identificadores de los municipios se componen entonces con los de las provincias, así:
 
+
+<table id="identificadores-geograficos" style="width: 50%" >
+  <tr>
+    <td><bold>Provincia</bold><br/>
+    2 dígitos<br/>
+    "14"<br/>
+    Córdoba
+    </td>
+    <td><bold>Municipio</bold><br/>
+    5 dígitos<br/>
+    "140399"<br/>
+    Camerillo
+    </td>
+  </tr>
+</table>
+
+
+
 * **Municipios**: 6 dígitos. - Ej.: "140399" es el Municipio “Camerillo” de la provincia de “Córdoba”.
 
 ##### C. Provincias -> Departamentos -> Localidades (PDL)
 
 Las localidades censales están contenidas tanto por los departamentos como por los municipios. Para componer el identificador se deben usar los departamentos, de tal manera que los primeros 5 dígitos del identificador de una localidad corresponden al identificador del departamento que lo contiene, **los siguientes 3 dígitos son propios de la localidad**:
+
+
+<table style="width: 70%" id="identificadores-geograficos">
+  <tr>
+    <td><bold>Provincia</bold><br/>
+    2 dígitos<br/>
+    "06"<br/>
+    Buenos Aires
+    </td>
+    <td><bold>Departamento</bold><br/>
+    5 dígitos<br/>
+    "06007"<br/>
+    Adolfo Alsina
+    </td>
+    <td><bold>Localidad</bold><br/>
+    8 dígitos<br/>
+    "06007010"<br/>
+    Carhué
+    </td>
+      </tr>
+</table>
+
+
 
 * **Localidades**: 8 dígitos. - Ej.: "06007010" es la localidad “Carhué” del departamento “Adolfo Alsina” de la provincia de “Buenos Aires”.
 
@@ -243,6 +284,18 @@ La Ciudad de Buenos Aires constituye una excepción a esta regla ya que es una l
 ##### D. Aglomerados
 
 Los aglomerados están definidos como conjuntos de localidades y tienen un* id *simple de 4 dígitos (no compuesto) ya que un aglomerado puede cruzar el límite entre 2 municipios, departamentos o provincias.
+
+
+<table style="width: 30%" id="identificadores-geograficos">
+  <tr>
+    <td><bold>Aglomerado</bold><br/>
+    4 dígitos<br/>
+    "0001"<br/>
+    Gran Buenos Aires
+    </td>
+    </tr>
+</table>
+
 
 ##### E. ¿Cómo nombrar los campos?
 
