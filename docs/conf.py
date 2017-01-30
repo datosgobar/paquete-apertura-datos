@@ -22,7 +22,7 @@ from recommonmark.transform import AutoStructify
 # directory, add these directories to sys.path here. If the directory is
 # relative to the documentation root, use os.path.abspath to make it
 # absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, os.path.abspath('.'))
 
 # Get the project root dir, which is the parent dir of this
 cwd = os.getcwd()
@@ -51,7 +51,7 @@ else:
 # -- General configuration ---------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
-#needs_sphinx = '1.0'
+# needs_sphinx = '1.0'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
@@ -69,7 +69,7 @@ source_parsers = {
 source_suffix = ['.rst', '.md']
 
 # The encoding of source files.
-#source_encoding = 'utf-8-sig'
+# source_encoding = 'utf-8-sig'
 
 # The master toctree document.
 master_doc = 'index'
@@ -304,10 +304,10 @@ texinfo_documents = [
 github_doc_root = 'https://github.com/datosgobar/paquete-apertura-datos/tree/master/docs'
 
 
-def setup(app):
-    app.add_config_value('recommonmark_config', {
-        'url_resolver': lambda url: github_doc_root + url,
-        'auto_toc_tree_section': 'Contenidos',
-        'enable_auto_doc_ref': True
-    }, True)
-    app.add_transform(AutoStructify)
+# def setup(app):
+#     app.add_config_value('recommonmark_config', {
+#         'url_resolver': lambda url: github_doc_root + url,
+#         'auto_toc_tree_section': 'Contenidos',
+#         'enable_auto_doc_ref': True
+#     }, True)
+#     app.add_transform(AutoStructify)
