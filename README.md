@@ -19,7 +19,7 @@ Estas [guías de buenas prácticas (versión estable)](http://paquete-apertura-d
 * **[Guia para la identificación y uso de entidades interoperables](http://paquete-apertura-datos.readthedocs.io/es/stable/guia_interoperables.html)**
 * **[Guía para el uso y la publicación de metadatos](http://paquete-apertura-datos.readthedocs.io/es/stable/guia_metadatos.html)**
 
-Si te gustaría contribuir activamente a las guías, te recomendamos ver la [versión en desarrollo](http://paquete-apertura-datos.readthedocs.io/es/latest), donde subimos los últimos cambios antes de su publicación.
+Si querés contribuir activamente con las guías, te recomendamos ver la [versión en desarrollo](http://paquete-apertura-datos.readthedocs.io/es/latest), donde subimos los últimos cambios antes de su publicación.
 
 ## Estructura del repositorio
 
