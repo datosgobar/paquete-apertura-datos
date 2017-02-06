@@ -28,6 +28,10 @@ Si querés contribuir activamente con las guías, te recomendamos ver la [versi�
 * **examples**: ejemplos generados para las guías de buenas prácticas.
 * **standards**: recursos que compilan estándares recomendados en las guías o listas curadas de valores admitidos para algún campo (especialmente en metadatos), en formatos fáciles de consumir desde un script.
 
+## Contacto
 
+Te invitamos a [crearnos un issue](https://github.com/datosgobar/portal-andino/issues/new?title=Encontre un bug en Portal Andino) en caso de que encuentres algún bug o tengas feedback de alguna parte de `paquete-apertura-datos`.
+
+Para todo lo demás, podés mandarnos tu comentario o consulta a [datos@modernizacion.gob.ar](mailto:datos@modernizacion.gob.ar).
 
 
