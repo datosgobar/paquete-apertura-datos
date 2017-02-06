@@ -1,6 +1,6 @@
 # paquete-apertura-datos
 
-[![Documentation Status](http://readthedocs.org/projects/paquete-apertura-datos/badge/?version=latest)](http://paquete-apertura-datos.readthedocs.org/en/latest/?badge=latest)
+[![Documentation Status](http://readthedocs.org/projects/paquete-apertura-datos/badge/?version=latest)](http://paquete-apertura-datos.readthedocs.org/es/latest/?badge=latest)
 
 Repositorio de ejemplos, documentación y recursos del Paquete de apertura de datos de la República Argentina.
 
@@ -12,11 +12,11 @@ Repositorio de ejemplos, documentación y recursos del Paquete de apertura de da
 
 ### Guías de buenas prácticas
 
-Estas [guías de buenas prácticas](http://paquete-apertura-datos.readthedocs.io/en/latest) son un trabajo colaborativo y en progreso. Valoramos e invitamos a todas las organizaciones y ciudadanos a plantear ideas, sugerencias y comentarios que contribuyan a crear mejores documentos.
+Estas [guías de buenas prácticas](http://paquete-apertura-datos.readthedocs.io/es/latest) son un trabajo colaborativo y en progreso. Valoramos e invitamos a todas las organizaciones y ciudadanos a plantear ideas, sugerencias y comentarios que contribuyan a crear mejores documentos.
 
-* **[Guía para la publicación de datos en formatos abiertos (latest)](http://paquete-apertura-datos.readthedocs.io/en/latest/guia_abiertos.html)**
-* **[Guia para la identificación y uso de entidades interoperables (latest)](http://paquete-apertura-datos.readthedocs.io/en/latest/guia_interoperables.html)**
-* **[Guía para el uso y la publicación de metadatos (latest)](http://paquete-apertura-datos.readthedocs.io/en/latest/guia_metadatos.html)**
+* **[Guía para la publicación de datos en formatos abiertos (latest)](http://paquete-apertura-datos.readthedocs.io/es/latest/guia_abiertos.html)**
+* **[Guia para la identificación y uso de entidades interoperables (latest)](http://paquete-apertura-datos.readthedocs.io/es/latest/guia_interoperables.html)**
+* **[Guía para el uso y la publicación de metadatos (latest)](http://paquete-apertura-datos.readthedocs.io/es/latest/guia_metadatos.html)**
 
 ## Estructura del repositorio
 
