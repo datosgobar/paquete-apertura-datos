@@ -12,13 +12,13 @@
   - [JSON](#json)
 - [Fragmentación de archivos](#fragmentacion-de-archivos)
 - [Nomenclatura de archivos](#nomenclatura-de-archivos)
-- [Codificación](#codificaci%C3%B3n)
+- [Codificación](#codificacion)
 - [Estructura y características de los datos tabulares](#estructura-y-caracteristicas-de-los-datos-tabulares)
   - [Recomendaciones generales](#recomendaciones-generales)
     - [Nomenclatura de los campos (nombres de las columnas)](#nomenclatura-de-los-campos-nombres-de-las-columnas)
     - [Nivel de granularidad de los datos](#nivel-de-granularidad-de-los-datos)
-    - [Usar orientación vertical en lugar de horizontal](#usar-orientaci%C3%B3n-vertical-en-lugar-de-horizontal)
-    - [Incluir sólo un atributo por campo](#incluir-s%C3%B3lo-un-atributo-por-campo)
+    - [Usar orientación vertical en lugar de horizontal](#usar-orientacion-vertical-en-lugar-de-horizontal)
+    - [Incluir sólo un atributo por campo](#incluir-solo-un-atributo-por-campo)
     - [Valores nulos, desconocidos o en blanco en campos numéricos](#valores-nulos-desconocidos-o-en-blanco-en-campos-numericos)
   - [Recomendaciones para estructurar planillas de cálculo](#recomendaciones-para-estructurar-planillas-de-calculo)
     - [Usar celdas simples](#usar-celdas-simples)
@@ -844,13 +844,7 @@ Las entidades que aparezcan entre los datos de un campo textual deben tener una 
 
 * **Cuando este estándar no existe** y hay dudas respecto del criterio a adoptar para elegir la descripción única de una entidad, debe **privilegiarse siempre aquella que sea lo más explícita**, descriptiva y declarativa posible.
 
-#### Nombres propios
 
-**Se capitalizan** (primera letra de cada palabra es mayúscula, el resto de las letras son minúsculas) **todas las palabras significativas**, salvo las siglas. Las palabras significativas son aquellas que no cumplen la función de artículos o preposiciones.
-
-#### Siglas
-
-Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios intermedios.
 
 <span class="no-recomendado">**No recomendado**</span>
 
@@ -874,7 +868,7 @@ Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios interme
 </table>
 
 
-<span class="recomendado">**Recomendado**</span> - primera celda de la segunda fila completa
+<span class="recomendado">**Recomendado**</span> 
 
 <table  id="una-columna">
 <tbody>
@@ -899,7 +893,16 @@ Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios interme
 
 En el ejemplo anterior, los cuatro valores de texto refieren a la misma entidad. Debe elegirse una única forma de referirse a la misma y usarla en todos los casos.
 
-Siempre que sea posible, la elección deberá fundamentarse en el estándar establecido para ese tipo de entidad (para más información ver el Guía para la identificación y uso de entidades interoperables). En el caso de no existir un estándar, deberá adecuarse a las pautas generales contexto del dataset de que se trate.
+Siempre que sea posible, la elección deberá fundamentarse en el estándar establecido para ese tipo de entidad (para más información ver la **Guía para la identificación y uso de entidades interoperables**). En el caso de no existir un estándar, deberá adecuarse a las pautas generales contexto del dataset de que se trate.
+
+#### Nombres propios
+
+**Se capitalizan** (primera letra de cada palabra es mayúscula, el resto de las letras son minúsculas) **todas las palabras significativas**, salvo las siglas. Las palabras significativas son aquellas que no cumplen la función de artículos o preposiciones.
+
+#### Siglas
+
+Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios intermedios.
+
 
 ### Número
 

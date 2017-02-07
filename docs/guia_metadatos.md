@@ -25,12 +25,12 @@
     - [Distribución](#distribucion-1)
     - [Campo](#campo-1)
     - [Tema](#tema-1)
-- [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i---taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
-- [Anexo II - Pautas para la selección de etiquetas](#anexo-ii---pautas-para-la-seleccion-de-etiquetas)
-- [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii---especificacion-de-frecuencias-segun-iso-8601)
-- [Anexo IV - Ejemplo de data.json](#anexo-iv---ejemplo-de-datajson)
-- [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v---taxonomia-tematica-global-de-la-apn-para-los-datasets-json)
-- [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi---ejemplo-de-metadatos-como-texto)
+- [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
+- [Anexo II - Pautas para la selección de etiquetas](#anexo-ii-pautas-para-la-seleccion-de-etiquetas)
+- [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificacion-de-frecuencias-segun-iso-8601)
+- [Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)
+- [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json)
+- [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
