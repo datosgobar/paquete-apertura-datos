@@ -268,6 +268,8 @@ En esta sección veremos:
 
 Estas son recomendaciones generales para el trabajo con datos tabulares. Sugerimos adoptarlas sea cual sea la tecnología usada.
 
+Las recomendaciones aquí presentadas se encuadran en los principios de [Tidy Data](https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf) delineados por [Hadley Wickham](http://hadley.nz/). Dichos principios establecen que, en una tabla de datos, *"cada variable es una columna, cada observacion es una fila, y cada tipo de unidad observacional es una tabla"*.
+
 #### Nomenclatura de los campos (nombres de las columnas)
 
 La "nomenclatura de los campos" es el nombre de las columnas en los datos de estructura tabular. Estas recomendaciones aplican a la generalidad de los casos, pero cuando haya convenciones particulares según la temática o rubro de datos de que se trate y éstas entren en conflicto, puede ser conveniente privilegiar primero la convención de la temática específica y luego la convención general.
