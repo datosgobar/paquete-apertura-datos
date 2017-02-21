@@ -268,7 +268,8 @@ En esta sección veremos:
 
 Estas son recomendaciones generales para el trabajo con datos tabulares. Sugerimos adoptarlas sea cual sea la tecnología usada.
 
-Las recomendaciones aquí presentadas se encuadran en los principios de [Tidy Data](https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf) delineados por [Hadley Wickham](http://hadley.nz/). Dichos principios establecen que, en una tabla de datos, *"cada variable es una columna, cada observacion es una fila, y cada tipo de unidad observacional es una tabla"*.
+Muchas de las las recomendaciones aquí presentadas se encuadran en los principios de [Tidy Data](https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf) delineados por [Hadley Wickham](http://hadley.nz/). Éstos establecen, por ejemplo, que en una tabla de datos *"cada variable es una columna, cada observacion es una fila, y cada tipo de unidad observacional es una tabla"*. Sugerimos complementar la lectura de esta guía con la del trabajo que mencionamos.
+
 
 #### Nomenclatura de los campos (nombres de las columnas)
 
