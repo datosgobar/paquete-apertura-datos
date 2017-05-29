@@ -239,7 +239,7 @@ Los identificadores de los municipios se componen entonces con los de las provin
     Córdoba
     </td>
     <td><bold>Municipio</bold><br/>
-    5 dígitos<br/>
+    6 dígitos<br/>
     "140399"<br/>
     Camerillo
     </td>
