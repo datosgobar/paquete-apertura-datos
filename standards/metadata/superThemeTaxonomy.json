@@ -2,66 +2,66 @@
   {
     "id": "AGRI",
     "label": "Agroganadería, pesca y forestación",
-    "description": "Por ejemplo: 'Lechería: precio pagado al productor' o 'Superficie forestada'."
+    "description": "Datos referidos a agroganadería, pesca y forestación. Por ejemplo: 'Lechería: precio pagado al productor' o 'Superficie forestada'."
   },
   {
     "id": "ECON",
     "label": "Economía y finanzas",
-    "description": "Por ejemplo: 'Deuda pública'."
+    "description": "Datos referidos a economía y finanzas. Por ejemplo: 'Deuda pública'."
   },
   {
     "id": "EDUC",
     "label": "Educación, cultura y deportes",
-    "description": "Por ejemplo: 'Registro de Establecimientos Educativos'."
+    "description": "Datos referidos a educación, cultura y deportes. Por ejemplo: 'Registro de Establecimientos Educativos'."
   },
   {
     "id": "ENER",
     "label": "Energía",
-    "description": "Por ejemplo: 'Productos mineros exportados' o 'Precios del GNC'."
+    "description": "Datos referidos a energía. Por ejemplo: 'Productos mineros exportados' o 'Precios del GNC'."
   },
   {
     "id": "ENVI",
     "label": "Medio ambiente",
-    "description": "Por ejemplo: 'Operadores de residuos peligrosos'."
+    "description": "Datos referidos a medio ambiente. Por ejemplo: 'Operadores de residuos peligrosos'."
   },
   {
     "id": "GOVE",
     "label": "Gobierno y sector público",
-    "description": "Por ejemplo: 'Inmuebles del estado Nacional'."
+    "description": "Datos referidos a gobierno y sector público. Por ejemplo: 'Inmuebles del estado Nacional'."
   },
   {
     "id": "HEAL",
     "label": "Salud",
-    "description": "Por ejemplo: 'Estadísticas nacionales de VIH/SIDA'."
+    "description": "Datos referidos a salud. Por ejemplo: 'Estadísticas nacionales de VIH/SIDA'."
   },
   {
     "id": "INTR",
     "label": "Asuntos internacionales",
-    "description": "Por ejemplo: 'Representaciones argentinas en el exterior'."
+    "description": "Datos referidos a asuntos internacionales. Por ejemplo: 'Representaciones argentinas en el exterior'."
   },
   {
     "id": "JUST",
     "label": "Justicia, seguridad y legales",
-    "description": "Por ejemplo:'Censo penitenciario'."
+    "description": "Datos referidos a justicia, seguridad y legales. Por ejemplo: 'Censo penitenciario'."
   },
   {
     "id": "REGI",
     "label": "Regiones y ciudades",
-    "description": "Por ejemplo: 'Departamentos de la provincia de Río Negro'."
+    "description": "Datos referidos a regiones y ciudades. Por ejemplo: 'Departamentos de la provincia de Río Negro'."
   },
   {
     "id": "SOCI",
     "label": "Población y sociedad",
-    "description": "Por ejemplo: 'Turistas residentes que viajan por Argentina'."
+    "description": "Datos referidos a población y sociedad. Por ejemplo: 'Turistas residentes que viajan por Argentina'."
   },
   {
     "id": "TECH",
     "label": "Ciencia y tecnología",
-    "description": "Por ejemplo: 'Recursos humanos en ciencia y tecnología'."
+    "description": "Datos referidos a ciencia y tecnología. Por ejemplo: 'Recursos humanos en ciencia y tecnología'."
   },
   {
     "id": "TRAN",
     "label": "Transporte",
-    "description": "Por ejemplo: 'Estadísticas viales'."
+    "description": "Datos referidos a transporte. Por ejemplo: 'Estadísticas viales'."
   }
 ]

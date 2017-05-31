@@ -28,7 +28,7 @@
 - [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
 - [Anexo II - Pautas para la selección de etiquetas](#anexo-ii-pautas-para-la-seleccion-de-etiquetas)
 - [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificacion-de-frecuencias-segun-iso-8601)
-- [Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)
+- [Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-data-json)
 - [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json)
 - [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)
 
@@ -1179,67 +1179,67 @@ Además del uso de una taxonomía propia de cada catálogo de datos, **recomenda
     <tr>
       <td>AGRI</td>
       <td>Agroganadería, pesca y forestación</td>
-      <td>Por ejemplo: 'Lechería: precio pagado al productor' o 'Superficie forestada'.</td>
+      <td>Datos referidos a agroganadería, pesca y forestación. Por ejemplo: 'Lechería: precio pagado al productor' o 'Superficie forestada'.</td>
     </tr>
     <tr>
       <td>ECON</td>
       <td>Economía y finanzas</td>
-      <td>Por ejemplo: 'Deuda pública'.</td>
+      <td>Datos referidos a economía y finanzas. Por ejemplo: 'Deuda pública'.</td>
     </tr>
     <tr>
       <td>EDUC</td>
       <td>Educación, cultura y deportes</td>
-      <td>Por ejemplo: 'Registro de Establecimientos Educativos'.</td>
+      <td>Datos referidos a educación, cultura y deportes. Por ejemplo: 'Registro de Establecimientos Educativos'.</td>
     </tr>
     <tr>
       <td>ENER</td>
       <td>Energía</td>
-      <td>Por ejemplo: 'Productos mineros exportados' o 'Precios del GNC'.</td>
+      <td>Datos referidos a energía. Por ejemplo: 'Productos mineros exportados' o 'Precios del GNC'.</td>
     </tr>
     <tr>
       <td>ENVI</td>
       <td>Medio ambiente</td>
-      <td>Por ejemplo: 'Operadores de residuos peligrosos'.</td>
+      <td>Datos referidos a medio ambiente. Por ejemplo: 'Operadores de residuos peligrosos'.</td>
     </tr>
     <tr>
       <td>GOVE</td>
       <td>Gobierno y sector público</td>
-      <td>Por ejemplo: 'Inmuebles del estado Nacional'.</td>
+      <td>Datos referidos a gobierno y sector público. Por ejemplo: 'Inmuebles del estado Nacional'.</td>
     </tr>
     <tr>
       <td>HEAL</td>
       <td>Salud</td>
-      <td>Por ejemplo: 'Estadísticas nacionales de VIH/SIDA'.</td>
+      <td>Datos referidos a salud. Por ejemplo: 'Estadísticas nacionales de VIH/SIDA'.</td>
     </tr>
     <tr>
       <td>INTR</td>
       <td>Asuntos internacionales</td>
-      <td>Por ejemplo: 'Representaciones argentinas en el exterior'.</td>
+      <td>Datos referidos a asuntos internacionales. Por ejemplo: 'Representaciones argentinas en el exterior'.</td>
     </tr>
     <tr>
       <td>JUST</td>
       <td>Justicia, seguridad y legales</td>
-      <td>Por ejemplo:'Censo penitenciario'.</td>
+      <td>Datos referidos a justicia, seguridad y legales. Por ejemplo: 'Censo penitenciario'.</td>
     </tr>
     <tr>
       <td>REGI</td>
       <td>Regiones y ciudades</td>
-      <td>Por ejemplo: 'Departamentos de la provincia de Río Negro'.</td>
+      <td>Datos referidos a regiones y ciudades. Por ejemplo: 'Departamentos de la provincia de Río Negro'.</td>
     </tr>
     <tr>
       <td>SOCI</td>
       <td>Población y sociedad</td>
-      <td>Por ejemplo: 'Turistas residentes que viajan por Argentina'.</td>
+      <td>Datos referidos a población y sociedad. Por ejemplo: 'Turistas residentes que viajan por Argentina'.</td>
     </tr>
     <tr>
       <td>TECH</td>
       <td>Ciencia y tecnología</td>
-      <td>Por ejemplo: 'Recursos humanos en ciencia y tecnología'.</td>
+      <td>Datos referidos a ciencia y tecnología. Por ejemplo: 'Recursos humanos en ciencia y tecnología'.</td>
     </tr>
     <tr>
       <td>TRAN</td>
       <td>Transporte</td>
-      <td>Por ejemplo: 'Estadísticas viales'.</td>
+      <td>Datos referidos a transporte. Por ejemplo: 'Estadísticas viales'.</td>
     </tr>
     </tbody>
 </table>
@@ -1360,7 +1360,6 @@ Preguntas útiles a la hora de pensar los etiquetas:
     <td>eventual</td>
   </tr>
 </table>
-
 
 ## Anexo IV - Ejemplo de data.json
 
@@ -1536,69 +1535,69 @@ Esta es la [taxonomía temática global](https://raw.githubusercontent.com/datos
 ```json
 [
     {
-        "id": "AGRI",
-        "label": "Agroganadería, pesca y forestación",
-        "description": "Por ejemplo: “Lechería: precio pagado al productor” o “Superficie forestada”."
+        "id":"AGRI",
+        "label":"Agroganadería, pesca y forestación",
+        "description":"Datos referidos a agroganadería, pesca y forestación. Por ejemplo: 'Lechería: precio pagado al productor' o 'Superficie forestada'."
     },
     {
-        "id": "ECON",
-        "label": "Economía y finanzas",
-        "description": "Por ejemplo: “Deuda pública”."
+        "id":"ECON",
+        "label":"Economía y finanzas",
+        "description":"Datos referidos a economía y finanzas. Por ejemplo: 'Deuda pública'."
     },
     {
-        "id": "EDUC",
-        "label": "Educación, cultura y deportes",
-        "description": "Por ejemplo: “Registro de Establecimientos Educativos”."
+        "id":"EDUC",
+        "label":"Educación, cultura y deportes",
+        "description":"Datos referidos a educación, cultura y deportes. Por ejemplo: 'Registro de Establecimientos Educativos'."
     },
     {
-        "id": "ENER",
-        "label": "Energía",
-        "description": "Por ejemplo: “Productos mineros exportados” o “Precios del GNC”."
+        "id":"ENER",
+        "label":"Energía",
+        "description":"Datos referidos a energía. Por ejemplo: 'Productos mineros exportados' o 'Precios del GNC'."
     },
     {
-        "id": "ENVI",
-        "label": "Medio ambiente",
-        "description": "Por ejemplo: “Operadores de residuos peligrosos”."
+        "id":"ENVI",
+        "label":"Medio ambiente",
+        "description":"Datos referidos a medio ambiente. Por ejemplo: 'Operadores de residuos peligrosos'."
     },
     {
-        "id": "GOVE",
-        "label": "Gobierno y sector público",
-        "description": "Por ejemplo: “Inmuebles del estado Nacional”."
+        "id":"GOVE",
+        "label":"Gobierno y sector público",
+        "description":"Datos referidos a gobierno y sector público. Por ejemplo: 'Inmuebles del estado Nacional'."
     },
     {
-        "id": "HEAL",
-        "label": "Salud",
-        "description": "Por ejemplo: “Estadísticas nacionales de VIH/SIDA”."
+        "id":"HEAL",
+        "label":"Salud",
+        "description":"Datos referidos a salud. Por ejemplo: 'Estadísticas nacionales de VIH/SIDA'."
     },
     {
-        "id": "INTR",
-        "label": "Asuntos internacionales",
-        "description": "Por ejemplo: “Representaciones argentinas en el exterior”."
+        "id":"INTR",
+        "label":"Asuntos internacionales",
+        "description":"Datos referidos a asuntos internacionales. Por ejemplo: 'Representaciones argentinas en el exterior'."
     },
     {
-        "id": "JUST",
-        "label": "Justicia, seguridad y legales",
-        "description": "Por ejemplo:”Censo penitenciario”."
+        "id":"JUST",
+        "label":"Justicia, seguridad y legales",
+        "description":"Datos referidos a justicia, seguridad y legales. Por ejemplo: 'Censo penitenciario'."
     },
     {
-        "id": "REGI",
-        "label": "Regiones y ciudades",
-        "description": "Por ejemplo: “Departamentos de la provincia de Río Negro”."
+        "id":"REGI",
+        "label":"Regiones y ciudades",
+        "description":"Datos referidos a regiones y ciudades. Por ejemplo: 'Departamentos de la provincia de Río Negro'."
     },
     {
-        "id": "SOCI",
-        "label": "Población y sociedad",
-        "description": "Por ejemplo: “Turistas residentes que viajan por Argentina”."
+        "id":"SOCI",
+        "label":"Población y sociedad",
+        "description":"Datos referidos a población y sociedad. Por ejemplo: 'Turistas residentes que viajan por Argentina'."
     },
     {
-        "id": "TECH",
-        "label": "Ciencia y tecnología",
-        "description": "Por ejemplo: “Recursos humanos en ciencia y tecnología”."
+        "id":"TECH",
+        "label":"Ciencia y tecnología",
+        "description":"Datos referidos a ciencia y tecnología. Por ejemplo: 'Recursos humanos en ciencia y tecnología'."
     },
     {
-        "id": "TRAN",
-        "label": "Transporte",
-        "description": "Por ejemplo: “Estadísticas viales”."
+        "id":"TRAN",
+        "label":"Transporte",
+        "description":"Datos referidos a transporte. Por ejemplo: 'Estadísticas viales'."
     }
 ]
 ```
