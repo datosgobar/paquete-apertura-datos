@@ -1,0 +1,4 @@
+﻿id,nombre,requerido,descripcion,ejemplo,variable_data_json
+1,Identificador,Recomendado,El identificador del tema.,AGRI,id
+2,Etiqueta,Recomendado,La etiqueta o título de un tema.,"Agricultura, pesca, silvicultura y alimentación.",label
+3,Descripción,Recomendado,Una breve y concisa descripción del tema.,"Bajo este concepto se incluyen datasets que cubren dominios tales como agricultura, pesca, forestación o alimentos.",description
