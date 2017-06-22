@@ -136,17 +136,15 @@ El archivo *data.json* de un Portal Andino puede encontrarse en el directorio ra
 
 ### Catálogo
 
-**El perfil de metadatos propuesto se conforma de tres componentes principales**:
+**El perfil de metadatos propuesto se conforma de cinco componentes. A estos componentes los denominamos "clases" y hacen referencia a metadatos de**:
 
-* La información del catálogo.
-* Los datasets.
-* Las distribuciones.
+* Catálogo.
+* Datasets.
+* Distribuciones.
+* Temas.
+* Campos.
 
-El *data.json* de **quienes usen el portal Andino contará con los metadatos correspondientes a los datasets y distribuciones**.
-
-**Los metadatos a nivel de catálogo deberán ser completados en una planilla de cálculo y publicados en formato CSV en el directorio raíz del portal**, quedando disponibles para su descarga en una URL como *http://datos.[entidad].gob.ar/*catalog.csv.
-
-El resto de los metadatos generados al cargar o actualizar un dataset o una distribución en el portal, se generan a través de los formularios completados y se publican automáticamente en *http://datos.[entidad].gob.ar/data.json*.
+El *data.json* de *quienes usen el portal Andino, se generará a través de los formularios completados, publicándose automáticamente en *http://datos.[entidad].gob.ar/data.json**.
 
 Recomendamos ver un [ejemplo textual](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md) de metadatos de un **catálogo**.
 
