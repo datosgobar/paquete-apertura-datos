@@ -1223,6 +1223,23 @@ Estos son los metadatos que el *data.json* debe contener, para describir a un te
   </tr>
 </table>
 
+### Extensiones especiales
+
+El perfil de metadatos propuesto para la Administración Pública Nacional plantea:
+
+1. Un **esquema base de uso general** para la documentación de catálogos de datos abiertos
+2. Un marco general para **desarrollar extensiones del perfil**, que permitan documentar casos especiales para el desarrollo de sistemas o aplicaciones.
+
+El desarrollo de extensiones del perfil para uso de aplicaciones puede contemplar:
+
+* La **obligatoriedad de campos de metadatos** que en el perfil base no son obligatorios (recomendados u optativos).
+* La definición de uno o más **tipos especiales** (`specialType`) utilizados para que sistemas o aplicaciones interpreten de una forma específica los datos que encuentren en una tabla.
+
+#### Series de tiempo
+
+En esta versión del perfil de metadatos se propone una sencilla extensión para documentar **distribuciones que contienen series de tiempo**.
+
+Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, así como de otras aplicaciones.
 
 ## Anexo I - Taxonomía temática global de la APN para los datasets (tabla)
 
