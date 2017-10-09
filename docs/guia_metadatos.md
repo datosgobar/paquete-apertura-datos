@@ -719,6 +719,29 @@ Estos son los metadatos que el *data.json* debe contener, a nivel de catálogo:
     <td>spatial</td>
     <td>String or Array</td>
   </tr>
+  <tr>
+    <td>Identificador</td>
+    <td>Recomendado</td>
+    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (http://www.datos.gob.ar).<br/>
+
+    El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
+    <td>"enacom"<br/>
+    "energia"<br/>
+    "desarrollo-social"<br/>
+    "justicia"<br/>
+    "arsat"</td>
+    <td>identifier</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Versión del perfil de metadatos</td>
+    <td>Recomendado</td>
+    <td>Es la versión del perfil de metadatos de la red de nodos de datos abiertos de la administración pública nacional de Argentina, utilizada en el catálogo.<br/>
+
+Se utiliza para que distintas aplicaciones reconozcan y validen los metadatos del catálogo, y las funcionalidades disponibles para distintos fines.</td>
+    <td>1.1</td>
+    <td>String</td>
+  </tr>
 </table>
 
 Es importante poner atención a los dos campos que contienen una lista de objetos: **dataset** y **themeTaxonomy**.
@@ -856,7 +879,7 @@ Detallamos los metadatos que el *data.json* debe contener, para describir a un d
   </tr>
   <tr>
     <td>Identificador</td>
-    <td>No</td>
+    <td>Si</td>
     <td>Identificador único del dataset, este identificador debe ser único para todo el catálogo.</td>
     <td>Un identificador único para el dataset. La URI u otro identificador único en el contexto del catálogo, ejemplo:<br/>"dataset-ejemplo-35782”</td>
     <td>identifier</td>
@@ -911,6 +934,16 @@ Detallamos los metadatos que el *data.json* debe contener, para describir a un d
     <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
     <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Fuente primaria</td>
+    <td>No</td>
+    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/>
+
+En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (http://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
+    <td>Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.</td>
+    <td>source</td>
     <td>String</td>
   </tr>
 </table>
@@ -1037,6 +1070,26 @@ Estos son los metadatos que el *data.json* debe contener, para describir a una d
     <td>field</td>
     <td>Array</td>
   </tr>
+  <tr>
+    <td>Identificador</td>
+    <td>Si</td>
+    <td>Identificador único de la distribución, este identificador debe ser único para la distribución dentro del catálogo completo.<br/>
+
+Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
+    <td>1.2</td>
+    <td>identifier</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Nombre del archivo</td>
+    <td>Recomendado</td>
+    <td>Nombre de la distribución bajo el cual se descarga un archivo que contiene los datos, incluyendo la extensión del formato.<br/>
+
+Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números y guiones medios "-".</td>
+    <td>estructura-organica.csv</td>
+    <td>fileName</td>
+    <td>String</td>
+  </tr>
 </table>
 
 
@@ -1105,6 +1158,44 @@ Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres es
     <td>La descripción de la información que contiene el campo.</td>
     <td>Ejemplo para el campo "unidad_operativa_contrataciones_desc" de la distribución "Convocatorias abiertas durante el año 2015", valor para descripción: "Organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."</td>
     <td>description</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Identificador</td>
+    <td>No</td>
+    <td>El código identificador del campo. Debe ser único para todo el catálogo. Se utiliza cuando el campo requiere un identificador para ser utilizado en un sistema o aplicación, como en el caso de una base de series de tiempo (donde el identificador ejerce el rol de "nomenclador" del campo y debe ser único para todo el sistema - más allá incluso del presente catálogo).<br/>
+
+Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
+    <td>1.1_OGP_D_1993_A_17</td>
+    <td>id</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Unidad de medida</td>
+    <td>No</td>
+    <td>La descripción de la unidad de medida en la que están expresados los valores del campo. Sólo se utiliza para campos de tipo numérico.</td>
+    <td>Millones de pesos a precios de 1993</td>
+    <td>units</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Tipo especial</td>
+    <td>No</td>
+    <td>El tipo de dato contenido en el campo, correspondiente a alguna extensión especial del perfil de metadatos.<br/>
+
+El perfil de metadatos contempla el desarrollo de extensiones especiales destinadas a facilitar el desarrollo de aplicaciones automáticas que puedan leer e interpretar el contenido de una distribución o de un campo de un catálogo de datos abiertos, para su uso en sistemas específicos. Estas extensiones especiales buscan brindar mayor información sobre la estructura del dato para mejorar su interoperabilidad desatendida, de una forma sencilla.<br/>
+
+Para más información leer la sección "Extensiones especiales". Ver "Series de tiempo" como ejemplo de una extensión especial al perfil de metadatos.</td>
+    <td>time_index</td>
+    <td>specialType</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Detalle del tipo especial</td>
+    <td>No</td>
+    <td>Un parámetro que se puede especificar según el tipo especial de datos del campo en cuestión. Se utiliza para aportar información adicional sobre la estructura de datos del campo, según su definición en la extensión especial del perfil de metadatos a la que pertenece el "Tipo especial" con el que se define al campo. Sólo se puede usar si antes se definió un "Tipo especial".</td>
+    <td>R/P1Y</td>
+    <td>specialTypeDetail</td>
     <td>String</td>
   </tr>
 </table>
