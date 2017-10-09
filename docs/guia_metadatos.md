@@ -371,9 +371,9 @@ A continuación, describimos los metadatos que se deben completar para describir
     </td>
   </tr>
   <tr>
-    <td>Fuente</td>
-    <td>No</td>
-    <td>URL de una página web a través de la cual se puede acceder al dataset, sus recursos o información adicional sobre el mismo.</td>
+    <td>Página de referencia</td>
+    <td>Recomendado</td>
+    <td>URL de la página web a través de la cual se puede acceder al dataset, sus recursos o información adicional sobre el mismo. Si el catálogo se administra mediante un Portal Andino o cualquier otra tecnología utilizada para implementar portales de datos abiertos (CKAN, JUNAR, etc.) debe utilizarse la URL generada por el portal.</td>
     <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra</td>
   </tr>
   <tr>
@@ -722,9 +722,7 @@ Estos son los metadatos que el *data.json* debe contener, a nivel de catálogo:
   <tr>
     <td>Identificador</td>
     <td>Recomendado</td>
-    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (http://www.datos.gob.ar).<br/>
-
-    El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
+    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (http://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
     <td>"enacom"<br/>
     "energia"<br/>
     "desarrollo-social"<br/>
@@ -736,10 +734,9 @@ Estos son los metadatos que el *data.json* debe contener, a nivel de catálogo:
   <tr>
     <td>Versión del perfil de metadatos</td>
     <td>Recomendado</td>
-    <td>Es la versión del perfil de metadatos de la red de nodos de datos abiertos de la administración pública nacional de Argentina, utilizada en el catálogo.<br/>
-
-Se utiliza para que distintas aplicaciones reconozcan y validen los metadatos del catálogo, y las funcionalidades disponibles para distintos fines.</td>
+    <td>Es la versión del perfil de metadatos de la red de nodos de datos abiertos de la administración pública nacional de Argentina, utilizada en el catálogo.<br/><br/> Se utiliza para que distintas aplicaciones reconozcan y validen los metadatos del catálogo, y las funcionalidades disponibles para distintos fines.</td>
     <td>1.1</td>
+    <td>version</td>
     <td>String</td>
   </tr>
 </table>
@@ -939,9 +936,7 @@ Detallamos los metadatos que el *data.json* debe contener, para describir a un d
   <tr>
     <td>Fuente primaria</td>
     <td>No</td>
-    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/>
-
-En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (http://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
+    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/><br/> En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (http://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
     <td>Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.</td>
     <td>source</td>
     <td>String</td>
@@ -1073,9 +1068,7 @@ Estos son los metadatos que el *data.json* debe contener, para describir a una d
   <tr>
     <td>Identificador</td>
     <td>Si</td>
-    <td>Identificador único de la distribución, este identificador debe ser único para la distribución dentro del catálogo completo.<br/>
-
-Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
+    <td>Identificador único de la distribución, este identificador debe ser único para la distribución dentro del catálogo completo.<br/><br/>Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
     <td>1.2</td>
     <td>identifier</td>
     <td>String</td>
@@ -1083,9 +1076,7 @@ Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin
   <tr>
     <td>Nombre del archivo</td>
     <td>Recomendado</td>
-    <td>Nombre de la distribución bajo el cual se descarga un archivo que contiene los datos, incluyendo la extensión del formato.<br/>
-
-Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números y guiones medios "-".</td>
+    <td>Nombre de la distribución bajo el cual se descarga un archivo que contiene los datos, incluyendo la extensión del formato.<br/><br/>Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números y guiones medios "-".</td>
     <td>estructura-organica.csv</td>
     <td>fileName</td>
     <td>String</td>
@@ -1103,12 +1094,12 @@ Estos son los metadatos que el *data.json* debe contener para describir a un cam
 
 <table  class="six-columns">
 <colgroup>
-    <col style="width:13%">
-    <col style="width:13%">
-    <col style="width:28%">
+    <col style="width:12%">
+    <col style="width:12%">
+    <col style="width:36%">
     <col style="width:20%">
-    <col style="width:13%">
-    <col style="width:13%">
+    <col style="width:10%">
+    <col style="width:10%">
   </colgroup>
   <tr>
     <td>Nombre</td>
@@ -1121,11 +1112,7 @@ Estos son los metadatos que el *data.json* debe contener para describir a un cam
   <tr>
     <td>Nombre</td>
     <td>Recomendado</td>
-    <td>El nombre del campo tal como se denomina en el encabezado de la distribución. Véase la "Guía para la publicación de datos en formatos abiertos" para una adecuada elección del nombre de un campo.
-
-Se recomienda no exceder los 40 caracteres en la mayoría de los casos. En caso de que un título más largo se juzgue necesario o significativamente más claro, este no deberá exceder los 60 caracteres en ningún caso.
-
-Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números y guiones bajos "_".</td>
+    <td>El nombre del campo tal como se denomina en el encabezado de la distribución. Véase la "Guía para la publicación de datos en formatos abiertos" para una adecuada elección del nombre de un campo.<br/><br/>Se recomienda no exceder los 40 caracteres en la mayoría de los casos. En caso de que un título más largo se juzgue necesario o significativamente más claro, este no deberá exceder los 60 caracteres en ningún caso.<br/><br/>Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números y guiones bajos "_".</td>
     <td>Ejemplo para el cuarto campo de la distribución "Convocatorias abiertas durante el año 2015", valor para el nombre: "unidad_operativa_contrataciones_desc"</td>
     <td>title</td>
     <td>String</td>
@@ -1134,7 +1121,7 @@ Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres es
     <td>Tipo</td>
     <td>Recomendado</td>
     <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (<a href="http://okfnlabs.org/recline/docs/models.html#types">http://okfnlabs.org/recline/docs/models.html#types</a>).
-    Los tipos incluidos en esta lista son:<br/>
+    <br/><br/>Los tipos incluidos en esta lista son:<br/><br/>
     string (text): Valores de texto.<br/>
     number (double, float, numeric): Números que puedan no ser enteros (incluyen decimales).<br/>
     integer (int): Números que siempre son enteros.<br/>
@@ -1163,9 +1150,7 @@ Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres es
   <tr>
     <td>Identificador</td>
     <td>No</td>
-    <td>El código identificador del campo. Debe ser único para todo el catálogo. Se utiliza cuando el campo requiere un identificador para ser utilizado en un sistema o aplicación, como en el caso de una base de series de tiempo (donde el identificador ejerce el rol de "nomenclador" del campo y debe ser único para todo el sistema - más allá incluso del presente catálogo).<br/>
-
-Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
+    <td>El código identificador del campo. Debe ser único para todo el catálogo. Se utiliza cuando el campo requiere un identificador para ser utilizado en un sistema o aplicación, como en el caso de una base de series de tiempo (donde el identificador ejerce el rol de "nomenclador" del campo y debe ser único para todo el sistema - más allá incluso del presente catálogo).<br/><br/>Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
     <td>1.1_OGP_D_1993_A_17</td>
     <td>id</td>
     <td>String</td>
@@ -1181,11 +1166,7 @@ Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin
   <tr>
     <td>Tipo especial</td>
     <td>No</td>
-    <td>El tipo de dato contenido en el campo, correspondiente a alguna extensión especial del perfil de metadatos.<br/>
-
-El perfil de metadatos contempla el desarrollo de extensiones especiales destinadas a facilitar el desarrollo de aplicaciones automáticas que puedan leer e interpretar el contenido de una distribución o de un campo de un catálogo de datos abiertos, para su uso en sistemas específicos. Estas extensiones especiales buscan brindar mayor información sobre la estructura del dato para mejorar su interoperabilidad desatendida, de una forma sencilla.<br/>
-
-Para más información leer la sección "Extensiones especiales". Ver "Series de tiempo" como ejemplo de una extensión especial al perfil de metadatos.</td>
+    <td>El tipo de dato contenido en el campo, correspondiente a alguna extensión especial del perfil de metadatos.<br/><br/>El perfil de metadatos contempla el desarrollo de extensiones especiales destinadas a facilitar el desarrollo de aplicaciones automáticas que puedan leer e interpretar el contenido de una distribución o de un campo de un catálogo de datos abiertos, para su uso en sistemas específicos. Estas extensiones especiales buscan brindar mayor información sobre la estructura del dato para mejorar su interoperabilidad desatendida, de una forma sencilla.<br/><br/>Para más información leer la sección "Extensiones especiales". Ver "Series de tiempo" como ejemplo de una extensión especial al perfil de metadatos.</td>
     <td>time_index</td>
     <td>specialType</td>
     <td>String</td>
