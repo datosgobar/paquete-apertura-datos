@@ -1225,7 +1225,7 @@ Estos son los metadatos que el *data.json* debe contener, para describir a un te
 
 ### Extensiones especiales
 
-El perfil de metadatos propuesto para la Administración Pública Nacional plantea:
+A partir de la versión 1.1, el perfil de metadatos propuesto para la Administración Pública Nacional plantea:
 
 1. Un **esquema base de uso general** para la documentación de catálogos de datos abiertos
 2. Un marco general para **desarrollar extensiones del perfil**, que permitan documentar casos especiales para el desarrollo de sistemas o aplicaciones.
@@ -1237,9 +1237,41 @@ El desarrollo de extensiones del perfil para uso de aplicaciones puede contempla
 
 #### Series de tiempo
 
-En esta versión del perfil de metadatos se propone una sencilla extensión para documentar **distribuciones que contienen series de tiempo**.
+Junto con la versión 1.1 del perfil de metadatos se propone una sencilla extensión para documentar **distribuciones que contienen series de tiempo**.
 
-Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, así como de otras aplicaciones.
+Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, y de otras aplicaciones.
+
+##### Distribución de series de tiempo
+
+Es una tabla donde:
+
+* Existe una columna que es el **índice de tiempo**
+  - Es la **clave primaria única** de la tabla (identifica una fila única)
+  - Tiene una **frecuencia temporal determinada** (es diaria, mensual, anual... pero no mezcla frecuencias).
+* Cada una de las otras columnas son **series de tiempo**
+
+*TODO: Ejemplo de tabla de series de tiempo*
+
+##### Tipo especial: indice de tiempo
+
+*TODO: Explicar las características y documentación de un indice de tiempo*
+
+##### Documentar un dataset de series de tiempo
+
+A continuación se comentan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo.
+
+*TODO: Ejemplo de dataset de series de tiempo (titulos y estructura)*
+
+###### Dataset
+*TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON*
+*TODO: Pensar cómo seguir un ejemplo sin usar JSON*
+
+###### Distribution
+*TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON*
+
+###### Field
+*TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON*
+
 
 ## Anexo I - Taxonomía temática global de la APN para los datasets (tabla)
 
