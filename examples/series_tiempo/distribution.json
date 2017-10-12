@@ -1,0 +1,57 @@
+{
+  "identifier": "1.1",
+  "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]",
+  "format": "CSV",
+  "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
+  "issued": "2017-08-22T17:51:26.553961-03:00",
+  "field": [
+    {
+      "title": "indice_tiempo",
+      "type": "date",
+      "specialType": "time_index",
+      "specialTypeDetail": "R/P1Y"
+    },
+    {
+      "id": "1.1_OGP_D_1993_A_17",
+      "title": "oferta_global_pbi",
+      "description": "PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    },
+    {
+      "id": "1.1_OGI_D_1993_A_25",
+      "title": "oferta_global_importacion",
+      "description": "Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    },
+    {
+      "id": "1.1_DGE_D_1993_A_26",
+      "title": "demanda_global_exportacion",
+      "description": "Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    },
+    {
+      "id": "1.1_DGI_D_1993_A_19",
+      "title": "demanda_global_ibif",
+      "description": "Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    },
+    {
+      "id": "1.1_DGCP_D_1993_A_27",
+      "title": "demanda_global_consumo_priv",
+      "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    },
+    {
+      "id": "1.1_DGCP_D_1993_A_30",
+      "title": "demanda_global_consumo_publico",
+      "description": "Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    }
+  ]
+}

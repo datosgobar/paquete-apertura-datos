@@ -120,6 +120,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#tema">Tema</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#extensiones-especiales">Extensiones especiales</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#series-de-tiempo">Series de tiempo</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a></li>
@@ -516,9 +520,9 @@
     </td>
   </tr>
   <tr>
-    <td>Fuente</td>
-    <td>No</td>
-    <td>URL de una página web a través de la cual se puede acceder al dataset, sus recursos o información adicional sobre el mismo.</td>
+    <td>Página de referencia</td>
+    <td>Recomendado</td>
+    <td>URL de la página web a través de la cual se puede acceder al dataset, sus recursos o información adicional sobre el mismo. Si el catálogo se administra mediante un Portal Andino o cualquier otra tecnología utilizada para implementar portales de datos abiertos (CKAN, JUNAR, etc.) debe utilizarse la URL generada por el portal.</td>
     <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra</td>
   </tr>
   <tr>
@@ -829,6 +833,26 @@
     <td>spatial</td>
     <td>String or Array</td>
   </tr>
+  <tr>
+    <td>Identificador</td>
+    <td>Recomendado</td>
+    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (http://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
+    <td>"enacom"<br/>
+    "energia"<br/>
+    "desarrollo-social"<br/>
+    "justicia"<br/>
+    "arsat"</td>
+    <td>identifier</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Versión del perfil de metadatos</td>
+    <td>Recomendado</td>
+    <td>Es la versión del perfil de metadatos de la red de nodos de datos abiertos de la administración pública nacional de Argentina, utilizada en el catálogo.<br/><br/> Se utiliza para que distintas aplicaciones reconozcan y validen los metadatos del catálogo, y las funcionalidades disponibles para distintos fines.</td>
+    <td>1.1</td>
+    <td>version</td>
+    <td>String</td>
+  </tr>
 </table><p>Es importante poner atención a los dos campos que contienen una lista de objetos: <strong>dataset</strong> y <strong>themeTaxonomy</strong>.</p>
 <p>El <strong>primero</strong> contendrá una lista de objetos que describen (cada uno) los metadatos de los distintos datasets que componen el catálogo (en la próxima sección se describen los metadatos que debe contener cada uno de estos objetos).</p>
 <p>El <strong>segundo</strong> también contiene una lista de objetos que, juntos, definen una taxonomía temática para el catálogo. Cada uno de estos objetos contiene los metadatos que describen a cada uno de los temas de esta taxonomía. Más adelante se describen estos metadatos en la sección Tema.</p>
@@ -960,7 +984,7 @@
   </tr>
   <tr>
     <td>Identificador</td>
-    <td>No</td>
+    <td>Si</td>
     <td>Identificador único del dataset, este identificador debe ser único para todo el catálogo.</td>
     <td>Un identificador único para el dataset. La URI u otro identificador único en el contexto del catálogo, ejemplo:<br/>"dataset-ejemplo-35782”</td>
     <td>identifier</td>
@@ -1015,6 +1039,14 @@
     <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
     <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Fuente primaria</td>
+    <td>No</td>
+    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/><br/> En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (http://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
+    <td>Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.</td>
+    <td>source</td>
     <td>String</td>
   </tr>
 </table><p>Es importante prestar atención al campo <strong><em>distribution</em></strong> que contiene una lista de objetos que describen los metadatos de cada una de las distribuciones del daset. En la próxima sección abordaremos estos metadatos.</p>
@@ -1136,6 +1168,22 @@
     <td>field</td>
     <td>Array</td>
   </tr>
+  <tr>
+    <td>Identificador</td>
+    <td>Si</td>
+    <td>Identificador único de la distribución, este identificador debe ser único para la distribución dentro del catálogo completo.<br/><br/>Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
+    <td>1.2</td>
+    <td>identifier</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Nombre del archivo</td>
+    <td>Recomendado</td>
+    <td>Nombre de la distribución bajo el cual se descarga un archivo que contiene los datos, incluyendo la extensión del formato.<br/><br/>Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números y guiones medios "-".</td>
+    <td>estructura-organica.csv</td>
+    <td>fileName</td>
+    <td>String</td>
+  </tr>
 </table><p>Recomendamos poner atención al campo <strong><em>field</em></strong> que contiene una lista de objetos que describen los metadatos de cada uno de los campos de la distribución (en el caso de distribuciones tabulares, únicamente). En la próxima sección abordaremos estos metadatos.</p>
 </div>
 <div class="section" id="campo">
@@ -1144,12 +1192,12 @@
 <p>Estos son los metadatos que el <em>data.json</em> debe contener para describir a un campo de una distribución tabular dentro de la lista contenida en el campo de metadatos <strong><em>field</em></strong> de una distribución:</p>
 <table  class="six-columns">
 <colgroup>
-    <col style="width:13%">
-    <col style="width:13%">
-    <col style="width:28%">
+    <col style="width:12%">
+    <col style="width:12%">
+    <col style="width:36%">
     <col style="width:20%">
-    <col style="width:13%">
-    <col style="width:13%">
+    <col style="width:10%">
+    <col style="width:10%">
   </colgroup>
   <tr>
     <td>Nombre</td>
@@ -1162,17 +1210,16 @@
   <tr>
     <td>Nombre</td>
     <td>Recomendado</td>
-    <td>El nombre del campo tal como se denomina en el encabezado de la distribución. Véase la "Guía para la publicación de datos en formatos abiertos" para una adecuada elección del nombre de un campo.<p>Se recomienda no exceder los 40 caracteres en la mayoría de los casos. En caso de que un título más largo se juzgue necesario o significativamente más claro, este no deberá exceder los 60 caracteres en ningún caso.</p>
-<p>Debe estar compuesto por letras minúsculas de la &#8220;a&#8221; a la &#8220;z&#8221; sin caracteres especiales (sin tildes y sin la &#8220;ñ&#8221;), números y guiones bajos &#8220;_&#8221;.</td>
-<td>Ejemplo para el cuarto campo de la distribución &#8220;Convocatorias abiertas durante el año 2015&#8221;, valor para el nombre: &#8220;unidad_operativa_contrataciones_desc&#8221;</td>
-<td>title</td>
-<td>String</td></p>
+    <td>El nombre del campo tal como se denomina en el encabezado de la distribución. Véase la "Guía para la publicación de datos en formatos abiertos" para una adecuada elección del nombre de un campo.<br/><br/>Se recomienda no exceder los 40 caracteres en la mayoría de los casos. En caso de que un título más largo se juzgue necesario o significativamente más claro, este no deberá exceder los 60 caracteres en ningún caso.<br/><br/>Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números y guiones bajos "_".</td>
+    <td>Ejemplo para el cuarto campo de la distribución "Convocatorias abiertas durante el año 2015", valor para el nombre: "unidad_operativa_contrataciones_desc"</td>
+    <td>title</td>
+    <td>String</td>
   </tr>
   <tr>
     <td>Tipo</td>
     <td>Recomendado</td>
     <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (<a href="http://okfnlabs.org/recline/docs/models.html#types">http://okfnlabs.org/recline/docs/models.html#types</a>).
-    Los tipos incluidos en esta lista son:<br/>
+    <br/><br/>Los tipos incluidos en esta lista son:<br/><br/>
     string (text): Valores de texto.<br/>
     number (double, float, numeric): Números que puedan no ser enteros (incluyen decimales).<br/>
     integer (int): Números que siempre son enteros.<br/>
@@ -1196,6 +1243,38 @@
     <td>La descripción de la información que contiene el campo.</td>
     <td>Ejemplo para el campo "unidad_operativa_contrataciones_desc" de la distribución "Convocatorias abiertas durante el año 2015", valor para descripción: "Organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."</td>
     <td>description</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Identificador</td>
+    <td>No</td>
+    <td>El código identificador del campo. Debe ser único para todo el catálogo. Se utiliza cuando el campo requiere un identificador para ser utilizado en un sistema o aplicación, como en el caso de una base de series de tiempo (donde el identificador ejerce el rol de "nomenclador" del campo y debe ser único para todo el sistema - más allá incluso del presente catálogo).<br/><br/>Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
+    <td>1.1_OGP_D_1993_A_17</td>
+    <td>id</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Unidad de medida</td>
+    <td>No</td>
+    <td>La descripción de la unidad de medida en la que están expresados los valores del campo. Sólo se utiliza para campos de tipo numérico.</td>
+    <td>Millones de pesos a precios de 1993</td>
+    <td>units</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Tipo especial</td>
+    <td>No</td>
+    <td>El tipo de dato contenido en el campo, correspondiente a alguna extensión especial del perfil de metadatos.<br/><br/>El perfil de metadatos contempla el desarrollo de extensiones especiales destinadas a facilitar el desarrollo de aplicaciones automáticas que puedan leer e interpretar el contenido de una distribución o de un campo de un catálogo de datos abiertos, para su uso en sistemas específicos. Estas extensiones especiales buscan brindar mayor información sobre la estructura del dato para mejorar su interoperabilidad desatendida, de una forma sencilla.<br/><br/>Para más información leer la sección "Extensiones especiales". Ver "Series de tiempo" como ejemplo de una extensión especial al perfil de metadatos.</td>
+    <td>time_index</td>
+    <td>specialType</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Detalle del tipo especial</td>
+    <td>No</td>
+    <td>Un parámetro que se puede especificar según el tipo especial de datos del campo en cuestión. Se utiliza para aportar información adicional sobre la estructura de datos del campo, según su definición en la extensión especial del perfil de metadatos a la que pertenece el "Tipo especial" con el que se define al campo. Sólo se puede usar si antes se definió un "Tipo especial".</td>
+    <td>R/P1Y</td>
+    <td>specialTypeDetail</td>
     <td>String</td>
   </tr>
 </table></div>
@@ -1237,6 +1316,410 @@
     <td>String</td>
   </tr>
 </table></div>
+</div>
+<div class="section" id="extensiones-especiales">
+<span id="extensiones-especiales"></span><h3>Extensiones especiales<a class="headerlink" href="#extensiones-especiales" title="Permalink to this headline">¶</a></h3>
+<p>A partir de la versión 1.1, el perfil de metadatos propuesto para la Administración Pública Nacional plantea:</p>
+<ol class="simple">
+<li>Un <strong>esquema base de uso general</strong> para la documentación de catálogos de datos abiertos</li>
+<li>Un marco general para <strong>desarrollar extensiones del perfil</strong>, que permitan documentar casos especiales para el desarrollo de sistemas o aplicaciones.</li>
+</ol>
+<p>El desarrollo de extensiones del perfil para uso de aplicaciones puede contemplar:</p>
+<ul class="simple">
+<li>La <strong>obligatoriedad de campos de metadatos</strong> que en el perfil base no son obligatorios (recomendados u optativos).</li>
+<li>La definición de uno o más <strong>tipos especiales</strong> (<code class="docutils literal"><span class="pre">specialType</span></code>) utilizados para que sistemas o aplicaciones interpreten de una forma específica los datos que encuentren en una tabla.</li>
+</ul>
+<div class="section" id="series-de-tiempo">
+<span id="series-de-tiempo"></span><h4>Series de tiempo<a class="headerlink" href="#series-de-tiempo" title="Permalink to this headline">¶</a></h4>
+<p>Junto con la versión 1.1 del perfil de metadatos se propone una sencilla extensión para documentar <strong>distribuciones que contienen series de tiempo</strong>.</p>
+<p>Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, y de otras aplicaciones.</p>
+<div class="section" id="distribucion-de-series-de-tiempo">
+<span id="distribucion-de-series-de-tiempo"></span><h5>Distribución de series de tiempo<a class="headerlink" href="#distribucion-de-series-de-tiempo" title="Permalink to this headline">¶</a></h5>
+<p>Es una tabla donde:</p>
+<ul class="simple">
+<li>Existe una columna que es el <strong>índice de tiempo</strong><ul>
+<li>Es la <strong>clave primaria única</strong> de la tabla (identifica una fila única)</li>
+<li>Tiene una <strong>frecuencia temporal determinada</strong> (es diaria, mensual, anual... pero no mezcla frecuencias).</li>
+</ul>
+</li>
+<li>Cada una de las otras columnas son <strong>series de tiempo</strong></li>
+</ul>
+<table  class="six-columns">
+<colgroup>
+    <col style="width:10%">
+    <col style="width:18%">
+    <col style="width:18%">
+    <col style="width:18%">
+    <col style="width:18%">
+    <col style="width:18%">
+  </colgroup>
+  <tr>
+    <td>indice_tiempo</td>
+    <td>oferta_global_pib</td>
+    <td>oferta_global_importacion</td>
+    <td>demanda_global_exportacion</td>
+    <td>demanda_global_ibif</td>
+    <td>demanda_global_consumo_priv</td>
+  </tr>
+  <tr>
+    <td>1993-01-01</td>
+    <td>236520.0336</td>
+    <td>22027.59999</td>
+    <td>16340.95975</td>
+    <td>45069.41348</td>
+    <td>31952.717</td>
+  </tr>
+  <tr>
+    <td>1994-01-01</td>
+    <td>250307.886</td>
+    <td>26682.25975</td>
+    <td>18840.403</td>
+    <td>51231.4255</td>
+    <td>32094.804</td>
+  </tr>
+  <tr>
+    <td>1995-01-01</td>
+    <td>243186.1018</td>
+    <td>24065.62925</td>
+    <td>23084.79625</td>
+    <td>44528.27725</td>
+    <td>32338.89925</td>
+  </tr>
+  <tr>
+    <td>1996-01-01</td>
+    <td>256626.244</td>
+    <td>28284.11475</td>
+    <td>24850.043</td>
+    <td>48483.8615</td>
+    <td>33040.55475</td>
+  </tr>
+  <tr>
+    <td>1997-01-01</td>
+    <td>277441.3173</td>
+    <td>35884.496</td>
+    <td>27876.14225</td>
+    <td>57047.5</td>
+    <td>34104.32325</td>
+  </tr>
+  <tr>
+    <td>1998-01-01</td>
+    <td>288123.3068</td>
+    <td>38903.79175</td>
+    <td>30837.53425</td>
+    <td>60780.6695</td>
+    <td>35249.1645</td>
+  </tr>
+  <tr>
+    <td>1999-01-01</td>
+    <td>278369.0138</td>
+    <td>34520.59125</td>
+    <td>30448.89575</td>
+    <td>53116.3155</td>
+    <td>36173.34075</td>
+  </tr>
+</table><p>La distribución debe ser un archivo CSV estándar (Ver <strong>Guía para la publicación de datos en formatos abiertos</strong>) codificado en <code class="docutils literal"><span class="pre">utf-8</span></code>, utilizando separador <code class="docutils literal"><span class="pre">,</span></code> y caracter decimal <code class="docutils literal"><span class="pre">.</span></code>.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">indice_tiempo</span><span class="p">,</span><span class="n">oferta_global_pib</span><span class="p">,</span><span class="n">oferta_global_importacion</span><span class="p">,</span><span class="n">demanda_global_exportacion</span><span class="p">,</span><span class="n">demanda_global_ibif</span><span class="p">,</span><span class="n">demanda_global_consumo_priv</span>
+<span class="mi">1993</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span><span class="mf">236520.033577</span><span class="p">,</span><span class="mf">22027.5999938</span><span class="p">,</span><span class="mf">16340.9597519</span><span class="p">,</span><span class="mf">45069.4134803</span><span class="p">,</span><span class="mf">31952.717001</span>
+<span class="mi">1994</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span><span class="mf">250307.886</span><span class="p">,</span><span class="mf">26682.25975</span><span class="p">,</span><span class="mf">18840.403</span><span class="p">,</span><span class="mf">51231.4255</span><span class="p">,</span><span class="mf">32094.804</span>
+<span class="mi">1995</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span><span class="mf">243186.10175</span><span class="p">,</span><span class="mf">24065.62925</span><span class="p">,</span><span class="mf">23084.79625</span><span class="p">,</span><span class="mf">44528.27725</span><span class="p">,</span><span class="mf">32338.89925</span>
+<span class="mi">1996</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span><span class="mf">256626.244</span><span class="p">,</span><span class="mf">28284.11475</span><span class="p">,</span><span class="mf">24850.043</span><span class="p">,</span><span class="mf">48483.8615</span><span class="p">,</span><span class="mf">33040.55475</span>
+<span class="mi">1997</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span><span class="mf">277441.31725</span><span class="p">,</span><span class="mf">35884.496</span><span class="p">,</span><span class="mf">27876.14225</span><span class="p">,</span><span class="mf">57047.5</span><span class="p">,</span><span class="mf">34104.32325</span>
+<span class="mi">1998</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span><span class="mf">288123.30675</span><span class="p">,</span><span class="mf">38903.79175</span><span class="p">,</span><span class="mf">30837.53425</span><span class="p">,</span><span class="mf">60780.6695</span><span class="p">,</span><span class="mf">35249.1645</span>
+<span class="mi">1999</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span><span class="mf">278369.01375</span><span class="p">,</span><span class="mf">34520.59125</span><span class="p">,</span><span class="mf">30448.89575</span><span class="p">,</span><span class="mf">53116.3155</span><span class="p">,</span><span class="mf">36173.34075</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tipo-especial-indice-de-tiempo">
+<span id="tipo-especial-indice-de-tiempo"></span><h5>Tipo especial: indice de tiempo<a class="headerlink" href="#tipo-especial-indice-de-tiempo" title="Permalink to this headline">¶</a></h5>
+<p>Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando uno de sus campos como &#8220;índice de tiempo&#8221; y aclarando la frecuencia que tiene.</p>
+<p>Dentro de la variable <code class="docutils literal"><span class="pre">field</span></code> de la distribución:</p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;specialTypeDetail&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P1Y&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>El indice de tiempo de una distribución con series de tiempo debe cumplir:</p>
+<ul class="simple">
+<li>Las fechas están <em>siempre</em> en ISO 8601 (<code class="docutils literal"><span class="pre">YYYY-MM-DD</span></code>)</li>
+<li>Las fechas van siempre en orden ascendente (primera fila tiene el valor más antiguo, última fila el más reciente).</li>
+<li>Las fechas pueden tener la parte de &#8220;tiempo&#8221; luego de la de &#8220;fecha&#8221;, pero se desestima. (<code class="docutils literal"><span class="pre">YYYY-MM-DD</span></code> es exactamente igual que <code class="docutils literal"><span class="pre">YYYY-MM-DDThh:mm:ss</span></code>.</li>
+<li>Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) las fechas admiten usar sólo la parte del estándar de fecha necesaria o usar la forma de fecha completa<ul>
+<li>Anual: YYYY está ok</li>
+<li>Anual: YYYY-MM-DD está ok</li>
+<li>Mensual: YYYY-MM está ok</li>
+<li>Mensual: YYYY NO está ok</li>
+<li>Trimestral: YYYY-MM está ok</li>
+<li>Trimestral: YYYY NO está ok</li>
+</ul>
+</li>
+<li>Las fechas están completas (el índice de tiempo es <em>continuo</em>).<ul>
+<li>Anual: 1980 / 1981 / 1982 está ok</li>
+<li>Anual: 1980 / 1982 / 1983 NO está ok</li>
+<li>Diaria: admitir acá 2 casos: frecuencia diaria <em>completa</em> (lunes a domingo) y frecuencia diaria <em>hábil</em> o <code class="docutils literal"><span class="pre">Business</span> <span class="pre">Daily</span></code> (lunes a viernes). Pero no puede nunca faltar un &#8220;martes&#8221;, ni puede haber algunos sábados pero otros no.</li>
+</ul>
+</li>
+<li>Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde se use la forma completa, se debe usar <em>la fecha inicial</em>.<ul>
+<li>Mensual: 1980-01-01 / 1980-02-01 / 1980-03-01 está ok</li>
+<li>Mensual: 1980-01-31 / 1980-02-28 / 1980-03-31 NO está ok</li>
+<li>Semestral: 1980-01-01 / 1980-07-01 / 1981-01-01 está ok</li>
+<li>Semestral: 1980-01-01 / 1980-08-01 / 1981-01-01 NO está ok</li>
+<li>Semestral: 1980-01-31 / 1980-07-31 / 1981-01-31 NO está ok</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="documentar-un-dataset-de-series-de-tiempo">
+<span id="documentar-un-dataset-de-series-de-tiempo"></span><h5>Documentar un dataset de series de tiempo<a class="headerlink" href="#documentar-un-dataset-de-series-de-tiempo" title="Permalink to this headline">¶</a></h5>
+<p>A continuación se comentan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo.</p>
+<ul class="simple">
+<li><strong>Dataset 1</strong>: Oferta y Demanda Globales. Datos desestacionalizados. Base 1993<ul>
+<li><strong>Distribucion 1.1</strong>: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores anuales.</li>
+<li><strong>Distribucion 1.2</strong>: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores trimestrales.</li>
+</ul>
+</li>
+</ul>
+<div class="section" id="dataset">
+<span id="id6"></span><h6>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">¶</a></h6>
+<p><em>TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON</em>
+<em>TODO: Pensar cómo seguir un ejemplo sin usar JSON</em></p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales: Datos desestacionalizados [Base 1993]&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Componentes desestacionalizados de la oferta y demanda globales a precios de 1993.&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accrualPeriodicity&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P3M&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;publisher&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;mbox&quot;</span><span class="p">:</span> <span class="s2">&quot;ausolari@mecon.gob.ar&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica.&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;contactPoint&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;fn&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica. Dirección de Información y Coyuntura&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;landingPage&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;keyword&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;oferta&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;demanda&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;pbi&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cuentas nacionales&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;desestacionalizado&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;superTheme&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;ECON&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;temporal&quot;</span><span class="p">:</span> <span class="s2">&quot;1993-01-01/2013-09-30&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;theme&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;oferta_demanda&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;distribution&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;field&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;indice_tiempo&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;specialTypeDetail&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P1Y&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_OGP_D_1993_A_17&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_pbi&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_OGI_D_1993_A_25&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_importacion&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGE_D_1993_A_26&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_exportacion&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGI_D_1993_A_19&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_ibif&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGCP_D_1993_A_27&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_priv&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGCP_D_1993_A_30&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_publico&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">}</span>
+      <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores trimestrales [Base 1993]&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;field&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;indice_tiempo&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;specialTypeDetail&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P3M&quot;</span><span class="p">,</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_OGP_D_1993_T_17&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_pbi&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;PBI a precios de comprador, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_OGI_D_1993_T_25&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_importacion&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Importación a precios de comprador, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGE_D_1993_T_26&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_exportacion&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta global total a precios de comprador, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGI_D_1993_T_19&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_ibif&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo privado, en millones de pesos  de 1993 y valores anuales.&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGCP_D_1993_T_27&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_priv&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo publico, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGCP_D_1993_T_30&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_publico&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inversion bruta interna fija, en millones de pesos de 1993  y valores anuales.&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+        <span class="p">}</span>
+      <span class="p">],</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="distribution">
+<span id="distribution"></span><h6>Distribution<a class="headerlink" href="#distribution" title="Permalink to this headline">¶</a></h6>
+<p><em>TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON</em></p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;field&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;indice_tiempo&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;specialTypeDetail&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P1Y&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_OGP_D_1993_A_17&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_pbi&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_OGI_D_1993_A_25&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_importacion&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGE_D_1993_A_26&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_exportacion&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGI_D_1993_A_19&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_ibif&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGCP_D_1993_A_27&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_priv&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGCP_D_1993_A_30&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_publico&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="field">
+<span id="field"></span><h6>Field<a class="headerlink" href="#field" title="Permalink to this headline">¶</a></h6>
+<p><em>TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON</em></p>
+<p><strong>Serie de tiempo</strong></p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGCP_D_1993_A_27&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_priv&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Indice de tiempo</strong></p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;indice_tiempo&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;specialTypeDetail&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P1Y&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">

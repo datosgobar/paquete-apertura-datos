@@ -1,0 +1,7 @@
+{
+  "id": "1.1_DGCP_D_1993_A_27",
+  "title": "demanda_global_consumo_priv",
+  "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+  "type": "number",
+  "units": "Millones de pesos a precios de 1993"
+}

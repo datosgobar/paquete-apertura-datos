@@ -1,0 +1,6 @@
+{
+  "title": "indice_tiempo",
+  "type": "date",
+  "specialType": "time_index",
+  "specialTypeDetail": "R/P1Y"
+}
