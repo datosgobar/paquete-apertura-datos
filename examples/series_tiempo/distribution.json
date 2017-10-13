@@ -4,6 +4,9 @@
   "format": "CSV",
   "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
   "issued": "2017-08-22T17:51:26.553961-03:00",
+  "modified": "2017-08-22T17:51:26.553961-03:00",
+  "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
+  "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
   "field": [
     {
       "title": "indice_tiempo",
