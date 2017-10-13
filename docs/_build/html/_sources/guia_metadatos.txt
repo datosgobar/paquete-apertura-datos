@@ -1346,6 +1346,8 @@ indice_tiempo,oferta_global_pib,oferta_global_importacion,demanda_global_exporta
 1999-01-01,278369.01375,34520.59125,30448.89575,53116.3155,36173.34075
 ```
 
+Ver ejemplo completo de una [distribución de series de tiempo](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv).
+
 ##### Tipo especial: indice de tiempo
 
 Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando uno de sus campos como "índice de tiempo" y aclarando la frecuencia que tiene.
@@ -1436,6 +1438,9 @@ Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con serie
       "format": "CSV",
       "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
       "issued": "2017-08-22T17:51:26.553961-03:00",
+      "modified": "2017-08-22T17:51:26.553961-03:00",
+      "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
+      "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
       "field": [
         {
           "title": "indice_tiempo",
@@ -1485,7 +1490,7 @@ Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con serie
           "type": "number",
           "units": "Millones de pesos a precios de 1993"
         }
-      ],
+      ]
     },
     {
       "identifier": "1.2",
@@ -1493,12 +1498,15 @@ Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con serie
       "format": "CSV",
       "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
       "issued": "2017-08-22T17:51:26.553961-03:00",
+      "modified": "2017-08-22T17:51:26.553961-03:00",
+      "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
+      "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
       "field": [
         {
           "title": "indice_tiempo",
           "type": "date",
           "specialType": "time_index",
-          "specialTypeDetail": "R/P3M",
+          "specialTypeDetail": "R/P3M"
         },
         {
           "id": "1.2_OGP_D_1993_T_17",
@@ -1542,9 +1550,9 @@ Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con serie
           "type": "number",
           "units": "Millones de pesos a precios de 1993"
         }
-      ],
+      ]
     }
-  ],
+  ]
 }
 ```
 
@@ -1558,6 +1566,9 @@ Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con serie
   "format": "CSV",
   "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
   "issued": "2017-08-22T17:51:26.553961-03:00",
+  "modified": "2017-08-22T17:51:26.553961-03:00",
+  "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
+  "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
   "field": [
     {
       "title": "indice_tiempo",
@@ -2291,6 +2302,9 @@ Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura
           "format": "CSV",
           "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
           "issued": "2017-08-22T17:51:26.553961-03:00",
+          "modified": "2017-08-22T17:51:26.553961-03:00",
+          "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
+          "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
           "field": [
             {
               "title": "indice_tiempo",
@@ -2348,6 +2362,9 @@ Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura
           "format": "CSV",
           "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
           "issued": "2017-08-22T17:51:26.553961-03:00",
+          "modified": "2017-08-22T17:51:26.553961-03:00",
+          "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
+          "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
           "field": [
             {
               "title": "indice_tiempo",
