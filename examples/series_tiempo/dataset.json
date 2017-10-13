@@ -83,7 +83,7 @@
           "type": "number",
           "units": "Millones de pesos a precios de 1993"
         }
-      ],
+      ]
     },
     {
       "identifier": "1.2",
@@ -96,7 +96,7 @@
           "title": "indice_tiempo",
           "type": "date",
           "specialType": "time_index",
-          "specialTypeDetail": "R/P3M",
+          "specialTypeDetail": "R/P3M"
         },
         {
           "id": "1.2_OGP_D_1993_T_17",
@@ -140,7 +140,7 @@
           "type": "number",
           "units": "Millones de pesos a precios de 1993"
         }
-      ],
+      ]
     }
-  ],
+  ]
 }

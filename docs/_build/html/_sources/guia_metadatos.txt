@@ -2,35 +2,43 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 ## Indice
 
 - [Glosario](#glosario)
-- [Introducción](#introduccion)
-  - [Objetivo de esta guía](#objetivo-de-esta-guia)
-  - [¿Qué son los metadatos?](#que-son-los-metadatos)
-  - [¿Cómo se publican los metadatos?](#como-se-publican-los-metadatos)
-  - [Público objetivo de esta guía](#publico-objetivo-de-esta-guia)
+- [Introducción](#introducci%C3%B3n)
+  - [Objetivo de esta guía](#objetivo-de-esta-gu%C3%ADa)
+  - [¿Qué son los metadatos?](#%C2%BFqu%C3%A9-son-los-metadatos)
+  - [¿Cómo se publican los metadatos?](#%C2%BFc%C3%B3mo-se-publican-los-metadatos)
+  - [Público objetivo de esta guía](#p%C3%BAblico-objetivo-de-esta-gu%C3%ADa)
 - [Portal Andino](#portal-andino)
-  - [Catálogo](#catalogo)
+  - [Catálogo](#cat%C3%A1logo)
   - [Dataset](#dataset)
-  - [Distribución](#distribucion)
+  - [Distribución](#distribuci%C3%B3n)
   - [Campo](#campo)
   - [Tema](#tema)
-- [Otros catálogos](#otros-catalogos)
-  - [Estándar usado](#estandar-usado)
+- [Otros catálogos](#otros-cat%C3%A1logos)
+  - [Estándar usado](#est%C3%A1ndar-usado)
   - [Campos del perfil](#campos-del-perfil)
-    - [Catálogo](#catalogo-1)
+    - [Catálogo](#cat%C3%A1logo-1)
     - [Dataset](#dataset-1)
-    - [Distribución](#distribucion-1)
+    - [Distribución](#distribuci%C3%B3n-1)
     - [Campo](#campo-1)
     - [Tema](#tema-1)
-- [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
-- [Anexo II - Pautas para la selección de etiquetas](#anexo-ii-pautas-para-la-seleccion-de-etiquetas)
-- [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificacion-de-frecuencias-segun-iso-8601)
-- [Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-data-json)
-- [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json)
-- [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)
+  - [Extensiones especiales](#extensiones-especiales)
+    - [Series de tiempo](#series-de-tiempo)
+      - [Distribución de series de tiempo](#distribuci%C3%B3n-de-series-de-tiempo)
+      - [Tipo especial: indice de tiempo](#tipo-especial-indice-de-tiempo)
+      - [Documentar un dataset de series de tiempo](#documentar-un-dataset-de-series-de-tiempo)
+        - [Dataset](#dataset-2)
+        - [Distribution](#distribution)
+        - [Field](#field)
+- [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i---taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-tabla)
+- [Anexo II - Pautas para la selección de etiquetas](#anexo-ii---pautas-para-la-selecci%C3%B3n-de-etiquetas)
+- [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii---especificaci%C3%B3n-de-frecuencias-seg%C3%BAn-iso-8601)
+- [Anexo IV - Ejemplo de data.json](#anexo-iv---ejemplo-de-datajson)
+- [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v---taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-json)
+- [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi---ejemplo-de-metadatos-como-texto)
+- [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii---ejemplo-de-datajson-con-series-de-tiempo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1353,36 +1361,41 @@ Dentro de la variable `field` de la distribución:
 
 El indice de tiempo de una distribución con series de tiempo debe cumplir:
 
-* Las fechas están _siempre_ en ISO 8601 (`YYYY-MM-DD`)
-* Las fechas van siempre en orden ascendente (primera fila tiene el valor más antiguo, última fila el más reciente).
-* Las fechas pueden tener la parte de "tiempo" luego de la de "fecha", pero se desestima. (`YYYY-MM-DD` es exactamente igual que `YYYY-MM-DDThh:mm:ss`.
-* Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) las fechas admiten usar sólo la parte del estándar de fecha necesaria o usar la forma de fecha completa
+* **Fechas en ISO 8601** (`YYYY-MM-DD`)
+* **Fechas en orden ascendente** (primera fila tiene el valor más antiguo, última fila el más reciente).
+* Fechas pueden tener la parte de "tiempo" luego de la de "fecha", pero se desestima. (`YYYY-MM-DD` es exactamente igual que `YYYY-MM-DDThh:mm:ss`).
+* Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) las **fechas admiten usar sólo la parte del estándar de fecha necesaria** o usar la **forma de fecha completa**.
     + Anual: YYYY está ok
     + Anual: YYYY-MM-DD está ok
     + Mensual: YYYY-MM está ok
     + Mensual: YYYY NO está ok
     + Trimestral: YYYY-MM está ok
     + Trimestral: YYYY NO está ok
-* Las fechas están completas (el índice de tiempo es _continuo_).
+* Las fechas están completas (el **índice de tiempo es _continuo_**).
     + Anual: 1980 / 1981 / 1982 está ok
     + Anual: 1980 / 1982 / 1983 NO está ok
     + Diaria: admitir acá 2 casos: frecuencia diaria _completa_ (lunes a domingo) y frecuencia diaria _hábil_ o `Business Daily` (lunes a viernes). Pero no puede nunca faltar un "martes", ni puede haber algunos sábados pero otros no.
-* Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde se use la forma completa, se debe usar _la fecha inicial_.
+* Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde se use la forma completa, se debe **usar _la fecha inicial_**.
     + Mensual: 1980-01-01 / 1980-02-01 / 1980-03-01 está ok
     + Mensual: 1980-01-31 / 1980-02-28 / 1980-03-31 NO está ok
+    + Trimestral: 1980-01-01 / 1980-04-01 / 1980-07-01 / 1980-10-01 está ok
+    + Trimestral: 1980-02-01 / 1980-05-01 / 1980-08-01 / 1980-11-01 NO está ok
     + Semestral: 1980-01-01 / 1980-07-01 / 1981-01-01 está ok
     + Semestral: 1980-01-01 / 1980-08-01 / 1981-01-01 NO está ok
     + Semestral: 1980-01-31 / 1980-07-31 / 1981-01-31 NO está ok
 
 ##### Documentar un dataset de series de tiempo
 
-A continuación se comentan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo.
+A continuación se revisan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo para cada parte del modelo de metadatos dentro de un *dataset* que contiene series de tiempo.
+
+Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii---ejemplo-de-datajson-con-series-de-tiempo).
 
 * **Dataset 1**: Oferta y Demanda Globales. Datos desestacionalizados. Base 1993
   - **Distribucion 1.1**: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores anuales.
   - **Distribucion 1.2**: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores trimestrales.
 
 ###### Dataset
+
 *TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON*
 *TODO: Pensar cómo seguir un ejemplo sin usar JSON*
 
@@ -2208,3 +2221,186 @@ Listado de las convocatorias abiertas durante el año 2015 en el sistema de cont
 
 * **objeto_convocatoria** (string): Objeto/objetivo de la convocatoria
 
+## Anexo VII - Ejemplo de data.json con series de tiempo
+
+Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/data.json):
+
+```json
+{
+  "identifier": "sspm",
+  "title": "Datos Programación Macroeconómica",
+  "description": "Catálogo de datos abiertos de la Subsecretaría de Programación Macroeconómica.",
+  "publisher": {
+    "name": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica.",
+    "mbox": "ausolari@mecon.gob.ar"
+  },
+  "issued": "2017-09-28T00:00:00",
+  "modified": "2017-09-28T00:00:00",
+  "license": "Open Database License (ODbL) v1.0",
+  "superThemeTaxonomy": "http://datos.gob.ar/superThemeTaxonomy.json",
+  "themeTaxonomy": [
+    {
+      "id": "nivel_actividad",
+      "description": "Datos sobre nivel actividad",
+      "label": "Nivel actividad"
+    },
+    {
+      "id": "intercambio_comercial",
+      "description": "Datos sobre intercambio comercial",
+      "label": "Intercambio Comercial"
+    }
+  ],
+  "language": [
+    "SPA"
+  ],
+  "spatial": "ARG",
+  "dataset": [
+    {
+      "identifier": "1",
+      "title": "Oferta y Demanda Globales: Datos desestacionalizados [Base 1993]",
+      "description": "Componentes desestacionalizados de la oferta y demanda globales a precios de 1993.",
+      "accrualPeriodicity": "R/P3M",
+      "publisher": {
+        "mbox": "ausolari@mecon.gob.ar",
+        "name": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica."
+      },
+      "source": "Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.",
+      "contactPoint": {
+        "fn": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica. Dirección de Información y Coyuntura"
+      },
+      "landingPage": "http://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/",
+      "issued": "2017-08-22T17:51:26.553961-03:00",
+      "keyword": [
+        "oferta",
+        "demanda",
+        "pbi",
+        "cuentas nacionales",
+        "desestacionalizado"
+      ],
+      "superTheme": [
+        "ECON"
+      ],
+      "temporal": "1993-01-01/2013-09-30",
+      "theme": [
+        "nivel_actividad"
+      ],
+      "distribution": [
+        {
+          "identifier": "1.1",
+          "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]",
+          "format": "CSV",
+          "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
+          "issued": "2017-08-22T17:51:26.553961-03:00",
+          "field": [
+            {
+              "title": "indice_tiempo",
+              "type": "date",
+              "specialType": "time_index",
+              "specialTypeDetail": "R/P1Y"
+            },
+            {
+              "id": "1.1_OGP_D_1993_A_17",
+              "title": "oferta_global_pbi",
+              "description": "PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.1_OGI_D_1993_A_25",
+              "title": "oferta_global_importacion",
+              "description": "Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.1_DGE_D_1993_A_26",
+              "title": "demanda_global_exportacion",
+              "description": "Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.1_DGI_D_1993_A_19",
+              "title": "demanda_global_ibif",
+              "description": "Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.1_DGCP_D_1993_A_27",
+              "title": "demanda_global_consumo_priv",
+              "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.1_DGCP_D_1993_A_30",
+              "title": "demanda_global_consumo_publico",
+              "description": "Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            }
+          ]
+        },
+        {
+          "identifier": "1.2",
+          "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores trimestrales [Base 1993]",
+          "format": "CSV",
+          "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
+          "issued": "2017-08-22T17:51:26.553961-03:00",
+          "field": [
+            {
+              "title": "indice_tiempo",
+              "type": "date",
+              "specialType": "time_index",
+              "specialTypeDetail": "R/P3M"
+            },
+            {
+              "id": "1.2_OGP_D_1993_T_17",
+              "title": "oferta_global_pbi",
+              "description": "PBI a precios de comprador, en millones de pesos de 1993 y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.2_OGI_D_1993_T_25",
+              "title": "oferta_global_importacion",
+              "description": "Importación a precios de comprador, en millones de pesos de 1993 y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.2_DGE_D_1993_T_26",
+              "title": "demanda_global_exportacion",
+              "description": "Oferta global total a precios de comprador, en millones de pesos de 1993 y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.2_DGI_D_1993_T_19",
+              "title": "demanda_global_ibif",
+              "description": "Consumo privado, en millones de pesos  de 1993 y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.2_DGCP_D_1993_T_27",
+              "title": "demanda_global_consumo_priv",
+              "description": "Consumo publico, en millones de pesos de 1993 y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.2_DGCP_D_1993_T_30",
+              "title": "demanda_global_consumo_publico",
+              "description": "Inversion bruta interna fija, en millones de pesos de 1993  y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
