@@ -55,7 +55,7 @@ Es cualquier **colección de datos con valor informativo**, de propiedad de una 
 
 **Dataset**
 
-**También llamado _conjunto de datos,_ es la pieza principal en todo catálogo**. Se trata de un activo de datos que agrupa recursos referidos a un mismo tema, que respetan una estructura de la información. Los recursos que lo componen pueden diferir en el formato en que se los presenta (por ejemplo: .csv, .json, .xls, etc.), la fecha a la que se refieren, el área geográfica cubierta o estar separados bajo algún otro criterio. 
+**También llamado _conjunto de datos,_ es la pieza principal en todo catálogo**. Se trata de un activo de datos que agrupa recursos referidos a un mismo tema, que respetan una estructura de la información. Los recursos que lo componen pueden diferir en el formato en que se los presenta (por ejemplo: .csv, .json, .xls, etc.), la fecha a la que se refieren, el área geográfica cubierta, ser tablas de un mismo esquema de base de datos relacional o estar separados bajo algún otro criterio.
 
 **Catálogo de datos**
 
@@ -147,11 +147,11 @@ El archivo *data.json* de un Portal Andino puede encontrarse en el directorio ra
 
 **El perfil de metadatos propuesto se conforma de cinco componentes. A estos componentes los denominamos "clases" y hacen referencia a metadatos de**:
 
-* Catálogo.
-* Datasets.
-* Distribuciones.
-* Temas.
-* Campos.
+* Catálogo
+* Datasets
+* Distribuciones
+* Temas
+* Campos
 
 El *data.json* de *quienes usen el portal Andino, se generará a través de los formularios completados, publicándose automáticamente en *http://datos.[entidad].gob.ar/data.json**.
 
@@ -263,7 +263,6 @@ Recomendamos ver un[ ejemplo textual](https://github.com/datosgobar/paquete-aper
 
 A continuación, describimos los metadatos que se deben completar para describir un dataset a la hora de su carga o actualización en el catálogo:
 
- 
 <table>
 <colgroup>
     <col style="width:18%">
