@@ -14,15 +14,15 @@
   - [Geográficas](#geograficas)
     - [Países o territorios internacionales](#paises-o-territorios-internacionales)
     - [Divisiones o unidades territoriales internas](#divisiones-o-unidades-territoriales-internas)
-      - [A. Provincias -> Departamentos -> Fracciones Censales -> Radios Censales (PDFR)](#a-provincias-departamentos-fracciones-censales-radios-censales-pdfr)
-      - [B. Provincias -> Municipios (PM)](#b-provincias-municipios-pm)
-      - [C. Provincias -> Departamentos -> Localidades (PDL)](#c-provincias-departamentos-localidades-pdl)
+      - [A. Provincias -> Departamentos -> Fracciones Censales -> Radios Censales (PDFR)](#a-provincias---departamentos---fracciones-censales---radios-censales-pdfr)
+      - [B. Provincias -> Municipios (PM)](#b-provincias---municipios-pm)
+      - [C. Provincias -> Departamentos -> Localidades (PDL)](#c-provincias---departamentos---localidades-pdl)
       - [D. Aglomerados](#d-aglomerados)
       - [E. ¿Cómo nombrar los campos?](#e-como-nombrar-los-campos)
     - [Direcciones y lugares](#direcciones-y-lugares)
-    - [Códigos postales](#codigos-postales)
-  - [Personas físicas](#personas-fisicas)
-  - [Personas jurídicas](#personas-juridicas)
+    - [**Códigos postales**](#codigos-postales)
+  - [**Personas físicas**](#personas-fisicas)
+  - [**Personas jurídicas**](#personas-juridicas)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
