@@ -115,8 +115,13 @@
 <li class="toctree-l4"><a class="reference internal" href="#tema-theme">Tema (<code class="docutils literal"><span class="pre">theme</span></code>)</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#extensiones-especiales">Extensiones especiales</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#series-de-tiempo">Series de tiempo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#extensiones-especiales">Extensiones especiales</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#series-de-tiempo">Series de tiempo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#distribucion-de-series-de-tiempo">Distribución de series de tiempo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tipo-especial-indice-de-tiempo">Tipo especial: indice de tiempo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#documentar-un-dataset-de-series-de-tiempo">Documentar un dataset de series de tiempo</a></li>
 </ul>
 </li>
 </ul>
@@ -201,29 +206,29 @@
 <li><a class="reference external" href="#tema-theme">Tema (<code class="docutils literal"><span class="pre">theme</span></code>)</a></li>
 </ul>
 </li>
+</ul>
+</li>
 <li><a class="reference external" href="#extensiones-especiales">Extensiones especiales</a><ul>
 <li><a class="reference external" href="#series-de-tiempo">Series de tiempo</a><ul>
 <li><a class="reference external" href="#distribucion-de-series-de-tiempo">Distribución de series de tiempo</a></li>
 <li><a class="reference external" href="#tipo-especial-indice-de-tiempo">Tipo especial: indice de tiempo</a></li>
 <li><a class="reference external" href="#documentar-un-dataset-de-series-de-tiempo">Documentar un dataset de series de tiempo</a><ul>
-<li><a class="reference external" href="#dataset-dataset---series-de-tiempo">Dataset (<code class="docutils literal"><span class="pre">dataset</span></code>) - series de tiempo</a></li>
-<li><a class="reference external" href="#distribucion-distribution---series-de-tiempo">Distribución (<code class="docutils literal"><span class="pre">distribution</span></code>) - series de tiempo</a></li>
-<li><a class="reference external" href="#campo-field---series-de-tiempo">Campo (<code class="docutils literal"><span class="pre">field</span></code>) - series de tiempo</a></li>
+<li><a class="reference external" href="#dataset-dataset-series-de-tiempo">Dataset (<code class="docutils literal"><span class="pre">dataset</span></code>) - series de tiempo</a></li>
+<li><a class="reference external" href="#distribucion-distribution-series-de-tiempo">Distribución (<code class="docutils literal"><span class="pre">distribution</span></code>) - series de tiempo</a></li>
+<li><a class="reference external" href="#campo-field-series-de-tiempo">Campo (<code class="docutils literal"><span class="pre">field</span></code>) - series de tiempo</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a class="reference external" href="#anexo-i---taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a></li>
-<li><a class="reference external" href="#anexo-ii---pautas-para-la-seleccion-de-etiquetas">Anexo II - Pautas para la selección de etiquetas</a></li>
-<li><a class="reference external" href="#anexo-iii---especificacion-de-frecuencias-segun-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a></li>
-<li><a class="reference external" href="#anexo-iv---ejemplo-de-datajson">Anexo IV - Ejemplo de data.json</a></li>
-<li><a class="reference external" href="#anexo-v---taxonomia-tematica-global-de-la-apn-para-los-datasets-json">Anexo V - Taxonomía temática global de la APN para los datasets (JSON)</a></li>
-<li><a class="reference external" href="#anexo-vi---ejemplo-de-metadatos-como-texto">Anexo VI - Ejemplo de metadatos como texto</a></li>
-<li><a class="reference external" href="#anexo-vii---ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a></li>
+<li><a class="reference external" href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a></li>
+<li><a class="reference external" href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas">Anexo II - Pautas para la selección de etiquetas</a></li>
+<li><a class="reference external" href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a></li>
+<li><a class="reference external" href="#anexo-iv-ejemplo-de-datajson">Anexo IV - Ejemplo de data.json</a></li>
+<li><a class="reference external" href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json">Anexo V - Taxonomía temática global de la APN para los datasets (JSON)</a></li>
+<li><a class="reference external" href="#anexo-vi-ejemplo-de-metadatos-como-texto">Anexo VI - Ejemplo de metadatos como texto</a></li>
+<li><a class="reference external" href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a></li>
 </ul>
 <!-- END doctoc generated TOC please keep comment here to allow auto update --></div>
 <div class="section" id="version">
@@ -967,8 +972,9 @@
   </tr>
 </table></div>
 </div>
+</div>
 <div class="section" id="extensiones-especiales">
-<span id="extensiones-especiales"></span><h3>Extensiones especiales<a class="headerlink" href="#extensiones-especiales" title="Permalink to this headline">¶</a></h3>
+<span id="extensiones-especiales"></span><h2>Extensiones especiales<a class="headerlink" href="#extensiones-especiales" title="Permalink to this headline">¶</a></h2>
 <p>A partir de la versión 1.1, el perfil de metadatos propuesto para la Administración Pública Nacional plantea:</p>
 <ol class="simple">
 <li>Un <strong>esquema base de uso general</strong> para la documentación de catálogos de datos abiertos</li>
@@ -980,11 +986,11 @@
 <li>La definición de uno o más <strong>tipos especiales</strong> (<code class="docutils literal"><span class="pre">specialType</span></code>) utilizados para que sistemas o aplicaciones interpreten de una forma específica los datos que encuentren en una tabla.</li>
 </ul>
 <div class="section" id="series-de-tiempo">
-<span id="series-de-tiempo"></span><h4>Series de tiempo<a class="headerlink" href="#series-de-tiempo" title="Permalink to this headline">¶</a></h4>
+<span id="series-de-tiempo"></span><h3>Series de tiempo<a class="headerlink" href="#series-de-tiempo" title="Permalink to this headline">¶</a></h3>
 <p>Junto con la versión 1.1 del perfil de metadatos se propone una sencilla extensión para documentar <strong>distribuciones que contienen series de tiempo</strong>.</p>
 <p>Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, y de otras aplicaciones.</p>
 <div class="section" id="distribucion-de-series-de-tiempo">
-<span id="distribucion-de-series-de-tiempo"></span><h5>Distribución de series de tiempo<a class="headerlink" href="#distribucion-de-series-de-tiempo" title="Permalink to this headline">¶</a></h5>
+<span id="distribucion-de-series-de-tiempo"></span><h4>Distribución de series de tiempo<a class="headerlink" href="#distribucion-de-series-de-tiempo" title="Permalink to this headline">¶</a></h4>
 <p>Es una tabla donde:</p>
 <ul class="simple">
 <li>Existe una columna que es el <strong>índice de tiempo</strong><ul>
@@ -1081,7 +1087,7 @@
 <p>Ver ejemplo completo de una <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv">distribución de series de tiempo</a>.</p>
 </div>
 <div class="section" id="tipo-especial-indice-de-tiempo">
-<span id="tipo-especial-indice-de-tiempo"></span><h5>Tipo especial: indice de tiempo<a class="headerlink" href="#tipo-especial-indice-de-tiempo" title="Permalink to this headline">¶</a></h5>
+<span id="tipo-especial-indice-de-tiempo"></span><h4>Tipo especial: indice de tiempo<a class="headerlink" href="#tipo-especial-indice-de-tiempo" title="Permalink to this headline">¶</a></h4>
 <p>Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando uno de sus campos como &#8220;índice de tiempo&#8221; y aclarando la frecuencia que tiene.</p>
 <p>Dentro de la variable <code class="docutils literal"><span class="pre">field</span></code> de la distribución:</p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -1123,9 +1129,9 @@
 </ul>
 </div>
 <div class="section" id="documentar-un-dataset-de-series-de-tiempo">
-<span id="documentar-un-dataset-de-series-de-tiempo"></span><h5>Documentar un dataset de series de tiempo<a class="headerlink" href="#documentar-un-dataset-de-series-de-tiempo" title="Permalink to this headline">¶</a></h5>
+<span id="documentar-un-dataset-de-series-de-tiempo"></span><h4>Documentar un dataset de series de tiempo<a class="headerlink" href="#documentar-un-dataset-de-series-de-tiempo" title="Permalink to this headline">¶</a></h4>
 <p>A continuación se revisan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo para cada parte del modelo de metadatos dentro de un <em>dataset</em> que contiene series de tiempo.</p>
-<p>Ver ejemplo de catálogo compelto en <a class="reference external" href="#anexo-vii---ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a>.</p>
+<p>Ver ejemplo de catálogo compelto en <a class="reference external" href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a>.</p>
 <ul class="simple">
 <li><strong>Dataset 1</strong>: Oferta y Demanda Globales. Datos desestacionalizados. Base 1993<ul>
 <li><strong>Distribucion 1.1</strong>: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores anuales.</li>
@@ -1134,7 +1140,7 @@
 </li>
 </ul>
 <div class="section" id="dataset-dataset-series-de-tiempo">
-<span id="dataset-dataset-series-de-tiempo"></span><h6>Dataset (<code class="docutils literal"><span class="pre">dataset</span></code>) - series de tiempo<a class="headerlink" href="#dataset-dataset-series-de-tiempo" title="Permalink to this headline">¶</a></h6>
+<span id="dataset-dataset-series-de-tiempo"></span><h5>Dataset (<code class="docutils literal"><span class="pre">dataset</span></code>) - series de tiempo<a class="headerlink" href="#dataset-dataset-series-de-tiempo" title="Permalink to this headline">¶</a></h5>
 <p><em>TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON</em>
 <em>TODO: Pensar cómo seguir un ejemplo sin usar JSON</em></p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -1293,7 +1299,7 @@
 </div>
 </div>
 <div class="section" id="distribucion-distribution-series-de-tiempo">
-<span id="distribucion-distribution-series-de-tiempo"></span><h6>Distribución (<code class="docutils literal"><span class="pre">distribution</span></code>) - series de tiempo<a class="headerlink" href="#distribucion-distribution-series-de-tiempo" title="Permalink to this headline">¶</a></h6>
+<span id="distribucion-distribution-series-de-tiempo"></span><h5>Distribución (<code class="docutils literal"><span class="pre">distribution</span></code>) - series de tiempo<a class="headerlink" href="#distribucion-distribution-series-de-tiempo" title="Permalink to this headline">¶</a></h5>
 <p><em>TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON</em></p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1&quot;</span><span class="p">,</span>
@@ -1359,7 +1365,7 @@
 </div>
 </div>
 <div class="section" id="campo-field-series-de-tiempo">
-<span id="campo-field-series-de-tiempo"></span><h6>Campo (<code class="docutils literal"><span class="pre">field</span></code>) - series de tiempo<a class="headerlink" href="#campo-field-series-de-tiempo" title="Permalink to this headline">¶</a></h6>
+<span id="campo-field-series-de-tiempo"></span><h5>Campo (<code class="docutils literal"><span class="pre">field</span></code>) - series de tiempo<a class="headerlink" href="#campo-field-series-de-tiempo" title="Permalink to this headline">¶</a></h5>
 <p><em>TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON</em></p>
 <p><strong>Serie de tiempo</strong></p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -1379,7 +1385,6 @@
   <span class="nt">&quot;specialTypeDetail&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P1Y&quot;</span>
 <span class="p">}</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>

@@ -22,21 +22,21 @@
     - [Distribución (`distribution`)](#distribucion-distribution)
     - [Campo (`field`)](#campo-field)
     - [Tema (`theme`)](#tema-theme)
-  - [Extensiones especiales](#extensiones-especiales)
-    - [Series de tiempo](#series-de-tiempo)
-      - [Distribución de series de tiempo](#distribucion-de-series-de-tiempo)
-      - [Tipo especial: indice de tiempo](#tipo-especial-indice-de-tiempo)
-      - [Documentar un dataset de series de tiempo](#documentar-un-dataset-de-series-de-tiempo)
-        - [Dataset (`dataset`) - series de tiempo](#dataset-dataset---series-de-tiempo)
-        - [Distribución (`distribution`) - series de tiempo](#distribucion-distribution---series-de-tiempo)
-        - [Campo (`field`) - series de tiempo](#campo-field---series-de-tiempo)
-- [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i---taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
-- [Anexo II - Pautas para la selección de etiquetas](#anexo-ii---pautas-para-la-seleccion-de-etiquetas)
-- [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii---especificacion-de-frecuencias-segun-iso-8601)
-- [Anexo IV - Ejemplo de data.json](#anexo-iv---ejemplo-de-datajson)
-- [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v---taxonomia-tematica-global-de-la-apn-para-los-datasets-json)
-- [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi---ejemplo-de-metadatos-como-texto)
-- [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii---ejemplo-de-datajson-con-series-de-tiempo)
+- [Extensiones especiales](#extensiones-especiales)
+  - [Series de tiempo](#series-de-tiempo)
+    - [Distribución de series de tiempo](#distribucion-de-series-de-tiempo)
+    - [Tipo especial: indice de tiempo](#tipo-especial-indice-de-tiempo)
+    - [Documentar un dataset de series de tiempo](#documentar-un-dataset-de-series-de-tiempo)
+      - [Dataset (`dataset`) - series de tiempo](#dataset-dataset-series-de-tiempo)
+      - [Distribución (`distribution`) - series de tiempo](#distribucion-distribution-series-de-tiempo)
+      - [Campo (`field`) - series de tiempo](#campo-field-series-de-tiempo)
+- [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
+- [Anexo II - Pautas para la selección de etiquetas](#anexo-ii-pautas-para-la-seleccion-de-etiquetas)
+- [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificacion-de-frecuencias-segun-iso-8601)
+- [Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)
+- [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json)
+- [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)
+- [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -841,7 +841,7 @@ Metadatos que el *data.json* debe contener, para describir a un tema de la taxon
   </tr>
 </table>
 
-### Extensiones especiales
+## Extensiones especiales
 
 A partir de la versión 1.1, el perfil de metadatos propuesto para la Administración Pública Nacional plantea:
 
@@ -853,13 +853,13 @@ El desarrollo de extensiones del perfil para uso de aplicaciones puede contempla
 * La **obligatoriedad de campos de metadatos** que en el perfil base no son obligatorios (recomendados u optativos).
 * La definición de uno o más **tipos especiales** (`specialType`) utilizados para que sistemas o aplicaciones interpreten de una forma específica los datos que encuentren en una tabla.
 
-#### Series de tiempo
+### Series de tiempo
 
 Junto con la versión 1.1 del perfil de metadatos se propone una sencilla extensión para documentar **distribuciones que contienen series de tiempo**.
 
 Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, y de otras aplicaciones.
 
-##### Distribución de series de tiempo
+#### Distribución de series de tiempo
 
 Es una tabla donde:
 
@@ -958,7 +958,7 @@ indice_tiempo,oferta_global_pib,oferta_global_importacion,demanda_global_exporta
 
 Ver ejemplo completo de una [distribución de series de tiempo](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv).
 
-##### Tipo especial: indice de tiempo
+#### Tipo especial: indice de tiempo
 
 Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando uno de sus campos como "índice de tiempo" y aclarando la frecuencia que tiene.
 
@@ -996,17 +996,17 @@ El indice de tiempo de una distribución con series de tiempo debe cumplir:
     + Semestral: 1980-01-01 / 1980-08-01 / 1981-01-01 NO está ok
     + Semestral: 1980-01-31 / 1980-07-31 / 1981-01-31 NO está ok
 
-##### Documentar un dataset de series de tiempo
+#### Documentar un dataset de series de tiempo
 
 A continuación se revisan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo para cada parte del modelo de metadatos dentro de un *dataset* que contiene series de tiempo.
 
-Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii---ejemplo-de-datajson-con-series-de-tiempo).
+Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo).
 
 * **Dataset 1**: Oferta y Demanda Globales. Datos desestacionalizados. Base 1993
   - **Distribucion 1.1**: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores anuales.
   - **Distribucion 1.2**: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores trimestrales.
 
-###### Dataset (`dataset`) - series de tiempo
+##### Dataset (`dataset`) - series de tiempo
 
 *TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON*
 *TODO: Pensar cómo seguir un ejemplo sin usar JSON*
@@ -1166,7 +1166,7 @@ Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con serie
 }
 ```
 
-###### Distribución (`distribution`) - series de tiempo
+##### Distribución (`distribution`) - series de tiempo
 *TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON*
 
 ```json
@@ -1232,7 +1232,7 @@ Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con serie
 }
 ```
 
-###### Campo (`field`) - series de tiempo
+##### Campo (`field`) - series de tiempo
 *TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON*
 
 **Serie de tiempo**
