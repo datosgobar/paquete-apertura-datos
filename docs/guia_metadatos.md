@@ -970,7 +970,7 @@ Ver ejemplo completo de una [distribución de series de tiempo](https://github.c
 
 #### Tipo especial: indice de tiempo
 
-Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando uno de sus campos como "índice de tiempo" y aclarando la frecuencia que tiene.
+Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando uno de sus campos como "índice de tiempo" y aclarando la frecuencia que tiene (Ver el [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificacion-de-frecuencias-segun-iso-8601)).
 
 Dentro de la variable `field` de la distribución:
 
@@ -1010,7 +1010,7 @@ El indice de tiempo de una distribución con series de tiempo debe cumplir:
 
 A continuación se revisan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo para cada parte del modelo de metadatos dentro de un *dataset* que contiene series de tiempo.
 
-Ver ejemplo de catálogo compelto en [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo).
+Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo).
 
 * **Dataset 1**: Oferta y Demanda Globales. Datos desestacionalizados. Base 1993
   - **Distribucion 1.1**: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores anuales.
