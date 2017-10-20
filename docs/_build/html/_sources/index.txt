@@ -25,3 +25,12 @@ Herramientas
 - `Portal Andino <https://github.com/datosgobar/portal-andino>`_: portal empaquetado y distribuible desarrollado sobre la base de la plataforma CKAN. Fue diseñado para hacer más fácil la apertura y federación de activos de datos en Argentina.
 
 - `pydatajson <https://github.com/datosgobar/pydatajson>`_: librería en python para analizar, generar y validar metadatos en formato data.json. Facilita el manejo de metadatos de catálogos de datos en Argentina.
+
+
+Versiones
+---------
+
+.. toctree::
+   :maxdepth: 2
+
+   HISTORY.md

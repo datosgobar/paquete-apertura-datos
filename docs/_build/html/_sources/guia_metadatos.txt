@@ -78,8 +78,6 @@ Es un **conjunto de herramientas y guías** de buenas prácticas creadas para **
 
 Esta guía busca ayudar a los organismos a instrumentar la Política de Datos Abiertos impulsada desde el Gobierno de la Nación Argentina, a través del Decreto N° 117/2016 del 12 de enero de 2016.
 
- 
-
 ### Objetivo de esta guía
 
 Esta es **una guía de recomendaciones y buenas prácticas, para el uso y la publicación de metadatos**.
@@ -110,13 +108,13 @@ En esta guía describimos el **perfil de metadatos recomendado para los catálog
 
 ### ¿Cómo se publican los metadatos?
 
-**La publicación de los metadatos puede ser muy diversa** en detalle, calidad y forma. **Una publicación muy elemental es un documento de texto** que ofrece una descripción del dataset y de cada uno de los recursos que lo componen. Es posible ver un [ejemplo textual](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md) de los metadatos de un catálogo de datos en el **Anexo VI - Ejemplo de metadatos como texto**.
+**La publicación de los metadatos puede ser muy diversa** en detalle, calidad y forma. **Una publicación muy elemental es un documento de texto** que ofrece una descripción del dataset y de cada uno de los recursos que lo componen. Es posible ver un [ejemplo textual](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md) de los metadatos de un catálogo de datos en el **[Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)**.
 
 Sin embargo, **las computadoras no pueden leer fácilmente documentos de texto**. La organización sistemática de colecciones de datasets (es decir, la creación de un **catálogo** de datos) exige un nivel de complejidad mayor para facilitar su descubrimiento, indexación, y reutilización por parte de scripts y aplicaciones de todo tipo.
 
 La potencial reutilización de los conjuntos de datos y la posibilidad de que los mismos sean correctamente federados desde el Portal Nacional de Datos Abiertos (datos.gob.ar) dependerá de la calidad de sus metadatos. Adoptar y/o desarrollar estándares y vocabularios controlados es importante para la lectura e interpretación de los conjuntos de datos por personas y por aplicaciones informáticas.
 
-Para esto, **los catálogos de datos publican sus metadatos en un formato estructurado (JSON)** respetando un determinado perfil estandarizado. Recomendamos ver un [ejemplo en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json) de los metadatos de un catálogo de datos en el **Anexo IV - Ejemplo de data.json**.
+Para esto, **los catálogos de datos publican sus metadatos en un formato estructurado (JSON)** respetando un determinado perfil estandarizado. Recomendamos ver un [ejemplo en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json) de los metadatos de un catálogo de datos en el **[Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)**.
 
 En el resto de este documento detallamos las características de los estándares y vocabularios controlados adoptados para catálogos de datos, datasets y distribuciones.
 
@@ -126,23 +124,21 @@ Esta guía intenta ayudar a quienes:
 
 * **Publican sus catálogos de datos mediante un adaptación del portal Andino**. Es decir,  del portal que el equipo de Datos de la Nación Argentina diseñó sobre la base de CKAN y que pueden adoptar las dependencias de la Administración Pública Nacional (así como también de otros niveles gubernamentales sub-nacionales o incluso entidades del público general) para gestionar la publicación centralizada de sus activos de datos.
 
-El portal Andino incluye formularios web para la carga de datos y metadatos. **La publicación de metadatos mediante este portal cumple con el perfil de metadatos recomendado en esta guía**. El Portal debe publicarse en un dominio de la forma *http://datos.[entidad].gob.ar*. Esto asegura la publicación automática de los metadatos en formato data.json en *http://datos.[entidad].gob.ar/data.json*
-
-Si estás dentro de este grupo, **recomendamos leer la sección "_Portal Andino_"**. Con ella, podrás comprender cómo completar cada campo en el formulario web del Portal Andino.
+    Si estás dentro de este grupo, **recomendamos leer la sección [Portal Andino](#portal-andino)**. Con ella, podrás comprender cómo completar cada campo en el formulario web del Portal Andino.
 
 * **Publican sus catálogos de datos mediante otros medios**. Esto es, en forma directa en el dominio digital de la entidad responsable o de alguna forma alternativa en la red. Esas entidades deberán publicar su catálogo de datos en un archivo estructurado (JSON) llamado *data.json* alojado en un dominio de la forma *http://datos.[entidad].gob.ar/data.json* siguiendo las especificaciones del perfil de metadatos de esta guía.
 
-En [entidad] recomendamos usar un nombre simple y breve que represente a la organización que publica el catálogo (por ejemplo: datos.jus.gob.ar, datos.tucuman.gob.ar, datos.pilar.gob.ar).
-
-Si la apertura de tus datos se inscribe en esta modalidad, **te sugerimos leer la sección "_Otros catálogos_"**. Te ayudará a comprender cómo generar y publicar un archivo *data.json* que cumpla con el perfil de metadatos de la Administración Pública Nacional.
+    Si la apertura de tus datos se inscribe en esta modalidad, **te sugerimos leer la sección [Otros catálogos](#otros-catalogos)**. Te ayudará a comprender cómo generar y publicar un archivo *data.json* que cumpla con el perfil de metadatos de la política de apertura de datos de la Administración Pública Nacional.
 
 ## Perfil de Metadatos
 
 ### Portal Andino
 
-**El Portal Andino** es una herramienta especialmente diseñada para facilitar la publicación y apertura de datos y **cumple con el perfil de metadatos de la Administración Pública Nacional** propuesto en esta guía.
+**El [Portal Andino](https://github.com/datosgobar/portal-andino)** es una herramienta especialmente diseñada para facilitar la publicación y apertura de datos y **cumple con el perfil de metadatos de la Administración Pública Nacional** propuesto en esta guía.
 
-Al cargar datasets y distribuciones a través de sus formularios, se generan los metadatos del perfil y se publican en un archivo data.json en el formato correcto.
+Incluye formularios web para la carga de datos y metadatos. **La publicación de metadatos mediante este portal cumple con la versión 1.0 del perfil de metadatos recomendado en esta guía**.
+
+El Portal debe publicarse en un dominio de la forma *http://datos.[entidad].gob.ar*. Esto asegura la publicación automática de los metadatos en formato data.json en *http://datos.[entidad].gob.ar/data.json*
 
 El archivo *data.json* de un Portal Andino puede encontrarse en el directorio raíz del portal: *http://datos.[entidad].gob.ar/data.json*.
 
@@ -152,13 +148,15 @@ Sin embargo, los organismos de la APN **pueden optar por desarrollar sus propias
 
 Quienes opten por una solución alternativa al Portal Andino para publicar sus datos, deberán publicar los metadatos de su Catálogo en un archivo *data.json* en una URL como la siguiente: *http://datos.[entidad].gob.ar/data.json*.
 
-Este archivo deberá estar construido tal como se puede ver en el ejemplo del **Anexo IV - Ejemplo de data.json**, respetando el perfil de metadatos de la Administración Pública Nacional tal como se lo describe más adelante en la sección "*Campos del perfil*".
+En [entidad] recomendamos usar un nombre simple y breve que represente a la organización que publica el catálogo (por ejemplo: datos.jus.gob.ar, datos.tucuman.gob.ar, datos.pilar.gob.ar).
+
+Este archivo deberá estar construido tal como se puede ver en el ejemplo del **[Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)**, respetando el Perfil de Metadatos de la Administración Pública Nacional tal como se lo describe más adelante en la sección "*[Campos del perfil](#campos-del-perfil)*".
 
 ### Estándar usado
 
-**El perfil de metadatos recomendado en esta guía es una adaptación del estándar DCAT - AP**, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.
+**El perfil de metadatos recomendado en esta guía es una adaptación del estándar [DCAT - AP](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe)**, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.
 
-Según la W3C: "Mediante la utilización de DCAT para describir datasets en catálogos de datos, quienes publican aumentan la posibilidad de descubrimiento (*discoverability*) y permiten a aplicaciones informáticas consumir metadatos de manera simple desde múltiples catálogos. Además permite la publicación descentralizada de catálogos y favorece la búsqueda ‘federada’ de datasets a través de varios sitios."
+Según la W3C: "Mediante la utilización de DCAT para describir datasets en catálogos de datos, quienes publican aumentan la posibilidad de descubrimiento (*discoverability*) y permiten a aplicaciones informáticas consumir metadatos de manera simple desde múltiples catálogos. Además permite la publicación descentralizada de catálogos y favorece la búsqueda *federada* de datasets a través de varios sitios."
 
 El perfil de metadatos propuesto para la Administración Pública Nacional se compone de 3 clases principales (*Catalog, Dataset y Distribution*) y 2 auxiliares (*Field* y *Theme*) que se relacionan según el siguiente esquema:
 
@@ -176,10 +174,10 @@ A continuación, describimos los metadatos que el *data.json* debe contener, par
 
 El *data.json* de *quienes usen el portal Andino, se generará a través de los formularios completados, publicándose automáticamente en *http://datos.[entidad].gob.ar/data.json**.
 
-Recomendamos ver:
+Ejemplos de metadatos de un **catálogo**:
 
-* [Ejemplo textual](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md) de metadatos de un **catálogo**.
-* [Ejemplo de metadatos de un catálogo en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json).
+* [Catálogo en texto](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md)
+* [Catálogo en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json)
 
 Metadatos necesarios para describir el catálogo, que un *data.json* debe contener:
 
@@ -201,12 +199,16 @@ Metadatos necesarios para describir el catálogo, que un *data.json* debe conten
     <td>Tipo (data.json)</td>
   </tr>
   <tr>
-    <td>Datasets</td>
-    <td>Sí</td>
-    <td>Contiene una lista de los datasets que forman parte del catálogo.</td>
-    <td>[{...}, {...}]</td>
-    <td>dataset</td>
-    <td>Array</td>
+    <td>Identificador</td>
+    <td>Recomendado</td>
+    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (http://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
+    <td>"enacom"<br/>
+    "energia"<br/>
+    "desarrollo-social"<br/>
+    "justicia"<br/>
+    "arsat"</td>
+    <td>identifier</td>
+    <td>String</td>
   </tr>
   <tr>
     <td>Nombre</td>
@@ -241,6 +243,14 @@ Metadatos necesarios para describir el catálogo, que un *data.json* debe conten
     <td>String</td>
   </tr>
   <tr>
+    <td>Datasets</td>
+    <td>Sí</td>
+    <td>Contiene una lista de los datasets que forman parte del catálogo.</td>
+    <td>[{...}, {...}]</td>
+    <td>dataset</td>
+    <td>Array</td>
+  </tr>
+  <tr>
     <td>Fecha de creación o publicación</td>
     <td>Recomendado</td>
     <td>Fecha de creación o publicación del catálogo. Se escribe según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
@@ -257,6 +267,14 @@ Metadatos necesarios para describir el catálogo, que un *data.json* debe conten
     <td>String</td>
   </tr>
   <tr>
+    <td>Versión del perfil de metadatos</td>
+    <td>Recomendado</td>
+    <td>Es la versión del perfil de metadatos de la red de nodos de datos abiertos de la administración pública nacional de Argentina, utilizada en el catálogo.<br/><br/> Se utiliza para que distintas aplicaciones reconozcan y validen los metadatos del catálogo, y las funcionalidades disponibles para distintos fines.</td>
+    <td>1.1</td>
+    <td>version</td>
+    <td>String</td>
+  </tr>
+  <tr>
     <td>Idioma(s)</td>
     <td>Recomendado</td>
     <td>Lenguaje para la descripción de los metadatos de los datasets contenidos en el catálogo. Hay 2 estándares ISO que pueden ser utilizados para este campo:<br/>
@@ -266,22 +284,6 @@ Metadatos necesarios para describir el catálogo, que un *data.json* debe conten
     <td>["es"] para un lenguaje ISO 639-1<br/>
     ["spa", "eng"] para dos lenguajes ISO 639-2</td>
     <td>language</td>
-    <td>Array</td>
-  </tr>
-  <tr>
-    <td>Taxonomía temática global</td>
-    <td>Sí</td>
-    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en <a href="http://datos.gob.ar/superThemeTaxonomy.json">http://datos.gob.ar/superThemeTaxonomy.json</a>.</td>
-    <td>http://datos.gob.ar/superThemeTaxonomy.json</td>
-    <td>superThemeTaxonomy</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td>Taxonomía temática específica</td>
-    <td>Recomendado</td>
-    <td>Es el sistema de clasificación temática específica, creado por la organización responsable del catálogo. Compone una lista de temas específicos a los datasets del catálogo. Si se clasifica algún dataset del catálogo como perteneciente a uno o más temas, este campo es obligatorio ya que se debe explicitar una taxonomía temática para poder usar sus temas.</td>
-    <td>[{...}, {...}]</td>
-    <td>themeTaxonomy</td>
     <td>Array</td>
   </tr>
   <tr>
@@ -299,6 +301,22 @@ Metadatos necesarios para describir el catálogo, que un *data.json* debe conten
     <td>http://datos.gob.ar</td>
     <td>homepage</td>
     <td>String</td>
+  </tr>
+  <tr>
+    <td>Taxonomía temática global</td>
+    <td>Sí</td>
+    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en <a href="http://datos.gob.ar/superThemeTaxonomy.json">http://datos.gob.ar/superThemeTaxonomy.json</a>.</td>
+    <td>http://datos.gob.ar/superThemeTaxonomy.json</td>
+    <td>superThemeTaxonomy</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Taxonomía temática específica</td>
+    <td>Recomendado</td>
+    <td>Es el sistema de clasificación temática específica, creado por la organización responsable del catálogo. Compone una lista de temas específicos a los datasets del catálogo. Si se clasifica algún dataset del catálogo como perteneciente a uno o más temas, este campo es obligatorio ya que se debe explicitar una taxonomía temática para poder usar sus temas.</td>
+    <td>[{...}, {...}]</td>
+    <td>themeTaxonomy</td>
+    <td>Array</td>
   </tr>
   <tr>
     <td>Derechos sobre el catálogo</td>
@@ -324,29 +342,9 @@ Metadatos necesarios para describir el catálogo, que un *data.json* debe conten
     <td>spatial</td>
     <td>String or Array</td>
   </tr>
-  <tr>
-    <td>Identificador</td>
-    <td>Recomendado</td>
-    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (http://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
-    <td>"enacom"<br/>
-    "energia"<br/>
-    "desarrollo-social"<br/>
-    "justicia"<br/>
-    "arsat"</td>
-    <td>identifier</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td>Versión del perfil de metadatos</td>
-    <td>Recomendado</td>
-    <td>Es la versión del perfil de metadatos de la red de nodos de datos abiertos de la administración pública nacional de Argentina, utilizada en el catálogo.<br/><br/> Se utiliza para que distintas aplicaciones reconozcan y validen los metadatos del catálogo, y las funcionalidades disponibles para distintos fines.</td>
-    <td>1.1</td>
-    <td>version</td>
-    <td>String</td>
-  </tr>
 </table>
 
-Es importante poner atención a los dos campos que contienen una lista de objetos: **dataset** y **themeTaxonomy**.
+Es importante poner atención a los dos campos que contienen una lista de objetos: **`dataset`** y **`themeTaxonomy`**.
 
 El **primero** contendrá una lista de objetos que describen (cada uno) los metadatos de los distintos datasets que componen el catálogo (en la próxima sección se describen los metadatos que debe contener cada uno de estos objetos).
 
@@ -356,12 +354,12 @@ El **segundo** también contiene una lista de objetos que, juntos, definen una t
 
 A continuación, describimos los metadatos que se deben completar para describir un dataset a la hora de su carga o actualización en el catálogo.
 
-Recomendamos ver:
+Ejemplos de metadatos de un **dataset**:
 
-* [Ejemplo textual](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/dataset.md) de metadatos de un **dataset**.
-* [Ejemplo de metadatos de un dataset en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/dataset.json).
+* [Dataset en texto](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/dataset.md)
+* [Dataset en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/dataset.json)
 
-Metadatos que el *data.json* debe contener, para describir a un dataset dentro de la lista contenida en el campo **dataset** del catálogo:
+Metadatos que el *data.json* debe contener, para describir a un dataset dentro de la lista contenida en el campo **`dataset`** del catálogo:
 
 <table  class="six-columns">
 <colgroup>
@@ -379,6 +377,14 @@ Metadatos que el *data.json* debe contener, para describir a un dataset dentro d
     <td>Ejemplo</td>
     <td>Variable (data.json)</td>
     <td>Tipo (data.json)</td>
+  </tr>
+  <tr>
+    <td>Identificador</td>
+    <td>Si</td>
+    <td>Identificador único del dataset, este identificador debe ser único para todo el catálogo.</td>
+    <td>Un identificador único para el dataset. La URI u otro identificador único en el contexto del catálogo, ejemplo:<br/>"dataset-ejemplo-35782”</td>
+    <td>identifier</td>
+    <td>String</td>
   </tr>
   <tr>
     <td>Título</td>
@@ -429,6 +435,14 @@ Metadatos que el *data.json* debe contener, para describir a un dataset dentro d
     <td>String</td>
   </tr>
   <tr>
+    <td>Distribuciones</td>
+    <td>Sí</td>
+    <td>Lista de distribuciones que pertenecen al dataset y sus metadatos. Cada distribución se representa con un objeto ("{}") donde se describen los metadatos especificados para la clase "distribution" de este perfil de metadatos.</td>
+    <td>[{...}, {...}]</td>
+    <td>distribution</td>
+    <td>Array</td>
+  </tr>
+  <tr>
     <td>Temática(s) globales</td>
     <td>Sí</td>
     <td>Temática/s o categoría/s globales a la/s que se refiere el dataset al ser publicado. Un dataset puede pertenecer a más de una categoría global, de manera que el tipo de valor de este campo es una lista de categorías. La/s categoría/s o temática/s globales deben adoptarse según el campo "Código (authority code)" del Anexo "Taxonomía temática para los datasets", que contiene una lista predefinida de temática/s globales.</td>
@@ -443,30 +457,6 @@ Metadatos que el *data.json* debe contener, para describir a un dataset dentro d
     <td>["Contrataciones", "Compras", "Macroeconomía"]</td>
     <td>theme</td>
     <td>Array</td>
-  </tr>
-  <tr>
-    <td>Etiqueta(s)</td>
-    <td>Recomendado</td>
-    <td>Palabras que describen el título o el contenido del recurso. Es necesario que las etiquetas se encuentren correctamente escritas, en plural y respetando la existencia de tags anteriores. Etiquetas que colaboran en la búsqueda de los usuarios. Cuanto más amplia y uniforme sea la lista de tags mayor será su eficiencia. A tales fines se recomienda ver el Anexo “Pautas para la selección de etiquetas”.</td>
-    <td>["bienes", "compras","contrataciones"]</td>
-    <td>keyword</td>
-    <td>Array</td>
-  </tr>
-  <tr>
-    <td>Distribuciones</td>
-    <td>Sí</td>
-    <td>Lista de distribuciones que pertenecen al dataset y sus metadatos. Cada distribución se representa con un objeto ("{}") donde se describen los metadatos especificados para la clase "distribution" de este perfil de metadatos.</td>
-    <td>[{...}, {...}]</td>
-    <td>distribution</td>
-    <td>Array</td>
-  </tr>
-  <tr>
-    <td>Frecuencia de actualización</td>
-    <td>Sí</td>
-    <td>Frecuencia con la que se actualiza el dataset. Recomendamos especificar períodos normalizados con formato ISO-8601, agregando el campo “eventual” para datasets que se publican con una frecuencia eventual o no especificada. Anexo "Especificación de frecuencias según ISO-8601".</td>
-    <td>“R/P1Y” para datasets que se actualizan anualmente</td>
-    <td>accrualPeriodicity</td>
-    <td>String</td>
   </tr>
   <tr>
     <td>Fecha de publicación</td>
@@ -485,11 +475,51 @@ Metadatos que el *data.json* debe contener, para describir a un dataset dentro d
     <td>String</td>
   </tr>
   <tr>
-    <td>Identificador</td>
-    <td>Si</td>
-    <td>Identificador único del dataset, este identificador debe ser único para todo el catálogo.</td>
-    <td>Un identificador único para el dataset. La URI u otro identificador único en el contexto del catálogo, ejemplo:<br/>"dataset-ejemplo-35782”</td>
-    <td>identifier</td>
+    <td>Frecuencia de actualización</td>
+    <td>Sí</td>
+    <td>Frecuencia con la que se actualiza el dataset. Recomendamos especificar períodos normalizados con formato ISO-8601, agregando el campo “eventual” para datasets que se publican con una frecuencia eventual o no especificada. Anexo "Especificación de frecuencias según ISO-8601".</td>
+    <td>“R/P1Y” para datasets que se actualizan anualmente</td>
+    <td>accrualPeriodicity</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Fuente primaria</td>
+    <td>No</td>
+    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/><br/> En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (http://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
+    <td>Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.</td>
+    <td>source</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Página de referencias</td>
+    <td>No</td>
+    <td>URL de una página web a través de la cual se puede acceder al dataset, sus recursos o información adicional sobre el mismo.</td>
+    <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra</td>
+    <td>landingPage</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Etiqueta(s)</td>
+    <td>Recomendado</td>
+    <td>Palabras que describen el título o el contenido del recurso. Es necesario que las etiquetas se encuentren correctamente escritas, en plural y respetando la existencia de tags anteriores. Etiquetas que colaboran en la búsqueda de los usuarios. Cuanto más amplia y uniforme sea la lista de tags mayor será su eficiencia. A tales fines se recomienda ver el Anexo “Pautas para la selección de etiquetas”.</td>
+    <td>["bienes", "compras","contrataciones"]</td>
+    <td>keyword</td>
+    <td>Array</td>
+  </tr>
+  <tr>
+    <td>Cobertura temporal</td>
+    <td>Recomendado</td>
+    <td>Período de tiempo cubierto por el dataset. El intervalo de tiempo está formado por una fecha de inicio y una de fin separadas por “/”, en formato ISO 8601, con el nivel de especificidad requerido por el dataset.</td>
+    <td>2015-01-01/2015-12-31<br/>2015-01-01T00:45:00Z/2016-01-15T00:06:00Z</td>
+    <td>temporal</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Licencia</td>
+    <td>Recomendado</td>
+    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
+    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>license</td>
     <td>String</td>
   </tr>
   <tr>
@@ -519,52 +549,20 @@ Metadatos que el *data.json* debe contener, para describir a un dataset dentro d
     <td>spatial</td>
     <td>Array or String</td>
   </tr>
-  <tr>
-    <td>Cobertura temporal</td>
-    <td>Recomendado</td>
-    <td>Período de tiempo cubierto por el dataset. El intervalo de tiempo está formado por una fecha de inicio y una de fin separadas por “/”, en formato ISO 8601, con el nivel de especificidad requerido por el dataset.</td>
-    <td>2015-01-01/2015-12-31<br/>2015-01-01T00:45:00Z/2016-01-15T00:06:00Z</td>
-    <td>temporal</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td>Página de referencias</td>
-    <td>No</td>
-    <td>URL de una página web a través de la cual se puede acceder al dataset, sus recursos o información adicional sobre el mismo.</td>
-    <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra</td>
-    <td>landingPage</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td>Licencia</td>
-    <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
-    <td>license</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td>Fuente primaria</td>
-    <td>No</td>
-    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/><br/> En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (http://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
-    <td>Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.</td>
-    <td>source</td>
-    <td>String</td>
-  </tr>
 </table>
 
-Es importante prestar atención al campo **_distribution_** que contiene una lista de objetos que describen los metadatos de cada una de las distribuciones del daset. En la próxima sección abordaremos estos metadatos.
+Es importante prestar atención al campo **`distribution`** que contiene una lista de objetos que describen los metadatos de cada una de las distribuciones del daset. En la próxima sección abordaremos estos metadatos.
 
 #### Distribución (`distribution`)
 
 Estos son los metadatos que se deben completar al cargar o actualizar una distribución de un dataset en el catálogo para describirla.
 
-Recomendamos ver:
+Ejemplos de metadatos de una **distribución**:
 
-* [Ejemplo textual](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/distribution.md) de metadatos de una **distribución**.
-* [Ejemplo de metadatos de una distribución en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/distribution.json).
+* [Distribución en texto](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/distribution.md)
+* [Distribución en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/distribution.json)
 
-Metadatos que el *data.json* debe contener, para describir a una distribución dentro de la lista contenida en el campo **_distribution_** de un dataset:
+Metadatos que el *data.json* debe contener, para describir a una distribución dentro de la lista contenida en el campo **`distribution`** de un dataset:
 
 <table  class="six-columns">
 <colgroup>
@@ -584,43 +582,11 @@ Metadatos que el *data.json* debe contener, para describir a una distribución d
     <td>Tipo (data.json)</td>
   </tr>
   <tr>
-    <td>URL de acceso</td>
-    <td>Sí</td>
-    <td>URL que permite el acceso a la distribución del dataset. Puede ser una página, feed u otro tipo de recurso que dé acceso indirecto a las distribuciones. Si las distribuciones son solo accesibles a través de la página de referencia del dataset, debe completarse el valor de la URL de acceso a la distribución con el mismo valor de la página de referencia del dataset.</td>
-    <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a</td>
-    <td>accessURL</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td>Descripción</td>
-    <td>Recomendado</td>
-    <td>Breve descripción de la distribución. Recomendamos no escribir más de una línea. Toda información adicional puede ser incluida en la descripción del dataset.</td>
-    <td>Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas</td>
-    <td>description</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td>Formato del archivo</td>
-    <td>Recomendado</td>
-    <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
-    <td>"text/csv" definición de IANA "csv" caracteres finales después del punto</td>
-    <td>format</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td>Tipo de archivo</td>
-    <td>No</td>
-    <td>Indica el tipo de archivo de la distribución, sólo si este está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml). En caso contrario este campo permanece vacío.</td>
-    <td>"text/csv" definición de IANA "" cuando el formato no tiene definición en IANA</td>
-    <td>mediaType</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td>URL de descarga</td>
-    <td>Sí</td>
-    <td>URL que permite la descarga directa de la distribución del dataset, vincula directamente a un archivo descargable en un formato dado.</td>
-    <td>http://datos.gob.ar/dataset/becaceb2-dbd0-4879-93bd-5f02bd3b8ca2/resource/bf2f67f4-9ab3-479b-a881-56b43565125e/download/contratos-2015.csv</td>
-    <td>downloadURL</td>
+    <td>Identificador</td>
+    <td>Si</td>
+    <td>Identificador único de la distribución, este identificador debe ser único para la distribución dentro del catálogo completo.<br/><br/>Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
+    <td>1.2</td>
+    <td>identifier</td>
     <td>String</td>
   </tr>
   <tr>
@@ -632,20 +598,36 @@ Metadatos que el *data.json* debe contener, para describir a una distribución d
     <td>String</td>
   </tr>
   <tr>
-    <td>Licencia</td>
+    <td>Descripción</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
-    <td>license</td>
+    <td>Breve descripción de la distribución. Recomendamos no escribir más de una línea. Toda información adicional puede ser incluida en la descripción del dataset.</td>
+    <td>Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas</td>
+    <td>description</td>
     <td>String</td>
   </tr>
   <tr>
-    <td>Tamaño</td>
-    <td>No</td>
-    <td>Tamaño de la distribución en bytes. El tamaño puede ser aproximado cuando no se conozca el tamaño exacto.</td>
-    <td>Ejemplo para un archivo de 5Kb aproximadamente: "5120”</td>
-    <td>byteSize</td>
-    <td>Integer</td>
+    <td>URL de descarga</td>
+    <td>Sí</td>
+    <td>URL que permite la descarga directa de la distribución del dataset, vincula directamente a un archivo descargable en un formato dado.</td>
+    <td>http://datos.gob.ar/dataset/becaceb2-dbd0-4879-93bd-5f02bd3b8ca2/resource/bf2f67f4-9ab3-479b-a881-56b43565125e/download/contratos-2015.csv</td>
+    <td>downloadURL</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>URL de acceso</td>
+    <td>Sí</td>
+    <td>URL que permite el acceso a la distribución del dataset. Puede ser una página, feed u otro tipo de recurso que dé acceso indirecto a las distribuciones. Si las distribuciones son solo accesibles a través de la página de referencia del dataset, debe completarse el valor de la URL de acceso a la distribución con el mismo valor de la página de referencia del dataset.</td>
+    <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a</td>
+    <td>accessURL</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Campos de la distribución</td>
+    <td>Recomendado</td>
+    <td>Lista de campos que contiene una distribución tabular (no aplica para aquellas distribuciones que no sean tablas) y sus metadatos. Cada campo se representa con un objeto ("{}") donde se describen los metadatos especificados para la clase "field" de este perfil de metadatos (como "nombre", "tipo" y "descripción").</td>
+    <td>[{...}, {...}]</td>
+    <td>field</td>
+    <td>Array</td>
   </tr>
   <tr>
     <td>Fecha de publicación</td>
@@ -664,27 +646,11 @@ Metadatos que el *data.json* debe contener, para describir a una distribución d
     <td>String</td>
   </tr>
   <tr>
-    <td>Derechos sobre la distribución</td>
-    <td>No</td>
-    <td>Información sobre derechos aplicables a la distribución que no se hayan especificado en la licencia. Si se especifican, estos derechos sobreescriben a los del catálogo. En caso contrario, las distribuciones heredan los derechos especificados para el catálogo.</td>
-    <td></td>
-    <td>rights</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td>Campos de la distribución</td>
+    <td>Formato del archivo</td>
     <td>Recomendado</td>
-    <td>Lista de campos que contiene una distribución tabular (no aplica para aquellas distribuciones que no sean tablas) y sus metadatos. Cada campo se representa con un objeto ("{}") donde se describen los metadatos especificados para la clase "field" de este perfil de metadatos (como "nombre", "tipo" y "descripción").</td>
-    <td>[{...}, {...}]</td>
-    <td>field</td>
-    <td>Array</td>
-  </tr>
-  <tr>
-    <td>Identificador</td>
-    <td>Si</td>
-    <td>Identificador único de la distribución, este identificador debe ser único para la distribución dentro del catálogo completo.<br/><br/>Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
-    <td>1.2</td>
-    <td>identifier</td>
+    <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
+    <td>"text/csv" definición de IANA "csv" caracteres finales después del punto</td>
+    <td>format</td>
     <td>String</td>
   </tr>
   <tr>
@@ -695,17 +661,53 @@ Metadatos que el *data.json* debe contener, para describir a una distribución d
     <td>fileName</td>
     <td>String</td>
   </tr>
+  <tr>
+    <td>Licencia</td>
+    <td>Recomendado</td>
+    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
+    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>license</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Tipo de archivo</td>
+    <td>No</td>
+    <td>Indica el tipo de archivo de la distribución, sólo si este está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml). En caso contrario este campo permanece vacío.</td>
+    <td>"text/csv" definición de IANA "" cuando el formato no tiene definición en IANA</td>
+    <td>mediaType</td>
+    <td>String</td>
+  </tr>
+  <tr>
+    <td>Tamaño</td>
+    <td>No</td>
+    <td>Tamaño de la distribución en bytes. El tamaño puede ser aproximado cuando no se conozca el tamaño exacto.</td>
+    <td>Ejemplo para un archivo de 5Kb aproximadamente: "5120”</td>
+    <td>byteSize</td>
+    <td>Integer</td>
+  </tr>
+  <tr>
+    <td>Derechos sobre la distribución</td>
+    <td>No</td>
+    <td>Información sobre derechos aplicables a la distribución que no se hayan especificado en la licencia. Si se especifican, estos derechos sobreescriben a los del catálogo. En caso contrario, las distribuciones heredan los derechos especificados para el catálogo.</td>
+    <td></td>
+    <td>rights</td>
+    <td>String</td>
+  </tr>
 </table>
 
-Recomendamos poner atención al campo **_field_** que contiene una lista de objetos que describen los metadatos de cada uno de los campos de la distribución (en el caso de distribuciones tabulares, únicamente). En la próxima sección abordaremos estos metadatos.
+Recomendamos poner atención al campo **`field`** que contiene una lista de objetos que describen los metadatos de cada uno de los campos de la distribución (en el **caso de distribuciones tabulares, únicamente**). En la próxima sección abordaremos estos metadatos.
 
 #### Campo (`field`)
 
-Como se ve en la tabla anterior, metadatos de una distribución, recomendamos que las distribuciones tabulares incluyan algunos metadatos que ayuden a entender la información que contiene cada campo. Estos metadatos se completan en el mismo formulario que se utiliza para cargar o actualizar una distribución.
+Recomendamos enfáticamente que las distribuciones tabulares **incluyan metadatos que ayuden a entender la información que contiene cada campo**. Documentarlos adecuadamente facilita enormemente la correcta utilización de los datos por parte de los usuarios.
 
-[Ejemplo de metadatos de un campo en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/field.json).
+En un portal Andino, estos metadatos se completan en el mismo formulario que se utiliza para cargar o actualizar una distribución.
 
-Estos son los metadatos que el *data.json* debe contener para describir a un campo de una distribución tabular dentro de la lista contenida en el campo de metadatos **_field_** de una distribución:
+Ejemplos de metadatos de un **campo**:
+
+* [Metadatos de un campo de una distribución tabular en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/field.json)
+
+Estos son los metadatos que el *data.json* debe contener para describir a un campo de una distribución tabular dentro de la lista contenida en el campo de metadatos **`field`** de una distribución:
 
 <table  class="six-columns">
 <colgroup>
@@ -796,13 +798,21 @@ Estos son los metadatos que el *data.json* debe contener para describir a un cam
   </tr>
 </table>
 
+Los primeros tres metadatos son útiles para **describir las características de cualquier campo de una distribución tabular**.
+
+Los últimos cuatro metadatos son opcionales porque sólo cobran sentido al **describir las características de un campo, para casos específicos**. Mientras que no todos los campos de una distribución tabular tienen "**unidad de medida**", la asingación de un **"nomenclador" o "identificador"** suele ser útil para la identificación unívoca de variables en otros sistemas o aplicaciones, pero no en la generalidad de los casos.
+
+Préstese especial atención a los últimos dos campos: estos constituyen la forma en que el Perfil de Metadatos **permite el desarrollo de extensiones para sistemas o aplicaciones**, desde su versión 1.1. Ver más en la sección [Extensiones especiales](#extensiones-especiales).
+
 #### Tema (`theme`)
 
 Cada catálogo de datos puede tener su propia taxonomía temática que permite clasificar a los datasets como pertenecientes a una o más categorías temáticas. Recomendamos que los temas tengan algunos metadatos que ayuden a un usuario a entenderlos mejor.
 
 Estos son metadatos que el responsable de cargar o actualizar la taxonomía temática de un catálogo debe completar para describir los temas de la misma.
 
-[Ejemplo de metadatos de un tema en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/theme.json).
+Ejemplos de metadatos de un **tema**:
+
+* [Metadatos de un tema en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/theme.json)
 
 Metadatos que el *data.json* debe contener, para describir a un tema de la taxonomía temática de un catálogo:
 
@@ -851,7 +861,7 @@ A partir de la versión 1.1, el perfil de metadatos propuesto para la Administra
 El desarrollo de extensiones del perfil para uso de aplicaciones puede contemplar:
 
 * La **obligatoriedad de campos de metadatos** que en el perfil base no son obligatorios (recomendados u optativos).
-* La definición de uno o más **tipos especiales** (`specialType`) utilizados para que sistemas o aplicaciones interpreten de una forma específica los datos que encuentren en una tabla.
+* La definición de uno o más **tipos especiales** (**`specialType`**) utilizados para que sistemas o aplicaciones interpreten de una forma específica los datos que encuentren en una distribución.
 
 ### Series de tiempo
 
