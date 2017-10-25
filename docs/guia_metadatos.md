@@ -42,7 +42,7 @@
 
 ## Versión
 
-Esta guía es compatible con la **versión 1.1 del Perfil de Metadatos** de la política de apertura de datos de la Administración Pública Nacional.
+Esta guía es compatible con la **versión 1.1 del Perfil de Metadatos** de la Política de Apertura de Datos de la Administración Pública Nacional.
 
 ## Glosario
 
@@ -77,8 +77,6 @@ Es un **conjunto de herramientas y guías** de buenas prácticas creadas para **
 ## Introducción
 
 Esta guía busca ayudar a los organismos a instrumentar la Política de Datos Abiertos impulsada desde el Gobierno de la Nación Argentina, a través del Decreto N° 117/2016 del 12 de enero de 2016.
-
- 
 
 ### Objetivo de esta guía
 
