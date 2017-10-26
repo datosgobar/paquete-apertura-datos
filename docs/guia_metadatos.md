@@ -867,7 +867,9 @@ El desarrollo de extensiones del perfil para uso de aplicaciones puede contempla
 
 Junto con la versión 1.1 del perfil de metadatos se propone una sencilla extensión para documentar **distribuciones que contienen series de tiempo**.
 
-Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, y de otras aplicaciones.
+Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, servicios web, y de otras aplicaciones.
+
+Debe tenerse en cuenta que la evolución de las posibilidades soportadas por la definición de esta extensión está directamente relacionada con la evolución de los sistemas desarrollados por la Dirección Nacional de Datos e Información Pública.
 
 #### Distribución de series de tiempo
 
@@ -996,8 +998,10 @@ El indice de tiempo de una distribución con series de tiempo debe cumplir:
 * Las fechas están completas (el **índice de tiempo es _continuo_**).
     + Anual: 1980 / 1981 / 1982 está ok
     + Anual: 1980 / 1982 / 1983 NO está ok
-    + Diaria: admitir acá 2 casos: frecuencia diaria _completa_ (lunes a domingo) y frecuencia diaria _hábil_ o `Business Daily` (lunes a viernes). Pero no puede nunca faltar un "martes", ni puede haber algunos sábados pero otros no.
-* Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde se use la forma completa, se debe **usar _la fecha inicial_**.
+    + Diaria
+      - Frecuencia diaria _completa_ (lunes a domingo). No puede faltar ningún día de la semana.
+      - Frecuencia diaria _hábil_ o `Business Daily` (lunes a viernes). No puede faltar ningún día hábil de la semana (un "martes" o "lunes" feriado, por ejemplo, debe figurar en el índice y dejar el valor de la observación nulo).
+* Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde se use la forma completa, se debe **usar siempre _la fecha inicial_ del período**.
     + Mensual: 1980-01-01 / 1980-02-01 / 1980-03-01 está ok
     + Mensual: 1980-01-31 / 1980-02-28 / 1980-03-31 NO está ok
     + Trimestral: 1980-01-01 / 1980-04-01 / 1980-07-01 / 1980-10-01 está ok
