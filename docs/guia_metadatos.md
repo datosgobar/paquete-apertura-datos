@@ -1022,9 +1022,6 @@ Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con serie
 
 ##### Dataset (`dataset`) - series de tiempo
 
-*TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON*
-*TODO: Pensar cómo seguir un ejemplo sin usar JSON*
-
 ```json
 {
   "identifier": "1",
@@ -1181,7 +1178,6 @@ Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con serie
 ```
 
 ##### Distribución (`distribution`) - series de tiempo
-*TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON*
 
 ```json
 {
@@ -1247,7 +1243,6 @@ Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con serie
 ```
 
 ##### Campo (`field`) - series de tiempo
-*TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON*
 
 **Serie de tiempo**
 
