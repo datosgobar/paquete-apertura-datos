@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Guía para el uso y la publicación de metadatos &mdash; paquete-apertura-datos 0.2.0-alpha documentation</title>
+  <title>Guía para el uso y la publicación de metadatos &mdash; paquete-apertura-datos 0.2.0-beta documentation</title>
   
 
   
@@ -39,7 +39,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="paquete-apertura-datos 0.2.0-alpha documentation" href="index.html"/>
+    <link rel="top" title="paquete-apertura-datos 0.2.0-beta documentation" href="index.html"/>
         <link rel="next" title="Versiones" href="HISTORY.html"/>
         <link rel="prev" title="Guía para la identificación y uso de entidades interoperables" href="guia_interoperables.html"/> 
 
@@ -237,7 +237,7 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update --></div>
 <div class="section" id="version">
 <span id="version"></span><h2>Versión<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
-<p>Esta guía es compatible con la <strong>versión 1.1 del Perfil de Metadatos</strong> de la política de apertura de datos de la Administración Pública Nacional.</p>
+<p>Esta guía es compatible con la <strong>versión 1.1 del Perfil de Metadatos</strong> de la Política de Apertura de Datos de la Administración Pública Nacional.</p>
 </div>
 <div class="section" id="glosario">
 <span id="glosario"></span><h2>Glosario<a class="headerlink" href="#glosario" title="Permalink to this headline">¶</a></h2>
@@ -1002,7 +1002,8 @@
 <div class="section" id="series-de-tiempo">
 <span id="series-de-tiempo"></span><h3>Series de tiempo<a class="headerlink" href="#series-de-tiempo" title="Permalink to this headline">¶</a></h3>
 <p>Junto con la versión 1.1 del perfil de metadatos se propone una sencilla extensión para documentar <strong>distribuciones que contienen series de tiempo</strong>.</p>
-<p>Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, y de otras aplicaciones.</p>
+<p>Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, servicios web, y de otras aplicaciones.</p>
+<p>Debe tenerse en cuenta que la evolución de las posibilidades soportadas por la definición de esta extensión está directamente relacionada con la evolución de los sistemas desarrollados por la Dirección Nacional de Datos e Información Pública.</p>
 <div class="section" id="distribucion-de-series-de-tiempo">
 <span id="distribucion-de-series-de-tiempo"></span><h4>Distribución de series de tiempo<a class="headerlink" href="#distribucion-de-series-de-tiempo" title="Permalink to this headline">¶</a></h4>
 <p>Es una tabla donde:</p>
@@ -1102,7 +1103,7 @@
 </div>
 <div class="section" id="tipo-especial-indice-de-tiempo">
 <span id="tipo-especial-indice-de-tiempo"></span><h4>Tipo especial: indice de tiempo<a class="headerlink" href="#tipo-especial-indice-de-tiempo" title="Permalink to this headline">¶</a></h4>
-<p>Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando uno de sus campos como &#8220;índice de tiempo&#8221; y aclarando la frecuencia que tiene.</p>
+<p>Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando uno de sus campos como &#8220;índice de tiempo&#8221; y aclarando la frecuencia que tiene (Ver el <a class="reference external" href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a>).</p>
 <p>Dentro de la variable <code class="docutils literal"><span class="pre">field</span></code> de la distribución:</p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
@@ -1127,10 +1128,14 @@
 <li>Las fechas están completas (el <strong>índice de tiempo es <em>continuo</em></strong>).<ul>
 <li>Anual: 1980 / 1981 / 1982 está ok</li>
 <li>Anual: 1980 / 1982 / 1983 NO está ok</li>
-<li>Diaria: admitir acá 2 casos: frecuencia diaria <em>completa</em> (lunes a domingo) y frecuencia diaria <em>hábil</em> o <code class="docutils literal"><span class="pre">Business</span> <span class="pre">Daily</span></code> (lunes a viernes). Pero no puede nunca faltar un &#8220;martes&#8221;, ni puede haber algunos sábados pero otros no.</li>
+<li>Diaria<ul>
+<li>Frecuencia diaria <em>completa</em> (lunes a domingo). No puede faltar ningún día de la semana.</li>
+<li>Frecuencia diaria <em>hábil</em> o <code class="docutils literal"><span class="pre">Business</span> <span class="pre">Daily</span></code> (lunes a viernes). No puede faltar ningún día hábil de la semana (un &#8220;martes&#8221; o &#8220;lunes&#8221; feriado, por ejemplo, debe figurar en el índice y dejar el valor de la observación nulo).</li>
 </ul>
 </li>
-<li>Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde se use la forma completa, se debe <strong>usar <em>la fecha inicial</em></strong>.<ul>
+</ul>
+</li>
+<li>Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde se use la forma completa, se debe <strong>usar siempre <em>la fecha inicial</em> del período</strong>.<ul>
 <li>Mensual: 1980-01-01 / 1980-02-01 / 1980-03-01 está ok</li>
 <li>Mensual: 1980-01-31 / 1980-02-28 / 1980-03-31 NO está ok</li>
 <li>Trimestral: 1980-01-01 / 1980-04-01 / 1980-07-01 / 1980-10-01 está ok</li>
@@ -1145,7 +1150,7 @@
 <div class="section" id="documentar-un-dataset-de-series-de-tiempo">
 <span id="documentar-un-dataset-de-series-de-tiempo"></span><h4>Documentar un dataset de series de tiempo<a class="headerlink" href="#documentar-un-dataset-de-series-de-tiempo" title="Permalink to this headline">¶</a></h4>
 <p>A continuación se revisan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo para cada parte del modelo de metadatos dentro de un <em>dataset</em> que contiene series de tiempo.</p>
-<p>Ver ejemplo de catálogo compelto en <a class="reference external" href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a>.</p>
+<p>Ver ejemplo de catálogo completo en <a class="reference external" href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a>.</p>
 <ul class="simple">
 <li><strong>Dataset 1</strong>: Oferta y Demanda Globales. Datos desestacionalizados. Base 1993<ul>
 <li><strong>Distribucion 1.1</strong>: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores anuales.</li>
@@ -1155,8 +1160,6 @@
 </ul>
 <div class="section" id="dataset-dataset-series-de-tiempo">
 <span id="dataset-dataset-series-de-tiempo"></span><h5>Dataset (<code class="docutils literal"><span class="pre">dataset</span></code>) - series de tiempo<a class="headerlink" href="#dataset-dataset-series-de-tiempo" title="Permalink to this headline">¶</a></h5>
-<p><em>TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON</em>
-<em>TODO: Pensar cómo seguir un ejemplo sin usar JSON</em></p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
   <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales: Datos desestacionalizados [Base 1993]&quot;</span><span class="p">,</span>
@@ -1314,7 +1317,6 @@
 </div>
 <div class="section" id="distribucion-distribution-series-de-tiempo">
 <span id="distribucion-distribution-series-de-tiempo"></span><h5>Distribución (<code class="docutils literal"><span class="pre">distribution</span></code>) - series de tiempo<a class="headerlink" href="#distribucion-distribution-series-de-tiempo" title="Permalink to this headline">¶</a></h5>
-<p><em>TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON</em></p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1&quot;</span><span class="p">,</span>
   <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]&quot;</span><span class="p">,</span>
@@ -1380,7 +1382,6 @@
 </div>
 <div class="section" id="campo-field-series-de-tiempo">
 <span id="campo-field-series-de-tiempo"></span><h5>Campo (<code class="docutils literal"><span class="pre">field</span></code>) - series de tiempo<a class="headerlink" href="#campo-field-series-de-tiempo" title="Permalink to this headline">¶</a></h5>
-<p><em>TODO: Tabla de campos relevantes del perfil de metadatos y link a ejemplo completo en JSON</em></p>
 <p><strong>Serie de tiempo</strong></p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGCP_D_1993_A_27&quot;</span><span class="p">,</span>
@@ -2150,7 +2151,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.2.0-alpha',
+            VERSION:'0.2.0-beta',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

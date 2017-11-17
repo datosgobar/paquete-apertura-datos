@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Guía para la publicación de datos en formatos abiertos &mdash; paquete-apertura-datos 0.2.0-alpha documentation</title>
+  <title>Guía para la publicación de datos en formatos abiertos &mdash; paquete-apertura-datos 0.2.0-beta documentation</title>
   
 
   
@@ -39,7 +39,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="paquete-apertura-datos 0.2.0-alpha documentation" href="index.html"/>
+    <link rel="top" title="paquete-apertura-datos 0.2.0-beta documentation" href="index.html"/>
         <link rel="next" title="Guía para la identificación y uso de entidades interoperables" href="guia_interoperables.html"/>
         <link rel="prev" title="Paquete de Apertura de Datos de la República Argentina" href="index.html"/> 
 
@@ -341,17 +341,21 @@ Es un formato abierto.</td>
 <p><strong>Recomendamos con énfasis la publicación de los datos en formato CSV y/o JSON</strong>. En caso de utilizar formatos propietarios o aún no estandarizados, es útil indicar software, versión y aplicación que permite procesar esos formatos.</p>
 <div class="section" id="csv">
 <span id="csv"></span><h3>CSV<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
-<p>El CSV es un formato de archivo de texto plano donde las campos (columnas) se separan por comas; y los registros (filas), por saltos de línea. Algunas versiones alternativas de esta forma de publicar datos usan otros separadores como punto y coma (&#8221;;&#8221;) o pipe (“|”).</p>
-<p>Las recomendaciones, siguiendo lo indicado por la especificación <a class="reference external" href="http://tools.ietf.org/html/rfc4180">RFC4180</a> y las pautas de la <a class="reference external" href="https://www.w3.org/TR/tabular-data-model/">W3C</a>, para la publicación de archivos en formato CSV son:</p>
+<p>El CSV es un formato estándar de archivo de texto plano donde:</p>
 <ul class="simple">
-<li>Las filas deben finalizar con los caracteres de &#8220;retorno de carro&#8221; (\r) y &#8220;salto de línea&#8221; (\n) unidos (\r\n). Esta forma de separar las líneas se denomina usualmente CRLF (&#8220;Carriage Return Line Feed&#8221;).</li>
+<li>Los campos (columnas) se separan por comas <code class="docutils literal"><span class="pre">,</span></code></li>
+<li>Los registros (filas) se separan por saltos de línea <code class="docutils literal"><span class="pre">\n</span></code> o <code class="docutils literal"><span class="pre">\r\n</span></code> (CRLF - Carriage Return Line Feed)).</li>
+<li>Los números decimales utilizan <code class="docutils literal"><span class="pre">.</span></code> para separar la parte entera de la parte decimal</li>
+<li>Se utilizan las comillas dobles <code class="docutils literal"><span class="pre">&quot;</span></code> como caracter de entrecomillado. Los valores en tablas CSV que incluyen dentro de sí caracteres especiales como <code class="docutils literal"><span class="pre">,</span></code> o <code class="docutils literal"><span class="pre">&quot;</span></code>, deben estar encerrados entre <code class="docutils literal"><span class="pre">&quot;</span></code> para su correcta interpretación.</li>
+</ul>
+<p>Algunas versiones alternativas de esta forma de publicar datos usan otros separadores como punto y coma (<code class="docutils literal"><span class="pre">;</span></code>) o pipe (<code class="docutils literal"><span class="pre">|</span></code>), pero la recomendación para toda la Administración Pública Nacional se basa en la versión de CSV más estándar, indicada por la especificación <a class="reference external" href="http://tools.ietf.org/html/rfc4180">RFC4180</a> y las pautas de la <a class="reference external" href="https://www.w3.org/TR/tabular-data-model/">W3C</a>.</p>
+<p>Otros elementos a tener en cuenta:</p>
+<ul class="simple">
 <li>La primera fila siempre contiene los nombres de los campos.</li>
 <li>No se deben repetir nombres entre los campos.</li>
 <li>No se debe colocar espacios al principio ni al final del nombre de un campo, o de un valor.</li>
-<li>Tanto los campos como los valores deben estar separados por comas (&#8221;,&#8221;).</li>
-</ul>
-<ul class="simple">
-<li>En el caso de que un valor contenga el caracter separador (&#8221;,&#8221;) o cualquiera de los caracteres que separan las líneas (&#8220;\r&#8221;, &#8220;\n&#8221; o &#8220;\r\n&#8221;), el valor completo debe ser encerrado entre comillas dobles &#8220;&#8221;. Esto indica que el caracter no cumple el rol de separar columnas o filas, sino que es parte de un valor.</li>
+<li>Tanto los campos como los valores deben estar separados por comas (<code class="docutils literal"><span class="pre">,</span></code>).</li>
+<li>En el caso de que un valor contenga el caracter separador (<code class="docutils literal"><span class="pre">,</span></code>) o cualquiera de los caracteres que separan las líneas (<code class="docutils literal"><span class="pre">\r</span></code>, <code class="docutils literal"><span class="pre">\n</span></code> o <code class="docutils literal"><span class="pre">\r\n</span></code>), el valor completo debe ser encerrado entre comillas dobles <code class="docutils literal"><span class="pre">&quot;&quot;</span></code>. Esto indica que el caracter no cumple el rol de separar columnas o filas, sino que es parte de un valor.</li>
 </ul>
 <p>Ejemplo:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">col1</span><span class="p">,</span><span class="n">col2</span>\<span class="n">r</span>\<span class="n">n</span>
@@ -361,7 +365,7 @@ Es un formato abierto.</td>
 </pre></div>
 </div>
 <ul class="simple">
-<li>En el caso de que un valor contenga el caracter comilla doble (&#8221;), el valor debe ser encerrado entre comillas dobles como en el caso anterior (&#8220;&#8221;) y, además, los caracteres comilla doble que se encuentren dentro del valor deben escribirse dos veces (&#8220;&#8221;).</li>
+<li>En el caso de que un valor contenga el caracter comilla doble (<code class="docutils literal"><span class="pre">&quot;</span></code>), el valor debe ser encerrado entre comillas dobles como en el caso anterior (<code class="docutils literal"><span class="pre">&quot;&quot;</span></code>) y, además, los caracteres comilla doble que se encuentren dentro del valor deben escribirse dos veces (<code class="docutils literal"><span class="pre">&quot;&quot;</span></code>).</li>
 </ul>
 <p>Ejemplo:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">col1</span><span class="p">,</span><span class="n">col2</span>\<span class="n">r</span>\<span class="n">n</span>
@@ -1262,7 +1266,7 @@ Recolección de residuos - 198</td>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.2.0-alpha',
+            VERSION:'0.2.0-beta',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
