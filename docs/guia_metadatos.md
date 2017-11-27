@@ -955,7 +955,11 @@ Es una tabla donde:
   </tr>
 </table>
 
-La distribución debe ser un archivo CSV estándar (Ver **Guía para la publicación de datos en formatos abiertos**) codificado en `utf-8`, utilizando separador `,` y caracter decimal `.`.
+La distribución debe ser un archivo CSV estándar (Ver **Guía para la publicación de datos en formatos abiertos**):
+
+* Codificado en `utf-8`
+* Separador de campos `,`
+* Caracter decimal `.`
 
 ```
 indice_tiempo,oferta_global_pib,oferta_global_importacion,demanda_global_exportacion,demanda_global_ibif,demanda_global_consumo_priv
@@ -969,6 +973,20 @@ indice_tiempo,oferta_global_pib,oferta_global_importacion,demanda_global_exporta
 ```
 
 Ver ejemplo completo de una [distribución de series de tiempo](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv).
+
+**Precisión de series con números enteros y decimales**
+
+Las series deben contener valores con **números enteros** (`277441`) o con **números decimales** (`277441.31725`) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número "entero" dentro de una serie decimal debe incluir `.0` al final (`277441.0`).
+
+Los **números enteros** pueden tener cualquier cantidad de cifras, mientras que los **números decimales** sólo pueden tener **hasta 16 cifras en total**, incluyendo la parte entera y la parte decimal:
+
+* `0.123456789012345` está ok  (*serie decimal*)
+* `123456789012345.1` está ok  (*serie decimal*)
+* `123456789.0123456` está ok  (*serie decimal*)
+* `0.1234567890123456789` NO está ok  (*serie decimal*)
+* `123456789.01234567891` NO está ok  (*serie decimal*)
+* `1234567890123456789.1` NO está ok  (*serie decimal*)
+* `123456789123456789123` está ok (*serie entera*)
 
 #### Tipo especial: indice de tiempo
 
