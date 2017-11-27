@@ -978,15 +978,17 @@ Ver ejemplo completo de una [distribución de series de tiempo](https://github.c
 
 Las series deben contener valores con **números enteros** (`277441`) o con **números decimales** (`277441.31725`) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número "entero" dentro de una serie decimal debe incluir `.0` al final (`277441.0`).
 
-Los **números enteros** pueden tener cualquier cantidad de cifras, mientras que los **números decimales** sólo pueden tener **hasta 16 cifras en total**, incluyendo la parte entera y la parte decimal:
+Los **números enteros** pueden tener cualquier cantidad de cifras, mientras que los **números decimales** sólo pueden tener **hasta 12 cifras en total**, incluyendo la parte entera y la parte decimal:
 
-* `0.123456789012345` está ok  (*serie decimal*)
-* `123456789012345.1` está ok  (*serie decimal*)
-* `123456789.0123456` está ok  (*serie decimal*)
+* `0.12345678901` está ok  (*serie decimal*)
+* `12345678901.1` está ok  (*serie decimal*)
+* `1234567.01234` está ok  (*serie decimal*)
 * `0.1234567890123456789` NO está ok  (*serie decimal*)
 * `123456789.01234567891` NO está ok  (*serie decimal*)
 * `1234567890123456789.1` NO está ok  (*serie decimal*)
 * `123456789123456789123` está ok (*serie entera*)
+
+Casi todos los *software* que manejan números pueden usar decimales con hasta 12 cifras sin pérdida de precisión. Si bien existe software estadístico capaz de manejar decimales con más de 12 cifras, este límite debe ser analizado en cada caso y no está garantizado por la **API de Series de Tiempo de datos.gob.ar**.
 
 #### Tipo especial: indice de tiempo
 
