@@ -136,7 +136,7 @@ Esta guía intenta ayudar a quienes:
 
 **El [Portal Andino](https://github.com/datosgobar/portal-andino)** es una herramienta especialmente diseñada para facilitar la publicación y apertura de datos y **cumple con el perfil de metadatos de la Administración Pública Nacional** propuesto en esta guía.
 
-Incluye formularios web para la carga de datos y metadatos. **La publicación de metadatos mediante este portal cumple con la versión 1.0 del perfil de metadatos recomendado en esta guía**.
+Incluye formularios web para la carga de datos y metadatos. **La publicación de metadatos mediante este portal cumple con la versión 1.0 del perfil de metadatos recomendado en esta guía**. La versión 1.0 es anterior a la publicación de esta guía y se puede [consultar acá](http://paquete-apertura-datos.readthedocs.io/es/0.1.1/guia_metadatos.html#otros-catalogos).
 
 El Portal debe publicarse en un dominio de la forma *http://datos.[entidad].gob.ar*. Esto asegura la publicación automática de los metadatos en formato data.json en *http://datos.[entidad].gob.ar/data.json*
 

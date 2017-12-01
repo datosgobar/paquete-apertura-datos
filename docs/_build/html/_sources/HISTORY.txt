@@ -1,7 +1,7 @@
 Versiones
 =========
 
-[0.2.0-alpha](http://paquete-apertura-datos.readthedocs.io/es/latest/) (próximo release)
+[0.2.0-beta](http://paquete-apertura-datos.readthedocs.io/es/0.2.0/)
 -------------------
 
 * **Guía para el uso y la publicación de metadatos**

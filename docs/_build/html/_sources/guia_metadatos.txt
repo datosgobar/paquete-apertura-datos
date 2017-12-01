@@ -136,7 +136,7 @@ Esta guía intenta ayudar a quienes:
 
 **El [Portal Andino](https://github.com/datosgobar/portal-andino)** es una herramienta especialmente diseñada para facilitar la publicación y apertura de datos y **cumple con el perfil de metadatos de la Administración Pública Nacional** propuesto en esta guía.
 
-Incluye formularios web para la carga de datos y metadatos. **La publicación de metadatos mediante este portal cumple con la versión 1.0 del perfil de metadatos recomendado en esta guía**.
+Incluye formularios web para la carga de datos y metadatos. **La publicación de metadatos mediante este portal cumple con la versión 1.0 del perfil de metadatos recomendado en esta guía**. La versión 1.0 es anterior a la publicación de esta guía y se puede [consultar acá](http://paquete-apertura-datos.readthedocs.io/es/0.1.1/guia_metadatos.html#otros-catalogos).
 
 El Portal debe publicarse en un dominio de la forma *http://datos.[entidad].gob.ar*. Esto asegura la publicación automática de los metadatos en formato data.json en *http://datos.[entidad].gob.ar/data.json*
 
@@ -955,7 +955,11 @@ Es una tabla donde:
   </tr>
 </table>
 
-La distribución debe ser un archivo CSV estándar (Ver **Guía para la publicación de datos en formatos abiertos**) codificado en `utf-8`, utilizando separador `,` y caracter decimal `.`.
+La distribución debe ser un archivo CSV estándar (Ver **Guía para la publicación de datos en formatos abiertos**):
+
+* Codificado en `utf-8`
+* Separador de campos `,`
+* Caracter decimal `.`
 
 ```
 indice_tiempo,oferta_global_pib,oferta_global_importacion,demanda_global_exportacion,demanda_global_ibif,demanda_global_consumo_priv
@@ -969,6 +973,22 @@ indice_tiempo,oferta_global_pib,oferta_global_importacion,demanda_global_exporta
 ```
 
 Ver ejemplo completo de una [distribución de series de tiempo](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv).
+
+**Precisión de series con números enteros y decimales**
+
+Las series deben contener valores con **números enteros** (`277441`) o con **números decimales** (`277441.31725`) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número "entero" dentro de una serie decimal debe incluir `.0` al final (`277441.0`).
+
+Los **números enteros** pueden tener cualquier cantidad de cifras, mientras que los **números decimales** sólo pueden tener **hasta 12 cifras en total**, incluyendo la parte entera y la parte decimal:
+
+* `0.12345678901` está ok  (*serie decimal*)
+* `12345678901.1` está ok  (*serie decimal*)
+* `1234567.01234` está ok  (*serie decimal*)
+* `0.1234567890123456789` NO está ok  (*serie decimal*)
+* `123456789.01234567891` NO está ok  (*serie decimal*)
+* `1234567890123456789.1` NO está ok  (*serie decimal*)
+* `123456789123456789123` está ok (*serie entera*)
+
+Casi todos los *software* que manejan números pueden usar decimales con hasta 12 cifras sin pérdida de precisión. Si bien existe software estadístico capaz de manejar decimales con más de 12 cifras, este límite debe ser analizado en cada caso y no está garantizado por la **API de Series de Tiempo de datos.gob.ar**.
 
 #### Tipo especial: indice de tiempo
 

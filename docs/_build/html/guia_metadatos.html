@@ -308,7 +308,7 @@
 <div class="section" id="portal-andino">
 <span id="portal-andino"></span><h3>Portal Andino<a class="headerlink" href="#portal-andino" title="Permalink to this headline">¶</a></h3>
 <p><strong>El <a class="reference external" href="https://github.com/datosgobar/portal-andino">Portal Andino</a></strong> es una herramienta especialmente diseñada para facilitar la publicación y apertura de datos y <strong>cumple con el perfil de metadatos de la Administración Pública Nacional</strong> propuesto en esta guía.</p>
-<p>Incluye formularios web para la carga de datos y metadatos. <strong>La publicación de metadatos mediante este portal cumple con la versión 1.0 del perfil de metadatos recomendado en esta guía</strong>.</p>
+<p>Incluye formularios web para la carga de datos y metadatos. <strong>La publicación de metadatos mediante este portal cumple con la versión 1.0 del perfil de metadatos recomendado en esta guía</strong>. La versión 1.0 es anterior a la publicación de esta guía y se puede <a class="reference external" href="http://paquete-apertura-datos.readthedocs.io/es/0.1.1/guia_metadatos.html#otros-catalogos">consultar acá</a>.</p>
 <p>El Portal debe publicarse en un dominio de la forma <em>http://datos.[entidad].gob.ar</em>. Esto asegura la publicación automática de los metadatos en formato data.json en <em>http://datos.[entidad].gob.ar/data.json</em></p>
 <p>El archivo <em>data.json</em> de un Portal Andino puede encontrarse en el directorio raíz del portal: <em>http://datos.[entidad].gob.ar/data.json</em>.</p>
 </div>
@@ -1088,7 +1088,12 @@
     <td>53116.3155</td>
     <td>36173.34075</td>
   </tr>
-</table><p>La distribución debe ser un archivo CSV estándar (Ver <strong>Guía para la publicación de datos en formatos abiertos</strong>) codificado en <code class="docutils literal"><span class="pre">utf-8</span></code>, utilizando separador <code class="docutils literal"><span class="pre">,</span></code> y caracter decimal <code class="docutils literal"><span class="pre">.</span></code>.</p>
+</table><p>La distribución debe ser un archivo CSV estándar (Ver <strong>Guía para la publicación de datos en formatos abiertos</strong>):</p>
+<ul class="simple">
+<li>Codificado en <code class="docutils literal"><span class="pre">utf-8</span></code></li>
+<li>Separador de campos <code class="docutils literal"><span class="pre">,</span></code></li>
+<li>Caracter decimal <code class="docutils literal"><span class="pre">.</span></code></li>
+</ul>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">indice_tiempo</span><span class="p">,</span><span class="n">oferta_global_pib</span><span class="p">,</span><span class="n">oferta_global_importacion</span><span class="p">,</span><span class="n">demanda_global_exportacion</span><span class="p">,</span><span class="n">demanda_global_ibif</span><span class="p">,</span><span class="n">demanda_global_consumo_priv</span>
 <span class="mi">1993</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span><span class="mf">236520.033577</span><span class="p">,</span><span class="mf">22027.5999938</span><span class="p">,</span><span class="mf">16340.9597519</span><span class="p">,</span><span class="mf">45069.4134803</span><span class="p">,</span><span class="mf">31952.717001</span>
 <span class="mi">1994</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span><span class="mf">250307.886</span><span class="p">,</span><span class="mf">26682.25975</span><span class="p">,</span><span class="mf">18840.403</span><span class="p">,</span><span class="mf">51231.4255</span><span class="p">,</span><span class="mf">32094.804</span>
@@ -1100,6 +1105,19 @@
 </pre></div>
 </div>
 <p>Ver ejemplo completo de una <a class="reference external" href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv">distribución de series de tiempo</a>.</p>
+<p><strong>Precisión de series con números enteros y decimales</strong></p>
+<p>Las series deben contener valores con <strong>números enteros</strong> (<code class="docutils literal"><span class="pre">277441</span></code>) o con <strong>números decimales</strong> (<code class="docutils literal"><span class="pre">277441.31725</span></code>) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número &#8220;entero&#8221; dentro de una serie decimal debe incluir <code class="docutils literal"><span class="pre">.0</span></code> al final (<code class="docutils literal"><span class="pre">277441.0</span></code>).</p>
+<p>Los <strong>números enteros</strong> pueden tener cualquier cantidad de cifras, mientras que los <strong>números decimales</strong> sólo pueden tener <strong>hasta 12 cifras en total</strong>, incluyendo la parte entera y la parte decimal:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">0.12345678901</span></code> está ok  (<em>serie decimal</em>)</li>
+<li><code class="docutils literal"><span class="pre">12345678901.1</span></code> está ok  (<em>serie decimal</em>)</li>
+<li><code class="docutils literal"><span class="pre">1234567.01234</span></code> está ok  (<em>serie decimal</em>)</li>
+<li><code class="docutils literal"><span class="pre">0.1234567890123456789</span></code> NO está ok  (<em>serie decimal</em>)</li>
+<li><code class="docutils literal"><span class="pre">123456789.01234567891</span></code> NO está ok  (<em>serie decimal</em>)</li>
+<li><code class="docutils literal"><span class="pre">1234567890123456789.1</span></code> NO está ok  (<em>serie decimal</em>)</li>
+<li><code class="docutils literal"><span class="pre">123456789123456789123</span></code> está ok (<em>serie entera</em>)</li>
+</ul>
+<p>Casi todos los <em>software</em> que manejan números pueden usar decimales con hasta 12 cifras sin pérdida de precisión. Si bien existe software estadístico capaz de manejar decimales con más de 12 cifras, este límite debe ser analizado en cada caso y no está garantizado por la <strong>API de Series de Tiempo de datos.gob.ar</strong>.</p>
 </div>
 <div class="section" id="tipo-especial-indice-de-tiempo">
 <span id="tipo-especial-indice-de-tiempo"></span><h4>Tipo especial: indice de tiempo<a class="headerlink" href="#tipo-especial-indice-de-tiempo" title="Permalink to this headline">¶</a></h4>
