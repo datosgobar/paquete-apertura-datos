@@ -1109,6 +1109,8 @@ Para registrar datos de coordenadas geográficas de puntos, usamos números deci
 
 ### Tiempo
 
+#### Fecha
+
 Se usará el estándar [ISO 8601](https://es.wikipedia.org/wiki/ISO_8601) (YYYY-MM-DDTHH:MM:SS[.mmmmmm][+HH:MM]). A menos que se indique lo contrario, se asumirá que la zona horaria es UTC-03:00 (Argentina).
 
 * Fecha: YYYY-MM-DD
