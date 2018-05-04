@@ -1,0 +1,22 @@
+[
+  {
+    "id": "file",
+    "label": "Archivo de datos",
+    "description": "Archivo físico de algún formato de datos que se puede descargar."
+  },
+  {
+    "id": "api",
+    "label": "API",
+    "description": "Documentación en línea de un servicio web de datos."
+  },
+  {
+    "id": "documentation",
+    "label": "Documentación",
+    "description": "Documentación metodológica sobre los datos de todo o parte del dataset."
+  },
+  {
+    "id": "code",
+    "label": "Código",
+    "description": "Repositorio o archivo con scripts utilizados para la generación, transformación, limpieza o validación de los datos de todo o parte del dataset."
+  }
+]
