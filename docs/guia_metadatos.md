@@ -614,6 +614,14 @@ Metadatos que el *data.json* debe contener, para describir a una distribución d
     <td>String</td>
   </tr>
   <tr>
+    <td>Tipo de distribución</td>
+    <td>Recomendado</td>
+    <td>Indica el tipo de recurso.<br/><br/>"Archivo de datos" (file): archivo físico de algún formato de datos que se puede descargar.<br/>"API" (api): documentación en línea de un servicio web de datos.<br/>"Código" (code): repositorio o archivo con scripts utilizados para la generación, transformación, limpieza o validación de los datos de todo o parte del dataset.<br/>"Documentación" (documentation): documentación metodológica sobre los datos de todo o parte del dataset.</td>
+    <td>file<br/>api<br/>code<br/>documentation</td>
+    <td>type</td>
+    <td>String</td>
+  </tr>
+  <tr>
     <td>URL de acceso</td>
     <td>Sí</td>
     <td>URL que permite el acceso a la distribución del dataset. Puede ser una página, feed u otro tipo de recurso que dé acceso indirecto a las distribuciones. Si las distribuciones son solo accesibles a través de la página de referencia del dataset, debe completarse el valor de la URL de acceso a la distribución con el mismo valor de la página de referencia del dataset.</td>
