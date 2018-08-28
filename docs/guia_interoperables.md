@@ -158,7 +158,7 @@ Se recomienda también que el nombre del campo del código sea "pais_id" o, en e
 
 #### Divisiones o unidades territoriales internas
 
-En el caso de las divisiones o unidades territoriales internas, recomendamos usar el sistema de identificadores de la cartografía censal del Censo Nacional 2010 del Instituto Nacional de Estadísticas y Censos ([listado de códigos](http://200.51.91.245/redarg/CENSOS/CPV2010rad/Docs/codigos_provincias.pdf) y [explicación metodológica](http://geoservicios.indec.gov.ar/codgeo/index.php?pagina=definiciones)), que incluye identificadores numéricos compuestos de una cantidad fija de dígitos (el tipo de datos debe ser textual, ya que tiene ceros a la izquierda que son significativos) para, entre otras, las siguientes entidades interoperables:
+En el caso de las divisiones o unidades territoriales internas, recomendamos usar el sistema de identificadores de la cartografía censal del Censo Nacional 2010 del Instituto Nacional de Estadísticas y Censos ([listado de códigos](https://redatam.indec.gob.ar/redarg/CENSOS/CPV2010rad/Docs/codigos_provincias.pdf) y [explicación metodológica](http://geoservicios.indec.gov.ar/codgeo/index.php?pagina=definiciones)), que incluye identificadores numéricos compuestos de una cantidad fija de dígitos (el tipo de datos debe ser textual, ya que tiene ceros a la izquierda que son significativos) para, entre otras, las siguientes entidades interoperables:
 
 * Provincias
 * Departamentos (Partidos o Comunas)
