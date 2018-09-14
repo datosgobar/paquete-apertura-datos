@@ -1,7 +1,14 @@
 Versiones
 =========
 
-[0.2.0-beta](http://paquete-apertura-datos.readthedocs.io/es/0.2.0/)
+[0.3.0](http://paquete-apertura-datos.readthedocs.io/es/0.3.0/)
+-------------------
+
+* Incorpora guías de implementación de política de apertura de datos
+    - Organismos de la Administración Pública Nacional
+    - Gobiernos Subnacionales
+
+[0.2.0](http://paquete-apertura-datos.readthedocs.io/es/0.2.0/)
 -------------------
 
 * **Guía para el uso y la publicación de metadatos**

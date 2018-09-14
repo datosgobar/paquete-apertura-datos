@@ -162,7 +162,7 @@ El perfil de metadatos propuesto para la Administración Pública Nacional se co
 
 <div id="perfil-de-metadatos">
 
-![Perfil de Metadatos](assets/der_perfil_metadatos.png)
+![](assets/der_perfil_metadatos.png)
 
 </div>
 
