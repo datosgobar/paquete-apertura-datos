@@ -14,7 +14,7 @@ nav:
     - Guía para el uso y la publicación de metadatos: guia_metadatos.md
   - Guías de implementación:
     - Guía de apertura de datos para organismos de la Administración Pública Nacional: http://datos.gob.ar/acerca/seccion/Public%C3%A1%20datos
-    - Guía de apertura de datos para gobiernos subnacionales: guia_subnacionales.md
+    # - Guía de apertura de datos para gobiernos subnacionales: guia_subnacionales.md
 
 theme: datosgobar_docs
 
