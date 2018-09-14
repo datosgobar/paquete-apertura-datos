@@ -20,7 +20,7 @@ theme: datosgobar_docs
 
 markdown_extensions: [fenced_code, codehilite, admonition]
 
-# extra_css:
-#   - css/extra_rtd.css
+extra_css:
+  - css/extra_rtd.css
 
 google_analytics: ['UA-91435482-1', "https://datosgobar.github.io/paquete-apertura-datos/"]
