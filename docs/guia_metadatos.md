@@ -82,7 +82,7 @@ Esta guía busca ayudar a los organismos a instrumentar la Política de Datos Ab
 
 Esta es **una guía de recomendaciones y buenas prácticas, para el uso y la publicación de metadatos**.
 
-Para hacer estas recomendaciones, nos basamos en estándares usados a nivel nacional e internacional y en la experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública del Ministerio de Modernización de la Nación.
+Para hacer estas recomendaciones, nos basamos en estándares usados a nivel nacional e internacional y en la experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública del Secretaría de Gobierno de Modernización de la Jefatura de Gabinete de Ministros de la Nación.
 
 Esta es **una guía colaborativa y en progreso**. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.
 
