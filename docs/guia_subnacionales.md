@@ -689,3 +689,7 @@ Existen organizaciones internacionales que establecen los conjuntos de datos des
 * **El _Open Data Barometer (ODB)_**, desarrollado por la World Wide Web Foundation como un trabajo colaborativo de la red Open Data for Development (OD4D). Tiene como objetivo descubrir la verdadera prevalencia e impacto de las iniciativas de datos abiertos en torno a el mundo. Analiza las tendencias mundiales y proporciona datos comparativos sobre países y regiones utilizando una metodología en profundidad que combina datos contextuales, evaluaciones técnicas e indicadores secundarios.
 
 * **El _[Global Open Data Index](https://index.okfn.org/) / Índice Global de Datos Abiertos (GODI)_**, administrado por Open Knowledge Network, mide la publicación de datos a nivel país. Sumada a estas mediciones nacionales, Argentina desarrolla desde hace dos años un índice a nivel local midiendo el nivel de publicación de datos abiertos de cada uno de los gobiernos de cada una de sus ciudades, en un [*Índice de datos abiertos de Ciudades de Argentina*](http://ar-cities.survey.okfn.org).
+
+## Glosario
+
+Ver [Glosario](glosario.md)

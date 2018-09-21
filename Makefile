@@ -100,6 +100,8 @@ doctoc: ## generate table of contents, doctoc command line tool required
 	bash fix_github_links.sh docs/guia_interoperables.md
 	doctoc --github --title "## Indice" docs/guia_metadatos.md
 	bash fix_github_links.sh docs/guia_metadatos.md
+	doctoc --github --title "## Indice" docs/glosario.md
+	bash fix_github_links.sh docs/glosario.md
 
 serve:
 	mkdocs serve
