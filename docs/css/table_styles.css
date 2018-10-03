@@ -1,3 +1,7 @@
 #left-align-col-3-4 td:nth-child(3), #left-align-col-3-4 td:nth-child(4) {
     text-align: left;
 }
+
+#left-align-col-2 td:nth-child(2) {
+    text-align: left;
+}

@@ -89,19 +89,13 @@ Algunos de estos formatos, no siempre se adecuan a los niveles de apertura desea
 
 En este cuadro consideramos algunos de los formatos más usados y evaluamos su nivel de apertura:
 
-<table>
-  <colgroup>
-    <col style="width:17%">
-    <col style="width:49%">
-    <col style="width:17%">
-    <col style="width:17%">
-  </colgroup>
+<table id="left-align-col-2">
 <tbody>
   <tr>
-    <td>Formato</td>
-    <td>Descripción breve</td>
-    <td>Tipo de datos</td>
-    <td>Nivel de apertura</td>
+    <th>Formato</th>
+    <th>Descripción breve</th>
+    <th>Tipo de datos</th>
+    <th>Nivel de apertura</th>
   </tr>
   <tr>
     <td>XLS</td>
@@ -335,6 +329,7 @@ Los campos que sean identificadores o códigos, deberán incluir el sufijo "_id"
 
 <table>
 <tbody>
+  <tr>
     <td>sucursal_id</td>
     <td>sucursal_desc</td>
   </tr>
