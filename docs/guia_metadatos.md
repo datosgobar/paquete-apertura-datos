@@ -712,7 +712,7 @@ Estos son los metadatos que el *data.json* debe contener para describir a un cam
     <td>Nombre</td>
     <td>Recomendado</td>
     <td>El nombre del campo tal como se denomina en el encabezado de la distribución. Véase la "Guía para la publicación de datos en formatos abiertos" para una adecuada elección del nombre de un campo.<br/><br/>Se recomienda no exceder los 40 caracteres en la mayoría de los casos. En caso de que un título más largo se juzgue necesario o significativamente más claro, este no deberá exceder los 60 caracteres en ningún caso.<br/><br/>Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números y guiones bajos "_".</td>
-    <td>Ejemplo para el cuarto campo de la distribución "Convocatorias abiertas durante el año 2015", valor para el nombre: "unidad_operativa_contrataciones_desc"</td>
+    <td>unidad_operativa_contrataciones_desc</td>
     <td>title</td>
     <td>String</td>
   </tr>
@@ -734,7 +734,7 @@ Estos son los metadatos que el *data.json* debe contener para describir a un cam
     array: Lista de valores.<br/>
     object (json): Objeto de JSON.<br/>
     any: Campo que puede contener valores de cualquier tipo.</td>
-    <td>Ejemplo para el campo "unidad_operativa_contrataciones_desc" de la distribución "Convocatorias abiertas durante el año 2015", valor para tipo: "string"</td>
+    <td>Convocatorias abiertas durante el año 2015</td>
     <td>type</td>
     <td>String</td>
   </tr>
@@ -742,7 +742,7 @@ Estos son los metadatos que el *data.json* debe contener para describir a un cam
     <td>Descripción</td>
     <td>Recomendado</td>
     <td>La descripción de la información que contiene el campo.</td>
-    <td>Ejemplo para el campo "unidad_operativa_contrataciones_desc" de la distribución "Convocatorias abiertas durante el año 2015", valor para descripción: "Organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."</td>
+    <td>Organismo que realiza la convocatoría. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.</td>
     <td>description</td>
     <td>String</td>
   </tr>
