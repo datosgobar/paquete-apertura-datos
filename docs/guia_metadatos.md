@@ -155,22 +155,14 @@ Ejemplos de metadatos de un **catálogo**:
 
 Metadatos necesarios para describir el catálogo, que un *data.json* debe contener:
 
-<table class="six-columns" >
-<colgroup>
-    <col style="width:13%">
-    <col style="width:13%">
-    <col style="width:28%">
-    <col style="width:20%">
-    <col style="width:13%">
-    <col style="width:13%">
-  </colgroup>
+<table id="left-align-col-3-4">
   <tr>
-    <td>Nombre</td>
-    <td>Requerido</td>
-    <td>Descripción</td>
-    <td>Ejemplo</td>
-    <td>Variable (data.json)</td>
-    <td>Tipo (data.json)</td>
+    <th>Nombre</th>
+    <th>Requerido</th>
+    <th>Descripción</th>
+    <th>Ejemplo</th>
+    <th>Variable (data.json)</th>
+    <th>Tipo (data.json)</th>
   </tr>
   <tr>
     <td>Identificador</td>
@@ -335,22 +327,14 @@ Ejemplos de metadatos de un **dataset**:
 
 Metadatos que el *data.json* debe contener, para describir a un dataset dentro de la lista contenida en el campo **`dataset`** del catálogo:
 
-<table  class="six-columns">
-<colgroup>
-    <col style="width:13%">
-    <col style="width:13%">
-    <col style="width:28%">
-    <col style="width:20%">
-    <col style="width:13%">
-    <col style="width:13%">
-  </colgroup>
+<table id="left-align-col-3-4">
   <tr>
-    <td>Nombre</td>
-    <td>Requerido</td>
-    <td>Descripción</td>
-    <td>Ejemplo</td>
-    <td>Variable (data.json)</td>
-    <td>Tipo (data.json)</td>
+    <th>Nombre</th>
+    <th>Requerido</th>
+    <th>Descripción</th>
+    <th>Ejemplo</th>
+    <th>Variable (data.json)</th>
+    <th>Tipo (data.json)</th>
   </tr>
   <tr>
     <td>Identificador</td>
@@ -538,22 +522,14 @@ Ejemplos de metadatos de una **distribución**:
 
 Metadatos que el *data.json* debe contener, para describir a una distribución dentro de la lista contenida en el campo **`distribution`** de un dataset:
 
-<table  class="six-columns">
-<colgroup>
-    <col style="width:13%">
-    <col style="width:13%">
-    <col style="width:28%">
-    <col style="width:20%">
-    <col style="width:13%">
-    <col style="width:13%">
-  </colgroup>
+<table id="left-align-col-3-4">
   <tr>
-    <td>Nombre</td>
-    <td>Requerido</td>
-    <td>Descripción</td>
-    <td>Ejemplo</td>
-    <td>Variable (data.json)</td>
-    <td>Tipo (data.json)</td>
+    <th>Nombre</th>
+    <th>Requerido</th>
+    <th>Descripción</th>
+    <th>Ejemplo</th>
+    <th>Variable (data.json)</th>
+    <th>Tipo (data.json)</th>
   </tr>
   <tr>
     <td>Identificador</td>
@@ -691,22 +667,14 @@ Ejemplos de metadatos de un **campo**:
 
 Estos son los metadatos que el *data.json* debe contener para describir a un campo de una distribución tabular dentro de la lista contenida en el campo de metadatos **`field`** de una distribución:
 
-<table  class="six-columns">
-<colgroup>
-    <col style="width:12%">
-    <col style="width:12%">
-    <col style="width:36%">
-    <col style="width:20%">
-    <col style="width:10%">
-    <col style="width:10%">
-  </colgroup>
+<table id="left-align-col-3-4">
   <tr>
-    <td>Nombre</td>
-    <td>Requerido</td>
-    <td>Descripción</td>
-    <td>Ejemplo</td>
-    <td>Variable (data.json)</td>
-    <td>Tipo (data.json)</td>
+    <th>Nombre</th>
+    <th>Requerido</th>
+    <th>Descripción</th>
+    <th>Ejemplo</th>
+    <th>Variable (data.json)</th>
+    <th>Tipo (data.json)</th>
   </tr>
   <tr>
     <td>Nombre</td>
@@ -798,14 +766,14 @@ Ejemplos de metadatos de un **tema**:
 
 Metadatos que el *data.json* debe contener, para describir a un tema de la taxonomía temática de un catálogo:
 
-<table class="six-columns">
+<table id="left-align-col-3-4">
   <tr>
-    <td>Nombre</td>
-    <td>Requerido</td>
-    <td>Descripción</td>
-    <td>Ejemplo</td>
-    <td>Variable (data.json)</td>
-    <td>Tipo (data.json)</td>
+    <th>Nombre</th>
+    <th>Requerido</th>
+    <th>Descripción</th>
+    <th>Ejemplo</th>
+    <th>Variable (data.json)</th>
+    <th>Tipo (data.json)</th>
   </tr>
   <tr>
     <td>Identificador</td>
@@ -862,22 +830,14 @@ Es una tabla donde:
   - Tiene una **frecuencia temporal determinada** (es diaria, mensual, anual... pero no mezcla frecuencias).
 * Cada una de las otras columnas son **series de tiempo**
 
-<table  class="six-columns">
-<colgroup>
-    <col style="width:10%">
-    <col style="width:18%">
-    <col style="width:18%">
-    <col style="width:18%">
-    <col style="width:18%">
-    <col style="width:18%">
-  </colgroup>
+<table>
   <tr>
-    <td>indice_tiempo</td>
-    <td>oferta_global_pib</td>
-    <td>oferta_global_importacion</td>
-    <td>demanda_global_exportacion</td>
-    <td>demanda_global_ibif</td>
-    <td>demanda_global_consumo_priv</td>
+    <th>indice_tiempo</th>
+    <th>oferta_global_pib</th>
+    <th>oferta_global_importacion</th>
+    <th>demanda_global_exportacion</th>
+    <th>demanda_global_ibif</th>
+    <th>demanda_global_consumo_priv</th>
   </tr>
   <tr>
     <td>1993-01-01</td>
@@ -1288,14 +1248,6 @@ Además del uso de una taxonomía propia de cada catálogo de datos, **recomenda
 **La ventaja de usar una súper taxonomía** temática es que** facilita la clasificación de datasets** por parte de un usuario según un conjunto de categorías temáticas más generales, que son interoperables con las usadas por otros países del mundo. Esto, a su vez, **facilita la clasificación de datasets cosechados por el Portal Nacional de Datos**.
 
 <table>
-  <colgroup>
-    <col style="width:33%">
-    <col style="width:33%">
-    <col style="width:33%">
-  </colgroup>
-  <tbody>
-    <tr>
-      <td>Código (authority code)</td>
       <td>Etiqueta (label)</td>
       <td>Descripción (description)</td>
     </tr>
