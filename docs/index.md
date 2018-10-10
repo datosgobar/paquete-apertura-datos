@@ -8,9 +8,8 @@ Podés colaborar con las guías cargando un nuevo issue, o respondiendo a un iss
 
 ## Recursos y documentos
 
-* Material introductorio
-    - [Kit de datos abiertos](https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf)
-    - [Glosario](glosario.md)
+* [Material introductorio](https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf)
+    <!-- - [Kit de datos abiertos](https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf) -->
 
 * Guías de buenas prácticas
     - [Guía para la publicación de datos en formatos abiertos](guia_abiertos.md)
@@ -20,3 +19,5 @@ Podés colaborar con las guías cargando un nuevo issue, o respondiendo a un iss
 * Guías de implementación
     - [Guía para la apertura de datos en organismos de la Administración Pública Nacional](http://datos.gob.ar/acerca/seccion/Public%C3%A1%20datos)
     - [Guía para la apertura de datos en gobiernos subnacionales](guia_subnacionales.md)
+
+* [Glosario](glosario.md)
