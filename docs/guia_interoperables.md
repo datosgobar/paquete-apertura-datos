@@ -158,19 +158,21 @@ Se recomienda también que el nombre del campo del código sea "pais_id" o, en e
 
 #### Divisiones o unidades territoriales internas
 
-En el caso de las divisiones o unidades territoriales internas, recomendamos usar el sistema de identificadores de la cartografía censal del Censo Nacional 2010 del Instituto Nacional de Estadísticas y Censos ([listado de códigos](https://redatam.indec.gob.ar/redarg/CENSOS/CPV2010rad/Docs/codigos_provincias.pdf) y [explicación metodológica](http://geoservicios.indec.gov.ar/codgeo/index.php?pagina=definiciones)), que incluye identificadores numéricos compuestos de una cantidad fija de dígitos (el tipo de datos debe ser textual, ya que tiene ceros a la izquierda que son significativos) para, entre otras, las siguientes entidades interoperables:
+En el caso de las divisiones o unidades territoriales internas, recomendamos usar el [sistema de identificadores de la cartografía censal](https://www.indec.gob.ar/nivel4_default.asp?id_tema_1=1&id_tema_2=39&id_tema_3=121) del Censo Nacional 2010 del Instituto Nacional de Estadística y Censos (ver [explicación metodológica](http://geoservicios.indec.gov.ar/codgeo/index.php?pagina=definiciones)).
 
-* Provincias
-* Departamentos (Partidos o Comunas)
+Incluye identificadores numéricos compuestos de una cantidad fija de dígitos (el tipo de datos debe ser textual, ya que tiene ceros a la izquierda que son significativos) para, entre otras, las siguientes entidades interoperables:
+
+* Provincias ([CSV](http://www.ign.gob.ar/descargas/geodatos/departamento.csv) | [SHP](http://www.ign.gob.ar/descargas/geodatos/provincia.zip) | [GEOJSON](http://www.ign.gob.ar/descargas/geodatos/provincia_geojson.zip))
+* Departamentos (Partidos o Comunas) ([CSV](http://www.ign.gob.ar/descargas/geodatos/departamento.csv) | [SHP](http://www.ign.gob.ar/descargas/geodatos/departamento.zip) | [GEOJSON](http://www.ign.gob.ar/descargas/geodatos/departamento_geojson.zip))
 * Fracciones Censales
 * Radios Censales
-* Municipios
-* Localidades
+* Municipios ([CSV](http://www.ign.gob.ar/descargas/geodatos/municipio.csv) | [SHP](http://www.ign.gob.ar/descargas/geodatos/municipio.zip) | [GEOJSON](http://www.ign.gob.ar/descargas/geodatos/municipio_geojson.zip))
+* Localidades ([CSV](https://apis.datos.gob.ar/georef/api/localidades?formato=csv&max=5000) | [JSON](https://apis.datos.gob.ar/georef/api/localidades?formato=json&max=5000))
 * Aglomerados
 
 Este sistema de identificadores es consistente con el  usado por la Base de Asentamientos Humanos de la República Argentina ([BAHRA](http://www.bahra.gob.ar/)) para la identificación de localidades, que además lo extiende para incluir la posibilidad de referenciar sitios edificados (sumando 3 dígitos al identificador de una Localidad).
 
-Sin embargo, en esta guía no abordamos los identificadores de entidades puntuales derivadas de las Localidades ( que implican avanzar a niveles de desagregación geográfica mayores).
+Sin embargo, en esta guía no abordamos los identificadores de entidades puntuales derivadas de las Localidades (que implican avanzar a niveles de desagregación geográfica mayores).
 
 Los nombres geográficos presentados en la BAHRA son oficiales, pero no se encuentran validados. El establecimiento de un procedimiento para la validación de los nombres geográficos es una tarea pendiente para la República Argentina.
 

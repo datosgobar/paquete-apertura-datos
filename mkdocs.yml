@@ -19,7 +19,15 @@ nav:
 
 theme: datosgobar_docs
 
-markdown_extensions: [fenced_code, codehilite, admonition]
+# # extensiones recomendadas con este theme
+markdown_extensions:
+  - markdown.extensions.toc:
+      title: 'Lista de contenidos'
+      anchorlink: true
+      permalink: '&#128279;'
+  - fenced_code
+  - codehilite
+  - admonition
 
 extra_css:
   - css/extra_rtd.css
