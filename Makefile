@@ -110,3 +110,9 @@ build:
 	mkdocs build
 	rsync -vau --remove-source-files site/ docs/
 	rm -rf site
+
+pdf:
+	python md2pdf.py docs/guia_abiertos.md docs/pdf/guia_abiertos.pdf
+	python md2pdf.py docs/guia_interoperables.md docs/pdf/guia_interoperables.pdf
+	python md2pdf.py docs/guia_metadatos.md docs/pdf/guia_metadatos.pdf
+	python md2pdf.py docs/guia_subnacionales.md docs/pdf/guia_subnacionales.pdf
