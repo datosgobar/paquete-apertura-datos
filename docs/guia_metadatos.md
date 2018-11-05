@@ -1,72 +1,28 @@
 # Guía para el uso y la publicación de metadatos
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-## Indice
-
-- [Versión](#version)
-- [Glosario](#glosario)
-- [Introducción](#introduccion)
-  - [Objetivo de esta guía](#objetivo-de-esta-guia)
-  - [¿Qué son los metadatos?](#que-son-los-metadatos)
-  - [¿Cómo se publican los metadatos?](#como-se-publican-los-metadatos)
-  - [Público objetivo de esta guía](#publico-objetivo-de-esta-guia)
-- [Perfil de Metadatos](#perfil-de-metadatos)
-  - [Portal Andino](#portal-andino)
-  - [Otros catálogos](#otros-catalogos)
-  - [Estándar usado](#estandar-usado)
-  - [Campos del perfil](#campos-del-perfil)
-    - [Catálogo (`catalog`)](#catalogo-catalog)
-    - [Dataset (`dataset`)](#dataset-dataset)
-    - [Distribución (`distribution`)](#distribucion-distribution)
-    - [Campo (`field`)](#campo-field)
-    - [Tema (`theme`)](#tema-theme)
-- [Extensiones especiales](#extensiones-especiales)
-  - [Series de tiempo](#series-de-tiempo)
-    - [Distribución de series de tiempo](#distribucion-de-series-de-tiempo)
-    - [Tipo especial: indice de tiempo](#tipo-especial-indice-de-tiempo)
-    - [Documentar un dataset de series de tiempo](#documentar-un-dataset-de-series-de-tiempo)
-      - [Dataset (`dataset`) - series de tiempo](#dataset-dataset-series-de-tiempo)
-      - [Distribución (`distribution`) - series de tiempo](#distribucion-distribution-series-de-tiempo)
-      - [Campo (`field`) - series de tiempo](#campo-field-series-de-tiempo)
-- [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
-- [Anexo II - Pautas para la selección de etiquetas](#anexo-ii-pautas-para-la-seleccion-de-etiquetas)
-- [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificacion-de-frecuencias-segun-iso-8601)
-- [Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)
-- [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json)
-- [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)
-- [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Versión
-
-Esta guía es compatible con la **versión 1.1 del Perfil de Metadatos** de la Política de Apertura de Datos de la Administración Pública Nacional.
-
-## Glosario
-
-Ver [Glosario](glosario.md)
-
 ## Introducción
 
-Esta guía busca ayudar a los organismos a instrumentar la Política de Datos Abiertos impulsada desde el Gobierno de la Nación Argentina, a través del Decreto N° 117/2016 del 12 de enero de 2016.
+### Versión
 
-### Objetivo de esta guía
+Esta guía es compatible con la **versión 1.1 del Perfil Nacional de Metadatos para Datos Abiertos** de la Administración Pública Nacional.
 
-Esta es **una guía de recomendaciones y buenas prácticas, para el uso y la publicación de metadatos**.
+### Objetivo
 
-Para hacer estas recomendaciones, nos basamos en estándares usados a nivel nacional e internacional y en la experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública del Secretaría de Gobierno de Modernización de la Jefatura de Gabinete de Ministros de la Nación.
+El objetivo de esta guía es que los organismos de la Administración Pública Nacional alcanzados por el Decreto N° 117/2016 del 12 de enero de 2016, encuentren todos los recursos necesarios para **crear su catálogo de datos abiertos** según el Perfil Nacional de Metadatos para Datos Abiertos impulsad por la Dirección Nacional de Datos e Información Pública.
+
+El estándar desarrollado y las recomendaciones vertidas en este documento se basan en estándares usados a nivel nacional e internacional, y en la experiencia de trabajo del equipo de Datos de la Secretaría de Gobierno de Modernización de la Nación.
 
 Esta es **una guía colaborativa y en progreso**. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.
 
-Este documento se complementa con la **Guía para la publicación de datos en formatos abiertos** y la **Guía para la identificación y uso de entidades interoperables**. 
+Este documento se complementa con la **[Guía para la publicación de datos en formatos abiertos](guia_abiertos.md)** y la **[Guía para la identificación y uso de entidades interoperables](guia_interoperables.md)**.
 
 ### ¿Qué son los metadatos?
 
 **Los metadatos son los datos sobre los datos**. Es decir: **elementos descriptivos que dan contexto** a un conjunto de datos, y acercan al usuario la información necesaria para entenderlos y usarlos eficazmente.
 
-Un **título** y una breve **descripción** son los metadatos básicos que cualquier conjunto de datos a publicar debería tener. Después, existen muchos otros elementos que ayudan al lector a hacer un buen uso de los datos. Por ejemplo:
+Un **título** y una breve **descripción** son los metadatos básicos que cualquier conjunto de datos a publicar debería tener.
+
+Luego, existen muchos otros elementos que ayudan al usuario a utilizar los datos correctamente. Por ejemplo:
 
 * **Nombre, tipo de datos y descripción de los campos**: ¿qué significa cada campo? ¿qué datos puedo encontrar en esa columna? ¿qué dicen y qué *no* dicen esos datos, cómo debo leerlos?
 * **Palabras clave**: clasifican a un dataset como perteneciente a un conjunto de tópicos.
@@ -76,17 +32,19 @@ Un **título** y una breve **descripción** son los metadatos básicos que cualq
 * **Frecuencia de actualización**: ¿cada cuánto se actualiza este dataset?
 * **URL de descarga**: ¿cómo dispongo de los datos, desde dónde puedo descargarlos?
 
-Una lista curada de campos de metadatos, junto con las instrucciones de cómo deben utilizarse, define un **perfil de metadatos**.
-
-En esta guía describimos el **perfil de metadatos recomendado para los catálogos de la Administración Pública Nacional** y cómo publicarlo.
+Una lista de metadatos, junto con las instrucciones de cómo deben utilizarse, es un **perfil de metadatos**.
 
 ### ¿Cómo se publican los metadatos?
 
-**La publicación de los metadatos puede ser muy diversa** en detalle, calidad y forma. **Una publicación muy elemental es un documento de texto** que ofrece una descripción del dataset y de cada uno de los recursos que lo componen. Es posible ver un [ejemplo textual](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md) de los metadatos de un catálogo de datos en el **[Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)**.
+Los metadatos se publican en distintos formatos, estructuras y modalidades dependiendo del objetivo, la temática que abordan o las aplicaciones automáticas que los consuman.
 
-Sin embargo, **las computadoras no pueden leer fácilmente documentos de texto**. La organización sistemática de colecciones de datasets (es decir, la creación de un **catálogo** de datos) exige un nivel de complejidad mayor para facilitar su descubrimiento, indexación, y reutilización por parte de scripts y aplicaciones de todo tipo.
+Si se desea documentar activos de datos, **una publicación elemental sería un [documento de texto](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md)** (ver **[Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)**) con una lista de datasets que ofrezca el título y la descripción de cada uno de ellos, y de los recursos que lo componen.
 
-La potencial reutilización de los conjuntos de datos y la posibilidad de que los mismos sean correctamente federados desde el Portal Nacional de Datos Abiertos (datos.gob.ar) dependerá de la calidad de sus metadatos. Adoptar y/o desarrollar estándares y vocabularios controlados es importante para la lectura e interpretación de los conjuntos de datos por personas y por aplicaciones informáticas.
+Sin embargo, **las computadoras no pueden leer fácilmente documentos de texto**. No se podrían utilizar aplicaciones automáticas para validar, traducir, re-indexar metadatos en otros catálogos y buscar datasets en ellos. 
+
+**Un catálogo de datos abiertos se crea para organizar sistemáticamente colecciones de datasets** y permitir el desarrollo de todo tipo de aplicaciones sobre ellos. Esto requiere el uso de otros formatos más estructurados.
+
+La potencial reutilización de los conjuntos de datos y la posibilidad de que  sean correctamente federados desde el [Portal Nacional de Datos Abiertos](http://datos.gob.ar) dependerá de la calidad de sus metadatos y de su formato. Adoptar y/o desarrollar estándares y vocabularios controlados es importante para la lectura e interpretación de los conjuntos de datos por personas y por aplicaciones informáticas.
 
 Para esto, **los catálogos de datos publican sus metadatos en un formato estructurado (JSON)** respetando un determinado perfil estandarizado. Recomendamos ver un [ejemplo en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json) de los metadatos de un catálogo de datos en el **[Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)**.
 
@@ -94,51 +52,61 @@ En el resto de este documento detallamos las características de los estándares
 
 ### Público objetivo de esta guía
 
-Esta guía intenta ayudar a quienes:
+Esta guía es para:
 
-* **Publican sus catálogos de datos mediante un adaptación del portal Andino**. Es decir,  del portal que el equipo de Datos de la Nación Argentina diseñó sobre la base de CKAN y que pueden adoptar las dependencias de la Administración Pública Nacional (así como también de otros niveles gubernamentales sub-nacionales o incluso entidades del público general) para gestionar la publicación centralizada de sus activos de datos.
+* **Organismos de la Administración Pública Nacional** que quieren implementar un catálogo de datos abiertos
+  - Quienes implementan un Portal Andino, otro portal web, un catálogo en Excel o en JSON.
+* **Otros organismos del Poder Legislativo o Judicial** que sin estar alcanzados por el Decreto 117/2016, adhieren a la Política de Apertura de Datos propuesta por el Poder Ejecutivo.
+* **Gobiernos subnacionales** (provincias y municipios) que desean publicar sus catálogos de datos abiertos siguiendo los mismos estándares que el Gobierno Nacional y otros gobiernos subnacionales.
+* **Universidades, ONGs, cámaras empresarias y otros actores de la sociedad civil** que adhieren a la Política de Datos Abiertos y desean publicar datos siguiendo los mismos estándares que el sector público, con la visión de construir una interoperabilidad creciente entre datos del gobierno nacional y de otros actores de la sociedad civil.
 
-    Si estás dentro de este grupo, **recomendamos leer la sección [Portal Andino](#portal-andino)**. Con ella, podrás comprender cómo completar cada campo en el formulario web del Portal Andino.
+## Crear un catálogo de datos abiertos
 
-* **Publican sus catálogos de datos mediante otros medios**. Esto es, en forma directa en el dominio digital de la entidad responsable o de alguna forma alternativa en la red. Esas entidades deberán publicar su catálogo de datos en un archivo estructurado (JSON) llamado *data.json* alojado en un dominio de la forma *http://datos.[entidad].gob.ar/data.json* siguiendo las especificaciones del perfil de metadatos de esta guía.
+Para cumplir con los estándares de documentación de datos abiertos, **los organismos necesitan publicar un catálogo en formato XLSX o JSON en una URL pública dentro de su propiedad digital**, y comunicarla al [equipo de Datos de la Secretaría de Gobierno de Modernización](mailto:datos@modernizacion.gob.ar) para su indexación en [datos.gob.ar](http://datos.gob.ar).
 
-    Si la apertura de tus datos se inscribe en esta modalidad, **te sugerimos leer la sección [Otros catálogos](#otros-catalogos)**. Te ayudará a comprender cómo generar y publicar un archivo *data.json* que cumpla con el perfil de metadatos de la política de apertura de datos de la Administración Pública Nacional.
+Si el catálogo cumple con el perfil de metadatos, se le asignará un identificador (Ej.: `agroindustria`, `energia`, `sspre`) y será federado en [datos.gob.ar](http://datos.gob.ar) bajo el nombre del organismo responsable de su publicación.
 
-## Perfil de Metadatos
+Los datasets federados desde ese catálogo, serán accesibles públicamente desde `http://datos.gob.ar/dataset?organization={identificador}`.
+
+### Excel
+
+El catálogo se puede crear en Excel, a partir de [este modelo](https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/catalog.xlsx) diseñado para cumplir con el perfil de metadatos. El modelo contiene una serie de validaciones para evitar errores en su uso, pero debe tenerse en cuenta que:
+
+* En las hojas de distribución (`distribution`) y campo (`field`) **sólo deben asignarse los ids de los dataset o distribuciones "padre" que los incluyen**, el título se trae automáticamente de la hoja correspondiente con una fórmula.
+* **Todas las columnas sean de tipo "texto"** (no "número") salvo aquellas que en el modelo contienen fórmulas para asegurar que una distribución o campo documentado, sean asignados al dataset o distribución correctos.
+  - Especialmente las columnas de identificadores (Excel a veces las convierte a número cuando el identificador elegido no contiene letras u otros caracteres).
+* **La hoja "referencias" explica el código de colores** para saber qué campos son obligatorios, recomendados, opcionales o avanzados / especiales.
+* El modelo contiene comentarios en las celdas para explicar brevemente qué se debe poner en cada una, pero en esta guía se puede consultar la referencia detallada.
 
 ### Portal Andino
 
-**El [Portal Andino](https://github.com/datosgobar/portal-andino)** es una herramienta especialmente diseñada para facilitar la publicación y apertura de datos y **cumple con el perfil de metadatos de la Administración Pública Nacional** propuesto en esta guía.
+**El [Portal Andino](http://andino.datos.gob.ar)** es una herramienta especialmente diseñada para facilitar la publicación y apertura de datos y **cumple con el perfil de metadatos de la Administración Pública Nacional** propuesto en esta guía.
 
-Incluye formularios web para la carga de datos y metadatos. **La publicación de metadatos mediante este portal cumple con la versión 1.0 del perfil de metadatos recomendado en esta guía**. La versión 1.0 es anterior a la publicación de esta guía y se puede [consultar acá](http://paquete-apertura-datos.readthedocs.io/es/0.1.1/guia_metadatos.html#otros-catalogos).
+Incluye formularios web para la carga de datos y metadatos, y produce automáticamente el catálogo en versión XLSX y JSON.
 
-El Portal debe publicarse en un dominio de la forma *http://datos.[entidad].gob.ar*. Esto asegura la publicación automática de los metadatos en formato data.json en *http://datos.[entidad].gob.ar/data.json*
-
-El archivo *data.json* de un Portal Andino puede encontrarse en el directorio raíz del portal: *http://datos.[entidad].gob.ar/data.json*.
+El Portal debe publicarse en un dominio de la forma *http://datos.[entidad].gob.ar*. Esto asegura la publicación automática de los metadatos en formato data.json en *http://datos.[entidad].gob.ar/data.json* y XLSX en *http://datos.[entidad].gob.ar/catalog.xlsx*.
 
 ### Otros catálogos
 
 Sin embargo, los organismos de la APN **pueden optar por desarrollar sus propias implementaciones del Perfil de Metadatos**.
 
-Quienes opten por una solución alternativa al Portal Andino para publicar sus datos, deberán publicar los metadatos de su Catálogo en un archivo *data.json* en una URL como la siguiente: *http://datos.[entidad].gob.ar/data.json*.
+Quienes opten por una solución alternativa al Excel o al Portal Andino para publicar sus datos, deberán publicar los metadatos de su catálogo en un archivo *data.json* en una URL como la siguiente: *http://datos.[entidad].gob.ar/data.json*.
 
 En [entidad] recomendamos usar un nombre simple y breve que represente a la organización que publica el catálogo (por ejemplo: datos.jus.gob.ar, datos.tucuman.gob.ar, datos.pilar.gob.ar).
 
 Este archivo deberá estar construido tal como se puede ver en el ejemplo del **[Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)**, respetando el Perfil de Metadatos de la Administración Pública Nacional tal como se lo describe más adelante en la sección "*[Campos del perfil](#campos-del-perfil)*".
 
+## Perfil de Metadatos
+
 ### Estándar usado
 
-**El perfil de metadatos recomendado en esta guía es una adaptación del estándar [DCAT - AP](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe)**, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.
+**El Perfil Nacional de Metadatos para Datos Abiertos es una extensión del estándar [DCAT - AP](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe)**, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.
 
 Según la W3C: "Mediante la utilización de DCAT para describir datasets en catálogos de datos, quienes publican aumentan la posibilidad de descubrimiento (*discoverability*) y permiten a aplicaciones informáticas consumir metadatos de manera simple desde múltiples catálogos. Además permite la publicación descentralizada de catálogos y favorece la búsqueda *federada* de datasets a través de varios sitios."
 
 El perfil de metadatos propuesto para la Administración Pública Nacional se compone de 3 clases principales (*Catalog, Dataset y Distribution*) y 2 auxiliares (*Field* y *Theme*) que se relacionan según el siguiente esquema:
 
-<div id="perfil-de-metadatos">
-
 ![](assets/der_perfil_metadatos.png)
-
-</div>
 
 A continuación, describimos los metadatos que el *data.json* debe contener, para cada una de estas clases.
 
@@ -146,7 +114,7 @@ A continuación, describimos los metadatos que el *data.json* debe contener, par
 
 #### Catálogo (`catalog`)
 
-El *data.json* de *quienes usen el portal Andino, se generará a través de los formularios completados, publicándose automáticamente en *http://datos.[entidad].gob.ar/data.json**.
+El *data.json* de quienes usen el portal Andino, se generará a través de los formularios completados, publicándose automáticamente en *http://datos.[entidad].gob.ar/data.json*.
 
 Ejemplos de metadatos de un **catálogo**:
 
@@ -1228,6 +1196,10 @@ Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con serie
   "specialTypeDetail": "R/P1Y"
 }
 ```
+
+## Glosario
+
+Ver [Glosario](glosario.md)
 
 ## Anexo I - Taxonomía temática global de la APN para los datasets (tabla)
 

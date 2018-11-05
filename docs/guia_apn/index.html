@@ -1,0 +1,804 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Recursos para la apertura de datos públicos nacionales y sub-nacionales en Argentina.">
+      
+      
+        <link rel="canonical" href="https://datosgobar.github.io/paquete-apertura-datos/guia_apn/">
+      
+      
+        <meta name="author" content="Datos Argentina">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
+    
+    
+      
+        <title>Guía para la apertura de datos en organismos de la Administración Pública Nacional - Paquete de Apertura de Datos de la República Argentina</title>
+      
+    
+    
+	
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+	<link rel="stylesheet" href="../css/extra.css">
+
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    <script src="../js/extra.js"></script>
+
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../css/extra_rtd.css">
+    
+      <link rel="stylesheet" href="../css/table_styles.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#guia-para-la-apertura-de-datos-en-organismos-de-la-administracion-publica-nacional" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://datosgobar.github.io/paquete-apertura-datos" title="Paquete de Apertura de Datos de la República Argentina" class="md-header-nav__button md-logo">
+          
+            <img src="../images/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Paquete de Apertura de Datos de la República Argentina
+              </span>
+              <span class="md-header-nav__topic">
+                Guía para la apertura de datos en organismos de la Administración Pública Nacional
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Escriba para comenzar la búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+        <!-- Site title -->
+        <label class="md-nav__title md-nav__title--site" for="__drawer">
+          <a href="https://datosgobar.github.io/paquete-apertura-datos"
+              title="Paquete de Apertura de Datos de la República Argentina" class="md-nav__button md-logo">
+            
+              <img src="../images/logo.svg" width="48" height="48" />
+            
+          </a>
+          Paquete de Apertura de Datos de la República Argentina
+        </label>
+      
+        <!-- Repository containing source -->
+        
+          <div class="md-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        
+      
+        <!-- Render item list -->
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href="https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf" title="Material introductorio" class="md-nav__link">
+      Material introductorio
+    </a>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Guías de buenas prácticas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Guías de buenas prácticas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guia_abiertos/" title="Guía para la publicación de datos en formatos abiertos" class="md-nav__link">
+      Guía para la publicación de datos en formatos abiertos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guia_interoperables/" title="Guía para la identificación y uso de entidades interoperables" class="md-nav__link">
+      Guía para la identificación y uso de entidades interoperables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guia_metadatos/" title="Guía para el uso y la publicación de metadatos" class="md-nav__link">
+      Guía para el uso y la publicación de metadatos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Guías de implementación
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Guías de implementación
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="http://datos.gob.ar/acerca/seccion/Public%C3%A1%20datos" title="Guía para la apertura de datos en organismos de la Administración Pública Nacional" class="md-nav__link">
+      Guía para la apertura de datos en organismos de la Administración Pública Nacional
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guia_subnacionales/" title="Guía para la apertura de datos en gobiernos subnacionales" class="md-nav__link">
+      Guía para la apertura de datos en gobiernos subnacionales
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href="../glosario/" title="Glosario" class="md-nav__link">
+      Glosario
+    </a>
+  </li>
+
+            <hr/>
+          
+        </ul>
+      </nav>
+      
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" title="Indice" class="md-nav__link">
+    Indice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" title="Introducción" class="md-nav__link">
+    Introducción
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" title="Objetivo" class="md-nav__link">
+    Objetivo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datos-abiertos-que-son-y-por-que-tu-organismo-quiere-abrirlos" title="Datos abiertos: qué son y por qué tu organismo quiere abrirlos" class="md-nav__link">
+    Datos abiertos: qué son y por qué tu organismo quiere abrirlos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-publica-en-datosgobar" title="1. Publicá en datos.gob.ar" class="md-nav__link">
+    1. Publicá en datos.gob.ar
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crea-un-catalogo-de-datos-abiertos" title="Creá un catálogo de datos abiertos" class="md-nav__link">
+    Creá un catálogo de datos abiertos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documenta-tus-datos" title="Documentá tus datos" class="md-nav__link">
+    Documentá tus datos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-datos-documento" title="¿Qué datos documento?" class="md-nav__link">
+    ¿Qué datos documento?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tengo-datos-en-archivos-pdf" title="Tengo datos en archivos PDF" class="md-nav__link">
+    Tengo datos en archivos PDF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tengo-datos-en-tablas-html-paginas-web" title="Tengo datos en tablas HTML (páginas web)" class="md-nav__link">
+    Tengo datos en tablas HTML (páginas web)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tengo-presentaciones-informes-libros" title="Tengo presentaciones, informes, libros..." class="md-nav__link">
+    Tengo presentaciones, informes, libros...
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suma-tu-catalogo-a-datosgobar" title="Sumá tu catálogo a datos.gob.ar" class="md-nav__link">
+    Sumá tu catálogo a datos.gob.ar
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mejora-la-calidad-de-tus-datos" title="2. Mejorá la calidad de tus datos" class="md-nav__link">
+    2. Mejorá la calidad de tus datos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparti-tus-datos-en-formatos-abiertos" title="Compartí tus datos en formatos abiertos" class="md-nav__link">
+    Compartí tus datos en formatos abiertos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normaliza-y-enriquece-tus-datos" title="Normalizá y enriquecé tus datos" class="md-nav__link">
+    Normalizá y enriquecé tus datos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-publica-datos-como-un-servicio" title="3. Publicá datos como un servicio" class="md-nav__link">
+    3. Publicá datos como un servicio
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documenta-y-comparti-tus-servicios-de-datos" title="Documentá y compartí tus servicios de datos" class="md-nav__link">
+    Documentá y compartí tus servicios de datos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suma-tus-datos-a-la-api-de-series-de-tiempo" title="Sumá tus datos a la API de Series de Tiempo" class="md-nav__link">
+    Sumá tus datos a la API de Series de Tiempo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tenes-dudas-escribinos" title="¿Tenés dudas? Escribinos" class="md-nav__link">
+    ¿Tenés dudas? Escribinos
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/datosgobar/paquete-apertura-datos/edit/master/docs/guia_apn.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="guia-para-la-apertura-de-datos-en-organismos-de-la-administracion-publica-nacional"><a class="toclink" href="#guia-para-la-apertura-de-datos-en-organismos-de-la-administracion-publica-nacional">Guía para la apertura de datos en organismos de la Administración Pública Nacional</a><a class="headerlink" href="#guia-para-la-apertura-de-datos-en-organismos-de-la-administracion-publica-nacional" title="Permanent link">&#128279;</a></h1>
+<h2 id="indice"><a class="toclink" href="#indice">Indice</a><a class="headerlink" href="#indice" title="Permanent link">&#128279;</a></h2>
+<h2 id="introduccion"><a class="toclink" href="#introduccion">Introducción</a><a class="headerlink" href="#introduccion" title="Permanent link">&#128279;</a></h2>
+<p>Esta guía busca orientar a los organismos a través de los pasos a seguir para instrumentar la Política de Datos Abiertos impulsada desde el Gobierno de la Nación Argentina, a través del Decreto N° 117/2016 del 12 de enero de 2016.</p>
+<h3 id="objetivo"><a class="toclink" href="#objetivo">Objetivo</a><a class="headerlink" href="#objetivo" title="Permanent link">&#128279;</a></h3>
+<p>El objetivo de esta guía es que los organismos de la Administración Pública Nacional alcanzados por el Decreto N° 117/2016, encuentren todos los recursos necesarios para:</p>
+<ol>
+<li>Publicar sus datos en datos.gob.ar</li>
+<li>Mejorar la calidad de sus datos</li>
+<li>Publicar datos como un servicio</li>
+<li>Identificar nuevos activos de datos a publicar</li>
+</ol>
+<h3 id="datos-abiertos-que-son-y-por-que-tu-organismo-quiere-abrirlos"><a class="toclink" href="#datos-abiertos-que-son-y-por-que-tu-organismo-quiere-abrirlos">Datos abiertos: qué son y por qué tu organismo quiere abrirlos</a><a class="headerlink" href="#datos-abiertos-que-son-y-por-que-tu-organismo-quiere-abrirlos" title="Permanent link">&#128279;</a></h3>
+<p>Los datos públicos son todos aquellos que el sector público genera y/o administra para el cumplimiento de sus misiones y funciones. No todos los datos públicos <em>están publicados</em>; y no es lo mismo <em>publicar datos</em> que <em>abrir datos</em>.</p>
+<p>La diferencia entre un dato <em>publicado</em> y uno <em>abierto</em> es <strong>todo lo que hace que el dato público sea valioso y fácil de reutilizar</strong> por terceros dentro y fuera del sector público, o incluso por uno mismo:</p>
+<ul>
+<li>Que sea fácil de encontrar.</li>
+<li>Que sea fácil de usar por distintos usuarios, para distintos usos y mediante distintas herramientas.</li>
+<li>Que se pueda cruzar con otros datos (públicos o no, abiertos o no).</li>
+<li>Que se pueda integrar en sistemas y aplicaciones.</li>
+</ul>
+<p>Abrir los datos de tu organismo te ayuda a:</p>
+<ul>
+<li>Bajar los costos de compartir datos.</li>
+<li>Organizar tu flujo de trabajo con datos.</li>
+<li>Transparentar la gestión.</li>
+<li>Promover la generación de valor agregado por terceros.</li>
+</ul>
+<p>Si querés saber más sobre datos abiertos podés consultar nuestro <strong><a href="https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf">Kit de Datos Abiertos</a></strong>.</p>
+<h2 id="1-publica-en-datosgobar"><a class="toclink" href="#1-publica-en-datosgobar">1. Publicá en datos.gob.ar</a><a class="headerlink" href="#1-publica-en-datosgobar" title="Permanent link">&#128279;</a></h2>
+<p>El Portal Nacional de Datos Abiertos (<strong><a href="http://datos.gob.ar">datos.gob.ar</a></strong>) es el punto de acceso para buscar y acceder fácilmente a los datos que publican los organismos de la Administración Pública Nacional.</p>
+<p>Si querés incorporar los datos de tu organismo al Portal Nacional, acá te contamos los pasos del proceso para hacerlo:</p>
+<h3 id="crea-un-catalogo-de-datos-abiertos"><a class="toclink" href="#crea-un-catalogo-de-datos-abiertos">Creá un catálogo de datos abiertos</a><a class="headerlink" href="#crea-un-catalogo-de-datos-abiertos" title="Permanent link">&#128279;</a></h3>
+<p>El primer paso para incorporarte a datos.gob.ar es inventariar los datos que tenés y dónde están alojados, y para eso necesitamos que confecciones un catálogo de datos.</p>
+<p>Un catálogo de datos abiertos es una lista de activos de datos y sus metadatos, que te describen qué son y cómo podés usarlos. <strong>Facilita encontrar y entender los datos publicados por organismos del Estado</strong>.</p>
+<p>Para armar un catálogo, no necesitás tener un portal web; podés crearlo de varias maneras:</p>
+<ul>
+<li><strong>Instalando un Portal Andino</strong>. Instalando un portal web de datos abiertos (Ej: <a href="https://datos.agroindustria.gob.ar">https://datos.agroindustria.gob.ar</a> - portal de datos abiertos del Ministerio de Agroindustria). Leé más sobre qué es y cómo instalar <strong><a href="http://andino.datos.gob.ar/">Portal Andino</a></strong>.</li>
+<li><strong>Completando un Excel</strong>. Subiendo un archivo Excel a una URL (Ej: <a href="http://estadisticas.produccion.gob.ar/catalogo.xlsx">http://estadisticas.produccion.gob.ar/catalogo.xlsx</a> - catálogo de la Secretaría de Transformación Productiva).</li>
+<li><strong>Generando un JSON</strong>. Generando y subiendo un archivo JSON a una URL (Ej: <a href="https://www.presupuestoabierto.gob.ar/datasets/data.json">https://www.presupuestoabierto.gob.ar/datasets/data.json</a> - catálogo de la Subsecretaría de Presupuesto). Esto podrías hacerlo mediante una aplicación propia, otro portal de datos abiertos, etc.</li>
+</ul>
+<p>Ver más <a href="http://infra.datos.gob.ar/catalog/modernizacion/dataset/8/distribution/8.1/download/nodos.csv">ejemplos de catálogos</a>.</p>
+<p>Leé más sobre cómo <a href="https://datosgobar.github.io/paquete-apertura-datos/guia_metadatos/#otros-catalogos">crear un catálogo sin usar Portal Andino</a>.</p>
+<h3 id="documenta-tus-datos"><a class="toclink" href="#documenta-tus-datos">Documentá tus datos</a><a class="headerlink" href="#documenta-tus-datos" title="Permanent link">&#128279;</a></h3>
+<p><strong>Para que los datos sean abiertos, es fundamental documentarlos</strong> como <em>datasets</em> en tu catálogo de datos abiertos.</p>
+<h4 id="que-datos-documento"><a class="toclink" href="#que-datos-documento">¿Qué datos documento?</a><a class="headerlink" href="#que-datos-documento" title="Permanent link">&#128279;</a></h4>
+<p><strong>Todos los archivos de datos, servicios web de datos y aplicaciones web diseñadas para la descarga de datos</strong> que tu organismo tiene en su propiedad digital en internet o en <a href="https://www.argentina.gob.ar/">argentina.gob.ar</a> son datos públicos que esperan ser abiertos.</p>
+<p><strong>Los archivos XLSX, CSV, DTA, SAV, JSON, SHP y otros formatos tabulares</strong> que tu organismo tenga en línea, son activos de datos a documentar en el catálogo.</p>
+<p><strong>Las aplicaciones web</strong> diseñadas para la consulta y descarga de datos también deben documentarse, como paso previo a generar archivos que permitan descargar el total de la base de datos detrás de la aplicación en lugar de tener que hacer numerosas consultas.</p>
+<p><strong>Las APIs de datos</strong> deben tener documentación técnica en línea que explique cómo y bajo qué condiciones pueden usarse (se puede generar con Read The Docs u OpenAPI, por ejemplo). En el catálogo de datos abiertos debe registrarse el link a esa documentación técnica.</p>
+<h4 id="tengo-datos-en-archivos-pdf"><a class="toclink" href="#tengo-datos-en-archivos-pdf">Tengo datos en archivos PDF</a><a class="headerlink" href="#tengo-datos-en-archivos-pdf" title="Permanent link">&#128279;</a></h4>
+<p>El formato PDF es útil para la publicación de documentos, informes y todo tipo de información, pero <strong>no para la publicación de datos</strong>.</p>
+<p>Los datos en archivos PDF no se pueden procesar automáticamente de una manera confiable y estable, obligando al usuario a realizar mucho trabajo manual para estructurar los datos para su uso. Esto hace muy costoso su reutilización y  actualización posterior.</p>
+<p>Muchas veces estos archivos PDF son generados a partir de tablas en Excel (u otras planillas de cálculo) o bases de datos. ¡En este caso la solución es fácil! Se puede publicar directamente la planilla de cálculo o la base de datos, o incluso implementar un proceso para generar un archivo CSV automáticamente.</p>
+<h4 id="tengo-datos-en-tablas-html-paginas-web"><a class="toclink" href="#tengo-datos-en-tablas-html-paginas-web">Tengo datos en tablas HTML (páginas web)</a><a class="headerlink" href="#tengo-datos-en-tablas-html-paginas-web" title="Permanent link">&#128279;</a></h4>
+<p>Las tablas HTML son mejores que los archivos PDF para la publicación de datos, pero aún así no son sencillas de utilizar por la mayoría de los usuarios.</p>
+<p>Afortunadamente si tu organismo publica tablas en HTML es muy probable que haya una base de datos, archivo tabular o algún proceso automático detrás. Sólo hay que contactarse con el área que mantiene la página web para que genere y publique la tabla también en un archivo tabular como CSV.</p>
+<h4 id="tengo-presentaciones-informes-libros"><a class="toclink" href="#tengo-presentaciones-informes-libros">Tengo presentaciones, informes, libros...</a><a class="headerlink" href="#tengo-presentaciones-informes-libros" title="Permanent link">&#128279;</a></h4>
+<p>Todos estos documentos <strong>no son datos, son información</strong>. Tal vez hubo datos procesados para generarlos, o tal vez están más enfocados en otro tipo de contenido.</p>
+<p>En cualquier caso, <strong>no se espera encontrar este tipo de elementos en un catálogo de datos abiertos</strong>. El usuario busca datos que pueda re-procesar por él mismo, para generar contenido o aplicaciones diferentes.</p>
+<p>Leé más sobre cómo documentar tus datos en nuestra <strong><a href="https://datosgobar.github.io/paquete-apertura-datos/guia_metadatos/">Guía para el uso y la publicación de metadatos</a></strong>.</p>
+<p>El <a href="https://datosgobar.github.io/">equipo de Datos</a> del Ministerio de Modernización está para ayudarte en este proceso contactanos a <a href="mailto:datos@modernizacion.gob.ar">datos@modernizacion.gob.ar</a> para que te asistamos en cómo hacerlo mejor y cómo planificar tus próximos pasos.</p>
+<h3 id="suma-tu-catalogo-a-datosgobar"><a class="toclink" href="#suma-tu-catalogo-a-datosgobar">Sumá tu catálogo a datos.gob.ar</a><a class="headerlink" href="#suma-tu-catalogo-a-datosgobar" title="Permanent link">&#128279;</a></h3>
+<p>Si tu catálogo cumple con el <strong><a href="https://datosgobar.github.io/paquete-apertura-datos/guia_metadatos/#campos-del-perfil">Perfil Nacional de Metadatos para Datos Abiertos</a></strong> puede integrarse a datos.gob.ar. Cualquier modificación en tu catálogo se verá reflejada automáticamente en datos.gob.ar.</p>
+<ul>
+<li>Escribinos a <a href="mailto:datos@modernizacion.gob.ar">datos@modernizacion.gob.ar</a> con la URL de tu catálogo para que te sumemos a <strong><a href="http://datos.gob.ar">datos.gob.ar</a></strong>.</li>
+<li>Si sos desarrollador, y querés ver si tu catalogo está listo para estar en datos.gob.ar <a href="https://pydatajson.readthedocs.io/es/stable/MANUAL.html#validacion">validalo con <strong>pydatajson</strong></a>.</li>
+</ul>
+<p>A partir de que nos enviás la URL de tu catálogo, el equipo de Datos Argentina analiza cada dataset nuevo que publicás y te ayuda a mejorar la calidad de sus datos y metadatos, antes de agregarlo a <strong><a href="http://datos.gob.ar">datos.gob.ar</a></strong>.</p>
+<p>Generalmente recomendamos <strong>trabajar primero en la documentación de 1 dataset del organismo y publicarlo en un primer catálogo de prueba</strong> en una URL pública. Esto nos permite probar cómo funcionaría en datos.gob.ar y <strong>darte una devolución lo antes posible</strong>, facilitando el trabajo de documentar el resto de los datasets.</p>
+<p>Ahora que ya estás publicando, te proponemos trabajar en la calidad de tu datos.</p>
+<h2 id="2-mejora-la-calidad-de-tus-datos"><a class="toclink" href="#2-mejora-la-calidad-de-tus-datos">2. Mejorá la calidad de tus datos</a><a class="headerlink" href="#2-mejora-la-calidad-de-tus-datos" title="Permanent link">&#128279;</a></h2>
+<p>Una vez que tenés un catálogo de datos abiertos podés mejorar la calidad de tus datos siguiendo buenas prácticas.</p>
+<h3 id="comparti-tus-datos-en-formatos-abiertos"><a class="toclink" href="#comparti-tus-datos-en-formatos-abiertos">Compartí tus datos en formatos abiertos</a><a class="headerlink" href="#comparti-tus-datos-en-formatos-abiertos" title="Permanent link">&#128279;</a></h3>
+<p>La diferencia entre un dato <em>publicado</em> y uno <em>abierto</em> es que este debe ser fácil de utilizar por distintos usuarios, para distintos usos y mediante distintas herramientas.</p>
+<p>Leé sobre cómo publicar en formatos abiertos en nuestra <strong><a href="https://datosgobar.github.io/paquete-apertura-datos/guia_abiertos/">Guía para la publicación de datos en formatos abiertos</a></strong>.</p>
+<p>Si sos desarrollador y querés implementar rutinas de transformación y limpieza de datos que sigan estas buenas prácticas, podés usar <strong><a href="http://data-cleaner.readthedocs.io/">Data Cleaner</a></strong>.</p>
+<h3 id="normaliza-y-enriquece-tus-datos"><a class="toclink" href="#normaliza-y-enriquece-tus-datos">Normalizá y enriquecé tus datos</a><a class="headerlink" href="#normaliza-y-enriquece-tus-datos" title="Permanent link">&#128279;</a></h3>
+<p>Para que tus datos se puedan cruzar fácilmente con otros es necesario que sigas estándares para llamar a las mismas cosas, de la misma manera.</p>
+<p>Leé sobre cómo estandarizar tus datos en nuestra <strong><a href="https://datosgobar.github.io/paquete-apertura-datos/guia_interoperables/">Guía para la identificación y uso de entidades interoperables</a></strong>.</p>
+<p>Si tenés datos con provincias, departamentos, municipios, localidades, calles o coordenadas podés usar la <strong><a href="http://apis.datos.gob.ar/georef/">API del Servicio de Normalización de Datos Geográficos</a></strong> para normalizar o enriquecer entidades geográficas de la Argentina.</p>
+<h2 id="3-publica-datos-como-un-servicio"><a class="toclink" href="#3-publica-datos-como-un-servicio">3. Publicá datos como un servicio</a><a class="headerlink" href="#3-publica-datos-como-un-servicio" title="Permanent link">&#128279;</a></h2>
+<p>Publicar datos como un servicio web es un paso más hacia facilitar y potenciar la reutilización de tus datos por parte de analistas, programadores y otros organismos.</p>
+<p>Un servicio web es una URL configurable que te permite hacer consultas personalizadas a una base de datos, y actualizarlas fácilmente cuantas veces quieras.</p>
+<p>Si ya tenés un servicio de datos, <strong>leé nuestras recomendaciones para documentarlo y compartirlo</strong>.</p>
+<p>Si no tenés un servicio pero publicas series estadísticas, podés <strong>sumarlas a la API de Series de Tiempo de la República Argentina</strong>.</p>
+<h3 id="documenta-y-comparti-tus-servicios-de-datos"><a class="toclink" href="#documenta-y-comparti-tus-servicios-de-datos">Documentá y compartí tus servicios de datos</a><a class="headerlink" href="#documenta-y-comparti-tus-servicios-de-datos" title="Permanent link">&#128279;</a></h3>
+<p>Si tenés un servicio de datos que querés compartir públicamente:</p>
+<ul>
+<li>Hace que sea más fácil de usar: documentá la interfaz y sus funcionalidades, escribí ejemplos de uso, sé lo más claro posible con los términos de uso. (Ej.: <strong><a href="http://apis.datos.gob.ar/series/">Series de Tiempo</a></strong>, <strong><a href="http://apis.datos.gob.ar/georef/">Servicio de Normalización de Datos Geográficos</a></strong>)</li>
+</ul>
+<p>Te recomendamos revisar <a href="http://apis.datos.gob.ar/series/">Read the Docs</a> y <a href="https://swagger.io/">OpenAPI</a> como soporte para tu documentación, podés ver nuestro <a href="https://github.com/datosgobar/series-tiempo-ar-api">ejemplo de Series de Tiempo</a> y nuestro <a href="https://github.com/datosgobar/georef-ar-api">ejemplo del Servicio de Normalización de Datos Geográficos</a>.</p>
+<ul>
+<li>Ayudá a que sea fácil de encontrar: sumá la URL de la documentación del servicio al catálogo de datos de tu organismo e <a href="https://datosgobar.github.io/paquete-apertura-datos/guia_metadatos/#distribucion-distribution">indicá que es una API en tus metadatos</a>.</li>
+<li>Cuidá tu infraestructura: publicá la base de datos completa en formatos abiertos junto con el servicio (Ej.: <a href="http://datos.gob.ar/dataset/modernizacion-base-series-tiempo-administracion-publica-nacional">dataset de Series de Tiempo</a>).</li>
+</ul>
+<h3 id="suma-tus-datos-a-la-api-de-series-de-tiempo"><a class="toclink" href="#suma-tus-datos-a-la-api-de-series-de-tiempo">Sumá tus datos a la API de Series de Tiempo</a><a class="headerlink" href="#suma-tus-datos-a-la-api-de-series-de-tiempo" title="Permanent link">&#128279;</a></h3>
+<p>Si publicás indicadores o estadísticas con evolución cronológica (como el <a href="http://datos.gob.ar/series/api/series/?ids=143.3_NO_PR_2004_A_21">nivel de actividad</a>), podés sumarlos fácilmente a la <strong><a href="http://apis.datos.gob.ar/series/">API de Series de Tiempo de la República Argentina</a></strong> y:</p>
+<ul>
+<li>Visualizarlas en el <strong><a href="http://datos.gob.ar/series">Explorador de Series de Tiempo</a></strong> y compartir tus gráficos.</li>
+<li><a href="https://datosgobar.github.io/series-tiempo-ar-api/spreadsheet_integration/">Integrar consultas a tus datos en planillas de cálculo</a>.</li>
+<li><a href="https://datosgobar.github.io/series-tiempo-ar-api/python_usage/">Programar consultas a tus datos</a> en distintos lenguajes.</li>
+<li>Armar tableros de seguimiento como <a href="https://datosgobar.github.io/series-tiempo-ar-landing/">este ejemplo</a> usando <a href="https://github.com/datosgobar/series-tiempo-ar-landing">este proyecto</a>.</li>
+</ul>
+<p>Para sumar tus series a la API:</p>
+<ul>
+<li>Publicá tus indicadores o estadísticas en archivos CSV, siguiendo <a href="https://datosgobar.github.io/paquete-apertura-datos/guia_metadatos/#distribucion-de-series-de-tiempo">este formato estándar</a>.</li>
+<li><a href="https://datosgobar.github.io/paquete-apertura-datos/guia_metadatos/#documentar-un-dataset-de-series-de-tiempo">Documentá tus archivos CSV con series de tiempo</a> en tu <strong>catálogo de datos abiertos</strong>.</li>
+<li><a href="mailto:datos@modernizacion.gob.ar">Avisanos que tu catálogo tiene series de tiempo</a>, para que lo agreguemos a la API.</li>
+</ul>
+<p>Si sos desarrollador, tenés tus series de tiempo en archivos Excel y es difícil convertirlos al formato estándar en CSV, podés usar el <strong><a href="https://github.com/datosgobar/series-tiempo-ar-scraping">Scraper de Series de Tiempo</a></strong>.</p>
+<p>Si querés explorar nuevas formas de usar la API de Series de Tiempo para automatizar reportes, análisis, visualizaciones o desarrollar aplicaciones web, mirá <a href="https://github.com/datosgobar/taller-series-tiempo-mediaparty-2018">este taller</a>.</p>
+<h2 id="tenes-dudas-escribinos"><a class="toclink" href="#tenes-dudas-escribinos">¿Tenés dudas? Escribinos</a><a class="headerlink" href="#tenes-dudas-escribinos" title="Permanent link">&#128279;</a></h2>
+<p>Para comenzar te recomendamos leer nuestro <a href="https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf">Kit de Datos Abiertos</a>. También podés <a href="mailto:datos@modernizacion.gob.ar">contactarnos</a>.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

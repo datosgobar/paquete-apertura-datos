@@ -94,13 +94,13 @@ pypi: ## register the package to PyPi get travis ready to deploy to pip
 
 doctoc: ## generate table of contents, doctoc command line tool required
         ## https://github.com/thlorenz/doctoc
-	doctoc --github --title "## Indice" docs/guia_abiertos.md
+	doctoc --gitlab --title "## Indice" docs/guia_abiertos.md
 	bash fix_github_links.sh docs/guia_abiertos.md
-	doctoc --github --title "## Indice" docs/guia_interoperables.md
+	doctoc --gitlab --title "## Indice" docs/guia_interoperables.md
 	bash fix_github_links.sh docs/guia_interoperables.md
-	doctoc --github --title "## Indice" docs/guia_metadatos.md
-	bash fix_github_links.sh docs/guia_metadatos.md
-	doctoc --github --title "## Indice" docs/glosario.md
+	# doctoc --gitlab --title "## Indice" docs/guia_metadatos.md
+	# bash fix_github_links.sh docs/guia_metadatos.md
+	doctoc --gitlab --title "## Indice" docs/glosario.md
 	bash fix_github_links.sh docs/glosario.md
 
 serve:

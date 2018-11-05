@@ -16,7 +16,8 @@ import pdfkit
 def main(input_path, output_path):
     with open(input_path) as input_file:
         html = markdown.markdown(input_file.read())
-        pdfkit.from_string(html, output_path, options={"encoding": "utf8"})
+        pdfkit.from_string(html, output_path, options={"encoding": "utf8"},
+                           css="docs/css/pdf.css")
 
 
 if __name__ == '__main__':

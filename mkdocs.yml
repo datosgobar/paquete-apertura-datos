@@ -22,7 +22,6 @@ theme: datosgobar_docs
 # # extensiones recomendadas con este theme
 markdown_extensions:
   - markdown.extensions.toc:
-      title: 'Lista de contenidos'
       anchorlink: true
       permalink: '&#128279;'
   - fenced_code

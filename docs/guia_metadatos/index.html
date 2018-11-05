@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -19,21 +19,21 @@
         <meta name="author" content="Datos Argentina">
       
       
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
       
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
       
-        <meta name="lang:search.language" content="en">
+        <meta name="lang:search.language" content="es">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
         <meta name="lang:search.pipeline.trimmer" content="True">
       
-        <meta name="lang:search.result.none" content="No matching documents">
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
       
-        <meta name="lang:search.result.one" content="1 matching document">
+        <meta name="lang:search.result.one" content="1 documento encontrado">
       
-        <meta name="lang:search.result.other" content="# matching documents">
+        <meta name="lang:search.result.other" content="# documentos encontrados">
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
@@ -106,8 +106,8 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#indice" tabindex="1" class="md-skip">
-        Skip to content
+      <a href="#guia-para-el-uso-y-la-publicacion-de-metadatos" tabindex="1" class="md-skip">
+        Saltar a contenido
       </a>
     
     
@@ -147,7 +147,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
@@ -157,7 +157,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="result">
           <div class="md-search-result__meta">
-            Type to start searching
+            Escriba para comenzar la búsqueda
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -177,7 +177,7 @@
   
 
 
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -254,7 +254,7 @@
   
 
 
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -358,9 +358,311 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Guía para el uso y la publicación de metadatos
+      </label>
+    
     <a href="./" title="Guía para el uso y la publicación de metadatos" class="md-nav__link md-nav__link--active">
       Guía para el uso y la publicación de metadatos
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" title="Introducción" class="md-nav__link">
+    Introducción
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version" title="Versión" class="md-nav__link">
+    Versión
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" title="Objetivo" class="md-nav__link">
+    Objetivo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-son-los-metadatos" title="¿Qué son los metadatos?" class="md-nav__link">
+    ¿Qué son los metadatos?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-se-publican-los-metadatos" title="¿Cómo se publican los metadatos?" class="md-nav__link">
+    ¿Cómo se publican los metadatos?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publico-objetivo-de-esta-guia" title="Público objetivo de esta guía" class="md-nav__link">
+    Público objetivo de esta guía
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-catalogo-de-datos-abiertos" title="Crear un catálogo de datos abiertos" class="md-nav__link">
+    Crear un catálogo de datos abiertos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#excel" title="Excel" class="md-nav__link">
+    Excel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portal-andino" title="Portal Andino" class="md-nav__link">
+    Portal Andino
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otros-catalogos" title="Otros catálogos" class="md-nav__link">
+    Otros catálogos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#perfil-de-metadatos" title="Perfil de Metadatos" class="md-nav__link">
+    Perfil de Metadatos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estandar-usado" title="Estándar usado" class="md-nav__link">
+    Estándar usado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campos-del-perfil" title="Campos del perfil" class="md-nav__link">
+    Campos del perfil
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#catalogo-catalog" title="Catálogo (catalog)" class="md-nav__link">
+    Catálogo (catalog)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-dataset" title="Dataset (dataset)" class="md-nav__link">
+    Dataset (dataset)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-distribution" title="Distribución (distribution)" class="md-nav__link">
+    Distribución (distribution)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-field" title="Campo (field)" class="md-nav__link">
+    Campo (field)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-theme" title="Tema (theme)" class="md-nav__link">
+    Tema (theme)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensiones-especiales" title="Extensiones especiales" class="md-nav__link">
+    Extensiones especiales
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#series-de-tiempo" title="Series de tiempo" class="md-nav__link">
+    Series de tiempo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-de-series-de-tiempo" title="Distribución de series de tiempo" class="md-nav__link">
+    Distribución de series de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-especial-indice-de-tiempo" title="Tipo especial: indice de tiempo" class="md-nav__link">
+    Tipo especial: indice de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentar-un-dataset-de-series-de-tiempo" title="Documentar un dataset de series de tiempo" class="md-nav__link">
+    Documentar un dataset de series de tiempo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-dataset-series-de-tiempo" title="Dataset (dataset) - series de tiempo" class="md-nav__link">
+    Dataset (dataset) - series de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-distribution-series-de-tiempo" title="Distribución (distribution) - series de tiempo" class="md-nav__link">
+    Distribución (distribution) - series de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-field-series-de-tiempo" title="Campo (field) - series de tiempo" class="md-nav__link">
+    Campo (field) - series de tiempo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glosario" title="Glosario" class="md-nav__link">
+    Glosario
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla" title="Anexo I - Taxonomía temática global de la APN para los datasets (tabla)" class="md-nav__link">
+    Anexo I - Taxonomía temática global de la APN para los datasets (tabla)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas" title="Anexo II - Pautas para la selección de etiquetas" class="md-nav__link">
+    Anexo II - Pautas para la selección de etiquetas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601" title="Anexo III - Especificación de frecuencias (según ISO-8601)" class="md-nav__link">
+    Anexo III - Especificación de frecuencias (según ISO-8601)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-iv-ejemplo-de-datajson" title="Anexo IV - Ejemplo de data.json" class="md-nav__link">
+    Anexo IV - Ejemplo de data.json
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json" title="Anexo V - Taxonomía temática global de la APN para los datasets (JSON)" class="md-nav__link">
+    Anexo V - Taxonomía temática global de la APN para los datasets (JSON)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-vi-ejemplo-de-metadatos-como-texto" title="Anexo VI - Ejemplo de metadatos como texto" class="md-nav__link">
+    Anexo VI - Ejemplo de metadatos como texto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo" title="Anexo VII - Ejemplo de data.json con series de tiempo" class="md-nav__link">
+    Anexo VII - Ejemplo de data.json con series de tiempo
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -451,6 +753,295 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" title="Introducción" class="md-nav__link">
+    Introducción
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version" title="Versión" class="md-nav__link">
+    Versión
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" title="Objetivo" class="md-nav__link">
+    Objetivo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-son-los-metadatos" title="¿Qué son los metadatos?" class="md-nav__link">
+    ¿Qué son los metadatos?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-se-publican-los-metadatos" title="¿Cómo se publican los metadatos?" class="md-nav__link">
+    ¿Cómo se publican los metadatos?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publico-objetivo-de-esta-guia" title="Público objetivo de esta guía" class="md-nav__link">
+    Público objetivo de esta guía
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-catalogo-de-datos-abiertos" title="Crear un catálogo de datos abiertos" class="md-nav__link">
+    Crear un catálogo de datos abiertos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#excel" title="Excel" class="md-nav__link">
+    Excel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portal-andino" title="Portal Andino" class="md-nav__link">
+    Portal Andino
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otros-catalogos" title="Otros catálogos" class="md-nav__link">
+    Otros catálogos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#perfil-de-metadatos" title="Perfil de Metadatos" class="md-nav__link">
+    Perfil de Metadatos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estandar-usado" title="Estándar usado" class="md-nav__link">
+    Estándar usado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campos-del-perfil" title="Campos del perfil" class="md-nav__link">
+    Campos del perfil
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#catalogo-catalog" title="Catálogo (catalog)" class="md-nav__link">
+    Catálogo (catalog)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-dataset" title="Dataset (dataset)" class="md-nav__link">
+    Dataset (dataset)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-distribution" title="Distribución (distribution)" class="md-nav__link">
+    Distribución (distribution)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-field" title="Campo (field)" class="md-nav__link">
+    Campo (field)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-theme" title="Tema (theme)" class="md-nav__link">
+    Tema (theme)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensiones-especiales" title="Extensiones especiales" class="md-nav__link">
+    Extensiones especiales
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#series-de-tiempo" title="Series de tiempo" class="md-nav__link">
+    Series de tiempo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-de-series-de-tiempo" title="Distribución de series de tiempo" class="md-nav__link">
+    Distribución de series de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-especial-indice-de-tiempo" title="Tipo especial: indice de tiempo" class="md-nav__link">
+    Tipo especial: indice de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentar-un-dataset-de-series-de-tiempo" title="Documentar un dataset de series de tiempo" class="md-nav__link">
+    Documentar un dataset de series de tiempo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-dataset-series-de-tiempo" title="Dataset (dataset) - series de tiempo" class="md-nav__link">
+    Dataset (dataset) - series de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-distribution-series-de-tiempo" title="Distribución (distribution) - series de tiempo" class="md-nav__link">
+    Distribución (distribution) - series de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-field-series-de-tiempo" title="Campo (field) - series de tiempo" class="md-nav__link">
+    Campo (field) - series de tiempo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glosario" title="Glosario" class="md-nav__link">
+    Glosario
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla" title="Anexo I - Taxonomía temática global de la APN para los datasets (tabla)" class="md-nav__link">
+    Anexo I - Taxonomía temática global de la APN para los datasets (tabla)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas" title="Anexo II - Pautas para la selección de etiquetas" class="md-nav__link">
+    Anexo II - Pautas para la selección de etiquetas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601" title="Anexo III - Especificación de frecuencias (según ISO-8601)" class="md-nav__link">
+    Anexo III - Especificación de frecuencias (según ISO-8601)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-iv-ejemplo-de-datajson" title="Anexo IV - Ejemplo de data.json" class="md-nav__link">
+    Anexo IV - Ejemplo de data.json
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json" title="Anexo V - Taxonomía temática global de la APN para los datasets (JSON)" class="md-nav__link">
+    Anexo V - Taxonomía temática global de la APN para los datasets (JSON)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-vi-ejemplo-de-metadatos-como-texto" title="Anexo VI - Ejemplo de metadatos como texto" class="md-nav__link">
+    Anexo VI - Ejemplo de metadatos como texto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo" title="Anexo VII - Ejemplo de data.json con series de tiempo" class="md-nav__link">
+    Anexo VII - Ejemplo de data.json con series de tiempo
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -461,69 +1052,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/datosgobar/paquete-apertura-datos/edit/master/docs/guia_metadatos.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/datosgobar/paquete-apertura-datos/edit/master/docs/guia_metadatos.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="guia-para-el-uso-y-la-publicacion-de-metadatos"><a class="toclink" href="#guia-para-el-uso-y-la-publicacion-de-metadatos">Guía para el uso y la publicación de metadatos</a><a class="headerlink" href="#guia-para-el-uso-y-la-publicacion-de-metadatos" title="Permanent link">&#128279;</a></h1>
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-<h2 id="indice"><a class="toclink" href="#indice">Indice</a><a class="headerlink" href="#indice" title="Permanent link">&#128279;</a></h2>
-<ul>
-<li><a href="#version">Versión</a></li>
-<li><a href="#glosario">Glosario</a></li>
-<li><a href="#introduccion">Introducción</a></li>
-<li><a href="#objetivo-de-esta-guia">Objetivo de esta guía</a></li>
-<li><a href="#que-son-los-metadatos">¿Qué son los metadatos?</a></li>
-<li><a href="#como-se-publican-los-metadatos">¿Cómo se publican los metadatos?</a></li>
-<li><a href="#publico-objetivo-de-esta-guia">Público objetivo de esta guía</a></li>
-<li><a href="#perfil-de-metadatos">Perfil de Metadatos</a></li>
-<li><a href="#portal-andino">Portal Andino</a></li>
-<li><a href="#otros-catalogos">Otros catálogos</a></li>
-<li><a href="#estandar-usado">Estándar usado</a></li>
-<li><a href="#campos-del-perfil">Campos del perfil</a><ul>
-<li><a href="#catalogo-catalog">Catálogo (<code>catalog</code>)</a></li>
-<li><a href="#dataset-dataset">Dataset (<code>dataset</code>)</a></li>
-<li><a href="#distribucion-distribution">Distribución (<code>distribution</code>)</a></li>
-<li><a href="#campo-field">Campo (<code>field</code>)</a></li>
-<li><a href="#tema-theme">Tema (<code>theme</code>)</a></li>
-</ul>
-</li>
-<li><a href="#extensiones-especiales">Extensiones especiales</a></li>
-<li><a href="#series-de-tiempo">Series de tiempo</a><ul>
-<li><a href="#distribucion-de-series-de-tiempo">Distribución de series de tiempo</a></li>
-<li><a href="#tipo-especial-indice-de-tiempo">Tipo especial: indice de tiempo</a></li>
-<li><a href="#documentar-un-dataset-de-series-de-tiempo">Documentar un dataset de series de tiempo</a></li>
-<li><a href="#dataset-dataset-series-de-tiempo">Dataset (<code>dataset</code>) - series de tiempo</a></li>
-<li><a href="#distribucion-distribution-series-de-tiempo">Distribución (<code>distribution</code>) - series de tiempo</a></li>
-<li><a href="#campo-field-series-de-tiempo">Campo (<code>field</code>) - series de tiempo</a></li>
-</ul>
-</li>
-<li><a href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a></li>
-<li><a href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas">Anexo II - Pautas para la selección de etiquetas</a></li>
-<li><a href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a></li>
-<li><a href="#anexo-iv-ejemplo-de-datajson">Anexo IV - Ejemplo de data.json</a></li>
-<li><a href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json">Anexo V - Taxonomía temática global de la APN para los datasets (JSON)</a></li>
-<li><a href="#anexo-vi-ejemplo-de-metadatos-como-texto">Anexo VI - Ejemplo de metadatos como texto</a></li>
-<li><a href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a></li>
-</ul>
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-<h2 id="version"><a class="toclink" href="#version">Versión</a><a class="headerlink" href="#version" title="Permanent link">&#128279;</a></h2>
-<p>Esta guía es compatible con la <strong>versión 1.1 del Perfil de Metadatos</strong> de la Política de Apertura de Datos de la Administración Pública Nacional.</p>
-<h2 id="glosario"><a class="toclink" href="#glosario">Glosario</a><a class="headerlink" href="#glosario" title="Permanent link">&#128279;</a></h2>
-<p>Ver <a href="../glosario/">Glosario</a></p>
 <h2 id="introduccion"><a class="toclink" href="#introduccion">Introducción</a><a class="headerlink" href="#introduccion" title="Permanent link">&#128279;</a></h2>
-<p>Esta guía busca ayudar a los organismos a instrumentar la Política de Datos Abiertos impulsada desde el Gobierno de la Nación Argentina, a través del Decreto N° 117/2016 del 12 de enero de 2016.</p>
-<h3 id="objetivo-de-esta-guia"><a class="toclink" href="#objetivo-de-esta-guia">Objetivo de esta guía</a><a class="headerlink" href="#objetivo-de-esta-guia" title="Permanent link">&#128279;</a></h3>
-<p>Esta es <strong>una guía de recomendaciones y buenas prácticas, para el uso y la publicación de metadatos</strong>.</p>
-<p>Para hacer estas recomendaciones, nos basamos en estándares usados a nivel nacional e internacional y en la experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública del Secretaría de Gobierno de Modernización de la Jefatura de Gabinete de Ministros de la Nación.</p>
+<h3 id="version"><a class="toclink" href="#version">Versión</a><a class="headerlink" href="#version" title="Permanent link">&#128279;</a></h3>
+<p>Esta guía es compatible con la <strong>versión 1.1 del Perfil Nacional de Metadatos para Datos Abiertos</strong> de la Administración Pública Nacional.</p>
+<h3 id="objetivo"><a class="toclink" href="#objetivo">Objetivo</a><a class="headerlink" href="#objetivo" title="Permanent link">&#128279;</a></h3>
+<p>El objetivo de esta guía es que los organismos de la Administración Pública Nacional alcanzados por el Decreto N° 117/2016 del 12 de enero de 2016, encuentren todos los recursos necesarios para <strong>crear su catálogo de datos abiertos</strong> según el Perfil Nacional de Metadatos para Datos Abiertos impulsad por la Dirección Nacional de Datos e Información Pública.</p>
+<p>El estándar desarrollado y las recomendaciones vertidas en este documento se basan en estándares usados a nivel nacional e internacional, y en la experiencia de trabajo del equipo de Datos de la Secretaría de Gobierno de Modernización de la Nación.</p>
 <p>Esta es <strong>una guía colaborativa y en progreso</strong>. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.</p>
-<p>Este documento se complementa con la <strong>Guía para la publicación de datos en formatos abiertos</strong> y la <strong>Guía para la identificación y uso de entidades interoperables</strong>. </p>
+<p>Este documento se complementa con la <strong><a href="../guia_abiertos/">Guía para la publicación de datos en formatos abiertos</a></strong> y la <strong><a href="../guia_interoperables/">Guía para la identificación y uso de entidades interoperables</a></strong>.</p>
 <h3 id="que-son-los-metadatos"><a class="toclink" href="#que-son-los-metadatos">¿Qué son los metadatos?</a><a class="headerlink" href="#que-son-los-metadatos" title="Permanent link">&#128279;</a></h3>
 <p><strong>Los metadatos son los datos sobre los datos</strong>. Es decir: <strong>elementos descriptivos que dan contexto</strong> a un conjunto de datos, y acercan al usuario la información necesaria para entenderlos y usarlos eficazmente.</p>
-<p>Un <strong>título</strong> y una breve <strong>descripción</strong> son los metadatos básicos que cualquier conjunto de datos a publicar debería tener. Después, existen muchos otros elementos que ayudan al lector a hacer un buen uso de los datos. Por ejemplo:</p>
+<p>Un <strong>título</strong> y una breve <strong>descripción</strong> son los metadatos básicos que cualquier conjunto de datos a publicar debería tener.</p>
+<p>Luego, existen muchos otros elementos que ayudan al usuario a utilizar los datos correctamente. Por ejemplo:</p>
 <ul>
 <li><strong>Nombre, tipo de datos y descripción de los campos</strong>: ¿qué significa cada campo? ¿qué datos puedo encontrar en esa columna? ¿qué dicen y qué <em>no</em> dicen esos datos, cómo debo leerlos?</li>
 <li><strong>Palabras clave</strong>: clasifican a un dataset como perteneciente a un conjunto de tópicos.</li>
@@ -533,51 +1077,56 @@
 <li><strong>Frecuencia de actualización</strong>: ¿cada cuánto se actualiza este dataset?</li>
 <li><strong>URL de descarga</strong>: ¿cómo dispongo de los datos, desde dónde puedo descargarlos?</li>
 </ul>
-<p>Una lista curada de campos de metadatos, junto con las instrucciones de cómo deben utilizarse, define un <strong>perfil de metadatos</strong>.</p>
-<p>En esta guía describimos el <strong>perfil de metadatos recomendado para los catálogos de la Administración Pública Nacional</strong> y cómo publicarlo.</p>
+<p>Una lista de metadatos, junto con las instrucciones de cómo deben utilizarse, es un <strong>perfil de metadatos</strong>.</p>
 <h3 id="como-se-publican-los-metadatos"><a class="toclink" href="#como-se-publican-los-metadatos">¿Cómo se publican los metadatos?</a><a class="headerlink" href="#como-se-publican-los-metadatos" title="Permanent link">&#128279;</a></h3>
-<p><strong>La publicación de los metadatos puede ser muy diversa</strong> en detalle, calidad y forma. <strong>Una publicación muy elemental es un documento de texto</strong> que ofrece una descripción del dataset y de cada uno de los recursos que lo componen. Es posible ver un <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md">ejemplo textual</a> de los metadatos de un catálogo de datos en el <strong><a href="#anexo-vi-ejemplo-de-metadatos-como-texto">Anexo VI - Ejemplo de metadatos como texto</a></strong>.</p>
-<p>Sin embargo, <strong>las computadoras no pueden leer fácilmente documentos de texto</strong>. La organización sistemática de colecciones de datasets (es decir, la creación de un <strong>catálogo</strong> de datos) exige un nivel de complejidad mayor para facilitar su descubrimiento, indexación, y reutilización por parte de scripts y aplicaciones de todo tipo.</p>
-<p>La potencial reutilización de los conjuntos de datos y la posibilidad de que los mismos sean correctamente federados desde el Portal Nacional de Datos Abiertos (datos.gob.ar) dependerá de la calidad de sus metadatos. Adoptar y/o desarrollar estándares y vocabularios controlados es importante para la lectura e interpretación de los conjuntos de datos por personas y por aplicaciones informáticas.</p>
+<p>Los metadatos se publican en distintos formatos, estructuras y modalidades dependiendo del objetivo, la temática que abordan o las aplicaciones automáticas que los consuman.</p>
+<p>Si se desea documentar activos de datos, <strong>una publicación elemental sería un <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md">documento de texto</a></strong> (ver <strong><a href="#anexo-vi-ejemplo-de-metadatos-como-texto">Anexo VI - Ejemplo de metadatos como texto</a></strong>) con una lista de datasets que ofrezca el título y la descripción de cada uno de ellos, y de los recursos que lo componen.</p>
+<p>Sin embargo, <strong>las computadoras no pueden leer fácilmente documentos de texto</strong>. No se podrían utilizar aplicaciones automáticas para validar, traducir, re-indexar metadatos en otros catálogos y buscar datasets en ellos. </p>
+<p><strong>Un catálogo de datos abiertos se crea para organizar sistemáticamente colecciones de datasets</strong> y permitir el desarrollo de todo tipo de aplicaciones sobre ellos. Esto requiere el uso de otros formatos más estructurados.</p>
+<p>La potencial reutilización de los conjuntos de datos y la posibilidad de que  sean correctamente federados desde el <a href="http://datos.gob.ar">Portal Nacional de Datos Abiertos</a> dependerá de la calidad de sus metadatos y de su formato. Adoptar y/o desarrollar estándares y vocabularios controlados es importante para la lectura e interpretación de los conjuntos de datos por personas y por aplicaciones informáticas.</p>
 <p>Para esto, <strong>los catálogos de datos publican sus metadatos en un formato estructurado (JSON)</strong> respetando un determinado perfil estandarizado. Recomendamos ver un <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json">ejemplo en JSON</a> de los metadatos de un catálogo de datos en el <strong><a href="#anexo-iv-ejemplo-de-datajson">Anexo IV - Ejemplo de data.json</a></strong>.</p>
 <p>En el resto de este documento detallamos las características de los estándares y vocabularios controlados adoptados para catálogos de datos, datasets y distribuciones.</p>
 <h3 id="publico-objetivo-de-esta-guia"><a class="toclink" href="#publico-objetivo-de-esta-guia">Público objetivo de esta guía</a><a class="headerlink" href="#publico-objetivo-de-esta-guia" title="Permanent link">&#128279;</a></h3>
-<p>Esta guía intenta ayudar a quienes:</p>
+<p>Esta guía es para:</p>
 <ul>
-<li>
-<p><strong>Publican sus catálogos de datos mediante un adaptación del portal Andino</strong>. Es decir,  del portal que el equipo de Datos de la Nación Argentina diseñó sobre la base de CKAN y que pueden adoptar las dependencias de la Administración Pública Nacional (así como también de otros niveles gubernamentales sub-nacionales o incluso entidades del público general) para gestionar la publicación centralizada de sus activos de datos.</p>
-<p>Si estás dentro de este grupo, <strong>recomendamos leer la sección <a href="#portal-andino">Portal Andino</a></strong>. Con ella, podrás comprender cómo completar cada campo en el formulario web del Portal Andino.</p>
-</li>
-<li>
-<p><strong>Publican sus catálogos de datos mediante otros medios</strong>. Esto es, en forma directa en el dominio digital de la entidad responsable o de alguna forma alternativa en la red. Esas entidades deberán publicar su catálogo de datos en un archivo estructurado (JSON) llamado <em>data.json</em> alojado en un dominio de la forma <em>http://datos.[entidad].gob.ar/data.json</em> siguiendo las especificaciones del perfil de metadatos de esta guía.</p>
-<p>Si la apertura de tus datos se inscribe en esta modalidad, <strong>te sugerimos leer la sección <a href="#otros-catalogos">Otros catálogos</a></strong>. Te ayudará a comprender cómo generar y publicar un archivo <em>data.json</em> que cumpla con el perfil de metadatos de la política de apertura de datos de la Administración Pública Nacional.</p>
-</li>
+<li><strong>Organismos de la Administración Pública Nacional</strong> que quieren implementar un catálogo de datos abiertos</li>
+<li>Quienes implementan un Portal Andino, otro portal web, un catálogo en Excel o en JSON.</li>
+<li><strong>Otros organismos del Poder Legislativo o Judicial</strong> que sin estar alcanzados por el Decreto 117/2016, adhieren a la Política de Apertura de Datos propuesta por el Poder Ejecutivo.</li>
+<li><strong>Gobiernos subnacionales</strong> (provincias y municipios) que desean publicar sus catálogos de datos abiertos siguiendo los mismos estándares que el Gobierno Nacional y otros gobiernos subnacionales.</li>
+<li><strong>Universidades, ONGs, cámaras empresarias y otros actores de la sociedad civil</strong> que adhieren a la Política de Datos Abiertos y desean publicar datos siguiendo los mismos estándares que el sector público, con la visión de construir una interoperabilidad creciente entre datos del gobierno nacional y de otros actores de la sociedad civil.</li>
 </ul>
-<h2 id="perfil-de-metadatos"><a class="toclink" href="#perfil-de-metadatos">Perfil de Metadatos</a><a class="headerlink" href="#perfil-de-metadatos" title="Permanent link">&#128279;</a></h2>
+<h2 id="crear-un-catalogo-de-datos-abiertos"><a class="toclink" href="#crear-un-catalogo-de-datos-abiertos">Crear un catálogo de datos abiertos</a><a class="headerlink" href="#crear-un-catalogo-de-datos-abiertos" title="Permanent link">&#128279;</a></h2>
+<p>Para cumplir con los estándares de documentación de datos abiertos, <strong>los organismos necesitan publicar un catálogo en formato XLSX o JSON en una URL pública dentro de su propiedad digital</strong>, y comunicarla al <a href="mailto:datos@modernizacion.gob.ar">equipo de Datos de la Secretaría de Gobierno de Modernización</a> para su indexación en <a href="http://datos.gob.ar">datos.gob.ar</a>.</p>
+<p>Si el catálogo cumple con el perfil de metadatos, se le asignará un identificador (Ej.: <code>agroindustria</code>, <code>energia</code>, <code>sspre</code>) y será federado en <a href="http://datos.gob.ar">datos.gob.ar</a> bajo el nombre del organismo responsable de su publicación.</p>
+<p>Los datasets federados desde ese catálogo, serán accesibles públicamente desde <code>http://datos.gob.ar/dataset?organization={identificador}</code>.</p>
+<h3 id="excel"><a class="toclink" href="#excel">Excel</a><a class="headerlink" href="#excel" title="Permanent link">&#128279;</a></h3>
+<p>El catálogo se puede crear en Excel, a partir de <a href="">este modelo</a> diseñado para cumplir con el perfil de metadatos. El modelo contiene una serie de validaciones para evitar errores en su uso, pero debe tenerse en cuenta que:</p>
+<ul>
+<li>En las hojas de distribución (<code>distribution</code>) y campo (<code>field</code>) <strong>sólo deben asignarse los ids de los dataset o distribuciones "padre" que los incluyen</strong>, el título se trae automáticamente de la hoja correspondiente con una fórmula.</li>
+<li><strong>Todas las columnas sean de tipo "texto"</strong> (no "número") salvo aquellas que en el modelo contienen fórmulas para asegurar que una distribución o campo documentado, sean asignados al dataset o distribución correctos.</li>
+<li>Especialmente las columnas de identificadores (Excel a veces las convierte a número cuando el identificador elegido no contiene letras u otros caracteres).</li>
+<li><strong>La hoja "referencias" explica el código de colores</strong> para saber qué campos son obligatorios, recomendados, opcionales o avanzados / especiales.</li>
+<li>El modelo contiene comentarios en las celdas para explicar brevemente qué se debe poner en cada una, pero en esta guía se puede consultar la referencia detallada.</li>
+</ul>
 <h3 id="portal-andino"><a class="toclink" href="#portal-andino">Portal Andino</a><a class="headerlink" href="#portal-andino" title="Permanent link">&#128279;</a></h3>
-<p><strong>El <a href="https://github.com/datosgobar/portal-andino">Portal Andino</a></strong> es una herramienta especialmente diseñada para facilitar la publicación y apertura de datos y <strong>cumple con el perfil de metadatos de la Administración Pública Nacional</strong> propuesto en esta guía.</p>
-<p>Incluye formularios web para la carga de datos y metadatos. <strong>La publicación de metadatos mediante este portal cumple con la versión 1.0 del perfil de metadatos recomendado en esta guía</strong>. La versión 1.0 es anterior a la publicación de esta guía y se puede <a href="http://paquete-apertura-datos.readthedocs.io/es/0.1.1/guia_metadatos.html#otros-catalogos">consultar acá</a>.</p>
-<p>El Portal debe publicarse en un dominio de la forma <em>http://datos.[entidad].gob.ar</em>. Esto asegura la publicación automática de los metadatos en formato data.json en <em>http://datos.[entidad].gob.ar/data.json</em></p>
-<p>El archivo <em>data.json</em> de un Portal Andino puede encontrarse en el directorio raíz del portal: <em>http://datos.[entidad].gob.ar/data.json</em>.</p>
+<p><strong>El <a href="http://andino.datos.gob.ar">Portal Andino</a></strong> es una herramienta especialmente diseñada para facilitar la publicación y apertura de datos y <strong>cumple con el perfil de metadatos de la Administración Pública Nacional</strong> propuesto en esta guía.</p>
+<p>Incluye formularios web para la carga de datos y metadatos, y produce automáticamente el catálogo en versión XLSX y JSON.</p>
+<p>El Portal debe publicarse en un dominio de la forma <em>http://datos.[entidad].gob.ar</em>. Esto asegura la publicación automática de los metadatos en formato data.json en <em>http://datos.[entidad].gob.ar/data.json</em> y XLSX en <em>http://datos.[entidad].gob.ar/catalog.xlsx</em>.</p>
 <h3 id="otros-catalogos"><a class="toclink" href="#otros-catalogos">Otros catálogos</a><a class="headerlink" href="#otros-catalogos" title="Permanent link">&#128279;</a></h3>
 <p>Sin embargo, los organismos de la APN <strong>pueden optar por desarrollar sus propias implementaciones del Perfil de Metadatos</strong>.</p>
-<p>Quienes opten por una solución alternativa al Portal Andino para publicar sus datos, deberán publicar los metadatos de su Catálogo en un archivo <em>data.json</em> en una URL como la siguiente: <em>http://datos.[entidad].gob.ar/data.json</em>.</p>
+<p>Quienes opten por una solución alternativa al Excel o al Portal Andino para publicar sus datos, deberán publicar los metadatos de su catálogo en un archivo <em>data.json</em> en una URL como la siguiente: <em>http://datos.[entidad].gob.ar/data.json</em>.</p>
 <p>En [entidad] recomendamos usar un nombre simple y breve que represente a la organización que publica el catálogo (por ejemplo: datos.jus.gob.ar, datos.tucuman.gob.ar, datos.pilar.gob.ar).</p>
 <p>Este archivo deberá estar construido tal como se puede ver en el ejemplo del <strong><a href="#anexo-iv-ejemplo-de-datajson">Anexo IV - Ejemplo de data.json</a></strong>, respetando el Perfil de Metadatos de la Administración Pública Nacional tal como se lo describe más adelante en la sección "<em><a href="#campos-del-perfil">Campos del perfil</a></em>".</p>
+<h2 id="perfil-de-metadatos"><a class="toclink" href="#perfil-de-metadatos">Perfil de Metadatos</a><a class="headerlink" href="#perfil-de-metadatos" title="Permanent link">&#128279;</a></h2>
 <h3 id="estandar-usado"><a class="toclink" href="#estandar-usado">Estándar usado</a><a class="headerlink" href="#estandar-usado" title="Permanent link">&#128279;</a></h3>
-<p><strong>El perfil de metadatos recomendado en esta guía es una adaptación del estándar <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe">DCAT - AP</a></strong>, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.</p>
+<p><strong>El Perfil Nacional de Metadatos para Datos Abiertos es una extensión del estándar <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe">DCAT - AP</a></strong>, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.</p>
 <p>Según la W3C: "Mediante la utilización de DCAT para describir datasets en catálogos de datos, quienes publican aumentan la posibilidad de descubrimiento (<em>discoverability</em>) y permiten a aplicaciones informáticas consumir metadatos de manera simple desde múltiples catálogos. Además permite la publicación descentralizada de catálogos y favorece la búsqueda <em>federada</em> de datasets a través de varios sitios."</p>
 <p>El perfil de metadatos propuesto para la Administración Pública Nacional se compone de 3 clases principales (<em>Catalog, Dataset y Distribution</em>) y 2 auxiliares (<em>Field</em> y <em>Theme</em>) que se relacionan según el siguiente esquema:</p>
-<div id="perfil-de-metadatos">
-
-![](assets/der_perfil_metadatos.png)
-
-</div>
-
+<p><img alt="" src="../assets/der_perfil_metadatos.png" /></p>
 <p>A continuación, describimos los metadatos que el <em>data.json</em> debe contener, para cada una de estas clases.</p>
 <h3 id="campos-del-perfil"><a class="toclink" href="#campos-del-perfil">Campos del perfil</a><a class="headerlink" href="#campos-del-perfil" title="Permanent link">&#128279;</a></h3>
 <h4 id="catalogo-catalog"><a class="toclink" href="#catalogo-catalog">Catálogo (<code>catalog</code>)</a><a class="headerlink" href="#catalogo-catalog" title="Permanent link">&#128279;</a></h4>
-<p>El <em>data.json</em> de <em>quienes usen el portal Andino, se generará a través de los formularios completados, publicándose automáticamente en </em>http://datos.[entidad].gob.ar/data.json**.</p>
+<p>El <em>data.json</em> de quienes usen el portal Andino, se generará a través de los formularios completados, publicándose automáticamente en <em>http://datos.[entidad].gob.ar/data.json</em>.</p>
 <p>Ejemplos de metadatos de un <strong>catálogo</strong>:</p>
 <ul>
 <li><a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md">Catálogo en texto</a></li>
@@ -1622,6 +2171,8 @@
 </pre></div>
 
 
+<h2 id="glosario"><a class="toclink" href="#glosario">Glosario</a><a class="headerlink" href="#glosario" title="Permanent link">&#128279;</a></h2>
+<p>Ver <a href="../glosario/">Glosario</a></p>
 <h2 id="anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla"><a class="toclink" href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a><a class="headerlink" href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla" title="Permanent link">&#128279;</a></h2>
 <p>El Portal Nacional de Datos usa la <a href="http://publications.europa.eu/mdr/authority/data-theme/index.html">taxonomía temática definida por la Unión Europea</a>.</p>
 <p><strong>Cada catálogo de datos puede desarrollar su propia taxonomía</strong>, cuyo uso se expresa en  los siguientes campos de metadatos (y sus equivalentes para el Portal Andino):</p>
@@ -2471,7 +3022,7 @@
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Previous
+                  Anterior
                 </span>
                 Guía para la identificación y uso de entidades interoperables
               </span>
@@ -2483,7 +3034,7 @@
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  Siguiente
                 </span>
                 Guía para la apertura de datos en gobiernos subnacionales
               </span>
@@ -2516,6 +3067,21 @@
     </div>
     
       <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
