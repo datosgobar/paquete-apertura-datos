@@ -9,12 +9,12 @@ nav:
   - Material introductorio: https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf
     # - Kit de Datos Abiertos: https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf
   - Guías de buenas prácticas:
-    - Guía para la publicación de datos en formatos abiertos: guia_abiertos.md
-    - Guía para la identificación y uso de entidades interoperables: guia_interoperables.md
-    - Guía para el uso y la publicación de metadatos: guia_metadatos.md
+    - Guía para la publicación de datos en formatos abiertos: guia-abiertos.md
+    - Guía para la identificación y uso de entidades interoperables: guia-interoperables.md
+    - Guía para el uso y la publicación de metadatos: guia-metadatos.md
   - Guías de implementación:
     - Guía para la apertura de datos en organismos de la Administración Pública Nacional: http://datos.gob.ar/acerca/seccion/Public%C3%A1%20datos
-    - Guía para la apertura de datos en gobiernos subnacionales: guia_subnacionales.md
+    - Guía para la apertura de datos en gobiernos subnacionales: guia-subnacionales.md
   - Glosario: glosario.md
 
 theme: datosgobar_docs

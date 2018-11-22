@@ -112,7 +112,7 @@ build:
 	rm -rf site
 
 pdf:
-	python md2pdf.py docs/guia_abiertos.md docs/pdf/guia_abiertos.pdf
-	python md2pdf.py docs/guia_interoperables.md docs/pdf/guia_interoperables.pdf
-	python md2pdf.py docs/guia_metadatos.md docs/pdf/guia_metadatos.pdf
-	python md2pdf.py docs/guia_subnacionales.md docs/pdf/guia_subnacionales.pdf
+	python md2pdf.py docs/guia-abiertos.md docs/pdf/guia-abiertos.pdf
+	python md2pdf.py docs/guia-interoperables.md docs/pdf/guia-interoperables.pdf
+	python md2pdf.py docs/guia-metadatos.md docs/pdf/guia-metadatos.pdf
+	python md2pdf.py docs/guia-subnacionales.md docs/pdf/guia-subnacionales.pdf

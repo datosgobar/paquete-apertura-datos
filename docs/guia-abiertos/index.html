@@ -1,0 +1,1965 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Recursos para la apertura de datos públicos nacionales y sub-nacionales en Argentina.">
+      
+      
+        <link rel="canonical" href="https://datosgobar.github.io/paquete-apertura-datos/guia-abiertos/">
+      
+      
+        <meta name="author" content="Datos Argentina">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Guía para la publicación de datos en formatos abiertos - Paquete de Apertura de Datos de la República Argentina</title>
+      
+    
+    
+	
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+	<link rel="stylesheet" href="../css/extra.css">
+
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    <script src="../js/extra.js"></script>
+
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../css/extra_rtd.css">
+    
+      <link rel="stylesheet" href="../css/table_styles.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#guia-para-la-publicacion-de-datos-en-formatos-abiertos" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://datosgobar.github.io/paquete-apertura-datos" title="Paquete de Apertura de Datos de la República Argentina" class="md-header-nav__button md-logo">
+          
+            <img src="../images/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Paquete de Apertura de Datos de la República Argentina
+              </span>
+              <span class="md-header-nav__topic">
+                Guía para la publicación de datos en formatos abiertos
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Escriba para comenzar la búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+        <!-- Site title -->
+        <label class="md-nav__title md-nav__title--site" for="__drawer">
+          <a href="https://datosgobar.github.io/paquete-apertura-datos"
+              title="Paquete de Apertura de Datos de la República Argentina" class="md-nav__button md-logo">
+            
+              <img src="../images/logo.svg" width="48" height="48" />
+            
+          </a>
+          Paquete de Apertura de Datos de la República Argentina
+        </label>
+      
+        <!-- Repository containing source -->
+        
+          <div class="md-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        
+      
+        <!-- Render item list -->
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href="https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf" title="Material introductorio" class="md-nav__link">
+      Material introductorio
+    </a>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Guías de buenas prácticas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Guías de buenas prácticas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guia_abiertos.md" title="Guía para la publicación de datos en formatos abiertos" class="md-nav__link">
+      Guía para la publicación de datos en formatos abiertos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guia_interoperables.md" title="Guía para la identificación y uso de entidades interoperables" class="md-nav__link">
+      Guía para la identificación y uso de entidades interoperables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guia_metadatos.md" title="Guía para el uso y la publicación de metadatos" class="md-nav__link">
+      Guía para el uso y la publicación de metadatos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Guías de implementación
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Guías de implementación
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="http://datos.gob.ar/acerca/seccion/Public%C3%A1%20datos" title="Guía para la apertura de datos en organismos de la Administración Pública Nacional" class="md-nav__link">
+      Guía para la apertura de datos en organismos de la Administración Pública Nacional
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guia_subnacionales.md" title="Guía para la apertura de datos en gobiernos subnacionales" class="md-nav__link">
+      Guía para la apertura de datos en gobiernos subnacionales
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href="../glosario/" title="Glosario" class="md-nav__link">
+      Glosario
+    </a>
+  </li>
+
+            <hr/>
+          
+        </ul>
+      </nav>
+      
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" title="Indice" class="md-nav__link">
+    Indice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" title="Introducción" class="md-nav__link">
+    Introducción
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo-de-la-guia" title="Objetivo de la guía" class="md-nav__link">
+    Objetivo de la guía
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatos-abiertos-de-archivos" title="Formatos abiertos de archivos" class="md-nav__link">
+    Formatos abiertos de archivos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv" title="CSV" class="md-nav__link">
+    CSV
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" title="JSON" class="md-nav__link">
+    JSON
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fragmentacion-de-archivos" title="Fragmentación de archivos" class="md-nav__link">
+    Fragmentación de archivos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nomenclatura-de-archivos" title="Nomenclatura de archivos" class="md-nav__link">
+    Nomenclatura de archivos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codificacion" title="Codificación" class="md-nav__link">
+    Codificación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-y-caracteristicas-de-los-datos-tabulares" title="Estructura y características de los datos tabulares" class="md-nav__link">
+    Estructura y características de los datos tabulares
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recomendaciones-generales" title="Recomendaciones generales" class="md-nav__link">
+    Recomendaciones generales
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nomenclatura-de-los-campos-nombres-de-las-columnas" title="Nomenclatura de los campos (nombres de las columnas)" class="md-nav__link">
+    Nomenclatura de los campos (nombres de las columnas)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-de-granularidad-de-los-datos" title="Nivel de granularidad de los datos" class="md-nav__link">
+    Nivel de granularidad de los datos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usar-orientacion-vertical-en-lugar-de-horizontal" title="Usar orientación vertical en lugar de horizontal" class="md-nav__link">
+    Usar orientación vertical en lugar de horizontal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incluir-solo-un-atributo-por-campo" title="Incluir sólo un atributo por campo" class="md-nav__link">
+    Incluir sólo un atributo por campo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valores-nulos-desconocidos-o-en-blanco-en-campos-numericos" title="Valores nulos, desconocidos o en blanco en campos numéricos" class="md-nav__link">
+    Valores nulos, desconocidos o en blanco en campos numéricos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recomendaciones-para-estructurar-planillas-de-calculo" title="Recomendaciones para estructurar planillas de cálculo" class="md-nav__link">
+    Recomendaciones para estructurar planillas de cálculo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usar-celdas-simples" title="Usar celdas simples" class="md-nav__link">
+    Usar celdas simples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fila-de-encabezado" title="Fila de encabezado" class="md-nav__link">
+    Fila de encabezado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celdas-vacias-en-filas-para-agrupar-conceptos" title="Celdas vacías en filas para agrupar conceptos" class="md-nav__link">
+    Celdas vacías en filas para agrupar conceptos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formato-de-celdas" title="Formato de celdas" class="md-nav__link">
+    Formato de celdas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportacion-a-csv" title="Exportación a CSV" class="md-nav__link">
+    Exportación a CSV
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estandares-segun-el-tipo-de-datos" title="Estándares según el tipo de Datos" class="md-nav__link">
+    Estándares según el tipo de Datos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texto" title="Texto" class="md-nav__link">
+    Texto
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades" title="Entidades" class="md-nav__link">
+    Entidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nombres-propios" title="Nombres propios" class="md-nav__link">
+    Nombres propios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#siglas" title="Siglas" class="md-nav__link">
+    Siglas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numero" title="Número" class="md-nav__link">
+    Número
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moneda" title="Moneda" class="md-nav__link">
+    Moneda
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numeros-telefonicos" title="Números telefónicos" class="md-nav__link">
+    Números telefónicos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coordenadas" title="Coordenadas" class="md-nav__link">
+    Coordenadas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tiempo" title="Tiempo" class="md-nav__link">
+    Tiempo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha" title="Fecha" class="md-nav__link">
+    Fecha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rangos-horarios" title="Rangos horarios" class="md-nav__link">
+    Rangos horarios
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#booleano" title="Booleano" class="md-nav__link">
+    Booleano
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/datosgobar/paquete-apertura-datos/edit/master/docs/guia-abiertos.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="guia-para-la-publicacion-de-datos-en-formatos-abiertos"><a class="toclink" href="#guia-para-la-publicacion-de-datos-en-formatos-abiertos">Guía para la publicación de datos en formatos abiertos</a><a class="headerlink" href="#guia-para-la-publicacion-de-datos-en-formatos-abiertos" title="Permanent link">&#128279;</a></h1>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<h2 id="indice"><a class="toclink" href="#indice">Indice</a><a class="headerlink" href="#indice" title="Permanent link">&#128279;</a></h2>
+<ul>
+<li><a href="#introduccion">Introducción</a></li>
+<li><a href="#objetivo-de-la-guia">Objetivo de la guía</a></li>
+<li><a href="#formatos-abiertos-de-archivos">Formatos abiertos de archivos</a></li>
+<li><a href="#csv">CSV</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#fragmentacion-de-archivos">Fragmentación de archivos</a></li>
+<li><a href="#nomenclatura-de-archivos">Nomenclatura de archivos</a></li>
+<li><a href="#codificacion">Codificación</a></li>
+<li><a href="#estructura-y-caracteristicas-de-los-datos-tabulares">Estructura y características de los datos tabulares</a></li>
+<li><a href="#recomendaciones-generales">Recomendaciones generales</a><ul>
+<li><a href="#nomenclatura-de-los-campos-nombres-de-las-columnas">Nomenclatura de los campos (nombres de las columnas)</a></li>
+<li><a href="#nivel-de-granularidad-de-los-datos">Nivel de granularidad de los datos</a></li>
+<li><a href="#usar-orientacion-vertical-en-lugar-de-horizontal">Usar orientación vertical en lugar de horizontal</a></li>
+<li><a href="#incluir-solo-un-atributo-por-campo">Incluir sólo un atributo por campo</a></li>
+<li><a href="#valores-nulos-desconocidos-o-en-blanco-en-campos-numericos">Valores nulos, desconocidos o en blanco en campos numéricos</a></li>
+</ul>
+</li>
+<li><a href="#recomendaciones-para-estructurar-planillas-de-calculo">Recomendaciones para estructurar planillas de cálculo</a><ul>
+<li><a href="#usar-celdas-simples">Usar celdas simples</a></li>
+<li><a href="#fila-de-encabezado">Fila de encabezado</a></li>
+<li><a href="#celdas-vacias-en-filas-para-agrupar-conceptos">Celdas vacías en filas para agrupar conceptos</a></li>
+<li><a href="#formato-de-celdas">Formato de celdas</a></li>
+</ul>
+</li>
+<li><a href="#exportacion-a-csv">Exportación a CSV</a></li>
+<li><a href="#estandares-segun-el-tipo-de-datos">Estándares según el tipo de Datos</a></li>
+<li><a href="#texto">Texto</a><ul>
+<li><a href="#entidades">Entidades</a></li>
+<li><a href="#nombres-propios">Nombres propios</a></li>
+<li><a href="#siglas">Siglas</a></li>
+</ul>
+</li>
+<li><a href="#numero">Número</a><ul>
+<li><a href="#moneda">Moneda</a></li>
+<li><a href="#numeros-telefonicos">Números telefónicos</a></li>
+<li><a href="#coordenadas">Coordenadas</a></li>
+</ul>
+</li>
+<li><a href="#tiempo">Tiempo</a><ul>
+<li><a href="#rangos-horarios">Rangos horarios</a></li>
+</ul>
+</li>
+<li><a href="#booleano">Booleano</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2 id="introduccion"><a class="toclink" href="#introduccion">Introducción</a><a class="headerlink" href="#introduccion" title="Permanent link">&#128279;</a></h2>
+<p>Esta guía busca ayudar a los organismos a instrumentar la Política de Datos Abiertos impulsada desde el Gobierno de la Nación Argentina, a través del Decreto N° 117/2016 del 12 de enero de 2016.</p>
+<h2 id="objetivo-de-la-guia"><a class="toclink" href="#objetivo-de-la-guia">Objetivo de la guía</a><a class="headerlink" href="#objetivo-de-la-guia" title="Permanent link">&#128279;</a></h2>
+<p>Esta es <strong>una guía de buenas prácticas para la publicación de datos en formatos abiertos.</strong></p>
+<p>Estas recomendaciones se basan en:</p>
+<ul>
+<li>
+<p>Estándares usados a nivel nacional e internacional.</p>
+</li>
+<li>
+<p>La experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública de la Secretaría de Gobierno de Modernización de la Jefatura de Gabinete de Ministros de la Nación.</p>
+</li>
+</ul>
+<p>Esta es <strong>una guía colaborativa y en progreso</strong>. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.</p>
+<p>El documento se estructura así:</p>
+<p><strong>Formatos abiertos de archivos:</strong> cuáles son los formatos más usuales en los que se publican datos y cuáles son los más recomendables.</p>
+<ul>
+<li>
+<p><strong>Fragmentación de archivos</strong>: cuáles son los criterios para decidir que un archivo es demasiado grande (y hay que fragmentarlo) o demasiado chico (y hay que juntarlo con otros).</p>
+</li>
+<li>
+<p><strong>Nomenclatura de archivos</strong>: cómo nombrar adecuadamente un archivo.</p>
+</li>
+<li>
+<p><strong>Codificación</strong>: cuál es la codificación en que se debe guardar un archivo.</p>
+</li>
+<li>
+<p><strong>Estructura y características de los datos tabulares</strong></p>
+<ul>
+<li>
+<p>Recomendaciones generales: aplican a todos los casos.</p>
+</li>
+<li>
+<p>Recomendaciones para estructurar planillas de cálculo: aplican exclusivamente al trabajo en planillas de cálculo.</p>
+</li>
+<li>
+<p>Exportación a CSV: cómo exportar adecuadamente planillas de cálculo a un archivo de formato abierto.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Estándares según el tipo de datos</strong>: cuáles son los estándares recomendados para manejar distintos tipos de datos.</p>
+</li>
+</ul>
+<p>Estos son los primeros aspectos importantes para la estandarización de datos.</p>
+<p>Para una discusión sobre los estándares recomendados en el manejo de datos básicos y fundamentales, transversales a distintas áreas temáticas, se puede consultar la <strong>Guía para la identificación y uso de entidades interoperables</strong>.</p>
+<h2 id="formatos-abiertos-de-archivos"><a class="toclink" href="#formatos-abiertos-de-archivos">Formatos abiertos de archivos</a><a class="headerlink" href="#formatos-abiertos-de-archivos" title="Permanent link">&#128279;</a></h2>
+<p>Hay una gran variedad de tecnologías disponibles para producir y almacenar datos. Como ser: planillas de cálculo, bases de datos, software estadístico más específico y más. Esto genera una enorme diversidad de formatos, a veces caótica.</p>
+<p>Algunos de estos formatos, no siempre se adecuan a los niveles de apertura deseados. Te ofrecemos algunas pautas y recomendaciones que facilitan la adaptación y/o transformación de estos formatos hacia otros más abiertos y fácilmente reutilizables.</p>
+<p>En este cuadro consideramos algunos de los formatos más usados y evaluamos su nivel de apertura:</p>
+<table id="left-align-col-2">
+<tbody>
+  <tr>
+    <th>Formato</th>
+    <th>Descripción breve</th>
+    <th>Tipo de datos</th>
+    <th>Nivel de apertura</th>
+  </tr>
+  <tr>
+    <td>XLS</td>
+    <td>Los XLS son archivos de planilla de cálculo. Es un formato propietario de MS Office.</td>
+    <td>Tabulares</td>
+    <td>Baja</td>
+  </tr>
+  <tr>
+    <td>XLSX</td>
+    <td>Los XLSX son archivos con la estructura de un XML. Es un formato abierto basado en Office Open XML (ISO/IEC 29500:2008). Popularizado por ser el formato por defecto del procesador de planillas de cálculo desde MS Office 2007.</td>
+    <td>Tabulares</td>
+    <td>Media</td>
+  </tr>
+  <tr>
+    <td>ODS</td>
+    <td>Los ODS son archivos con la estructura de un XML. Es un formato abierto basado en OASIS OpenDocument Format (ISO/IEC 26300) . Es el formato por defecto del procesador de planillas de cálculo Open Office.</td>
+    <td>Tabulares</td>
+    <td>Media</td>
+  </tr>
+  <tr>
+    <td>CSV</td>
+    <td>Los archivos CSV son archivos de texto plano donde las columnas se separan por comas y las filas por saltos de línea.
+Es un formato abierto.</td>
+    <td>Tabulares</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>JSON</td>
+    <td>Es un formato para el intercambio de datos. En mayor medida que los formatos anteriores, JSON es especialmente útil para datos entre máquinas. Es un formato abierto basado en la especificación RFC 7159. </td>
+    <td style="font-size: 12px" >Estructurados</td>
+    <td>Alta</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Antes de seguir, introduciremos dos conceptos que se usarán a lo largo de toda la guía:</p>
+<ul>
+<li>
+<p><strong>Distribución o Recurso:</strong> Una distribución o recurso es la unidad mínima en la que se publican datos. Se trata de los archivos que pueden ser descargados y re-utilizados por un usuario. Los recursos pueden tener diversos formatos (.csv, .shp, etc.).</p>
+</li>
+<li>
+<p><strong>Dataset:</strong> Un conjunto de datos o dataset agrupa recursos referidos a un mismo tema que respetan una estructura de la información. Los recursos que lo componen pueden diferir en el formato en que se los presenta (por ejemplo: .csv, .json, .xls, etc.), la fecha a la que se refieren, el área geográfica cubierta, ser tablas de un mismo esquema de base de datos relacional o estar separados bajo algún otro criterio.</p>
+</li>
+</ul>
+<p>Un recurso en formato tabular es un archivo plano que se ajusta a un esquema predefinido de columnas, incluyendo el nombre de la columna y el tipo de datos.</p>
+<p>En la mayoría de los casos, corresponde a datos que llegan de bases de datos, reportes y planillas de cálculo en general. A diferencia de los formatos tabulares, los archivos JSON siguen una estructura diferente donde se definen listas de objetos con pares "clave" - “valor”.</p>
+<p><strong>Recomendamos con énfasis la publicación de los datos en formato CSV y/o JSON</strong>. En caso de utilizar formatos propietarios o aún no estandarizados, es útil indicar software, versión y aplicación que permite procesar esos formatos.</p>
+<h3 id="csv"><a class="toclink" href="#csv">CSV</a><a class="headerlink" href="#csv" title="Permanent link">&#128279;</a></h3>
+<p>El CSV es un formato estándar de archivo de texto plano donde:</p>
+<ul>
+<li>
+<p>Los campos (columnas) se separan por comas <code>,</code></p>
+</li>
+<li>
+<p>Los registros (filas) se separan por saltos de línea <code>\n</code> o <code>\r\n</code> (CRLF - Carriage Return Line Feed)).</p>
+</li>
+<li>
+<p>Los números decimales utilizan <code>.</code> para separar la parte entera de la parte decimal</p>
+</li>
+<li>
+<p>Se utilizan las comillas dobles <code>"</code> como caracter de entrecomillado. Los valores en tablas CSV que incluyen dentro de sí caracteres especiales como <code>,</code> o <code>"</code>, deben estar encerrados entre <code>"</code> para su correcta interpretación.</p>
+</li>
+</ul>
+<p>Algunas versiones alternativas de esta forma de publicar datos usan otros separadores como punto y coma (<code>;</code>) o pipe (<code>|</code>), pero la recomendación para toda la Administración Pública Nacional se basa en la versión de CSV más estándar, indicada por la especificación <a href="http://tools.ietf.org/html/rfc4180">RFC4180</a> y las pautas de la <a href="https://www.w3.org/TR/tabular-data-model/">W3C</a>.</p>
+<p>Otros elementos a tener en cuenta:</p>
+<ul>
+<li>
+<p>La primera fila siempre contiene los nombres de los campos.</p>
+</li>
+<li>
+<p>No se deben repetir nombres entre los campos.</p>
+</li>
+<li>
+<p>No se debe colocar espacios al principio ni al final del nombre de un campo, o de un valor.</p>
+</li>
+<li>
+<p>Tanto los campos como los valores deben estar separados por comas (<code>,</code>).</p>
+</li>
+<li>
+<p>En el caso de que un valor contenga el caracter separador (<code>,</code>) o cualquiera de los caracteres que separan las líneas (<code>\r</code>, <code>\n</code> o <code>\r\n</code>), el valor completo debe ser encerrado entre comillas dobles <code>""</code>. Esto indica que el caracter no cumple el rol de separar columnas o filas, sino que es parte de un valor.</p>
+</li>
+</ul>
+<p>Ejemplo:</p>
+<div class="codehilite"><pre><span></span>col1,col2\r\n
+&quot;La tasa de Juan, está vacía&quot;,La tasa de Pablo está llena\r\n
+&quot;La tasa de Juan\nestá vacía&quot;,La tasa de Pablo está llena\r\n
+&quot;La tasa de Juan\r\nestá vacía&quot;,La tasa de Pablo está llena\r\n
+</pre></div>
+
+
+<ul>
+<li>En el caso de que un valor contenga el caracter comilla doble (<code>"</code>), el valor debe ser encerrado entre comillas dobles como en el caso anterior (<code>""</code>) y, además, los caracteres comilla doble que se encuentren dentro del valor deben escribirse dos veces (<code>""</code>).</li>
+</ul>
+<p>Ejemplo:</p>
+<div class="codehilite"><pre><span></span>col1,col2\r\n
+&quot;La tasa de &quot;&quot;Juan&quot;&quot; está vacía&quot;,La tasa de Pablo está llena\r\n
+</pre></div>
+
+
+<ul>
+<li>Para todos los tipos de datos se considera válido el valor indefinido. Este se expresará con la ausencia de todo caracter y no con un caracter o string especial como podrían ser ".", "null", "none", "nan", etc.</li>
+</ul>
+<p>Ejemplo:</p>
+<div class="codehilite"><pre><span></span>col1,col2,col3\r\n
+a,,b\r\n
+a,&quot;&quot;,b\r\n
+</pre></div>
+
+
+<h3 id="json"><a class="toclink" href="#json">JSON</a><a class="headerlink" href="#json" title="Permanent link">&#128279;</a></h3>
+<p>JSON es un formato de texto popular para el intercambio de datos, es un acrónimo de  JavaScript Object Notation. Por su característica de ser un formato de tipo estructurado es especialmente útil para el intercambio de datos entre máquina (<em>machine - readable format</em>).</p>
+<p>El formato JSON ha sido definido por la especificación <a href="https://tools.ietf.org/html/rfc7159">RFC 7159</a> y, tal como CSV, también es un estándar abierto.</p>
+<h2 id="fragmentacion-de-archivos"><a class="toclink" href="#fragmentacion-de-archivos">Fragmentación de archivos</a><a class="headerlink" href="#fragmentacion-de-archivos" title="Permanent link">&#128279;</a></h2>
+<p>Para garantizar la accesibilidad a los datos, <strong>es necesario fragmentar los archivos  excesivamente grandes</strong>, que superen el millón de filas.</p>
+<p>Para esto, recomendamos usar conceptos simples, fragmentando:</p>
+<p>(a) <strong>por períodos</strong> en caso de tratarse de información temporal (Ej. Años, semestres, trimestres, meses, semanas, días),</p>
+<p>(b) <strong>por zonas</strong> en caso de tratarse de información geográfica (Ej. provincias, municipios, barrios, secciones, o manzanas) o</p>
+<p>(c) <strong>por dimensiones temáticas</strong> propias del dominio particular de la información.</p>
+<p>Sin embargo, siempre que se decida fragmentar un archivo para garantizar su accesibilidad,  recomendamos publicar también una versión no fragmentada que contenga el conjunto de datos completo (aunque sea muy grande), a los fines de evitar la tarea de consolidación.</p>
+<p>Para eso, sugerimos usar protocolos de compresión, en especial para archivos muy grandes, y altamente compresibles. De hacerlo, aconsejamos protocolos sin pérdida, y abiertos.</p>
+<h2 id="nomenclatura-de-archivos"><a class="toclink" href="#nomenclatura-de-archivos">Nomenclatura de archivos</a><a class="headerlink" href="#nomenclatura-de-archivos" title="Permanent link">&#128279;</a></h2>
+<p>Recomendamos estas convenciones para nombrar archivos:</p>
+<ul>
+<li>Usar palabras siempre en minúsculas.</li>
+<li>No usar artículos.</li>
+<li>Usar únicamente letras y números ASCII, siempre en minúsculas, comprendidos en el rango "a-z" y “0-9”.</li>
+<li>Separar las palabras con guión medio "-".</li>
+<li>En caso de corresponder, ubicar la referencia temporal o del atributo de fragmentación siempre al final.</li>
+</ul>
+<p>Ejemplos:</p>
+<ul>
+<li>
+<p><em>acceso-informacion-publica.csv</em>: Versión completa del recurso.</p>
+</li>
+<li>
+<p><em>acceso-informacion-publica-2013.csv</em>: Versión del recurso fragmentada por año.</p>
+</li>
+<li>
+<p><em>acceso-informacion-publica-201302.csv</em>: Versión del recurso fragmentada por mes.</p>
+</li>
+<li>
+<p><em>acceso-informacion-publica-caba.csv</em>: Versión del recurso fragmentada por división político-territorial (provincia o caba).</p>
+</li>
+<li>
+<p><em>acceso-informacion-publica-caba-2013.csv</em>: Versión del recurso fragmentada por división político-territorial (provincia o caba) y año.</p>
+</li>
+<li>
+<p><em>acceso-informacion-publica-jujuy-20130208.csv</em>:  Versión del recurso fragmentada por división político-territorial (provincia o caba) y fecha.</p>
+</li>
+</ul>
+<p>Para la fragmentación temporal, recomendamos el estándar de los ejemplos, ya que es compacto y ordena los recursos por tiempo: YYYYMMDD. Por favor, recordá mantener siempre dos dígitos para el mes y el día, incluso si el número es menor a 10.</p>
+<p>Para la fragmentación por zonas, consultá la <strong>Guía para la identificación y  uso de entidades interoperables</strong>, y mirá cómo nombrarlas adecuadamente.</p>
+<p>En el caso de usar dimensiones temáticas propias del dominio particular de la información, podés ver esa guía o usar el mejor estándar identificado para esa temática particular.</p>
+<h2 id="codificacion"><a class="toclink" href="#codificacion">Codificación</a><a class="headerlink" href="#codificacion" title="Permanent link">&#128279;</a></h2>
+<p>Todos los recursos de datos, incluyendo los geográficos, deben publicarse usando la codificación UTF-8 siguiendo las  <a href="https://www.w3.org/TR/tabular-data-model/#h-encoding">recomendaciones de la W3C</a>.</p>
+<p>Una de las principales razones es que UTF-8 soporta una gran variedad de lenguajes, <a href="https://www.w3.org/International/questions/qa-choosing-encodings">según la W3C</a> es un <em>"estándar en el que se definen todos los caracteres necesarios para la escritura de la mayoría de los idiomas hablados en la actualidad. Su objetivo es ser, y, en gran medida, ya lo ha logrado, un superconjunto de todos los sets de caracteres que se hayan codificado"</em>.</p>
+<h2 id="estructura-y-caracteristicas-de-los-datos-tabulares"><a class="toclink" href="#estructura-y-caracteristicas-de-los-datos-tabulares">Estructura y características de los datos tabulares</a><a class="headerlink" href="#estructura-y-caracteristicas-de-los-datos-tabulares" title="Permanent link">&#128279;</a></h2>
+<p>En esta sección veremos:</p>
+<p>(a) Recomendaciones generales para el trabajo con datos, y</p>
+<p>(b) Recomendaciones para el trabajo con planillas de cálculo, orientadas tanto a facilitar su exportación a formatos abiertos, como a su propia usabilidad en el contexto de cualquier aplicación de planillas de cálculo.</p>
+<h3 id="recomendaciones-generales"><a class="toclink" href="#recomendaciones-generales">Recomendaciones generales</a><a class="headerlink" href="#recomendaciones-generales" title="Permanent link">&#128279;</a></h3>
+<p>Estas son recomendaciones generales para el trabajo con datos tabulares. Sugerimos adoptarlas sea cual sea la tecnología usada.</p>
+<p>Muchas de las las recomendaciones aquí presentadas se encuadran en los principios de <a href="https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf">Tidy Data</a> delineados por <a href="http://hadley.nz/">Hadley Wickham</a>. Éstos establecen, por ejemplo, que en una tabla de datos <em>"cada variable es una columna, cada observacion es una fila, y cada tipo de unidad observacional es una tabla"</em>. Sugerimos complementar la lectura de esta guía con la del trabajo que mencionamos.</p>
+<h4 id="nomenclatura-de-los-campos-nombres-de-las-columnas"><a class="toclink" href="#nomenclatura-de-los-campos-nombres-de-las-columnas">Nomenclatura de los campos (nombres de las columnas)</a><a class="headerlink" href="#nomenclatura-de-los-campos-nombres-de-las-columnas" title="Permanent link">&#128279;</a></h4>
+<p>La "nomenclatura de los campos" es el nombre de las columnas en los datos de estructura tabular. Estas recomendaciones aplican a la generalidad de los casos, pero cuando haya convenciones particulares según la temática o rubro de datos de que se trate y éstas entren en conflicto, puede ser conveniente privilegiar primero la convención de la temática específica y luego la convención general.</p>
+<p>Los nombres de los campos deben:</p>
+<ul>
+<li>
+<p>Estar en español.</p>
+</li>
+<li>
+<p>Ser lo más explícitos, descriptivos y declarativos como sea posible.</p>
+<ul>
+<li>
+<p>Es preferible que el nombre de un campo sea claro antes que corto, pero se recomienda no superar los 50 caracteres.</p>
+</li>
+<li>
+<p>No usar abreviaturas si no es estrictamente necesario o recomendado por una convención ampliamente difundida. En caso de usarlas, incluirlas en el diccionario de datos.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Estar en minúsculas, no incluir caracteres especiales, ni estar subrayados.</p>
+<ul>
+<li>
+<p>Usar palabras compuestas únicamente de caracteres en minúsculas comprendidos en el rango a-z (letras sin tildes) y en el rango 0-9 (dígitos).</p>
+</li>
+<li>
+<p>Las palabras deben unirse con guión bajo " _ ".</p>
+</li>
+<li>
+<p>No contener espacios.</p>
+</li>
+<li>
+<p>Las palabras deben separarse siempre con " _ ", en lugar de no tener separación alguna: fecha_audiencia_solicitada en lugar de fechaaudienciasolicitada</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Referirse a un sólo atributo de los datos, indivisible en más de un campo.</p>
+<ul>
+<li>
+<p>Los campos deben separar los atributos de los datos en la forma más desagregada que sea posible. </p>
+</li>
+<li>
+<p>Se debe evitar definir campos que contengan más de un tipo de información (por ejemplo: e-mail y sitio web, número de teléfono, etc bajo "datos_de_contacto").</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Si existe una entidad que engloba varias características separadas en campos diferentes, comenzar nombrando los campos con esa entidad y luego con los atributos más específicos (de lo más general a lo más específico). </p>
+<ul>
+<li>Ej.: solicitante y solicitante_documento son entidades más generales que se repiten en varios campos, que corresponden a atributos más específicos.</li>
+</ul>
+</li>
+<li>
+<p>solicitante_nombre</p>
+</li>
+<li>
+<p>solicitante_cargo</p>
+</li>
+<li>
+<p>solicitante_documento_tipo</p>
+</li>
+<li>
+<p>solicitante_documento_numero</p>
+<ul>
+<li>
+<p>Resulta más fácil  identificar qué campos están relacionados entre sí porque configuran atributos de una misma entidad, en lugar de parecer campos conceptualmente independientes.  Además, el ordenamiento alfabético de los campos los dejaría automáticamente agrupados por su pertenencia a una entidad más importante.</p>
+</li>
+<li>
+<p>Incluso cuando la entidad de un atributo parezca evidente (ej.: un dataset llamado "audiencias" donde todos los campos son atributos de la entidad “audiencia”), se recomienda nombrar el campo incluyendo la entidad a la que hace referencia el atributo.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span>: “fecha_hora”</p>
+</li>
+<li><span class="recomendado"><strong>Recomendado</strong></span>: "audiencia_id", “audiencia_fecha_hora”.</li>
+</ul>
+<p>Los campos que sean identificadores o códigos, deberán incluir el sufijo "_id" en el nombre del campo, salvo casos excepcionales donde un nombre alternativo sea más conveniente porque ofrece información sobre el sistema de identificación usado.</p>
+<ul>
+<li>En cuanto a los campos que contengan la descripción de ese identificador, se recomienda que incluyan el sufijo "_desc" (por "descripción") en caso de que no exista una forma más conveniente de nombrar el campo.</li>
+</ul>
+<p><span class="recomendado"><strong>Recomendado</strong></span></p>
+<table>
+<tbody>
+  <tr>
+    <td>sucursal_id</td>
+    <td>sucursal_desc</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Nueva Pompeya</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Barracas</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>La Quiaca</td>
+  </tr>
+</tbody>
+</table>
+
+<h4 id="nivel-de-granularidad-de-los-datos"><a class="toclink" href="#nivel-de-granularidad-de-los-datos">Nivel de granularidad de los datos</a><a class="headerlink" href="#nivel-de-granularidad-de-los-datos" title="Permanent link">&#128279;</a></h4>
+<p>Por favor, no incluir totales, subtotales ni agrupamientos de datos. Un dataset debe ser consistente en el nivel de granularidad de los datos que contiene. Está bien tener un dataset con la cantidad de convenios firmados por provincia y está bien tener un dataset con la cantidad de convenios firmados por municipio. No está bien tener un dataset que mezcle ambos. </p>
+<p>Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede calcular a partir de un proceso del dataset más desagregado, pero esto no es así a la inversa (es imposible recuperar los datos a nivel de municipio desde el dataset provincial).</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - datos con subtotales y/o totales incluidos (diferentes niveles de granularidad)</p>
+<table>
+  <colgroup>
+    <col style="width:21%">
+    <col style="width:21%">
+    <col style="width:28%">
+    <col style="width:30%">
+  </colgroup>
+<tbody>
+  <tr>
+    <td style="font-size: 11px">provincia_nombre</td>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">convenios_firmados_anio</td>
+    <td style="font-size: 11px">convenios_firmados_numero</td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td>Provincia X</td>
+    <td>Municipio W</td>
+    <td>2011</td>
+  </tr>
+  <tr>
+    <td>Provincia X</td>
+    <td>Municipio X</td>
+    <td>2011</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>Provincia X</td>
+    <td>Subtotal</td>
+    <td>2011</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Provincia Y</td>
+    <td>Municipio Z</td>
+    <td>2011</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Provincia Y</td>
+    <td>Subtotal</td>
+    <td>2011</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TOTAL</td>
+    <td>2011</td>
+    <td>30</td>
+  </tr>
+</tbody>
+</table>
+
+<p><span class="recomendado"><strong>Recomendado</strong></span> - datos de un mismo nivel de granularidad</p>
+<table>
+  <colgroup>
+    <col style="width:21%">
+    <col style="width:21%">
+    <col style="width:28%">
+    <col style="width:30%">
+  </colgroup>
+<tbody>
+  <tr>
+    <td style="font-size: 11px">provincia_nombre</td>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">convenios_firmados_anio</td>
+    <td style="font-size: 11px">convenios_firmados_numero</td>
+  </tr>
+  <tr>
+    <td>Provincia X</td>
+    <td>Municipio W</td>
+    <td>2011</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Provincia X</td>
+    <td>Municipio X</td>
+    <td>2011</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>Provincia Y</td>
+    <td>Municipio Z</td>
+    <td>2011</td>
+    <td>5</td>
+  </tr>
+</tbody>
+</table>
+
+<h4 id="usar-orientacion-vertical-en-lugar-de-horizontal"><a class="toclink" href="#usar-orientacion-vertical-en-lugar-de-horizontal">Usar orientación vertical en lugar de horizontal</a><a class="headerlink" href="#usar-orientacion-vertical-en-lugar-de-horizontal" title="Permanent link">&#128279;</a></h4>
+<p>Es preferible que la orientación de los datos sea "vertical" en lugar de “horizontal” en los casos en que esto sea posible. La principal razón es que los datos orientados de manera vertical facilitan el tratamiento y análisis de los datos.</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - Orientación horizontal</p>
+<table>
+  <colgroup>
+    <col style="width:19%">
+    <col style="width:17%">
+    <col style="width:27%">
+    <col style="width:28%">
+  </colgroup>
+<tbody>
+  <tr>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">solicitudes_anio</td>
+    <td style="font-size:11px;">solicitudes_poda_y_arbolado_numero</td>
+    <td style="font-size:11px;">solicitudes_recoleccion_residuos_numero</td>
+  </tr>
+  <tr>
+    <td>Municipalidad X</td>
+    <td>2015</td>
+    <td>340</td>
+    <td>198</td>
+</tbody>
+</table>
+
+<p><span class="recomendado"><strong>Recomendado</strong></span> - Orientación vertical</p>
+<table>
+  <colgroup>
+    <col style="width:19%">
+    <col style="width:17%">
+    <col style="width:27%">
+    <col style="width:28%">
+  </colgroup>
+
+<tbody>
+  <tr>
+    <td style="font-size: 11px">municipio_nombre</td>
+    <td style="font-size: 11px">solicitudes_anio</td>
+    <td style="font-size:11px;">solicitudes_categoria</td>
+    <td style="font-size:11px;">solicitudes_numero</td>
+  </tr>
+  <tr>
+    <td>Municipalidad X</td>
+    <td>2015</td>
+    <td>Poda y arbolado</td>
+    <td>340</td>
+  </tr>
+  <tr>
+    <td>Municipalidad X</td>
+    <td>2015</td>
+    <td>Recolección de residuos</td>
+    <td>198</td>
+  </tr>
+</tbody>
+</table>
+
+<h4 id="incluir-solo-un-atributo-por-campo"><a class="toclink" href="#incluir-solo-un-atributo-por-campo">Incluir sólo un atributo por campo</a><a class="headerlink" href="#incluir-solo-un-atributo-por-campo" title="Permanent link">&#128279;</a></h4>
+<p>Se recomienda definir los campos de forma atómica de modo de incluir un sólo atributo por elemento, en lugar de datos múltiples, generando campos adicionales de ser necesario.</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - múltiples datos en una celda</p>
+<table>
+<tbody>
+  <tr>
+    <td>municipio_nombre</td>
+    <td>solicitudes_anio</td>
+    <td style="font-size:11px;">categoria_solicitudes_numero_y_tipo</td>
+  </tr>
+  <tr>
+    <td>Municipalidad X</td>
+    <td>2015</td>
+    <td>Poda y arbolado - 340
+Recolección de residuos - 198</td>
+</tbody>
+</table>
+
+<p><span class="recomendado"><strong>Recomendado</strong></span> - un dato por celda</p>
+<table>
+<tbody>
+  <tr>
+    <td>municipio_nombre</td>
+    <td>solicitudes_anio</td>
+    <td>solicitudes_categoria</td>
+    <td>solicitudes_numero</td>
+  </tr>
+  <tr>
+    <td>Municipalidad X</td>
+    <td>2015</td>
+    <td>Poda y arbolado</td>
+    <td>340</td>
+  </tr>
+  <tr>
+    <td>Municipalidad X</td>
+    <td>2015</td>
+    <td>Recolección de residuos</td>
+    <td>198</td>
+  </tr>
+</tbody>
+</table>
+
+<h4 id="valores-nulos-desconocidos-o-en-blanco-en-campos-numericos"><a class="toclink" href="#valores-nulos-desconocidos-o-en-blanco-en-campos-numericos">Valores nulos, desconocidos o en blanco en campos numéricos</a><a class="headerlink" href="#valores-nulos-desconocidos-o-en-blanco-en-campos-numericos" title="Permanent link">&#128279;</a></h4>
+<p>Los valores de los datos deben ser siempre explícitos y respetando el tipo de datos del campo de que se trate. Los elementos o celdas en blanco se interpretarán siempre como "valor ausente". </p>
+<p>Si existen distintas interpretaciones posibles de un "valor ausente", éstas deben ser explicitadas en un campo aparte. Si sólo hay “valores ausentes” (no hay distintas interpretaciones, es siempre un “valor ausente”) no es necesario agregar una columna adicional.</p>
+<p>Es importante destacar, por ejemplo, que cuando un valor numérico sea "0" siempre debe ponerse un “0” como dato (y no un valor nulo, en blanco o vacío).</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - texto presente en campos numéricos</p>
+<table id="una-columna">
+<tbody>
+  <tr>
+    <td>solicitudes_numero</td>
+  </tr>
+  <tr>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td>NA</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td>567</td>
+  </tr>
+</tbody>
+</table>
+
+<p><span class="recomendado"><strong>Recomendado</strong></span> - texto excluido de campos numéricos</p>
+<table>
+<tbody>
+  <tr>
+    <td>solicitudes_numero</td>
+    <td>solicitudes_numero_missing_desc</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>No disponible</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>No sabe / No contesta</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Valor ausente</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Valor ausente</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>567</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+<h3 id="recomendaciones-para-estructurar-planillas-de-calculo"><a class="toclink" href="#recomendaciones-para-estructurar-planillas-de-calculo">Recomendaciones para estructurar planillas de cálculo</a><a class="headerlink" href="#recomendaciones-para-estructurar-planillas-de-calculo" title="Permanent link">&#128279;</a></h3>
+<p>Las recomendaciones de esta sección aplican exclusivamente al trabajo sobre planillas de cálculo.</p>
+<h4 id="usar-celdas-simples"><a class="toclink" href="#usar-celdas-simples">Usar celdas simples</a><a class="headerlink" href="#usar-celdas-simples" title="Permanent link">&#128279;</a></h4>
+<p>Recomendamos usar celdas simples y, en ningún caso, combinar celdas.</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - celdas combinadas</p>
+<table>
+<tbody>
+  <tr>
+    <td>proveedor_nombre</td>
+    <td colspan="2">contacto_datos</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>correo_electronico</td>
+    <td>telefono</td>
+  </tr>
+    <td>Ejemplo Sociedad Anónima</td>
+    <td>ejemplo@ejemplo.com.ar</td>
+    <td>1143XXXXXX</td>
+  </tr>
+</tbody>
+</table>
+
+<p><span class="recomendado"><strong>Recomendado</strong></span> - celdas simples, sin combinar</p>
+<table>
+<tbody>
+  <tr>
+    <td>proveedor_nombre</td>
+    <td>contacto_correo_electronico</td>
+    <td>contacto_telefono</td>
+  </tr>
+  <tr>
+    <td>Ejemplo Sociedad Anónima</td>
+    <td>ejemplo@ejemplo.com.ar</td>
+    <td>1143XXXXXX</td>
+  </tr>
+</tbody>
+</table>
+
+<h4 id="fila-de-encabezado"><a class="toclink" href="#fila-de-encabezado">Fila de encabezado</a><a class="headerlink" href="#fila-de-encabezado" title="Permanent link">&#128279;</a></h4>
+<p>Los datos deben contener sólo una fila de encabezado. Desde la segunda fila en adelante, sólo debe haber datos, pero nunca un encabezado.</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - múltiples filas de encabezado</p>
+<table>
+<tbody>
+  <tr>
+    <td>Nombre del</td>
+    <td>Dirección de correo</td>
+    <td>Teléfono de</td>
+  </tr>
+  <tr>
+    <td>proveedor</td>
+    <td>electrónico de contacto</td>
+    <td>contacto</td>
+  </tr>
+    <td>Ejemplo Sociedad Anónima</td>
+    <td>ejemplo@ejemplo.com.ar</td>
+    <td>1143XXXXXX</td>
+  </tr>
+</tbody>
+</table>
+
+<p><span class="recomendado"><strong>Recomendado</strong></span> - encabezado de una única fila</p>
+<table>
+<tbody>
+  <tr>
+    <td>proveedor_nombre</td>
+    <td>contacto_correo_electronico</td>
+    <td>contacto_telefono</td>
+  </tr>
+  <tr>
+    <td>Ejemplo Sociedad Anónima</td>
+    <td>ejemplo@ejemplo.com.ar</td>
+    <td>1143XXXXXX</td>
+  </tr>
+</tbody>
+</table>
+
+<h4 id="celdas-vacias-en-filas-para-agrupar-conceptos"><a class="toclink" href="#celdas-vacias-en-filas-para-agrupar-conceptos">Celdas vacías en filas para agrupar conceptos</a><a class="headerlink" href="#celdas-vacias-en-filas-para-agrupar-conceptos" title="Permanent link">&#128279;</a></h4>
+<p>Recomendamos no dejar celdas vacías en filas bajo la presunción de que valores en blanco posteriores a un valor positivo contienen implícitamente a ese mismo valor en una suerte de "agrupamiento conceptual".</p>
+<p>Este error es muy común en la construcción de planillas de cálculo y suele generar problemas graves cuando cambia el orden original de las filas. Además, impide el uso de tablas dinámicas y otras formas de analizar los datos.</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - primera celda de la segunda fila vacía</p>
+<table>
+<tbody>
+  <tr>
+    <td>municipio_nombre</td>
+    <td>solicitudes_anio</td>
+    <td>solicitudes_categoria</td>
+    <td>solicitudes_numero</td>
+  </tr>
+  <tr>
+    <td>Municipalidad X</td>
+    <td>2015</td>
+    <td>Poda y arbolado</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>2015</td>
+    <td>Recolección de residuos</td>
+    <td>198</td>
+  </tr>
+</tbody>
+</table>
+
+<p><span class="recomendado"><strong>Recomendado</strong></span> - primera celda de la segunda fila completa</p>
+<table>
+<tbody>
+  <tr>
+    <td>municipio_nombre</td>
+    <td>solicitudes_anio</td>
+    <td>solicitudes_categoria</td>
+    <td>solicitudes_numero</td>
+  </tr>
+  <tr>
+    <td>Municipalidad X</td>
+    <td>2015</td>
+    <td>Poda y arbolado</td>
+    <td>340</td>
+  </tr>
+  <tr>
+    <td>Municipalidad X</td>
+    <td>2015</td>
+    <td>Recolección de residuos</td>
+    <td>198</td>
+  </tr>
+</tbody>
+</table>
+
+<h4 id="formato-de-celdas"><a class="toclink" href="#formato-de-celdas">Formato de celdas</a><a class="headerlink" href="#formato-de-celdas" title="Permanent link">&#128279;</a></h4>
+<p>Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de datos de que se trate. Específicamente, <strong>los números</strong> siempre deben estar en celdas de formato/tipo "número", <strong>los campos de tipo textual</strong> deben estar en celdas de formato/tipo “texto” y <strong>los campos de tipo fecha</strong> deben estar en celdas de formato/tipo “fecha”.</p>
+<table>
+  <colgroup>
+    <col style="width:30%">
+    <col style="width:40%">
+    <col style="width:30%">
+  </colgroup>
+<tbody>
+  <tr>
+    <td>audiencia_fecha_hora</td>
+    <td>audiencia_sujeto_obligado_nombre</td>
+    <td>audiencia_numero</td>
+  </tr>
+  <tr>
+    <td>1/3/16</td>
+    <td>Juan</td>
+    <td>3456</td>
+  </tr>
+  <tr>
+    <td>(Fecha)</td>
+    <td>(Texto)</td>
+    <td>(Número)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Mantener el formato correcto de las celdas según el tipo de datos que contengan:</p>
+<ul>
+<li>
+<p>Mejora las las probabilidades de que una exportación a otro formato salga correctamente.</p>
+</li>
+<li>
+<p>Hace que los datos sean más operables en la propia planilla de cálculo, aprovechando mejor sus funcionalidades.</p>
+</li>
+</ul>
+<h3 id="exportacion-a-csv"><a class="toclink" href="#exportacion-a-csv">Exportación a CSV</a><a class="headerlink" href="#exportacion-a-csv" title="Permanent link">&#128279;</a></h3>
+<p>Insistimos: CSV es el formato más recomendado para la publicación de archivos tabulares. A la hora de exportar una planilla de cálculo a CSV hay 3 parámetros que deben ser especificados durante la exportación, independientemente del software de que se use:</p>
+<ul>
+<li>
+<p><strong>Codificación</strong> (encoding, en inglés): siempre debe ser UTF-8.</p>
+</li>
+<li>
+<p><strong>Caracter separador</strong> (separator character, en inglés): siempre debe ser "," (coma).</p>
+</li>
+<li>
+<p><strong>Caracter calificador</strong> (quote character o enclosing character, en inglés): siempre debe ser " “ “ (comillas dobles).</p>
+</li>
+</ul>
+<h2 id="estandares-segun-el-tipo-de-datos"><a class="toclink" href="#estandares-segun-el-tipo-de-datos">Estándares según el tipo de Datos</a><a class="headerlink" href="#estandares-segun-el-tipo-de-datos" title="Permanent link">&#128279;</a></h2>
+<p>El formato recomendado para los distintos tipos de datos está mayormente basado en las especificaciones de la <a href="https://www.w3.org/TR/tabular-data-model/">W3C</a>. En los otros casos, las recomendaciones surgen de la experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública y del esfuerzo realizado en la búsqueda de estándares más adecuados.</p>
+<h3 id="texto"><a class="toclink" href="#texto">Texto</a><a class="headerlink" href="#texto" title="Permanent link">&#128279;</a></h3>
+<ul>
+<li>Los campos de texto no deben contener espacios en blanco innecesarios al principio ni al final.</li>
+</ul>
+<h4 id="entidades"><a class="toclink" href="#entidades">Entidades</a><a class="headerlink" href="#entidades" title="Permanent link">&#128279;</a></h4>
+<p>Las entidades que aparezcan entre los datos de un campo textual deben tener una descripción única. Es decir, toda mención que se realice a una entidad dada debe hacerse usando exactamente la misma cadena de caracteres cada vez:</p>
+<ul>
+<li>
+<p><strong>Las descripciones de entidades</strong> deberían elegirse siempre de forma tal que cumplan con el estándar específico que las describe, en caso de que este exista.</p>
+</li>
+<li>
+<p><strong>Cuando este estándar no existe</strong> y hay dudas respecto del criterio a adoptar para elegir la descripción única de una entidad, debe <strong>privilegiarse siempre aquella que sea lo más explícita</strong>, descriptiva y declarativa posible.</p>
+</li>
+</ul>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span></p>
+<table id="una-columna">
+<tbody>
+  <tr>
+    <td>localidad_nombre</td>
+  </tr>
+  <tr>
+    <td>Ciudad Autónoma de Buenos Aires</td>
+  </tr>
+  <tr>
+    <td>CABA</td>
+  </tr>
+  <tr>
+    <td>Capital Federal</td>
+  <tr>
+    <td>Ciudad de Buenos Aires</td>
+  </tr>
+</tbody>
+</table>
+
+<p><span class="recomendado"><strong>Recomendado</strong></span> </p>
+<table  id="una-columna">
+<tbody>
+  <tr>
+    <td>localidad_nombre</td>
+  </tr>
+  <tr>
+    <td>Ciudad Autónoma de Buenos Aires</td>
+  </tr>
+  <tr>
+    <td>Ciudad Autónoma de Buenos Aires</td>
+  </tr>
+  <tr>
+    <td>Ciudad Autónoma de Buenos Aires</td>
+  </tr>
+  <tr>
+    <td>Ciudad Autónoma de Buenos Aires</td>
+  </tr>
+</tbody>
+</table>
+
+<p>En el ejemplo anterior, los cuatro valores de texto refieren a la misma entidad. Debe elegirse una única forma de referirse a la misma y usarla en todos los casos.</p>
+<p>Siempre que sea posible, la elección deberá fundamentarse en el estándar establecido para ese tipo de entidad (para más información ver la <strong>Guía para la identificación y uso de entidades interoperables</strong>). En el caso de no existir un estándar, deberá adecuarse a las pautas generales contexto del dataset de que se trate.</p>
+<h4 id="nombres-propios"><a class="toclink" href="#nombres-propios">Nombres propios</a><a class="headerlink" href="#nombres-propios" title="Permanent link">&#128279;</a></h4>
+<p><strong>Se capitalizan</strong> (primera letra de cada palabra es mayúscula, el resto de las letras son minúsculas) <strong>todas las palabras significativas</strong>, salvo las siglas. Las palabras significativas son aquellas que no cumplen la función de artículos o preposiciones.</p>
+<h4 id="siglas"><a class="toclink" href="#siglas">Siglas</a><a class="headerlink" href="#siglas" title="Permanent link">&#128279;</a></h4>
+<p>Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios intermedios.</p>
+<h3 id="numero"><a class="toclink" href="#numero">Número</a><a class="headerlink" href="#numero" title="Permanent link">&#128279;</a></h3>
+<ul>
+<li>El separador decimal debe ser el caracter ".".</li>
+<li>No se usará separador de miles.</li>
+<li>No se deberán usar espacios en blanco.</li>
+<li>Para los números negativos debe incluirse el símbolo menos "-” inmediatamente antes del número, sin espacio en blanco intermedio.</li>
+</ul>
+<h4 id="moneda"><a class="toclink" href="#moneda">Moneda</a><a class="headerlink" href="#moneda" title="Permanent link">&#128279;</a></h4>
+<p>Los valores numéricos que sean además valores monetarios se consideran números y, por lo tanto, valen las mismas recomendaciones que para ellos. Además, agregamos las siguientes recomendaciones:</p>
+<ul>
+<li>
+<p>La cantidad de decimales debe limitarse a dos, salvo que el uso de una mayor cantidad de decimales sea significativo para el caso particular.</p>
+</li>
+<li>
+<p>En ningún caso se incluirán símbolos o letras en el campo numérico -ya sea "$", “DOL”, “USD”, etc.</p>
+</li>
+</ul>
+<p>Si en el recurso los valores monetarios están expresados en diferentes monedas, se recomienda indicarlo en un campo aparte (que puede llamarse "moneda_id") usando los códigos alfabéticos definidos en la <a href="http://www.iso.org/iso/home/standards/currency_codes.htm">ISO 4127</a>.</p>
+<p>Ejemplo:</p>
+<ul>
+<li>ARS, para el peso argentino.</li>
+<li>USD, para el dólar estadounidense.</li>
+</ul>
+<h4 id="numeros-telefonicos"><a class="toclink" href="#numeros-telefonicos">Números telefónicos</a><a class="headerlink" href="#numeros-telefonicos" title="Permanent link">&#128279;</a></h4>
+<p>En este apartado, proponemos una solución para incluir números telefónicos nacionales en los recursos de datos.</p>
+<p>A nivel internacional, el estándar para los números telefónicos fue desarrollado por el "Sector de Normalización de las Telecomunicaciones de la Unión Internacional de Telecomunicaciones" (ITU Telecommunication Standardization Sector) bajo la recomendación <a href="https://www.itu.int/rec/T-REC-E.164/es">E.164</a>.</p>
+<p>Para el caso de los números nacionales, el ENACOM tiene la competencia sobre el sistema de numeración telefónica. Este organismo determina que el número nacional de abonado debe estar compuesto por 10 dígitos. Estos 10 dígitos están conformados por un indicativo interurbano más un número de abonado. Pudiendo el indicativo interurbano tener entre 2 y 4 dígitos, y el número de abonado entre 6 y 8 dígitos.</p>
+<table>
+<tbody>
+  <tr>
+    <td>Indicativo interurbano (ámbito geográfico al que corresponde)</td>
+    <td>Número de abonado</td>
+    <td>Número Nacional interurbano = Indicativo interurbano + Número de abonado</td>
+  </tr>
+  <tr>
+    <td>11 (AMBA)</td>
+    <td>4343XXXX</td>
+    <td>114343XXXX</td>
+  </tr>
+  <tr>
+    <td>351 (Ciudad de Córdoba)</td>
+    <td>434XXXX</td>
+    <td>351434XXXX</td>
+  </tr>
+  <tr>
+    <td>3837 (Tinogasta)</td>
+    <td>43XXXX</td>
+    <td>383743XXXX</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Esta numeración es válida para los teléfonos móviles, pero dado que para llamar a un móvil desde un teléfono fijo es necesario anteponer "15" al número de abonado, es necesario que el registro del número telefónico especifique de alguna manera si se trata de un móvil o de un teléfono fijo.</p>
+<p>Al no existir estándares nacionales para la inclusión de números telefónicos en recursos de datos, los números telefónicos suelen indicarse de múltiples maneras. Por ejemplo:</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span> - Múltiples formas de indicar un número telefónico</p>
+<table>
+<tbody>
+  <tr>
+    <td>proveedor_nombre</td>
+    <td>contacto_correo_electronico</td>
+    <td>contacto_telefono</td>
+  </tr>
+  <tr>
+    <td>Ejemplo Sociedad Anónima</td>
+    <td>ejemplo@ejemplo.com.ar</td>
+    <td>01143XXXXXX</td>
+  </tr>
+    <td>Ejemplo2 Sociedad Anónima</td>
+    <td>ejemplo2@ejemplo2.com.ar</td>
+    <td>011-45XXXXXX</td>
+  </tr>
+  <tr>
+    <td>Ejemplo3 Sociedad Anónima</td>
+    <td>ejemplo3@ejemplo3.com.ar</td>
+    <td>351 434-XXXX</td>
+  </tr>
+  <tr>
+    <td>Ejemplo4 Sociedad Anónima</td>
+    <td>ejemplo4@ejemplo4.com.ar</td>
+    <td>011 15 6344-XXXX</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Para los recursos que contengan números telefónicos nacionales recomendamos como mínimo:</p>
+<ul>
+<li>Respetar el estándar definido por el Número Nacional Interurbano utilizando la conformación de números mediante 10 dígitos.</li>
+<li>Asegurarse de indicar si el teléfono es móvil o fijo.</li>
+<li>Omitir el agregado de dígitos adicionales en el indicativo interurbano. Recomendamos no indicar cero inicial antes del código de área.</li>
+</ul>
+<p>Con las salvedades que comentaremos al final de este apartado, un posible abordaje sería el de la tabla a continuación:</p>
+<p><span class="recomendado"><strong>Recomendado</strong></span> - adecuado al estándar del Número Nacional Interurbano</p>
+<table>
+  <colgroup>
+    <col style="width:16%">
+    <col style="width:22%">
+    <col style="width:18%">
+    <col style="width:26%">
+    <col style="width:18%">
+      </colgroup>
+<tbody>
+  <tr>
+    <td >proveedor_nombre</td>
+    <td >contacto_correo_electronico</td>
+    <td >tipo_numero_telefono</td>
+    <td >contacto_telefono_indicativo_interurbano</td>
+    <td >contacto_telefono_numero_abonado</td>
+  </tr>
+  <tr>
+    <td>Ejemplo Sociedad Anónima</td>
+    <td  style="font-size:11px;">ejemplo@ejemplo.com.ar</td>
+    <td>Fijo</td>
+    <td>11</td>
+    <td>43XXXXXX</td>
+  </tr>
+  <tr>
+    <td>Ejemplo2 Sociedad Anónima</td>
+    <td style="font-size:11px;">ejemplo2@ejemplo2.com.ar</td>
+    <td>Fijo</td>
+    <td>11</td>
+    <td>45XXXXXX</td>
+  </tr>
+  <tr>
+    <td>Ejemplo3 Sociedad Anónima</td>
+    <td style="font-size:11px;">ejemplo3@ejemplo3.com.ar</td>
+    <td>Fijo</td>
+    <td>351</td>
+    <td>434XXXX</td>
+  </tr>
+  <tr>
+    <td>Ejemplo4 Sociedad Anónima</td>
+    <td style="font-size:11px;">ejemplo4@ejemplo4.com.ar</td>
+    <td>Móvil</td>
+    <td>11</td>
+    <td>6344XXXX</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Esta recomendación no contempla estos casos específicos:</p>
+<ul>
+<li>No será aplicable a números de uso público, ejemplo: 100, Bomberos; 911, Policía Federal; etc.</li>
+<li>Para casos que requieran la inclusión de más de un número telefónico. Deberán agregarse campos o modificar la estructura de la base de datos.</li>
+<li>Para teléfonos que requieran la inclusión de un número de interno, y al estar éste definido por la persona u organización específica, deberá considerarse la inclusión de otro campo de tipo texto. Ya que los números de interno pueden incluir texto. Ejemplo: "*86", “#36”, etc.</li>
+<li>Para el casos de números internacionales recomendamos contemplar el estándar internacional  <a href="https://www.itu.int/rec/T-REC-E.164/es">E.164</a>.</li>
+</ul>
+<h4 id="coordenadas"><a class="toclink" href="#coordenadas">Coordenadas</a><a class="headerlink" href="#coordenadas" title="Permanent link">&#128279;</a></h4>
+<p>Para registrar datos de coordenadas geográficas de puntos, usamos números decimales. Los campos deberán llamarse "latitud" y “longitud”. Cuando sea conveniente especificar el nombre de la entidad de la cual se consignan las coordenadas, se usarán los sufijos “_latitud” y “_longitud”.</p>
+<p><span class="no-recomendado"><strong>No recomendado</strong></span></p>
+<table>
+<tbody>
+  <tr>
+    <td>latitud</td>
+    <td>longitud</td>
+  </tr>
+  <tr>
+    <td>34º 11' 30''</td>
+    <td>58º 43' 20''</td>
+  </tr>
+</tbody>
+</table>
+
+<p><span class="recomendado"><strong>Recomendado</strong></span></p>
+<table>
+<tbody>
+  <tr>
+    <td>latitud</td>
+    <td>longitud</td>
+  </tr>
+  <tr>
+    <td>-34.6043222</td>
+    <td>-58.4134862</td>
+  </tr>
+</tbody>
+</table>
+
+<h3 id="tiempo"><a class="toclink" href="#tiempo">Tiempo</a><a class="headerlink" href="#tiempo" title="Permanent link">&#128279;</a></h3>
+<h4 id="fecha"><a class="toclink" href="#fecha">Fecha</a><a class="headerlink" href="#fecha" title="Permanent link">&#128279;</a></h4>
+<p>Se usará el estándar <a href="https://es.wikipedia.org/wiki/ISO_8601">ISO 8601</a> (YYYY-MM-DDTHH:MM:SS[.mmmmmm][+HH:MM]). A menos que se indique lo contrario, se asumirá que la zona horaria es UTC-03:00 (Argentina).</p>
+<ul>
+<li>Fecha: YYYY-MM-DD</li>
+<li>Hora: HH:MM:SS[.mmmmmm][+HH:MM]</li>
+<li>Fecha y Hora: YYYY-MM-DDTHH:MM:SS[.mmmmmm][+HH:MM]</li>
+<li>Duración: YYYY-MM-DDTHH:MM:SS[.mmmmmm]</li>
+</ul>
+<h4 id="rangos-horarios"><a class="toclink" href="#rangos-horarios">Rangos horarios</a><a class="headerlink" href="#rangos-horarios" title="Permanent link">&#128279;</a></h4>
+<ul>
+<li>
+<p>Los rangos estarán divididos en dos partes separadas por un doble guión bajo "__", la primera indica el día y la segunda, la hora.</p>
+</li>
+<li>
+<p>Se puede omitir la parte del día o bien de la hora pero nunca ambas.</p>
+</li>
+<li>
+<p>Si se omite la parte que indica el día se asumirá que el rango abarca todo el horario indicado.</p>
+</li>
+<li>
+<p>Si se omite la parte que indica el horario se asumirá que el rango abarca todo el día indicado.</p>
+</li>
+<li>
+<p>El día se puede indicar tanto mediante rangos separando los días con guiones medios "-" o bien como particulares con el guión bajo "_".</p>
+</li>
+</ul>
+<p>Ejemplos de formatos válidos para días:</p>
+<div class="codehilite"><pre><span></span><span class="n">DAY</span><span class="o">:</span> <span class="n">Un</span> <span class="n">solo</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span>
+<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2</span><span class="o">:</span> <span class="n">Entre</span> <span class="n">entre</span> <span class="n">DAY1</span> <span class="n">y</span> <span class="n">DAY2</span>
+<span class="n">DAY1_DAY2</span><span class="o">:</span> <span class="n">DAY1</span> <span class="n">y</span> <span class="n">DAY2</span>
+<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2_DAY3</span><span class="o">:</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">y</span> <span class="n">DAY3</span>
+</pre></div>
+
+
+<ul>
+<li>La hora se indica mediante rangos, separando los horarios con guiones medios ("-"). También se pueden indicar varios horarios con el guión bajo "_".</li>
+</ul>
+<p>Ejemplos de formatos válidos para horas:</p>
+<div class="codehilite"><pre><span></span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="o">:</span> <span class="n">Rango</span> <span class="n">simple</span>
+<span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="o">:</span> <span class="n">Dos</span> <span class="n">rangos</span>
+</pre></div>
+
+
+<p>Más ejemplos de formatos válidos completos:</p>
+<div class="codehilite"><pre><span></span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">todos</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span><span class="o">.</span>
+<span class="n">DAY</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">que</span> <span class="n">el</span> <span class="n">rango</span> <span class="n">ocupa</span> <span class="n">todo</span> <span class="n">el</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span> <span class="n">DAY</span><span class="o">.</span>
+<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span> <span class="n">DAY</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">.</span>
+<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span>
+<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span>
+<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">rango</span> <span class="n">de</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span>
+</pre></div>
+
+
+<ul>
+<li>
+<p>En caso de que se necesite cubrir más de una franja horaria y esta sintaxis sea insuficiente, se pueden incluir varias separadas por espacios.</p>
+</li>
+<li>
+<p>Los días se indicarán con sus iniciales en castellano: LUN, MAR, MIE, JUE, VIE, SAB y DOM</p>
+</li>
+</ul>
+<p>Ejemplos:</p>
+<div class="codehilite"><pre><span></span>24hs -&gt; &quot;00:00-23:59&quot; 
+Jueves 24hs -&gt; &quot;JUE&quot; 
+Jueves de 14:30 a 17 hs -&gt; &quot;JUE__14:30-17:00&quot; 
+Jueves de 8 a 12 hs y de 16 a 20 hs -&gt; &quot;JUE__08:12-17:00_16:00-20:00&quot; 
+Jueves de 8 a 15 hs y Viernes de 8 a 15 hs -&gt; &quot;JUE__08:00-15:00 VIE_08:00-15:00&quot; 
+Lunes a Viernes 7:30 a 17 hs y Sábados 8 a 12 hs -&gt; &quot;LUN-VIE__07:30-17:00 SAB__08:00-12:00&quot; 
+Lunes a Viernes 8 a 11 y 14 a 18 hs -&gt; &quot;LUN-VIE__08:00-11:00_14:00-18:00&quot; 
+Lunes y Miercoles 8 a 11 y 14 a 18 hs -&gt; &quot;LUN_MIE__08:00-11:00_14:00-18:00&quot; 
+Lunes a Miercoles y Viernes 8 a 11 y 14 a 18 hs -&gt; &quot;LUN-MIE_VIE__08:00-11:00_14:00-18:00&quot;
+Lunes a Miercoles 8 a 11 y de Viernes a Domingo 9 a 10 -&gt; &quot;LUN-MIE__08:00-11:00 VIE-DOM__09:00-10:00&quot;
+</pre></div>
+
+
+<h3 id="booleano"><a class="toclink" href="#booleano">Booleano</a><a class="headerlink" href="#booleano" title="Permanent link">&#128279;</a></h3>
+<ul>
+<li>
+<p>A menos que se indique lo contrario, se identificarán con los valores <em>true</em> o <em>false</em>.</p>
+<ul>
+<li>Esta convención puede variar en algunos rubros específicos de datos, pero en caso de no existir una convención clara y definida aplicable al rubro o contexto del dataset, se recomienda utilizar <em>true</em> o <em>false</em>.</li>
+</ul>
+</li>
+<li>
+<p>Este campo puede contener "valores ausentes". En ese caso, el campo deberá estar totalmente vacío, no conteniendo ningún caracter.</p>
+</li>
+<li>
+<p>Si existe la posibilidad de que haya otro valor que no sea <em>true</em>, <em>false</em> o "valor ausente" significa que se eligió un tipo de datos incorrecto: este no es booleano, el tipo de dato booleano es binario y sólo admite 2 valores de verdad (aparte del caso del “valor ausente”).</p>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.5e60981f.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

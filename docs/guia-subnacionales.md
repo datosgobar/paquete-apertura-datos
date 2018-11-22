@@ -201,11 +201,11 @@ Para lograr que un dato publicado sea realmente útil y fácil de usar por parte
 
 La política de apertura de datos de la Administración Pública Nacional se basa en las recomendaciones volcadas en estas guías, cuya lectura es fuertemente recomendada:
 
-* [Guía para la publicación de datos en formatos abiertos](https://datosgobar.github.io/paquete-apertura-datos/guia_abiertos/). Recomendaciones para publicar datos en formatos abiertos, estructurar bien una tabla, nombrar archivos y columnas, usar estándares básicos y trabajar con planillas de cálculo.
+* [Guía para la publicación de datos en formatos abiertos](https://datosgobar.github.io/paquete-apertura-datos/guia-abiertos/). Recomendaciones para publicar datos en formatos abiertos, estructurar bien una tabla, nombrar archivos y columnas, usar estándares básicos y trabajar con planillas de cálculo.
 
-* [Guía para la identificación y uso de entidades interoperables](https://datosgobar.github.io/paquete-apertura-datos/guia_interoperables/). Recomendaciones y referencias para nombrar entidades en activos de datos, usando sus nombres y códigos oficiales.
+* [Guía para la identificación y uso de entidades interoperables](https://datosgobar.github.io/paquete-apertura-datos/guia-interoperables/). Recomendaciones y referencias para nombrar entidades en activos de datos, usando sus nombres y códigos oficiales.
 
-* [Guía para el uso y la publicación de metadatos](https://datosgobar.github.io/paquete-apertura-datos/guia_metadatos/). Recomendaciones y estándares para documentar activos de datos.
+* [Guía para el uso y la publicación de metadatos](https://datosgobar.github.io/paquete-apertura-datos/guia-metadatos/). Recomendaciones y estándares para documentar activos de datos.
 
 ### Financiamiento de la iniciativa
 
