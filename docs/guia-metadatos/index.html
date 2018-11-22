@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+      <meta name="generator" content="mkdocs-1.0.3, mkdocs-material-3.0.5">
     
     
       
@@ -303,10 +303,12 @@
             
             
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Guías de buenas prácticas
@@ -324,7 +326,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guia_abiertos.md" title="Guía para la publicación de datos en formatos abiertos" class="md-nav__link">
+    <a href="../guia-abiertos/" title="Guía para la publicación de datos en formatos abiertos" class="md-nav__link">
       Guía para la publicación de datos en formatos abiertos
     </a>
   </li>
@@ -336,7 +338,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guia_interoperables.md" title="Guía para la identificación y uso de entidades interoperables" class="md-nav__link">
+    <a href="../guia-interoperables/" title="Guía para la identificación y uso de entidades interoperables" class="md-nav__link">
       Guía para la identificación y uso de entidades interoperables
     </a>
   </li>
@@ -346,11 +348,322 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../guia_metadatos.md" title="Guía para el uso y la publicación de metadatos" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Guía para el uso y la publicación de metadatos
+      </label>
+    
+    <a href="./" title="Guía para el uso y la publicación de metadatos" class="md-nav__link md-nav__link--active">
       Guía para el uso y la publicación de metadatos
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" title="Introducción" class="md-nav__link">
+    Introducción
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version" title="Versión" class="md-nav__link">
+    Versión
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" title="Objetivo" class="md-nav__link">
+    Objetivo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-son-los-metadatos" title="¿Qué son los metadatos?" class="md-nav__link">
+    ¿Qué son los metadatos?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-se-publican-los-metadatos" title="¿Cómo se publican los metadatos?" class="md-nav__link">
+    ¿Cómo se publican los metadatos?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publico-objetivo-de-esta-guia" title="Público objetivo de esta guía" class="md-nav__link">
+    Público objetivo de esta guía
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-catalogo-de-datos-abiertos" title="Crear un catálogo de datos abiertos" class="md-nav__link">
+    Crear un catálogo de datos abiertos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#excel" title="Excel" class="md-nav__link">
+    Excel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portal-andino" title="Portal Andino" class="md-nav__link">
+    Portal Andino
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otros-catalogos" title="Otros catálogos" class="md-nav__link">
+    Otros catálogos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#perfil-de-metadatos" title="Perfil de Metadatos" class="md-nav__link">
+    Perfil de Metadatos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estandar-usado" title="Estándar usado" class="md-nav__link">
+    Estándar usado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campos-del-perfil" title="Campos del perfil" class="md-nav__link">
+    Campos del perfil
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#catalogo-catalog" title="Catálogo (catalog)" class="md-nav__link">
+    Catálogo (catalog)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-dataset" title="Dataset (dataset)" class="md-nav__link">
+    Dataset (dataset)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-distribution" title="Distribución (distribution)" class="md-nav__link">
+    Distribución (distribution)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-field" title="Campo (field)" class="md-nav__link">
+    Campo (field)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-theme" title="Tema (theme)" class="md-nav__link">
+    Tema (theme)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensiones-especiales" title="Extensiones especiales" class="md-nav__link">
+    Extensiones especiales
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#series-de-tiempo" title="Series de tiempo" class="md-nav__link">
+    Series de tiempo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-de-series-de-tiempo" title="Distribución de series de tiempo" class="md-nav__link">
+    Distribución de series de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-especial-indice-de-tiempo" title="Tipo especial: indice de tiempo" class="md-nav__link">
+    Tipo especial: indice de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentar-un-dataset-de-series-de-tiempo" title="Documentar un dataset de series de tiempo" class="md-nav__link">
+    Documentar un dataset de series de tiempo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-dataset-series-de-tiempo" title="Dataset (dataset) - series de tiempo" class="md-nav__link">
+    Dataset (dataset) - series de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-distribution-series-de-tiempo" title="Distribución (distribution) - series de tiempo" class="md-nav__link">
+    Distribución (distribution) - series de tiempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-field-series-de-tiempo" title="Campo (field) - series de tiempo" class="md-nav__link">
+    Campo (field) - series de tiempo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glosario" title="Glosario" class="md-nav__link">
+    Glosario
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla" title="Anexo I - Taxonomía temática global de la APN para los datasets (tabla)" class="md-nav__link">
+    Anexo I - Taxonomía temática global de la APN para los datasets (tabla)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas" title="Anexo II - Pautas para la selección de etiquetas" class="md-nav__link">
+    Anexo II - Pautas para la selección de etiquetas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601" title="Anexo III - Especificación de frecuencias (según ISO-8601)" class="md-nav__link">
+    Anexo III - Especificación de frecuencias (según ISO-8601)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-iv-ejemplo-de-datajson" title="Anexo IV - Ejemplo de data.json" class="md-nav__link">
+    Anexo IV - Ejemplo de data.json
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json" title="Anexo V - Taxonomía temática global de la APN para los datasets (JSON)" class="md-nav__link">
+    Anexo V - Taxonomía temática global de la APN para los datasets (JSON)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-vi-ejemplo-de-metadatos-como-texto" title="Anexo VI - Ejemplo de metadatos como texto" class="md-nav__link">
+    Anexo VI - Ejemplo de metadatos como texto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo" title="Anexo VII - Ejemplo de data.json con series de tiempo" class="md-nav__link">
+    Anexo VII - Ejemplo de data.json con series de tiempo
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -397,7 +710,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guia_subnacionales.md" title="Guía para la apertura de datos en gobiernos subnacionales" class="md-nav__link">
+    <a href="../guia-subnacionales/" title="Guía para la apertura de datos en gobiernos subnacionales" class="md-nav__link">
       Guía para la apertura de datos en gobiernos subnacionales
     </a>
   </li>
@@ -750,7 +1063,7 @@
 <p>El objetivo de esta guía es que los organismos de la Administración Pública Nacional alcanzados por el Decreto N° 117/2016 del 12 de enero de 2016, encuentren todos los recursos necesarios para <strong>crear su catálogo de datos abiertos</strong> según el Perfil Nacional de Metadatos para Datos Abiertos impulsad por la Dirección Nacional de Datos e Información Pública.</p>
 <p>El estándar desarrollado y las recomendaciones vertidas en este documento se basan en estándares usados a nivel nacional e internacional, y en la experiencia de trabajo del equipo de Datos de la Secretaría de Gobierno de Modernización de la Nación.</p>
 <p>Esta es <strong>una guía colaborativa y en progreso</strong>. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.</p>
-<p>Este documento se complementa con la <strong><a href="guia_abiertos.md">Guía para la publicación de datos en formatos abiertos</a></strong> y la <strong><a href="guia_interoperables.md">Guía para la identificación y uso de entidades interoperables</a></strong>.</p>
+<p>Este documento se complementa con la <strong><a href="../guia-abiertos/">Guía para la publicación de datos en formatos abiertos</a></strong> y la <strong><a href="../guia-interoperables/">Guía para la identificación y uso de entidades interoperables</a></strong>.</p>
 <h3 id="que-son-los-metadatos"><a class="toclink" href="#que-son-los-metadatos">¿Qué son los metadatos?</a><a class="headerlink" href="#que-son-los-metadatos" title="Permanent link">&#128279;</a></h3>
 <p><strong>Los metadatos son los datos sobre los datos</strong>. Es decir: <strong>elementos descriptivos que dan contexto</strong> a un conjunto de datos, y acercan al usuario la información necesaria para entenderlos y usarlos eficazmente.</p>
 <p>Un <strong>título</strong> y una breve <strong>descripción</strong> son los metadatos básicos que cualquier conjunto de datos a publicar debería tener.</p>
@@ -2699,6 +3012,41 @@
         
 <footer class="md-footer">
   
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../guia-interoperables/" title="Guía para la identificación y uso de entidades interoperables" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Guía para la identificación y uso de entidades interoperables
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../guia-subnacionales/" title="Guía para la apertura de datos en gobiernos subnacionales" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Guía para la apertura de datos en gobiernos subnacionales
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
@@ -2718,7 +3066,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.5e60981f.js"></script>
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
       
         
         
@@ -2735,7 +3083,7 @@
           
         
       
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.0.3",url:{base:".."}})</script>
       
     
     

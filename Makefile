@@ -110,6 +110,16 @@ build:
 	mkdocs build
 	rsync -vau --remove-source-files site/ docs/
 	rm -rf site
+	rm -rf docs/guia_abiertos
+	rm -rf docs/guia_apn
+	rm -rf docs/guia_interoperables
+	rm -rf docs/guia_metadatos
+	rm -rf docs/guia_subnacionales
+	cp -rf docs/guia-abiertos docs/guia_abiertos
+	cp -rf docs/guia-apn docs/guia_apn
+	cp -rf docs/guia-interoperables docs/guia_interoperables
+	cp -rf docs/guia-metadatos docs/guia_metadatos
+	cp -rf docs/guia-subnacionales docs/guia_subnacionales
 
 pdf:
 	python md2pdf.py docs/guia-abiertos.md docs/pdf/guia-abiertos.pdf
