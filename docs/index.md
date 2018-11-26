@@ -18,6 +18,6 @@ Podés colaborar con las guías cargando un nuevo issue, o respondiendo a un iss
 
 * Guías de implementación
     - [Guía para la apertura de datos en organismos de la Administración Pública Nacional](http://datos.gob.ar/acerca/seccion/Public%C3%A1%20datos)
-    - [Guía para la apertura de datos en gobiernos subnacionales](guia_subnacionales.md)
+    - [Guía para la apertura de datos en gobiernos subnacionales](guia-subnacionales.md)
 
 * [Glosario](glosario.md)
