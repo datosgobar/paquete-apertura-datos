@@ -76,7 +76,7 @@ Los recursos **pueden tener diversos formatos** (csv, shp, etc) o estar disponib
 
 ## Perfil de metadatos
 
-Es un estándar para documentar los activos de datos de un catálogo. La Argentina documenta su perfil de metadatos en la [Guía para el uso y la publicación de metadatos](guia_metadatos.md), que busca unificar el modo en el que estos se comparten desde la Administración Pública Nacional.
+Es un estándar para documentar los activos de datos de un catálogo. La Argentina documenta su perfil de metadatos en la [Guía para el uso y la publicación de metadatos](guia-metadatos.md), que busca unificar el modo en el que estos se comparten desde la Administración Pública Nacional.
 
 ## Transparencia activa
 

@@ -162,6 +162,7 @@ En el caso de las divisiones o unidades territoriales internas, recomendamos usa
 
 Incluye identificadores numéricos compuestos de una cantidad fija de dígitos (el tipo de datos debe ser textual, ya que tiene ceros a la izquierda que son significativos) para, entre otras, las siguientes entidades interoperables:
 
+
 * Provincias ([CSV](http://www.ign.gob.ar/descargas/geodatos/departamento.csv) | [SHP](http://www.ign.gob.ar/descargas/geodatos/provincia.zip) | [GEOJSON](http://www.ign.gob.ar/descargas/geodatos/provincia_geojson.zip))
 * Departamentos (Partidos o Comunas) ([CSV](http://www.ign.gob.ar/descargas/geodatos/departamento.csv) | [SHP](http://www.ign.gob.ar/descargas/geodatos/departamento.zip) | [GEOJSON](http://www.ign.gob.ar/descargas/geodatos/departamento_geojson.zip))
 * Fracciones Censales
@@ -170,13 +171,15 @@ Incluye identificadores numéricos compuestos de una cantidad fija de dígitos (
 * Localidades ([CSV](https://apis.datos.gob.ar/georef/api/localidades?formato=csv&max=5000) | [JSON](https://apis.datos.gob.ar/georef/api/localidades?formato=json&max=5000))
 * Aglomerados
 
+¿Cómo se relacionan estas entidades entre sí? Veremos que estas unidades pueden ordenarse jerárquicamente de modo tal que algunas contienen a las otras, aunque no en todos los casos.  A continuación,  explicamos los conjuntos de entidades que conforman una jerarquía internamente consistente.
+
+![](assets/unidades_territoriales.png)
+
 Este sistema de identificadores es consistente con el  usado por la Base de Asentamientos Humanos de la República Argentina ([BAHRA](http://www.bahra.gob.ar/)) para la identificación de localidades, que además lo extiende para incluir la posibilidad de referenciar sitios edificados (sumando 3 dígitos al identificador de una Localidad).
 
 Sin embargo, en esta guía no abordamos los identificadores de entidades puntuales derivadas de las Localidades (que implican avanzar a niveles de desagregación geográfica mayores).
 
 Los nombres geográficos presentados en la BAHRA son oficiales, pero no se encuentran validados. El establecimiento de un procedimiento para la validación de los nombres geográficos es una tarea pendiente para la República Argentina.
-
-¿Cómo se relacionan estas entidades entre sí? Veremos que estas unidades pueden ordenarse jerárquicamente de modo tal que algunas contienen a las otras, aunque no en todos los casos.  A continuación,  explicamos los conjuntos de entidades que conforman una jerarquía internamente consistente.
 
 ##### A. Provincias -> Departamentos -> Fracciones Censales -> Radios Censales (PDFR)
 
