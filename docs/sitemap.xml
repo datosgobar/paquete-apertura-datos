@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://datosgobar.github.io/paquete-apertura-datos/</loc>
-     <lastmod>2018-12-26</lastmod>
+     <lastmod>2019-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -12,17 +12,17 @@
     </url>
     <url>
      <loc>https://datosgobar.github.io/paquete-apertura-datos/guia-abiertos/</loc>
-     <lastmod>2018-12-26</lastmod>
+     <lastmod>2019-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://datosgobar.github.io/paquete-apertura-datos/guia-interoperables/</loc>
-     <lastmod>2018-12-26</lastmod>
+     <lastmod>2019-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://datosgobar.github.io/paquete-apertura-datos/guia-metadatos/</loc>
-     <lastmod>2018-12-26</lastmod>
+     <lastmod>2019-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -32,12 +32,12 @@
     </url>
     <url>
      <loc>https://datosgobar.github.io/paquete-apertura-datos/guia-subnacionales/</loc>
-     <lastmod>2018-12-26</lastmod>
+     <lastmod>2019-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://datosgobar.github.io/paquete-apertura-datos/glosario/</loc>
-     <lastmod>2018-12-26</lastmod>
+     <lastmod>2019-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

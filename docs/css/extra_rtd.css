@@ -1,12 +1,23 @@
 table {
     text-align: center;
     margin: 0 auto;
+	display: table;
+    width:100%;
 }
 
 tbody {
-    display: inline;
+    display: table;
+    width: 100%;
 }
 
 .wy-nav-top {
     background: rgb(0, 0, 185);
+}
+
+.recomendado {
+	color: green;
+}
+
+.no-recomendado {
+	color: red;
 }

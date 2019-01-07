@@ -8,21 +8,25 @@
 - [Introducción](#introduccion)
 - [Objetivo de esta guía](#objetivo-de-esta-guia)
 - [Datos de entidades interoperables](#datos-de-entidades-interoperables)
-  - [¿Qué son?](#que-son)
-  - [¿Por qué es importante estandarizarlos?](#por-que-es-importante-estandarizarlos)
+    - [¿Qué son?](#que-son)
+    - [¿Por qué es importante estandarizarlos?](#por-que-es-importante-estandarizarlos)
 - [Tipos de entidades interoperables](#tipos-de-entidades-interoperables)
-  - [Geográficas](#geograficas)
-    - [Países o territorios internacionales](#paises-o-territorios-internacionales)
-    - [Divisiones o unidades territoriales internas](#divisiones-o-unidades-territoriales-internas)
-      - [A. Provincias -> Departamentos -> Fracciones Censales -> Radios Censales (PDFR)](#a-provincias-departamentos---fracciones-censales---radios-censales-pdfr)
-      - [B. Provincias -> Municipios (PM)](#b-provincias-municipios-pm)
-      - [C. Provincias -> Departamentos -> Localidades (PDL)](#c-provincias-departamentos---localidades-pdl)
-      - [D. Aglomerados](#d-aglomerados)
-      - [E. ¿Cómo nombrar los campos?](#e-como-nombrar-los-campos)
-    - [Direcciones y lugares](#direcciones-y-lugares)
-    - [**Códigos postales**](#codigos-postales)
-  - [**Personas físicas**](#personas-fisicas)
-  - [**Personas jurídicas**](#personas-juridicas)
+    - [Geográficas](#geograficas)
+        - [Países o territorios internacionales](#paises-o-territorios-internacionales)
+        - [Divisiones o unidades territoriales internas](#divisiones-o-unidades-territoriales-internas)
+            - [A. Provincias -> Departamentos -> Fracciones Censales -> Radios Censales (PDFR)](#a-provincias-departamentos---fracciones-censales---radios-censales-pdfr)
+            - [B. Provincias -> Municipios (PM)](#b-provincias-municipios-pm)
+            - [C. Provincias -> Departamentos -> Localidades (PDL)](#c-provincias-departamentos---localidades-pdl)
+            - [D. Aglomerados](#d-aglomerados)
+            - [E. ¿Cómo nombrar los campos?](#e-como-nombrar-los-campos)
+            - [F. La Ciudad Autónoma de Buenos Aires](#la-ciudad-autonoma-de-buenos-aires)
+        - [Direcciones y lugares](#direcciones-y-lugares)
+        - [Códigos postales](#codigos-postales)
+    - [Personas físicas](#personas-fisicas)
+    - [Personas jurídicas](#personas-juridicas)
+- [Estándares sectoriales](#estandares-sectoriales)
+    - [Transporte](#transporte)
+    - [Compras y contrataciones](#compras-y-contrataciones)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -170,6 +174,8 @@ Incluye identificadores numéricos compuestos de una cantidad fija de dígitos (
 * Municipios ([CSV](http://www.ign.gob.ar/descargas/geodatos/municipio.csv) | [SHP](http://www.ign.gob.ar/descargas/geodatos/municipio.zip) | [GEOJSON](http://www.ign.gob.ar/descargas/geodatos/municipio_geojson.zip))
 * Localidades ([CSV](https://apis.datos.gob.ar/georef/api/localidades?formato=csv&max=5000) | [JSON](https://apis.datos.gob.ar/georef/api/localidades?formato=json&max=5000))
 * Aglomerados
+
+Cabe aclarar que las fracciones censales, la cobertura geográfica, los nomencladores y codificación de INDEC son referencias dinámicas, ya que pueden llegar a modificarse en los censos. Las incluidas en esta guía refieren al Censo Nacional de Población, Hogares y Viviendas 2010.
 
 ¿Cómo se relacionan estas entidades entre sí? Veremos que estas unidades pueden ordenarse jerárquicamente de modo tal que algunas contienen a las otras, aunque no en todos los casos.  A continuación,  explicamos los conjuntos de entidades que conforman una jerarquía internamente consistente.
 
@@ -390,6 +396,13 @@ Resaltamos la importancia de que el tipo de datos del campo de un identificador 
 </tbody>
 </table>
 
+##### F. La Ciudad Autónoma de Buenos Aires
+
+La Ciudad de Buenos Aires constituye una excepción a la regla PDL (partido-departamento-localidad), utilizada a nivel nacional, ya que es una localidad compuesta por departamentos (comunas), de manera que no puede componerse identificador compuesto de tipo provincia-departamento-localidad. Para este caso, recomendamos usar el identificador de jurisdicción de primer nivel de la Ciudad de Buenos Aires ("02").
+
+Las comunas son las jurisdicciones de primer orden que marcan la división de la Ciudad Autónoma de Buenos Aires. El territorio municipal se divide en 15 comunas, siendo que algunos territorios pueden ser marcados como “Indeterminado” (98) o “Sin declarar-Desconocido-Ignorado” (99).
+
+Para más detalles sobre el tratamiento de este caso, ver la sección de [Divisiones o unidades territoriales internas del GCBA](https://datosgcba.github.io/guia-datos/guia-interoperables/#divisiones-o-unidades-territoriales-internas).
 
 #### Direcciones y lugares
 
@@ -513,7 +526,7 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
 </table>
 
 
-#### **Códigos postales**
+#### Códigos postales
 
 Los códigos postales deben estar contenidos en un campo llamado "codigo_postal" y seguir el formato definido por el Correo Argentino para el [Código Postal Argentino (CPA)](http://www.correoargentino.com.ar/formularios/cpa) a partir de la competencia asignada por la Secretaría de Comunicaciones mediante la Resolución N° 1368/98.
 
@@ -573,7 +586,7 @@ Ej.: C1426BMD
 </table>
 
 
-### **Personas físicas**
+### Personas físicas
 
 Las personas físicas deben identificarse por su nombre completo separado en dos campos ("nombre" y “apellido”), cuando sea posible, donde deben consignarse todos los nombres y todos los apellidos que identifican a un individuo en su documento de identidad oficial, sea el que corresponda según el individuo se presente como residente nacional o extranjero.
 
@@ -716,7 +729,7 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
 </table>
 
 
-### **Personas jurídicas**
+### Personas jurídicas
 
 Las entidades con personería jurídica local (Ej.: empresas argentinas, ONGs argentinas, etc.) deben registrarse con su CUIT y razón social. Por ejemplo:
 
@@ -838,3 +851,14 @@ En el caso de que el dataset pueda contener personas jurídicas fuera de la juri
 
 Dependiendo de la forma de recolección de los datos, la temática particular del dataset y las capacidades del organismo responsable del mantenimiento del activo de datos, puede ser difícil la recolección comprehensible de "_id" y “_tipo_id” de las personas jurídicas de jurisdicción extranjera. Por eso, estos campos pueden llegar a quedar frecuentemente en blanco (valor ausente). Sin embargo, recomendamos con especial énfasis registrar el nombre (“_desc”) de la entidad en cuestión y el país bajo cuya jurisdicción se encuentra.
 
+## Estándares sectoriales
+
+### Transporte
+
+Se recomienda publicar los datos de movilidad urbana como horarios de transporte público e información geográfica asociada a ellos, según el estándar abierto [GTFS (General Transit Feed Standard)](https://developers.google.com/transit/gtfs/?hl=es).
+
+Los "feeds" GTFS permiten que las empresas de transporte público publiquen sus datos de transporte y que los programadores escriban aplicaciones que consuman esos datos de manera interoperable.
+
+### Compras y contrataciones
+
+Los datos de compras y contrataciones públicas se publican siguiendo el estándar de [Contrataciones Abiertas (Open Contracting Data Standard)](http://standard.open-contracting.org/latest/en/). La Argentina se encuentra en proceso de adopción de este estándar desde principios de 2018.

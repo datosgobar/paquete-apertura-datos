@@ -8,36 +8,36 @@
 - [Introducción](#introduccion)
 - [Objetivo de la guía](#objetivo-de-la-guia)
 - [Formatos abiertos de archivos](#formatos-abiertos-de-archivos)
-  - [CSV](#csv)
-  - [JSON](#json)
+    - [CSV](#csv)
+    - [JSON](#json)
 - [Fragmentación de archivos](#fragmentacion-de-archivos)
 - [Nomenclatura de archivos](#nomenclatura-de-archivos)
 - [Codificación](#codificacion)
 - [Estructura y características de los datos tabulares](#estructura-y-caracteristicas-de-los-datos-tabulares)
-  - [Recomendaciones generales](#recomendaciones-generales)
-    - [Nomenclatura de los campos (nombres de las columnas)](#nomenclatura-de-los-campos-nombres-de-las-columnas)
-    - [Nivel de granularidad de los datos](#nivel-de-granularidad-de-los-datos)
-    - [Usar orientación vertical en lugar de horizontal](#usar-orientacion-vertical-en-lugar-de-horizontal)
-    - [Incluir sólo un atributo por campo](#incluir-solo-un-atributo-por-campo)
-    - [Valores nulos, desconocidos o en blanco en campos numéricos](#valores-nulos-desconocidos-o-en-blanco-en-campos-numericos)
-  - [Recomendaciones para estructurar planillas de cálculo](#recomendaciones-para-estructurar-planillas-de-calculo)
-    - [Usar celdas simples](#usar-celdas-simples)
-    - [Fila de encabezado](#fila-de-encabezado)
-    - [Celdas vacías en filas para agrupar conceptos](#celdas-vacias-en-filas-para-agrupar-conceptos)
-    - [Formato de celdas](#formato-de-celdas)
-  - [Exportación a CSV](#exportacion-a-csv)
+    - [Recomendaciones generales](#recomendaciones-generales)
+        - [Nomenclatura de los campos (nombres de las columnas)](#nomenclatura-de-los-campos-nombres-de-las-columnas)
+        - [Nivel de granularidad de los datos](#nivel-de-granularidad-de-los-datos)
+        - [Usar orientación vertical en lugar de horizontal](#usar-orientacion-vertical-en-lugar-de-horizontal)
+        - [Incluir sólo un atributo por campo](#incluir-solo-un-atributo-por-campo)
+        - [Valores nulos, desconocidos o en blanco en campos numéricos](#valores-nulos-desconocidos-o-en-blanco-en-campos-numericos)
+    - [Recomendaciones para estructurar planillas de cálculo](#recomendaciones-para-estructurar-planillas-de-calculo)
+        - [Usar celdas simples](#usar-celdas-simples)
+        - [Fila de encabezado](#fila-de-encabezado)
+        - [Celdas vacías en filas para agrupar conceptos](#celdas-vacias-en-filas-para-agrupar-conceptos)
+        - [Formato de celdas](#formato-de-celdas)
+    - [Exportación a CSV](#exportacion-a-csv)
 - [Estándares según el tipo de Datos](#estandares-segun-el-tipo-de-datos)
-  - [Texto](#texto)
-    - [Entidades](#entidades)
-    - [Nombres propios](#nombres-propios)
-    - [Siglas](#siglas)
-  - [Número](#numero)
-    - [Moneda](#moneda)
-    - [Números telefónicos](#numeros-telefonicos)
-    - [Coordenadas](#coordenadas)
-  - [Tiempo](#tiempo)
-    - [Rangos horarios](#rangos-horarios)
-  - [Booleano](#booleano)
+    - [Texto](#texto)
+        - [Entidades](#entidades)
+        - [Nombres propios](#nombres-propios)
+        - [Siglas](#siglas)
+    - [Número](#numero)
+        - [Moneda](#moneda)
+        - [Números telefónicos](#numeros-telefonicos)
+        - [Coordenadas](#coordenadas)
+    - [Tiempo](#tiempo)
+        - [Rangos horarios](#rangos-horarios)
+    - [Booleano](#booleano)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -59,7 +59,7 @@ Esta es **una guía colaborativa y en progreso**. Valoramos, y alentamos, a orga
 
 El documento se estructura así:
 
-**Formatos abiertos de archivos:** cuáles son los formatos más usuales en los que se publican datos y cuáles son los más recomendables.
+* **Formatos abiertos de archivos:** cuáles son los formatos más usuales en los que se publican datos y cuáles son los más recomendables.
 
 * **Fragmentación de archivos**: cuáles son los criterios para decidir que un archivo es demasiado grande (y hay que fragmentarlo) o demasiado chico (y hay que juntarlo con otros).
 
@@ -79,7 +79,7 @@ El documento se estructura así:
 
 Estos son los primeros aspectos importantes para la estandarización de datos.
 
-Para una discusión sobre los estándares recomendados en el manejo de datos básicos y fundamentales, transversales a distintas áreas temáticas, se puede consultar la **Guía para la identificación y uso de entidades interoperables**.
+Para una discusión sobre los estándares recomendados en el manejo de datos básicos y fundamentales, transversales a distintas áreas temáticas, se puede consultar la [**Guía para la identificación y uso de entidades interoperables**](guia-interoperables.md).
 
 ## Formatos abiertos de archivos
 
@@ -90,7 +90,6 @@ Algunos de estos formatos, no siempre se adecuan a los niveles de apertura desea
 En este cuadro consideramos algunos de los formatos más usados y evaluamos su nivel de apertura:
 
 <table id="left-align-col-2">
-<tbody>
   <tr>
     <th>Formato</th>
     <th>Descripción breve</th>
@@ -98,37 +97,65 @@ En este cuadro consideramos algunos de los formatos más usados y evaluamos su n
     <th>Nivel de apertura</th>
   </tr>
   <tr>
+    <td>PDF</td>
+    <td>Los PDF son archivos de texto que no se encuentran en formato estructurado. Se utilizan para la generación de documentos, no para publicar o almacenar datos.</td>
+    <td>Texto</td>
+    <td>Muy bajo</td>
+  </tr>
+  <tr>
     <td>XLS</td>
-    <td>Los XLS son archivos de planilla de cálculo. Es un formato propietario de MS Office.</td>
+    <td>Los XLS son archivos de planilla de cálculo. Es un formato propietario de Microsoft.</td>
     <td>Tabulares</td>
-    <td>Baja</td>
+    <td>Bajo</td>
   </tr>
   <tr>
     <td>XLSX</td>
-    <td>Los XLSX son archivos con la estructura de un XML. Es un formato abierto basado en Office Open XML (ISO/IEC 29500:2008). Popularizado por ser el formato por defecto del procesador de planillas de cálculo desde MS Office 2007.</td>
+    <td>Los XLSX también son archivos de planilla de cálculo cuyo formato fue desarrollado por Microsoft pero su especificación es abierta (ISO/IEC 29500:2008). Es el formato por defecto del Excel 2007 en adelante.</td>
     <td>Tabulares</td>
-    <td>Media</td>
+    <td>Medio</td>
   </tr>
   <tr>
     <td>ODS</td>
-    <td>Los ODS son archivos con la estructura de un XML. Es un formato abierto basado en OASIS OpenDocument Format (ISO/IEC 26300) . Es el formato por defecto del procesador de planillas de cálculo Open Office.</td>
+    <td>Los ODS son archivos con la estructura de un XML. Es un formato abierto basado en OASIS OpenDocument Format (ISO/IEC 26300). Es el formato por defecto del procesador de planillas de cálculo Open Office.</td>
     <td>Tabulares</td>
-    <td>Media</td>
+    <td>Medio</td>
   </tr>
   <tr>
     <td>CSV</td>
-    <td>Los archivos CSV son archivos de texto plano donde las columnas se separan por comas y las filas por saltos de línea.
-Es un formato abierto.</td>
+    <td>Los archivos CSV son archivos de texto plano donde las columnas se separan por comas y las filas por saltos de línea. Es un formato abierto.</td>
     <td>Tabulares</td>
-    <td>Alta</td>
+    <td>Alto</td>
   </tr>
   <tr>
     <td>JSON</td>
-    <td>Es un formato para el intercambio de datos. En mayor medida que los formatos anteriores, JSON es especialmente útil para datos entre máquinas. Es un formato abierto basado en la especificación RFC 7159. </td>
+    <td>Es un formato para el intercambio de datos entre sistemas. Es un formato abierto no tabular basado en la especificación RFC 7159. </td>
     <td style="font-size: 12px" >Estructurados</td>
-    <td>Alta</td>
+    <td>Alto</td>
   </tr>
-</tbody>
+  <tr>
+    <td>SHP</td>
+    <td>ESRI Shapefile (SHP) es un formato propietario de datos espaciales desarrollado por ESRI, quien crea y comercializa software para Sistemas de Información Geográfica. Actualmente se ha convertido en formato estándar de facto para el intercambio de información geográfica entre SIG.</td>
+    <td style="font-size: 12px" >Geográficos</td>
+    <td>Medio</td>
+  </tr>
+  <tr>
+    <td>KML</td>
+    <td>Es un formato abierto para datos geográficos basado en el estándar XML.</td>
+    <td style="font-size: 12px" >Geográficos</td>
+    <td>Alto</td>
+  </tr>
+  <tr>
+    <td>GEOJSON</td>
+    <td>Es un formato estándar abierto diseñado para representar elementos geográficos sencillos, junto con sus atributos no espaciales.</td>
+    <td style="font-size: 12px" >Geográficos</td>
+    <td>Alto</td>
+  </tr>
+  <tr>
+    <td>GEOPACKAGE</td>
+    <td>Es un formato de datos geoespaciales implementado como un contenedor de base de datos SQLite.</td>
+    <td style="font-size: 12px" >Geográficos</td>
+    <td>Alto</td>
+  </tr>
 </table>
 
 Antes de seguir, introduciremos dos conceptos que se usarán a lo largo de toda la guía:
@@ -148,15 +175,15 @@ En la mayoría de los casos, corresponde a datos que llegan de bases de datos, r
 
 El CSV es un formato estándar de archivo de texto plano donde:
 
-* Los campos (columnas) se separan por comas `,`
+* Los campos (columnas) se separan por comas `,`.
 
-* Los registros (filas) se separan por saltos de línea `\n` o `\r\n` (CRLF - Carriage Return Line Feed)).
+* Los registros (filas) se separan por saltos de línea.
 
-* Los números decimales utilizan `.` para separar la parte entera de la parte decimal
+* Los números decimales utilizan `.` para separar la parte entera de la parte decimal.
 
 * Se utilizan las comillas dobles `"` como caracter de entrecomillado. Los valores en tablas CSV que incluyen dentro de sí caracteres especiales como `,` o `"`, deben estar encerrados entre `"` para su correcta interpretación.
 
-Algunas versiones alternativas de esta forma de publicar datos usan otros separadores como punto y coma (`;`) o pipe (`|`), pero la recomendación para toda la Administración Pública Nacional se basa en la versión de CSV más estándar, indicada por la especificación [RFC4180](http://tools.ietf.org/html/rfc4180) y las pautas de la [W3C](https://www.w3.org/TR/tabular-data-model/).
+Algunas versiones alternativas de esta forma de publicar datos usan otros separadores como punto y coma (`;`) o *pipe* (`|`), pero la recomendación para toda la Administración Pública Nacional se basa en la versión de CSV más estándar, indicada por la especificación [RFC4180](http://tools.ietf.org/html/rfc4180) y las pautas de la [W3C](https://www.w3.org/TR/tabular-data-model/).
 
 Otros elementos a tener en cuenta:
 
@@ -168,48 +195,58 @@ Otros elementos a tener en cuenta:
 
 * Tanto los campos como los valores deben estar separados por comas (`,`).
 
-* En el caso de que un valor contenga el caracter separador (`,`) o cualquiera de los caracteres que separan las líneas (`\r`, `\n` o `\r\n`), el valor completo debe ser encerrado entre comillas dobles `""`. Esto indica que el caracter no cumple el rol de separar columnas o filas, sino que es parte de un valor.
+* En el caso de que un valor contenga el caracter separador (`,`) o cualquiera de los caracteres que separan las líneas (`\n`), el valor completo debe ser encerrado entre comillas dobles `""`. Esto indica que el caracter no cumple el rol de separar columnas o filas, sino que es parte de un valor.
 
 Ejemplo:
 
-```
-col1,col2\r\n
-"La tasa de Juan, está vacía",La tasa de Pablo está llena\r\n
-"La tasa de Juan\nestá vacía",La tasa de Pablo está llena\r\n
-"La tasa de Juan\r\nestá vacía",La tasa de Pablo está llena\r\n
+```csv
+col1,col2\n
+"La tasa de Juan, está vacía",La tasa de Pablo está llena\n
+"La tasa de Juan\nestá vacía",La tasa de Pablo está llena\n
+"La tasa de Juan\nestá vacía",La tasa de Pablo está llena\n
 ```
 
+*Nota: Posiblemente te preguntes qué es el caracter '/n'. En la mayoría de los casos no te vas a enterar que existe ya que usás "Enter" en tu editor de texto y este por detrás de escena aplica un '/n'. No te preocupes por esto, a menos que lo veas en algún lado. Usualmente, el ejemplo anterior lo vas a ver como:*
+
+```csv
+col1,col2
+"La tasa de Juan, está vacía",La tasa de Pablo está llena
+"La tasa de Juan está vacía",La tasa de Pablo está llena
+"La tasa de Juan está vacía",La tasa de Pablo está llena
+```
 
 * En el caso de que un valor contenga el caracter comilla doble (`"`), el valor debe ser encerrado entre comillas dobles como en el caso anterior (`""`) y, además, los caracteres comilla doble que se encuentren dentro del valor deben escribirse dos veces (`""`).
 
 Ejemplo:
 
 ```
-col1,col2\r\n
-"La tasa de ""Juan"" está vacía",La tasa de Pablo está llena\r\n
+col1,col2
+"La tasa de ""Juan"" está vacía",La tasa de Pablo está llena
 ```
 
-* Para todos los tipos de datos se considera válido el valor indefinido. Este se expresará con la ausencia de todo caracter y no con un caracter o string especial como podrían ser ".", "null", "none", "nan", etc.
+* Para todos los tipos de datos se considera válido el valor indefinido. Este se expresará con la ausencia de todo caracter y no con un caracter o string especial como podrían ser ".", "null", "none", "nan", "SD", "S/D", etc.
 
 Ejemplo:
 
 ```
-col1,col2,col3\r\n
-a,,b\r\n
-a,"",b\r\n
+col1,col2,col3
+a,,b
+a,"",b
 ```
 
 ### JSON
 
-JSON es un formato de texto popular para el intercambio de datos, es un acrónimo de  JavaScript Object Notation. Por su característica de ser un formato de tipo estructurado es especialmente útil para el intercambio de datos entre máquina (*machine - readable format*).
+JSON es un formato de texto popular para el intercambio de datos, es un acrónimo de  JavaScript Object Notation. Por su característica de ser un formato de tipo estructurado es especialmente útil para el intercambio de datos entre sistemas (*machine readable format*).
 
 El formato JSON ha sido definido por la especificación [RFC 7159](https://tools.ietf.org/html/rfc7159) y, tal como CSV, también es un estándar abierto.
 
 ## Fragmentación de archivos
 
-Para garantizar la accesibilidad a los datos, **es necesario fragmentar los archivos  excesivamente grandes**, que superen el millón de filas.
+Para garantizar la accesibilidad a los datos, **puede ser necesario fragmentar los archivos  excesivamente grandes**, que superen el millón de filas.
 
-Para esto, recomendamos usar conceptos simples, fragmentando:
+Sin embargo, **se recomienda no fragmentarlos (manteniendo una única versión completa) si los archivos tienen menos de 500 mil filas** y su actualización en los próximos años no los acercaría al millón de filas.
+
+Si fragmentar resulta necesario, recomendamos usar conceptos simples:
 
 (a) **por períodos** en caso de tratarse de información temporal (Ej. Años, semestres, trimestres, meses, semanas, días),
 
@@ -217,16 +254,18 @@ Para esto, recomendamos usar conceptos simples, fragmentando:
 
 (c) **por dimensiones temáticas** propias del dominio particular de la información.
 
-Sin embargo, siempre que se decida fragmentar un archivo para garantizar su accesibilidad,  recomendamos publicar también una versión no fragmentada que contenga el conjunto de datos completo (aunque sea muy grande), a los fines de evitar la tarea de consolidación.
+Sin embargo, siempre que se decida fragmentar un archivo para garantizar su accesibilidad, **recomendamos publicar también una versión no fragmentada que contenga el conjunto de datos completo** (incluso aunque sea muy grande), a los fines de evitar la tarea de consolidación a los usuarios que requieren usar todos los datos.
 
-Para eso, sugerimos usar protocolos de compresión, en especial para archivos muy grandes, y altamente compresibles. De hacerlo, aconsejamos protocolos sin pérdida, y abiertos.
+**Cuando la versión completa resulta muy pesada (más de 50MB) se recomienda comprimir el archivo** usando protocolos de compresión sin pérdida, y abiertos.
 
 ## Nomenclatura de archivos
+
+Nombrar bien los archivos es muy importante. Un buen nombre de archivo es claro respecto del contenido, es fácil de leer por cualquier software o terminal, y es resistente al paso del tiempo y las modificaciones que pueda sufrir el contenido.
 
 Recomendamos estas convenciones para nombrar archivos:
 
 * Usar palabras siempre en minúsculas.
-* No usar artículos.
+* No usar artículos ni preposiciones.
 * Usar únicamente letras y números ASCII, siempre en minúsculas, comprendidos en el rango "a-z" y “0-9”.
 * Separar las palabras con guión medio "-".
 * En caso de corresponder, ubicar la referencia temporal o del atributo de fragmentación siempre al final.
@@ -247,7 +286,7 @@ Ejemplos:
 
 Para la fragmentación temporal, recomendamos el estándar de los ejemplos, ya que es compacto y ordena los recursos por tiempo: YYYYMMDD. Por favor, recordá mantener siempre dos dígitos para el mes y el día, incluso si el número es menor a 10.
 
-Para la fragmentación por zonas, consultá la **Guía para la identificación y  uso de entidades interoperables**, y mirá cómo nombrarlas adecuadamente.
+Para la fragmentación por zonas, consultá la [**Guía para la identificación y  uso de entidades interoperables**](guia-interoperables.md), y mirá cómo nombrarlas adecuadamente.
 
 En el caso de usar dimensiones temáticas propias del dominio particular de la información, podés ver esa guía o usar el mejor estándar identificado para esa temática particular.
 
@@ -255,26 +294,28 @@ En el caso de usar dimensiones temáticas propias del dominio particular de la i
 
 Todos los recursos de datos, incluyendo los geográficos, deben publicarse usando la codificación UTF-8 siguiendo las  [recomendaciones de la W3C](https://www.w3.org/TR/tabular-data-model/#h-encoding).
 
-Una de las principales razones es que UTF-8 soporta una gran variedad de lenguajes, [según la W3C](https://www.w3.org/International/questions/qa-choosing-encodings) es un *"estándar en el que se definen todos los caracteres necesarios para la escritura de la mayoría de los idiomas hablados en la actualidad. Su objetivo es ser, y, en gran medida, ya lo ha logrado, un superconjunto de todos los sets de caracteres que se hayan codificado"*.
+Una de las principales razones es que UTF-8 soporta una gran variedad de lenguajes. [Según la W3C](https://www.w3.org/International/questions/qa-choosing-encodings) es un *"estándar en el que se definen todos los caracteres necesarios para la escritura de la mayoría de los idiomas hablados en la actualidad. Su objetivo es ser -y en gran medida ya lo ha logrado- un superconjunto de todos los sets de caracteres que se hayan codificado"*.
 
 ## Estructura y características de los datos tabulares
 
 En esta sección veremos:
 
-(a) Recomendaciones generales para el trabajo con datos, y
+* Recomendaciones generales para el trabajo con datos.
 
-(b) Recomendaciones para el trabajo con planillas de cálculo, orientadas tanto a facilitar su exportación a formatos abiertos, como a su propia usabilidad en el contexto de cualquier aplicación de planillas de cálculo.
+* Recomendaciones para el trabajo con planillas de cálculo, orientadas tanto a facilitar su exportación a formatos abiertos, como a su propia usabilidad en el contexto de cualquier aplicación de planillas de cálculo.
 
 ### Recomendaciones generales
 
 Estas son recomendaciones generales para el trabajo con datos tabulares. Sugerimos adoptarlas sea cual sea la tecnología usada.
 
-Muchas de las las recomendaciones aquí presentadas se encuadran en los principios de [Tidy Data](https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf) delineados por [Hadley Wickham](http://hadley.nz/). Éstos establecen, por ejemplo, que en una tabla de datos *"cada variable es una columna, cada observacion es una fila, y cada tipo de unidad observacional es una tabla"*. Sugerimos complementar la lectura de esta guía con la del trabajo que mencionamos.
+Muchas de las recomendaciones aquí presentadas se encuadran en los principios de [Tidy Data](https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf) delineados por [Hadley Wickham](http://hadley.nz/). Éstos establecen, por ejemplo, que en una tabla de datos *"cada variable es una columna, cada observación es una fila, y cada tipo de unidad observacional es una tabla"*. Sugerimos complementar la lectura de esta guía con la del trabajo mencionado.
 
 
 #### Nomenclatura de los campos (nombres de las columnas)
 
-La "nomenclatura de los campos" es el nombre de las columnas en los datos de estructura tabular. Estas recomendaciones aplican a la generalidad de los casos, pero cuando haya convenciones particulares según la temática o rubro de datos de que se trate y éstas entren en conflicto, puede ser conveniente privilegiar primero la convención de la temática específica y luego la convención general.
+La "nomenclatura de los campos" es el nombre de las columnas en los datos de estructura tabular. Nombrar bien los campos es extremadamente importante (tal vez incluso más que nombrar bien los archivos!) porque **permiten al usuario entender qué información hay en esos campos y cómo usarla adecuadamente**. Los nombres codificados, poco claros o ambiguos pueden generar graves errores en el uso de la información o incluso la imposibilidad de usarla.
+
+Las siguientes recomendaciones aplican a la generalidad de los casos. Cuando existan convenciones particulares según la temática o rubro de datos de que se trate -y éstas entraran en conflicto- puede ser conveniente privilegiar primero la convención de la temática específica y luego la convención general.
 
 Los nombres de los campos deben:
 
@@ -282,9 +323,9 @@ Los nombres de los campos deben:
 
 * Ser lo más explícitos, descriptivos y declarativos como sea posible.
 
-    * Es preferible que el nombre de un campo sea claro antes que corto, pero se recomienda no superar los 50 caracteres.
+    * Es preferible que el nombre de un campo sea claro antes que corto, pero se recomienda no superar los 50 caracteres (en todos los casos, **el nombre de un campo no debería superar los 60 caracteres** que es el límite de varias aplicaciones de software o bases de datos como PostGres).
 
-    * No usar abreviaturas si no es estrictamente necesario o recomendado por una convención ampliamente difundida. En caso de usarlas, incluirlas en el diccionario de datos.
+    * No usar abreviaturas si no es estrictamente necesario o recomendado por una convención ampliamente difundida. En caso de usarlas, incluir su explicación en la descripción de la columna documentada.
 
 * Estar en minúsculas, no incluir caracteres especiales, ni estar subrayados.
 
@@ -294,25 +335,22 @@ Los nombres de los campos deben:
 
     * No contener espacios.
 
-    * Las palabras deben separarse siempre con " _ ", en lugar de no tener separación alguna: fecha_audiencia_solicitada en lugar de fechaaudienciasolicitada
+    * Las palabras deben separarse siempre con " _ ", en lugar de no tener separación alguna: *fecha_audiencia_solicitada* en lugar de *fechaaudienciasolicitada*
 
 * Referirse a un sólo atributo de los datos, indivisible en más de un campo.
 
     * Los campos deben separar los atributos de los datos en la forma más desagregada que sea posible. 
 
-    * Se debe evitar definir campos que contengan más de un tipo de información (por ejemplo: e-mail y sitio web, número de teléfono, etc bajo "datos_de_contacto").
+    * Se debe evitar definir campos que contengan más de un tipo de información (por ejemplo: e-mail y sitio web, número de teléfono, etc bajo "*datos_contacto*").
 
 * Si existe una entidad que engloba varias características separadas en campos diferentes, comenzar nombrando los campos con esa entidad y luego con los atributos más específicos (de lo más general a lo más específico). 
 
     * Ej.: solicitante y solicitante_documento son entidades más generales que se repiten en varios campos, que corresponden a atributos más específicos.
 
-* solicitante_nombre
-
-* solicitante_cargo
-
-* solicitante_documento_tipo
-
-* solicitante_documento_numero
+        - solicitante_nombre
+        - solicitante_cargo
+        - solicitante_documento_tipo
+        - solicitante_documento_numero
 
     * Resulta más fácil  identificar qué campos están relacionados entre sí porque configuran atributos de una misma entidad, en lugar de parecer campos conceptualmente independientes.  Además, el ordenamiento alfabético de los campos los dejaría automáticamente agrupados por su pertenencia a una entidad más importante.
 
@@ -323,15 +361,14 @@ Los nombres de los campos deben:
 
 Los campos que sean identificadores o códigos, deberán incluir el sufijo "_id" en el nombre del campo, salvo casos excepcionales donde un nombre alternativo sea más conveniente porque ofrece información sobre el sistema de identificación usado.
 
-* En cuanto a los campos que contengan la descripción de ese identificador, se recomienda que incluyan el sufijo "_desc" (por "descripción") en caso de que no exista una forma más conveniente de nombrar el campo.
+* En cuanto a los campos que contengan la descripción de ese identificador, se recomienda que incluyan el sufijo "_nombre", salvo que exista una forma más conveniente de nombrar el campo.
 
 <span class="recomendado">**Recomendado**</span>
 
 <table>
-<tbody>
   <tr>
-    <td>sucursal_id</td>
-    <td>sucursal_desc</td>
+    <th>sucursal_id</th>
+    <th>sucursal_nombre</th>
   </tr>
   <tr>
     <td>1</td>
@@ -345,7 +382,6 @@ Los campos que sean identificadores o códigos, deberán incluir el sufijo "_id"
     <td>3</td>
     <td>La Quiaca</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -364,12 +400,11 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
     <col style="width:28%">
     <col style="width:30%">
   </colgroup>
-<tbody>
   <tr>
-    <td style="font-size: 11px">provincia_nombre</td>
-    <td style="font-size: 11px">municipio_nombre</td>
-    <td style="font-size: 11px">convenios_firmados_anio</td>
-    <td style="font-size: 11px">convenios_firmados_numero</td>
+    <th style="font-size: 11px">provincia_nombre</th>
+    <th style="font-size: 11px">municipio_nombre</th>
+    <th style="font-size: 11px">convenios_firmados_anio</th>
+    <th style="font-size: 11px">convenios_firmados_numero</th>
   </tr>
   <tr>
     <td> </td>
@@ -407,7 +442,6 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
     <td>2011</td>
     <td>30</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -420,12 +454,11 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
     <col style="width:28%">
     <col style="width:30%">
   </colgroup>
-<tbody>
   <tr>
-    <td style="font-size: 11px">provincia_nombre</td>
-    <td style="font-size: 11px">municipio_nombre</td>
-    <td style="font-size: 11px">convenios_firmados_anio</td>
-    <td style="font-size: 11px">convenios_firmados_numero</td>
+    <th style="font-size: 11px">provincia_nombre</th>
+    <th style="font-size: 11px">municipio_nombre</th>
+    <th style="font-size: 11px">convenios_firmados_anio</th>
+    <th style="font-size: 11px">convenios_firmados_numero</th>
   </tr>
   <tr>
     <td>Provincia X</td>
@@ -445,7 +478,6 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
     <td>2011</td>
     <td>5</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -462,19 +494,17 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
     <col style="width:27%">
     <col style="width:28%">
   </colgroup>
-<tbody>
   <tr>
-    <td style="font-size: 11px">municipio_nombre</td>
-    <td style="font-size: 11px">solicitudes_anio</td>
-    <td style="font-size:11px;">solicitudes_poda_y_arbolado_numero</td>
-    <td style="font-size:11px;">solicitudes_recoleccion_residuos_numero</td>
+    <th style="font-size: 11px">municipio_nombre</th>
+    <th style="font-size: 11px">solicitudes_anio</th>
+    <th style="font-size:11px;">solicitudes_poda_y_arbolado_numero</th>
+    <th style="font-size:11px;">solicitudes_recoleccion_residuos_numero</th>
   </tr>
   <tr>
     <td>Municipalidad X</td>
     <td>2015</td>
     <td>340</td>
     <td>198</td>
-</tbody>
 </table>
 
 
@@ -488,12 +518,11 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
     <col style="width:28%">
   </colgroup>
 
-<tbody>
   <tr>
-    <td style="font-size: 11px">municipio_nombre</td>
-    <td style="font-size: 11px">solicitudes_anio</td>
-    <td style="font-size:11px;">solicitudes_categoria</td>
-    <td style="font-size:11px;">solicitudes_numero</td>
+    <th style="font-size: 11px">municipio_nombre</th>
+    <th style="font-size: 11px">solicitudes_anio</th>
+    <th style="font-size:11px;">solicitudes_categoria</th>
+    <th style="font-size:11px;">solicitudes_numero</th>
   </tr>
   <tr>
     <td>Municipalidad X</td>
@@ -507,7 +536,6 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -518,30 +546,28 @@ Se recomienda definir los campos de forma atómica de modo de incluir un sólo a
 <span class="no-recomendado">**No recomendado**</span> - múltiples datos en una celda
 
 <table>
-<tbody>
   <tr>
-    <td>municipio_nombre</td>
-    <td>solicitudes_anio</td>
-    <td style="font-size:11px;">categoria_solicitudes_numero_y_tipo</td>
+    <th>municipio_nombre</th>
+    <th>solicitudes_anio</th>
+    <th style="font-size:11px;">categoria_solicitudes_numero_y_tipo</th>
   </tr>
   <tr>
     <td>Municipalidad X</td>
     <td>2015</td>
     <td>Poda y arbolado - 340
 Recolección de residuos - 198</td>
-</tbody>
+  </tr>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - un dato por celda
 
 <table>
-<tbody>
   <tr>
-    <td>municipio_nombre</td>
-    <td>solicitudes_anio</td>
-    <td>solicitudes_categoria</td>
-    <td>solicitudes_numero</td>
+    <th>municipio_nombre</th>
+    <th>solicitudes_anio</th>
+    <th>solicitudes_categoria</th>
+    <th>solicitudes_numero</th>
   </tr>
   <tr>
     <td>Municipalidad X</td>
@@ -555,7 +581,6 @@ Recolección de residuos - 198</td>
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -570,9 +595,8 @@ Es importante destacar, por ejemplo, que cuando un valor numérico sea "0" siemp
 <span class="no-recomendado">**No recomendado**</span> - texto presente en campos numéricos
 
 <table id="una-columna">
-<tbody>
   <tr>
-    <td>solicitudes_numero</td>
+    <th>solicitudes_numero</th>
   </tr>
   <tr>
     <td>34</td>
@@ -594,17 +618,15 @@ Es importante destacar, por ejemplo, que cuando un valor numérico sea "0" siemp
   <tr>
     <td>567</td>
   </tr>
-</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - texto excluido de campos numéricos
 
 <table>
-<tbody>
   <tr>
-    <td>solicitudes_numero</td>
-    <td>solicitudes_numero_missing_desc</td>
+    <th>solicitudes_numero</th>
+    <th>solicitudes_numero_missing_nombre</th>
   </tr>
   <tr>
     <td>34</td>
@@ -634,7 +656,6 @@ Es importante destacar, por ejemplo, que cuando un valor numérico sea "0" siemp
     <td>567</td>
     <td></td>
   </tr>
-</tbody>
 </table>
 
 
@@ -649,10 +670,9 @@ Recomendamos usar celdas simples y, en ningún caso, combinar celdas.
 <span class="no-recomendado">**No recomendado**</span> - celdas combinadas
 
 <table>
-<tbody>
   <tr>
-    <td>proveedor_nombre</td>
-    <td colspan="2">contacto_datos</td>
+    <th>proveedor_nombre</th>
+    <th colspan="2">contacto_datos</th>
   </tr>
   <tr>
     <td></td>
@@ -663,25 +683,22 @@ Recomendamos usar celdas simples y, en ningún caso, combinar celdas.
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
-</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - celdas simples, sin combinar
 
 <table>
-<tbody>
   <tr>
-    <td>proveedor_nombre</td>
-    <td>contacto_correo_electronico</td>
-    <td>contacto_telefono</td>
+    <th>proveedor_nombre</th>
+    <th>contacto_correo_electronico</th>
+    <th>contacto_telefono</th>
   </tr>
   <tr>
     <td>Ejemplo Sociedad Anónima</td>
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -692,11 +709,10 @@ Los datos deben contener sólo una fila de encabezado. Desde la segunda fila en 
 <span class="no-recomendado">**No recomendado**</span> - múltiples filas de encabezado
 
 <table>
-<tbody>
   <tr>
-    <td>Nombre del</td>
-    <td>Dirección de correo</td>
-    <td>Teléfono de</td>
+    <th>Nombre del</th>
+    <th>Dirección de correo</th>
+    <th>Teléfono de</th>
   </tr>
   <tr>
     <td>proveedor</td>
@@ -707,25 +723,22 @@ Los datos deben contener sólo una fila de encabezado. Desde la segunda fila en 
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
-</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - encabezado de una única fila
 
 <table>
-<tbody>
   <tr>
-    <td>proveedor_nombre</td>
-    <td>contacto_correo_electronico</td>
-    <td>contacto_telefono</td>
+    <th>proveedor_nombre</th>
+    <th>contacto_correo_electronico</th>
+    <th>contacto_telefono</th>
   </tr>
   <tr>
     <td>Ejemplo Sociedad Anónima</td>
     <td>ejemplo@ejemplo.com.ar</td>
     <td>1143XXXXXX</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -738,12 +751,11 @@ Este error es muy común en la construcción de planillas de cálculo y suele ge
 <span class="no-recomendado">**No recomendado**</span> - primera celda de la segunda fila vacía
 
 <table>
-<tbody>
   <tr>
-    <td>municipio_nombre</td>
-    <td>solicitudes_anio</td>
-    <td>solicitudes_categoria</td>
-    <td>solicitudes_numero</td>
+    <th>municipio_nombre</th>
+    <th>solicitudes_anio</th>
+    <th>solicitudes_categoria</th>
+    <th>solicitudes_numero</th>
   </tr>
   <tr>
     <td>Municipalidad X</td>
@@ -757,19 +769,17 @@ Este error es muy común en la construcción de planillas de cálculo y suele ge
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
-</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> - primera celda de la segunda fila completa
 
 <table>
-<tbody>
   <tr>
-    <td>municipio_nombre</td>
-    <td>solicitudes_anio</td>
-    <td>solicitudes_categoria</td>
-    <td>solicitudes_numero</td>
+    <th>municipio_nombre</th>
+    <th>solicitudes_anio</th>
+    <th>solicitudes_categoria</th>
+    <th>solicitudes_numero</th>
   </tr>
   <tr>
     <td>Municipalidad X</td>
@@ -783,7 +793,6 @@ Este error es muy común en la construcción de planillas de cálculo y suele ge
     <td>Recolección de residuos</td>
     <td>198</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -797,11 +806,10 @@ Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de
     <col style="width:40%">
     <col style="width:30%">
   </colgroup>
-<tbody>
   <tr>
-    <td>audiencia_fecha_hora</td>
-    <td>audiencia_sujeto_obligado_nombre</td>
-    <td>audiencia_numero</td>
+    <th>audiencia_fecha_hora</th>
+    <th>audiencia_sujeto_obligado_nombre</th>
+    <th>audiencia_numero</th>
   </tr>
   <tr>
     <td>1/3/16</td>
@@ -813,7 +821,6 @@ Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de
     <td>(Texto)</td>
     <td>(Número)</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -854,9 +861,8 @@ Las entidades que aparezcan entre los datos de un campo textual deben tener una 
 <span class="no-recomendado">**No recomendado**</span>
 
 <table id="una-columna">
-<tbody>
   <tr>
-    <td>localidad_nombre</td>
+    <th>localidad_nombre</th>
   </tr>
   <tr>
     <td>Ciudad Autónoma de Buenos Aires</td>
@@ -869,16 +875,14 @@ Las entidades que aparezcan entre los datos de un campo textual deben tener una 
   <tr>
     <td>Ciudad de Buenos Aires</td>
   </tr>
-</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span> 
 
 <table  id="una-columna">
-<tbody>
   <tr>
-    <td>localidad_nombre</td>
+    <th>localidad_nombre</th>
   </tr>
   <tr>
     <td>Ciudad Autónoma de Buenos Aires</td>
@@ -892,13 +896,12 @@ Las entidades que aparezcan entre los datos de un campo textual deben tener una 
   <tr>
     <td>Ciudad Autónoma de Buenos Aires</td>
   </tr>
-</tbody>
 </table>
 
 
 En el ejemplo anterior, los cuatro valores de texto refieren a la misma entidad. Debe elegirse una única forma de referirse a la misma y usarla en todos los casos.
 
-Siempre que sea posible, la elección deberá fundamentarse en el estándar establecido para ese tipo de entidad (para más información ver la **Guía para la identificación y uso de entidades interoperables**). En el caso de no existir un estándar, deberá adecuarse a las pautas generales contexto del dataset de que se trate.
+Siempre que sea posible, la elección deberá fundamentarse en el estándar establecido para ese tipo de entidad (para más información ver la [**Guía para la identificación y uso de entidades interoperables**](guia-interoperables.md)). En el caso de no existir un estándar, deberá adecuarse a las pautas generales contexto del dataset de que se trate.
 
 #### Nombres propios
 
@@ -940,11 +943,10 @@ A nivel internacional, el estándar para los números telefónicos fue desarroll
 Para el caso de los números nacionales, el ENACOM tiene la competencia sobre el sistema de numeración telefónica. Este organismo determina que el número nacional de abonado debe estar compuesto por 10 dígitos. Estos 10 dígitos están conformados por un indicativo interurbano más un número de abonado. Pudiendo el indicativo interurbano tener entre 2 y 4 dígitos, y el número de abonado entre 6 y 8 dígitos.
 
 <table>
-<tbody>
   <tr>
-    <td>Indicativo interurbano (ámbito geográfico al que corresponde)</td>
-    <td>Número de abonado</td>
-    <td>Número Nacional interurbano = Indicativo interurbano + Número de abonado</td>
+    <th>Indicativo interurbano (ámbito geográfico al que corresponde)</th>
+    <th>Número de abonado</th>
+    <th>Número Nacional interurbano = Indicativo interurbano + Número de abonado</th>
   </tr>
   <tr>
     <td>11 (AMBA)</td>
@@ -961,7 +963,6 @@ Para el caso de los números nacionales, el ENACOM tiene la competencia sobre el
     <td>43XXXX</td>
     <td>383743XXXX</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -972,11 +973,10 @@ Al no existir estándares nacionales para la inclusión de números telefónicos
 <span class="no-recomendado">**No recomendado**</span> - Múltiples formas de indicar un número telefónico
 
 <table>
-<tbody>
   <tr>
-    <td>proveedor_nombre</td>
-    <td>contacto_correo_electronico</td>
-    <td>contacto_telefono</td>
+    <th>proveedor_nombre</th>
+    <th>contacto_correo_electronico</th>
+    <th>contacto_telefono</th>
   </tr>
   <tr>
     <td>Ejemplo Sociedad Anónima</td>
@@ -997,7 +997,6 @@ Al no existir estándares nacionales para la inclusión de números telefónicos
     <td>ejemplo4@ejemplo4.com.ar</td>
     <td>011 15 6344-XXXX</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -1018,14 +1017,13 @@ Con las salvedades que comentaremos al final de este apartado, un posible aborda
     <col style="width:18%">
     <col style="width:26%">
     <col style="width:18%">
-      </colgroup>
-<tbody>
+  </colgroup>
   <tr>
-    <td >proveedor_nombre</td>
-    <td >contacto_correo_electronico</td>
-    <td >tipo_numero_telefono</td>
-    <td >contacto_telefono_indicativo_interurbano</td>
-    <td >contacto_telefono_numero_abonado</td>
+    <th>proveedor_nombre</th>
+    <th>contacto_correo_electronico</th>
+    <th>tipo_numero_telefono</th>
+    <th>contacto_telefono_indicativo_interurbano</th>
+    <th>contacto_telefono_numero_abonado</th>
   </tr>
   <tr>
     <td>Ejemplo Sociedad Anónima</td>
@@ -1055,7 +1053,6 @@ Con las salvedades que comentaremos al final de este apartado, un posible aborda
     <td>11</td>
     <td>6344XXXX</td>
   </tr>
-</tbody>
 </table>
 
 
@@ -1073,34 +1070,35 @@ Para registrar datos de coordenadas geográficas de puntos, usamos números deci
 <span class="no-recomendado">**No recomendado**</span>
 
 <table>
-<tbody>
   <tr>
-    <td>latitud</td>
-    <td>longitud</td>
+    <th>latitud</th>
+    <th>longitud</th>
   </tr>
   <tr>
     <td>34º 11' 30''</td>
     <td>58º 43' 20''</td>
   </tr>
-</tbody>
 </table>
 
 
 <span class="recomendado">**Recomendado**</span>
 
 <table>
-<tbody>
   <tr>
-    <td>latitud</td>
-    <td>longitud</td>
+    <th>latitud</th>
+    <th>longitud</th>
   </tr>
   <tr>
     <td>-34.6043222</td>
     <td>-58.4134862</td>
   </tr>
-</tbody>
 </table>
 
+Para datos geográficos que no sean coordenadas/puntos (por ejemplo líneas o polígonos) recomendamos su especificación en [WKT (Well Known Text)](https://www.opengeospatial.org/standards/wkt-crs). Los puntos/coordenadas también se pueden representar en WKT, pero en estos casos recomendamos utilizar latitud y longitud para representarlos.
+
+También para datos geográficos, recomendamos incluir por una parte un CSV con campos geográficos (en WKT o puntos de coordenadas), y por otra parte el archivo en su formato geoespacial (en alguno de los formatos recomendados anteriormente).
+
+En caso de publicar datos con geometrías (lineas o figuras) en diversos formatos, recomendamos incluir siempre el formato SHP ya que es uno de los más difundidos entre diversas comunidades de usuarios de datos geográficos.
 
 ### Tiempo
 
@@ -1164,7 +1162,7 @@ Ejemplos:
 24hs -> "00:00-23:59" 
 Jueves 24hs -> "JUE" 
 Jueves de 14:30 a 17 hs -> "JUE__14:30-17:00" 
-Jueves de 8 a 12 hs y de 16 a 20 hs -> "JUE__08:12-17:00_16:00-20:00" 
+Jueves de 8 a 12 hs y de 16 a 20 hs -> "JUE__08:00-12:00_16:00-20:00"
 Jueves de 8 a 15 hs y Viernes de 8 a 15 hs -> "JUE__08:00-15:00 VIE_08:00-15:00" 
 Lunes a Viernes 7:30 a 17 hs y Sábados 8 a 12 hs -> "LUN-VIE__07:30-17:00 SAB__08:00-12:00" 
 Lunes a Viernes 8 a 11 y 14 a 18 hs -> "LUN-VIE__08:00-11:00_14:00-18:00" 
