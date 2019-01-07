@@ -98,9 +98,9 @@ Los nombres y códigos de países o territorios internacionales deben seguir el 
 
 En esta guía, elegimos incluir los nombres de países oficiales y en castellano. Sin embargo, la denominación de los países varía de acuerdo al idioma que se utilice. Por eso, hacemos énfasis en la necesidad de incluir el código de país según el estándar ISO 3166, que es ampliamente usado por organismos internacionales.
 
-A modo de ejemplo, en la Argentina nos referimos a uno de nuestros países vecinos coloquialmente como "Brasil", mientras que el nombre oficial en portugués es “República Federativa do Brasil” y la traducción oficial en español “República Federativa del Brasil”. El código de país según el estándar definido es “BRA” lo cual resuelve el problema de denominación.
+A modo de ejemplo, en la Argentina nos referimos a uno de nuestros países vecinos coloquialmente como "Brasil", mientras que el nombre oficial en portugués es "República Federativa do Brasil" y la traducción oficial en español "República Federativa del Brasil". El código de país según el estándar definido es "BRA" lo cual resuelve el problema de denominación.
 
-Se recomienda también que el nombre del campo del código sea "pais_id" o, en el caso de que haya más de un campo “país” en el dataset, el nombre de cada campo finalice con “pais_id” (Ej.: “desde_pais_id”, “hasta_pais_id”), mientras que el campo con el nombre completo del país debería ser “pais_nombre”.
+Se recomienda también que el nombre del campo del código sea "pais_id" o, en el caso de que haya más de un campo "país" en el dataset, el nombre de cada campo finalice con "pais_id" (Ej.: "desde_pais_id", "hasta_pais_id"), mientras que el campo con el nombre completo del país debería ser "pais_nombre".
 
 <span class="no-recomendado">**No recomendado**</span>
 
@@ -225,13 +225,13 @@ Los identificadores de cada una de estas divisiones se componen, sucesivamente, 
 </table>
 
 
-* **Provincia**: 2 dígitos. Ej.: "06" es la Provincia de “Buenos Aires”.
+* **Provincia**: 2 dígitos. Ej.: "06" es la Provincia de "Buenos Aires".
 
-* **Departamento** (Partido -Provincia de Buenos Aires- o Comuna -Ciudad de Buenos Aires-): 5 dígitos. - Ej.: "06007" es el Departamento “Adolfo Alsina” de la provincia de “Buenos Aires”.
+* **Departamento** (Partido -Provincia de Buenos Aires- o Comuna -Ciudad de Buenos Aires-): 5 dígitos. - Ej.: "06007" es el Departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
 
-* **Fracciones censales**: 7 dígitos. - Ej.: "0600702" es una Fracción Censal del Departamento “Adolfo Alsina” de la provincia de “Buenos Aires”.
+* **Fracciones censales**: 7 dígitos. - Ej.: "0600702" es una Fracción Censal del Departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
 
-* **Radios censales**: 9 dígitos. - Ej.: "060070201" es un Radio Censal de la Fracción Censal “0600702” del Departamento “Adolfo Alsina” de la provincia de “Buenos Aires”.
+* **Radios censales**: 9 dígitos. - Ej.: "060070201" es un Radio Censal de la Fracción Censal "0600702" del Departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
 
 ##### B. Provincias -> Municipios (PM)
 
@@ -259,7 +259,7 @@ Los identificadores de los municipios se componen entonces con los de las provin
 
 
 
-* **Municipios**: 6 dígitos. - Ej.: "140399" es el Municipio “Camerillo” de la provincia de “Córdoba”.
+* **Municipios**: 6 dígitos. - Ej.: "140399" es el Municipio "Camerillo" de la provincia de "Córdoba".
 
 ##### C. Provincias -> Departamentos -> Localidades (PDL)
 
@@ -288,7 +288,7 @@ Las localidades censales están contenidas tanto por los departamentos como por 
 
 
 
-* **Localidades**: 8 dígitos. - Ej.: "06007010" es la localidad “Carhué” del departamento “Adolfo Alsina” de la provincia de “Buenos Aires”.
+* **Localidades**: 8 dígitos. - Ej.: "06007010" es la localidad "Carhué" del departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
 
 La Ciudad de Buenos Aires constituye una excepción a esta regla ya que es una localidad compuesta por departamentos (comunas), de manera que no puede componerse identificador compuesto de tipo provincia-departamento-localidad. Para este caso, recomendamos usar el identificador de jurisdicción de primer nivel de la Ciudad de Buenos Aires ("02").
 
@@ -322,9 +322,9 @@ Los nombres de los campos identificadores deben ser, respectivamente:
 * "localidad_id"
 * "aglomerado_id"
 
-Análogamente, debe reemplazarse "_id" por “_nombre” para nombrar los campos que contiene el nombre de cada entidad, cuando esta lo tiene.
+Análogamente, debe reemplazarse "_id" por "_nombre" para nombrar los campos que contiene el nombre de cada entidad, cuando esta lo tiene.
 
-Resaltamos la importancia de que el tipo de datos del campo de un identificador es "textual" y no “numérico”. Esto es así porque un valor de tipo numérico no podría comenzar con ceros.
+Resaltamos la importancia de que el tipo de datos del campo de un identificador es "textual" y no "numérico". Esto es así porque un valor de tipo numérico no podría comenzar con ceros.
 
 <span class="no-recomendado">**No recomendado**</span>
 
@@ -400,13 +400,13 @@ Resaltamos la importancia de que el tipo de datos del campo de un identificador 
 
 La Ciudad de Buenos Aires constituye una excepción a la regla PDL (partido-departamento-localidad), utilizada a nivel nacional, ya que es una localidad compuesta por departamentos (comunas), de manera que no puede componerse identificador compuesto de tipo provincia-departamento-localidad. Para este caso, recomendamos usar el identificador de jurisdicción de primer nivel de la Ciudad de Buenos Aires ("02").
 
-Las comunas son las jurisdicciones de primer orden que marcan la división de la Ciudad Autónoma de Buenos Aires. El territorio municipal se divide en 15 comunas, siendo que algunos territorios pueden ser marcados como “Indeterminado” (98) o “Sin declarar-Desconocido-Ignorado” (99).
+Las comunas son las jurisdicciones de primer orden que marcan la división de la Ciudad Autónoma de Buenos Aires. El territorio municipal se divide en 15 comunas, siendo que algunos territorios pueden ser marcados como "Indeterminado" (98) o "Sin declarar-Desconocido-Ignorado" (99).
 
 Para más detalles sobre el tratamiento de este caso, ver la sección de [Divisiones o unidades territoriales internas del GCBA](https://datosgcba.github.io/guia-datos/guia-interoperables/#divisiones-o-unidades-territoriales-internas).
 
 #### Direcciones y lugares
 
-Siempre que sea posible, cuando un dataset contenga información que identifica a un punto en el espacio geográfico, recomendamos incluir las coordenadas de la manera establecida en la tercera tabla. Las coordenadas de un punto deben ser números decimales negativos o positivos contenidos en dos campos llamados "latitud" y “longitud”.
+Siempre que sea posible, cuando un dataset contenga información que identifica a un punto en el espacio geográfico, recomendamos incluir las coordenadas de la manera establecida en la tercera tabla. Las coordenadas de un punto deben ser números decimales negativos o positivos contenidos en dos campos llamados "latitud" y "longitud".
 
 Si el dataset contiene información sobre direcciones (especialmente en los casos en los que no sea posible proveer coordenadas), recomendamos incluir:
 
@@ -588,13 +588,13 @@ Ej.: C1426BMD
 
 ### Personas físicas
 
-Las personas físicas deben identificarse por su nombre completo separado en dos campos ("nombre" y “apellido”), cuando sea posible, donde deben consignarse todos los nombres y todos los apellidos que identifican a un individuo en su documento de identidad oficial, sea el que corresponda según el individuo se presente como residente nacional o extranjero.
+Las personas físicas deben identificarse por su nombre completo separado en dos campos ("nombre" y "apellido"), cuando sea posible, donde deben consignarse todos los nombres y todos los apellidos que identifican a un individuo en su documento de identidad oficial, sea el que corresponda según el individuo se presente como residente nacional o extranjero.
 
-Así mismo, recomendamos (de ser posible) agregar dos columnas "id" y “tipo_id” que respectivamente contengan el número o cadena de caracteres que constituye el identificador del documento oficial de la persona y el tipo de documento oficial al que este identificador corresponde (Ej.: DNI, LE, LC y Pasaporte).
+Así mismo, recomendamos (de ser posible) agregar dos columnas "id" y "tipo_id" que respectivamente contengan el número o cadena de caracteres que constituye el identificador del documento oficial de la persona y el tipo de documento oficial al que este identificador corresponde (Ej.: DNI, LE, LC y Pasaporte).
 
-Esto es sencillo en el caso de residentes nacionales, pero la variedad de tipos de documentos oficiales que puede presentar un residente extranjero es mucho más amplia y difícil de abarcar. En este último caso es suficiente con consignar si el documento es un "Pasaporte" u “Otro”. Adicionalmente, si el dataset puede contener datos de individuos de diferentes nacionalidades recomendamos agregar un campo “_pais” que contenga la nacionalidad del individuo de referencia.
+Esto es sencillo en el caso de residentes nacionales, pero la variedad de tipos de documentos oficiales que puede presentar un residente extranjero es mucho más amplia y difícil de abarcar. En este último caso es suficiente con consignar si el documento es un "Pasaporte" u "Otro". Adicionalmente, si el dataset puede contener datos de individuos de diferentes nacionalidades recomendamos agregar un campo "_pais" que contenga la nacionalidad del individuo de referencia.
 
-Tal como explicamos en el caso de países o territorios internacionales, si hubiera más de un campo relativo a "personas" o la mera nomenclatura “nombre” pudiera prestarse a confusión, los campos correspondientes serán compuestos. Ejemplo:
+Tal como explicamos en el caso de países o territorios internacionales, si hubiera más de un campo relativo a "personas" o la mera nomenclatura "nombre" pudiera prestarse a confusión, los campos correspondientes serán compuestos. Ejemplo:
 
 * "sujeto_obligado_nombre"
 * "sujeto_obligado_apellido"
@@ -787,15 +787,15 @@ Las entidades con personería jurídica local (Ej.: empresas argentinas, ONGs ar
 </table>
 
 
-Si el dataset sólo contiene personas jurídicas registradas en la jurisdicción argentina, el enfoque recomendado para nombrar los campos es el de agregar "_cuit" y “_razon_social” ya que es una nomenclatura específica mucho más descriptiva para el usuario que “_id” y “_desc”. Da cuenta del tipo de “_id” de que se trate y del tipo de descripción asociada.
+Si el dataset sólo contiene personas jurídicas registradas en la jurisdicción argentina, el enfoque recomendado para nombrar los campos es el de agregar "_cuit" y "_razon_social" ya que es una nomenclatura específica mucho más descriptiva para el usuario que "_id" y "_nombre". Da cuenta del tipo de "_id" de que se trate y del tipo de descripción asociada.
 
 La Administración Federal de Ingresos Públicos (AFIP) mantiene un [padrón actualizado](http://www.afip.gov.ar/genericos/cinscripcion/archivocompleto.asp) de todas las personas jurídicas que tienen un CUIT registrado en esa dependencia, que puede ser usado para normalizar o buscar la razón social.
 
 En el caso de que el dataset pueda contener personas jurídicas fuera de la jurisdicción argentina, recomendamos un enfoque análogo al tratamiento de personas físicas:
 
 * "inversor_id"
-* "inversor_tipo_id" (Ej.: en el caso de una empresa argentina sería “CUIT”)
-* "inversor_desc"
+* "inversor_tipo_id" (Ej.: en el caso de una empresa argentina sería "CUIT")
+* "inversor_nombre"
 * "inversor_pais_id"
 * "inversor_pais_nombre"
 
@@ -813,7 +813,7 @@ En el caso de que el dataset pueda contener personas jurídicas fuera de la juri
   <tr>
     <td>inversor_id</td>
     <td>inversor_tipo_id</td>
-    <td>inversor_desc</td>
+    <td>inversor_nombre</td>
     <td>inversor_pais_id</td>
     <td>inversor_pais_nombre</td>
   </tr>
@@ -849,7 +849,7 @@ En el caso de que el dataset pueda contener personas jurídicas fuera de la juri
 </table>
 
 
-Dependiendo de la forma de recolección de los datos, la temática particular del dataset y las capacidades del organismo responsable del mantenimiento del activo de datos, puede ser difícil la recolección comprehensible de "_id" y “_tipo_id” de las personas jurídicas de jurisdicción extranjera. Por eso, estos campos pueden llegar a quedar frecuentemente en blanco (valor ausente). Sin embargo, recomendamos con especial énfasis registrar el nombre (“_desc”) de la entidad en cuestión y el país bajo cuya jurisdicción se encuentra.
+Dependiendo de la forma de recolección de los datos, la temática particular del dataset y las capacidades del organismo responsable del mantenimiento del activo de datos, puede ser difícil la recolección comprehensible de "_id" y "_tipo_id" de las personas jurídicas de jurisdicción extranjera. Por eso, estos campos pueden llegar a quedar frecuentemente en blanco (valor ausente). Sin embargo, recomendamos con especial énfasis registrar el nombre ("_nombre") de la entidad en cuestión y el país bajo cuya jurisdicción se encuentra.
 
 ## Estándares sectoriales
 
