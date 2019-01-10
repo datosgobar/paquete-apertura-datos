@@ -176,11 +176,8 @@ En la mayoría de los casos, corresponde a datos que llegan de bases de datos, r
 El CSV es un formato estándar de archivo de texto plano donde:
 
 * Los campos (columnas) se separan por comas `,`.
-
 * Los registros (filas) se separan por saltos de línea.
-
 * Los números decimales utilizan `.` para separar la parte entera de la parte decimal.
-
 * Se utilizan las comillas dobles `"` como caracter de entrecomillado. Los valores en tablas CSV que incluyen dentro de sí caracteres especiales como `,` o `"`, deben estar encerrados entre `"` para su correcta interpretación.
 
 Algunas versiones alternativas de esta forma de publicar datos usan otros separadores como punto y coma (`;`) o *pipe* (`|`), pero la recomendación para toda la Administración Pública Nacional se basa en la versión de CSV más estándar, indicada por la especificación [RFC4180](http://tools.ietf.org/html/rfc4180) y las pautas de la [W3C](https://www.w3.org/TR/tabular-data-model/).
@@ -188,13 +185,9 @@ Algunas versiones alternativas de esta forma de publicar datos usan otros separa
 Otros elementos a tener en cuenta:
 
 * La primera fila siempre contiene los nombres de los campos.
-
 * No se deben repetir nombres entre los campos.
-
 * No se debe colocar espacios al principio ni al final del nombre de un campo, o de un valor.
-
 * Tanto los campos como los valores deben estar separados por comas (`,`).
-
 * En el caso de que un valor contenga el caracter separador (`,`) o cualquiera de los caracteres que separan las líneas (`\n`), el valor completo debe ser encerrado entre comillas dobles `""`. Esto indica que el caracter no cumple el rol de separar columnas o filas, sino que es parte de un valor.
 
 Ejemplo:
@@ -233,6 +226,8 @@ col1,col2,col3
 a,,b
 a,"",b
 ```
+
+Cabe destacar que un archivo CSV puede leerse desde una planilla de cálculo como MS Office o similar, donde los campos se separarán en columnas independientes a través de (,). Para hacerlo en Microsoft Excel, se debe ir `Archivo > Abrir > Archivos de texto` y allí usar las comas (,) como separadores de columnas.
 
 ### JSON
 
