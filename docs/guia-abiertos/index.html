@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
     
     
       
@@ -1274,37 +1274,19 @@
 <h3 id="csv"><a class="toclink" href="#csv">CSV</a><a class="headerlink" href="#csv" title="Permanent link">&#128279;</a></h3>
 <p>El CSV es un formato estándar de archivo de texto plano donde:</p>
 <ul>
-<li>
-<p>Los campos (columnas) se separan por comas <code>,</code>.</p>
-</li>
-<li>
-<p>Los registros (filas) se separan por saltos de línea.</p>
-</li>
-<li>
-<p>Los números decimales utilizan <code>.</code> para separar la parte entera de la parte decimal.</p>
-</li>
-<li>
-<p>Se utilizan las comillas dobles <code>"</code> como caracter de entrecomillado. Los valores en tablas CSV que incluyen dentro de sí caracteres especiales como <code>,</code> o <code>"</code>, deben estar encerrados entre <code>"</code> para su correcta interpretación.</p>
-</li>
+<li>Los campos (columnas) se separan por comas <code>,</code>.</li>
+<li>Los registros (filas) se separan por saltos de línea.</li>
+<li>Los números decimales utilizan <code>.</code> para separar la parte entera de la parte decimal.</li>
+<li>Se utilizan las comillas dobles <code>"</code> como caracter de entrecomillado. Los valores en tablas CSV que incluyen dentro de sí caracteres especiales como <code>,</code> o <code>"</code>, deben estar encerrados entre <code>"</code> para su correcta interpretación.</li>
 </ul>
 <p>Algunas versiones alternativas de esta forma de publicar datos usan otros separadores como punto y coma (<code>;</code>) o <em>pipe</em> (<code>|</code>), pero la recomendación para toda la Administración Pública Nacional se basa en la versión de CSV más estándar, indicada por la especificación <a href="http://tools.ietf.org/html/rfc4180">RFC4180</a> y las pautas de la <a href="https://www.w3.org/TR/tabular-data-model/">W3C</a>.</p>
 <p>Otros elementos a tener en cuenta:</p>
 <ul>
-<li>
-<p>La primera fila siempre contiene los nombres de los campos.</p>
-</li>
-<li>
-<p>No se deben repetir nombres entre los campos.</p>
-</li>
-<li>
-<p>No se debe colocar espacios al principio ni al final del nombre de un campo, o de un valor.</p>
-</li>
-<li>
-<p>Tanto los campos como los valores deben estar separados por comas (<code>,</code>).</p>
-</li>
-<li>
-<p>En el caso de que un valor contenga el caracter separador (<code>,</code>) o cualquiera de los caracteres que separan las líneas (<code>\n</code>), el valor completo debe ser encerrado entre comillas dobles <code>""</code>. Esto indica que el caracter no cumple el rol de separar columnas o filas, sino que es parte de un valor.</p>
-</li>
+<li>La primera fila siempre contiene los nombres de los campos.</li>
+<li>No se deben repetir nombres entre los campos.</li>
+<li>No se debe colocar espacios al principio ni al final del nombre de un campo, o de un valor.</li>
+<li>Tanto los campos como los valores deben estar separados por comas (<code>,</code>).</li>
+<li>En el caso de que un valor contenga el caracter separador (<code>,</code>) o cualquiera de los caracteres que separan las líneas (<code>\n</code>), el valor completo debe ser encerrado entre comillas dobles <code>""</code>. Esto indica que el caracter no cumple el rol de separar columnas o filas, sino que es parte de un valor.</li>
 </ul>
 <p>Ejemplo:</p>
 <div class="codehilite"><pre><span></span>col1,col2\n
@@ -1341,6 +1323,7 @@ a,&quot;&quot;,b
 </pre></div>
 
 
+<p>Cabe destacar que un archivo CSV puede leerse desde una planilla de cálculo como MS Office o similar, donde los campos se separarán en columnas independientes a través de (,). Para hacerlo en Microsoft Excel, se debe ir <code>Archivo &gt; Abrir &gt; Archivos de texto</code> y allí usar las comas (,) como separadores de columnas.</p>
 <h3 id="json"><a class="toclink" href="#json">JSON</a><a class="headerlink" href="#json" title="Permanent link">&#128279;</a></h3>
 <p>JSON es un formato de texto popular para el intercambio de datos, es un acrónimo de  JavaScript Object Notation. Por su característica de ser un formato de tipo estructurado es especialmente útil para el intercambio de datos entre sistemas (<em>machine readable format</em>).</p>
 <p>El formato JSON ha sido definido por la especificación <a href="https://tools.ietf.org/html/rfc7159">RFC 7159</a> y, tal como CSV, también es un estándar abierto.</p>
@@ -2165,7 +2148,7 @@ Recolección de residuos - 198</td>
 </li>
 </ul>
 <p>Ejemplos de formatos válidos para días:</p>
-<div class="codehilite"><pre><span></span><span class="n">DAY</span><span class="o">:</span> <span class="n">Un</span> <span class="n">solo</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span>
+<div class="codehilite"><pre><span></span><span class="n">DAY</span><span class="o">:</span> <span class="n">Un</span> <span class="n">solo</span> <span class="n">día</span>
 <span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2</span><span class="o">:</span> <span class="n">Entre</span> <span class="n">entre</span> <span class="n">DAY1</span> <span class="n">y</span> <span class="n">DAY2</span>
 <span class="n">DAY1_DAY2</span><span class="o">:</span> <span class="n">DAY1</span> <span class="n">y</span> <span class="n">DAY2</span>
 <span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2_DAY3</span><span class="o">:</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">y</span> <span class="n">DAY3</span>
@@ -2182,12 +2165,12 @@ Recolección de residuos - 198</td>
 
 
 <p>Más ejemplos de formatos válidos completos:</p>
-<div class="codehilite"><pre><span></span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">todos</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span><span class="o">.</span>
-<span class="n">DAY</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">que</span> <span class="n">el</span> <span class="n">rango</span> <span class="n">ocupa</span> <span class="n">todo</span> <span class="n">el</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span> <span class="n">DAY</span><span class="o">.</span>
-<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span> <span class="n">DAY</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">.</span>
-<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span>
-<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span>
-<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">rango</span> <span class="n">de</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span>
+<div class="codehilite"><pre><span></span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">todos</span> <span class="n">los</span> <span class="n">días</span><span class="o">.</span>
+<span class="n">DAY</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">que</span> <span class="n">el</span> <span class="n">rango</span> <span class="n">ocupa</span> <span class="n">todo</span> <span class="n">el</span> <span class="n">día</span> <span class="n">DAY</span><span class="o">.</span>
+<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">días</span> <span class="n">DAY</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">.</span>
+<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">día</span>
+<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">días</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span>
+<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">rango</span> <span class="n">de</span> <span class="n">días</span>
 </pre></div>
 
 
@@ -2299,7 +2282,7 @@ Lunes a Miercoles 8 a 11 y de Viernes a Domingo 9 a 10 -&gt; &quot;LUN-MIE__08:0
       
     </div>
     
-      <script src="../assets/javascripts/application.5e60981f.js"></script>
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
       
         
         
