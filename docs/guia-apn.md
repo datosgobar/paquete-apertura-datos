@@ -1,6 +1,30 @@
 # Guía para la apertura de datos en organismos de la Administración Pública Nacional
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Indice
+
+- [Introducción](#introduccion)
+    - [Objetivo](#objetivo)
+    - [Datos abiertos: qué son y por qué tu organismo quiere abrirlos](#datos-abiertos-que-son-y-por-qu%C3%A9-tu-organismo-quiere-abrirlos)
+- [1. Publicá en datos.gob.ar](#1-publica-en-datosgobar)
+    - [Creá un catálogo de datos abiertos](#crea-un-cat%C3%A1logo-de-datos-abiertos)
+    - [Documentá tus datos](#documenta-tus-datos)
+        - [¿Qué datos documento?](#que-datos-documento)
+        - [Tengo datos en archivos PDF](#tengo-datos-en-archivos-pdf)
+        - [Tengo datos en tablas HTML (páginas web)](#tengo-datos-en-tablas-html-paginas-web)
+        - [Tengo presentaciones, informes, libros...](#tengo-presentaciones-informes-libros)
+    - [Sumá tu catálogo a datos.gob.ar](#suma-tu-cat%C3%A1logo-a-datosgobar)
+- [2. Mejorá la calidad de tus datos](#2-mejora-la-calidad-de-tus-datos)
+    - [Compartí tus datos en formatos abiertos](#comparti-tus-datos-en-formatos-abiertos)
+    - [Normalizá y enriquecé tus datos](#normaliza-y-enriquece-tus-datos)
+- [3. Publicá datos como un servicio](#3-publica-datos-como-un-servicio)
+    - [Documentá y compartí tus servicios de datos](#documenta-y-comparti-tus-servicios-de-datos)
+    - [Sumá tus datos a la API de Series de Tiempo](#suma-tus-datos-a-la-api-de-series-de-tiempo)
+- [4. Identificá nuevos activos de datos a publicar](#4-identifica-nuevos-activos-de-datos-a-publicar)
+- [¿Tenés dudas? Escribinos](#tenes-dudas-escribinos)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Introducción
 
@@ -10,9 +34,9 @@ Esta guía busca orientar a los organismos a través de los pasos a seguir para 
 
 El objetivo de esta guía es que los organismos de la Administración Pública Nacional alcanzados por el Decreto N° 117/2016, encuentren todos los recursos necesarios para:
 
-1. Publicar sus datos en datos.gob.ar
-2. Mejorar la calidad de sus datos
-3. Publicar datos como un servicio
+1. [Publicar sus datos en datos.gob.ar](#1-publica-en-datosgobar)
+2. [Mejorar la calidad de sus datos](#2-mejora-la-calidad-de-tus-datos)
+3. [Publicar datos como un servicio](#3-publica-datos-como-un-servicio)
 4. Identificar nuevos activos de datos a publicar
 
 ### Datos abiertos: qué son y por qué tu organismo quiere abrirlos
@@ -169,6 +193,14 @@ Para sumar tus series a la API:
 Si sos desarrollador, tenés tus series de tiempo en archivos Excel y es difícil convertirlos al formato estándar en CSV, podés usar el **[Scraper de Series de Tiempo](https://github.com/datosgobar/series-tiempo-ar-scraping)**.
 
 Si querés explorar nuevas formas de usar la API de Series de Tiempo para automatizar reportes, análisis, visualizaciones o desarrollar aplicaciones web, mirá [este taller](https://github.com/datosgobar/taller-series-tiempo-mediaparty-2018).
+
+## 4. Identificá nuevos activos de datos a publicar
+
+Una vez que catalogaste los activos de datos que ya estaban en línea, trabajaste en mejorar su calidad y en mejorar su estructura para facilitar su reutilización, puede ser un buen momento para revisar qué otras cosas podés publicar.
+
+* **Aplicaciones web**. Revisá si hay sistemas o aplicaciones en línea diseñadas para la consulta de datos y si su base de datos (o una consulta procesada sobre ella) puede ser publicada en formatos abiertos.
+* **Mapas, visualizaciones, gráficos**. Muchas veces estos se basan en datos, que todavía no están publicados en formatos abiertos. Hay usuarios que quieren sólo consultar el producto final (ie. el mapa), otros que sólo quieren los datos crudos por detrás y a muchos les es útil que publiques ambas cosas. Es una buena idea pensar cualquier nuevo producto digital desde cero con la apertura de sus datos en la hoja de ruta.
+* **Estadísticas históricas**. Algunos organismos tienen conjuntos históricos de estadísticas que están "atrapadas" en libros impresos y otros formatos no digitales. Si bien puede ser una tarea ardua, digitalizar y publicar en formatos abiertos estos datos tiene un inmenso valor para la investigación y el análisis con perspectiva histórica.
 
 ## ¿Tenés dudas? Escribinos
 
