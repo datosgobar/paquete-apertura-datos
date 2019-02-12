@@ -102,6 +102,8 @@ doctoc: ## generate table of contents, doctoc command line tool required
 	bash fix_github_links.sh docs/guia-apn.md
 	# doctoc --gitlab --title "## Indice" docs/guia_metadatos.md
 	# bash fix_github_links.sh docs/guia_metadatos.md
+	# doctoc --gitlab --title "## Indice" docs/perfil-metadatos.md
+	# bash fix_github_links.sh docs/perfil-metadatos.md
 	doctoc --gitlab --title "## Indice" docs/glosario.md
 	bash fix_github_links.sh docs/glosario.md
 
@@ -113,18 +115,22 @@ build:
 	rsync -vau --remove-source-files site/ docs/
 	rm -rf site
 	rm -rf docs/guia_abiertos
-	rm -rf docs/guia_apn
 	rm -rf docs/guia_interoperables
 	rm -rf docs/guia_metadatos
+	rm -rf docs/guia_apn
 	rm -rf docs/guia_subnacionales
+	rm -rf docs/perfil_metadatos
 	cp -rf docs/guia-abiertos docs/guia_abiertos
-	cp -rf docs/guia-apn docs/guia_apn
 	cp -rf docs/guia-interoperables docs/guia_interoperables
 	cp -rf docs/guia-metadatos docs/guia_metadatos
+	cp -rf docs/guia-apn docs/guia_apn
 	cp -rf docs/guia-subnacionales docs/guia_subnacionales
+	cp -rf docs/perfil-metadatos docs/perfil_metadatos
 
 pdf:
 	python md2pdf.py docs/guia-abiertos.md docs/pdf/guia-abiertos.pdf
 	python md2pdf.py docs/guia-interoperables.md docs/pdf/guia-interoperables.pdf
 	python md2pdf.py docs/guia-metadatos.md docs/pdf/guia-metadatos.pdf
+	python md2pdf.py docs/guia-apn.md docs/pdf/guia-apn.pdf
 	python md2pdf.py docs/guia-subnacionales.md docs/pdf/guia-subnacionales.pdf
+	python md2pdf.py docs/perfil-metadatos.md docs/pdf/perfil-metadatos.pdf

@@ -81,15 +81,10 @@ Quien tome este rol debe entender claramente el valor del proceso de apertura. R
 Es quien lidera a nivel operativo la política de datos abiertos. Entre sus funciones principales se encuentran:
  
 * Alinear las prioridades de gestión de la administración con la política de datos abiertos.
- 
 * Identificar qué datos es prioritario abrir y establecer los procesos para su apertura, en conjunto con los responsables de los datos.
- 
 * Asegurar el cumplimiento de estándares.
- 
 * Oficiar de enlace con otras dependencias de gobierno, los usuarios de datos y la sociedad en general.
- 
 * Priorizar productos específicos de la entidad que promuevan el uso de datos abiertos.
- 
 * Rendir cuentas por el desarrollo de la política a nivel gubernamental.
  
 Si bien este rol puede ser ejercido por distintos tipos de perfiles, es importante que quien lo ocupe entienda cómo funciona la apertura de datos, los estándares disponibles y los posibles casos de uso. No es sólo un rol gerencial, sino que requiere ciertas capacidades técnicas mínimas.
@@ -99,15 +94,10 @@ Si bien este rol puede ser ejercido por distintos tipos de perfiles, es importan
 El responsable de este rol tiene a su cargo las definiciones que van a dar forma a la política de datos abiertos como:
  
 * Trabajar con los responsables de las bases de datos originales para ordenar su apertura estableciendo protocolos técnicos para ese fin.
- 
 * Realizar o liderar procesos de limpieza de datos.
- 
 * Administrar el portal de datos abiertos de la dependencia, asegurándose que esté al día con las actualizaciones disponibles.
- 
 * Promover e implementar estándares en materia de datos.
- 
 * Desarrollar o supervisar el desarrollo de servicios para consulta de datos (tales como APIS)
- 
 * Oficiar de enlace con la comunidad técnica a nivel nacional así como con contrapartes a nivel local del sector privado, academia o sociedad civil.
  
 Quien tome este rol requiere un fuerte componente técnico, debe contar con entendimiento de sistemas, estándares de datos, conocimientos de programación y gestión de la tecnología en el sector público.
@@ -117,11 +107,8 @@ Quien tome este rol requiere un fuerte componente técnico, debe contar con ente
 La función de este rol es hacer uso y explotación de los datos para facilitar y apoyar el uso de los datos abiertos por parte de la ciudadanía y dentro de su propia estructura. En particular:
  
 * Promover el entendimiento y aprovechamiento de los datos tanto hacia adentro como hacia afuera de la organización.
- 
 * Liderar los procesos de análisis y visualización de datos, con un fuerte foco en la comunicación.
- 
 * Asistir en los procesos de limpieza de datos.
- 
 * Manejar con solvencia paquetes de análisis de datos.
  
 Para poder cumplir con los objetivos, quien tome este rol necesita tener un correcto manejo de herramientas de visualización de datos y una visión comunicacional sobre los productos a desarrollar.
@@ -187,9 +174,7 @@ Para lograr que un dato publicado sea realmente útil y fácil de usar por parte
 Te invitamos a leer las siguientes guías de buenas prácticas que publicamos con recomendaciones para una correcta política de apertura en la Administración Pública:
 
 * [Guía para la publicación de datos en formatos abiertos](https://datosgobar.github.io/paquete-apertura-datos/guia-abiertos/).     Recomendaciones para publicar datos en formatos abiertos, estructurar bien una tabla, nombrar archivos y columnas, usar estándares básicos y trabajar con planillas de cálculo.
-
 * [Guía para la identificación y uso de entidades interoperables](https://datosgobar.github.io/paquete-apertura-datos/guia-interoperables/). Recomendaciones y referencias para nombrar entidades en activos de datos, usando sus nombres y códigos oficiales.
-
 * [Guía para el uso y la publicación de metadatos](https://datosgobar.github.io/paquete-apertura-datos/guia-metadatos/). Recomendaciones y estándares para documentar activos de datos.
 
 ## ¿Qué datasets publicar?
@@ -479,11 +464,8 @@ Un ejemplo de este tipo de interacción es el “Mapa de Oportunidades Comercial
 El MOC brinda información detallada del panorama comercial a empresas y emprendedores para hacer más eficiente la toma de decisiones a la hora de abrir o potenciar los locales. Algunos de los datos con los que cuenta la plataforma son:
  
 * Apertura y cierre de locales
- 
 * Nivel de riesgo
- 
 * Indicadores poblacionales
- 
 * Indicadores inmobiliarios
  
 !!! note ""
@@ -539,32 +521,19 @@ Identificar e interactuar uno a uno con cada sector es indispensable pero no suf
  
 Hay distintas maneras de generar estas interacciones, dependiendo de los objetivos que queramos cumplir. En el [Kit de Herramientas de Innovación](https://www.argentina.gob.ar/sites/default/files/4._kit_innovacion_2_-_herramientas_practicas_para_la_innovacion_publica.pdf) ([Ver Anexo I](https://datosgobar.github.io/paquete-apertura-datos/guia-subnacionales/#anexo-i-recursos-recomendados)) vas a encontrar distintos dispositivos que nos proponen diferentes maneras de acercarnos y generar una comunidad de práctica que agregue valor.
 
-
-
-
-
 ## Anexo I: recursos recomendados
 
 Aquí un listado de guías y kits de apertura que pueden servir como complemento a los contenidos desarrollados:
 
 * [Kit de Apertura de Datos](https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf) - Presidencia de la Nación Argentina
-
 * [Kit de Gobierno Abierto](https://www.argentina.gob.ar/sites/default/files/kit_gobierno_abierto-alianza_para_el_gobierno_abierto.pdf) - Presidencia de la Nación Argentina
-
 * [Kit de Innovación I](https://www.argentina.gob.ar/sites/default/files/4._kit_innovacion_-_herramientas_practicas_para_impulsar_la_innovacion_publica.pdf) - Presidencia de la Nación Argentina
-
 * [Kit de Innovación II](https://www.argentina.gob.ar/sites/default/files/4._kit_innovacion_2_-_herramientas_practicas_para_la_innovacion_publica.pdf) - Presidencia de la Nación Argentina
-
 * [Kit de Evaluación (Herramientas ágiles)](https://www.argentina.gob.ar/sites/default/files/1._digital_-_kit_de_evaluacion_-_herramientas_para_gestion_agil.pdf) - Presidencia de la Nación Argentina
-
 * [Kit de Apertura Municipal](http://datos.gba.gob.ar/wp-content/uploads/2018/03/Kit-de-Apertura-Municipal-Gobierno-Abierto-PBA-2018.pdf) - Provincia de Buenos Aires
-
 * [Manual de Municipio Abierto](http://datosgobierno.vicentelopez.gov.ar/docs/VicenteLopez-ManualDatosAbiertos.pdf) - Municipalidad de  Vicente López
-
 * [Do It Yourself Open Data Toolkit](https://open.canada.ca/en/toolkit/diy) - Gobierno de Canadá (Inglés/Francés)
-
 * [Recursos pedagógicos y metodológicos de apertura de datos](http://opendatalocale.net/ressources/) - Francia (Francés)
-
 * [Paso a paso de una política de datos abiertos](https://opendatapolicyhub.sunlightfoundation.com/step-by-step/) - Sunlight Foundation (Inglés)
 
 ## Anexo II: índices internacionales y marco normativo que fijan prioridades de publicación
@@ -572,13 +541,11 @@ Aquí un listado de guías y kits de apertura que pueden servir como complemento
 El marco normativo nacional fija algunos conjuntos de datos que es obligatorio publicar para organismos de la Administración Pública Nacional:
 
 * **[La Ley 27275 de "Derecho de Acceso a la Información Pública"](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/265949/norma.htm) en su Artículo 32**
-
 * **[El Decreto 117-2016 del "Plan de Apertura de Datos"](http://servicios.infoleg.gob.ar/infolegInternet/anexos/255000-259999/257755/norma.htm)**
 
 Existen organizaciones internacionales que establecen los conjuntos de datos deseables a publicar como:
 
 * **El _[Open Data Barometer (ODB)](https://opendatabarometer.org/)_**, desarrollado por la World Wide Web Foundation como un trabajo colaborativo de la red Open Data for Development (OD4D). Tiene como objetivo descubrir la verdadera prevalencia e impacto de las iniciativas de datos abiertos en torno a el mundo. Analiza las tendencias mundiales y proporciona datos comparativos sobre países y regiones utilizando una metodología en profundidad que combina datos contextuales, evaluaciones técnicas e indicadores secundarios.
-
 * **El _[Global Open Data Index](https://index.okfn.org/) / Índice Global de Datos Abiertos (GODI)_**, administrado por Open Knowledge Network, mide la publicación de datos a nivel país. Sumada a estas mediciones nacionales, Argentina desarrolla desde hace dos años un índice a nivel local midiendo el nivel de publicación de datos abiertos de cada uno de los gobiernos de cada una de sus ciudades, en un [*Índice de datos abiertos de Ciudades de Argentina*](http://ar-cities.survey.okfn.org).
 
 ## Glosario

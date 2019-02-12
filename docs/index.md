@@ -10,14 +10,12 @@ Podés colaborar con las guías cargando un nuevo issue, o respondiendo a un iss
 
 * [Material introductorio](https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf)
     <!-- - [Kit de datos abiertos](https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf) -->
-
 * Guías de buenas prácticas
     - [Guía para la publicación de datos en formatos abiertos](guia-abiertos.md)
     - [Guía para la identificación y uso de entidades interoperables](guia-interoperables.md)
     - [Guía para el uso y la publicación de metadatos](guia-metadatos.md)
-
 * Guías de implementación
     - [Guía para la apertura de datos en organismos de la Administración Pública Nacional](guia-apn.md)
-    - [Guía para la apertura de datos en gobiernos subnacionales](guia-subnacionales.md)
-
+    - [Guía para la apertura de datos en provincias y municipios](guia-subnacionales.md)
+<!-- * [Perfil Nacional de Metadatos para Datos Abiertos](perfil-metadatos.md) -->
 * [Glosario](glosario.md)

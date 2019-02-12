@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.3, mkdocs-material-3.0.5">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
@@ -1144,45 +1144,23 @@
 <p>Esta es <strong>una guía de buenas prácticas para la publicación de datos en formatos abiertos.</strong></p>
 <p>Estas recomendaciones se basan en:</p>
 <ul>
-<li>
-<p>Estándares usados a nivel nacional e internacional.</p>
-</li>
-<li>
-<p>La experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública de la Secretaría de Gobierno de Modernización de la Jefatura de Gabinete de Ministros de la Nación.</p>
-</li>
+<li>Estándares usados a nivel nacional e internacional.</li>
+<li>La experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública de la Secretaría de Gobierno de Modernización de la Jefatura de Gabinete de Ministros de la Nación.</li>
 </ul>
 <p>Esta es <strong>una guía colaborativa y en progreso</strong>. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.</p>
 <p>El documento se estructura así:</p>
 <ul>
-<li>
-<p><strong>Formatos abiertos de archivos:</strong> cuáles son los formatos más usuales en los que se publican datos y cuáles son los más recomendables.</p>
-</li>
-<li>
-<p><strong>Fragmentación de archivos</strong>: cuáles son los criterios para decidir que un archivo es demasiado grande (y hay que fragmentarlo) o demasiado chico (y hay que juntarlo con otros).</p>
-</li>
-<li>
-<p><strong>Nomenclatura de archivos</strong>: cómo nombrar adecuadamente un archivo.</p>
-</li>
-<li>
-<p><strong>Codificación</strong>: cuál es la codificación en que se debe guardar un archivo.</p>
-</li>
-<li>
-<p><strong>Estructura y características de los datos tabulares</strong></p>
-<ul>
-<li>
-<p>Recomendaciones generales: aplican a todos los casos.</p>
-</li>
-<li>
-<p>Recomendaciones para estructurar planillas de cálculo: aplican exclusivamente al trabajo en planillas de cálculo.</p>
-</li>
-<li>
-<p>Exportación a CSV: cómo exportar adecuadamente planillas de cálculo a un archivo de formato abierto.</p>
-</li>
+<li><strong>Formatos abiertos de archivos:</strong> cuáles son los formatos más usuales en los que se publican datos y cuáles son los más recomendables.</li>
+<li><strong>Fragmentación de archivos</strong>: cuáles son los criterios para decidir que un archivo es demasiado grande (y hay que fragmentarlo) o demasiado chico (y hay que juntarlo con otros).</li>
+<li><strong>Nomenclatura de archivos</strong>: cómo nombrar adecuadamente un archivo.</li>
+<li><strong>Codificación</strong>: cuál es la codificación en que se debe guardar un archivo.</li>
+<li><strong>Estructura y características de los datos tabulares</strong><ul>
+<li>Recomendaciones generales: aplican a todos los casos.</li>
+<li>Recomendaciones para estructurar planillas de cálculo: aplican exclusivamente al trabajo en planillas de cálculo.</li>
+<li>Exportación a CSV: cómo exportar adecuadamente planillas de cálculo a un archivo de formato abierto.</li>
 </ul>
 </li>
-<li>
-<p><strong>Estándares según el tipo de datos</strong>: cuáles son los estándares recomendados para manejar distintos tipos de datos.</p>
-</li>
+<li><strong>Estándares según el tipo de datos</strong>: cuáles son los estándares recomendados para manejar distintos tipos de datos.</li>
 </ul>
 <p>Estos son los primeros aspectos importantes para la estandarización de datos.</p>
 <p>Para una discusión sobre los estándares recomendados en el manejo de datos básicos y fundamentales, transversales a distintas áreas temáticas, se puede consultar la <a href="../guia-interoperables/"><strong>Guía para la identificación y uso de entidades interoperables</strong></a>.</p>
@@ -1261,12 +1239,8 @@
 
 <p>Antes de seguir, introduciremos dos conceptos que se usarán a lo largo de toda la guía:</p>
 <ul>
-<li>
-<p><strong>Distribución o Recurso:</strong> Una distribución o recurso es la unidad mínima en la que se publican datos. Se trata de los archivos que pueden ser descargados y re-utilizados por un usuario. Los recursos pueden tener diversos formatos (.csv, .shp, etc.).</p>
-</li>
-<li>
-<p><strong>Dataset:</strong> Un conjunto de datos o dataset agrupa recursos referidos a un mismo tema que respetan una estructura de la información. Los recursos que lo componen pueden diferir en el formato en que se los presenta (por ejemplo: .csv, .json, .xls, etc.), la fecha a la que se refieren, el área geográfica cubierta, ser tablas de un mismo esquema de base de datos relacional o estar separados bajo algún otro criterio.</p>
-</li>
+<li><strong>Distribución o Recurso:</strong> Una distribución o recurso es la unidad mínima en la que se publican datos. Se trata de los archivos que pueden ser descargados y re-utilizados por un usuario. Los recursos pueden tener diversos formatos (.csv, .shp, etc.).</li>
+<li><strong>Dataset:</strong> Un conjunto de datos o dataset agrupa recursos referidos a un mismo tema que respetan una estructura de la información. Los recursos que lo componen pueden diferir en el formato en que se los presenta (por ejemplo: .csv, .json, .xls, etc.), la fecha a la que se refieren, el área geográfica cubierta, ser tablas de un mismo esquema de base de datos relacional o estar separados bajo algún otro criterio.</li>
 </ul>
 <p>Un recurso en formato tabular es un archivo plano que se ajusta a un esquema predefinido de columnas, incluyendo el nombre de la columna y el tipo de datos.</p>
 <p>En la mayoría de los casos, corresponde a datos que llegan de bases de datos, reportes y planillas de cálculo en general. A diferencia de los formatos tabulares, los archivos JSON siguen una estructura diferente donde se definen listas de objetos con pares "clave" - “valor”.</p>
@@ -1331,9 +1305,11 @@ a,&quot;&quot;,b
 <p>Para garantizar la accesibilidad a los datos, <strong>puede ser necesario fragmentar los archivos  excesivamente grandes</strong>, que superen el millón de filas.</p>
 <p>Sin embargo, <strong>se recomienda no fragmentarlos (manteniendo una única versión completa) si los archivos tienen menos de 500 mil filas</strong> y su actualización en los próximos años no los acercaría al millón de filas.</p>
 <p>Si fragmentar resulta necesario, recomendamos usar conceptos simples:</p>
-<p>(a) <strong>por períodos</strong> en caso de tratarse de información temporal (Ej. Años, semestres, trimestres, meses, semanas, días),</p>
-<p>(b) <strong>por zonas</strong> en caso de tratarse de información geográfica (Ej. provincias, municipios, barrios, secciones, o manzanas) o</p>
-<p>(c) <strong>por dimensiones temáticas</strong> propias del dominio particular de la información.</p>
+<ol>
+<li><strong>por períodos</strong> en caso de tratarse de información temporal (Ej. Años, semestres, trimestres, meses, semanas, días),</li>
+<li><strong>por zonas</strong> en caso de tratarse de información geográfica (Ej. provincias, municipios, barrios, secciones, o manzanas) o</li>
+<li><strong>por dimensiones temáticas</strong> propias del dominio particular de la información.</li>
+</ol>
 <p>Sin embargo, siempre que se decida fragmentar un archivo para garantizar su accesibilidad, <strong>recomendamos publicar también una versión no fragmentada que contenga el conjunto de datos completo</strong> (incluso aunque sea muy grande), a los fines de evitar la tarea de consolidación a los usuarios que requieren usar todos los datos.</p>
 <p><strong>Cuando la versión completa resulta muy pesada (más de 50MB) se recomienda comprimir el archivo</strong> usando protocolos de compresión sin pérdida, y abiertos.</p>
 <h2 id="nomenclatura-de-archivos"><a class="toclink" href="#nomenclatura-de-archivos">Nomenclatura de archivos</a><a class="headerlink" href="#nomenclatura-de-archivos" title="Permanent link">&#128279;</a></h2>
@@ -1348,24 +1324,12 @@ a,&quot;&quot;,b
 </ul>
 <p>Ejemplos:</p>
 <ul>
-<li>
-<p><em>acceso-informacion-publica.csv</em>: Versión completa del recurso.</p>
-</li>
-<li>
-<p><em>acceso-informacion-publica-2013.csv</em>: Versión del recurso fragmentada por año.</p>
-</li>
-<li>
-<p><em>acceso-informacion-publica-201302.csv</em>: Versión del recurso fragmentada por mes.</p>
-</li>
-<li>
-<p><em>acceso-informacion-publica-caba.csv</em>: Versión del recurso fragmentada por división político-territorial (provincia o caba).</p>
-</li>
-<li>
-<p><em>acceso-informacion-publica-caba-2013.csv</em>: Versión del recurso fragmentada por división político-territorial (provincia o caba) y año.</p>
-</li>
-<li>
-<p><em>acceso-informacion-publica-jujuy-20130208.csv</em>:  Versión del recurso fragmentada por división político-territorial (provincia o caba) y fecha.</p>
-</li>
+<li><em>acceso-informacion-publica.csv</em>: Versión completa del recurso.</li>
+<li><em>acceso-informacion-publica-2013.csv</em>: Versión del recurso fragmentada por año.</li>
+<li><em>acceso-informacion-publica-201302.csv</em>: Versión del recurso fragmentada por mes.</li>
+<li><em>acceso-informacion-publica-caba.csv</em>: Versión del recurso fragmentada por división político-territorial (provincia o caba).</li>
+<li><em>acceso-informacion-publica-caba-2013.csv</em>: Versión del recurso fragmentada por división político-territorial (provincia o caba) y año.</li>
+<li><em>acceso-informacion-publica-jujuy-20130208.csv</em>:  Versión del recurso fragmentada por división político-territorial (provincia o caba) y fecha.</li>
 </ul>
 <p>Para la fragmentación temporal, recomendamos el estándar de los ejemplos, ya que es compacto y ordena los recursos por tiempo: YYYYMMDD. Por favor, recordá mantener siempre dos dígitos para el mes y el día, incluso si el número es menor a 10.</p>
 <p>Para la fragmentación por zonas, consultá la <a href="../guia-interoperables/"><strong>Guía para la identificación y  uso de entidades interoperables</strong></a>, y mirá cómo nombrarlas adecuadamente.</p>
@@ -1376,12 +1340,8 @@ a,&quot;&quot;,b
 <h2 id="estructura-y-caracteristicas-de-los-datos-tabulares"><a class="toclink" href="#estructura-y-caracteristicas-de-los-datos-tabulares">Estructura y características de los datos tabulares</a><a class="headerlink" href="#estructura-y-caracteristicas-de-los-datos-tabulares" title="Permanent link">&#128279;</a></h2>
 <p>En esta sección veremos:</p>
 <ul>
-<li>
-<p>Recomendaciones generales para el trabajo con datos.</p>
-</li>
-<li>
-<p>Recomendaciones para el trabajo con planillas de cálculo, orientadas tanto a facilitar su exportación a formatos abiertos, como a su propia usabilidad en el contexto de cualquier aplicación de planillas de cálculo.</p>
-</li>
+<li>Recomendaciones generales para el trabajo con datos.</li>
+<li>Recomendaciones para el trabajo con planillas de cálculo, orientadas tanto a facilitar su exportación a formatos abiertos, como a su propia usabilidad en el contexto de cualquier aplicación de planillas de cálculo.</li>
 </ul>
 <h3 id="recomendaciones-generales"><a class="toclink" href="#recomendaciones-generales">Recomendaciones generales</a><a class="headerlink" href="#recomendaciones-generales" title="Permanent link">&#128279;</a></h3>
 <p>Estas son recomendaciones generales para el trabajo con datos tabulares. Sugerimos adoptarlas sea cual sea la tecnología usada.</p>
@@ -1391,71 +1351,37 @@ a,&quot;&quot;,b
 <p>Las siguientes recomendaciones aplican a la generalidad de los casos. Cuando existan convenciones particulares según la temática o rubro de datos de que se trate -y éstas entraran en conflicto- puede ser conveniente privilegiar primero la convención de la temática específica y luego la convención general.</p>
 <p>Los nombres de los campos deben:</p>
 <ul>
-<li>
-<p>Estar en español.</p>
-</li>
-<li>
-<p>Ser lo más explícitos, descriptivos y declarativos como sea posible.</p>
-<ul>
-<li>
-<p>Es preferible que el nombre de un campo sea claro antes que corto, pero se recomienda no superar los 50 caracteres (en todos los casos, <strong>el nombre de un campo no debería superar los 60 caracteres</strong> que es el límite de varias aplicaciones de software o bases de datos como PostGres).</p>
-</li>
-<li>
-<p>No usar abreviaturas si no es estrictamente necesario o recomendado por una convención ampliamente difundida. En caso de usarlas, incluir su explicación en la descripción de la columna documentada.</p>
-</li>
+<li>Estar en español.</li>
+<li>Ser lo más explícitos, descriptivos y declarativos como sea posible.<ul>
+<li>Es preferible que el nombre de un campo sea claro antes que corto, pero se recomienda no superar los 50 caracteres (en todos los casos, <strong>el nombre de un campo no debería superar los 60 caracteres</strong> que es el límite de varias aplicaciones de software o bases de datos como PostGres).</li>
+<li>No usar abreviaturas si no es estrictamente necesario o recomendado por una convención ampliamente difundida. En caso de usarlas, incluir su explicación en la descripción de la columna documentada.</li>
 </ul>
 </li>
-<li>
-<p>Estar en minúsculas, no incluir caracteres especiales, ni estar subrayados.</p>
-<ul>
-<li>
-<p>Usar palabras compuestas únicamente de caracteres en minúsculas comprendidos en el rango a-z (letras sin tildes) y en el rango 0-9 (dígitos).</p>
-</li>
-<li>
-<p>Las palabras deben unirse con guión bajo " _ ".</p>
-</li>
-<li>
-<p>No contener espacios.</p>
-</li>
-<li>
-<p>Las palabras deben separarse siempre con " _ ", en lugar de no tener separación alguna: <em>fecha_audiencia_solicitada</em> en lugar de <em>fechaaudienciasolicitada</em></p>
-</li>
+<li>Estar en minúsculas, no incluir caracteres especiales, ni estar subrayados.<ul>
+<li>Usar palabras compuestas únicamente de caracteres en minúsculas comprendidos en el rango a-z (letras sin tildes) y en el rango 0-9 (dígitos).</li>
+<li>Las palabras deben unirse con guión bajo " _ ".</li>
+<li>No contener espacios.</li>
+<li>Las palabras deben separarse siempre con " _ ", en lugar de no tener separación alguna: <em>fecha_audiencia_solicitada</em> en lugar de <em>fechaaudienciasolicitada</em></li>
 </ul>
 </li>
-<li>
-<p>Referirse a un sólo atributo de los datos, indivisible en más de un campo.</p>
-<ul>
-<li>
-<p>Los campos deben separar los atributos de los datos en la forma más desagregada que sea posible. </p>
-</li>
-<li>
-<p>Se debe evitar definir campos que contengan más de un tipo de información (por ejemplo: e-mail y sitio web, número de teléfono, etc bajo "<em>datos_contacto</em>").</p>
-</li>
+<li>Referirse a un sólo atributo de los datos, indivisible en más de un campo.<ul>
+<li>Los campos deben separar los atributos de los datos en la forma más desagregada que sea posible. </li>
+<li>Se debe evitar definir campos que contengan más de un tipo de información (por ejemplo: e-mail y sitio web, número de teléfono, etc bajo "<em>datos_contacto</em>").</li>
 </ul>
 </li>
-<li>
-<p>Si existe una entidad que engloba varias características separadas en campos diferentes, comenzar nombrando los campos con esa entidad y luego con los atributos más específicos (de lo más general a lo más específico). </p>
-<ul>
-<li>
-<p>Ej.: solicitante y solicitante_documento son entidades más generales que se repiten en varios campos, que corresponden a atributos más específicos.</p>
-<ul>
+<li>Si existe una entidad que engloba varias características separadas en campos diferentes, comenzar nombrando los campos con esa entidad y luego con los atributos más específicos (de lo más general a lo más específico). <ul>
+<li>Ej.: solicitante y solicitante_documento son entidades más generales que se repiten en varios campos, que corresponden a atributos más específicos.<ul>
 <li>solicitante_nombre</li>
 <li>solicitante_cargo</li>
 <li>solicitante_documento_tipo</li>
 <li>solicitante_documento_numero</li>
 </ul>
 </li>
-<li>
-<p>Resulta más fácil  identificar qué campos están relacionados entre sí porque configuran atributos de una misma entidad, en lugar de parecer campos conceptualmente independientes.  Además, el ordenamiento alfabético de los campos los dejaría automáticamente agrupados por su pertenencia a una entidad más importante.</p>
-</li>
-<li>
-<p>Incluso cuando la entidad de un atributo parezca evidente (ej.: un dataset llamado "audiencias" donde todos los campos son atributos de la entidad “audiencia”), se recomienda nombrar el campo incluyendo la entidad a la que hace referencia el atributo.</p>
-</li>
+<li>Resulta más fácil  identificar qué campos están relacionados entre sí porque configuran atributos de una misma entidad, en lugar de parecer campos conceptualmente independientes.  Además, el ordenamiento alfabético de los campos los dejaría automáticamente agrupados por su pertenencia a una entidad más importante.</li>
+<li>Incluso cuando la entidad de un atributo parezca evidente (ej.: un dataset llamado "audiencias" donde todos los campos son atributos de la entidad “audiencia”), se recomienda nombrar el campo incluyendo la entidad a la que hace referencia el atributo.</li>
 </ul>
 </li>
-<li>
-<p><span class="no-recomendado"><strong>No recomendado</strong></span>: “fecha_hora”</p>
-</li>
+<li><span class="no-recomendado"><strong>No recomendado</strong></span>: “fecha_hora”</li>
 <li><span class="recomendado"><strong>Recomendado</strong></span>: "audiencia_id", “audiencia_fecha_hora”.</li>
 </ul>
 <p>Los campos que sean identificadores o códigos, deberán incluir el sufijo "_id" en el nombre del campo, salvo casos excepcionales donde un nombre alternativo sea más conveniente porque ofrece información sobre el sistema de identificación usado.</p>
@@ -1872,25 +1798,15 @@ Recolección de residuos - 198</td>
 
 <p>Mantener el formato correcto de las celdas según el tipo de datos que contengan:</p>
 <ul>
-<li>
-<p>Mejora las las probabilidades de que una exportación a otro formato salga correctamente.</p>
-</li>
-<li>
-<p>Hace que los datos sean más operables en la propia planilla de cálculo, aprovechando mejor sus funcionalidades.</p>
-</li>
+<li>Mejora las las probabilidades de que una exportación a otro formato salga correctamente.</li>
+<li>Hace que los datos sean más operables en la propia planilla de cálculo, aprovechando mejor sus funcionalidades.</li>
 </ul>
 <h3 id="exportacion-a-csv"><a class="toclink" href="#exportacion-a-csv">Exportación a CSV</a><a class="headerlink" href="#exportacion-a-csv" title="Permanent link">&#128279;</a></h3>
 <p>Insistimos: CSV es el formato más recomendado para la publicación de archivos tabulares. A la hora de exportar una planilla de cálculo a CSV hay 3 parámetros que deben ser especificados durante la exportación, independientemente del software de que se use:</p>
 <ul>
-<li>
-<p><strong>Codificación</strong> (encoding, en inglés): siempre debe ser UTF-8.</p>
-</li>
-<li>
-<p><strong>Caracter separador</strong> (separator character, en inglés): siempre debe ser "," (coma).</p>
-</li>
-<li>
-<p><strong>Caracter calificador</strong> (quote character o enclosing character, en inglés): siempre debe ser " “ “ (comillas dobles).</p>
-</li>
+<li><strong>Codificación</strong> (encoding, en inglés): siempre debe ser UTF-8.</li>
+<li><strong>Caracter separador</strong> (separator character, en inglés): siempre debe ser "," (coma).</li>
+<li><strong>Caracter calificador</strong> (quote character o enclosing character, en inglés): siempre debe ser " “ “ (comillas dobles).</li>
 </ul>
 <h2 id="estandares-segun-el-tipo-de-datos"><a class="toclink" href="#estandares-segun-el-tipo-de-datos">Estándares según el tipo de Datos</a><a class="headerlink" href="#estandares-segun-el-tipo-de-datos" title="Permanent link">&#128279;</a></h2>
 <p>El formato recomendado para los distintos tipos de datos está mayormente basado en las especificaciones de la <a href="https://www.w3.org/TR/tabular-data-model/">W3C</a>. En los otros casos, las recomendaciones surgen de la experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública y del esfuerzo realizado en la búsqueda de estándares más adecuados.</p>
@@ -1901,12 +1817,8 @@ Recolección de residuos - 198</td>
 <h4 id="entidades"><a class="toclink" href="#entidades">Entidades</a><a class="headerlink" href="#entidades" title="Permanent link">&#128279;</a></h4>
 <p>Las entidades que aparezcan entre los datos de un campo textual deben tener una descripción única. Es decir, toda mención que se realice a una entidad dada debe hacerse usando exactamente la misma cadena de caracteres cada vez:</p>
 <ul>
-<li>
-<p><strong>Las descripciones de entidades</strong> deberían elegirse siempre de forma tal que cumplan con el estándar específico que las describe, en caso de que este exista.</p>
-</li>
-<li>
-<p><strong>Cuando este estándar no existe</strong> y hay dudas respecto del criterio a adoptar para elegir la descripción única de una entidad, debe <strong>privilegiarse siempre aquella que sea lo más explícita</strong>, descriptiva y declarativa posible.</p>
-</li>
+<li><strong>Las descripciones de entidades</strong> deberían elegirse siempre de forma tal que cumplan con el estándar específico que las describe, en caso de que este exista.</li>
+<li><strong>Cuando este estándar no existe</strong> y hay dudas respecto del criterio a adoptar para elegir la descripción única de una entidad, debe <strong>privilegiarse siempre aquella que sea lo más explícita</strong>, descriptiva y declarativa posible.</li>
 </ul>
 <p><span class="no-recomendado"><strong>No recomendado</strong></span></p>
 <table id="una-columna">
@@ -1961,12 +1873,8 @@ Recolección de residuos - 198</td>
 <h4 id="moneda"><a class="toclink" href="#moneda">Moneda</a><a class="headerlink" href="#moneda" title="Permanent link">&#128279;</a></h4>
 <p>Los valores numéricos que sean además valores monetarios se consideran números y, por lo tanto, valen las mismas recomendaciones que para ellos. Además, agregamos las siguientes recomendaciones:</p>
 <ul>
-<li>
-<p>La cantidad de decimales debe limitarse a dos, salvo que el uso de una mayor cantidad de decimales sea significativo para el caso particular.</p>
-</li>
-<li>
-<p>En ningún caso se incluirán símbolos o letras en el campo numérico -ya sea "$", “DOL”, “USD”, etc.</p>
-</li>
+<li>La cantidad de decimales debe limitarse a dos, salvo que el uso de una mayor cantidad de decimales sea significativo para el caso particular.</li>
+<li>En ningún caso se incluirán símbolos o letras en el campo numérico -ya sea "$", “DOL”, “USD”, etc.</li>
 </ul>
 <p>Si en el recurso los valores monetarios están expresados en diferentes monedas, se recomienda indicarlo en un campo aparte (que puede llamarse "moneda_id") usando los códigos alfabéticos definidos en la <a href="http://www.iso.org/iso/home/standards/currency_codes.htm">ISO 4127</a>.</p>
 <p>Ejemplo:</p>
@@ -2131,24 +2039,14 @@ Recolección de residuos - 198</td>
 </ul>
 <h4 id="rangos-horarios"><a class="toclink" href="#rangos-horarios">Rangos horarios</a><a class="headerlink" href="#rangos-horarios" title="Permanent link">&#128279;</a></h4>
 <ul>
-<li>
-<p>Los rangos estarán divididos en dos partes separadas por un doble guión bajo "__", la primera indica el día y la segunda, la hora.</p>
-</li>
-<li>
-<p>Se puede omitir la parte del día o bien de la hora pero nunca ambas.</p>
-</li>
-<li>
-<p>Si se omite la parte que indica el día se asumirá que el rango abarca todo el horario indicado.</p>
-</li>
-<li>
-<p>Si se omite la parte que indica el horario se asumirá que el rango abarca todo el día indicado.</p>
-</li>
-<li>
-<p>El día se puede indicar tanto mediante rangos separando los días con guiones medios "-" o bien como particulares con el guión bajo "_".</p>
-</li>
+<li>Los rangos estarán divididos en dos partes separadas por un doble guión bajo "__", la primera indica el día y la segunda, la hora.</li>
+<li>Se puede omitir la parte del día o bien de la hora pero nunca ambas.</li>
+<li>Si se omite la parte que indica el día se asumirá que el rango abarca todo el horario indicado.</li>
+<li>Si se omite la parte que indica el horario se asumirá que el rango abarca todo el día indicado.</li>
+<li>El día se puede indicar tanto mediante rangos separando los días con guiones medios "-" o bien como particulares con el guión bajo "_".</li>
 </ul>
 <p>Ejemplos de formatos válidos para días:</p>
-<div class="codehilite"><pre><span></span><span class="n">DAY</span><span class="o">:</span> <span class="n">Un</span> <span class="n">solo</span> <span class="n">día</span>
+<div class="codehilite"><pre><span></span><span class="n">DAY</span><span class="o">:</span> <span class="n">Un</span> <span class="n">solo</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span>
 <span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2</span><span class="o">:</span> <span class="n">Entre</span> <span class="n">entre</span> <span class="n">DAY1</span> <span class="n">y</span> <span class="n">DAY2</span>
 <span class="n">DAY1_DAY2</span><span class="o">:</span> <span class="n">DAY1</span> <span class="n">y</span> <span class="n">DAY2</span>
 <span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2_DAY3</span><span class="o">:</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">y</span> <span class="n">DAY3</span>
@@ -2165,22 +2063,18 @@ Recolección de residuos - 198</td>
 
 
 <p>Más ejemplos de formatos válidos completos:</p>
-<div class="codehilite"><pre><span></span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">todos</span> <span class="n">los</span> <span class="n">días</span><span class="o">.</span>
-<span class="n">DAY</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">que</span> <span class="n">el</span> <span class="n">rango</span> <span class="n">ocupa</span> <span class="n">todo</span> <span class="n">el</span> <span class="n">día</span> <span class="n">DAY</span><span class="o">.</span>
-<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">días</span> <span class="n">DAY</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">.</span>
-<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">día</span>
-<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">días</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span>
-<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">rango</span> <span class="n">de</span> <span class="n">días</span>
+<div class="codehilite"><pre><span></span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">todos</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span><span class="o">.</span>
+<span class="n">DAY</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">que</span> <span class="n">el</span> <span class="n">rango</span> <span class="n">ocupa</span> <span class="n">todo</span> <span class="n">el</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span> <span class="n">DAY</span><span class="o">.</span>
+<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span> <span class="n">DAY</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">.</span>
+<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span>
+<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span>
+<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">rango</span> <span class="n">de</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span>
 </pre></div>
 
 
 <ul>
-<li>
-<p>En caso de que se necesite cubrir más de una franja horaria y esta sintaxis sea insuficiente, se pueden incluir varias separadas por espacios.</p>
-</li>
-<li>
-<p>Los días se indicarán con sus iniciales en castellano: LUN, MAR, MIE, JUE, VIE, SAB y DOM</p>
-</li>
+<li>En caso de que se necesite cubrir más de una franja horaria y esta sintaxis sea insuficiente, se pueden incluir varias separadas por espacios.</li>
+<li>Los días se indicarán con sus iniciales en castellano: LUN, MAR, MIE, JUE, VIE, SAB y DOM</li>
 </ul>
 <p>Ejemplos:</p>
 <div class="codehilite"><pre><span></span>24hs -&gt; &quot;00:00-23:59&quot; 
@@ -2198,18 +2092,12 @@ Lunes a Miercoles 8 a 11 y de Viernes a Domingo 9 a 10 -&gt; &quot;LUN-MIE__08:0
 
 <h3 id="booleano"><a class="toclink" href="#booleano">Booleano</a><a class="headerlink" href="#booleano" title="Permanent link">&#128279;</a></h3>
 <ul>
-<li>
-<p>A menos que se indique lo contrario, se identificarán con los valores <em>true</em> o <em>false</em>.</p>
-<ul>
+<li>A menos que se indique lo contrario, se identificarán con los valores <em>true</em> o <em>false</em>.<ul>
 <li>Esta convención puede variar en algunos rubros específicos de datos, pero en caso de no existir una convención clara y definida aplicable al rubro o contexto del dataset, se recomienda utilizar <em>true</em> o <em>false</em>.</li>
 </ul>
 </li>
-<li>
-<p>Este campo puede contener "valores ausentes". En ese caso, el campo deberá estar totalmente vacío, no conteniendo ningún caracter.</p>
-</li>
-<li>
-<p>Si existe la posibilidad de que haya otro valor que no sea <em>true</em>, <em>false</em> o "valor ausente" significa que se eligió un tipo de datos incorrecto: este no es booleano, el tipo de dato booleano es binario y sólo admite 2 valores de verdad (aparte del caso del “valor ausente”).</p>
-</li>
+<li>Este campo puede contener "valores ausentes". En ese caso, el campo deberá estar totalmente vacío, no conteniendo ningún caracter.</li>
+<li>Si existe la posibilidad de que haya otro valor que no sea <em>true</em>, <em>false</em> o "valor ausente" significa que se eligió un tipo de datos incorrecto: este no es booleano, el tipo de dato booleano es binario y sólo admite 2 valores de verdad (aparte del caso del “valor ausente”).</li>
 </ul>
                 
                   
@@ -2282,7 +2170,7 @@ Lunes a Miercoles 8 a 11 y de Viernes a Domingo 9 a 10 -&gt; &quot;LUN-MIE__08:0
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.5e60981f.js"></script>
       
         
         
@@ -2299,7 +2187,7 @@ Lunes a Miercoles 8 a 11 y de Viernes a Domingo 9 a 10 -&gt; &quot;LUN-MIE__08:0
           
         
       
-      <script>app.initialize({version:"1.0.3",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
     

@@ -52,7 +52,6 @@ Esta es **una guía de buenas prácticas para la publicación de datos en format
 Estas recomendaciones se basan en:
 
 * Estándares usados a nivel nacional e internacional.
-
 * La experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública de la Secretaría de Gobierno de Modernización de la Jefatura de Gabinete de Ministros de la Nación.
 
 Esta es **una guía colaborativa y en progreso**. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.
@@ -60,21 +59,13 @@ Esta es **una guía colaborativa y en progreso**. Valoramos, y alentamos, a orga
 El documento se estructura así:
 
 * **Formatos abiertos de archivos:** cuáles son los formatos más usuales en los que se publican datos y cuáles son los más recomendables.
-
 * **Fragmentación de archivos**: cuáles son los criterios para decidir que un archivo es demasiado grande (y hay que fragmentarlo) o demasiado chico (y hay que juntarlo con otros).
-
 * **Nomenclatura de archivos**: cómo nombrar adecuadamente un archivo.
-
 * **Codificación**: cuál es la codificación en que se debe guardar un archivo.
-
 * **Estructura y características de los datos tabulares**
-
-    * Recomendaciones generales: aplican a todos los casos.
-
-    * Recomendaciones para estructurar planillas de cálculo: aplican exclusivamente al trabajo en planillas de cálculo.
-
-    * Exportación a CSV: cómo exportar adecuadamente planillas de cálculo a un archivo de formato abierto.
-
+    - Recomendaciones generales: aplican a todos los casos.
+    - Recomendaciones para estructurar planillas de cálculo: aplican exclusivamente al trabajo en planillas de cálculo.
+    - Exportación a CSV: cómo exportar adecuadamente planillas de cálculo a un archivo de formato abierto.
 * **Estándares según el tipo de datos**: cuáles son los estándares recomendados para manejar distintos tipos de datos.
 
 Estos son los primeros aspectos importantes para la estandarización de datos.
@@ -161,7 +152,6 @@ En este cuadro consideramos algunos de los formatos más usados y evaluamos su n
 Antes de seguir, introduciremos dos conceptos que se usarán a lo largo de toda la guía:
 
 * **Distribución o Recurso:** Una distribución o recurso es la unidad mínima en la que se publican datos. Se trata de los archivos que pueden ser descargados y re-utilizados por un usuario. Los recursos pueden tener diversos formatos (.csv, .shp, etc.).
-
 * **Dataset:** Un conjunto de datos o dataset agrupa recursos referidos a un mismo tema que respetan una estructura de la información. Los recursos que lo componen pueden diferir en el formato en que se los presenta (por ejemplo: .csv, .json, .xls, etc.), la fecha a la que se refieren, el área geográfica cubierta, ser tablas de un mismo esquema de base de datos relacional o estar separados bajo algún otro criterio.
 
 Un recurso en formato tabular es un archivo plano que se ajusta a un esquema predefinido de columnas, incluyendo el nombre de la columna y el tipo de datos.
@@ -243,11 +233,9 @@ Sin embargo, **se recomienda no fragmentarlos (manteniendo una única versión c
 
 Si fragmentar resulta necesario, recomendamos usar conceptos simples:
 
-(a) **por períodos** en caso de tratarse de información temporal (Ej. Años, semestres, trimestres, meses, semanas, días),
-
-(b) **por zonas** en caso de tratarse de información geográfica (Ej. provincias, municipios, barrios, secciones, o manzanas) o
-
-(c) **por dimensiones temáticas** propias del dominio particular de la información.
+1. **por períodos** en caso de tratarse de información temporal (Ej. Años, semestres, trimestres, meses, semanas, días),
+2. **por zonas** en caso de tratarse de información geográfica (Ej. provincias, municipios, barrios, secciones, o manzanas) o
+3. **por dimensiones temáticas** propias del dominio particular de la información.
 
 Sin embargo, siempre que se decida fragmentar un archivo para garantizar su accesibilidad, **recomendamos publicar también una versión no fragmentada que contenga el conjunto de datos completo** (incluso aunque sea muy grande), a los fines de evitar la tarea de consolidación a los usuarios que requieren usar todos los datos.
 
@@ -268,15 +256,10 @@ Recomendamos estas convenciones para nombrar archivos:
 Ejemplos:
 
 * *acceso-informacion-publica.csv*: Versión completa del recurso.
-
 * *acceso-informacion-publica-2013.csv*: Versión del recurso fragmentada por año.
-
 * *acceso-informacion-publica-201302.csv*: Versión del recurso fragmentada por mes.
-
 * *acceso-informacion-publica-caba.csv*: Versión del recurso fragmentada por división político-territorial (provincia o caba).
-
 * *acceso-informacion-publica-caba-2013.csv*: Versión del recurso fragmentada por división político-territorial (provincia o caba) y año.
-
 * *acceso-informacion-publica-jujuy-20130208.csv*:  Versión del recurso fragmentada por división político-territorial (provincia o caba) y fecha.
 
 Para la fragmentación temporal, recomendamos el estándar de los ejemplos, ya que es compacto y ordena los recursos por tiempo: YYYYMMDD. Por favor, recordá mantener siempre dos dígitos para el mes y el día, incluso si el número es menor a 10.
@@ -296,7 +279,6 @@ Una de las principales razones es que UTF-8 soporta una gran variedad de lenguaj
 En esta sección veremos:
 
 * Recomendaciones generales para el trabajo con datos.
-
 * Recomendaciones para el trabajo con planillas de cálculo, orientadas tanto a facilitar su exportación a formatos abiertos, como a su propia usabilidad en el contexto de cualquier aplicación de planillas de cálculo.
 
 ### Recomendaciones generales
@@ -315,42 +297,25 @@ Las siguientes recomendaciones aplican a la generalidad de los casos. Cuando exi
 Los nombres de los campos deben:
 
 * Estar en español.
-
 * Ser lo más explícitos, descriptivos y declarativos como sea posible.
-
-    * Es preferible que el nombre de un campo sea claro antes que corto, pero se recomienda no superar los 50 caracteres (en todos los casos, **el nombre de un campo no debería superar los 60 caracteres** que es el límite de varias aplicaciones de software o bases de datos como PostGres).
-
-    * No usar abreviaturas si no es estrictamente necesario o recomendado por una convención ampliamente difundida. En caso de usarlas, incluir su explicación en la descripción de la columna documentada.
-
+    - Es preferible que el nombre de un campo sea claro antes que corto, pero se recomienda no superar los 50 caracteres (en todos los casos, **el nombre de un campo no debería superar los 60 caracteres** que es el límite de varias aplicaciones de software o bases de datos como PostGres).
+    - No usar abreviaturas si no es estrictamente necesario o recomendado por una convención ampliamente difundida. En caso de usarlas, incluir su explicación en la descripción de la columna documentada.
 * Estar en minúsculas, no incluir caracteres especiales, ni estar subrayados.
-
-    * Usar palabras compuestas únicamente de caracteres en minúsculas comprendidos en el rango a-z (letras sin tildes) y en el rango 0-9 (dígitos).
-
-    * Las palabras deben unirse con guión bajo " _ ".
-
-    * No contener espacios.
-
-    * Las palabras deben separarse siempre con " _ ", en lugar de no tener separación alguna: *fecha_audiencia_solicitada* en lugar de *fechaaudienciasolicitada*
-
+    - Usar palabras compuestas únicamente de caracteres en minúsculas comprendidos en el rango a-z (letras sin tildes) y en el rango 0-9 (dígitos).
+    - Las palabras deben unirse con guión bajo " _ ".
+    - No contener espacios.
+    - Las palabras deben separarse siempre con " _ ", en lugar de no tener separación alguna: *fecha_audiencia_solicitada* en lugar de *fechaaudienciasolicitada*
 * Referirse a un sólo atributo de los datos, indivisible en más de un campo.
-
-    * Los campos deben separar los atributos de los datos en la forma más desagregada que sea posible. 
-
-    * Se debe evitar definir campos que contengan más de un tipo de información (por ejemplo: e-mail y sitio web, número de teléfono, etc bajo "*datos_contacto*").
-
+    - Los campos deben separar los atributos de los datos en la forma más desagregada que sea posible. 
+    - Se debe evitar definir campos que contengan más de un tipo de información (por ejemplo: e-mail y sitio web, número de teléfono, etc bajo "*datos_contacto*").
 * Si existe una entidad que engloba varias características separadas en campos diferentes, comenzar nombrando los campos con esa entidad y luego con los atributos más específicos (de lo más general a lo más específico). 
-
-    * Ej.: solicitante y solicitante_documento son entidades más generales que se repiten en varios campos, que corresponden a atributos más específicos.
-
+    - Ej.: solicitante y solicitante_documento son entidades más generales que se repiten en varios campos, que corresponden a atributos más específicos.
         - solicitante_nombre
         - solicitante_cargo
         - solicitante_documento_tipo
         - solicitante_documento_numero
-
-    * Resulta más fácil  identificar qué campos están relacionados entre sí porque configuran atributos de una misma entidad, en lugar de parecer campos conceptualmente independientes.  Además, el ordenamiento alfabético de los campos los dejaría automáticamente agrupados por su pertenencia a una entidad más importante.
-
-    * Incluso cuando la entidad de un atributo parezca evidente (ej.: un dataset llamado "audiencias" donde todos los campos son atributos de la entidad “audiencia”), se recomienda nombrar el campo incluyendo la entidad a la que hace referencia el atributo.
-
+    - Resulta más fácil  identificar qué campos están relacionados entre sí porque configuran atributos de una misma entidad, en lugar de parecer campos conceptualmente independientes.  Además, el ordenamiento alfabético de los campos los dejaría automáticamente agrupados por su pertenencia a una entidad más importante.
+    - Incluso cuando la entidad de un atributo parezca evidente (ej.: un dataset llamado "audiencias" donde todos los campos son atributos de la entidad “audiencia”), se recomienda nombrar el campo incluyendo la entidad a la que hace referencia el atributo.
 * <span class="no-recomendado">**No recomendado**</span>: “fecha_hora”
 * <span class="recomendado">**Recomendado**</span>: "audiencia_id", “audiencia_fecha_hora”.
 
@@ -822,7 +787,6 @@ Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de
 Mantener el formato correcto de las celdas según el tipo de datos que contengan:
 
 * Mejora las las probabilidades de que una exportación a otro formato salga correctamente.
-
 * Hace que los datos sean más operables en la propia planilla de cálculo, aprovechando mejor sus funcionalidades.
 
 ### Exportación a CSV
@@ -830,9 +794,7 @@ Mantener el formato correcto de las celdas según el tipo de datos que contengan
 Insistimos: CSV es el formato más recomendado para la publicación de archivos tabulares. A la hora de exportar una planilla de cálculo a CSV hay 3 parámetros que deben ser especificados durante la exportación, independientemente del software de que se use:
 
 * **Codificación** (encoding, en inglés): siempre debe ser UTF-8.
-
 * **Caracter separador** (separator character, en inglés): siempre debe ser "," (coma).
-
 * **Caracter calificador** (quote character o enclosing character, en inglés): siempre debe ser " “ “ (comillas dobles).
 
 ## Estándares según el tipo de Datos
@@ -848,10 +810,7 @@ El formato recomendado para los distintos tipos de datos está mayormente basado
 Las entidades que aparezcan entre los datos de un campo textual deben tener una descripción única. Es decir, toda mención que se realice a una entidad dada debe hacerse usando exactamente la misma cadena de caracteres cada vez:
 
 * **Las descripciones de entidades** deberían elegirse siempre de forma tal que cumplan con el estándar específico que las describe, en caso de que este exista.
-
 * **Cuando este estándar no existe** y hay dudas respecto del criterio a adoptar para elegir la descripción única de una entidad, debe **privilegiarse siempre aquella que sea lo más explícita**, descriptiva y declarativa posible.
-
-
 
 <span class="no-recomendado">**No recomendado**</span>
 
@@ -906,7 +865,6 @@ Siempre que sea posible, la elección deberá fundamentarse en el estándar esta
 
 Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios intermedios.
 
-
 ### Número
 
 * El separador decimal debe ser el caracter ".".
@@ -919,7 +877,6 @@ Todas las siglas se escriben en mayúsculas, sin usar puntos ni espacios interme
 Los valores numéricos que sean además valores monetarios se consideran números y, por lo tanto, valen las mismas recomendaciones que para ellos. Además, agregamos las siguientes recomendaciones:
 
 * La cantidad de decimales debe limitarse a dos, salvo que el uso de una mayor cantidad de decimales sea significativo para el caso particular.
-
 * En ningún caso se incluirán símbolos o letras en el campo numérico -ya sea "$", “DOL”, “USD”, etc.
 
 Si en el recurso los valores monetarios están expresados en diferentes monedas, se recomienda indicarlo en un campo aparte (que puede llamarse "moneda_id") usando los códigos alfabéticos definidos en la [ISO 4127](http://www.iso.org/iso/home/standards/currency_codes.htm).
@@ -959,7 +916,6 @@ Para el caso de los números nacionales, el ENACOM tiene la competencia sobre el
     <td>383743XXXX</td>
   </tr>
 </table>
-
 
 Esta numeración es válida para los teléfonos móviles, pero dado que para llamar a un móvil desde un teléfono fijo es necesario anteponer "15" al número de abonado, es necesario que el registro del número telefónico especifique de alguna manera si se trata de un móvil o de un teléfono fijo.
 
@@ -1050,7 +1006,6 @@ Con las salvedades que comentaremos al final de este apartado, un posible aborda
   </tr>
 </table>
 
-
 Esta recomendación no contempla estos casos específicos:
 
 * No será aplicable a números de uso público, ejemplo: 100, Bomberos; 911, Policía Federal; etc.
@@ -1109,13 +1064,9 @@ Se usará el estándar [ISO 8601](https://es.wikipedia.org/wiki/ISO_8601) (YYYY-
 #### Rangos horarios
 
 * Los rangos estarán divididos en dos partes separadas por un doble guión bajo "__", la primera indica el día y la segunda, la hora.
-
 * Se puede omitir la parte del día o bien de la hora pero nunca ambas.
-
 * Si se omite la parte que indica el día se asumirá que el rango abarca todo el horario indicado.
-
 * Si se omite la parte que indica el horario se asumirá que el rango abarca todo el día indicado.
-
 * El día se puede indicar tanto mediante rangos separando los días con guiones medios "-" o bien como particulares con el guión bajo "_".
 
 Ejemplos de formatos válidos para días:
@@ -1148,7 +1099,6 @@ DAY1-DAY2__HH:MM-HH:MM_HH:MM-HH:MM para indicar mas un rango horario en el mismo
 ```
 
 * En caso de que se necesite cubrir más de una franja horaria y esta sintaxis sea insuficiente, se pueden incluir varias separadas por espacios.
-
 * Los días se indicarán con sus iniciales en castellano: LUN, MAR, MIE, JUE, VIE, SAB y DOM
 
 Ejemplos:
@@ -1169,10 +1119,7 @@ Lunes a Miercoles 8 a 11 y de Viernes a Domingo 9 a 10 -> "LUN-MIE__08:00-11:00 
 ### Booleano
 
 * A menos que se indique lo contrario, se identificarán con los valores *true* o *false*.
-
-    * Esta convención puede variar en algunos rubros específicos de datos, pero en caso de no existir una convención clara y definida aplicable al rubro o contexto del dataset, se recomienda utilizar *true* o *false*.
-
+    - Esta convención puede variar en algunos rubros específicos de datos, pero en caso de no existir una convención clara y definida aplicable al rubro o contexto del dataset, se recomienda utilizar *true* o *false*.
 * Este campo puede contener "valores ausentes". En ese caso, el campo deberá estar totalmente vacío, no conteniendo ningún caracter.
-
 * Si existe la posibilidad de que haya otro valor que no sea *true*, *false* o "valor ausente" significa que se eligió un tipo de datos incorrecto: este no es booleano, el tipo de dato booleano es binario y sólo admite 2 valores de verdad (aparte del caso del “valor ausente”).
 

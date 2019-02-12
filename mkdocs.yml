@@ -15,6 +15,7 @@ nav:
   - Guías de implementación:
     - Guía para la apertura de datos en organismos de la Administración Pública Nacional: guia-apn.md
     - Guía para la apertura de datos en gobiernos provinciales y municipales: guia-subnacionales.md
+  # - Perfil Nacional de Metadatos para Datos Abiertos: perfil-metadatos.md
   - Glosario: glosario.md
 
 theme: datosgobar_docs

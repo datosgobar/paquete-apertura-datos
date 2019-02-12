@@ -51,7 +51,6 @@ Para una discusión sobre la estandarización de datos, recomendamos consultar l
 Las entidades interoperables **son aquellas que se repiten y usan frecuentemente** **dentro de datasets de**:
 
 * **Temáticas diversas entre sí**.
-
 * **Una misma temática** (ej.: Salud), **pero no de otras** (como Educación, Economía, Transporte, etc).
 
 La mayoría de los datasets incluyen campos que responden al dónde, quién, cuándo y qué. Estos campos permiten que los datasets sean interoperables entre sí.
@@ -61,16 +60,11 @@ Veamos un ejemplo. Una matriz origen-destino de pasajeros de transporte urbano q
 Algunos ejemplos de entidades interoperables pueden ser:
 
 * **Transversales** (afectan a la mayoría de las áreas temáticas)
-
-    * **¿Dónde?**: geografía (países, provincias, departamentos, fracciones censales, localidades, direcciones, códigos postales).
-
-    * **¿Quién?**: personas (físicas, jurídicas). Entidades (niveles gubernamentales, organismos internacionales, otros países, sociedad civil).
-
-    * **¿Qué?**: categorías presupuesto. Clasificación de bienes transables.
-
+    - **¿Dónde?**: geografía (países, provincias, departamentos, fracciones censales, localidades, direcciones, códigos postales).
+    - **¿Quién?**: personas (físicas, jurídicas). Entidades (niveles gubernamentales, organismos internacionales, otros países, sociedad civil).
+    - **¿Qué?**: categorías presupuesto. Clasificación de bienes transables.
 * **Específicas** (afectan a alguna/s área/s temática/s específica/s)
-
-    * **¿Qué?**: actividades económicas. Clasificación de enfermedades. Clasificación de términos clínicos. Clasificación de unidades educativas.
+    - **¿Qué?**: actividades económicas. Clasificación de enfermedades. Clasificación de términos clínicos. Clasificación de unidades educativas.
 
 ### ¿Por qué es importante estandarizarlos?
 
@@ -224,13 +218,9 @@ Los identificadores de cada una de estas divisiones se componen, sucesivamente, 
   </tr>
 </table>
 
-
 * **Provincia**: 2 dígitos. Ej.: "06" es la Provincia de "Buenos Aires".
-
 * **Departamento** (Partido -Provincia de Buenos Aires- o Comuna -Ciudad de Buenos Aires-): 5 dígitos. - Ej.: "06007" es el Departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
-
 * **Fracciones censales**: 7 dígitos. - Ej.: "0600702" es una Fracción Censal del Departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
-
 * **Radios censales**: 9 dígitos. - Ej.: "060070201" es un Radio Censal de la Fracción Censal "0600702" del Departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
 
 ##### B. Provincias -> Municipios (PM)
@@ -256,8 +246,6 @@ Los identificadores de los municipios se componen entonces con los de las provin
     </td>
   </tr>
 </table>
-
-
 
 * **Municipios**: 6 dígitos. - Ej.: "140399" es el Municipio "Camerillo" de la provincia de "Córdoba".
 
@@ -285,8 +273,6 @@ Las localidades censales están contenidas tanto por los departamentos como por 
     </td>
       </tr>
 </table>
-
-
 
 * **Localidades**: 8 dígitos. - Ej.: "06007010" es la localidad "Carhué" del departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
 
