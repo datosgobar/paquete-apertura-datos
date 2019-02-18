@@ -223,33 +223,7 @@ Los identificadores de cada una de estas divisiones se componen, sucesivamente, 
 * **Fracciones censales**: 7 dígitos. - Ej.: "0600702" es una Fracción Censal del Departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
 * **Radios censales**: 9 dígitos. - Ej.: "060070201" es un Radio Censal de la Fracción Censal "0600702" del Departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
 
-##### B. Provincias -> Municipios (PM)
-
-**Los municipios están contenidos por las provincias**, pero no las subdividen. Entre medio de ellos puede haber áreas rurales que no pertenezcan a ningún municipio. Los municipios son figuras políticas cuya normativa es potestad de cada provincia y puede haber diferencias significativas entre lo que se considera un municipio en cada una de ellas. Por ejemplo, en algunas provincias los municipios coinciden con los departamentos.
-
-Sin embargo, un municipio siempre está completamente contenido por una sola provincia. Entre las divisiones territoriales internas consideradas en este documento, no hay otra que siempre contenga municipios completos. La superficie de un municipio puede atravesar los límites de departamentos, fracciones y radios censales (un municipio puede estar presente en uno o varios de ellos).
-
-Los identificadores de los municipios se componen entonces con los de las provincias, así:
-
-
-<table id="identificadores-geograficos" style="width: 50%" >
-  <tr>
-    <td><bold>Provincia</bold><br/>
-    2 dígitos<br/>
-    "14"<br/>
-    Córdoba
-    </td>
-    <td><bold>Municipio</bold><br/>
-    6 dígitos<br/>
-    "140399"<br/>
-    Camerillo
-    </td>
-  </tr>
-</table>
-
-* **Municipios**: 6 dígitos. - Ej.: "140399" es el Municipio "Camerillo" de la provincia de "Córdoba".
-
-##### C. Provincias -> Departamentos -> Localidades (PDL)
+##### B. Provincias -> Departamentos -> Localidades (PDL)
 
 Las localidades censales están contenidas tanto por los departamentos como por los municipios. Para componer el identificador se deben usar los departamentos, de tal manera que los primeros 5 dígitos del identificador de una localidad corresponden al identificador del departamento que lo contiene, **los siguientes 3 dígitos son propios de la localidad**:
 
@@ -277,6 +251,32 @@ Las localidades censales están contenidas tanto por los departamentos como por 
 * **Localidades**: 8 dígitos. - Ej.: "06007010" es la localidad "Carhué" del departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
 
 La Ciudad de Buenos Aires constituye una excepción a esta regla ya que es una localidad compuesta por departamentos (comunas), de manera que no puede componerse identificador compuesto de tipo provincia-departamento-localidad. Para este caso, recomendamos usar el identificador de jurisdicción de primer nivel de la Ciudad de Buenos Aires ("02").
+
+##### C. Provincias -> Municipios (PM)
+
+**Los municipios están contenidos por las provincias**, pero no las subdividen. Entre medio de ellos puede haber áreas rurales que no pertenezcan a ningún municipio. Los municipios son figuras políticas cuya normativa es potestad de cada provincia y puede haber diferencias significativas entre lo que se considera un municipio en cada una de ellas. Por ejemplo, en algunas provincias los municipios coinciden con los departamentos.
+
+Sin embargo, un municipio siempre está completamente contenido por una sola provincia. Entre las divisiones territoriales internas consideradas en este documento, no hay otra que siempre contenga municipios completos. La superficie de un municipio puede atravesar los límites de departamentos, fracciones y radios censales (un municipio puede estar presente en uno o varios de ellos).
+
+Los identificadores de los municipios se componen entonces con los de las provincias, así:
+
+
+<table id="identificadores-geograficos" style="width: 50%" >
+  <tr>
+    <td><bold>Provincia</bold><br/>
+    2 dígitos<br/>
+    "14"<br/>
+    Córdoba
+    </td>
+    <td><bold>Municipio</bold><br/>
+    6 dígitos<br/>
+    "140399"<br/>
+    Camerillo
+    </td>
+  </tr>
+</table>
+
+* **Municipios**: 6 dígitos. - Ej.: "140399" es el Municipio "Camerillo" de la provincia de "Córdoba".
 
 ##### D. Aglomerados
 
