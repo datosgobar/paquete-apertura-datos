@@ -94,7 +94,7 @@ En esta guía, elegimos incluir los nombres de países oficiales y en castellano
 
 A modo de ejemplo, en la Argentina nos referimos a uno de nuestros países vecinos coloquialmente como "Brasil", mientras que el nombre oficial en portugués es "República Federativa do Brasil" y la traducción oficial en español "República Federativa del Brasil". El código de país según el estándar definido es "BRA" lo cual resuelve el problema de denominación.
 
-Se recomienda también que el nombre del campo del código sea "pais_id" o, en el caso de que haya más de un campo "país" en el dataset, el nombre de cada campo finalice con "pais_id" (Ej.: "desde_pais_id", "hasta_pais_id"), mientras que el campo con el nombre completo del país debería ser "pais_nombre".
+Se recomienda también que el nombre del campo del código sea "pais_id" o, en el caso de que haya más de un campo "país" en el dataset, el nombre de cada campo finalice con "pais_id" (Ej.: "pais_origen_id", "pais_destino_id"), mientras que el campo con el nombre completo del país debería ser "pais_nombre".
 
 <span class="no-recomendado">**No recomendado**</span>
 
