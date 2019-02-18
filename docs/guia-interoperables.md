@@ -384,7 +384,7 @@ Resaltamos la importancia de que el tipo de datos del campo de un identificador 
 
 ##### F. La Ciudad Autónoma de Buenos Aires
 
-La Ciudad de Buenos Aires constituye una excepción a la regla PDL (partido-departamento-localidad), utilizada a nivel nacional, ya que es una localidad compuesta por departamentos (comunas), de manera que no puede componerse identificador compuesto de tipo provincia-departamento-localidad. Para este caso, recomendamos usar el identificador de jurisdicción de primer nivel de la Ciudad de Buenos Aires ("02").
+La Ciudad de Buenos Aires constituye una excepción a la regla PDL (provincia-departamento-localidad), utilizada a nivel nacional, ya que es una localidad compuesta por departamentos (comunas), de manera que no puede componerse identificador compuesto de tipo provincia-departamento-localidad. Para este caso, recomendamos usar el identificador de jurisdicción de primer nivel de la Ciudad de Buenos Aires ("02").
 
 Las comunas son las jurisdicciones de primer orden que marcan la división de la Ciudad Autónoma de Buenos Aires. El territorio municipal se divide en 15 comunas, siendo que algunos territorios pueden ser marcados como "Indeterminado" (98) o "Sin declarar-Desconocido-Ignorado" (99).
 
