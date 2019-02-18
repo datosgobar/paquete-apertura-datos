@@ -8,8 +8,6 @@
     - [Versión](#version)
     - [Objetivo](#objetivo)
     - [Antecedentes](#antecedentes)
-    - [Catálogos de datos](#catalogos-de-datos)
-    - [Activos de datos](#activos-de-datos)
 - [Referencia](#referencia)
     - [Esquema](#esquema)
     - [Campos del perfil](#campos-del-perfil)
@@ -26,6 +24,8 @@
             - [Dataset (`dataset`) - series de tiempo](#dataset-dataset-series-de-tiempo)
             - [Distribución (`distribution`) - series de tiempo](#distribucion-distribution-series-de-tiempo)
             - [Campo (`field`) - series de tiempo](#campo-field-series-de-tiempo)
+- [Catálogos de datos](#catalogos-de-datos)
+- [Activos de datos](#activos-de-datos)
 - [Anexos](#anexos)
     - [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
     - [Anexo II - Pautas para la selección de etiquetas](#anexo-ii-pautas-para-la-seleccion-de-etiquetas)
@@ -57,34 +57,16 @@ Según la W3C: "Mediante la utilización de DCAT para describir datasets en cat�
 
 Así mismo, este perfil toma elementos del [Perfil Regional de Metadatos](https://perfil-regional-metadatos.readthedocs.io) definido como un repositorio de soluciones comunes sobre documentación de activos de datos abiertos, por un conjunto de países del continente americano entre los que se cuenta la Argentina.
 
-### Catálogos de datos
+## Terminología
 
-Los organismos de la Administración Pública Nacional deben generar y administrar en forma permanente su propio catálogo incluyendo todos los activos de datos digitales publicados en línea bajo su autoridad, tutela o responsabilidad (ver sección ["Activos de datos"](#activos-de-datos)).
-
-El catálogo debe estar publicado según las pautas de este documento, en formato [JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json) o [XLSX](https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/catalog.xlsx) de estructura compatible.
-
-El catálogo debe publicarse en una URL que cumpla alguna de estas 3 condiciones:
-
-* Sea propiedad digital del organismo.
-* Esté contenida en el dominio argentina.gob.ar o alguno de sus subdominios, bajo el cual el organismo gestione la publicación de sus contenidos.
-* Esté contenida en el dominio datos.gob.ar o alguno de sus subdominios, bajo el cual el organismo gestione la publicación de datos o metadatos bajo su tutela.
-
-Se recomienda que el nombre del archivo que contiene el catálogo sea `data.json` o `catalog.xlsx` según el formato original en que se publique, pero esto no es una condición excluyente.
-
-**La URL de descarga del catálogo del organismo deberá figurar en forma visible en la sección de transparencia activa** de su propiedad digital o de su sitio web en el dominio argentina.gob.ar.
-
-### Activos de datos
-
-**Los organismos de la Administración Pública Nacional deben documentar en su catálogo todos los activos de datos digitales publicados en línea.**
-
-Se entiende por tales a:
-
-* Todos los archivos descargables de formatos CSV, TXT (tabular), XLS, XLSX, ODS, DTA, SAV, DBF, JSON, XML, GEOJSON, KML, SHP o RDF.
-* Todos los archivos de otros formatos que sean versiones más recientes de los incluidos en el punto anterior.
-* Todos los archivos de otros formatos no incluidos en los puntos anteriores, siempre que sean diseñados para almacenar datos tabulares.
-* Todos los archivos de formatos comprimidos ZIP, RAR o cualquier otro que contengan dentro algún archivo de los formatos anteriormente mencionados.
-* Todos los archivos PDF, DOC, DOCX, HTML, TXT y otros formatos de documentos que contengan documentación metodológica referida a archivos de los formatos anteriores. Estos se consideran complementarios y deben documentarse siempre en conjunto con los archivos que efectivamente contienen los datos.
-* Todas las URLs que contengan documentación de uso de APIs o servicios web de datos total o parcialmente abiertos al público general.
+* Perfil de metadatos
+* Catálogo
+* Dataset
+* Distribución
+* Activo de datos
+* Campo obligatorio
+* Campo recomendado
+* Campo opcional
 
 ## Referencia
 
@@ -1180,6 +1162,40 @@ Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con serie
   "specialTypeDetail": "R/P1Y"
 }
 ```
+## Declaración de conformidad / Condiciones de cumplimiento / Requisitos de conformidad / Requerimientos de cumplimiento
+
+### Proveedores de metadatos
+
+Los organismos de la Administración Pública Nacional deben generar y administrar en forma permanente su propio catálogo incluyendo todos los activos de datos digitales publicados en línea bajo su autoridad, tutela o responsabilidad (ver sección ["Activos de datos"](#activos-de-datos)).
+
+El catálogo debe estar publicado según las pautas de este documento, en formato [JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json) o [XLSX](https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/catalog.xlsx) de estructura compatible.
+
+El catálogo debe publicarse en una URL que cumpla alguna de estas 3 condiciones:
+
+* Sea propiedad digital del organismo.
+* Esté contenida en el dominio argentina.gob.ar o alguno de sus subdominios, bajo el cual el organismo gestione la publicación de sus contenidos.
+* Esté contenida en el dominio datos.gob.ar o alguno de sus subdominios, bajo el cual el organismo gestione la publicación de datos o metadatos bajo su tutela.
+
+Se recomienda que el nombre del archivo que contiene el catálogo sea `data.json` o `catalog.xlsx` según el formato original en que se publique, pero esto no es una condición excluyente.
+
+**La URL de descarga del catálogo del organismo deberá figurar en forma visible en la sección de transparencia activa** de su propiedad digital o de su sitio web en el dominio argentina.gob.ar.
+
+### Alcance
+
+**Los organismos de la Administración Pública Nacional deben documentar en su catálogo todos los activos de datos digitales publicados en línea.**
+
+Se entiende por tales a:
+
+* Todos los archivos descargables de formatos CSV, TXT (tabular), XLS, XLSX, ODS, DTA, SAV, DBF, JSON, XML, GEOJSON, KML, SHP o RDF.
+* Todos los archivos de otros formatos que sean versiones más recientes de los incluidos en el punto anterior.
+* Todos los archivos de otros formatos no incluidos en los puntos anteriores, siempre que sean diseñados para almacenar datos tabulares.
+* Todos los archivos de formatos comprimidos ZIP, RAR o cualquier otro que contengan dentro algún archivo de los formatos anteriormente mencionados.
+* Todos los archivos PDF, DOC, DOCX, HTML, TXT y otros formatos de documentos que contengan documentación metodológica referida a archivos de los formatos anteriores. Estos se consideran complementarios y deben documentarse siempre en conjunto con los archivos que efectivamente contienen los datos.
+* Todas las URLs que contengan documentación de uso de APIs o servicios web de datos total o parcialmente abiertos al público general.
+
+### Consumidores de metadatos
+
+*(...cómo debe ser consumido el perfil por otros...)*
 
 ## Anexos
 

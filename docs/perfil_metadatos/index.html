@@ -477,22 +477,15 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#catalogos-de-datos" title="Catálogos de datos" class="md-nav__link">
-    Catálogos de datos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#activos-de-datos" title="Activos de datos" class="md-nav__link">
-    Activos de datos
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminologia" title="Terminología" class="md-nav__link">
+    Terminología
+  </a>
   
 </li>
       
@@ -633,6 +626,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#declaracion-de-conformidad-condiciones-de-cumplimiento-requisitos-de-conformidad-requerimientos-de-cumplimiento" title="Declaración de conformidad / Condiciones de cumplimiento / Requisitos de conformidad / Requerimientos de cumplimiento" class="md-nav__link">
+    Declaración de conformidad / Condiciones de cumplimiento / Requisitos de conformidad / Requerimientos de cumplimiento
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proveedores-de-metadatos" title="Proveedores de metadatos" class="md-nav__link">
+    Proveedores de metadatos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alcance" title="Alcance" class="md-nav__link">
+    Alcance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumidores-de-metadatos" title="Consumidores de metadatos" class="md-nav__link">
+    Consumidores de metadatos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#anexos" title="Anexos" class="md-nav__link">
     Anexos
   </a>
@@ -724,8 +751,6 @@
 <li><a href="#version">Versión</a></li>
 <li><a href="#objetivo">Objetivo</a></li>
 <li><a href="#antecedentes">Antecedentes</a></li>
-<li><a href="#catalogos-de-datos">Catálogos de datos</a></li>
-<li><a href="#activos-de-datos">Activos de datos</a></li>
 </ul>
 </li>
 <li><a href="#referencia">Referencia</a><ul>
@@ -752,6 +777,8 @@
 </li>
 </ul>
 </li>
+<li><a href="#catalogos-de-datos">Catálogos de datos</a></li>
+<li><a href="#activos-de-datos">Activos de datos</a></li>
 <li><a href="#anexos">Anexos</a><ul>
 <li><a href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a></li>
 <li><a href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas">Anexo II - Pautas para la selección de etiquetas</a></li>
@@ -775,27 +802,16 @@
 <p>El Perfil Nacional de Metadatos para Datos Abiertos <strong>es una extensión del estándar <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe">DCAT - AP</a></strong>, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.</p>
 <p>Según la W3C: "Mediante la utilización de DCAT para describir datasets en catálogos de datos, quienes publican aumentan la posibilidad de descubrimiento (<em>discoverability</em>) y permiten a aplicaciones informáticas consumir metadatos de manera simple desde múltiples catálogos. Además permite la publicación descentralizada de catálogos y favorece la búsqueda <em>federada</em> de datasets a través de varios sitios."</p>
 <p>Así mismo, este perfil toma elementos del <a href="https://perfil-regional-metadatos.readthedocs.io">Perfil Regional de Metadatos</a> definido como un repositorio de soluciones comunes sobre documentación de activos de datos abiertos, por un conjunto de países del continente americano entre los que se cuenta la Argentina.</p>
-<h3 id="catalogos-de-datos"><a class="toclink" href="#catalogos-de-datos">Catálogos de datos</a><a class="headerlink" href="#catalogos-de-datos" title="Permanent link">&#128279;</a></h3>
-<p>Los organismos de la Administración Pública Nacional deben generar y administrar en forma permanente su propio catálogo incluyendo todos los activos de datos digitales publicados en línea bajo su autoridad, tutela o responsabilidad (ver sección <a href="#activos-de-datos">"Activos de datos"</a>).</p>
-<p>El catálogo debe estar publicado según las pautas de este documento, en formato <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json">JSON</a> o <a href="https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/catalog.xlsx">XLSX</a> de estructura compatible.</p>
-<p>El catálogo debe publicarse en una URL que cumpla alguna de estas 3 condiciones:</p>
+<h2 id="terminologia"><a class="toclink" href="#terminologia">Terminología</a><a class="headerlink" href="#terminologia" title="Permanent link">&#128279;</a></h2>
 <ul>
-<li>Sea propiedad digital del organismo.</li>
-<li>Esté contenida en el dominio argentina.gob.ar o alguno de sus subdominios, bajo el cual el organismo gestione la publicación de sus contenidos.</li>
-<li>Esté contenida en el dominio datos.gob.ar o alguno de sus subdominios, bajo el cual el organismo gestione la publicación de datos o metadatos bajo su tutela.</li>
-</ul>
-<p>Se recomienda que el nombre del archivo que contiene el catálogo sea <code>data.json</code> o <code>catalog.xlsx</code> según el formato original en que se publique, pero esto no es una condición excluyente.</p>
-<p><strong>La URL de descarga del catálogo del organismo deberá figurar en forma visible en la sección de transparencia activa</strong> de su propiedad digital o de su sitio web en el dominio argentina.gob.ar.</p>
-<h3 id="activos-de-datos"><a class="toclink" href="#activos-de-datos">Activos de datos</a><a class="headerlink" href="#activos-de-datos" title="Permanent link">&#128279;</a></h3>
-<p><strong>Los organismos de la Administración Pública Nacional deben documentar en su catálogo todos los activos de datos digitales publicados en línea.</strong></p>
-<p>Se entiende por tales a:</p>
-<ul>
-<li>Todos los archivos descargables de formatos CSV, TXT (tabular), XLS, XLSX, ODS, DTA, SAV, DBF, JSON, XML, GEOJSON, KML, SHP o RDF.</li>
-<li>Todos los archivos de otros formatos que sean versiones más recientes de los incluidos en el punto anterior.</li>
-<li>Todos los archivos de otros formatos no incluidos en los puntos anteriores, siempre que sean diseñados para almacenar datos tabulares.</li>
-<li>Todos los archivos de formatos comprimidos ZIP, RAR o cualquier otro que contengan dentro algún archivo de los formatos anteriormente mencionados.</li>
-<li>Todos los archivos PDF, DOC, DOCX, HTML, TXT y otros formatos de documentos que contengan documentación metodológica referida a archivos de los formatos anteriores. Estos se consideran complementarios y deben documentarse siempre en conjunto con los archivos que efectivamente contienen los datos.</li>
-<li>Todas las URLs que contengan documentación de uso de APIs o servicios web de datos total o parcialmente abiertos al público general.</li>
+<li>Perfil de metadatos</li>
+<li>Catálogo</li>
+<li>Dataset</li>
+<li>Distribución</li>
+<li>Activo de datos</li>
+<li>Campo obligatorio</li>
+<li>Campo recomendado</li>
+<li>Campo opcional</li>
 </ul>
 <h2 id="referencia"><a class="toclink" href="#referencia">Referencia</a><a class="headerlink" href="#referencia" title="Permanent link">&#128279;</a></h2>
 <h3 id="esquema"><a class="toclink" href="#esquema">Esquema</a><a class="headerlink" href="#esquema" title="Permanent link">&#128279;</a></h3>
@@ -1850,6 +1866,31 @@
 </pre></div>
 
 
+<h2 id="declaracion-de-conformidad-condiciones-de-cumplimiento-requisitos-de-conformidad-requerimientos-de-cumplimiento"><a class="toclink" href="#declaracion-de-conformidad-condiciones-de-cumplimiento-requisitos-de-conformidad-requerimientos-de-cumplimiento">Declaración de conformidad / Condiciones de cumplimiento / Requisitos de conformidad / Requerimientos de cumplimiento</a><a class="headerlink" href="#declaracion-de-conformidad-condiciones-de-cumplimiento-requisitos-de-conformidad-requerimientos-de-cumplimiento" title="Permanent link">&#128279;</a></h2>
+<h3 id="proveedores-de-metadatos"><a class="toclink" href="#proveedores-de-metadatos">Proveedores de metadatos</a><a class="headerlink" href="#proveedores-de-metadatos" title="Permanent link">&#128279;</a></h3>
+<p>Los organismos de la Administración Pública Nacional deben generar y administrar en forma permanente su propio catálogo incluyendo todos los activos de datos digitales publicados en línea bajo su autoridad, tutela o responsabilidad (ver sección <a href="#activos-de-datos">"Activos de datos"</a>).</p>
+<p>El catálogo debe estar publicado según las pautas de este documento, en formato <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json">JSON</a> o <a href="https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/catalog.xlsx">XLSX</a> de estructura compatible.</p>
+<p>El catálogo debe publicarse en una URL que cumpla alguna de estas 3 condiciones:</p>
+<ul>
+<li>Sea propiedad digital del organismo.</li>
+<li>Esté contenida en el dominio argentina.gob.ar o alguno de sus subdominios, bajo el cual el organismo gestione la publicación de sus contenidos.</li>
+<li>Esté contenida en el dominio datos.gob.ar o alguno de sus subdominios, bajo el cual el organismo gestione la publicación de datos o metadatos bajo su tutela.</li>
+</ul>
+<p>Se recomienda que el nombre del archivo que contiene el catálogo sea <code>data.json</code> o <code>catalog.xlsx</code> según el formato original en que se publique, pero esto no es una condición excluyente.</p>
+<p><strong>La URL de descarga del catálogo del organismo deberá figurar en forma visible en la sección de transparencia activa</strong> de su propiedad digital o de su sitio web en el dominio argentina.gob.ar.</p>
+<h3 id="alcance"><a class="toclink" href="#alcance">Alcance</a><a class="headerlink" href="#alcance" title="Permanent link">&#128279;</a></h3>
+<p><strong>Los organismos de la Administración Pública Nacional deben documentar en su catálogo todos los activos de datos digitales publicados en línea.</strong></p>
+<p>Se entiende por tales a:</p>
+<ul>
+<li>Todos los archivos descargables de formatos CSV, TXT (tabular), XLS, XLSX, ODS, DTA, SAV, DBF, JSON, XML, GEOJSON, KML, SHP o RDF.</li>
+<li>Todos los archivos de otros formatos que sean versiones más recientes de los incluidos en el punto anterior.</li>
+<li>Todos los archivos de otros formatos no incluidos en los puntos anteriores, siempre que sean diseñados para almacenar datos tabulares.</li>
+<li>Todos los archivos de formatos comprimidos ZIP, RAR o cualquier otro que contengan dentro algún archivo de los formatos anteriormente mencionados.</li>
+<li>Todos los archivos PDF, DOC, DOCX, HTML, TXT y otros formatos de documentos que contengan documentación metodológica referida a archivos de los formatos anteriores. Estos se consideran complementarios y deben documentarse siempre en conjunto con los archivos que efectivamente contienen los datos.</li>
+<li>Todas las URLs que contengan documentación de uso de APIs o servicios web de datos total o parcialmente abiertos al público general.</li>
+</ul>
+<h3 id="consumidores-de-metadatos"><a class="toclink" href="#consumidores-de-metadatos">Consumidores de metadatos</a><a class="headerlink" href="#consumidores-de-metadatos" title="Permanent link">&#128279;</a></h3>
+<p><em>(...cómo debe ser consumido el perfil por otros...)</em></p>
 <h2 id="anexos"><a class="toclink" href="#anexos">Anexos</a><a class="headerlink" href="#anexos" title="Permanent link">&#128279;</a></h2>
 <h3 id="anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla"><a class="toclink" href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a><a class="headerlink" href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla" title="Permanent link">&#128279;</a></h3>
 <p>El Portal Nacional de Datos usa la <a href="http://publications.europa.eu/mdr/authority/data-theme/index.html">taxonomía temática definida por la Unión Europea</a>.</p>
