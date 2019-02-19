@@ -421,7 +421,7 @@ Metadatos que el *data.json* debe contener, para describir a un dataset dentro d
     <td>Página de referencias</td>
     <td>No</td>
     <td>URL de una página web a través de la cual se puede acceder al dataset, sus recursos o información adicional sobre el mismo.</td>
-    <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra</td>
+    <td>https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra</td>
     <td>landingPage</td>
     <td>String</td>
   </tr>
@@ -544,7 +544,7 @@ Metadatos que el *data.json* debe contener, para describir a una distribución d
     <td>URL de acceso</td>
     <td>Sí</td>
     <td>URL que permite el acceso a la distribución del dataset. Puede ser una página, feed u otro tipo de recurso que dé acceso indirecto a las distribuciones. Si las distribuciones son solo accesibles a través de la página de referencia del dataset, debe completarse el valor de la URL de acceso a la distribución con el mismo valor de la página de referencia del dataset.</td>
-    <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a</td>
+    <td>https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra/archivo/modernizacion_2.2</td>
     <td>accessURL</td>
     <td>String</td>
   </tr>
