@@ -170,7 +170,7 @@ Si tenés un servicio de datos que querés compartir públicamente:
 
 * Hace que sea más fácil de usar: documentá la interfaz y sus funcionalidades, escribí ejemplos de uso, sé lo más claro posible con los términos de uso. (Ej.: **[Series de Tiempo](http://apis.datos.gob.ar/series/)**, **[Servicio de Normalización de Datos Geográficos](http://apis.datos.gob.ar/georef/)**)
 
-Te recomendamos revisar [Read the Docs](https://readthedocs.org/), Mkdocs (https://www.mkdocs.org/) y [OpenAPI](https://swagger.io/) como soporte para tu documentación, podés ver nuestro [ejemplo de Series de Tiempo](https://github.com/datosgobar/series-tiempo-ar-api) y nuestro [ejemplo del Servicio de Normalización de Datos Geográficos](https://github.com/datosgobar/georef-ar-api).
+Te recomendamos revisar [Read the Docs](https://readthedocs.org/), [Mkdocs](https://www.mkdocs.org/) y [OpenAPI](https://swagger.io/) como soporte para tu documentación, podés ver nuestro [ejemplo de Series de Tiempo](https://github.com/datosgobar/series-tiempo-ar-api) y nuestro [ejemplo del Servicio de Normalización de Datos Geográficos](https://github.com/datosgobar/georef-ar-api).
 
 * Ayudá a que sea fácil de encontrar: sumá la URL de la documentación del servicio al catálogo de datos de tu organismo e [indicá que es una API en tus metadatos](https://datosgobar.github.io/paquete-apertura-datos/guia-metadatos/#distribucion-distribution).
 * Cuidá tu infraestructura: publicá la base de datos completa en formatos abiertos junto con el servicio (Ej.: [dataset de Series de Tiempo](http://datos.gob.ar/dataset/modernizacion-base-series-tiempo-administracion-publica-nacional)).
