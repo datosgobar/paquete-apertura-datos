@@ -142,7 +142,7 @@ Para facilitar el acceso y navegación a los activos de datos por parte de nuest
 
 Existen dos alternativas principales a la hora de tener en cuenta los recursos disponibles: instalar una plataforma de código abierto o contratar una plataforma como servicio pago.
  
-Una plataforma de acceso libre y código abierto no implica costos de licenciamiento pero requiere capacidad de desarrollo y gestión tecnológica para implementar y dar soporte a un portal propio. Los costos deberán medirse en función de los recursos asignados a la implementación de la plataforma..
+Una plataforma de acceso libre y código abierto no implica costos de licenciamiento pero requiere capacidad de desarrollo y gestión tecnológica para implementar y dar soporte a un portal propio. Los costos deberán medirse en función de los recursos asignados a la implementación de la plataforma.
 
 Una plataforma, bajo el modelo de licencia o “software as a service”, puede resultar más costosa en términos financieros, pero simplificará buena parte de los procesos de gestión tecnológica y de mantenimiento del portal.
 
