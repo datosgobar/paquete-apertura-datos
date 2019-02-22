@@ -2762,3 +2762,7 @@ a {
   margin: 0 auto;
   display: inherit;
 }
+
+div.codehilite {
+  word-wrap: break-word;
+}

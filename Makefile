@@ -128,9 +128,9 @@ build:
 	cp -rf docs/perfil-metadatos docs/perfil_metadatos
 
 pdf:
-	python md2pdf.py docs/guia-abiertos.md docs/pdf/guia-abiertos.pdf
-	python md2pdf.py docs/guia-interoperables.md docs/pdf/guia-interoperables.pdf
-	python md2pdf.py docs/guia-metadatos.md docs/pdf/guia-metadatos.pdf
-	python md2pdf.py docs/guia-apn.md docs/pdf/guia-apn.pdf
-	python md2pdf.py docs/guia-subnacionales.md docs/pdf/guia-subnacionales.pdf
-	python md2pdf.py docs/perfil-metadatos.md docs/pdf/perfil-metadatos.pdf
+	mkdocs_datosgobar md2pdf docs/guia-abiertos.md docs/pdf/guia-abiertos.pdf
+	mkdocs_datosgobar md2pdf docs/guia-interoperables.md docs/pdf/guia-interoperables.pdf
+	mkdocs_datosgobar md2pdf docs/guia-metadatos.md docs/pdf/guia-metadatos.pdf
+	mkdocs_datosgobar md2pdf docs/guia-apn.md docs/pdf/guia-apn.pdf
+	mkdocs_datosgobar md2pdf docs/guia-subnacionales.md docs/pdf/guia-subnacionales.pdf
+	mkdocs_datosgobar md2pdf docs/perfil-metadatos.md docs/pdf/perfil-metadatos.pdf
