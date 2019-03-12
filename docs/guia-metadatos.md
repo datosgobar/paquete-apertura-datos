@@ -1447,7 +1447,7 @@ Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura
       "description": "Datasets sobre proveedores del Estado."
     }
   ],
-  "license": "Open Data Commons Open Database License 1.0",
+  "license": "Creative Commons Attribution 4.0",
   "homepage": "http://datos.gob.ar",
   "rights": "Derechos especificados en la licencia.",
   "spatial": "ARG",
@@ -1486,7 +1486,7 @@ Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura
       "spatial": "ARG",
       "temporal": "2015-01-01/2015-12-31",
       "landingPage": "http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra",
-      "license": "Open Data Commons Open Database License 1.0",
+      "license": "Creative Commons Attribution 4.0",
       "distribution": [
         {
           "accessURL": "http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a",
@@ -1495,7 +1495,7 @@ Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura
           "mediaType": "text/csv",
           "downloadURL": "http://186.33.211.253/dataset/99db6631-d1c9-470b-a73e-c62daa32c420/resource/4b7447cb-31ff-4352-96c3-589d212e1cc9/download/convocatorias-abiertas-anio-2015.csv",
           "title": "Convocatorias abiertas durante el año 2015",
-          "license": "Open Data Commons Open Database License 1.0",
+          "license": "Creative Commons Attribution 4.0",
           "byteSize": "5120",
           "issued": "2016-04-14T19:48:05.433640-03:00",
           "modified": "2016-04-19T19:48:05.433640-03:00",
@@ -1649,7 +1649,7 @@ Portal de Datos Abiertos del Gobierno de la República Argentina
 * Derechos sobre el catálogo: Derechos especificados en la licencia.
 * Correo electrónico del autor: datos@modernizacion.gob.ar
 * Autor: Ministerio de Modernización
-* Licencia: Open Data Commons Open Database License 1.0
+* Licencia: Creative Commons Attribution 4.0
 * Idioma(s): spa
 * Fecha de creación o publicación: 2016-04-14T19:48:05.433640-03:00
 * Taxonomía temática global: [http://datos.gob.ar/superThemeTaxonomy.json](http://datos.gob.ar/superThemeTaxonomy.json)
@@ -1684,7 +1684,7 @@ Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Com
 * **Etiqueta(s)**: bienes, compras, contrataciones
 * **Frecuencia de actualización**: R/P1Y
 * **Cobertura geográfica**: ARG
-* **Licencia**: Open Data Commons Open Database License 1.0
+* **Licencia**: Creative Commons Attribution 4.0
 * **Correo electrónico del área/persona de contacto**: onc-compraselectronicas@modernizacion.gob.ar
 * **Área/Persona de contacto**: Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.
 * **Identificador**: 99db6631-d1c9-470b-a73e-c62daa32c420
@@ -1697,7 +1697,7 @@ Listado de las convocatorias abiertas durante el año 2015 en el sistema de cont
 
 * **URL de acceso**: [http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a](http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a)
 * **Derechos sobre la distribución**: Derechos especificados en la licencia.
-* **Licencia**: Open Data Commons Open Database License 1.0
+* **Licencia**: Creative Commons Attribution 4.0
 * **Tamaño**: 5120
 * **Formato del archivo**: CSV
 * **Tipo de archivo**: text/csv
