@@ -17,5 +17,7 @@ Podés colaborar con las guías cargando un nuevo issue, o respondiendo a un iss
 * Guías de implementación
     - [Guía para la apertura de datos en organismos de la Administración Pública Nacional](guia-apn.md)
     - [Guía para la apertura de datos en provincias y municipios](guia-subnacionales.md)
-<!-- * [Perfil Nacional de Metadatos para Datos Abiertos](perfil-metadatos.md) -->
+* Marco legal
+    - [Decreto 117/2016 "Plan de Apertura de Datos"](decreto-117-2016.md)
+    - [Perfil de Aplicación Nacional de Metadatos para Datos Abiertos](perfil-metadatos.md)
 * [Glosario](glosario.md)
