@@ -1,15 +1,76 @@
-# Perfil Nacional de Metadatos para Datos Abiertos
+# Perfil de Aplicación Nacional de Metadatos para Datos Abiertos
+
+<center>**Metadatos del documento**</center>
+
+<table>
+    <tr>
+        <th>Propiedad</th>
+        <th>Valor</th>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Perfil de Aplicación Nacional de Metadatos para Datos Abiertos en Argentina Versión 1.2</td>
+    </tr>
+    <tr>
+        <td>Fecha de publicación</td>
+        <td>TBD</td>
+    </tr>
+    <tr>
+        <td>Estado</td>
+        <td>Publicación digital (falta aprobación normativa)</td>
+    </tr>
+    <tr>
+        <td>Versión</td>
+        <td>1.2</td>
+    </tr>
+    <tr>
+        <td>Resumen</td>
+        <td>Este documento incorpora los cambios al perfil de metadatos desde la versión 1.1 y se separa de la guía de metadatos para su aprobación normativa.</td>
+    </tr>
+</table>
+
+<center>**Versiones**</center>
+
+<table>
+    <tr>
+        <th>Versión</th>
+        <th>Fecha</th>
+        <th>Descripción</th>
+    </tr>
+    <tr>
+        <td>0.1</td>
+        <td>2016-11-16</td>
+        <td>Primer borrador</td>
+    </tr>
+    <tr>
+        <td>1.0</td>
+        <td>2017-02-07</td>
+        <td>Publicación digital de la primer versión</td>
+    </tr>
+    <tr>
+        <td>1.1</td>
+        <td>2017-11-17</td>
+        <td>Publicación digital de la versión 1.1</td>
+    </tr>
+    <tr>
+        <td>1.2</td>
+        <td>TBD</td>
+        <td>Publicación digital de la versión 1.2</td>
+    </tr>
+</table>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Indice
 
 - [Introducción](#introduccion)
-    - [Versión](#version)
     - [Objetivo](#objetivo)
     - [Antecedentes](#antecedentes)
 - [Referencia](#referencia)
     - [Esquema](#esquema)
+    - [Clases del perfil](#clases-del-perfil)
+        - [Obligatorias](#obligatorias)
+        - [Recomendadas](#recomendadas)
     - [Campos del perfil](#campos-del-perfil)
         - [Catálogo (`catalog`)](#catalogo-catalog)
         - [Dataset (`dataset`)](#dataset-dataset)
@@ -18,12 +79,6 @@
         - [Tema (`theme`)](#tema-theme)
     - [Extensiones especiales](#extensiones-especiales)
         - [Series de tiempo](#series-de-tiempo)
-            - [Distribución de series de tiempo](#distribucion-de-series-de-tiempo)
-            - [Tipo especial: indice de tiempo](#tipo-especial-indice-de-tiempo)
-            - [Documentar un dataset de series de tiempo](#documentar-un-dataset-de-series-de-tiempo)
-            - [Dataset (`dataset`) - series de tiempo](#dataset-dataset-series-de-tiempo)
-            - [Distribución (`distribution`) - series de tiempo](#distribucion-distribution-series-de-tiempo)
-            - [Campo (`field`) - series de tiempo](#campo-field-series-de-tiempo)
 - [Catálogos de datos](#catalogos-de-datos)
 - [Activos de datos](#activos-de-datos)
 - [Anexos](#anexos)
@@ -38,10 +93,6 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Introducción
-
-### Versión
-
-Versión 1.1 del **Perfil Nacional de Metadatos para Datos Abiertos** de la Administración Pública Nacional de la República Argentina.
 
 ### Objetivo
 
@@ -59,35 +110,65 @@ Así mismo, este perfil toma elementos del [Perfil Regional de Metadatos](https:
 
 ## Terminología
 
-* Perfil de metadatos
-* Catálogo
-* Dataset
-* Distribución
-* Activo de datos
-* Campo obligatorio
-* Campo recomendado
-* Campo opcional
+* **Perfil de Aplicación**: es una especificación que re-utiliza términos de uno o más estándares base, sumando mayor especificidad al identificar elementos obligatorios, recomendados y opcionales, y recomendaciones de vocabularios controlados orientadas al caso de aplicación.
+* **Catálogo**: es una lista o colección de activos de datos documentados siguiendo la estructura y definiciones de un determinado perfil de metadatos.
+* **Dataset**: es un conjunto de datos que agrupa recursos referidos a un mismo tema, que respetan una estructura de la información que los relaciona entre sí.
+* **Distribución**: es un recurso o activo de datos que se puede descargar (un archivo) y sus metadatos asociados. Puede tener diversos formatos (csv, shp, xlsx, etc) o estar disponible en línea (html, php).
+* **Activo de datos**: es la forma más genérica de referirse a cualquier recurso o conjunto de recursos de datos que pueda ser tratado como una unidad a efectos de su gestión, uso, protección, intercambio o referencia.
+* **Campo obligatorio**: es una propiedad de uso obligatorio para el cumplimiento del perfil.
+* **Campo recomendado**: es una propiedad que, si bien no es obligatoria, su uso es recomendado para una mayor calidad de documentación de activos de datos.
+* **Campo opcional**: es una propiedad disponible para su uso en caso de que sea de utilidad para el organismo, pero que no necesariamente aplica para todos los casos.
 
 ## Referencia
 
 ### Esquema
 
-El Perfil Nacional de Metadatos para Datos Abiertos de la Administración Pública Nacional se compone de 3 clases principales (*Catalog, Dataset y Distribution*) y 2 auxiliares (*Field* y *Theme*) que se relacionan según el siguiente esquema:
+El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Administración Pública Nacional se compone de **3 clases obligatorias** (*Catalog, Dataset y Distribution*), **2 clases recomendadas** (*Field* y *Theme*).
 
 ![](assets/der_perfil_metadatos.png)
+
+### Clases del perfil
+
+#### Obligatorias
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+    </tr>
+    <tr>
+        <td>Catalog</td>
+        <td>Catálogo o repositorio que contiene los Datasets en él descriptos. Contiene una lista de Datasets en el atributo <code>dataset</code>.</td>
+    </tr>
+    <tr>
+        <td>Dataset</td>
+        <td>Entidad conceptual que representa un conjunto de datos estrechamente relacionados entre sí. Contiene una lista de Distributions en el atributo <code>distribution</code>.</td>
+    </tr>
+    <tr>
+        <td>Distribution</td>
+        <td>Archivo físico que contiene datos y sus metadatos descriptivos adicionales. Puede contener una lista de Fields en el atributo <code>field</code>.</td>
+    </tr>
+</table>
+
+#### Recomendadas
+
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+    </tr>
+    <tr>
+        <td>Field</td>
+        <td>Columna o campo de un archivo de datos tabular.</td>
+    </tr>
+    <tr>
+        <td>Theme</td>
+        <td>Temática bajo la cual un Dataset puede ser clasificado.</td>
+    </tr>
+</table>
 
 ### Campos del perfil
 
 #### Catálogo (`catalog`)
-
-El *data.json* de quienes usen el portal Andino, se generará a través de los formularios completados, publicándose automáticamente en *http://datos.[entidad].gob.ar/data.json*.
-
-Ejemplos de metadatos de un **catálogo**:
-
-* [Catálogo en texto](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md)
-* [Catálogo en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json)
-
-Metadatos necesarios para describir el catálogo, que un *data.json* debe contener:
 
 <table id="left-align-col-3-4">
   <tr>
@@ -244,22 +325,7 @@ Metadatos necesarios para describir el catálogo, que un *data.json* debe conten
   </tr>
 </table>
 
-Es importante poner atención a los dos campos que contienen una lista de objetos: **`dataset`** y **`themeTaxonomy`**.
-
-El **primero** contendrá una lista de objetos que describen (cada uno) los metadatos de los distintos datasets que componen el catálogo (en la próxima sección se describen los metadatos que debe contener cada uno de estos objetos).
-
-El **segundo** también contiene una lista de objetos que, juntos, definen una taxonomía temática para el catálogo. Cada uno de estos objetos contiene los metadatos que describen a cada uno de los temas de esta taxonomía. Más adelante se describen estos metadatos en la sección Tema.
-
 #### Dataset (`dataset`)
-
-A continuación, describimos los metadatos que se deben completar para describir un dataset a la hora de su carga o actualización en el catálogo.
-
-Ejemplos de metadatos de un **dataset**:
-
-* [Dataset en texto](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/dataset.md)
-* [Dataset en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/dataset.json)
-
-Metadatos que el *data.json* debe contener, para describir a un dataset dentro de la lista contenida en el campo **`dataset`** del catálogo:
 
 <table id="left-align-col-3-4">
   <tr>
@@ -443,18 +509,7 @@ Metadatos que el *data.json* debe contener, para describir a un dataset dentro d
   </tr>
 </table>
 
-Es importante prestar atención al campo **`distribution`** que contiene una lista de objetos que describen los metadatos de cada una de las distribuciones del daset. En la próxima sección abordaremos estos metadatos.
-
 #### Distribución (`distribution`)
-
-Estos son los metadatos que se deben completar al cargar o actualizar una distribución de un dataset en el catálogo para describirla.
-
-Ejemplos de metadatos de una **distribución**:
-
-* [Distribución en texto](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/distribution.md)
-* [Distribución en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/distribution.json)
-
-Metadatos que el *data.json* debe contener, para describir a una distribución dentro de la lista contenida en el campo **`distribution`** de un dataset:
 
 <table id="left-align-col-3-4">
   <tr>
@@ -587,19 +642,9 @@ Metadatos que el *data.json* debe contener, para describir a una distribución d
   </tr>
 </table>
 
-Recomendamos poner atención al campo **`field`** que contiene una lista de objetos que describen los metadatos de cada uno de los campos de la distribución (en el **caso de distribuciones tabulares, únicamente**). En la próxima sección abordaremos estos metadatos.
-
 #### Campo (`field`)
 
 Recomendamos enfáticamente que las distribuciones tabulares **incluyan metadatos que ayuden a entender la información que contiene cada campo**. Documentarlos adecuadamente facilita enormemente la correcta utilización de los datos por parte de los usuarios.
-
-En un portal Andino, estos metadatos se completan en el mismo formulario que se utiliza para cargar o actualizar una distribución.
-
-Ejemplos de metadatos de un **campo**:
-
-* [Metadatos de un campo de una distribución tabular en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/field.json)
-
-Estos son los metadatos que el *data.json* debe contener para describir a un campo de una distribución tabular dentro de la lista contenida en el campo de metadatos **`field`** de una distribución:
 
 <table id="left-align-col-3-4">
   <tr>
@@ -682,23 +727,17 @@ Estos son los metadatos que el *data.json* debe contener para describir a un cam
   </tr>
 </table>
 
-Los primeros tres metadatos son útiles para **describir las características de cualquier campo de una distribución tabular**.
+Los primeros tres metadatos **describen las características de cualquier campo de una distribución tabular**.
 
-Los últimos cuatro metadatos son opcionales porque sólo cobran sentido al **describir las características de un campo, para casos específicos**. Mientras que no todos los campos de una distribución tabular tienen "**unidad de medida**", la asingación de un **"nomenclador" o "identificador"** suele ser útil para la identificación unívoca de variables en otros sistemas o aplicaciones, pero no en la generalidad de los casos.
+Los últimos cuatro metadatos son opcionales: **describen las características de un campo para casos específicos**. 
 
-Préstese especial atención a los últimos dos campos: estos constituyen la forma en que el Perfil de Metadatos **permite el desarrollo de extensiones para sistemas o aplicaciones**, desde su versión 1.1. Ver más en la sección [Extensiones especiales](#extensiones-especiales).
+No todos los campos de una distribución tabular tienen "**unidad de medida**", y la asingación de un **"nomenclador" o "identificador"** suele ser útil para la identificación unívoca de variables en algunos sistemas o aplicaciones, pero no en la generalidad de los casos.
+
+Los últimos dos campos **se utilizan para el desarrollo de extensiones para sistemas o aplicaciones**, desde la versión 1.1 del perfil de metadatos. Ver más en la sección [Extensiones especiales](#extensiones-especiales).
 
 #### Tema (`theme`)
 
-Cada catálogo de datos puede tener su propia taxonomía temática que permite clasificar a los datasets como pertenecientes a una o más categorías temáticas. Recomendamos que los temas tengan algunos metadatos que ayuden a un usuario a entenderlos mejor.
-
-Estos son metadatos que el responsable de cargar o actualizar la taxonomía temática de un catálogo debe completar para describir los temas de la misma.
-
-Ejemplos de metadatos de un **tema**:
-
-* [Metadatos de un tema en JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/theme.json)
-
-Metadatos que el *data.json* debe contener, para describir a un tema de la taxonomía temática de un catálogo:
+Cada catálogo de datos puede tener su propia taxonomía temática que permite clasificar a los datasets como pertenecientes a una o más categorías temáticas. La definición de un tema dentro de la taxonomía es obligatoria en caso de que se desee clasificar un dataset bajo ese tema.
 
 <table id="left-align-col-3-4">
   <tr>
@@ -737,32 +776,35 @@ Metadatos que el *data.json* debe contener, para describir a un tema de la taxon
 
 ### Extensiones especiales
 
-A partir de la versión 1.1, el perfil de metadatos propuesto para la Administración Pública Nacional plantea:
+A partir de la versión 1.1, el perfil de metadatos plantea:
 
-1. Un **esquema base de uso general** para la documentación de catálogos de datos abiertos
-2. Un marco general para **desarrollar extensiones del perfil**, que permitan documentar casos especiales para el desarrollo de sistemas o aplicaciones.
+1. Un **esquema base** de uso general para la documentación de catálogos de datos abiertos
+2. Un **marco para desarrollar extensiones del perfil**, que permitan documentar casos especiales para el desarrollo de sistemas o aplicaciones.
 
 El desarrollo de extensiones del perfil para uso de aplicaciones puede contemplar:
 
 * La **obligatoriedad de campos de metadatos** que en el perfil base no son obligatorios (recomendados u optativos).
-* La definición de uno o más **tipos especiales** (**`specialType`**) utilizados para que sistemas o aplicaciones interpreten de una forma específica los datos que encuentren en una distribución.
+* La **definición de uno o más tipos especiales** (**`specialType`**) utilizados para que sistemas o aplicaciones interpreten de una forma específica los datos que encuentren en una distribución.
 
 #### Series de tiempo
 
-Junto con la versión 1.1 del perfil de metadatos se propone una sencilla extensión para documentar **distribuciones que contienen series de tiempo**.
+Especificación para documentar **distribuciones que contienen series de tiempo**. Permite la extracción de datos automática y segura por parte de sistemas que compilan series de tiempo.
 
-Esto sirve para su interpretación y extracción automática por parte de sistemas que compilan series de tiempo en bases de datos, servicios web, y de otras aplicaciones.
+La [API de Series de Tiempo de la República Argentina](https://apis.datos.gob.ar/series) puede leer cualquier distribución publicada por un organismo de la Administración Pública Nacional bajo esta especificación.
 
-Debe tenerse en cuenta que la evolución de las posibilidades soportadas por la definición de esta extensión está directamente relacionada con la evolución de los sistemas desarrollados por la Dirección Nacional de Datos e Información Pública.
+La evolución de las posibilidades soportadas por esta extensión está directamente relacionada con la evolución de los sistemas desarrollados por la Dirección Nacional de Datos e Información Pública.
 
 ##### Distribución de series de tiempo
 
-Es una tabla donde:
+Es un archivo CSV con las siguientes propiedades:
 
-* Existe una columna que es el **índice de tiempo**
+* Codificación: `utf-8`
+* Separador de campos: `,`
+* Caracter decimal: `.`
+* Primera columna: es el **índice de tiempo**.
     - Es la **clave primaria única** de la tabla (identifica una fila única)
-    - Tiene una **frecuencia temporal determinada** (es diaria, mensual, anual... pero no mezcla frecuencias).
-* Cada una de las otras columnas son **series de tiempo**
+    - Tiene una **frecuencia temporal determinada** (es diaria, mensual, trimestral, semestral o anual).
+* Resto de las columnas: cada una es una **serie de tiempo** diferente.
 
 <table>
   <tr>
@@ -831,11 +873,7 @@ Es una tabla donde:
   </tr>
 </table>
 
-La distribución debe ser un archivo CSV estándar (Ver **Guía para la publicación de datos en formatos abiertos**):
-
-* Codificado en `utf-8`
-* Separador de campos `,`
-* Caracter decimal `.`
+La misma tabla abierta como un archivo de texto se vería así:
 
 ```
 indice_tiempo,oferta_global_pib,oferta_global_importacion,demanda_global_exportacion,demanda_global_ibif,demanda_global_consumo_priv
@@ -848,27 +886,11 @@ indice_tiempo,oferta_global_pib,oferta_global_importacion,demanda_global_exporta
 1999-01-01,278369.01375,34520.59125,30448.89575,53116.3155,36173.34075
 ```
 
-Ver ejemplo completo de una [distribución de series de tiempo](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv).
-
-**Precisión de series con números enteros y decimales**
-
-Las series deben contener valores con **números enteros** (`277441`) o con **números decimales** (`277441.31725`) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número "entero" dentro de una serie decimal debe incluir `.0` al final (`277441.0`).
-
-Los **números enteros** pueden tener cualquier cantidad de cifras, mientras que los **números decimales** sólo pueden tener **hasta 12 cifras en total**, incluyendo la parte entera y la parte decimal:
-
-* `0.12345678901` está ok  (*serie decimal*)
-* `12345678901.1` está ok  (*serie decimal*)
-* `1234567.01234` está ok  (*serie decimal*)
-* `0.1234567890123456789` NO está ok  (*serie decimal*)
-* `123456789.01234567891` NO está ok  (*serie decimal*)
-* `1234567890123456789.1` NO está ok  (*serie decimal*)
-* `123456789123456789123` está ok (*serie entera*)
-
-Casi todos los *software* que manejan números pueden usar decimales con hasta 12 cifras sin pérdida de precisión. Si bien existe software estadístico capaz de manejar decimales con más de 12 cifras, este límite debe ser analizado en cada caso y no está garantizado por la **API de Series de Tiempo de datos.gob.ar**.
+Ver ejemplo completo de una [distribución de series de tiempo](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv) en el repositorio digital de este documento.
 
 ##### Tipo especial: indice de tiempo
 
-Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando uno de sus campos como "índice de tiempo" y aclarando la frecuencia que tiene (Ver el [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificacion-de-frecuencias-segun-iso-8601)).
+Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando el primero de sus campos como "índice de tiempo" y aclarando la frecuencia que tiene (Ver el [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificacion-de-frecuencias-segun-iso-8601)).
 
 Dentro de la variable `field` de la distribución:
 
@@ -879,294 +901,110 @@ Dentro de la variable `field` de la distribución:
     }
 ```
 
-El indice de tiempo de una distribución con series de tiempo debe cumplir:
+Propiedades que debe cumplir:
 
-* **Fechas en ISO 8601** (`YYYY-MM-DD`)
-* **Fechas en orden ascendente** (primera fila tiene el valor más antiguo, última fila el más reciente).
-* Fechas pueden tener la parte de "tiempo" luego de la de "fecha", pero se desestima. (`YYYY-MM-DD` es exactamente igual que `YYYY-MM-DDThh:mm:ss`).
-* Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) las **fechas admiten usar sólo la parte del estándar de fecha necesaria** o usar la **forma de fecha completa**.
-    + Anual: YYYY está ok
-    + Anual: YYYY-MM-DD está ok
-    + Mensual: YYYY-MM está ok
-    + Mensual: YYYY NO está ok
-    + Trimestral: YYYY-MM está ok
-    + Trimestral: YYYY NO está ok
-* Las fechas están completas (el **índice de tiempo es _continuo_**).
-    + Anual: 1980 / 1981 / 1982 está ok
-    + Anual: 1980 / 1982 / 1983 NO está ok
-    + Diaria
-      - Frecuencia diaria _completa_ (lunes a domingo). No puede faltar ningún día de la semana.
-      - Frecuencia diaria _hábil_ o `Business Daily` (lunes a viernes). No puede faltar ningún día hábil de la semana (un "martes" o "lunes" feriado, por ejemplo, debe figurar en el índice y dejar el valor de la observación nulo).
-* Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde se use la forma completa, se debe **usar siempre _la fecha inicial_ del período**.
-    + Mensual: 1980-01-01 / 1980-02-01 / 1980-03-01 está ok
-    + Mensual: 1980-01-31 / 1980-02-28 / 1980-03-31 NO está ok
-    + Trimestral: 1980-01-01 / 1980-04-01 / 1980-07-01 / 1980-10-01 está ok
-    + Trimestral: 1980-02-01 / 1980-05-01 / 1980-08-01 / 1980-11-01 NO está ok
-    + Semestral: 1980-01-01 / 1980-07-01 / 1981-01-01 está ok
-    + Semestral: 1980-01-01 / 1980-08-01 / 1981-01-01 NO está ok
-    + Semestral: 1980-01-31 / 1980-07-31 / 1981-01-31 NO está ok
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Ejemplo</th>
+    </tr>
+    <tr>
+        <td>ISO 8601</td>
+        <td>Los valores deben seguir la parte de la "fecha" del estándar ISO 8601 (<code>YYYY-MM-DD</code>). Pueden tener la parte de "tiempo" luego de la de "fecha" pero esta se desestima si la frecuencia es menor a "diaria". (<code>YYYY-MM-DD</code> es igual que <code>YYYY-MM-DDThh:mm:ss</code>)</td>
+        <td>2016-01-01</td>
+    </tr>
+    <tr>
+        <td>Orden ascendente</td>
+        <td>La primer fila tiene la fecha más antigua y la última fila tiene la fecha más reciente.</td>
+        <td>2016-01-01<br>2017-01-01<br>2018-01-01<br>2019-01-01</td>
+    </tr>
+    <tr>
+        <td>Requerimientos mínimos para la frecuencia elegida</td>
+        <td>Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) las fechas admiten usar sólo la parte del estándar de fecha necesaria o usar la forma de fecha completa.
+        <br>
+        <br>Anual: YYYY está bien
+        <br>Anual: YYYY-MM-DD está bien
+        <br>Mensual: YYYY-MM está bien
+        <br>Mensual: YYYY NO está bien
+        <br>Trimestral: YYYY-MM está bien
+        <br>Trimestral: YYYY NO está bien
+    </td>
+        <td>
+            Anual: <br>
+            2019 <br>
+            2019-01-01 <br>
+            <br>
+            Mensual: <br>
+            2019-01 <br>
+            2019-01-01 <br>
+            <br>
+            Trimestral: <br>
+            2019-01 <br>
+            2019-04 <br>
+            2019-07 <br>
+            2019-10 <br>
+            2019-01-01 <br>
+            2019-04-01 <br>
+        </td>
+    </tr>
+    <tr>
+        <td>Línea del tiempo completa</td>
+        <td>El índice de tiempo es continuo (no le faltan valores).
+        <br>
+        <br>
+            Anual: 1980 / 1981 / 1982 está bien <br>
+            Anual: 1980 / 1982 / 1983 NO está bien <br>
+        <br>
+            Se aceptan tanto la frecuencia diaria "lunes a domingo" (no puede faltar ningún día de la semana) como la frecuencia diaria "de lunes a viernes" (no puede faltar ningún día hábil de la semana). Si hubiera un "lunes" feriado, este debe estar en la distribución y dejar el valor vacío (en caso de que no lo hubiere).
+        </td>
+        <td>
+            Anual: <br>
+            1890 <br>
+            1891 <br>
+            1892 <br>
+        </td>
+    </tr>
+    <tr>
+        <td>Fecha inicial del período cubierto</td>
+        <td>
+Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde se use la forma completa, se debe usar siempre la fecha inicial del período.
+    <br>
+    <br> Mensual: 1980-01-01 / 1980-02-01 / 1980-03-01 está bien
+    <br> Mensual: 1980-01-31 / 1980-02-28 / 1980-03-31 NO está bien
+    <br>
+    <br> Trimestral: 1980-01-01 / 1980-04-01 / 1980-07-01 / 1980-10-01 está bien
+    <br> Trimestral: 1980-02-01 / 1980-05-01 / 1980-08-01 / 1980-11-01 NO está bien
+    <br>
+    <br> Semestral: 1980-01-01 / 1980-07-01 / 1981-01-01 está bien
+    <br> Semestral: 1980-01-01 / 1980-08-01 / 1981-01-01 NO está bien
+    <br> Semestral: 1980-01-31 / 1980-07-31 / 1981-01-31 NO está bien
+        </td>
+    <td>
+    Mensual: <br>
+    1980-01-01 <br>
+    1980-02-01 <br>
+    1980-03-01 <br>
+    <br>
+    Trimestral: <br>
+    1980-01-01 <br>
+    1980-04-01 <br>
+    1980-07-01 <br>
+    1980-10-01 <br>
+    <br>
+    Semestral: <br>
+    1980-01-01 <br>
+    1980-07-01 <br>
+    1981-01-01 <br>
+    </td>
+    </tr>
+</table>
 
-##### Documentar un dataset de series de tiempo
-
-A continuación se revisan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo para cada parte del modelo de metadatos dentro de un *dataset* que contiene series de tiempo.
-
-Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo).
-
-* **Dataset 1**: Oferta y Demanda Globales. Datos desestacionalizados. Base 1993
-  - **Distribucion 1.1**: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores anuales.
-  - **Distribucion 1.2**: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores trimestrales.
-
-##### Dataset (`dataset`) - series de tiempo
-
-```json
-{
-  "identifier": "1",
-  "title": "Oferta y Demanda Globales: Datos desestacionalizados [Base 1993]",
-  "description": "Componentes desestacionalizados de la oferta y demanda globales a precios de 1993.",
-  "accrualPeriodicity": "R/P3M",
-  "publisher": {
-    "mbox": "ausolari@mecon.gob.ar",
-    "name": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica."
-  },
-  "source": "Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.",
-  "contactPoint": {
-    "fn": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica. Dirección de Información y Coyuntura"
-  },
-  "landingPage": "http://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/",
-  "issued": "2017-08-22T17:51:26.553961-03:00",
-  "keyword": [
-    "oferta",
-    "demanda",
-    "pbi",
-    "cuentas nacionales",
-    "desestacionalizado"
-  ],
-  "superTheme": [
-    "ECON"
-  ],
-  "temporal": "1993-01-01/2013-09-30",
-  "theme": [
-    "oferta_demanda"
-  ],
-  "distribution": [
-    {
-      "identifier": "1.1",
-      "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]",
-      "format": "CSV",
-      "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
-      "issued": "2017-08-22T17:51:26.553961-03:00",
-      "modified": "2017-08-22T17:51:26.553961-03:00",
-      "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
-      "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
-      "field": [
-        {
-          "title": "indice_tiempo",
-          "type": "date",
-          "specialType": "time_index",
-          "specialTypeDetail": "R/P1Y"
-        },
-        {
-          "id": "1.1_OGP_D_1993_A_17",
-          "title": "oferta_global_pbi",
-          "description": "PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        },
-        {
-          "id": "1.1_OGI_D_1993_A_25",
-          "title": "oferta_global_importacion",
-          "description": "Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        },
-        {
-          "id": "1.1_DGE_D_1993_A_26",
-          "title": "demanda_global_exportacion",
-          "description": "Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        },
-        {
-          "id": "1.1_DGI_D_1993_A_19",
-          "title": "demanda_global_ibif",
-          "description": "Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        },
-        {
-          "id": "1.1_DGCP_D_1993_A_27",
-          "title": "demanda_global_consumo_priv",
-          "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        },
-        {
-          "id": "1.1_DGCP_D_1993_A_30",
-          "title": "demanda_global_consumo_publico",
-          "description": "Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        }
-      ]
-    },
-    {
-      "identifier": "1.2",
-      "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores trimestrales [Base 1993]",
-      "format": "CSV",
-      "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
-      "issued": "2017-08-22T17:51:26.553961-03:00",
-      "modified": "2017-08-22T17:51:26.553961-03:00",
-      "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
-      "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
-      "field": [
-        {
-          "title": "indice_tiempo",
-          "type": "date",
-          "specialType": "time_index",
-          "specialTypeDetail": "R/P3M"
-        },
-        {
-          "id": "1.2_OGP_D_1993_T_17",
-          "title": "oferta_global_pbi",
-          "description": "PBI a precios de comprador, en millones de pesos de 1993 y valores anuales.",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        },
-        {
-          "id": "1.2_OGI_D_1993_T_25",
-          "title": "oferta_global_importacion",
-          "description": "Importación a precios de comprador, en millones de pesos de 1993 y valores anuales.",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        },
-        {
-          "id": "1.2_DGE_D_1993_T_26",
-          "title": "demanda_global_exportacion",
-          "description": "Oferta global total a precios de comprador, en millones de pesos de 1993 y valores anuales.",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        },
-        {
-          "id": "1.2_DGI_D_1993_T_19",
-          "title": "demanda_global_ibif",
-          "description": "Consumo privado, en millones de pesos  de 1993 y valores anuales.",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        },
-        {
-          "id": "1.2_DGCP_D_1993_T_27",
-          "title": "demanda_global_consumo_priv",
-          "description": "Consumo publico, en millones de pesos de 1993 y valores anuales.",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        },
-        {
-          "id": "1.2_DGCP_D_1993_T_30",
-          "title": "demanda_global_consumo_publico",
-          "description": "Inversion bruta interna fija, en millones de pesos de 1993  y valores anuales.",
-          "type": "number",
-          "units": "Millones de pesos a precios de 1993"
-        }
-      ]
-    }
-  ]
-}
-```
-
-##### Distribución (`distribution`) - series de tiempo
-
-```json
-{
-  "identifier": "1.1",
-  "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]",
-  "format": "CSV",
-  "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
-  "issued": "2017-08-22T17:51:26.553961-03:00",
-  "modified": "2017-08-22T17:51:26.553961-03:00",
-  "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
-  "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
-  "field": [
-    {
-      "title": "indice_tiempo",
-      "type": "date",
-      "specialType": "time_index",
-      "specialTypeDetail": "R/P1Y"
-    },
-    {
-      "id": "1.1_OGP_D_1993_A_17",
-      "title": "oferta_global_pbi",
-      "description": "PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
-      "type": "number",
-      "units": "Millones de pesos a precios de 1993"
-    },
-    {
-      "id": "1.1_OGI_D_1993_A_25",
-      "title": "oferta_global_importacion",
-      "description": "Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
-      "type": "number",
-      "units": "Millones de pesos a precios de 1993"
-    },
-    {
-      "id": "1.1_DGE_D_1993_A_26",
-      "title": "demanda_global_exportacion",
-      "description": "Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
-      "type": "number",
-      "units": "Millones de pesos a precios de 1993"
-    },
-    {
-      "id": "1.1_DGI_D_1993_A_19",
-      "title": "demanda_global_ibif",
-      "description": "Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales",
-      "type": "number",
-      "units": "Millones de pesos a precios de 1993"
-    },
-    {
-      "id": "1.1_DGCP_D_1993_A_27",
-      "title": "demanda_global_consumo_priv",
-      "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
-      "type": "number",
-      "units": "Millones de pesos a precios de 1993"
-    },
-    {
-      "id": "1.1_DGCP_D_1993_A_30",
-      "title": "demanda_global_consumo_publico",
-      "description": "Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
-      "type": "number",
-      "units": "Millones de pesos a precios de 1993"
-    }
-  ]
-}
-```
-
-##### Campo (`field`) - series de tiempo
-
-**Serie de tiempo**
-
-```json
-{
-  "id": "1.1_DGCP_D_1993_A_27",
-  "title": "demanda_global_consumo_priv",
-  "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
-  "type": "number",
-  "units": "Millones de pesos a precios de 1993"
-}
-```
-
-**Indice de tiempo**
-
-```json
-{
-  "title": "indice_tiempo",
-  "type": "date",
-  "specialType": "time_index",
-  "specialTypeDetail": "R/P1Y"
-}
-```
-## Declaración de conformidad / Condiciones de cumplimiento / Requisitos de conformidad / Requerimientos de cumplimiento
+## Condiciones de cumplimiento del perfil
 
 ### Proveedores de metadatos
 
-Los organismos de la Administración Pública Nacional deben generar y administrar en forma permanente su propio catálogo incluyendo todos los activos de datos digitales publicados en línea bajo su autoridad, tutela o responsabilidad (ver sección ["Activos de datos"](#activos-de-datos)).
+Los organismos de la Administración Pública Nacional deben generar y administrar en forma permanente su propio catálogo incluyendo todos los activos de datos digitales publicados en línea bajo su autoridad, tutela o responsabilidad (ver sub-sección ["Alcance"](#activos-de-datos) de esta sección).
 
 El catálogo debe estar publicado según las pautas de este documento, en formato [JSON](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json) o [XLSX](https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/catalog.xlsx) de estructura compatible.
 
@@ -1195,7 +1033,11 @@ Se entiende por tales a:
 
 ### Consumidores de metadatos
 
-*(...cómo debe ser consumido el perfil por otros...)*
+Una aplicación diseñada para leer metadatos de un catálogo publicado según este perfil deberá:
+
+* Procesar correctamente todos los campos obligatorios de las clases obligatorias del perfil.
+* Procesar correctamente (según su definición) todos aquellos campos no obligatorios que declare utilizar hacia sus usuarios.
+* Implementar las validaciones necesarias para procesar correctamente los casos válidos definidos en las extensiones especiales.
 
 ## Anexos
 
@@ -1905,3 +1747,276 @@ Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura
   ]
 }
 ```
+
+### Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo
+
+A continuación se revisan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo para cada parte del modelo de metadatos dentro de un *dataset* que contiene series de tiempo.
+
+Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo).
+
+* **Dataset 1**: Oferta y Demanda Globales. Datos desestacionalizados. Base 1993
+  - **Distribucion 1.1**: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores anuales.
+  - **Distribucion 1.2**: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores trimestrales.
+
+#### Dataset (`dataset`) - series de tiempo
+
+```json
+{
+  "identifier": "1",
+  "title": "Oferta y Demanda Globales: Datos desestacionalizados [Base 1993]",
+  "description": "Componentes desestacionalizados de la oferta y demanda globales a precios de 1993.",
+  "accrualPeriodicity": "R/P3M",
+  "publisher": {
+    "mbox": "ausolari@mecon.gob.ar",
+    "name": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica."
+  },
+  "source": "Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.",
+  "contactPoint": {
+    "fn": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica. Dirección de Información y Coyuntura"
+  },
+  "landingPage": "http://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/",
+  "issued": "2017-08-22T17:51:26.553961-03:00",
+  "keyword": [
+    "oferta",
+    "demanda",
+    "pbi",
+    "cuentas nacionales",
+    "desestacionalizado"
+  ],
+  "superTheme": [
+    "ECON"
+  ],
+  "temporal": "1993-01-01/2013-09-30",
+  "theme": [
+    "oferta_demanda"
+  ],
+  "distribution": [
+    {
+      "identifier": "1.1",
+      "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]",
+      "format": "CSV",
+      "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
+      "issued": "2017-08-22T17:51:26.553961-03:00",
+      "modified": "2017-08-22T17:51:26.553961-03:00",
+      "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
+      "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
+      "field": [
+        {
+          "title": "indice_tiempo",
+          "type": "date",
+          "specialType": "time_index",
+          "specialTypeDetail": "R/P1Y"
+        },
+        {
+          "id": "1.1_OGP_D_1993_A_17",
+          "title": "oferta_global_pbi",
+          "description": "PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        },
+        {
+          "id": "1.1_OGI_D_1993_A_25",
+          "title": "oferta_global_importacion",
+          "description": "Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        },
+        {
+          "id": "1.1_DGE_D_1993_A_26",
+          "title": "demanda_global_exportacion",
+          "description": "Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        },
+        {
+          "id": "1.1_DGI_D_1993_A_19",
+          "title": "demanda_global_ibif",
+          "description": "Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        },
+        {
+          "id": "1.1_DGCP_D_1993_A_27",
+          "title": "demanda_global_consumo_priv",
+          "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        },
+        {
+          "id": "1.1_DGCP_D_1993_A_30",
+          "title": "demanda_global_consumo_publico",
+          "description": "Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        }
+      ]
+    },
+    {
+      "identifier": "1.2",
+      "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores trimestrales [Base 1993]",
+      "format": "CSV",
+      "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
+      "issued": "2017-08-22T17:51:26.553961-03:00",
+      "modified": "2017-08-22T17:51:26.553961-03:00",
+      "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
+      "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
+      "field": [
+        {
+          "title": "indice_tiempo",
+          "type": "date",
+          "specialType": "time_index",
+          "specialTypeDetail": "R/P3M"
+        },
+        {
+          "id": "1.2_OGP_D_1993_T_17",
+          "title": "oferta_global_pbi",
+          "description": "PBI a precios de comprador, en millones de pesos de 1993 y valores anuales.",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        },
+        {
+          "id": "1.2_OGI_D_1993_T_25",
+          "title": "oferta_global_importacion",
+          "description": "Importación a precios de comprador, en millones de pesos de 1993 y valores anuales.",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        },
+        {
+          "id": "1.2_DGE_D_1993_T_26",
+          "title": "demanda_global_exportacion",
+          "description": "Oferta global total a precios de comprador, en millones de pesos de 1993 y valores anuales.",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        },
+        {
+          "id": "1.2_DGI_D_1993_T_19",
+          "title": "demanda_global_ibif",
+          "description": "Consumo privado, en millones de pesos  de 1993 y valores anuales.",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        },
+        {
+          "id": "1.2_DGCP_D_1993_T_27",
+          "title": "demanda_global_consumo_priv",
+          "description": "Consumo publico, en millones de pesos de 1993 y valores anuales.",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        },
+        {
+          "id": "1.2_DGCP_D_1993_T_30",
+          "title": "demanda_global_consumo_publico",
+          "description": "Inversion bruta interna fija, en millones de pesos de 1993  y valores anuales.",
+          "type": "number",
+          "units": "Millones de pesos a precios de 1993"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Distribución (`distribution`) - series de tiempo
+
+```json
+{
+  "identifier": "1.1",
+  "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]",
+  "format": "CSV",
+  "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
+  "issued": "2017-08-22T17:51:26.553961-03:00",
+  "modified": "2017-08-22T17:51:26.553961-03:00",
+  "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
+  "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
+  "field": [
+    {
+      "title": "indice_tiempo",
+      "type": "date",
+      "specialType": "time_index",
+      "specialTypeDetail": "R/P1Y"
+    },
+    {
+      "id": "1.1_OGP_D_1993_A_17",
+      "title": "oferta_global_pbi",
+      "description": "PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    },
+    {
+      "id": "1.1_OGI_D_1993_A_25",
+      "title": "oferta_global_importacion",
+      "description": "Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    },
+    {
+      "id": "1.1_DGE_D_1993_A_26",
+      "title": "demanda_global_exportacion",
+      "description": "Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    },
+    {
+      "id": "1.1_DGI_D_1993_A_19",
+      "title": "demanda_global_ibif",
+      "description": "Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    },
+    {
+      "id": "1.1_DGCP_D_1993_A_27",
+      "title": "demanda_global_consumo_priv",
+      "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    },
+    {
+      "id": "1.1_DGCP_D_1993_A_30",
+      "title": "demanda_global_consumo_publico",
+      "description": "Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+      "type": "number",
+      "units": "Millones de pesos a precios de 1993"
+    }
+  ]
+}
+```
+
+#### Campo (`field`) - series de tiempo
+
+**Serie de tiempo**
+
+```json
+{
+  "id": "1.1_DGCP_D_1993_A_27",
+  "title": "demanda_global_consumo_priv",
+  "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+  "type": "number",
+  "units": "Millones de pesos a precios de 1993"
+}
+```
+
+**Indice de tiempo**
+
+```json
+{
+  "title": "indice_tiempo",
+  "type": "date",
+  "specialType": "time_index",
+  "specialTypeDetail": "R/P1Y"
+}
+```
+
+### Anexo IX - Precisión de series con números enteros y decimales
+
+Las series deben contener valores con **números enteros** (`277441`) o con **números decimales** (`277441.31725`) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número "entero" dentro de una serie decimal debe incluir `.0` al final (`277441.0`).
+
+Los **números enteros** pueden tener cualquier cantidad de cifras, mientras que los **números decimales** sólo pueden tener **hasta 12 cifras en total**, incluyendo la parte entera y la parte decimal:
+
+* `0.12345678901` está bien  (*serie decimal*)
+* `12345678901.1` está bien  (*serie decimal*)
+* `1234567.01234` está bien  (*serie decimal*)
+* `0.1234567890123456789` NO está bien  (*serie decimal*)
+* `123456789.01234567891` NO está bien  (*serie decimal*)
+* `1234567890123456789.1` NO está bien  (*serie decimal*)
+* `123456789123456789123` está bien (*serie entera*)
+
+Casi todos los *software* que manejan números pueden usar decimales con hasta 12 cifras sin pérdida de precisión. Si bien existe software estadístico capaz de manejar decimales con más de 12 cifras, este límite debe ser analizado en cada caso y no está garantizado por la [**API de Series de Tiempo de la República Argentina**](https://apis.datos.gob.ar/series).

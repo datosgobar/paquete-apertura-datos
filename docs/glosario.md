@@ -3,7 +3,7 @@
 
 ## Activo de datos
 
-Es cualquier recurso de datos con valor para el desarrollo de las funciones de una organización, que puede ser comprendido y tratado como una única unidad a efectos de su gestión, uso, protección e intercambio.
+Es cualquier recurso o conjunto de recursos de datos con valor para el desarrollo de las funciones de una organización, que puede ser comprendido y tratado como una unidad a efectos de su gestión, uso, protección e intercambio.
 Suele emplearse para identificar y tratar conjuntos de datos o recursos individuales, como bases de datos, archivos tabulares, colecciones de metadatos, etc.
 
 ## API
