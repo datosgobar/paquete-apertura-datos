@@ -46,6 +46,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://datosgobar.github.io/paquete-apertura-datos/herramientas/</loc>
+     <lastmod>2019-03-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://datosgobar.github.io/paquete-apertura-datos/glosario/</loc>
      <lastmod>2019-03-25</lastmod>
      <changefreq>daily</changefreq>
