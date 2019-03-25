@@ -1,4 +1,4 @@
-# Guía para la apertura de datos en gobiernos provinciales y municipales
+# Guía para la apertura de datos en gobiernos provinciales y locales
 
 Si formás parte del equipo de trabajo de una provincia o municipio, esta guía te da los conceptos clave y las bases para que puedas diseñar e implementar políticas de datos abiertos. 
 

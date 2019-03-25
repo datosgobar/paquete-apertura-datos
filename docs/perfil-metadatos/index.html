@@ -395,8 +395,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../guia-subnacionales/" title="Guía para la apertura de datos en gobiernos provinciales y municipales" class="md-nav__link">
-      Guía para la apertura de datos en gobiernos provinciales y municipales
+    <a href="../guia-subnacionales/" title="Guía para la apertura de datos en gobiernos provinciales y locales" class="md-nav__link">
+      Guía para la apertura de datos en gobiernos provinciales y locales
     </a>
   </li>
 
@@ -1232,11 +1232,12 @@
 
 <h2 id="indice"><a class="toclink" href="#indice">Indice</a><a class="headerlink" href="#indice" title="Permanent link">&#128279;</a></h2>
 <ul>
-<li><a href="#introduccion">Introducción</a><ul>
+<li><a href="#introducci%C3%B3n">Introducción</a><ul>
 <li><a href="#objetivo">Objetivo</a></li>
 <li><a href="#antecedentes">Antecedentes</a></li>
 </ul>
 </li>
+<li><a href="#terminolog%C3%ADa">Terminología</a></li>
 <li><a href="#referencia">Referencia</a><ul>
 <li><a href="#esquema">Esquema</a></li>
 <li><a href="#clases-del-perfil">Clases del perfil</a><ul>
@@ -1245,9 +1246,9 @@
 </ul>
 </li>
 <li><a href="#campos-del-perfil">Campos del perfil</a><ul>
-<li><a href="#catalogo-catalog">Catálogo (<code>catalog</code>)</a></li>
+<li><a href="#cat%C3%A1logo-catalog">Catálogo (<code>catalog</code>)</a></li>
 <li><a href="#dataset-dataset">Dataset (<code>dataset</code>)</a></li>
-<li><a href="#distribucion-distribution">Distribución (<code>distribution</code>)</a></li>
+<li><a href="#distribuci%C3%B3n-distribution">Distribución (<code>distribution</code>)</a></li>
 <li><a href="#campo-field">Campo (<code>field</code>)</a></li>
 <li><a href="#tema-theme">Tema (<code>theme</code>)</a></li>
 </ul>
@@ -1258,16 +1259,22 @@
 </li>
 </ul>
 </li>
-<li><a href="#catalogos-de-datos">Catálogos de datos</a></li>
-<li><a href="#activos-de-datos">Activos de datos</a></li>
+<li><a href="#condiciones-de-cumplimiento-del-perfil">Condiciones de cumplimiento del perfil</a><ul>
+<li><a href="#proveedores-de-metadatos">Proveedores de metadatos</a></li>
+<li><a href="#alcance">Alcance</a></li>
+<li><a href="#consumidores-de-metadatos">Consumidores de metadatos</a></li>
+</ul>
+</li>
 <li><a href="#anexos">Anexos</a><ul>
-<li><a href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a></li>
-<li><a href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas">Anexo II - Pautas para la selección de etiquetas</a></li>
-<li><a href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a></li>
+<li><a href="#anexo-i-taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a></li>
+<li><a href="#anexo-ii-pautas-para-la-selecci%C3%B3n-de-etiquetas">Anexo II - Pautas para la selección de etiquetas</a></li>
+<li><a href="#anexo-iii-especificaci%C3%B3n-de-frecuencias-seg%C3%BAn-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a></li>
 <li><a href="#anexo-iv-ejemplo-de-datajson">Anexo IV - Ejemplo de data.json</a></li>
-<li><a href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json">Anexo V - Taxonomía temática global de la APN para los datasets (JSON)</a></li>
+<li><a href="#anexo-v-taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-json">Anexo V - Taxonomía temática global de la APN para los datasets (JSON)</a></li>
 <li><a href="#anexo-vi-ejemplo-de-metadatos-como-texto">Anexo VI - Ejemplo de metadatos como texto</a></li>
 <li><a href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a></li>
+<li><a href="#anexo-viii-ejemplos-de-metadatos-en-json-de-un-dataset-de-series-de-tiempo">Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo</a></li>
+<li><a href="#anexo-ix-precisi%C3%B3n-de-series-con-n%C3%BAmeros-enteros-y-decimales">Anexo IX - Precisión de series con números enteros y decimales</a></li>
 </ul>
 </li>
 </ul>
@@ -2189,8 +2196,9 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
 </ul>
 <p><strong>La ventaja de usar una súper taxonomía</strong> temática es que<strong> facilita la clasificación de datasets</strong> por parte de un usuario según un conjunto de categorías temáticas más generales, que son interoperables con las usadas por otros países del mundo. Esto, a su vez, <strong>facilita la clasificación de datasets cosechados por el Portal Nacional de Datos</strong>.</p>
 <table>
-      <td>Etiqueta (label)</td>
-      <td>Descripción (description)</td>
+      <th>Identificador (id)</th>
+      <th>Etiqueta (label)</th>
+      <th>Descripción (description)</th>
     </tr>
     <tr>
       <td>AGRI</td>
@@ -2283,8 +2291,8 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
 <h3 id="anexo-iii-especificacion-de-frecuencias-segun-iso-8601"><a class="toclink" href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a><a class="headerlink" href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601" title="Permanent link">&#128279;</a></h3>
 <table>
   <tr>
-    <td>Frecuencia</td>
-    <td>Valor según ISO-8601</td>
+    <th>Frecuencia</th>
+    <th>Valor según ISO-8601</th>
   </tr>
   <tr>
     <td>Cada diez años</td>
@@ -2303,7 +2311,7 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
     <td>R/P2Y</td>
   </tr>
   <tr>
-    <td>Anualmente</td>
+    <td>Anual</td>
     <td>R/P1Y</td>
   </tr>
   <tr>
@@ -2311,19 +2319,19 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
     <td>R/P6M</td>
   </tr>
   <tr>
-    <td>Cuatrimestralmente</td>
+    <td>Cuatrimestral</td>
     <td>R/P4M</td>
   </tr>
   <tr>
-    <td>Trimestralmente</td>
+    <td>Trimestral</td>
     <td>R/P3M</td>
   </tr>
   <tr>
-    <td>Bimestralmente</td>
+    <td>Bimestral</td>
     <td>R/P2M</td>
   </tr>
   <tr>
-    <td>Mensualmente</td>
+    <td>Mensual</td>
     <td>R/P1M</td>
   </tr>
   <tr>
@@ -2335,7 +2343,7 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
     <td>R/P0.33M</td>
   </tr>
   <tr>
-    <td>Semanalmente</td>
+    <td>Semanal</td>
     <td>R/P1W</td>
   </tr>
   <tr>
@@ -2347,7 +2355,7 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
     <td>R/P0.33W</td>
   </tr>
   <tr>
-    <td>Diariamente</td>
+    <td>Diaria</td>
     <td>R/P1D</td>
   </tr>
   <tr>

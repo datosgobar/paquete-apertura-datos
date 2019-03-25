@@ -63,32 +63,37 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Indice
 
-- [Introducción](#introduccion)
+- [Introducción](#introducci%C3%B3n)
     - [Objetivo](#objetivo)
     - [Antecedentes](#antecedentes)
+- [Terminología](#terminolog%C3%ADa)
 - [Referencia](#referencia)
     - [Esquema](#esquema)
     - [Clases del perfil](#clases-del-perfil)
         - [Obligatorias](#obligatorias)
         - [Recomendadas](#recomendadas)
     - [Campos del perfil](#campos-del-perfil)
-        - [Catálogo (`catalog`)](#catalogo-catalog)
+        - [Catálogo (`catalog`)](#cat%C3%A1logo-catalog)
         - [Dataset (`dataset`)](#dataset-dataset)
-        - [Distribución (`distribution`)](#distribucion-distribution)
+        - [Distribución (`distribution`)](#distribuci%C3%B3n-distribution)
         - [Campo (`field`)](#campo-field)
         - [Tema (`theme`)](#tema-theme)
     - [Extensiones especiales](#extensiones-especiales)
         - [Series de tiempo](#series-de-tiempo)
-- [Catálogos de datos](#catalogos-de-datos)
-- [Activos de datos](#activos-de-datos)
+- [Condiciones de cumplimiento del perfil](#condiciones-de-cumplimiento-del-perfil)
+    - [Proveedores de metadatos](#proveedores-de-metadatos)
+    - [Alcance](#alcance)
+    - [Consumidores de metadatos](#consumidores-de-metadatos)
 - [Anexos](#anexos)
-    - [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
-    - [Anexo II - Pautas para la selección de etiquetas](#anexo-ii-pautas-para-la-seleccion-de-etiquetas)
-    - [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificacion-de-frecuencias-segun-iso-8601)
+    - [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i-taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-tabla)
+    - [Anexo II - Pautas para la selección de etiquetas](#anexo-ii-pautas-para-la-selecci%C3%B3n-de-etiquetas)
+    - [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificaci%C3%B3n-de-frecuencias-seg%C3%BAn-iso-8601)
     - [Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)
-    - [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json)
+    - [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v-taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-json)
     - [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)
     - [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo)
+    - [Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo](#anexo-viii-ejemplos-de-metadatos-en-json-de-un-dataset-de-series-de-tiempo)
+    - [Anexo IX - Precisión de series con números enteros y decimales](#anexo-ix-precisi%C3%B3n-de-series-con-n%C3%BAmeros-enteros-y-decimales)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1058,8 +1063,9 @@ Además del uso de una taxonomía propia de cada catálogo de datos, **recomenda
 **La ventaja de usar una súper taxonomía** temática es que** facilita la clasificación de datasets** por parte de un usuario según un conjunto de categorías temáticas más generales, que son interoperables con las usadas por otros países del mundo. Esto, a su vez, **facilita la clasificación de datasets cosechados por el Portal Nacional de Datos**.
 
 <table>
-      <td>Etiqueta (label)</td>
-      <td>Descripción (description)</td>
+      <th>Identificador (id)</th>
+      <th>Etiqueta (label)</th>
+      <th>Descripción (description)</th>
     </tr>
     <tr>
       <td>AGRI</td>
@@ -1155,8 +1161,8 @@ Preguntas útiles a la hora de pensar los etiquetas:
 
 <table>
   <tr>
-    <td>Frecuencia</td>
-    <td>Valor según ISO-8601</td>
+    <th>Frecuencia</th>
+    <th>Valor según ISO-8601</th>
   </tr>
   <tr>
     <td>Cada diez años</td>
@@ -1175,7 +1181,7 @@ Preguntas útiles a la hora de pensar los etiquetas:
     <td>R/P2Y</td>
   </tr>
   <tr>
-    <td>Anualmente</td>
+    <td>Anual</td>
     <td>R/P1Y</td>
   </tr>
   <tr>
@@ -1183,19 +1189,19 @@ Preguntas útiles a la hora de pensar los etiquetas:
     <td>R/P6M</td>
   </tr>
   <tr>
-    <td>Cuatrimestralmente</td>
+    <td>Cuatrimestral</td>
     <td>R/P4M</td>
   </tr>
   <tr>
-    <td>Trimestralmente</td>
+    <td>Trimestral</td>
     <td>R/P3M</td>
   </tr>
   <tr>
-    <td>Bimestralmente</td>
+    <td>Bimestral</td>
     <td>R/P2M</td>
   </tr>
   <tr>
-    <td>Mensualmente</td>
+    <td>Mensual</td>
     <td>R/P1M</td>
   </tr>
   <tr>
@@ -1207,7 +1213,7 @@ Preguntas útiles a la hora de pensar los etiquetas:
     <td>R/P0.33M</td>
   </tr>
   <tr>
-    <td>Semanalmente</td>
+    <td>Semanal</td>
     <td>R/P1W</td>
   </tr>
   <tr>
@@ -1219,7 +1225,7 @@ Preguntas útiles a la hora de pensar los etiquetas:
     <td>R/P0.33W</td>
   </tr>
   <tr>
-    <td>Diariamente</td>
+    <td>Diaria</td>
     <td>R/P1D</td>
   </tr>
   <tr>

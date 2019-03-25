@@ -17,7 +17,7 @@
   },
   {
     "id": "R/P1Y",
-    "description": "Anualmente"
+    "description": "Anual"
   },
   {
     "id": "R/P6M",
@@ -25,19 +25,19 @@
   },
   {
     "id": "R/P4M",
-    "description": "Cuatrimestralmente"
+    "description": "Cuatrimestral"
   },
   {
     "id": "R/P3M",
-    "description": "Trimestralmente"
+    "description": "Trimestral"
   },
   {
     "id": "R/P2M",
-    "description": "Bimestralmente"
+    "description": "Bimestral"
   },
   {
     "id": "R/P1M",
-    "description": "Mensualmente"
+    "description": "Mensual"
   },
   {
     "id": "R/P0.5M",
@@ -49,7 +49,7 @@
   },
   {
     "id": "R/P1W",
-    "description": "Semanalmente"
+    "description": "Semanal"
   },
   {
     "id": "R/P0.5W",
@@ -61,7 +61,7 @@
   },
   {
     "id": "R/P1D",
-    "description": "Diariamente"
+    "description": "Diaria"
   },
   {
     "id": "R/PT1H",
