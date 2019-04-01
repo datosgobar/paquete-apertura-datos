@@ -769,7 +769,7 @@ Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de
 
 Mantener el formato correcto de las celdas según el tipo de datos que contengan:
 
-* Mejora las las probabilidades de que una exportación a otro formato salga correctamente.
+* Mejora las probabilidades de que una exportación a otro formato salga correctamente.
 * Hace que los datos sean más operables en la propia planilla de cálculo, aprovechando mejor sus funcionalidades.
 
 ### Exportación a CSV
