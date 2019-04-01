@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
@@ -47,7 +47,7 @@
     
     
 	
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
       
       
     
@@ -55,7 +55,7 @@
 
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     <script src="../js/extra.js"></script>
 
@@ -68,7 +68,36 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../css/table_styles.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-91435482-1", "https://datosgobar.github.io/paquete-apertura-datos/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -104,7 +133,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#guia-para-la-apertura-de-datos-en-gobiernos-provinciales-y-locales" tabindex="1" class="md-skip">
+      <a href="#indice" tabindex="1" class="md-skip">
         Saltar a contenido
       </a>
     
@@ -125,22 +154,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Paquete de Apertura de Datos de la República Argentina
-              </span>
-              <span class="md-header-nav__topic">
-                Guía para la apertura de datos en gobiernos provinciales y locales
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Paquete de Apertura de Datos de la República Argentina
+            </span>
+            <span class="md-header-nav__topic">
+              Guía para la apertura de datos en gobiernos provinciales y locales
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -163,7 +189,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -174,20 +199,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         </div>
       
@@ -251,20 +274,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         
       
@@ -405,270 +426,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Guía para la apertura de datos en gobiernos provinciales y locales
-      </label>
-    
     <a href="./" title="Guía para la apertura de datos en gobiernos provinciales y locales" class="md-nav__link md-nav__link--active">
       Guía para la apertura de datos en gobiernos provinciales y locales
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#por-que-publicar-datos-abiertos" title="¿Por qué publicar datos abiertos?" class="md-nav__link">
-    ¿Por qué publicar datos abiertos?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#que-son-los-datos-abiertos" title="¿Qué son los datos abiertos?" class="md-nav__link">
-    ¿Qué son los datos abiertos?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#no-todos-los-datos-publicos-son-abiertos" title="No todos los datos públicos son abiertos" class="md-nav__link">
-    No todos los datos públicos son abiertos
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-publicar-datos-abiertos" title="¿Cómo publicar datos abiertos?" class="md-nav__link">
-    ¿Cómo publicar datos abiertos?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#equipo" title="Equipo" class="md-nav__link">
-    Equipo
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lider-politico" title="Líder político" class="md-nav__link">
-    Líder político
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coordinador" title="Coordinador" class="md-nav__link">
-    Coordinador
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#perfil-tecnico" title="Perfil técnico" class="md-nav__link">
-    Perfil técnico
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#perfil-analista" title="Perfil analista" class="md-nav__link">
-    Perfil analista
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#equipos-de-soporte" title="Equipos de Soporte" class="md-nav__link">
-    Equipos de Soporte
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#marco-normativo" title="Marco normativo" class="md-nav__link">
-    Marco normativo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#plataforma-de-publicacion" title="Plataforma de publicación" class="md-nav__link">
-    Plataforma de publicación
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#que-plataforma-adoptar" title="¿Qué plataforma adoptar?" class="md-nav__link">
-    ¿Qué plataforma adoptar?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#andino" title="Andino" class="md-nav__link">
-    Andino
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#buenas-practicas" title="Buenas prácticas" class="md-nav__link">
-    Buenas prácticas
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#que-datasets-publicar" title="¿Qué datasets publicar?" class="md-nav__link">
-    ¿Qué datasets publicar?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-evaluar-la-politica-de-apertura" title="¿Cómo evaluar la política de apertura?" class="md-nav__link">
-    ¿Cómo evaluar la política de apertura?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-difundir-el-uso-de-datos" title="¿Cómo difundir el uso de datos?" class="md-nav__link">
-    ¿Cómo difundir el uso de datos?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comunicar-la-iniciativa" title="Comunicar la iniciativa" class="md-nav__link">
-    Comunicar la iniciativa
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sectores-reutilizadores" title="Sectores reutilizadores" class="md-nav__link">
-    Sectores reutilizadores
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#los-funcionarios-y-empleados-publicos" title="Los funcionarios y empleados públicos" class="md-nav__link">
-    Los funcionarios y empleados públicos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sociedad-civil-organizada" title="Sociedad civil organizada" class="md-nav__link">
-    Sociedad civil organizada
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#periodismo-y-desarrolladores-de-contenido" title="Periodismo y desarrolladores de contenido" class="md-nav__link">
-    Periodismo y desarrolladores de contenido
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#emprendedores-tecnologicos" title="Emprendedores tecnológicos" class="md-nav__link">
-    Emprendedores tecnológicos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#academia-y-comunidad-educativa" title="Academia y comunidad educativa" class="md-nav__link">
-    Academia y comunidad educativa
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#espacios-de-colaboracion" title="Espacios de colaboración" class="md-nav__link">
-    Espacios de colaboración
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anexo-i-recursos-recomendados" title="Anexo I: recursos recomendados" class="md-nav__link">
-    Anexo I: recursos recomendados
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anexo-ii-indices-internacionales-y-marco-normativo-que-fijan-prioridades-de-publicacion" title="Anexo II: índices internacionales y marco normativo que fijan prioridades de publicación" class="md-nav__link">
-    Anexo II: índices internacionales y marco normativo que fijan prioridades de publicación
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#glosario" title="Glosario" class="md-nav__link">
-    Glosario
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -772,254 +532,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#por-que-publicar-datos-abiertos" title="¿Por qué publicar datos abiertos?" class="md-nav__link">
-    ¿Por qué publicar datos abiertos?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#que-son-los-datos-abiertos" title="¿Qué son los datos abiertos?" class="md-nav__link">
-    ¿Qué son los datos abiertos?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#no-todos-los-datos-publicos-son-abiertos" title="No todos los datos públicos son abiertos" class="md-nav__link">
-    No todos los datos públicos son abiertos
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-publicar-datos-abiertos" title="¿Cómo publicar datos abiertos?" class="md-nav__link">
-    ¿Cómo publicar datos abiertos?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#equipo" title="Equipo" class="md-nav__link">
-    Equipo
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lider-politico" title="Líder político" class="md-nav__link">
-    Líder político
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coordinador" title="Coordinador" class="md-nav__link">
-    Coordinador
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#perfil-tecnico" title="Perfil técnico" class="md-nav__link">
-    Perfil técnico
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#perfil-analista" title="Perfil analista" class="md-nav__link">
-    Perfil analista
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#equipos-de-soporte" title="Equipos de Soporte" class="md-nav__link">
-    Equipos de Soporte
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#marco-normativo" title="Marco normativo" class="md-nav__link">
-    Marco normativo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#plataforma-de-publicacion" title="Plataforma de publicación" class="md-nav__link">
-    Plataforma de publicación
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#que-plataforma-adoptar" title="¿Qué plataforma adoptar?" class="md-nav__link">
-    ¿Qué plataforma adoptar?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#andino" title="Andino" class="md-nav__link">
-    Andino
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#buenas-practicas" title="Buenas prácticas" class="md-nav__link">
-    Buenas prácticas
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#que-datasets-publicar" title="¿Qué datasets publicar?" class="md-nav__link">
-    ¿Qué datasets publicar?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-evaluar-la-politica-de-apertura" title="¿Cómo evaluar la política de apertura?" class="md-nav__link">
-    ¿Cómo evaluar la política de apertura?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-difundir-el-uso-de-datos" title="¿Cómo difundir el uso de datos?" class="md-nav__link">
-    ¿Cómo difundir el uso de datos?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comunicar-la-iniciativa" title="Comunicar la iniciativa" class="md-nav__link">
-    Comunicar la iniciativa
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sectores-reutilizadores" title="Sectores reutilizadores" class="md-nav__link">
-    Sectores reutilizadores
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#los-funcionarios-y-empleados-publicos" title="Los funcionarios y empleados públicos" class="md-nav__link">
-    Los funcionarios y empleados públicos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sociedad-civil-organizada" title="Sociedad civil organizada" class="md-nav__link">
-    Sociedad civil organizada
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#periodismo-y-desarrolladores-de-contenido" title="Periodismo y desarrolladores de contenido" class="md-nav__link">
-    Periodismo y desarrolladores de contenido
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#emprendedores-tecnologicos" title="Emprendedores tecnológicos" class="md-nav__link">
-    Emprendedores tecnológicos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#academia-y-comunidad-educativa" title="Academia y comunidad educativa" class="md-nav__link">
-    Academia y comunidad educativa
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#espacios-de-colaboracion" title="Espacios de colaboración" class="md-nav__link">
-    Espacios de colaboración
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anexo-i-recursos-recomendados" title="Anexo I: recursos recomendados" class="md-nav__link">
-    Anexo I: recursos recomendados
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anexo-ii-indices-internacionales-y-marco-normativo-que-fijan-prioridades-de-publicacion" title="Anexo II: índices internacionales y marco normativo que fijan prioridades de publicación" class="md-nav__link">
-    Anexo II: índices internacionales y marco normativo que fijan prioridades de publicación
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#glosario" title="Glosario" class="md-nav__link">
-    Glosario
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1033,7 +545,41 @@
                   <a href="https://github.com/datosgobar/paquete-apertura-datos/edit/master/docs/guia-subnacionales.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="guia-para-la-apertura-de-datos-en-gobiernos-provinciales-y-locales"><a class="toclink" href="#guia-para-la-apertura-de-datos-en-gobiernos-provinciales-y-locales">Guía para la apertura de datos en gobiernos provinciales y locales</a><a class="headerlink" href="#guia-para-la-apertura-de-datos-en-gobiernos-provinciales-y-locales" title="Permanent link">&#128279;</a></h1>
+                <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<h2 id="indice"><a class="toclink" href="#indice">Indice</a><a class="headerlink" href="#indice" title="Permanent link">&#128279;</a></h2>
+<ul>
+<li><a href="#guia-para-la-apertura-de-datos-en-gobiernos-provinciales-y-locales">Guía para la apertura de datos en gobiernos provinciales y locales</a><ul>
+<li><a href="#por-que-publicar-datos-abiertos">¿Por qué publicar datos abiertos?</a><ul>
+<li><a href="#que-son-los-datos-abiertos">¿Qué son los datos abiertos?</a></li>
+<li><a href="#no-todos-los-datos-publicos-son-abiertos">No todos los datos públicos son abiertos</a></li>
+</ul>
+</li>
+<li><a href="#como-publicar-datos-abiertos">¿Cómo publicar datos abiertos?</a><ul>
+<li><a href="#equipo">Equipo</a></li>
+<li><a href="#plataforma-de-publicacion">Plataforma de publicación</a></li>
+<li><a href="#buenas-practicas">Buenas prácticas</a></li>
+</ul>
+</li>
+<li><a href="#que-datasets-publicar">¿Qué datasets publicar?</a></li>
+<li><a href="#como-evaluar-la-politica-de-apertura">¿Cómo evaluar la política de apertura?</a></li>
+<li><a href="#como-difundir-el-uso-de-datos">¿Cómo difundir el uso de datos?</a><ul>
+<li><a href="#comunicar-la-iniciativa">Comunicar la iniciativa</a></li>
+<li><a href="#sectores-reutilizadores">Sectores reutilizadores</a></li>
+<li><a href="#espacios-de-colaboracion">Espacios de colaboración</a></li>
+</ul>
+</li>
+<li><a href="#anexo-i-recursos-recomendados">Anexo I: recursos recomendados</a></li>
+<li><a href="#anexo-ii-indices-internacionales-y-marco-normativo-que-fijan-prioridades-de-publicacion">Anexo II: índices internacionales y marco normativo que fijan prioridades de publicación</a></li>
+<li><a href="#glosario">Glosario</a></li>
+</ul>
+</li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h1 id="guia-para-la-apertura-de-datos-en-gobiernos-provinciales-y-locales"><a class="toclink" href="#guia-para-la-apertura-de-datos-en-gobiernos-provinciales-y-locales">Guía para la apertura de datos en gobiernos provinciales y locales</a><a class="headerlink" href="#guia-para-la-apertura-de-datos-en-gobiernos-provinciales-y-locales" title="Permanent link">&#128279;</a></h1>
 <p>Si formás parte del equipo de trabajo de una provincia o municipio, esta guía te da los conceptos clave y las bases para que puedas diseñar e implementar políticas de datos abiertos. </p>
 <p>Desde la aprobación del <a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/255000-259999/257755/norma.htm">Plan de Apertura de Datos del decreto 117/2016</a> y la <a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/265949/norma.htm">Ley de Acceso a la Información Pública 27275</a>, cada vez más organismos públicos y distintos niveles de la Administracion Pública empezaron a publicar sus datos, para mostrar transparencia en la gestión y que los  ciudadanos puedan tener acceso a información clara que puedan reutilizar.  </p>
 <div class="admonition note">
@@ -1450,7 +996,7 @@ Bordes de los polígonos</td>
 <li>Indicadores inmobiliarios</li>
 </ul>
 <div class="admonition note">
-<p><a href="https://medium.com/balab/qu%C3%A9-se-hizo-con-los-datos-de-la-ciudad-c435d74f9d0e">Otros ejemplos de uso de datos abiertos por la Ciudad de Buenos Aires</a></p>
+<p><a href="https://medium.com/balab/que-se-hizo-con-los-datos-de-la-ciudad-c435d74f9d0e">Otros ejemplos de uso de datos abiertos por la Ciudad de Buenos Aires</a></p>
 </div>
 <h4 id="sociedad-civil-organizada"><a class="toclink" href="#sociedad-civil-organizada">Sociedad civil organizada</a><a class="headerlink" href="#sociedad-civil-organizada" title="Permanent link">&#128279;</a></h4>
 <p>El conjunto de actores de la sociedad civil es un catalizador de las demandas sociales.
@@ -1576,15 +1122,13 @@ Los diferentes tipos de organizaciones sociales, como las ONGs, clubes, colegios
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
       
         
         
@@ -1602,11 +1146,6 @@ Los diferentes tipos de organizaciones sociales, como las ONGs, clubes, colegios
         
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
   </body>

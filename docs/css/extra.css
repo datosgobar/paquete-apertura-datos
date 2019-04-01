@@ -1,7 +1,7 @@
 .md-header {
     background-color: hsl(0, 0%, 100%);
     color: #0695c8;
-    height: 6.8rem;
+    height: 3.2rem !important;
 }
 
 .md-flex {
@@ -164,3 +164,4 @@ body {
 .no-recomendado {
     color: red;
 }
+

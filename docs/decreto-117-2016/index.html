@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
@@ -47,7 +47,7 @@
     
     
 	
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
       
       
     
@@ -55,7 +55,7 @@
 
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     <script src="../js/extra.js"></script>
 
@@ -68,7 +68,36 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../css/table_styles.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-91435482-1", "https://datosgobar.github.io/paquete-apertura-datos/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -125,22 +154,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Paquete de Apertura de Datos de la República Argentina
-              </span>
-              <span class="md-header-nav__topic">
-                Decreto 117/2016 "Plan de Apertura de Datos"
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Paquete de Apertura de Datos de la República Argentina
+            </span>
+            <span class="md-header-nav__topic">
+              Decreto 117/2016 "Plan de Apertura de Datos"
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -163,7 +189,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -174,20 +199,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         </div>
       
@@ -251,20 +274,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         
       
@@ -461,15 +482,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#considerando" title="CONSIDERANDO:" class="md-nav__link">
-    CONSIDERANDO:
+  <a href="#considerando" title="CONSIDERANDO" class="md-nav__link">
+    CONSIDERANDO
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#decreta" title="DECRETA:" class="md-nav__link">
-    DECRETA:
+  <a href="#decreta" title="DECRETA" class="md-nav__link">
+    DECRETA
   </a>
   
 </li>
@@ -551,15 +572,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#considerando" title="CONSIDERANDO:" class="md-nav__link">
-    CONSIDERANDO:
+  <a href="#considerando" title="CONSIDERANDO" class="md-nav__link">
+    CONSIDERANDO
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#decreta" title="DECRETA:" class="md-nav__link">
-    DECRETA:
+  <a href="#decreta" title="DECRETA" class="md-nav__link">
+    DECRETA
   </a>
   
 </li>
@@ -589,7 +610,7 @@
 <p><strong>“Plan de Apertura de Datos”.</strong></p>
 <p>Bs. As., 12/01/2016</p>
 <p>VISTO el Expediente N° CUDAP: EXP-JGM:0000436/2016, la CONSTITUCIÓN NACIONAL, la Declaración Universal de los Derechos Humanos, el Pacto Internacional de Derechos Civiles y Políticos, la Convención Americana sobre Derechos Humanos, la Convención de las Naciones Unidas contra la Corrupción, la Convención Interamericana contra la Corrupción, la Ley de Ministerios (texto ordenado por Decreto N° 438/92) y sus modificatorias, y el Decreto N° 13 de fecha 10 de diciembre de 2015, y</p>
-<h2 id="considerando"><a class="toclink" href="#considerando">CONSIDERANDO:</a><a class="headerlink" href="#considerando" title="Permanent link">&#128279;</a></h2>
+<h2 id="considerando"><a class="toclink" href="#considerando">CONSIDERANDO</a><a class="headerlink" href="#considerando" title="Permanent link">&#128279;</a></h2>
 <p>Que la CONSTITUCIÓN NACIONAL garantiza el principio de publicidad de los actos de Gobierno y el derecho de acceso a la información pública a través de los artículos 33, 41, 42 y 75 inciso 22, por el cual se incorporan con jerarquía constitucional diversos Tratados Internacionales;</p>
 <p>Que el derecho de buscar y recibir información ha sido consagrado expresamente por la Declaración Universal de los Derechos Humanos (artículo 19), por el Pacto Internacional de Derechos Civiles y Políticos (artículo 19.2) y por la Convención Americana sobre Derechos Humanos (artículo 13.1.), incluidos en la mencionada disposición constitucional.</p>
 <p>Que la Asamblea General de la Organización de las Naciones Unidas afirmó en su resolución 59 (I) que “la libertad de información es un derecho humano fundamental”, pronunciándose en el mismo sentido la Corte Interamericana de Derechos Humanos en el caso Claude Reyes y otros vs. Chile reconociendo como fundamental el derecho de acceso a la información pública en su doble vertiente, tanto como derecho individual de toda persona, así como obligación positiva del Estado para garantizar el efectivo ejercicio de dicho derecho.</p>
@@ -607,7 +628,7 @@
 <p>Que la presente medida se dicta en ejercicio de las atribuciones conferidas por el artículo 99, inciso 1 de la CONSTITUCIÓN NACIONAL.</p>
 <p>Por ello,</p>
 <p>EL PRESIDENTE DE LA NACIÓN ARGENTINA</p>
-<h2 id="decreta"><a class="toclink" href="#decreta">DECRETA:</a><a class="headerlink" href="#decreta" title="Permanent link">&#128279;</a></h2>
+<h2 id="decreta"><a class="toclink" href="#decreta">DECRETA</a><a class="headerlink" href="#decreta" title="Permanent link">&#128279;</a></h2>
 <p><strong>Artículo 1°</strong> — Instrúyese a los Ministerios, Secretarías y organismos desconcentrados y descentralizados dependientes del PODER EJECUTIVO NACIONAL, a elaborar y presentar en un plazo no mayor a CIENTO OCHENTA (180) días desde la entrada en vigencia del presente, ante el MINISTERIO DE MODERNIZACIÓN y a los efectos de su publicación, un “Plan de Apertura de Datos”, el que deberá detallar los activos de datos bajo su jurisdicción y/o tutela, así como el cronograma de publicación aplicable a los mismos conforme los lineamientos que oportunamente defina el mencionado MINISTERIO DE MODERNIZACIÓN en su calidad de Autoridad de Aplicación.</p>
 <p>La publicación mencionada en el párrafo precedente, sólo será limitada cuando así lo dispongan normas específicas de aplicación o por razones fundadas en oportunidad, mérito y conveniencia, a juicio de la Autoridad de Aplicación.</p>
 <p><strong>Art. 2°</strong>— Arbítrense los medios necesarios para publicar en un plazo no mayor a NOVENTA (90) días, y mantener actualizado a través del Portal Nacional de Datos Públicos:</p>
@@ -686,15 +707,13 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
       
         
         
@@ -712,11 +731,6 @@
         
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
   </body>

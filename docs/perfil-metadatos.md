@@ -17,7 +17,7 @@
     </tr>
     <tr>
         <td>Estado</td>
-        <td>Publicación digital (falta aprobación normativa)</td>
+        <td>Pendiente de aprobación</td>
     </tr>
     <tr>
         <td>Versión</td>
@@ -55,7 +55,7 @@
     <tr>
         <td>1.2</td>
         <td>TBD</td>
-        <td>Publicación digital de la versión 1.2</td>
+        <td>Pendiente de aprobación</td>
     </tr>
 </table>
 
@@ -63,37 +63,25 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Indice
 
-- [Introducción](#introducci%C3%B3n)
+- [Introducción](#introduccion)
     - [Objetivo](#objetivo)
     - [Antecedentes](#antecedentes)
-- [Terminología](#terminolog%C3%ADa)
+- [Terminología](#terminologia)
 - [Referencia](#referencia)
     - [Esquema](#esquema)
     - [Clases del perfil](#clases-del-perfil)
-        - [Obligatorias](#obligatorias)
-        - [Recomendadas](#recomendadas)
     - [Campos del perfil](#campos-del-perfil)
-        - [Catálogo (`catalog`)](#cat%C3%A1logo-catalog)
-        - [Dataset (`dataset`)](#dataset-dataset)
-        - [Distribución (`distribution`)](#distribuci%C3%B3n-distribution)
-        - [Campo (`field`)](#campo-field)
-        - [Tema (`theme`)](#tema-theme)
     - [Extensiones especiales](#extensiones-especiales)
-        - [Series de tiempo](#series-de-tiempo)
 - [Condiciones de cumplimiento del perfil](#condiciones-de-cumplimiento-del-perfil)
     - [Proveedores de metadatos](#proveedores-de-metadatos)
     - [Alcance](#alcance)
     - [Consumidores de metadatos](#consumidores-de-metadatos)
 - [Anexos](#anexos)
-    - [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i-taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-tabla)
-    - [Anexo II - Pautas para la selección de etiquetas](#anexo-ii-pautas-para-la-selecci%C3%B3n-de-etiquetas)
-    - [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificaci%C3%B3n-de-frecuencias-seg%C3%BAn-iso-8601)
-    - [Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)
-    - [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v-taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-json)
-    - [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)
-    - [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo)
-    - [Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo](#anexo-viii-ejemplos-de-metadatos-en-json-de-un-dataset-de-series-de-tiempo)
-    - [Anexo IX - Precisión de series con números enteros y decimales](#anexo-ix-precisi%C3%B3n-de-series-con-n%C3%BAmeros-enteros-y-decimales)
+    - [Anexo I - Especificación de frecuencias](#anexo-i-especificacion-de-frecuencias)
+    - [Anexo II - Taxonomía temática](#anexo-ii-taxonomia-tematica)
+    - [Anexo III - Ejemplo de catálogo](#anexo-iii-ejemplo-de-catalogo)
+    - [Anexo IV - Series de tiempo](#anexo-iv-series-de-tiempo)
+    - [Anexo V - Pautas para la selección de etiquetas](#anexo-v-pautas-para-la-seleccion-de-etiquetas)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -101,13 +89,13 @@
 
 ### Objetivo
 
-El Perfil Nacional de Metadatos para Datos Abiertos **es un estándar de documentación de activos de datos digitales**, desarrollado para organismos de la Administración Pública Nacional, con el fin de catalogar de manera homogénea todos sus activos de datos abiertos a la ciudadanía y el público en general.
+El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos **es una especificación para documentar activos de datos digitales**, desarrollado para organismos de la Administración Pública Nacional, con el fin de catalogar de manera homogénea todos sus activos de datos abiertos a la ciudadanía y el público en general.
 
-El objetivo final perseguido es así poder generar un catálogo central normalizado de activos de datos digitales abiertos facilitando su búsqueda, acceso, comprensión contextual e integración efectiva en sistemas, aplicaciones y flujos de trabajo con datos, a un bajo costo para el usuario.
+El perfil tiene por objetivo facilitar la búsqueda y acceso por parte de los usuarios a los activos de datos digitales abiertos mediante la implementación de un catálogo central normalizado, que permita la integración efectiva en sistemas, aplicaciones y flujos de trabajo con datos.
 
 ### Antecedentes
 
-El Perfil Nacional de Metadatos para Datos Abiertos **es una extensión del estándar [DCAT - AP](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe)**, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.
+El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos **es una extensión de [DCAT - AP](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe)**, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.
 
 Según la W3C: "Mediante la utilización de DCAT para describir datasets en catálogos de datos, quienes publican aumentan la posibilidad de descubrimiento (*discoverability*) y permiten a aplicaciones informáticas consumir metadatos de manera simple desde múltiples catálogos. Además permite la publicación descentralizada de catálogos y favorece la búsqueda *federada* de datasets a través de varios sitios."
 
@@ -120,7 +108,7 @@ Así mismo, este perfil toma elementos del [Perfil Regional de Metadatos](https:
 * **Dataset**: es un conjunto de datos que agrupa recursos referidos a un mismo tema, que respetan una estructura de la información que los relaciona entre sí.
 * **Distribución**: es un recurso o activo de datos que se puede descargar (un archivo) y sus metadatos asociados. Puede tener diversos formatos (csv, shp, xlsx, etc) o estar disponible en línea (html, php).
 * **Activo de datos**: es la forma más genérica de referirse a cualquier recurso o conjunto de recursos de datos que pueda ser tratado como una unidad a efectos de su gestión, uso, protección, intercambio o referencia.
-* **Campo obligatorio**: es una propiedad de uso obligatorio para el cumplimiento del perfil.
+* **Campo obligatorio**: es una propiedad de uso obligatorio para el cumplimiento del perfil. Permite que todos los activos de datos cuenten con una documentación básica homogénea.
 * **Campo recomendado**: es una propiedad que, si bien no es obligatoria, su uso es recomendado para una mayor calidad de documentación de activos de datos.
 * **Campo opcional**: es una propiedad disponible para su uso en caso de que sea de utilidad para el organismo, pero que no necesariamente aplica para todos los casos.
 
@@ -187,7 +175,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
   <tr>
     <td>Identificador</td>
     <td>Recomendado</td>
-    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (http://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
+    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (https://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
     <td>"enacom"<br/>
     "energia"<br/>
     "desarrollo-social"<br/>
@@ -216,7 +204,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Autor</td>
     <td>Sí</td>
     <td>Responsable de la publicación del catálogo.</td>
-    <td>Ministerio de Modernización</td>
+    <td>Secretaría de Gobierno de Modernización</td>
     <td>publisher -> name</td>
     <td>String</td>
   </tr>
@@ -275,8 +263,8 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual todos los datasets y distribuciones del catálogo están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a> . recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset o distribución que especifique una licencia diferente, sobreescribe a la licencia general del catálogo.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>Indica la licencia bajo la cual todos los datasets y distribuciones del catálogo están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="https://opendefinition.org/licenses/">https://opendefinition.org/licenses/</a> . recomendamos usar la licencia "Creative Commons Attribution 4.0". Un dataset o distribución que especifique una licencia diferente, sobreescribe a la licencia general del catálogo.</td>
+    <td>"https://creativecommons.org/licenses/by/4.0/legalcode.es" si se utiliza un enlace<br/>"Creative Commons Attribution 4.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
   </tr>
@@ -284,15 +272,15 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Página web del catálogo</td>
     <td>Recomendado</td>
     <td>Dirección web de acceso a la página principal del catálogo. Enlace a la página principal del catálogo.</td>
-    <td>http://datos.gob.ar</td>
+    <td>https://datos.gob.ar</td>
     <td>homepage</td>
     <td>String</td>
   </tr>
   <tr>
     <td>Taxonomía temática global</td>
     <td>Sí</td>
-    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en <a href="http://datos.gob.ar/superThemeTaxonomy.json">http://datos.gob.ar/superThemeTaxonomy.json</a>.</td>
-    <td>http://datos.gob.ar/superThemeTaxonomy.json</td>
+    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en <a href="https://datos.gob.ar/superThemeTaxonomy.json">https://datos.gob.ar/superThemeTaxonomy.json</a>.</td>
+    <td>https://datos.gob.ar/superThemeTaxonomy.json</td>
     <td>superThemeTaxonomy</td>
     <td>String</td>
   </tr>
@@ -320,11 +308,11 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     b) Un área de coordenadas representada por latitud/ longitud en el orden: minima longitud, mínima latitud, máxima longitud, máxima latitud.<br/>
     c) Un punto geográfico representado por latitud/longitud.<br/>
     d) Si la referencia geográfico no está identificada en la Guía para la identificación y uso de entidades interoperables indicar la URIs según geonames.org; ej : 
-    http://sws.geonames.org/6255146</td>
+    https://sws.geonames.org/6255146</td>
     <td>"ARG" es el código para la República Argentina.<br/>
     "06007" es el código de un departamento<br/>
     [-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box<br/>
-    [-58.111111, -35.111111] es un punto geográfico<br/>"http://sws.geonames.org/6255146"</td>
+    [-58.111111, -35.111111] es un punto geográfico<br/>"https://sws.geonames.org/6255146"</td>
     <td>spatial</td>
     <td>String or Array</td>
   </tr>
@@ -353,7 +341,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Título</td>
     <td>Sí</td>
     <td>Nombre asignado al dataset tal como será publicado. Debe ser claro y lo suficientemente abstracto como para abarcar la multiplicidad de distribuciones que contiene. Se recomienda no exceder los 100 caracteres en la mayoría de los casos. En caso de que un título más largo se juzgue necesario o relevante, este no deberá exceder los 200 caracteres.</td>
-    <td>Sistema de contrataciones electrónicas</td>
+    <td>Sistema de Contrataciones Electrónicas (Argentina Compra)</td>
     <td>title</td>
     <td>String</td>
   </tr>
@@ -368,8 +356,8 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
   <tr>
     <td>Autor</td>
     <td>Sí</td>
-    <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (<a href="http://datos.gob.ar/dataset/estructura-organica-pen">http://datos.gob.ar/dataset/estructura-organica-pen</a>), deberá utilizarse la denominación allí documentada.</td>
-    <td>Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones.</td>
+    <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (<a href="https://datos.gob.ar/dataset/jgm-estructura-organica-autoridades-poder-ejecutivo-nacional">https://datos.gob.ar/dataset/estructura-organica-pen</a>), deberá utilizarse la denominación allí documentada.</td>
+    <td>Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones.</td>
     <td>publisher -> name</td>
     <td>String</td>
   </tr>
@@ -385,7 +373,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Área/Persona de contacto</td>
     <td>Recomendado</td>
     <td>Área/persona de contacto que puede brindar información relevante sobre el dataset.</td>
-    <td>Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.</td>
+    <td>Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.</td>
     <td>contactPoint -> fn</td>
     <td>String</td>
   </tr>
@@ -448,7 +436,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
   <tr>
     <td>Fuente primaria</td>
     <td>No</td>
-    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/><br/> En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (http://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
+    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/><br/> En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (https://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
     <td>Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.</td>
     <td>source</td>
     <td>String</td>
@@ -457,7 +445,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Página de referencias</td>
     <td>No</td>
     <td>URL de una página web a través de la cual se puede acceder al dataset, sus recursos o información adicional sobre el mismo.</td>
-    <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra</td>
+    <td>https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra</td>
     <td>landingPage</td>
     <td>String</td>
   </tr>
@@ -480,8 +468,8 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="https://opendefinition.org/licenses/">https://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Creative Commons Attribution 4.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
+    <td>"https://creativecommons.org/licenses/by/4.0/legalcode.es" si se utiliza un enlace<br/>"Creative Commons Attribution 4.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
   </tr>
@@ -504,11 +492,11 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     a) De países y, provincias y municipios argentinos, según las recomendaciones de la Guía para la identificación y uso de entidades interoperables.<br/>
     b) Un área de coordenadas representada por latitud/ longitud en el orden: minima longitud, minima latitud, maxima longitud, maxima latitud.<br/>
     c) Un punto geográfico representado por latitud/longitud.<br/>
-    d) Si la referencia geográfico no está identificada en la Guía para la identificación y uso de entidades interoperables indicar la URIs según geonames.org; ej : http://sws.geonames.org/6255146"</td>
+    d) Si la referencia geográfico no está identificada en la Guía para la identificación y uso de entidades interoperables indicar la URIs según geonames.org; ej : https://sws.geonames.org/6255146"</td>
     <td>"ARG" es el código para la República Argentina.<br/>
     "06007" es el código de un departamento<br/>
     [-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box<br/>[-58.111111, -35.111111] es un punto geográfico<br/>
-    "http://sws.geonames.org/6255146"</td>
+    "https://sws.geonames.org/6255146"</td>
     <td>spatial</td>
     <td>Array or String</td>
   </tr>
@@ -529,7 +517,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Identificador</td>
     <td>Si</td>
     <td>Identificador único de la distribución, este identificador debe ser único para la distribución dentro del catálogo completo.<br/><br/>Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
-    <td>1.2</td>
+    <td>2.1</td>
     <td>identifier</td>
     <td>String</td>
   </tr>
@@ -537,7 +525,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Título</td>
     <td>Sí</td>
     <td>Nombre asignado a la distribución.</td>
-    <td>Convocatorias abiertas durante el año 2015</td>
+    <td>Convocatorias 2017</td>
     <td>title</td>
     <td>String</td>
   </tr>
@@ -545,7 +533,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Descripción</td>
     <td>Recomendado</td>
     <td>Breve descripción de la distribución. Recomendamos no escribir más de una línea. Toda información adicional puede ser incluida en la descripción del dataset.</td>
-    <td>Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas</td>
+    <td>Listado de convocatorias abiertas durante el 2017 en el nuevo sistema "COMPR.AR".</td>
     <td>description</td>
     <td>String</td>
   </tr>
@@ -553,7 +541,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>URL de descarga</td>
     <td>Sí</td>
     <td>URL que permite la descarga directa de la distribución del dataset, vincula directamente a un archivo descargable en un formato dado.</td>
-    <td>http://datos.gob.ar/dataset/becaceb2-dbd0-4879-93bd-5f02bd3b8ca2/resource/bf2f67f4-9ab3-479b-a881-56b43565125e/download/contratos-2015.csv</td>
+    <td>https://infra.datos.gob.ar/catalog/modernizacion/dataset/2/distribution/2.1/download/convocatorias-2017.csv</td>
     <td>downloadURL</td>
     <td>String</td>
   </tr>
@@ -569,7 +557,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>URL de acceso</td>
     <td>Sí</td>
     <td>URL que permite el acceso a la distribución del dataset. Puede ser una página, feed u otro tipo de recurso que dé acceso indirecto a las distribuciones. Si las distribuciones son solo accesibles a través de la página de referencia del dataset, debe completarse el valor de la URL de acceso a la distribución con el mismo valor de la página de referencia del dataset.</td>
-    <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a</td>
+    <td>https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra/archivo/modernizacion_2.1</td>
     <td>accessURL</td>
     <td>String</td>
   </tr>
@@ -593,15 +581,15 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Fecha de última actualización/ modificación</td>
     <td>Recomendado</td>
     <td>Fecha de última actualización/modificación de la distribución. Según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-19T19:48:05.433640" para especificar fecha y hora<br/>"2016-04-19" para especificar fecha únicamente</td>
+    <td>"2018-02-01T19:48:05.433640" para especificar fecha y hora<br/>"2018-02-01" para especificar fecha únicamente</td>
     <td>modified</td>
     <td>String</td>
   </tr>
   <tr>
     <td>Formato del archivo</td>
     <td>Recomendado</td>
-    <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
-    <td>"text/csv" definición de IANA "csv" caracteres finales después del punto</td>
+    <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (https://www.iana.org/assignments/media-types/media-types.xml), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
+    <td>CSV</td>
     <td>format</td>
     <td>String</td>
   </tr>
@@ -609,22 +597,22 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Nombre del archivo</td>
     <td>Recomendado</td>
     <td>Nombre de la distribución bajo el cual se descarga un archivo que contiene los datos, incluyendo la extensión del formato.<br/><br/>Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números y guiones medios "-".</td>
-    <td>estructura-organica.csv</td>
+    <td>convocatorias-2017.csv</td>
     <td>fileName</td>
     <td>String</td>
   </tr>
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="https://opendefinition.org/licenses/">https://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Creative Commons Attribution 4.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
+    <td>"https://creativecommons.org/licenses/by/4.0/legalcode.es" si se utiliza un enlace<br/> "Creative Commons Attribution 4.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
   </tr>
   <tr>
     <td>Tipo de archivo</td>
     <td>No</td>
-    <td>Indica el tipo de archivo de la distribución, sólo si este está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml). En caso contrario este campo permanece vacío.</td>
+    <td>Indica el tipo de archivo de la distribución, sólo si este está definido por IANA (https://www.iana.org/assignments/media-types/media-types.xml). En caso contrario este campo permanece vacío.</td>
     <td>"text/csv" definición de IANA "" cuando el formato no tiene definición en IANA</td>
     <td>mediaType</td>
     <td>String</td>
@@ -671,7 +659,7 @@ Recomendamos enfáticamente que las distribuciones tabulares **incluyan metadato
   <tr>
     <td>Tipo</td>
     <td>Recomendado</td>
-    <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (<a href="http://okfnlabs.org/recline/docs/models.html#types">http://okfnlabs.org/recline/docs/models.html#types</a>).
+    <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (<a href="https://okfnlabs.org/recline/docs/models.html#types">https://okfnlabs.org/recline/docs/models.html#types</a>).
     <br/><br/>Los tipos incluidos en esta lista son:<br/><br/>
     string (text): Valores de texto.<br/>
     number (double, float, numeric): Números que puedan no ser enteros (incluyen decimales).<br/>
@@ -682,11 +670,11 @@ Recomendamos enfáticamente que las distribuciones tabulares **incluyan metadato
     boolean (bool): Valores verdadero/falso.<br/>
     binary: Representación de datos binarios base64.<br/>
     geo_point: Ver estructura en  <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html">https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html.</a><br/>
-    geojson: ver en <a href="http://geojson.org/">http://geojson.org/</a><br/>
+    geojson: ver en <a href="https://geojson.org/">https://geojson.org/</a><br/>
     array: Lista de valores.<br/>
     object (json): Objeto de JSON.<br/>
     any: Campo que puede contener valores de cualquier tipo.</td>
-    <td>Convocatorias abiertas durante el año 2015</td>
+    <td>Convocatorias 2017</td>
     <td>type</td>
     <td>String</td>
   </tr>
@@ -1046,9 +1034,96 @@ Una aplicación diseñada para leer metadatos de un catálogo publicado según e
 
 ## Anexos
 
-### Anexo I - Taxonomía temática global de la APN para los datasets (tabla)
+### Anexo I - Especificación de frecuencias
 
-El Portal Nacional de Datos usa la [taxonomía temática definida por la Unión Europea](http://publications.europa.eu/mdr/authority/data-theme/index.html).
+Especificación de frecuencias según ISO-8601.
+
+<table>
+  <tr>
+    <th>Frecuencia</th>
+    <th>Valor según ISO-8601</th>
+  </tr>
+  <tr>
+    <td>Cada diez años</td>
+    <td>R/P10Y</td>
+  </tr>
+  <tr>
+    <td>Cada cuatro años</td>
+    <td>R/P4Y</td>
+  </tr>
+  <tr>
+    <td>Cada tres años</td>
+    <td>R/P3Y</td>
+  </tr>
+  <tr>
+    <td>Cada dos años</td>
+    <td>R/P2Y</td>
+  </tr>
+  <tr>
+    <td>Anual</td>
+    <td>R/P1Y</td>
+  </tr>
+  <tr>
+    <td>Cada medio año</td>
+    <td>R/P6M</td>
+  </tr>
+  <tr>
+    <td>Cuatrimestral</td>
+    <td>R/P4M</td>
+  </tr>
+  <tr>
+    <td>Trimestral</td>
+    <td>R/P3M</td>
+  </tr>
+  <tr>
+    <td>Bimestral</td>
+    <td>R/P2M</td>
+  </tr>
+  <tr>
+    <td>Mensual</td>
+    <td>R/P1M</td>
+  </tr>
+  <tr>
+    <td>Cada 15 días</td>
+    <td>R/P0.5M</td>
+  </tr>
+  <tr>
+    <td>Tres veces por mes</td>
+    <td>R/P0.33M</td>
+  </tr>
+  <tr>
+    <td>Semanal</td>
+    <td>R/P1W</td>
+  </tr>
+  <tr>
+    <td>Dos veces a la semana</td>
+    <td>R/P0.5W</td>
+  </tr>
+  <tr>
+    <td>Tres veces a la semana</td>
+    <td>R/P0.33W</td>
+  </tr>
+  <tr>
+    <td>Diaria</td>
+    <td>R/P1D</td>
+  </tr>
+  <tr>
+    <td>Cada hora</td>
+    <td>R/PT1H</td>
+  </tr>
+  <tr>
+    <td>Continuamente actualizado</td>
+    <td>R/PT1S</td>
+  </tr>
+  <tr>
+    <td>Eventual</td>
+    <td>eventual</td>
+  </tr>
+</table>
+
+### Anexo II - Taxonomía temática
+
+El Portal Nacional de Datos usa la [taxonomía temática definida por la Unión Europea](https://publications.europa.eu/mdr/authority/data-theme/index.html).
 
 **Cada catálogo de datos puede desarrollar su propia taxonomía**, cuyo uso se expresa en  los siguientes campos de metadatos (y sus equivalentes para el Portal Andino):
 
@@ -1135,283 +1210,7 @@ Además del uso de una taxonomía propia de cada catálogo de datos, **recomenda
     </tbody>
 </table>
 
-### Anexo II - Pautas para la selección de etiquetas
-
-Elegir buenas etiquetas hace más fácil la búsqueda de datasets para los usuarios. Cuanto más amplia y uniforme sea la lista de etiquetas, mayor será su efectividad.
-
-Estas son pautas para definir etiquetas aplicables a la propiedad *keyword* de la clase dataset:
-
-* Escribir correctamente y en plural.
-* Usar mayúsculas sólo donde corresponda.
-* Identificar palabras claves.
-* Respetar la existencia de etiquetas anteriores.
-* Agregar sinónimos y emplear lenguaje natural.
-* Usar una sóla palabra. Si es muy necesario, usar más de una. 
-* Si la etiqueta tiene más de una palabra, debe estar separada por un espacio, ej: "declaraciones juradas".
-
-Preguntas útiles a la hora de pensar los etiquetas:
-
-* ¿Cuál es el tema?
-* ¿Qué aspectos serán de interés para los usuarios?
-* ¿De qué otro modo buscaría sobre esta información?
-* ¿De qué tipo de información se trata?
-* ¿Qué área la provee?
-
-### Anexo III - Especificación de frecuencias (según ISO-8601)
-
-<table>
-  <tr>
-    <th>Frecuencia</th>
-    <th>Valor según ISO-8601</th>
-  </tr>
-  <tr>
-    <td>Cada diez años</td>
-    <td>R/P10Y</td>
-  </tr>
-  <tr>
-    <td>Cada cuatro años</td>
-    <td>R/P4Y</td>
-  </tr>
-  <tr>
-    <td>Cada tres años</td>
-    <td>R/P3Y</td>
-  </tr>
-  <tr>
-    <td>Cada dos años</td>
-    <td>R/P2Y</td>
-  </tr>
-  <tr>
-    <td>Anual</td>
-    <td>R/P1Y</td>
-  </tr>
-  <tr>
-    <td>Cada medio año</td>
-    <td>R/P6M</td>
-  </tr>
-  <tr>
-    <td>Cuatrimestral</td>
-    <td>R/P4M</td>
-  </tr>
-  <tr>
-    <td>Trimestral</td>
-    <td>R/P3M</td>
-  </tr>
-  <tr>
-    <td>Bimestral</td>
-    <td>R/P2M</td>
-  </tr>
-  <tr>
-    <td>Mensual</td>
-    <td>R/P1M</td>
-  </tr>
-  <tr>
-    <td>Cada 15 días</td>
-    <td>R/P0.5M</td>
-  </tr>
-  <tr>
-    <td>Tres veces por mes</td>
-    <td>R/P0.33M</td>
-  </tr>
-  <tr>
-    <td>Semanal</td>
-    <td>R/P1W</td>
-  </tr>
-  <tr>
-    <td>Dos veces a la semana</td>
-    <td>R/P0.5W</td>
-  </tr>
-  <tr>
-    <td>Tres veces a la semana</td>
-    <td>R/P0.33W</td>
-  </tr>
-  <tr>
-    <td>Diaria</td>
-    <td>R/P1D</td>
-  </tr>
-  <tr>
-    <td>Cada hora</td>
-    <td>R/PT1H</td>
-  </tr>
-  <tr>
-    <td>Continuamente actualizado</td>
-    <td>R/PT1S</td>
-  </tr>
-  <tr>
-    <td>Eventual</td>
-    <td>eventual</td>
-  </tr>
-</table>
-
-### Anexo IV - Ejemplo de data.json
-
-Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json):
-
-```json
-{
-  "title": "Datos Argentina",
-  "description": "Portal de Datos Abiertos del Gobierno de la República Argentina",
-  "publisher": {
-    "name": "Ministerio de Modernización",
-    "mbox": "datos@modernizacion.gob.ar"
-  },
-  "issued": "2016-04-14T19:48:05.433640-03:00",
-  "modified": "2016-04-19T19:48:05.433640-03:00",
-  "language": [
-    "spa"
-  ],
-  "superThemeTaxonomy": "http://datos.gob.ar/superThemeTaxonomy.json",
-  "themeTaxonomy": [
-    {
-      "id": "convocatorias",
-      "label": "Convocatorias",
-      "description": "Datasets sobre licitaciones en estado de convocatoria."
-    },
-    {
-      "id": "compras",
-      "label": "Compras",
-      "description": "Datasets sobre compras realizadas."
-    },
-    {
-      "id": "contrataciones",
-      "label": "Contrataciones",
-      "description": "Datasets sobre contrataciones."
-    },
-    {
-      "id": "adjudicaciones",
-      "label": "Adjudicaciones",
-      "description": "Datasets sobre licitaciones adjudicadas."
-    },
-    {
-      "id": "normativa",
-      "label": "Normativa",
-      "description": "Datasets sobre normativa para compras y contrataciones."
-    },
-    {
-      "id": "proveedores",
-      "label": "Proveedores",
-      "description": "Datasets sobre proveedores del Estado."
-    }
-  ],
-  "license": "Open Data Commons Open Database License 1.0",
-  "homepage": "http://datos.gob.ar",
-  "rights": "Derechos especificados en la licencia.",
-  "spatial": "ARG",
-  "dataset": [
-    {
-      "title": "Sistema de contrataciones electrónicas",
-      "description": "Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Compra)",
-      "publisher": {
-        "name": "Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones",
-        "mbox": "onc@modernizacion.gob.ar"
-      },
-      "contactPoint": {
-        "fn": "Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.",
-        "hasEmail": "onc-compraselectronicas@modernizacion.gob.ar"
-      },
-      "superTheme": [
-        "ECON"
-      ],
-      "theme": [
-        "contrataciones",
-        "compras",
-        "convocatorias"
-      ],
-      "keyword": [
-        "bienes",
-        "compras",
-        "contrataciones"
-      ],
-      "accrualPeriodicity": "R/P1Y",
-      "issued": "2016-04-14T19:48:05.433640-03:00",
-      "modified": "2016-04-19T19:48:05.433640-03:00",
-      "identifier": "99db6631-d1c9-470b-a73e-c62daa32c420",
-      "language": [
-        "spa"
-      ],
-      "spatial": "ARG",
-      "temporal": "2015-01-01/2015-12-31",
-      "landingPage": "http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra",
-      "license": "Open Data Commons Open Database License 1.0",
-      "distribution": [
-        {
-          "accessURL": "http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a",
-          "description": "Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas",
-          "format": "CSV",
-          "mediaType": "text/csv",
-          "downloadURL": "http://186.33.211.253/dataset/99db6631-d1c9-470b-a73e-c62daa32c420/resource/4b7447cb-31ff-4352-96c3-589d212e1cc9/download/convocatorias-abiertas-anio-2015.csv",
-          "title": "Convocatorias abiertas durante el año 2015",
-          "license": "Open Data Commons Open Database License 1.0",
-          "byteSize": "5120",
-          "issued": "2016-04-14T19:48:05.433640-03:00",
-          "modified": "2016-04-19T19:48:05.433640-03:00",
-          "rights": "Derechos especificados en la licencia.",
-          "field": [
-            {
-              "title": "procedimiento_id",
-              "type": "integer",
-              "description": "Identificador único del procedimiento de contratación"
-            },
-            {
-              "title": "organismo_unidad_operativa_contrataciones_id",
-              "type": "integer",
-              "description": "Identificador único del organismo que realiza la convocatoria. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."
-            },
-            {
-              "title": "unidad_operativa_contrataciones_id",
-              "type": "integer",
-              "description": "Identificador único de la unidad operativa de contrataciones"
-            },
-            {
-              "title": "organismo_unidad_operativa_contrataciones_desc",
-              "type": "string",
-              "description": "Organismo que realiza la convocatoria. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."
-            },
-            {
-              "title": "unidad_operativa_contrataciones_desc",
-              "type": "string",
-              "description": "Unidad operativa de contrataciones."
-            },
-            {
-              "title": "tipo_procedimiento_contratacion",
-              "type": "string",
-              "description": "Tipo de procedimiento al que se adecua la contratación."
-            },
-            {
-              "title": "ejercicio_procedimiento_anio",
-              "type": "date",
-              "description": "Año en el que se inició el proceso de la convocatoria."
-            },
-            {
-              "title": "fecha_publicacion_convocatoria",
-              "type": "date",
-              "description": "Fecha de publicación de la convocatoria en formato AAAA-MM-DD, ISO 8601."
-            },
-            {
-              "title": "modalidad_convocatoria",
-              "type": "string",
-              "description": "Modalidad bajo la cual se realiza la convocatoria."
-            },
-            {
-              "title": "clase_convocatoria",
-              "type": "string",
-              "description": "Clase de la convocatoria."
-            },
-            {
-              "title": "objeto_convocatoria",
-              "type": "string",
-              "description": "Objeto/objetivo de la convocatoria"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-### Anexo V - Taxonomía temática global de la APN para los datasets (JSON)
-
-Esta es la [taxonomía temática global](https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/standards/metadata/superThemeTaxonomy.json):
+Esta es la [taxonomía temática global](https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/standards/metadata/superThemeTaxonomy.json) en JSON:
 
 ```json
 [
@@ -1483,9 +1282,174 @@ Esta es la [taxonomía temática global](https://raw.githubusercontent.com/datos
 ]
 ```
 
-### Anexo VI - Ejemplo de metadatos como texto
+### Anexo III - Ejemplo de catálogo
 
-Este es un [ejemplo en markdown](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md):
+Este es un [ejemplo de catálogo en data.json](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json):
+
+```json
+{
+  "title": "Datos Argentina",
+  "description": "Portal de Datos Abiertos del Gobierno de la República Argentina",
+  "publisher": {
+    "name": "Secretaría de Gobierno de Modernización",
+    "mbox": "datos@modernizacion.gob.ar"
+  },
+  "issued": "2016-04-14T19:48:05.433640-03:00",
+  "modified": "2016-04-19T19:48:05.433640-03:00",
+  "language": [
+    "spa"
+  ],
+  "superThemeTaxonomy": "https://datos.gob.ar/superThemeTaxonomy.json",
+  "themeTaxonomy": [
+    {
+      "id": "convocatorias",
+      "label": "Convocatorias",
+      "description": "Datasets sobre licitaciones en estado de convocatoria."
+    },
+    {
+      "id": "compras",
+      "label": "Compras",
+      "description": "Datasets sobre compras realizadas."
+    },
+    {
+      "id": "contrataciones",
+      "label": "Contrataciones",
+      "description": "Datasets sobre contrataciones."
+    },
+    {
+      "id": "adjudicaciones",
+      "label": "Adjudicaciones",
+      "description": "Datasets sobre licitaciones adjudicadas."
+    },
+    {
+      "id": "normativa",
+      "label": "Normativa",
+      "description": "Datasets sobre normativa para compras y contrataciones."
+    },
+    {
+      "id": "proveedores",
+      "label": "Proveedores",
+      "description": "Datasets sobre proveedores del Estado."
+    }
+  ],
+  "license": "Creative Commons Attribution 4.0",
+  "homepage": "https://datos.gob.ar",
+  "rights": "Derechos especificados en la licencia.",
+  "spatial": "ARG",
+  "dataset": [
+    {
+      "title": "Sistema de Contrataciones Electrónicas (Argentina Compra)",
+      "description": "Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Compra)",
+      "publisher": {
+        "name": "Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones",
+        "mbox": "onc@modernizacion.gob.ar"
+      },
+      "contactPoint": {
+        "fn": "Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.",
+        "hasEmail": "onc-compraselectronicas@modernizacion.gob.ar"
+      },
+      "superTheme": [
+        "ECON"
+      ],
+      "theme": [
+        "contrataciones",
+        "compras",
+        "convocatorias"
+      ],
+      "keyword": [
+        "bienes",
+        "compras",
+        "contrataciones"
+      ],
+      "accrualPeriodicity": "R/P1Y",
+      "issued": "2016-04-14T19:48:05.433640-03:00",
+      "modified": "2016-04-19T19:48:05.433640-03:00",
+      "identifier": "99db6631-d1c9-470b-a73e-c62daa32c420",
+      "language": [
+        "spa"
+      ],
+      "spatial": "ARG",
+      "temporal": "2015-01-01/2015-12-31",
+      "landingPage": "https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra",
+      "license": "Creative Commons Attribution 4.0",
+      "distribution": [
+        {
+          "accessURL": "https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra/archivo/modernizacion_2.1",
+          "description": "Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas",
+          "format": "CSV",
+          "mediaType": "text/csv",
+          "downloadURL": "https://infra.datos.gob.ar/catalog/modernizacion/dataset/2/distribution/2.1/download/convocatorias-2017.csv",
+          "title": "Convocatorias 2017",
+          "license": "Creative Commons Attribution 4.0",
+          "byteSize": "5120",
+          "issued": "2016-04-14T19:48:05.433640-03:00",
+          "modified": "2016-04-19T19:48:05.433640-03:00",
+          "rights": "Derechos especificados en la licencia.",
+          "field": [
+            {
+              "title": "procedimiento_id",
+              "type": "integer",
+              "description": "Identificador único del procedimiento de contratación"
+            },
+            {
+              "title": "organismo_unidad_operativa_contrataciones_id",
+              "type": "integer",
+              "description": "Identificador único del organismo que realiza la convocatoria. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."
+            },
+            {
+              "title": "unidad_operativa_contrataciones_id",
+              "type": "integer",
+              "description": "Identificador único de la unidad operativa de contrataciones"
+            },
+            {
+              "title": "organismo_unidad_operativa_contrataciones_desc",
+              "type": "string",
+              "description": "Organismo que realiza la convocatoria. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones."
+            },
+            {
+              "title": "unidad_operativa_contrataciones_desc",
+              "type": "string",
+              "description": "Unidad operativa de contrataciones."
+            },
+            {
+              "title": "tipo_procedimiento_contratacion",
+              "type": "string",
+              "description": "Tipo de procedimiento al que se adecua la contratación."
+            },
+            {
+              "title": "ejercicio_procedimiento_anio",
+              "type": "date",
+              "description": "Año en el que se inició el proceso de la convocatoria."
+            },
+            {
+              "title": "fecha_publicacion_convocatoria",
+              "type": "date",
+              "description": "Fecha de publicación de la convocatoria en formato AAAA-MM-DD, ISO 8601."
+            },
+            {
+              "title": "modalidad_convocatoria",
+              "type": "string",
+              "description": "Modalidad bajo la cual se realiza la convocatoria."
+            },
+            {
+              "title": "clase_convocatoria",
+              "type": "string",
+              "description": "Clase de la convocatoria."
+            },
+            {
+              "title": "objeto_convocatoria",
+              "type": "string",
+              "description": "Objeto/objetivo de la convocatoria"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+Este es el mismo [ejemplo de catálogo en texto](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md):
 
 **Catálogo: Datos Argentina**
 
@@ -1493,14 +1457,14 @@ Portal de Datos Abiertos del Gobierno de la República Argentina
 
 * Derechos sobre el catálogo: Derechos especificados en la licencia.
 * Correo electrónico del autor: datos@modernizacion.gob.ar
-* Autor: Ministerio de Modernización
-* Licencia: Open Data Commons Open Database License 1.0
+* Autor: Secretaría de Gobierno de Modernización
+* Licencia: Creative Commons Attribution 4.0
 * Idioma(s): spa
 * Fecha de creación o publicación: 2016-04-14T19:48:05.433640-03:00
-* Taxonomía temática global: [http://datos.gob.ar/superThemeTaxonomy.json](http://datos.gob.ar/superThemeTaxonomy.json)
+* Taxonomía temática global: [https://datos.gob.ar/superThemeTaxonomy.json](https://datos.gob.ar/superThemeTaxonomy.json)
 * Fecha de última actualización/modificación: 2016-04-19T19:48:05.433640-03:00
 * Cobertura geográfica: ARG
-* Página web del catálogo: [http://datos.gob.ar](http://datos.gob.ar/)
+* Página web del catálogo: [https://datos.gob.ar](https://datos.gob.ar/)
 
 **Taxonomía temática específica**
 
@@ -1513,13 +1477,13 @@ Portal de Datos Abiertos del Gobierno de la República Argentina
 
 **Datasets**
 
-**Dataset: Sistema de contrataciones electrónicas**
+**Dataset: Sistema de Contrataciones Electrónicas (Argentina Compra)**
 
 Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Compra)
 
 * **Correo electrónico del autor**: onc@modernizacion.gob.ar
-* **Autor**: Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones
-* **Página de referencias**: [http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra](http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra)
+* **Autor**: Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones
+* **Página de referencias**: [https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-comprampra)
 * **Temática(s) globales**: ECON
 * **Fecha de publicación**: 2016-04-14T19:48:05.433640-03:00
 * **Cobertura temporal**: 2015-01-01/2015-12-31
@@ -1529,25 +1493,25 @@ Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Com
 * **Etiqueta(s)**: bienes, compras, contrataciones
 * **Frecuencia de actualización**: R/P1Y
 * **Cobertura geográfica**: ARG
-* **Licencia**: Open Data Commons Open Database License 1.0
+* **Licencia**: Creative Commons Attribution 4.0
 * **Correo electrónico del área/persona de contacto**: onc-compraselectronicas@modernizacion.gob.ar
-* **Área/Persona de contacto**: Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.
+* **Área/Persona de contacto**: Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.
 * **Identificador**: 99db6631-d1c9-470b-a73e-c62daa32c420
 
 *Distribuciones*
 
-**Distribución: Convocatorias abiertas durante el año 2015**
+**Distribución: Convocatorias 2017**
 
 Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas
 
-* **URL de acceso**: [http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a](http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a)
+* **URL de acceso**: [https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra/archivo/modernizacion_2.1](https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra/archivo/modernizacion_2.1)
 * **Derechos sobre la distribución**: Derechos especificados en la licencia.
-* **Licencia**: Open Data Commons Open Database License 1.0
+* **Licencia**: Creative Commons Attribution 4.0
 * **Tamaño**: 5120
 * **Formato del archivo**: CSV
 * **Tipo de archivo**: text/csv
 * **Fecha de última actualización/ modificación**: 2016-04-19T19:48:05.433640-03:00
-* **URL de descarga**: [http://datos.gob.ar/dataset/069b5833-e57d-4d7a-859b-67a80cfdff20/resource/fa3603b3-0af7-43cc-9da9-90a512217d8a/download/convocatorias-2015.csv](http://datos.gob.ar/dataset/069b5833-e57d-4d7a-859b-67a80cfdff20/resource/fa3603b3-0af7-43cc-9da9-90a512217d8a/download/convocatorias-2015.csv)
+* **URL de descarga**: [https://infra.datos.gob.ar/catalog/modernizacion/dataset/2/distribution/2.1/download/convocatorias-2017.csv](https://infra.datos.gob.ar/catalog/modernizacion/dataset/2/distribution/2.1/download/convocatorias-2017.csv)
 * **Fecha de publicación**: 2016-04-14T19:48:05.433640-03:00
 
 *Campos de la distribución*
@@ -1564,201 +1528,9 @@ Listado de las convocatorias abiertas durante el año 2015 en el sistema de cont
 * **clase_convocatoria** (string): Clase de la convocatoria.
 * **objeto_convocatoria** (string): Objeto/objetivo de la convocatoria
 
-### Anexo VII - Ejemplo de data.json con series de tiempo
+### Anexo IV - Series de tiempo
 
-Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/data.json):
-
-```json
-{
-  "identifier": "sspm",
-  "title": "Datos Programación Macroeconómica",
-  "description": "Catálogo de datos abiertos de la Subsecretaría de Programación Macroeconómica.",
-  "publisher": {
-    "name": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica.",
-    "mbox": "ausolari@mecon.gob.ar"
-  },
-  "issued": "2017-09-28T00:00:00",
-  "modified": "2017-09-28T00:00:00",
-  "license": "Open Database License (ODbL) v1.0",
-  "superThemeTaxonomy": "http://datos.gob.ar/superThemeTaxonomy.json",
-  "themeTaxonomy": [
-    {
-      "id": "nivel_actividad",
-      "description": "Datos sobre nivel actividad",
-      "label": "Nivel actividad"
-    },
-    {
-      "id": "intercambio_comercial",
-      "description": "Datos sobre intercambio comercial",
-      "label": "Intercambio Comercial"
-    }
-  ],
-  "language": [
-    "SPA"
-  ],
-  "spatial": "ARG",
-  "dataset": [
-    {
-      "identifier": "1",
-      "title": "Oferta y Demanda Globales: Datos desestacionalizados [Base 1993]",
-      "description": "Componentes desestacionalizados de la oferta y demanda globales a precios de 1993.",
-      "accrualPeriodicity": "R/P3M",
-      "publisher": {
-        "mbox": "ausolari@mecon.gob.ar",
-        "name": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica."
-      },
-      "source": "Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.",
-      "contactPoint": {
-        "fn": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica. Dirección de Información y Coyuntura"
-      },
-      "landingPage": "http://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/",
-      "issued": "2017-08-22T17:51:26.553961-03:00",
-      "keyword": [
-        "oferta",
-        "demanda",
-        "pbi",
-        "cuentas nacionales",
-        "desestacionalizado"
-      ],
-      "superTheme": [
-        "ECON"
-      ],
-      "temporal": "1993-01-01/2013-09-30",
-      "theme": [
-        "nivel_actividad"
-      ],
-      "distribution": [
-        {
-          "identifier": "1.1",
-          "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]",
-          "format": "CSV",
-          "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
-          "issued": "2017-08-22T17:51:26.553961-03:00",
-          "modified": "2017-08-22T17:51:26.553961-03:00",
-          "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
-          "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
-          "field": [
-            {
-              "title": "indice_tiempo",
-              "type": "date",
-              "specialType": "time_index",
-              "specialTypeDetail": "R/P1Y"
-            },
-            {
-              "id": "1.1_OGP_D_1993_A_17",
-              "title": "oferta_global_pbi",
-              "description": "PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            },
-            {
-              "id": "1.1_OGI_D_1993_A_25",
-              "title": "oferta_global_importacion",
-              "description": "Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            },
-            {
-              "id": "1.1_DGE_D_1993_A_26",
-              "title": "demanda_global_exportacion",
-              "description": "Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            },
-            {
-              "id": "1.1_DGI_D_1993_A_19",
-              "title": "demanda_global_ibif",
-              "description": "Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            },
-            {
-              "id": "1.1_DGCP_D_1993_A_27",
-              "title": "demanda_global_consumo_priv",
-              "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            },
-            {
-              "id": "1.1_DGCP_D_1993_A_30",
-              "title": "demanda_global_consumo_publico",
-              "description": "Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            }
-          ]
-        },
-        {
-          "identifier": "1.2",
-          "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores trimestrales [Base 1993]",
-          "format": "CSV",
-          "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
-          "issued": "2017-08-22T17:51:26.553961-03:00",
-          "modified": "2017-08-22T17:51:26.553961-03:00",
-          "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
-          "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
-          "field": [
-            {
-              "title": "indice_tiempo",
-              "type": "date",
-              "specialType": "time_index",
-              "specialTypeDetail": "R/P3M"
-            },
-            {
-              "id": "1.2_OGP_D_1993_T_17",
-              "title": "oferta_global_pbi",
-              "description": "PBI a precios de comprador, en millones de pesos de 1993 y valores anuales.",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            },
-            {
-              "id": "1.2_OGI_D_1993_T_25",
-              "title": "oferta_global_importacion",
-              "description": "Importación a precios de comprador, en millones de pesos de 1993 y valores anuales.",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            },
-            {
-              "id": "1.2_DGE_D_1993_T_26",
-              "title": "demanda_global_exportacion",
-              "description": "Oferta global total a precios de comprador, en millones de pesos de 1993 y valores anuales.",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            },
-            {
-              "id": "1.2_DGI_D_1993_T_19",
-              "title": "demanda_global_ibif",
-              "description": "Consumo privado, en millones de pesos  de 1993 y valores anuales.",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            },
-            {
-              "id": "1.2_DGCP_D_1993_T_27",
-              "title": "demanda_global_consumo_priv",
-              "description": "Consumo publico, en millones de pesos de 1993 y valores anuales.",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            },
-            {
-              "id": "1.2_DGCP_D_1993_T_30",
-              "title": "demanda_global_consumo_publico",
-              "description": "Inversion bruta interna fija, en millones de pesos de 1993  y valores anuales.",
-              "type": "number",
-              "units": "Millones de pesos a precios de 1993"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-### Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo
-
-A continuación se revisan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo para cada parte del modelo de metadatos dentro de un *dataset* que contiene series de tiempo.
-
-Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo).
+Ejemplo de dataset con series de tiempo en JSON:
 
 * **Dataset 1**: Oferta y Demanda Globales. Datos desestacionalizados. Base 1993
   - **Distribucion 1.1**: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores anuales.
@@ -1780,7 +1552,7 @@ Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con serie
   "contactPoint": {
     "fn": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica. Dirección de Información y Coyuntura"
   },
-  "landingPage": "http://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/",
+  "landingPage": "https://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/",
   "issued": "2017-08-22T17:51:26.553961-03:00",
   "keyword": [
     "oferta",
@@ -2011,18 +1783,214 @@ Ver ejemplo de catálogo completo en [Anexo VII - Ejemplo de data.json con serie
 }
 ```
 
-### Anexo IX - Precisión de series con números enteros y decimales
+#### Catálogo (catalog) - series de tiempo
 
-Las series deben contener valores con **números enteros** (`277441`) o con **números decimales** (`277441.31725`) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número "entero" dentro de una serie decimal debe incluir `.0` al final (`277441.0`).
+Este es un [ejemplo de data.json](https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/data.json):
 
-Los **números enteros** pueden tener cualquier cantidad de cifras, mientras que los **números decimales** sólo pueden tener **hasta 12 cifras en total**, incluyendo la parte entera y la parte decimal:
+```json
+{
+  "identifier": "sspm",
+  "title": "Datos Programación Macroeconómica",
+  "description": "Catálogo de datos abiertos de la Subsecretaría de Programación Macroeconómica.",
+  "publisher": {
+    "name": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica.",
+    "mbox": "ausolari@mecon.gob.ar"
+  },
+  "issued": "2017-09-28T00:00:00",
+  "modified": "2017-09-28T00:00:00",
+  "license": "Creative Commons Attribution 4.0",
+  "superThemeTaxonomy": "https://datos.gob.ar/superThemeTaxonomy.json",
+  "themeTaxonomy": [
+    {
+      "id": "nivel_actividad",
+      "description": "Datos sobre nivel actividad",
+      "label": "Nivel actividad"
+    },
+    {
+      "id": "intercambio_comercial",
+      "description": "Datos sobre intercambio comercial",
+      "label": "Intercambio Comercial"
+    }
+  ],
+  "language": [
+    "SPA"
+  ],
+  "spatial": "ARG",
+  "dataset": [
+    {
+      "identifier": "1",
+      "title": "Oferta y Demanda Globales: Datos desestacionalizados [Base 1993]",
+      "description": "Componentes desestacionalizados de la oferta y demanda globales a precios de 1993.",
+      "accrualPeriodicity": "R/P3M",
+      "publisher": {
+        "mbox": "ausolari@mecon.gob.ar",
+        "name": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica."
+      },
+      "source": "Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.",
+      "contactPoint": {
+        "fn": "Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica. Dirección de Información y Coyuntura"
+      },
+      "landingPage": "https://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/",
+      "issued": "2017-08-22T17:51:26.553961-03:00",
+      "keyword": [
+        "oferta",
+        "demanda",
+        "pbi",
+        "cuentas nacionales",
+        "desestacionalizado"
+      ],
+      "superTheme": [
+        "ECON"
+      ],
+      "temporal": "1993-01-01/2013-09-30",
+      "theme": [
+        "nivel_actividad"
+      ],
+      "distribution": [
+        {
+          "identifier": "1.1",
+          "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]",
+          "format": "CSV",
+          "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
+          "issued": "2017-08-22T17:51:26.553961-03:00",
+          "modified": "2017-08-22T17:51:26.553961-03:00",
+          "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
+          "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv",
+          "field": [
+            {
+              "title": "indice_tiempo",
+              "type": "date",
+              "specialType": "time_index",
+              "specialTypeDetail": "R/P1Y"
+            },
+            {
+              "id": "1.1_OGP_D_1993_A_17",
+              "title": "oferta_global_pbi",
+              "description": "PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.1_OGI_D_1993_A_25",
+              "title": "oferta_global_importacion",
+              "description": "Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.1_DGE_D_1993_A_26",
+              "title": "demanda_global_exportacion",
+              "description": "Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.1_DGI_D_1993_A_19",
+              "title": "demanda_global_ibif",
+              "description": "Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.1_DGCP_D_1993_A_27",
+              "title": "demanda_global_consumo_priv",
+              "description": "Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.1_DGCP_D_1993_A_30",
+              "title": "demanda_global_consumo_publico",
+              "description": "Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            }
+          ]
+        },
+        {
+          "identifier": "1.2",
+          "title": "Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores trimestrales [Base 1993]",
+          "format": "CSV",
+          "description": "Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.",
+          "issued": "2017-08-22T17:51:26.553961-03:00",
+          "modified": "2017-08-22T17:51:26.553961-03:00",
+          "accessURL": "https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
+          "downloadURL": "https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv",
+          "field": [
+            {
+              "title": "indice_tiempo",
+              "type": "date",
+              "specialType": "time_index",
+              "specialTypeDetail": "R/P3M"
+            },
+            {
+              "id": "1.2_OGP_D_1993_T_17",
+              "title": "oferta_global_pbi",
+              "description": "PBI a precios de comprador, en millones de pesos de 1993 y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.2_OGI_D_1993_T_25",
+              "title": "oferta_global_importacion",
+              "description": "Importación a precios de comprador, en millones de pesos de 1993 y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.2_DGE_D_1993_T_26",
+              "title": "demanda_global_exportacion",
+              "description": "Oferta global total a precios de comprador, en millones de pesos de 1993 y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.2_DGI_D_1993_T_19",
+              "title": "demanda_global_ibif",
+              "description": "Consumo privado, en millones de pesos  de 1993 y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.2_DGCP_D_1993_T_27",
+              "title": "demanda_global_consumo_priv",
+              "description": "Consumo publico, en millones de pesos de 1993 y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            },
+            {
+              "id": "1.2_DGCP_D_1993_T_30",
+              "title": "demanda_global_consumo_publico",
+              "description": "Inversion bruta interna fija, en millones de pesos de 1993  y valores anuales.",
+              "type": "number",
+              "units": "Millones de pesos a precios de 1993"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 
-* `0.12345678901` está bien  (*serie decimal*)
-* `12345678901.1` está bien  (*serie decimal*)
-* `1234567.01234` está bien  (*serie decimal*)
-* `0.1234567890123456789` NO está bien  (*serie decimal*)
-* `123456789.01234567891` NO está bien  (*serie decimal*)
-* `1234567890123456789.1` NO está bien  (*serie decimal*)
-* `123456789123456789123` está bien (*serie entera*)
+### Anexo V - Pautas para la selección de etiquetas
 
-Casi todos los *software* que manejan números pueden usar decimales con hasta 12 cifras sin pérdida de precisión. Si bien existe software estadístico capaz de manejar decimales con más de 12 cifras, este límite debe ser analizado en cada caso y no está garantizado por la [**API de Series de Tiempo de la República Argentina**](https://apis.datos.gob.ar/series).
+Elegir buenas etiquetas hace más fácil la búsqueda de datasets para los usuarios. Cuanto más amplia y uniforme sea la lista de etiquetas, mayor será su efectividad.
+
+Estas son pautas para definir etiquetas aplicables a la propiedad *keyword* de la clase dataset:
+
+* Escribir correctamente y en plural.
+* Usar mayúsculas sólo donde corresponda.
+* Identificar palabras claves.
+* Respetar la existencia de etiquetas anteriores.
+* Agregar sinónimos y emplear lenguaje natural.
+* Usar una sóla palabra. Si es muy necesario, usar más de una.
+* Si la etiqueta tiene más de una palabra, debe estar separada por un espacio, ej: "declaraciones juradas".
+
+Preguntas útiles a la hora de pensar los etiquetas:
+
+* ¿Cuál es el tema?
+* ¿Qué aspectos serán de interés para los usuarios?
+* ¿De qué otro modo buscaría sobre esta información?
+* ¿De qué tipo de información se trata?
+* ¿Qué área la provee?

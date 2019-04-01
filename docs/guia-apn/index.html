@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
@@ -47,7 +47,7 @@
     
     
 	
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
       
       
     
@@ -55,7 +55,7 @@
 
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     <script src="../js/extra.js"></script>
 
@@ -68,7 +68,36 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../css/table_styles.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-91435482-1", "https://datosgobar.github.io/paquete-apertura-datos/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -125,22 +154,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Paquete de Apertura de Datos de la República Argentina
-              </span>
-              <span class="md-header-nav__topic">
-                Guía para la apertura de datos en organismos de la Administración Pública Nacional
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Paquete de Apertura de Datos de la República Argentina
+            </span>
+            <span class="md-header-nav__topic">
+              Guía para la apertura de datos en organismos de la Administración Pública Nacional
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -163,7 +189,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -174,20 +199,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         </div>
       
@@ -251,20 +274,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         
       
@@ -581,6 +602,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#anexos" title="Anexos" class="md-nav__link">
+    Anexos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#series-de-tiempo" title="Series de tiempo" class="md-nav__link">
+    Series de tiempo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precision-de-series-con-numeros-enteros-y-decimales" title="Precisión de series con números enteros y decimales" class="md-nav__link">
+    Precisión de series con números enteros y decimales
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -876,6 +930,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#anexos" title="Anexos" class="md-nav__link">
+    Anexos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#series-de-tiempo" title="Series de tiempo" class="md-nav__link">
+    Series de tiempo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precision-de-series-con-numeros-enteros-y-decimales" title="Precisión de series con números enteros y decimales" class="md-nav__link">
+    Precisión de series con números enteros y decimales
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -909,13 +996,7 @@
 </li>
 <li><a href="#1-publica-en-datosgobar">1. Publicá en datos.gob.ar</a><ul>
 <li><a href="#crea-un-cat%C3%A1logo-de-datos-abiertos">Creá un catálogo de datos abiertos</a></li>
-<li><a href="#documenta-tus-datos">Documentá tus datos</a><ul>
-<li><a href="#que-datos-documento">¿Qué datos documento?</a></li>
-<li><a href="#tengo-datos-en-archivos-pdf">Tengo datos en archivos PDF</a></li>
-<li><a href="#tengo-datos-en-tablas-html-paginas-web">Tengo datos en tablas HTML (páginas web)</a></li>
-<li><a href="#tengo-presentaciones-informes-libros">Tengo presentaciones, informes, libros...</a></li>
-</ul>
-</li>
+<li><a href="#documenta-tus-datos">Documentá tus datos</a></li>
 <li><a href="#suma-tu-cat%C3%A1logo-a-datosgobar">Sumá tu catálogo a datos.gob.ar</a></li>
 </ul>
 </li>
@@ -931,6 +1012,10 @@
 </li>
 <li><a href="#4-identifica-nuevos-activos-de-datos-a-publicar">4. Identificá nuevos activos de datos a publicar</a></li>
 <li><a href="#tenes-dudas-escribinos">¿Tenés dudas? Escribinos</a></li>
+<li><a href="#anexos">Anexos</a><ul>
+<li><a href="#series-de-tiempo">Series de tiempo</a></li>
+</ul>
+</li>
 </ul>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1053,6 +1138,21 @@
 </ul>
 <h2 id="tenes-dudas-escribinos"><a class="toclink" href="#tenes-dudas-escribinos">¿Tenés dudas? Escribinos</a><a class="headerlink" href="#tenes-dudas-escribinos" title="Permanent link">&#128279;</a></h2>
 <p>Para comenzar te recomendamos leer nuestro <a href="https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf">Kit de Datos Abiertos</a>. También podés <a href="mailto:datos@modernizacion.gob.ar">contactarnos</a>.</p>
+<h2 id="anexos"><a class="toclink" href="#anexos">Anexos</a><a class="headerlink" href="#anexos" title="Permanent link">&#128279;</a></h2>
+<h3 id="series-de-tiempo"><a class="toclink" href="#series-de-tiempo">Series de tiempo</a><a class="headerlink" href="#series-de-tiempo" title="Permanent link">&#128279;</a></h3>
+<h4 id="precision-de-series-con-numeros-enteros-y-decimales"><a class="toclink" href="#precision-de-series-con-numeros-enteros-y-decimales">Precisión de series con números enteros y decimales</a><a class="headerlink" href="#precision-de-series-con-numeros-enteros-y-decimales" title="Permanent link">&#128279;</a></h4>
+<p>Las series deben contener valores con <strong>números enteros</strong> (<code>277441</code>) o con <strong>números decimales</strong> (<code>277441.31725</code>) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número "entero" dentro de una serie decimal debe incluir <code>.0</code> al final (<code>277441.0</code>).</p>
+<p>Los <strong>números enteros</strong> pueden tener cualquier cantidad de cifras, mientras que los <strong>números decimales</strong> sólo pueden tener <strong>hasta 12 cifras en total</strong>, incluyendo la parte entera y la parte decimal:</p>
+<ul>
+<li><code>0.12345678901</code> está bien  (<em>serie decimal</em>)</li>
+<li><code>12345678901.1</code> está bien  (<em>serie decimal</em>)</li>
+<li><code>1234567.01234</code> está bien  (<em>serie decimal</em>)</li>
+<li><code>0.1234567890123456789</code> NO está bien  (<em>serie decimal</em>)</li>
+<li><code>123456789.01234567891</code> NO está bien  (<em>serie decimal</em>)</li>
+<li><code>1234567890123456789.1</code> NO está bien  (<em>serie decimal</em>)</li>
+<li><code>123456789123456789123</code> está bien (<em>serie entera</em>)</li>
+</ul>
+<p>Casi todos los <em>software</em> que manejan números pueden usar decimales con hasta 12 cifras sin pérdida de precisión. Si bien existe software estadístico capaz de manejar decimales con más de 12 cifras, este límite debe ser analizado en cada caso y no está garantizado por la <a href="https://apis.datos.gob.ar/series"><strong>API de Series de Tiempo de la República Argentina</strong></a>.</p>
                 
                   
                 
@@ -1116,15 +1216,13 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
       
         
         
@@ -1142,11 +1240,6 @@
         
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
   </body>

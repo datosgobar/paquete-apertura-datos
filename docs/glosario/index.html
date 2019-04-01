@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
@@ -47,7 +47,7 @@
     
     
 	
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
       
       
     
@@ -55,7 +55,7 @@
 
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     <script src="../js/extra.js"></script>
 
@@ -68,7 +68,36 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../css/table_styles.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-91435482-1", "https://datosgobar.github.io/paquete-apertura-datos/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -104,7 +133,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#glosario" tabindex="1" class="md-skip">
+      <a href="#indice" tabindex="1" class="md-skip">
         Saltar a contenido
       </a>
     
@@ -125,22 +154,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Paquete de Apertura de Datos de la República Argentina
-              </span>
-              <span class="md-header-nav__topic">
-                Glosario
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Paquete de Apertura de Datos de la República Argentina
+            </span>
+            <span class="md-header-nav__topic">
+              Glosario
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -163,7 +189,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -174,20 +199,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         </div>
       
@@ -251,20 +274,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         
       
@@ -483,164 +504,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Glosario
-      </label>
-    
     <a href="./" title="Glosario" class="md-nav__link md-nav__link--active">
       Glosario
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#activo-de-datos" title="Activo de datos" class="md-nav__link">
-    Activo de datos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api" title="API" class="md-nav__link">
-    API
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#catalogo-de-datos" title="Catálogo de datos" class="md-nav__link">
-    Catálogo de datos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conjunto-de-datos-dataset" title="Conjunto de datos (Dataset)" class="md-nav__link">
-    Conjunto de datos (Dataset)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dato" title="Dato" class="md-nav__link">
-    Dato
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dato-abierto" title="Dato abierto" class="md-nav__link">
-    Dato abierto
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dato-publico" title="Dato público" class="md-nav__link">
-    Dato público
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#distribuciones-o-recursos" title="Distribuciones o recursos" class="md-nav__link">
-    Distribuciones o recursos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formato-abierto" title="Formato abierto" class="md-nav__link">
-    Formato abierto
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#informacion" title="Información" class="md-nav__link">
-    Información
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#intermediarios" title="Intermediarios" class="md-nav__link">
-    Intermediarios
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#licencia-libre" title="Licencia libre" class="md-nav__link">
-    Licencia libre
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metadatos" title="Metadatos" class="md-nav__link">
-    Metadatos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#portal-andino" title="Portal Andino" class="md-nav__link">
-    Portal Andino
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#portal-de-datos" title="Portal de datos" class="md-nav__link">
-    Portal de datos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#perfil-de-metadatos" title="Perfil de metadatos" class="md-nav__link">
-    Perfil de metadatos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transparencia-activa" title="Transparencia activa" class="md-nav__link">
-    Transparencia activa
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transparencia-pasiva" title="Transparencia pasiva" class="md-nav__link">
-    Transparencia pasiva
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usabilidad" title="Usabilidad" class="md-nav__link">
-    Usabilidad
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -664,148 +530,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#activo-de-datos" title="Activo de datos" class="md-nav__link">
-    Activo de datos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api" title="API" class="md-nav__link">
-    API
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#catalogo-de-datos" title="Catálogo de datos" class="md-nav__link">
-    Catálogo de datos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conjunto-de-datos-dataset" title="Conjunto de datos (Dataset)" class="md-nav__link">
-    Conjunto de datos (Dataset)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dato" title="Dato" class="md-nav__link">
-    Dato
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dato-abierto" title="Dato abierto" class="md-nav__link">
-    Dato abierto
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dato-publico" title="Dato público" class="md-nav__link">
-    Dato público
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#distribuciones-o-recursos" title="Distribuciones o recursos" class="md-nav__link">
-    Distribuciones o recursos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formato-abierto" title="Formato abierto" class="md-nav__link">
-    Formato abierto
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#informacion" title="Información" class="md-nav__link">
-    Información
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#intermediarios" title="Intermediarios" class="md-nav__link">
-    Intermediarios
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#licencia-libre" title="Licencia libre" class="md-nav__link">
-    Licencia libre
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metadatos" title="Metadatos" class="md-nav__link">
-    Metadatos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#portal-andino" title="Portal Andino" class="md-nav__link">
-    Portal Andino
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#portal-de-datos" title="Portal de datos" class="md-nav__link">
-    Portal de datos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#perfil-de-metadatos" title="Perfil de metadatos" class="md-nav__link">
-    Perfil de metadatos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transparencia-activa" title="Transparencia activa" class="md-nav__link">
-    Transparencia activa
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transparencia-pasiva" title="Transparencia pasiva" class="md-nav__link">
-    Transparencia pasiva
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usabilidad" title="Usabilidad" class="md-nav__link">
-    Usabilidad
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -819,7 +543,38 @@
                   <a href="https://github.com/datosgobar/paquete-apertura-datos/edit/master/docs/glosario.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="glosario"><a class="toclink" href="#glosario">Glosario</a><a class="headerlink" href="#glosario" title="Permanent link">&#128279;</a></h1>
+                <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<h2 id="indice"><a class="toclink" href="#indice">Indice</a><a class="headerlink" href="#indice" title="Permanent link">&#128279;</a></h2>
+<ul>
+<li><a href="#glosario">Glosario</a><ul>
+<li><a href="#activo-de-datos">Activo de datos</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#catalogo-de-datos">Catálogo de datos</a></li>
+<li><a href="#conjunto-de-datos-dataset">Conjunto de datos (Dataset)</a></li>
+<li><a href="#dato">Dato</a></li>
+<li><a href="#dato-abierto">Dato abierto</a></li>
+<li><a href="#dato-publico">Dato público</a></li>
+<li><a href="#distribuciones-o-recursos">Distribuciones o recursos</a></li>
+<li><a href="#formato-abierto">Formato abierto</a></li>
+<li><a href="#informacion">Información</a></li>
+<li><a href="#intermediarios">Intermediarios</a></li>
+<li><a href="#licencia-libre">Licencia libre</a></li>
+<li><a href="#metadatos">Metadatos</a></li>
+<li><a href="#portal-andino">Portal Andino</a></li>
+<li><a href="#portal-de-datos">Portal de datos</a></li>
+<li><a href="#perfil-de-metadatos">Perfil de metadatos</a></li>
+<li><a href="#transparencia-activa">Transparencia activa</a></li>
+<li><a href="#transparencia-pasiva">Transparencia pasiva</a></li>
+<li><a href="#usabilidad">Usabilidad</a></li>
+</ul>
+</li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h1 id="glosario"><a class="toclink" href="#glosario">Glosario</a><a class="headerlink" href="#glosario" title="Permanent link">&#128279;</a></h1>
 <h2 id="activo-de-datos"><a class="toclink" href="#activo-de-datos">Activo de datos</a><a class="headerlink" href="#activo-de-datos" title="Permanent link">&#128279;</a></h2>
 <p>Es cualquier recurso o conjunto de recursos de datos con valor para el desarrollo de las funciones de una organización, que puede ser comprendido y tratado como una unidad a efectos de su gestión, uso, protección e intercambio.
 Suele emplearse para identificar y tratar conjuntos de datos o recursos individuales, como bases de datos, archivos tabulares, colecciones de metadatos, etc.</p>
@@ -917,15 +672,13 @@ Los datos suelen ser publicados en sitios web específicos que facilitan el acce
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
       
         
         
@@ -943,11 +696,6 @@ Los datos suelen ser publicados en sitios web específicos que facilitan el acce
         
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
   </body>

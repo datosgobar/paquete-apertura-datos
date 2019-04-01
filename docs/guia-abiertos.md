@@ -2,7 +2,6 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 ## Indice
 
 - [Introducción](#introduccion)
@@ -15,28 +14,12 @@
 - [Codificación](#codificacion)
 - [Estructura y características de los datos tabulares](#estructura-y-caracteristicas-de-los-datos-tabulares)
     - [Recomendaciones generales](#recomendaciones-generales)
-        - [Nomenclatura de los campos (nombres de las columnas)](#nomenclatura-de-los-campos-nombres-de-las-columnas)
-        - [Nivel de granularidad de los datos](#nivel-de-granularidad-de-los-datos)
-        - [Usar orientación vertical en lugar de horizontal](#usar-orientacion-vertical-en-lugar-de-horizontal)
-        - [Incluir sólo un atributo por campo](#incluir-solo-un-atributo-por-campo)
-        - [Valores nulos, desconocidos o en blanco en campos numéricos](#valores-nulos-desconocidos-o-en-blanco-en-campos-numericos)
     - [Recomendaciones para estructurar planillas de cálculo](#recomendaciones-para-estructurar-planillas-de-calculo)
-        - [Usar celdas simples](#usar-celdas-simples)
-        - [Fila de encabezado](#fila-de-encabezado)
-        - [Celdas vacías en filas para agrupar conceptos](#celdas-vacias-en-filas-para-agrupar-conceptos)
-        - [Formato de celdas](#formato-de-celdas)
     - [Exportación a CSV](#exportacion-a-csv)
 - [Estándares según el tipo de Datos](#estandares-segun-el-tipo-de-datos)
     - [Texto](#texto)
-        - [Entidades](#entidades)
-        - [Nombres propios](#nombres-propios)
-        - [Siglas](#siglas)
     - [Número](#numero)
-        - [Moneda](#moneda)
-        - [Números telefónicos](#numeros-telefonicos)
-        - [Coordenadas](#coordenadas)
     - [Tiempo](#tiempo)
-        - [Rangos horarios](#rangos-horarios)
     - [Booleano](#booleano)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

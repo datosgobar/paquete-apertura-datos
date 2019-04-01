@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
@@ -47,7 +47,7 @@
     
     
 	
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
       
       
     
@@ -55,7 +55,7 @@
 
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     <script src="../js/extra.js"></script>
 
@@ -68,7 +68,36 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../css/table_styles.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-91435482-1", "https://datosgobar.github.io/paquete-apertura-datos/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -125,22 +154,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Paquete de Apertura de Datos de la República Argentina
-              </span>
-              <span class="md-header-nav__topic">
-                Guía para el uso y la publicación de metadatos
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Paquete de Apertura de Datos de la República Argentina
+            </span>
+            <span class="md-header-nav__topic">
+              Guía para el uso y la publicación de metadatos
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -163,7 +189,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -174,20 +199,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         </div>
       
@@ -251,20 +274,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         
       
@@ -373,6 +394,13 @@
   
     <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" title="Indice" class="md-nav__link">
+    Indice
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#introduccion" title="Introducción" class="md-nav__link">
@@ -817,6 +845,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#indice" title="Indice" class="md-nav__link">
+    Indice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#introduccion" title="Introducción" class="md-nav__link">
     Introducción
   </a>
@@ -1116,6 +1151,49 @@
                 
                 
                 <h1 id="guia-para-el-uso-y-la-publicacion-de-metadatos"><a class="toclink" href="#guia-para-el-uso-y-la-publicacion-de-metadatos">Guía para el uso y la publicación de metadatos</a><a class="headerlink" href="#guia-para-el-uso-y-la-publicacion-de-metadatos" title="Permanent link">&#128279;</a></h1>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<h2 id="indice"><a class="toclink" href="#indice">Indice</a><a class="headerlink" href="#indice" title="Permanent link">&#128279;</a></h2>
+<ul>
+<li><a href="#gui%CC%81a-para-el-uso-y-la-publicacion-de-metadatos">Guía para el uso y la publicación de metadatos</a><ul>
+<li><a href="#introduccion">Introducción</a><ul>
+<li><a href="#version">Versión</a></li>
+<li><a href="#objetivo">Objetivo</a></li>
+<li><a href="#que-son-los-metadatos">¿Qué son los metadatos?</a></li>
+<li><a href="#como-se-publican-los-metadatos">¿Cómo se publican los metadatos?</a></li>
+<li><a href="#publico-objetivo-de-esta-guia">Público objetivo de esta guía</a></li>
+</ul>
+</li>
+<li><a href="#crear-un-catalogo-de-datos-abiertos">Crear un catálogo de datos abiertos</a><ul>
+<li><a href="#excel">Excel</a></li>
+<li><a href="#portal-andino">Portal Andino</a></li>
+<li><a href="#otros-catalogos">Otros catálogos</a></li>
+</ul>
+</li>
+<li><a href="#perfil-de-metadatos">Perfil de Metadatos</a><ul>
+<li><a href="#estandar-usado">Estándar usado</a></li>
+<li><a href="#campos-del-perfil">Campos del perfil</a></li>
+</ul>
+</li>
+<li><a href="#extensiones-especiales">Extensiones especiales</a><ul>
+<li><a href="#series-de-tiempo">Series de tiempo</a></li>
+</ul>
+</li>
+<li><a href="#glosario">Glosario</a></li>
+<li><a href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a></li>
+<li><a href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas">Anexo II - Pautas para la selección de etiquetas</a></li>
+<li><a href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a></li>
+<li><a href="#anexo-iv-ejemplo-de-datajson">Anexo IV - Ejemplo de data.json</a></li>
+<li><a href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json">Anexo V - Taxonomía temática global de la APN para los datasets (JSON)</a></li>
+<li><a href="#anexo-vi-ejemplo-de-metadatos-como-texto">Anexo VI - Ejemplo de metadatos como texto</a></li>
+<li><a href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a></li>
+</ul>
+</li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <h2 id="introduccion"><a class="toclink" href="#introduccion">Introducción</a><a class="headerlink" href="#introduccion" title="Permanent link">&#128279;</a></h2>
 <h3 id="version"><a class="toclink" href="#version">Versión</a><a class="headerlink" href="#version" title="Permanent link">&#128279;</a></h3>
 <p>Esta guía es compatible con la <strong>versión 1.1 del Perfil Nacional de Metadatos para Datos Abiertos</strong> de la Administración Pública Nacional.</p>
@@ -2985,15 +3063,13 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
       
         
         
@@ -3011,11 +3087,6 @@
         
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
   </body>

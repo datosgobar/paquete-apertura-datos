@@ -1,5 +1,36 @@
 # Guía para el uso y la publicación de metadatos
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Indice
+
+- [Guía para el uso y la publicación de metadatos](#gui%CC%81a-para-el-uso-y-la-publicacion-de-metadatos)
+    - [Introducción](#introduccion)
+        - [Versión](#version)
+        - [Objetivo](#objetivo)
+        - [¿Qué son los metadatos?](#que-son-los-metadatos)
+        - [¿Cómo se publican los metadatos?](#como-se-publican-los-metadatos)
+        - [Público objetivo de esta guía](#publico-objetivo-de-esta-guia)
+    - [Crear un catálogo de datos abiertos](#crear-un-catalogo-de-datos-abiertos)
+        - [Excel](#excel)
+        - [Portal Andino](#portal-andino)
+        - [Otros catálogos](#otros-catalogos)
+    - [Perfil de Metadatos](#perfil-de-metadatos)
+        - [Estándar usado](#estandar-usado)
+        - [Campos del perfil](#campos-del-perfil)
+    - [Extensiones especiales](#extensiones-especiales)
+        - [Series de tiempo](#series-de-tiempo)
+    - [Glosario](#glosario)
+    - [Anexo I - Taxonomía temática global de la APN para los datasets (tabla)](#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla)
+    - [Anexo II - Pautas para la selección de etiquetas](#anexo-ii-pautas-para-la-seleccion-de-etiquetas)
+    - [Anexo III - Especificación de frecuencias (según ISO-8601)](#anexo-iii-especificacion-de-frecuencias-segun-iso-8601)
+    - [Anexo IV - Ejemplo de data.json](#anexo-iv-ejemplo-de-datajson)
+    - [Anexo V - Taxonomía temática global de la APN para los datasets (JSON)](#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json)
+    - [Anexo VI - Ejemplo de metadatos como texto](#anexo-vi-ejemplo-de-metadatos-como-texto)
+    - [Anexo VII - Ejemplo de data.json con series de tiempo](#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Introducción
 
 ### Versión

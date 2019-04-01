@@ -10,10 +10,6 @@
 - [1. Publicá en datos.gob.ar](#1-publica-en-datosgobar)
     - [Creá un catálogo de datos abiertos](#crea-un-cat%C3%A1logo-de-datos-abiertos)
     - [Documentá tus datos](#documenta-tus-datos)
-        - [¿Qué datos documento?](#que-datos-documento)
-        - [Tengo datos en archivos PDF](#tengo-datos-en-archivos-pdf)
-        - [Tengo datos en tablas HTML (páginas web)](#tengo-datos-en-tablas-html-paginas-web)
-        - [Tengo presentaciones, informes, libros...](#tengo-presentaciones-informes-libros)
     - [Sumá tu catálogo a datos.gob.ar](#suma-tu-cat%C3%A1logo-a-datosgobar)
 - [2. Mejorá la calidad de tus datos](#2-mejora-la-calidad-de-tus-datos)
     - [Compartí tus datos en formatos abiertos](#comparti-tus-datos-en-formatos-abiertos)
@@ -23,6 +19,8 @@
     - [Sumá tus datos a la API de Series de Tiempo](#suma-tus-datos-a-la-api-de-series-de-tiempo)
 - [4. Identificá nuevos activos de datos a publicar](#4-identifica-nuevos-activos-de-datos-a-publicar)
 - [¿Tenés dudas? Escribinos](#tenes-dudas-escribinos)
+- [Anexos](#anexos)
+    - [Series de tiempo](#series-de-tiempo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -205,3 +203,23 @@ Una vez que catalogaste los activos de datos que ya estaban en línea, trabajast
 ## ¿Tenés dudas? Escribinos
 
 Para comenzar te recomendamos leer nuestro [Kit de Datos Abiertos](https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf). También podés [contactarnos](mailto:datos@modernizacion.gob.ar).
+
+## Anexos
+
+### Series de tiempo
+
+#### Precisión de series con números enteros y decimales
+
+Las series deben contener valores con **números enteros** (`277441`) o con **números decimales** (`277441.31725`) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número "entero" dentro de una serie decimal debe incluir `.0` al final (`277441.0`).
+
+Los **números enteros** pueden tener cualquier cantidad de cifras, mientras que los **números decimales** sólo pueden tener **hasta 12 cifras en total**, incluyendo la parte entera y la parte decimal:
+
+* `0.12345678901` está bien  (*serie decimal*)
+* `12345678901.1` está bien  (*serie decimal*)
+* `1234567.01234` está bien  (*serie decimal*)
+* `0.1234567890123456789` NO está bien  (*serie decimal*)
+* `123456789.01234567891` NO está bien  (*serie decimal*)
+* `1234567890123456789.1` NO está bien  (*serie decimal*)
+* `123456789123456789123` está bien (*serie entera*)
+
+Casi todos los *software* que manejan números pueden usar decimales con hasta 12 cifras sin pérdida de precisión. Si bien existe software estadístico capaz de manejar decimales con más de 12 cifras, este límite debe ser analizado en cada caso y no está garantizado por la [**API de Series de Tiempo de la República Argentina**](https://apis.datos.gob.ar/series).

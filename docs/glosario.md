@@ -1,3 +1,30 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Indice
+
+- [Glosario](#glosario)
+    - [Activo de datos](#activo-de-datos)
+    - [API](#api)
+    - [Catálogo de datos](#catalogo-de-datos)
+    - [Conjunto de datos (Dataset)](#conjunto-de-datos-dataset)
+    - [Dato](#dato)
+    - [Dato abierto](#dato-abierto)
+    - [Dato público](#dato-publico)
+    - [Distribuciones o recursos](#distribuciones-o-recursos)
+    - [Formato abierto](#formato-abierto)
+    - [Información](#informacion)
+    - [Intermediarios](#intermediarios)
+    - [Licencia libre](#licencia-libre)
+    - [Metadatos](#metadatos)
+    - [Portal Andino](#portal-andino)
+    - [Portal de datos](#portal-de-datos)
+    - [Perfil de metadatos](#perfil-de-metadatos)
+    - [Transparencia activa](#transparencia-activa)
+    - [Transparencia pasiva](#transparencia-pasiva)
+    - [Usabilidad](#usabilidad)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Glosario
 
 

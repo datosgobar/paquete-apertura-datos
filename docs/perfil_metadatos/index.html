@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
@@ -47,7 +47,7 @@
     
     
 	
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
       
       
     
@@ -55,7 +55,7 @@
 
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     <script src="../js/extra.js"></script>
 
@@ -68,7 +68,36 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../css/table_styles.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-91435482-1", "https://datosgobar.github.io/paquete-apertura-datos/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -125,22 +154,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Paquete de Apertura de Datos de la República Argentina
-              </span>
-              <span class="md-header-nav__topic">
-                Perfil de Aplicación Nacional de Metadatos para Datos Abiertos
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Paquete de Apertura de Datos de la República Argentina
+            </span>
+            <span class="md-header-nav__topic">
+              Perfil de Aplicación Nacional de Metadatos para Datos Abiertos
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -163,7 +189,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -174,20 +199,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         </div>
       
@@ -251,20 +274,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         
       
@@ -691,57 +712,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla" title="Anexo I - Taxonomía temática global de la APN para los datasets (tabla)" class="md-nav__link">
-    Anexo I - Taxonomía temática global de la APN para los datasets (tabla)
+  <a href="#anexo-i-especificacion-de-frecuencias" title="Anexo I - Especificación de frecuencias" class="md-nav__link">
+    Anexo I - Especificación de frecuencias
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas" title="Anexo II - Pautas para la selección de etiquetas" class="md-nav__link">
-    Anexo II - Pautas para la selección de etiquetas
+  <a href="#anexo-ii-taxonomia-tematica" title="Anexo II - Taxonomía temática" class="md-nav__link">
+    Anexo II - Taxonomía temática
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601" title="Anexo III - Especificación de frecuencias (según ISO-8601)" class="md-nav__link">
-    Anexo III - Especificación de frecuencias (según ISO-8601)
+  <a href="#anexo-iii-ejemplo-de-catalogo" title="Anexo III - Ejemplo de catálogo" class="md-nav__link">
+    Anexo III - Ejemplo de catálogo
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anexo-iv-ejemplo-de-datajson" title="Anexo IV - Ejemplo de data.json" class="md-nav__link">
-    Anexo IV - Ejemplo de data.json
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json" title="Anexo V - Taxonomía temática global de la APN para los datasets (JSON)" class="md-nav__link">
-    Anexo V - Taxonomía temática global de la APN para los datasets (JSON)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#anexo-vi-ejemplo-de-metadatos-como-texto" title="Anexo VI - Ejemplo de metadatos como texto" class="md-nav__link">
-    Anexo VI - Ejemplo de metadatos como texto
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo" title="Anexo VII - Ejemplo de data.json con series de tiempo" class="md-nav__link">
-    Anexo VII - Ejemplo de data.json con series de tiempo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#anexo-viii-ejemplos-de-metadatos-en-json-de-un-dataset-de-series-de-tiempo" title="Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo" class="md-nav__link">
-    Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo
+  <a href="#anexo-iv-series-de-tiempo" title="Anexo IV - Series de tiempo" class="md-nav__link">
+    Anexo IV - Series de tiempo
   </a>
   
     <nav class="md-nav">
@@ -768,14 +761,21 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#catalogo-catalog-series-de-tiempo" title="Catálogo (catalog) - series de tiempo" class="md-nav__link">
+    Catálogo (catalog) - series de tiempo
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anexo-ix-precision-de-series-con-numeros-enteros-y-decimales" title="Anexo IX - Precisión de series con números enteros y decimales" class="md-nav__link">
-    Anexo IX - Precisión de series con números enteros y decimales
+  <a href="#anexo-v-pautas-para-la-seleccion-de-etiquetas" title="Anexo V - Pautas para la selección de etiquetas" class="md-nav__link">
+    Anexo V - Pautas para la selección de etiquetas
   </a>
   
 </li>
@@ -1068,57 +1068,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla" title="Anexo I - Taxonomía temática global de la APN para los datasets (tabla)" class="md-nav__link">
-    Anexo I - Taxonomía temática global de la APN para los datasets (tabla)
+  <a href="#anexo-i-especificacion-de-frecuencias" title="Anexo I - Especificación de frecuencias" class="md-nav__link">
+    Anexo I - Especificación de frecuencias
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas" title="Anexo II - Pautas para la selección de etiquetas" class="md-nav__link">
-    Anexo II - Pautas para la selección de etiquetas
+  <a href="#anexo-ii-taxonomia-tematica" title="Anexo II - Taxonomía temática" class="md-nav__link">
+    Anexo II - Taxonomía temática
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601" title="Anexo III - Especificación de frecuencias (según ISO-8601)" class="md-nav__link">
-    Anexo III - Especificación de frecuencias (según ISO-8601)
+  <a href="#anexo-iii-ejemplo-de-catalogo" title="Anexo III - Ejemplo de catálogo" class="md-nav__link">
+    Anexo III - Ejemplo de catálogo
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anexo-iv-ejemplo-de-datajson" title="Anexo IV - Ejemplo de data.json" class="md-nav__link">
-    Anexo IV - Ejemplo de data.json
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json" title="Anexo V - Taxonomía temática global de la APN para los datasets (JSON)" class="md-nav__link">
-    Anexo V - Taxonomía temática global de la APN para los datasets (JSON)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#anexo-vi-ejemplo-de-metadatos-como-texto" title="Anexo VI - Ejemplo de metadatos como texto" class="md-nav__link">
-    Anexo VI - Ejemplo de metadatos como texto
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo" title="Anexo VII - Ejemplo de data.json con series de tiempo" class="md-nav__link">
-    Anexo VII - Ejemplo de data.json con series de tiempo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#anexo-viii-ejemplos-de-metadatos-en-json-de-un-dataset-de-series-de-tiempo" title="Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo" class="md-nav__link">
-    Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo
+  <a href="#anexo-iv-series-de-tiempo" title="Anexo IV - Series de tiempo" class="md-nav__link">
+    Anexo IV - Series de tiempo
   </a>
   
     <nav class="md-nav">
@@ -1145,14 +1117,21 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#catalogo-catalog-series-de-tiempo" title="Catálogo (catalog) - series de tiempo" class="md-nav__link">
+    Catálogo (catalog) - series de tiempo
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anexo-ix-precision-de-series-con-numeros-enteros-y-decimales" title="Anexo IX - Precisión de series con números enteros y decimales" class="md-nav__link">
-    Anexo IX - Precisión de series con números enteros y decimales
+  <a href="#anexo-v-pautas-para-la-seleccion-de-etiquetas" title="Anexo V - Pautas para la selección de etiquetas" class="md-nav__link">
+    Anexo V - Pautas para la selección de etiquetas
   </a>
   
 </li>
@@ -1198,7 +1177,7 @@
     </tr>
     <tr>
         <td>Estado</td>
-        <td>Publicación digital (falta aprobación normativa)</td>
+        <td>Pendiente de aprobación</td>
     </tr>
     <tr>
         <td>Versión</td>
@@ -1235,7 +1214,7 @@
     <tr>
         <td>1.2</td>
         <td>TBD</td>
-        <td>Publicación digital de la versión 1.2</td>
+        <td>Pendiente de aprobación</td>
     </tr>
 </table>
 
@@ -1245,31 +1224,17 @@
 
 <h2 id="indice"><a class="toclink" href="#indice">Indice</a><a class="headerlink" href="#indice" title="Permanent link">&#128279;</a></h2>
 <ul>
-<li><a href="#introducci%C3%B3n">Introducción</a><ul>
+<li><a href="#introduccion">Introducción</a><ul>
 <li><a href="#objetivo">Objetivo</a></li>
 <li><a href="#antecedentes">Antecedentes</a></li>
 </ul>
 </li>
-<li><a href="#terminolog%C3%ADa">Terminología</a></li>
+<li><a href="#terminologia">Terminología</a></li>
 <li><a href="#referencia">Referencia</a><ul>
 <li><a href="#esquema">Esquema</a></li>
-<li><a href="#clases-del-perfil">Clases del perfil</a><ul>
-<li><a href="#obligatorias">Obligatorias</a></li>
-<li><a href="#recomendadas">Recomendadas</a></li>
-</ul>
-</li>
-<li><a href="#campos-del-perfil">Campos del perfil</a><ul>
-<li><a href="#cat%C3%A1logo-catalog">Catálogo (<code>catalog</code>)</a></li>
-<li><a href="#dataset-dataset">Dataset (<code>dataset</code>)</a></li>
-<li><a href="#distribuci%C3%B3n-distribution">Distribución (<code>distribution</code>)</a></li>
-<li><a href="#campo-field">Campo (<code>field</code>)</a></li>
-<li><a href="#tema-theme">Tema (<code>theme</code>)</a></li>
-</ul>
-</li>
-<li><a href="#extensiones-especiales">Extensiones especiales</a><ul>
-<li><a href="#series-de-tiempo">Series de tiempo</a></li>
-</ul>
-</li>
+<li><a href="#clases-del-perfil">Clases del perfil</a></li>
+<li><a href="#campos-del-perfil">Campos del perfil</a></li>
+<li><a href="#extensiones-especiales">Extensiones especiales</a></li>
 </ul>
 </li>
 <li><a href="#condiciones-de-cumplimiento-del-perfil">Condiciones de cumplimiento del perfil</a><ul>
@@ -1279,15 +1244,11 @@
 </ul>
 </li>
 <li><a href="#anexos">Anexos</a><ul>
-<li><a href="#anexo-i-taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a></li>
-<li><a href="#anexo-ii-pautas-para-la-selecci%C3%B3n-de-etiquetas">Anexo II - Pautas para la selección de etiquetas</a></li>
-<li><a href="#anexo-iii-especificaci%C3%B3n-de-frecuencias-seg%C3%BAn-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a></li>
-<li><a href="#anexo-iv-ejemplo-de-datajson">Anexo IV - Ejemplo de data.json</a></li>
-<li><a href="#anexo-v-taxonom%C3%ADa-tem%C3%A1tica-global-de-la-apn-para-los-datasets-json">Anexo V - Taxonomía temática global de la APN para los datasets (JSON)</a></li>
-<li><a href="#anexo-vi-ejemplo-de-metadatos-como-texto">Anexo VI - Ejemplo de metadatos como texto</a></li>
-<li><a href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a></li>
-<li><a href="#anexo-viii-ejemplos-de-metadatos-en-json-de-un-dataset-de-series-de-tiempo">Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo</a></li>
-<li><a href="#anexo-ix-precisi%C3%B3n-de-series-con-n%C3%BAmeros-enteros-y-decimales">Anexo IX - Precisión de series con números enteros y decimales</a></li>
+<li><a href="#anexo-i-especificacion-de-frecuencias">Anexo I - Especificación de frecuencias</a></li>
+<li><a href="#anexo-ii-taxonomia-tematica">Anexo II - Taxonomía temática</a></li>
+<li><a href="#anexo-iii-ejemplo-de-catalogo">Anexo III - Ejemplo de catálogo</a></li>
+<li><a href="#anexo-iv-series-de-tiempo">Anexo IV - Series de tiempo</a></li>
+<li><a href="#anexo-v-pautas-para-la-seleccion-de-etiquetas">Anexo V - Pautas para la selección de etiquetas</a></li>
 </ul>
 </li>
 </ul>
@@ -1295,10 +1256,10 @@
 
 <h2 id="introduccion"><a class="toclink" href="#introduccion">Introducción</a><a class="headerlink" href="#introduccion" title="Permanent link">&#128279;</a></h2>
 <h3 id="objetivo"><a class="toclink" href="#objetivo">Objetivo</a><a class="headerlink" href="#objetivo" title="Permanent link">&#128279;</a></h3>
-<p>El Perfil Nacional de Metadatos para Datos Abiertos <strong>es un estándar de documentación de activos de datos digitales</strong>, desarrollado para organismos de la Administración Pública Nacional, con el fin de catalogar de manera homogénea todos sus activos de datos abiertos a la ciudadanía y el público en general.</p>
-<p>El objetivo final perseguido es así poder generar un catálogo central normalizado de activos de datos digitales abiertos facilitando su búsqueda, acceso, comprensión contextual e integración efectiva en sistemas, aplicaciones y flujos de trabajo con datos, a un bajo costo para el usuario.</p>
+<p>El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos <strong>es una especificación para documentar activos de datos digitales</strong>, desarrollado para organismos de la Administración Pública Nacional, con el fin de catalogar de manera homogénea todos sus activos de datos abiertos a la ciudadanía y el público en general.</p>
+<p>El perfil tiene por objetivo facilitar la búsqueda y acceso por parte de los usuarios a los activos de datos digitales abiertos mediante la implementación de un catálogo central normalizado, que permita la integración efectiva en sistemas, aplicaciones y flujos de trabajo con datos.</p>
 <h3 id="antecedentes"><a class="toclink" href="#antecedentes">Antecedentes</a><a class="headerlink" href="#antecedentes" title="Permanent link">&#128279;</a></h3>
-<p>El Perfil Nacional de Metadatos para Datos Abiertos <strong>es una extensión del estándar <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe">DCAT - AP</a></strong>, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.</p>
+<p>El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos <strong>es una extensión de <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe">DCAT - AP</a></strong>, usado por los países de la Unión Europea. DCAT es un vocabulario controlado definido por la W3C, ampliamente usado a nivel global para la descripción de catálogos de datos.</p>
 <p>Según la W3C: "Mediante la utilización de DCAT para describir datasets en catálogos de datos, quienes publican aumentan la posibilidad de descubrimiento (<em>discoverability</em>) y permiten a aplicaciones informáticas consumir metadatos de manera simple desde múltiples catálogos. Además permite la publicación descentralizada de catálogos y favorece la búsqueda <em>federada</em> de datasets a través de varios sitios."</p>
 <p>Así mismo, este perfil toma elementos del <a href="https://perfil-regional-metadatos.readthedocs.io">Perfil Regional de Metadatos</a> definido como un repositorio de soluciones comunes sobre documentación de activos de datos abiertos, por un conjunto de países del continente americano entre los que se cuenta la Argentina.</p>
 <h2 id="terminologia"><a class="toclink" href="#terminologia">Terminología</a><a class="headerlink" href="#terminologia" title="Permanent link">&#128279;</a></h2>
@@ -1308,7 +1269,7 @@
 <li><strong>Dataset</strong>: es un conjunto de datos que agrupa recursos referidos a un mismo tema, que respetan una estructura de la información que los relaciona entre sí.</li>
 <li><strong>Distribución</strong>: es un recurso o activo de datos que se puede descargar (un archivo) y sus metadatos asociados. Puede tener diversos formatos (csv, shp, xlsx, etc) o estar disponible en línea (html, php).</li>
 <li><strong>Activo de datos</strong>: es la forma más genérica de referirse a cualquier recurso o conjunto de recursos de datos que pueda ser tratado como una unidad a efectos de su gestión, uso, protección, intercambio o referencia.</li>
-<li><strong>Campo obligatorio</strong>: es una propiedad de uso obligatorio para el cumplimiento del perfil.</li>
+<li><strong>Campo obligatorio</strong>: es una propiedad de uso obligatorio para el cumplimiento del perfil. Permite que todos los activos de datos cuenten con una documentación básica homogénea.</li>
 <li><strong>Campo recomendado</strong>: es una propiedad que, si bien no es obligatoria, su uso es recomendado para una mayor calidad de documentación de activos de datos.</li>
 <li><strong>Campo opcional</strong>: es una propiedad disponible para su uso en caso de que sea de utilidad para el organismo, pero que no necesariamente aplica para todos los casos.</li>
 </ul>
@@ -1366,7 +1327,7 @@
   <tr>
     <td>Identificador</td>
     <td>Recomendado</td>
-    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (http://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
+    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (https://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
     <td>"enacom"<br/>
     "energia"<br/>
     "desarrollo-social"<br/>
@@ -1395,7 +1356,7 @@
     <td>Autor</td>
     <td>Sí</td>
     <td>Responsable de la publicación del catálogo.</td>
-    <td>Ministerio de Modernización</td>
+    <td>Secretaría de Gobierno de Modernización</td>
     <td>publisher -> name</td>
     <td>String</td>
   </tr>
@@ -1454,8 +1415,8 @@
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual todos los datasets y distribuciones del catálogo están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a> . recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset o distribución que especifique una licencia diferente, sobreescribe a la licencia general del catálogo.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>Indica la licencia bajo la cual todos los datasets y distribuciones del catálogo están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="https://opendefinition.org/licenses/">https://opendefinition.org/licenses/</a> . recomendamos usar la licencia "Creative Commons Attribution 4.0". Un dataset o distribución que especifique una licencia diferente, sobreescribe a la licencia general del catálogo.</td>
+    <td>"https://creativecommons.org/licenses/by/4.0/legalcode.es" si se utiliza un enlace<br/>"Creative Commons Attribution 4.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
   </tr>
@@ -1463,15 +1424,15 @@
     <td>Página web del catálogo</td>
     <td>Recomendado</td>
     <td>Dirección web de acceso a la página principal del catálogo. Enlace a la página principal del catálogo.</td>
-    <td>http://datos.gob.ar</td>
+    <td>https://datos.gob.ar</td>
     <td>homepage</td>
     <td>String</td>
   </tr>
   <tr>
     <td>Taxonomía temática global</td>
     <td>Sí</td>
-    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en <a href="http://datos.gob.ar/superThemeTaxonomy.json">http://datos.gob.ar/superThemeTaxonomy.json</a>.</td>
-    <td>http://datos.gob.ar/superThemeTaxonomy.json</td>
+    <td>Es el sistema de clasificación temática global de la Administración Pública Nacional. Compone una lista de temas globales y está publicada en <a href="https://datos.gob.ar/superThemeTaxonomy.json">https://datos.gob.ar/superThemeTaxonomy.json</a>.</td>
+    <td>https://datos.gob.ar/superThemeTaxonomy.json</td>
     <td>superThemeTaxonomy</td>
     <td>String</td>
   </tr>
@@ -1499,11 +1460,11 @@
     b) Un área de coordenadas representada por latitud/ longitud en el orden: minima longitud, mínima latitud, máxima longitud, máxima latitud.<br/>
     c) Un punto geográfico representado por latitud/longitud.<br/>
     d) Si la referencia geográfico no está identificada en la Guía para la identificación y uso de entidades interoperables indicar la URIs según geonames.org; ej : 
-    http://sws.geonames.org/6255146</td>
+    https://sws.geonames.org/6255146</td>
     <td>"ARG" es el código para la República Argentina.<br/>
     "06007" es el código de un departamento<br/>
     [-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box<br/>
-    [-58.111111, -35.111111] es un punto geográfico<br/>"http://sws.geonames.org/6255146"</td>
+    [-58.111111, -35.111111] es un punto geográfico<br/>"https://sws.geonames.org/6255146"</td>
     <td>spatial</td>
     <td>String or Array</td>
   </tr>
@@ -1531,7 +1492,7 @@
     <td>Título</td>
     <td>Sí</td>
     <td>Nombre asignado al dataset tal como será publicado. Debe ser claro y lo suficientemente abstracto como para abarcar la multiplicidad de distribuciones que contiene. Se recomienda no exceder los 100 caracteres en la mayoría de los casos. En caso de que un título más largo se juzgue necesario o relevante, este no deberá exceder los 200 caracteres.</td>
-    <td>Sistema de contrataciones electrónicas</td>
+    <td>Sistema de Contrataciones Electrónicas (Argentina Compra)</td>
     <td>title</td>
     <td>String</td>
   </tr>
@@ -1546,8 +1507,8 @@
   <tr>
     <td>Autor</td>
     <td>Sí</td>
-    <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (<a href="http://datos.gob.ar/dataset/estructura-organica-pen">http://datos.gob.ar/dataset/estructura-organica-pen</a>), deberá utilizarse la denominación allí documentada.</td>
-    <td>Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones.</td>
+    <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (<a href="https://datos.gob.ar/dataset/jgm-estructura-organica-autoridades-poder-ejecutivo-nacional">https://datos.gob.ar/dataset/estructura-organica-pen</a>), deberá utilizarse la denominación allí documentada.</td>
+    <td>Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones.</td>
     <td>publisher -> name</td>
     <td>String</td>
   </tr>
@@ -1563,7 +1524,7 @@
     <td>Área/Persona de contacto</td>
     <td>Recomendado</td>
     <td>Área/persona de contacto que puede brindar información relevante sobre el dataset.</td>
-    <td>Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.</td>
+    <td>Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.</td>
     <td>contactPoint -> fn</td>
     <td>String</td>
   </tr>
@@ -1626,7 +1587,7 @@
   <tr>
     <td>Fuente primaria</td>
     <td>No</td>
-    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/><br/> En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (http://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
+    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/><br/> En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (https://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
     <td>Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.</td>
     <td>source</td>
     <td>String</td>
@@ -1635,7 +1596,7 @@
     <td>Página de referencias</td>
     <td>No</td>
     <td>URL de una página web a través de la cual se puede acceder al dataset, sus recursos o información adicional sobre el mismo.</td>
-    <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra</td>
+    <td>https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra</td>
     <td>landingPage</td>
     <td>String</td>
   </tr>
@@ -1658,8 +1619,8 @@
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/>"Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>Indica la licencia bajo la cual el dataset y todas sus distribuciones están disponibles mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="https://opendefinition.org/licenses/">https://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Creative Commons Attribution 4.0". Un dataset hereda por default la licencia general del catálogo salvo que se especifique una licencia diferente en este campo. Las distribuciones del dataset heredan esta licencia salvo que especifiquen una diferente.</td>
+    <td>"https://creativecommons.org/licenses/by/4.0/legalcode.es" si se utiliza un enlace<br/>"Creative Commons Attribution 4.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
   </tr>
@@ -1682,11 +1643,11 @@
     a) De países y, provincias y municipios argentinos, según las recomendaciones de la Guía para la identificación y uso de entidades interoperables.<br/>
     b) Un área de coordenadas representada por latitud/ longitud en el orden: minima longitud, minima latitud, maxima longitud, maxima latitud.<br/>
     c) Un punto geográfico representado por latitud/longitud.<br/>
-    d) Si la referencia geográfico no está identificada en la Guía para la identificación y uso de entidades interoperables indicar la URIs según geonames.org; ej : http://sws.geonames.org/6255146"</td>
+    d) Si la referencia geográfico no está identificada en la Guía para la identificación y uso de entidades interoperables indicar la URIs según geonames.org; ej : https://sws.geonames.org/6255146"</td>
     <td>"ARG" es el código para la República Argentina.<br/>
     "06007" es el código de un departamento<br/>
     [-58.111111, -35.111111, -57.111111, -33.111111] es un bounding box<br/>[-58.111111, -35.111111] es un punto geográfico<br/>
-    "http://sws.geonames.org/6255146"</td>
+    "https://sws.geonames.org/6255146"</td>
     <td>spatial</td>
     <td>Array or String</td>
   </tr>
@@ -1706,7 +1667,7 @@
     <td>Identificador</td>
     <td>Si</td>
     <td>Identificador único de la distribución, este identificador debe ser único para la distribución dentro del catálogo completo.<br/><br/>Debe estar compuesto por letras mayúsculas o minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números, guiones bajos "_", guiones medios "-" y puntos ".".</td>
-    <td>1.2</td>
+    <td>2.1</td>
     <td>identifier</td>
     <td>String</td>
   </tr>
@@ -1714,7 +1675,7 @@
     <td>Título</td>
     <td>Sí</td>
     <td>Nombre asignado a la distribución.</td>
-    <td>Convocatorias abiertas durante el año 2015</td>
+    <td>Convocatorias 2017</td>
     <td>title</td>
     <td>String</td>
   </tr>
@@ -1722,7 +1683,7 @@
     <td>Descripción</td>
     <td>Recomendado</td>
     <td>Breve descripción de la distribución. Recomendamos no escribir más de una línea. Toda información adicional puede ser incluida en la descripción del dataset.</td>
-    <td>Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas</td>
+    <td>Listado de convocatorias abiertas durante el 2017 en el nuevo sistema "COMPR.AR".</td>
     <td>description</td>
     <td>String</td>
   </tr>
@@ -1730,7 +1691,7 @@
     <td>URL de descarga</td>
     <td>Sí</td>
     <td>URL que permite la descarga directa de la distribución del dataset, vincula directamente a un archivo descargable en un formato dado.</td>
-    <td>http://datos.gob.ar/dataset/becaceb2-dbd0-4879-93bd-5f02bd3b8ca2/resource/bf2f67f4-9ab3-479b-a881-56b43565125e/download/contratos-2015.csv</td>
+    <td>https://infra.datos.gob.ar/catalog/modernizacion/dataset/2/distribution/2.1/download/convocatorias-2017.csv</td>
     <td>downloadURL</td>
     <td>String</td>
   </tr>
@@ -1746,7 +1707,7 @@
     <td>URL de acceso</td>
     <td>Sí</td>
     <td>URL que permite el acceso a la distribución del dataset. Puede ser una página, feed u otro tipo de recurso que dé acceso indirecto a las distribuciones. Si las distribuciones son solo accesibles a través de la página de referencia del dataset, debe completarse el valor de la URL de acceso a la distribución con el mismo valor de la página de referencia del dataset.</td>
-    <td>http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a</td>
+    <td>https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra/archivo/modernizacion_2.1</td>
     <td>accessURL</td>
     <td>String</td>
   </tr>
@@ -1770,15 +1731,15 @@
     <td>Fecha de última actualización/ modificación</td>
     <td>Recomendado</td>
     <td>Fecha de última actualización/modificación de la distribución. Según el formato ISO-8601, tipeado como fecha simple o fecha con hora, con el mayor detalle posible que sea relevante para el dataset.</td>
-    <td>"2016-04-19T19:48:05.433640" para especificar fecha y hora<br/>"2016-04-19" para especificar fecha únicamente</td>
+    <td>"2018-02-01T19:48:05.433640" para especificar fecha y hora<br/>"2018-02-01" para especificar fecha únicamente</td>
     <td>modified</td>
     <td>String</td>
   </tr>
   <tr>
     <td>Formato del archivo</td>
     <td>Recomendado</td>
-    <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
-    <td>"text/csv" definición de IANA "csv" caracteres finales después del punto</td>
+    <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (https://www.iana.org/assignments/media-types/media-types.xml), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
+    <td>CSV</td>
     <td>format</td>
     <td>String</td>
   </tr>
@@ -1786,22 +1747,22 @@
     <td>Nombre del archivo</td>
     <td>Recomendado</td>
     <td>Nombre de la distribución bajo el cual se descarga un archivo que contiene los datos, incluyendo la extensión del formato.<br/><br/>Debe estar compuesto por letras minúsculas de la "a" a la "z" sin caracteres especiales (sin tildes y sin la "ñ"), números y guiones medios "-".</td>
-    <td>estructura-organica.csv</td>
+    <td>convocatorias-2017.csv</td>
     <td>fileName</td>
     <td>String</td>
   </tr>
   <tr>
     <td>Licencia</td>
     <td>Recomendado</td>
-    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="http://opendefinition.org/licenses/">http://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Open Database License (ODbL) v1.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
-    <td>"http://opendatacommons.org/licenses/dbcl/1-0/" si se utiliza un enlace<br/> "Open Database License (ODbL) v1.0" si se consigna el nombre de la licencia a utilizar</td>
+    <td>Indica la licencia bajo la cual la distribución está disponible mediante un enlace a la licencia o documento de la licencia seleccionada, o mediante el título textual de la licencia tal como aparece en la lista de <a href="https://opendefinition.org/licenses/">https://opendefinition.org/licenses/</a>. Recomendamos usar la licencia "Creative Commons Attribution 4.0". Una distribución hereda por default la licencia del dataset al que pertenece, salvo que se especifique una licencia diferente en este campo.</td>
+    <td>"https://creativecommons.org/licenses/by/4.0/legalcode.es" si se utiliza un enlace<br/> "Creative Commons Attribution 4.0" si se consigna el nombre de la licencia a utilizar</td>
     <td>license</td>
     <td>String</td>
   </tr>
   <tr>
     <td>Tipo de archivo</td>
     <td>No</td>
-    <td>Indica el tipo de archivo de la distribución, sólo si este está definido por IANA (http://www.iana.org/assignments/media-types/media-types.xml). En caso contrario este campo permanece vacío.</td>
+    <td>Indica el tipo de archivo de la distribución, sólo si este está definido por IANA (https://www.iana.org/assignments/media-types/media-types.xml). En caso contrario este campo permanece vacío.</td>
     <td>"text/csv" definición de IANA "" cuando el formato no tiene definición en IANA</td>
     <td>mediaType</td>
     <td>String</td>
@@ -1846,7 +1807,7 @@
   <tr>
     <td>Tipo</td>
     <td>Recomendado</td>
-    <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (<a href="http://okfnlabs.org/recline/docs/models.html#types">http://okfnlabs.org/recline/docs/models.html#types</a>).
+    <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (<a href="https://okfnlabs.org/recline/docs/models.html#types">https://okfnlabs.org/recline/docs/models.html#types</a>).
     <br/><br/>Los tipos incluidos en esta lista son:<br/><br/>
     string (text): Valores de texto.<br/>
     number (double, float, numeric): Números que puedan no ser enteros (incluyen decimales).<br/>
@@ -1857,11 +1818,11 @@
     boolean (bool): Valores verdadero/falso.<br/>
     binary: Representación de datos binarios base64.<br/>
     geo_point: Ver estructura en  <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html">https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html.</a><br/>
-    geojson: ver en <a href="http://geojson.org/">http://geojson.org/</a><br/>
+    geojson: ver en <a href="https://geojson.org/">https://geojson.org/</a><br/>
     array: Lista de valores.<br/>
     object (json): Objeto de JSON.<br/>
     any: Campo que puede contener valores de cualquier tipo.</td>
-    <td>Convocatorias abiertas durante el año 2015</td>
+    <td>Convocatorias 2017</td>
     <td>type</td>
     <td>String</td>
   </tr>
@@ -2195,8 +2156,93 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
 <li>Implementar las validaciones necesarias para procesar correctamente los casos válidos definidos en las extensiones especiales.</li>
 </ul>
 <h2 id="anexos"><a class="toclink" href="#anexos">Anexos</a><a class="headerlink" href="#anexos" title="Permanent link">&#128279;</a></h2>
-<h3 id="anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla"><a class="toclink" href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla">Anexo I - Taxonomía temática global de la APN para los datasets (tabla)</a><a class="headerlink" href="#anexo-i-taxonomia-tematica-global-de-la-apn-para-los-datasets-tabla" title="Permanent link">&#128279;</a></h3>
-<p>El Portal Nacional de Datos usa la <a href="http://publications.europa.eu/mdr/authority/data-theme/index.html">taxonomía temática definida por la Unión Europea</a>.</p>
+<h3 id="anexo-i-especificacion-de-frecuencias"><a class="toclink" href="#anexo-i-especificacion-de-frecuencias">Anexo I - Especificación de frecuencias</a><a class="headerlink" href="#anexo-i-especificacion-de-frecuencias" title="Permanent link">&#128279;</a></h3>
+<p>Especificación de frecuencias según ISO-8601.</p>
+<table>
+  <tr>
+    <th>Frecuencia</th>
+    <th>Valor según ISO-8601</th>
+  </tr>
+  <tr>
+    <td>Cada diez años</td>
+    <td>R/P10Y</td>
+  </tr>
+  <tr>
+    <td>Cada cuatro años</td>
+    <td>R/P4Y</td>
+  </tr>
+  <tr>
+    <td>Cada tres años</td>
+    <td>R/P3Y</td>
+  </tr>
+  <tr>
+    <td>Cada dos años</td>
+    <td>R/P2Y</td>
+  </tr>
+  <tr>
+    <td>Anual</td>
+    <td>R/P1Y</td>
+  </tr>
+  <tr>
+    <td>Cada medio año</td>
+    <td>R/P6M</td>
+  </tr>
+  <tr>
+    <td>Cuatrimestral</td>
+    <td>R/P4M</td>
+  </tr>
+  <tr>
+    <td>Trimestral</td>
+    <td>R/P3M</td>
+  </tr>
+  <tr>
+    <td>Bimestral</td>
+    <td>R/P2M</td>
+  </tr>
+  <tr>
+    <td>Mensual</td>
+    <td>R/P1M</td>
+  </tr>
+  <tr>
+    <td>Cada 15 días</td>
+    <td>R/P0.5M</td>
+  </tr>
+  <tr>
+    <td>Tres veces por mes</td>
+    <td>R/P0.33M</td>
+  </tr>
+  <tr>
+    <td>Semanal</td>
+    <td>R/P1W</td>
+  </tr>
+  <tr>
+    <td>Dos veces a la semana</td>
+    <td>R/P0.5W</td>
+  </tr>
+  <tr>
+    <td>Tres veces a la semana</td>
+    <td>R/P0.33W</td>
+  </tr>
+  <tr>
+    <td>Diaria</td>
+    <td>R/P1D</td>
+  </tr>
+  <tr>
+    <td>Cada hora</td>
+    <td>R/PT1H</td>
+  </tr>
+  <tr>
+    <td>Continuamente actualizado</td>
+    <td>R/PT1S</td>
+  </tr>
+  <tr>
+    <td>Eventual</td>
+    <td>eventual</td>
+  </tr>
+</table>
+
+<h3 id="anexo-ii-taxonomia-tematica"><a class="toclink" href="#anexo-ii-taxonomia-tematica">Anexo II - Taxonomía temática</a><a class="headerlink" href="#anexo-ii-taxonomia-tematica" title="Permanent link">&#128279;</a></h3>
+<p>El Portal Nacional de Datos usa la <a href="https://publications.europa.eu/mdr/authority/data-theme/index.html">taxonomía temática definida por la Unión Europea</a>.</p>
 <p><strong>Cada catálogo de datos puede desarrollar su propia taxonomía</strong>, cuyo uso se expresa en  los siguientes campos de metadatos (y sus equivalentes para el Portal Andino):</p>
 <ul>
 <li><strong>themeTaxonomy</strong>: es un campo de metadatos del catálogo que define una lista de temas que se pueden usar para clasificar los datasets. Refiere al esquema completo de la taxonomía en sí, no a alguna de sus etiquetas en particular.</li>
@@ -2281,277 +2327,7 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
     </tbody>
 </table>
 
-<h3 id="anexo-ii-pautas-para-la-seleccion-de-etiquetas"><a class="toclink" href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas">Anexo II - Pautas para la selección de etiquetas</a><a class="headerlink" href="#anexo-ii-pautas-para-la-seleccion-de-etiquetas" title="Permanent link">&#128279;</a></h3>
-<p>Elegir buenas etiquetas hace más fácil la búsqueda de datasets para los usuarios. Cuanto más amplia y uniforme sea la lista de etiquetas, mayor será su efectividad.</p>
-<p>Estas son pautas para definir etiquetas aplicables a la propiedad <em>keyword</em> de la clase dataset:</p>
-<ul>
-<li>Escribir correctamente y en plural.</li>
-<li>Usar mayúsculas sólo donde corresponda.</li>
-<li>Identificar palabras claves.</li>
-<li>Respetar la existencia de etiquetas anteriores.</li>
-<li>Agregar sinónimos y emplear lenguaje natural.</li>
-<li>Usar una sóla palabra. Si es muy necesario, usar más de una. </li>
-<li>Si la etiqueta tiene más de una palabra, debe estar separada por un espacio, ej: "declaraciones juradas".</li>
-</ul>
-<p>Preguntas útiles a la hora de pensar los etiquetas:</p>
-<ul>
-<li>¿Cuál es el tema?</li>
-<li>¿Qué aspectos serán de interés para los usuarios?</li>
-<li>¿De qué otro modo buscaría sobre esta información?</li>
-<li>¿De qué tipo de información se trata?</li>
-<li>¿Qué área la provee?</li>
-</ul>
-<h3 id="anexo-iii-especificacion-de-frecuencias-segun-iso-8601"><a class="toclink" href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a><a class="headerlink" href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601" title="Permanent link">&#128279;</a></h3>
-<table>
-  <tr>
-    <th>Frecuencia</th>
-    <th>Valor según ISO-8601</th>
-  </tr>
-  <tr>
-    <td>Cada diez años</td>
-    <td>R/P10Y</td>
-  </tr>
-  <tr>
-    <td>Cada cuatro años</td>
-    <td>R/P4Y</td>
-  </tr>
-  <tr>
-    <td>Cada tres años</td>
-    <td>R/P3Y</td>
-  </tr>
-  <tr>
-    <td>Cada dos años</td>
-    <td>R/P2Y</td>
-  </tr>
-  <tr>
-    <td>Anual</td>
-    <td>R/P1Y</td>
-  </tr>
-  <tr>
-    <td>Cada medio año</td>
-    <td>R/P6M</td>
-  </tr>
-  <tr>
-    <td>Cuatrimestral</td>
-    <td>R/P4M</td>
-  </tr>
-  <tr>
-    <td>Trimestral</td>
-    <td>R/P3M</td>
-  </tr>
-  <tr>
-    <td>Bimestral</td>
-    <td>R/P2M</td>
-  </tr>
-  <tr>
-    <td>Mensual</td>
-    <td>R/P1M</td>
-  </tr>
-  <tr>
-    <td>Cada 15 días</td>
-    <td>R/P0.5M</td>
-  </tr>
-  <tr>
-    <td>Tres veces por mes</td>
-    <td>R/P0.33M</td>
-  </tr>
-  <tr>
-    <td>Semanal</td>
-    <td>R/P1W</td>
-  </tr>
-  <tr>
-    <td>Dos veces a la semana</td>
-    <td>R/P0.5W</td>
-  </tr>
-  <tr>
-    <td>Tres veces a la semana</td>
-    <td>R/P0.33W</td>
-  </tr>
-  <tr>
-    <td>Diaria</td>
-    <td>R/P1D</td>
-  </tr>
-  <tr>
-    <td>Cada hora</td>
-    <td>R/PT1H</td>
-  </tr>
-  <tr>
-    <td>Continuamente actualizado</td>
-    <td>R/PT1S</td>
-  </tr>
-  <tr>
-    <td>Eventual</td>
-    <td>eventual</td>
-  </tr>
-</table>
-
-<h3 id="anexo-iv-ejemplo-de-datajson"><a class="toclink" href="#anexo-iv-ejemplo-de-datajson">Anexo IV - Ejemplo de data.json</a><a class="headerlink" href="#anexo-iv-ejemplo-de-datajson" title="Permanent link">&#128279;</a></h3>
-<p>Este es un <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json">ejemplo de data.json</a>:</p>
-<div class="codehilite"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Datos Argentina&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Portal de Datos Abiertos del Gobierno de la República Argentina&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;publisher&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Modernización&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;mbox&quot;</span><span class="p">:</span> <span class="s2">&quot;datos@modernizacion.gob.ar&quot;</span>
-  <span class="p">},</span>
-  <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-14T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-19T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;language&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="s2">&quot;spa&quot;</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;superThemeTaxonomy&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datos.gob.ar/superThemeTaxonomy.json&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;themeTaxonomy&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;convocatorias&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Convocatorias&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre licitaciones en estado de convocatoria.&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;compras&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Compras&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre compras realizadas.&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;contrataciones&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Contrataciones&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre contrataciones.&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;adjudicaciones&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Adjudicaciones&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre licitaciones adjudicadas.&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;normativa&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Normativa&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre normativa para compras y contrataciones.&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;proveedores&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Proveedores&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre proveedores del Estado.&quot;</span>
-    <span class="p">}</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;Open Data Commons Open Database License 1.0&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;homepage&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datos.gob.ar&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;rights&quot;</span><span class="p">:</span> <span class="s2">&quot;Derechos especificados en la licencia.&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;spatial&quot;</span><span class="p">:</span> <span class="s2">&quot;ARG&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;dataset&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Sistema de contrataciones electrónicas&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Compra)&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;publisher&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;mbox&quot;</span><span class="p">:</span> <span class="s2">&quot;onc@modernizacion.gob.ar&quot;</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;contactPoint&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;fn&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;hasEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;onc-compraselectronicas@modernizacion.gob.ar&quot;</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;superTheme&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;ECON&quot;</span>
-      <span class="p">],</span>
-      <span class="nt">&quot;theme&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;contrataciones&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;compras&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;convocatorias&quot;</span>
-      <span class="p">],</span>
-      <span class="nt">&quot;keyword&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;bienes&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;compras&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;contrataciones&quot;</span>
-      <span class="p">],</span>
-      <span class="nt">&quot;accrualPeriodicity&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P1Y&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-14T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-19T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;99db6631-d1c9-470b-a73e-c62daa32c420&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;language&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;spa&quot;</span>
-      <span class="p">],</span>
-      <span class="nt">&quot;spatial&quot;</span><span class="p">:</span> <span class="s2">&quot;ARG&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;temporal&quot;</span><span class="p">:</span> <span class="s2">&quot;2015-01-01/2015-12-31&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;landingPage&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;Open Data Commons Open Database License 1.0&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;distribution&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;accessURL&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;mediaType&quot;</span><span class="p">:</span> <span class="s2">&quot;text/csv&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;downloadURL&quot;</span><span class="p">:</span> <span class="s2">&quot;http://186.33.211.253/dataset/99db6631-d1c9-470b-a73e-c62daa32c420/resource/4b7447cb-31ff-4352-96c3-589d212e1cc9/download/convocatorias-abiertas-anio-2015.csv&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Convocatorias abiertas durante el año 2015&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;Open Data Commons Open Database License 1.0&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;byteSize&quot;</span><span class="p">:</span> <span class="s2">&quot;5120&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-14T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-19T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;rights&quot;</span><span class="p">:</span> <span class="s2">&quot;Derechos especificados en la licencia.&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;field&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;procedimiento_id&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Identificador único del procedimiento de contratación&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;organismo_unidad_operativa_contrataciones_id&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Identificador único del organismo que realiza la convocatoria. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;unidad_operativa_contrataciones_id&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Identificador único de la unidad operativa de contrataciones&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;organismo_unidad_operativa_contrataciones_desc&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Organismo que realiza la convocatoria. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;unidad_operativa_contrataciones_desc&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Unidad operativa de contrataciones.&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;tipo_procedimiento_contratacion&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Tipo de procedimiento al que se adecua la contratación.&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;ejercicio_procedimiento_anio&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Año en el que se inició el proceso de la convocatoria.&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;fecha_publicacion_convocatoria&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Fecha de publicación de la convocatoria en formato AAAA-MM-DD, ISO 8601.&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;modalidad_convocatoria&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Modalidad bajo la cual se realiza la convocatoria.&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;clase_convocatoria&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Clase de la convocatoria.&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;objeto_convocatoria&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Objeto/objetivo de la convocatoria&quot;</span>
-            <span class="p">}</span>
-          <span class="p">]</span>
-        <span class="p">}</span>
-      <span class="p">]</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<h3 id="anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json"><a class="toclink" href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json">Anexo V - Taxonomía temática global de la APN para los datasets (JSON)</a><a class="headerlink" href="#anexo-v-taxonomia-tematica-global-de-la-apn-para-los-datasets-json" title="Permanent link">&#128279;</a></h3>
-<p>Esta es la <a href="https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/standards/metadata/superThemeTaxonomy.json">taxonomía temática global</a>:</p>
+<p>Esta es la <a href="https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/standards/metadata/superThemeTaxonomy.json">taxonomía temática global</a> en JSON:</p>
 <div class="codehilite"><pre><span></span><span class="p">[</span>
     <span class="p">{</span>
         <span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;AGRI&quot;</span><span class="p">,</span>
@@ -2622,21 +2398,185 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
 </pre></div>
 
 
-<h3 id="anexo-vi-ejemplo-de-metadatos-como-texto"><a class="toclink" href="#anexo-vi-ejemplo-de-metadatos-como-texto">Anexo VI - Ejemplo de metadatos como texto</a><a class="headerlink" href="#anexo-vi-ejemplo-de-metadatos-como-texto" title="Permanent link">&#128279;</a></h3>
-<p>Este es un <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md">ejemplo en markdown</a>:</p>
+<h3 id="anexo-iii-ejemplo-de-catalogo"><a class="toclink" href="#anexo-iii-ejemplo-de-catalogo">Anexo III - Ejemplo de catálogo</a><a class="headerlink" href="#anexo-iii-ejemplo-de-catalogo" title="Permanent link">&#128279;</a></h3>
+<p>Este es un <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json">ejemplo de catálogo en data.json</a>:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Datos Argentina&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Portal de Datos Abiertos del Gobierno de la República Argentina&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;publisher&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Secretaría de Gobierno de Modernización&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mbox&quot;</span><span class="p">:</span> <span class="s2">&quot;datos@modernizacion.gob.ar&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-14T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-19T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;language&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;spa&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;superThemeTaxonomy&quot;</span><span class="p">:</span> <span class="s2">&quot;https://datos.gob.ar/superThemeTaxonomy.json&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;themeTaxonomy&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;convocatorias&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Convocatorias&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre licitaciones en estado de convocatoria.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;compras&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Compras&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre compras realizadas.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;contrataciones&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Contrataciones&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre contrataciones.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;adjudicaciones&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Adjudicaciones&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre licitaciones adjudicadas.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;normativa&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Normativa&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre normativa para compras y contrataciones.&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;proveedores&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Proveedores&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datasets sobre proveedores del Estado.&quot;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;Creative Commons Attribution 4.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;homepage&quot;</span><span class="p">:</span> <span class="s2">&quot;https://datos.gob.ar&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;rights&quot;</span><span class="p">:</span> <span class="s2">&quot;Derechos especificados en la licencia.&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;spatial&quot;</span><span class="p">:</span> <span class="s2">&quot;ARG&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;dataset&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Sistema de Contrataciones Electrónicas (Argentina Compra)&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Compra)&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;publisher&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;mbox&quot;</span><span class="p">:</span> <span class="s2">&quot;onc@modernizacion.gob.ar&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;contactPoint&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;fn&quot;</span><span class="p">:</span> <span class="s2">&quot;Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;hasEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;onc-compraselectronicas@modernizacion.gob.ar&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;superTheme&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;ECON&quot;</span>
+      <span class="p">],</span>
+      <span class="nt">&quot;theme&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;contrataciones&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;compras&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;convocatorias&quot;</span>
+      <span class="p">],</span>
+      <span class="nt">&quot;keyword&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;bienes&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;compras&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contrataciones&quot;</span>
+      <span class="p">],</span>
+      <span class="nt">&quot;accrualPeriodicity&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P1Y&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-14T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-19T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;99db6631-d1c9-470b-a73e-c62daa32c420&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;language&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;spa&quot;</span>
+      <span class="p">],</span>
+      <span class="nt">&quot;spatial&quot;</span><span class="p">:</span> <span class="s2">&quot;ARG&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;temporal&quot;</span><span class="p">:</span> <span class="s2">&quot;2015-01-01/2015-12-31&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;landingPage&quot;</span><span class="p">:</span> <span class="s2">&quot;https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;Creative Commons Attribution 4.0&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;distribution&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;accessURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra/archivo/modernizacion_2.1&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;mediaType&quot;</span><span class="p">:</span> <span class="s2">&quot;text/csv&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;downloadURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://infra.datos.gob.ar/catalog/modernizacion/dataset/2/distribution/2.1/download/convocatorias-2017.csv&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Convocatorias 2017&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;Creative Commons Attribution 4.0&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;byteSize&quot;</span><span class="p">:</span> <span class="s2">&quot;5120&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-14T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-04-19T19:48:05.433640-03:00&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;rights&quot;</span><span class="p">:</span> <span class="s2">&quot;Derechos especificados en la licencia.&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;field&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;procedimiento_id&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Identificador único del procedimiento de contratación&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;organismo_unidad_operativa_contrataciones_id&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Identificador único del organismo que realiza la convocatoria. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;unidad_operativa_contrataciones_id&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Identificador único de la unidad operativa de contrataciones&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;organismo_unidad_operativa_contrataciones_desc&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Organismo que realiza la convocatoria. Organismo de máximo nivel jerárquico al que pertenece la unidad operativa de contrataciones.&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;unidad_operativa_contrataciones_desc&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Unidad operativa de contrataciones.&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;tipo_procedimiento_contratacion&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Tipo de procedimiento al que se adecua la contratación.&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;ejercicio_procedimiento_anio&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Año en el que se inició el proceso de la convocatoria.&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;fecha_publicacion_convocatoria&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Fecha de publicación de la convocatoria en formato AAAA-MM-DD, ISO 8601.&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;modalidad_convocatoria&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Modalidad bajo la cual se realiza la convocatoria.&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;clase_convocatoria&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Clase de la convocatoria.&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;objeto_convocatoria&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Objeto/objetivo de la convocatoria&quot;</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Este es el mismo <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.md">ejemplo de catálogo en texto</a>:</p>
 <p><strong>Catálogo: Datos Argentina</strong></p>
 <p>Portal de Datos Abiertos del Gobierno de la República Argentina</p>
 <ul>
 <li>Derechos sobre el catálogo: Derechos especificados en la licencia.</li>
 <li>Correo electrónico del autor: datos@modernizacion.gob.ar</li>
-<li>Autor: Ministerio de Modernización</li>
-<li>Licencia: Open Data Commons Open Database License 1.0</li>
+<li>Autor: Secretaría de Gobierno de Modernización</li>
+<li>Licencia: Creative Commons Attribution 4.0</li>
 <li>Idioma(s): spa</li>
 <li>Fecha de creación o publicación: 2016-04-14T19:48:05.433640-03:00</li>
-<li>Taxonomía temática global: <a href="http://datos.gob.ar/superThemeTaxonomy.json">http://datos.gob.ar/superThemeTaxonomy.json</a></li>
+<li>Taxonomía temática global: <a href="https://datos.gob.ar/superThemeTaxonomy.json">https://datos.gob.ar/superThemeTaxonomy.json</a></li>
 <li>Fecha de última actualización/modificación: 2016-04-19T19:48:05.433640-03:00</li>
 <li>Cobertura geográfica: ARG</li>
-<li>Página web del catálogo: <a href="http://datos.gob.ar/">http://datos.gob.ar</a></li>
+<li>Página web del catálogo: <a href="https://datos.gob.ar/">https://datos.gob.ar</a></li>
 </ul>
 <p><strong>Taxonomía temática específica</strong></p>
 <ul>
@@ -2648,12 +2588,12 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
 <li>Proveedores (proveedores): Datasets sobre proveedores del Estado.</li>
 </ul>
 <p><strong>Datasets</strong></p>
-<p><strong>Dataset: Sistema de contrataciones electrónicas</strong></p>
+<p><strong>Dataset: Sistema de Contrataciones Electrónicas (Argentina Compra)</strong></p>
 <p>Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Compra)</p>
 <ul>
 <li><strong>Correo electrónico del autor</strong>: onc@modernizacion.gob.ar</li>
-<li><strong>Autor</strong>: Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones</li>
-<li><strong>Página de referencias</strong>: <a href="http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra">http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra</a></li>
+<li><strong>Autor</strong>: Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones</li>
+<li><strong>Página de referencias</strong>: [https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-comprampra)</li>
 <li><strong>Temática(s) globales</strong>: ECON</li>
 <li><strong>Fecha de publicación</strong>: 2016-04-14T19:48:05.433640-03:00</li>
 <li><strong>Cobertura temporal</strong>: 2015-01-01/2015-12-31</li>
@@ -2663,23 +2603,23 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
 <li><strong>Etiqueta(s)</strong>: bienes, compras, contrataciones</li>
 <li><strong>Frecuencia de actualización</strong>: R/P1Y</li>
 <li><strong>Cobertura geográfica</strong>: ARG</li>
-<li><strong>Licencia</strong>: Open Data Commons Open Database License 1.0</li>
+<li><strong>Licencia</strong>: Creative Commons Attribution 4.0</li>
 <li><strong>Correo electrónico del área/persona de contacto</strong>: onc-compraselectronicas@modernizacion.gob.ar</li>
-<li><strong>Área/Persona de contacto</strong>: Ministerio de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.</li>
+<li><strong>Área/Persona de contacto</strong>: Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.</li>
 <li><strong>Identificador</strong>: 99db6631-d1c9-470b-a73e-c62daa32c420</li>
 </ul>
 <p><em>Distribuciones</em></p>
-<p><strong>Distribución: Convocatorias abiertas durante el año 2015</strong></p>
+<p><strong>Distribución: Convocatorias 2017</strong></p>
 <p>Listado de las convocatorias abiertas durante el año 2015 en el sistema de contrataciones electrónicas</p>
 <ul>
-<li><strong>URL de acceso</strong>: <a href="http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a">http://datos.gob.ar/dataset/sistema-de-contrataciones-electronicas-argentina-compra/archivo/fa3603b3-0af7-43cc-9da9-90a512217d8a</a></li>
+<li><strong>URL de acceso</strong>: <a href="https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra/archivo/modernizacion_2.1">https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-compra/archivo/modernizacion_2.1</a></li>
 <li><strong>Derechos sobre la distribución</strong>: Derechos especificados en la licencia.</li>
-<li><strong>Licencia</strong>: Open Data Commons Open Database License 1.0</li>
+<li><strong>Licencia</strong>: Creative Commons Attribution 4.0</li>
 <li><strong>Tamaño</strong>: 5120</li>
 <li><strong>Formato del archivo</strong>: CSV</li>
 <li><strong>Tipo de archivo</strong>: text/csv</li>
 <li><strong>Fecha de última actualización/ modificación</strong>: 2016-04-19T19:48:05.433640-03:00</li>
-<li><strong>URL de descarga</strong>: <a href="http://datos.gob.ar/dataset/069b5833-e57d-4d7a-859b-67a80cfdff20/resource/fa3603b3-0af7-43cc-9da9-90a512217d8a/download/convocatorias-2015.csv">http://datos.gob.ar/dataset/069b5833-e57d-4d7a-859b-67a80cfdff20/resource/fa3603b3-0af7-43cc-9da9-90a512217d8a/download/convocatorias-2015.csv</a></li>
+<li><strong>URL de descarga</strong>: <a href="https://infra.datos.gob.ar/catalog/modernizacion/dataset/2/distribution/2.1/download/convocatorias-2017.csv">https://infra.datos.gob.ar/catalog/modernizacion/dataset/2/distribution/2.1/download/convocatorias-2017.csv</a></li>
 <li><strong>Fecha de publicación</strong>: 2016-04-14T19:48:05.433640-03:00</li>
 </ul>
 <p><em>Campos de la distribución</em></p>
@@ -2696,197 +2636,8 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
 <li><strong>clase_convocatoria</strong> (string): Clase de la convocatoria.</li>
 <li><strong>objeto_convocatoria</strong> (string): Objeto/objetivo de la convocatoria</li>
 </ul>
-<h3 id="anexo-vii-ejemplo-de-datajson-con-series-de-tiempo"><a class="toclink" href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a><a class="headerlink" href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo" title="Permanent link">&#128279;</a></h3>
-<p>Este es un <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/data.json">ejemplo de data.json</a>:</p>
-<div class="codehilite"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;sspm&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Datos Programación Macroeconómica&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Catálogo de datos abiertos de la Subsecretaría de Programación Macroeconómica.&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;publisher&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica.&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;mbox&quot;</span><span class="p">:</span> <span class="s2">&quot;ausolari@mecon.gob.ar&quot;</span>
-  <span class="p">},</span>
-  <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-09-28T00:00:00&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-09-28T00:00:00&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;Open Database License (ODbL) v1.0&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;superThemeTaxonomy&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datos.gob.ar/superThemeTaxonomy.json&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;themeTaxonomy&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;nivel_actividad&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datos sobre nivel actividad&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel actividad&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;intercambio_comercial&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datos sobre intercambio comercial&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Intercambio Comercial&quot;</span>
-    <span class="p">}</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;language&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="s2">&quot;SPA&quot;</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;spatial&quot;</span><span class="p">:</span> <span class="s2">&quot;ARG&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;dataset&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales: Datos desestacionalizados [Base 1993]&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Componentes desestacionalizados de la oferta y demanda globales a precios de 1993.&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;accrualPeriodicity&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P3M&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;publisher&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;mbox&quot;</span><span class="p">:</span> <span class="s2">&quot;ausolari@mecon.gob.ar&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica.&quot;</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;contactPoint&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;fn&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica. Dirección de Información y Coyuntura&quot;</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;landingPage&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;keyword&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;oferta&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;demanda&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;pbi&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;cuentas nacionales&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;desestacionalizado&quot;</span>
-      <span class="p">],</span>
-      <span class="nt">&quot;superTheme&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;ECON&quot;</span>
-      <span class="p">],</span>
-      <span class="nt">&quot;temporal&quot;</span><span class="p">:</span> <span class="s2">&quot;1993-01-01/2013-09-30&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;theme&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;nivel_actividad&quot;</span>
-      <span class="p">],</span>
-      <span class="nt">&quot;distribution&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;accessURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;downloadURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;field&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;indice_tiempo&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;specialTypeDetail&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P1Y&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_OGP_D_1993_A_17&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_pbi&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_OGI_D_1993_A_25&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_importacion&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGE_D_1993_A_26&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_exportacion&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGI_D_1993_A_19&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_ibif&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGCP_D_1993_A_27&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_priv&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGCP_D_1993_A_30&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_publico&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">}</span>
-          <span class="p">]</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores trimestrales [Base 1993]&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;accessURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;downloadURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;field&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;indice_tiempo&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;specialTypeDetail&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P3M&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_OGP_D_1993_T_17&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_pbi&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;PBI a precios de comprador, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_OGI_D_1993_T_25&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_importacion&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Importación a precios de comprador, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGE_D_1993_T_26&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_exportacion&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta global total a precios de comprador, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGI_D_1993_T_19&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_ibif&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo privado, en millones de pesos  de 1993 y valores anuales.&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGCP_D_1993_T_27&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_priv&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo publico, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGCP_D_1993_T_30&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_publico&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inversion bruta interna fija, en millones de pesos de 1993  y valores anuales.&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
-            <span class="p">}</span>
-          <span class="p">]</span>
-        <span class="p">}</span>
-      <span class="p">]</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<h3 id="anexo-viii-ejemplos-de-metadatos-en-json-de-un-dataset-de-series-de-tiempo"><a class="toclink" href="#anexo-viii-ejemplos-de-metadatos-en-json-de-un-dataset-de-series-de-tiempo">Anexo VIII - Ejemplos de metadatos en JSON de un dataset de series de tiempo</a><a class="headerlink" href="#anexo-viii-ejemplos-de-metadatos-en-json-de-un-dataset-de-series-de-tiempo" title="Permanent link">&#128279;</a></h3>
-<p>A continuación se revisan los campos del perfil base que adquieren mayor relevancia para documentar series de tiempo, y se desglosa un ejemplo completo para cada parte del modelo de metadatos dentro de un <em>dataset</em> que contiene series de tiempo.</p>
-<p>Ver ejemplo de catálogo completo en <a href="#anexo-vii-ejemplo-de-datajson-con-series-de-tiempo">Anexo VII - Ejemplo de data.json con series de tiempo</a>.</p>
+<h3 id="anexo-iv-series-de-tiempo"><a class="toclink" href="#anexo-iv-series-de-tiempo">Anexo IV - Series de tiempo</a><a class="headerlink" href="#anexo-iv-series-de-tiempo" title="Permanent link">&#128279;</a></h3>
+<p>Ejemplo de dataset con series de tiempo en JSON:</p>
 <ul>
 <li><strong>Dataset 1</strong>: Oferta y Demanda Globales. Datos desestacionalizados. Base 1993</li>
 <li><strong>Distribucion 1.1</strong>: Oferta y Demanda Global. Precios constantes desestacionalizados. Base 1993. Valores anuales.</li>
@@ -2906,7 +2657,7 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
   <span class="nt">&quot;contactPoint&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;fn&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica. Dirección de Información y Coyuntura&quot;</span>
   <span class="p">},</span>
-  <span class="nt">&quot;landingPage&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;landingPage&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/&quot;</span><span class="p">,</span>
   <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
   <span class="nt">&quot;keyword&quot;</span><span class="p">:</span> <span class="p">[</span>
     <span class="s2">&quot;oferta&quot;</span><span class="p">,</span>
@@ -3134,19 +2885,214 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
 </pre></div>
 
 
-<h3 id="anexo-ix-precision-de-series-con-numeros-enteros-y-decimales"><a class="toclink" href="#anexo-ix-precision-de-series-con-numeros-enteros-y-decimales">Anexo IX - Precisión de series con números enteros y decimales</a><a class="headerlink" href="#anexo-ix-precision-de-series-con-numeros-enteros-y-decimales" title="Permanent link">&#128279;</a></h3>
-<p>Las series deben contener valores con <strong>números enteros</strong> (<code>277441</code>) o con <strong>números decimales</strong> (<code>277441.31725</code>) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número "entero" dentro de una serie decimal debe incluir <code>.0</code> al final (<code>277441.0</code>).</p>
-<p>Los <strong>números enteros</strong> pueden tener cualquier cantidad de cifras, mientras que los <strong>números decimales</strong> sólo pueden tener <strong>hasta 12 cifras en total</strong>, incluyendo la parte entera y la parte decimal:</p>
+<h4 id="catalogo-catalog-series-de-tiempo"><a class="toclink" href="#catalogo-catalog-series-de-tiempo">Catálogo (catalog) - series de tiempo</a><a class="headerlink" href="#catalogo-catalog-series-de-tiempo" title="Permanent link">&#128279;</a></h4>
+<p>Este es un <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/data.json">ejemplo de data.json</a>:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;sspm&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Datos Programación Macroeconómica&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Catálogo de datos abiertos de la Subsecretaría de Programación Macroeconómica.&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;publisher&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica.&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mbox&quot;</span><span class="p">:</span> <span class="s2">&quot;ausolari@mecon.gob.ar&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-09-28T00:00:00&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-09-28T00:00:00&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;Creative Commons Attribution 4.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;superThemeTaxonomy&quot;</span><span class="p">:</span> <span class="s2">&quot;https://datos.gob.ar/superThemeTaxonomy.json&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;themeTaxonomy&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;nivel_actividad&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datos sobre nivel actividad&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel actividad&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;intercambio_comercial&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Datos sobre intercambio comercial&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Intercambio Comercial&quot;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;language&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;SPA&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;spatial&quot;</span><span class="p">:</span> <span class="s2">&quot;ARG&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;dataset&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales: Datos desestacionalizados [Base 1993]&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Componentes desestacionalizados de la oferta y demanda globales a precios de 1993.&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;accrualPeriodicity&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P3M&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;publisher&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;mbox&quot;</span><span class="p">:</span> <span class="s2">&quot;ausolari@mecon.gob.ar&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica.&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;contactPoint&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;fn&quot;</span><span class="p">:</span> <span class="s2">&quot;Ministerio de Hacienda. Secretaría de Política Económica. Subsecretaría de Programación Macroeconómica. Dirección de Información y Coyuntura&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;landingPage&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.minhacienda.gob.ar/secretarias/politica-economica/programacion-macroeconomica/&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;keyword&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;oferta&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;demanda&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;pbi&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cuentas nacionales&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;desestacionalizado&quot;</span>
+      <span class="p">],</span>
+      <span class="nt">&quot;superTheme&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;ECON&quot;</span>
+      <span class="p">],</span>
+      <span class="nt">&quot;temporal&quot;</span><span class="p">:</span> <span class="s2">&quot;1993-01-01/2013-09-30&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;theme&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;nivel_actividad&quot;</span>
+      <span class="p">],</span>
+      <span class="nt">&quot;distribution&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores anuales [Base 1993]&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;accessURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;downloadURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;field&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;indice_tiempo&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;specialTypeDetail&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P1Y&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_OGP_D_1993_A_17&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_pbi&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;PIB desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_OGI_D_1993_A_25&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_importacion&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Importaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGE_D_1993_A_26&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_exportacion&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Exportaciones desestacionalizadas, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGI_D_1993_A_19&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_ibif&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inversion bruta interna fija desestacionalizada, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGCP_D_1993_A_27&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_priv&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo privado desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1_DGCP_D_1993_A_30&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_publico&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo publico desestacionalizado, en millones de pesos de 1993 y valores trimestrales&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales a precios de 1993: Datos desestacionalizados en valores trimestrales [Base 1993]&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta y Demanda Globales por componente, a precios de comprador, en millones de pesos de 1993 y valores anuales desestacionalizados.&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;issued&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-08-22T17:51:26.553961-03:00&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;accessURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;downloadURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-trimestrales.csv&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;field&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;indice_tiempo&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;specialTypeDetail&quot;</span><span class="p">:</span> <span class="s2">&quot;R/P3M&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_OGP_D_1993_T_17&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_pbi&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;PBI a precios de comprador, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_OGI_D_1993_T_25&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;oferta_global_importacion&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Importación a precios de comprador, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGE_D_1993_T_26&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_exportacion&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Oferta global total a precios de comprador, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGI_D_1993_T_19&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_ibif&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo privado, en millones de pesos  de 1993 y valores anuales.&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGCP_D_1993_T_27&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_priv&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Consumo publico, en millones de pesos de 1993 y valores anuales.&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2_DGCP_D_1993_T_30&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;demanda_global_consumo_publico&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inversion bruta interna fija, en millones de pesos de 1993  y valores anuales.&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;number&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;Millones de pesos a precios de 1993&quot;</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="anexo-v-pautas-para-la-seleccion-de-etiquetas"><a class="toclink" href="#anexo-v-pautas-para-la-seleccion-de-etiquetas">Anexo V - Pautas para la selección de etiquetas</a><a class="headerlink" href="#anexo-v-pautas-para-la-seleccion-de-etiquetas" title="Permanent link">&#128279;</a></h3>
+<p>Elegir buenas etiquetas hace más fácil la búsqueda de datasets para los usuarios. Cuanto más amplia y uniforme sea la lista de etiquetas, mayor será su efectividad.</p>
+<p>Estas son pautas para definir etiquetas aplicables a la propiedad <em>keyword</em> de la clase dataset:</p>
 <ul>
-<li><code>0.12345678901</code> está bien  (<em>serie decimal</em>)</li>
-<li><code>12345678901.1</code> está bien  (<em>serie decimal</em>)</li>
-<li><code>1234567.01234</code> está bien  (<em>serie decimal</em>)</li>
-<li><code>0.1234567890123456789</code> NO está bien  (<em>serie decimal</em>)</li>
-<li><code>123456789.01234567891</code> NO está bien  (<em>serie decimal</em>)</li>
-<li><code>1234567890123456789.1</code> NO está bien  (<em>serie decimal</em>)</li>
-<li><code>123456789123456789123</code> está bien (<em>serie entera</em>)</li>
+<li>Escribir correctamente y en plural.</li>
+<li>Usar mayúsculas sólo donde corresponda.</li>
+<li>Identificar palabras claves.</li>
+<li>Respetar la existencia de etiquetas anteriores.</li>
+<li>Agregar sinónimos y emplear lenguaje natural.</li>
+<li>Usar una sóla palabra. Si es muy necesario, usar más de una.</li>
+<li>Si la etiqueta tiene más de una palabra, debe estar separada por un espacio, ej: "declaraciones juradas".</li>
 </ul>
-<p>Casi todos los <em>software</em> que manejan números pueden usar decimales con hasta 12 cifras sin pérdida de precisión. Si bien existe software estadístico capaz de manejar decimales con más de 12 cifras, este límite debe ser analizado en cada caso y no está garantizado por la <a href="https://apis.datos.gob.ar/series"><strong>API de Series de Tiempo de la República Argentina</strong></a>.</p>
+<p>Preguntas útiles a la hora de pensar los etiquetas:</p>
+<ul>
+<li>¿Cuál es el tema?</li>
+<li>¿Qué aspectos serán de interés para los usuarios?</li>
+<li>¿De qué otro modo buscaría sobre esta información?</li>
+<li>¿De qué tipo de información se trata?</li>
+<li>¿Qué área la provee?</li>
+</ul>
                 
                   
                 
@@ -3210,15 +3156,13 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
       
         
         
@@ -3236,11 +3180,6 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
         
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
   </body>
