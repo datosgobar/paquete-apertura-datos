@@ -150,7 +150,7 @@ En el caso de las divisiones o unidades territoriales internas, recomendamos usa
 Incluye identificadores numéricos compuestos de una cantidad fija de dígitos (el tipo de datos debe ser textual, ya que tiene ceros a la izquierda que son significativos) para, entre otras, las siguientes entidades interoperables:
 
 
-* Provincias ([CSV](http://www.ign.gob.ar/descargas/geodatos/departamento.csv) | [SHP](http://www.ign.gob.ar/descargas/geodatos/provincia.zip) | [GEOJSON](http://www.ign.gob.ar/descargas/geodatos/provincia_geojson.zip))
+* Provincias ([CSV](http://www.ign.gob.ar/descargas/geodatos/provincia.csv) | [SHP](http://www.ign.gob.ar/descargas/geodatos/provincia.zip) | [GEOJSON](http://www.ign.gob.ar/descargas/geodatos/provincia_geojson.zip))
 * Departamentos (Partidos o Comunas) ([CSV](http://www.ign.gob.ar/descargas/geodatos/departamento.csv) | [SHP](http://www.ign.gob.ar/descargas/geodatos/departamento.zip) | [GEOJSON](http://www.ign.gob.ar/descargas/geodatos/departamento_geojson.zip))
 * Fracciones Censales
 * Radios Censales
