@@ -13,13 +13,13 @@ Repositorio de ejemplos, documentación y recursos del Paquete de Apertura de Da
 
 ### Guías de buenas prácticas
 
-Las **[guías de buenas prácticas](http://paquete-apertura-datos.readthedocs.io/es/stable)** son un trabajo colaborativo y en progreso. Valoramos e invitamos a todas las organizaciones y ciudadanos a plantear ideas, sugerencias y comentarios que contribuyan a crear mejores documentos.
+Las **[guías de buenas prácticas](https://datosgobar.github.io/paquete-apertura-datos/)** son un trabajo colaborativo y en progreso. Valoramos e invitamos a todas las organizaciones y ciudadanos a plantear ideas, sugerencias y comentarios que contribuyan a crear mejores documentos.
 
 Podés hacer esto [cargando un nuevo _issue_](https://github.com/datosgobar/paquete-apertura-datos/issues/new), o [respondiendo a un _issue_ ya existente](https://github.com/datosgobar/paquete-apertura-datos/issues).
 
-* **[Guía para la publicación de datos en formatos abiertos](http://paquete-apertura-datos.readthedocs.io/es/stable/guia_abiertos.html)**
-* **[Guia para la identificación y uso de entidades interoperables](http://paquete-apertura-datos.readthedocs.io/es/stable/guia_interoperables.html)**
-* **[Guía para el uso y la publicación de metadatos](http://paquete-apertura-datos.readthedocs.io/es/stable/guia_metadatos.html)**
+* **[Guía para la publicación de datos en formatos abiertos](https://datosgobar.github.io/paquete-apertura-datos/guia-abiertos/)**
+* **[Guia para la identificación y uso de entidades interoperables](https://datosgobar.github.io/paquete-apertura-datos/guia-interoperables/)**
+* **[Guía para el uso y la publicación de metadatos](https://datosgobar.github.io/paquete-apertura-datos/guia-metadatos/)**
 
 Si querés contribuir activamente con las guías o ir mirando lo que se viene en futuras versiones, te recomendamos ver la **[versión en desarrollo](http://paquete-apertura-datos.readthedocs.io/es/latest)**, donde trabajamos los próximos cambios antes de su publicación definitiva.
 
