@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
@@ -47,7 +47,7 @@
     
     
 	
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
       
       
     
@@ -55,7 +55,7 @@
 
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     <script src="../js/extra.js"></script>
 
@@ -68,7 +68,36 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../css/table_styles.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-91435482-1", "https://datosgobar.github.io/paquete-apertura-datos/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -125,22 +154,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Paquete de Apertura de Datos de la República Argentina
-              </span>
-              <span class="md-header-nav__topic">
-                Guía para la publicación de datos en formatos abiertos
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Paquete de Apertura de Datos de la República Argentina
+            </span>
+            <span class="md-header-nav__topic">
+              Guía para la publicación de datos en formatos abiertos
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -163,7 +189,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -174,20 +199,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         </div>
       
@@ -251,20 +274,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         
       
@@ -2082,7 +2103,7 @@ Recolección de residuos - 198</td>
 <li>El día se puede indicar tanto mediante rangos separando los días con guiones medios "-" o bien como particulares con el guión bajo "_".</li>
 </ul>
 <p>Ejemplos de formatos válidos para días:</p>
-<div class="codehilite"><pre><span></span><span class="n">DAY</span><span class="o">:</span> <span class="n">Un</span> <span class="n">solo</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span>
+<div class="codehilite"><pre><span></span><span class="n">DAY</span><span class="o">:</span> <span class="n">Un</span> <span class="n">solo</span> <span class="n">día</span>
 <span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2</span><span class="o">:</span> <span class="n">Entre</span> <span class="n">entre</span> <span class="n">DAY1</span> <span class="n">y</span> <span class="n">DAY2</span>
 <span class="n">DAY1_DAY2</span><span class="o">:</span> <span class="n">DAY1</span> <span class="n">y</span> <span class="n">DAY2</span>
 <span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2_DAY3</span><span class="o">:</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">y</span> <span class="n">DAY3</span>
@@ -2099,12 +2120,12 @@ Recolección de residuos - 198</td>
 
 
 <p>Más ejemplos de formatos válidos completos:</p>
-<div class="codehilite"><pre><span></span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">todos</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span><span class="o">.</span>
-<span class="n">DAY</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">que</span> <span class="n">el</span> <span class="n">rango</span> <span class="n">ocupa</span> <span class="n">todo</span> <span class="n">el</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span> <span class="n">DAY</span><span class="o">.</span>
-<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span> <span class="n">DAY</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">.</span>
-<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">d</span><span class="err">í</span><span class="n">a</span>
-<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span>
-<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">rango</span> <span class="n">de</span> <span class="n">d</span><span class="err">í</span><span class="k">as</span>
+<div class="codehilite"><pre><span></span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">todos</span> <span class="n">los</span> <span class="n">días</span><span class="o">.</span>
+<span class="n">DAY</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">que</span> <span class="n">el</span> <span class="n">rango</span> <span class="n">ocupa</span> <span class="n">todo</span> <span class="n">el</span> <span class="n">día</span> <span class="n">DAY</span><span class="o">.</span>
+<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">días</span> <span class="n">DAY</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span><span class="o">.</span>
+<span class="n">DAY__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">día</span>
+<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">que</span> <span class="n">ocurre</span> <span class="n">los</span> <span class="n">días</span> <span class="n">DAY1</span> <span class="n">a</span> <span class="n">DAY2</span> <span class="n">entre</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">y</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span>
+<span class="n">DAY1</span><span class="o">-</span><span class="n">DAY2__HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM_HH</span><span class="o">:</span><span class="n">MM</span><span class="o">-</span><span class="n">HH</span><span class="o">:</span><span class="n">MM</span> <span class="n">para</span> <span class="n">indicar</span> <span class="n">mas</span> <span class="n">un</span> <span class="n">rango</span> <span class="n">horario</span> <span class="n">en</span> <span class="n">el</span> <span class="n">mismo</span> <span class="n">rango</span> <span class="n">de</span> <span class="n">días</span>
 </pre></div>
 
 
@@ -2198,15 +2219,13 @@ Lunes a Miercoles 8 a 11 y de Viernes a Domingo 9 a 10 -&gt; &quot;LUN-MIE__08:0
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.5e60981f.js"></script>
+      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
       
         
         
@@ -2224,11 +2243,6 @@ Lunes a Miercoles 8 a 11 y de Viernes a Domingo 9 a 10 -&gt; &quot;LUN-MIE__08:0
         
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
   </body>
