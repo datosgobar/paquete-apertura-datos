@@ -1,0 +1,978 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Recursos para la apertura de datos públicos nacionales y sub-nacionales en Argentina.">
+      
+      
+        <link rel="canonical" href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/nomina-funcionarios/">
+      
+      
+        <meta name="author" content="Datos Argentina">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
+    
+    
+      
+        <title>Nómina de funcionarios públicos y sus salarios - Paquete de Apertura de Datos de la República Argentina</title>
+      
+    
+    
+	
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+	<link rel="stylesheet" href="../../css/extra.css">
+
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    <script src="../../js/extra.js"></script>
+
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../css/table_styles.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#nomina-de-funcionarios-publicos-y-sus-salarios" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://datosgobar.github.io/paquete-apertura-datos" title="Paquete de Apertura de Datos de la República Argentina" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Paquete de Apertura de Datos de la República Argentina
+              </span>
+              <span class="md-header-nav__topic">
+                Nómina de funcionarios públicos y sus salarios
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Escriba para comenzar la búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+        <!-- Site title -->
+        <label class="md-nav__title md-nav__title--site" for="__drawer">
+          <a href="https://datosgobar.github.io/paquete-apertura-datos"
+              title="Paquete de Apertura de Datos de la República Argentina" class="md-nav__button md-logo">
+            
+              <img src="../../images/logo.svg" width="48" height="48" />
+            
+          </a>
+          Paquete de Apertura de Datos de la República Argentina
+        </label>
+      
+        <!-- Repository containing source -->
+        
+          <div class="md-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        
+      
+        <!-- Render item list -->
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href="https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf" title="Material introductorio" class="md-nav__link">
+      Material introductorio
+    </a>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Guías de buenas prácticas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Guías de buenas prácticas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guia-abiertos/" title="Guía para la publicación de datos en formatos abiertos" class="md-nav__link">
+      Guía para la publicación de datos en formatos abiertos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guia-interoperables/" title="Guía para la identificación y uso de entidades interoperables" class="md-nav__link">
+      Guía para la identificación y uso de entidades interoperables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guia-metadatos/" title="Guía para el uso y la publicación de metadatos" class="md-nav__link">
+      Guía para el uso y la publicación de metadatos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Guías de implementación
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Guías de implementación
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guia-apn/" title="Guía para la apertura de datos en organismos de la Administración Pública Nacional" class="md-nav__link">
+      Guía para la apertura de datos en organismos de la Administración Pública Nacional
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guia-subnacionales/" title="Guía para la apertura de datos en gobiernos provinciales y locales" class="md-nav__link">
+      Guía para la apertura de datos en gobiernos provinciales y locales
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Marco legal
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Marco legal
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../decreto-117-2016/" title="Decreto 117/2016 "Plan de Apertura de Datos"" class="md-nav__link">
+      Decreto 117/2016 "Plan de Apertura de Datos"
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../perfil-metadatos/" title="Perfil de Aplicación Nacional de Metadatos para Datos Abiertos" class="md-nav__link">
+      Perfil de Aplicación Nacional de Metadatos para Datos Abiertos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href="../../herramientas/" title="Herramientas" class="md-nav__link">
+      Herramientas
+    </a>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href="../../glosario/" title="Glosario" class="md-nav__link">
+      Glosario
+    </a>
+  </li>
+
+            <hr/>
+          
+        </ul>
+      </nav>
+      
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo" title="Ejemplo" class="md-nav__link">
+    Ejemplo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clases" title="Clases" class="md-nav__link">
+    Clases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#campos" title="Campos" class="md-nav__link">
+    Campos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizacion" title="Organización" class="md-nav__link">
+    Organización
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puesto" title="Puesto" class="md-nav__link">
+    Puesto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miembro" title="Miembro" class="md-nav__link">
+    Miembro
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persona" title="Persona" class="md-nav__link">
+    Persona
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/datosgobar/paquete-apertura-datos/edit/master/docs/datasets-especificaciones/nomina-funcionarios.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="nomina-de-funcionarios-publicos-y-sus-salarios"><a class="toclink" href="#nomina-de-funcionarios-publicos-y-sus-salarios">Nómina de funcionarios públicos y sus salarios</a><a class="headerlink" href="#nomina-de-funcionarios-publicos-y-sus-salarios" title="Permanent link">&#128279;</a></h1>
+<p>Listas de los funcionarios con referencia a la entidad a la que pertenecen, la categoría, el salario y el cargo, incluyendo pasantes y personal contratado en el marco de proyectos financiados por organismos multilaterales, detallando sus respectivas funciones y posición en el escalafón.</p>
+<ul>
+<li><strong>Tema</strong>: Gobierno y sector público</li>
+<li><strong>Estándar referencia</strong>: <a href="http://www.popoloproject.com/specs/">Popolo</a></li>
+<li><strong>Formatos</strong>: JSON, XML, CSV</li>
+<li><strong>Ejemplo:</strong>: http://www.popoloproject.com/examples/person.json</li>
+</ul>
+<p><em>Ver cómo incluir lo de Ley/Decreto...</em></p>
+<h2 id="ejemplo"><a class="toclink" href="#ejemplo">Ejemplo</a><a class="headerlink" href="#ejemplo" title="Permanent link">&#128279;</a></h2>
+<p><em>Tabla con un ejemplo</em></p>
+<h2 id="clases"><a class="toclink" href="#clases">Clases</a><a class="headerlink" href="#clases" title="Permanent link">&#128279;</a></h2>
+<p>Un funcionario es una <code>Persona</code> que tiene un determinado <code>Puesto</code> y es <code>Miembro</code> de una <code>Organización</code>. Al publicar la nómina de funcionarios tenemos que tener en cuenta los atributos necesarios de estas 4 clases.</p>
+<p>Descargar clases en <strong><a href="nomina-funcionarios-clases.csv">CSV</a></strong> | <strong><a href="nomina-funcionarios-clases.xlsx">XLSX</a></strong></p>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+    </tr>
+    <tr>
+        <td>Organización</td>
+        <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
+    </tr>
+    <tr>
+        <td>Puesto</td>
+        <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
+    </tr>
+    <tr>
+        <td>Miembro</td>
+        <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
+    </tr>
+    <tr>
+        <td>Persona</td>
+        <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
+    </tr>
+</table>
+
+<h2 id="campos"><a class="toclink" href="#campos">Campos</a><a class="headerlink" href="#campos" title="Permanent link">&#128279;</a></h2>
+<p>Descargar campos en <strong><a href="nomina-funcionarios-campos.csv">CSV</a></strong> | <strong><a href="nomina-funcionarios-campos.xlsx">XLSX</a></strong></p>
+<h3 id="organizacion"><a class="toclink" href="#organizacion">Organización</a><a class="headerlink" href="#organizacion" title="Permanent link">&#128279;</a></h3>
+<table>
+    <tr>
+        <th>clase</th>
+        <th>titulo</th>
+        <th>Tipo de dato</th>
+        <th>descripcion</th>
+        <th>ejemplo</th>
+        <th>estandar_mapeo</th>
+        <th>Notas</th>
+    </tr>
+
+    <tr>
+        <td>Organización</td>
+        <td>organizacion_id</td>
+        <td>alfanumérico</td>
+        <td>Debe ser un identificador único para la organización. Se puede utilizar una codificacion en base al presupuesto; ej: Código jurisdicccion:+código sub jurisdicción:+ ...</td>
+        <td>2</td>
+        <td>popolo:Organization</td>
+        <td>Se puede utilizar una codificacion en base al presupuesto; ej: Código jurisdicccion:+código sub jurisdicción:+ ...</td>
+    </tr>
+
+    <tr>
+        <td>Organización</td>
+        <td>organizacion_nombre</td>
+        <td>alfanumérico</td>
+        <td>El nombre principal de la organización, por ejemplo su nombre legal</td>
+        <td>Presidencia de la República</td>
+        <td>popolo:Organization</td>
+        <td>nan</td>
+    </tr>
+
+    <tr>
+        <td>Organización</td>
+        <td>organizacion_clasificacion</td>
+        <td>alfanumérico</td>
+        <td>La clasificación de la organización, por ejemplo "Poder Ejecutivo"</td>
+        <td>Poder Ejecutivo</td>
+        <td>popolo:Organization</td>
+        <td>nan</td>
+    </tr>
+
+</table>
+
+<h3 id="puesto"><a class="toclink" href="#puesto">Puesto</a><a class="headerlink" href="#puesto" title="Permanent link">&#128279;</a></h3>
+<table>
+    <tr>
+        <th>clase</th>
+        <th>titulo</th>
+        <th>Tipo de dato</th>
+        <th>descripcion</th>
+        <th>ejemplo</th>
+        <th>estandar_mapeo</th>
+        <th>Notas</th>
+    </tr>
+
+    <tr>
+        <td>Puesto</td>
+        <td>puesto_id</td>
+        <td>alfanumérico</td>
+        <td>Un identificador único para el puesto</td>
+        <td>1</td>
+        <td>popolo:Membership</td>
+        <td>nan</td>
+    </tr>
+
+    <tr>
+        <td>Puesto</td>
+        <td>puesto_nombre</td>
+        <td>alfanumérico</td>
+        <td>Una descripción o el nombre del puesto</td>
+        <td>Intendente</td>
+        <td>popolo:Post:label</td>
+        <td>nan</td>
+    </tr>
+
+    <tr>
+        <td>Puesto</td>
+        <td>puesto_rol</td>
+        <td>alfanumérico</td>
+        <td>La función que cumple el titular del puesto</td>
+        <td>Intendente</td>
+        <td>popolo:Post</td>
+        <td>nan</td>
+    </tr>
+
+    <tr>
+        <td>Puesto</td>
+        <td>puesto_salario_moneda</td>
+        <td>alfanumérico</td>
+        <td>Código de moneda para el salario</td>
+        <td>https://en.wikipedia.org/wiki/ISO_4217
+ https://www.currency-iso.org/en/home/tables/table-a1.html</td>
+        <td>schema:EmployeeRole</td>
+        <td>nan</td>
+    </tr>
+
+    <tr>
+        <td>Puesto</td>
+        <td>puesto_salario</td>
+        <td>numerico</td>
+        <td>Salario asociado al puesto</td>
+        <td>190000</td>
+        <td>schema:EmployeeRole</td>
+        <td>nan</td>
+    </tr>
+
+</table>
+
+<h3 id="miembro"><a class="toclink" href="#miembro">Miembro</a><a class="headerlink" href="#miembro" title="Permanent link">&#128279;</a></h3>
+<table>
+    <tr>
+        <th>clase</th>
+        <th>titulo</th>
+        <th>Tipo de dato</th>
+        <th>descripcion</th>
+        <th>ejemplo</th>
+        <th>estandar_mapeo</th>
+        <th>Notas</th>
+    </tr>
+
+    <tr>
+        <td>Miembro</td>
+        <td>miembro_fecha_ingreso</td>
+        <td>fecha</td>
+        <td>Fecha de ingreso a la organización</td>
+        <td>aaaa-mm-dd</td>
+        <td>popolo:Membership</td>
+        <td>Fecha de ingreso a la organización</td>
+    </tr>
+
+    <tr>
+        <td>Miembro</td>
+        <td>miembro_fecha_egreso</td>
+        <td>fecha</td>
+        <td>Fecha de egreso de la organización</td>
+        <td>aaaa-mm-dd</td>
+        <td>popolo:Membership</td>
+        <td>Fecha de egreso de la organización</td>
+    </tr>
+
+    <tr>
+        <td>Miembro</td>
+        <td>miembro_contacto</td>
+        <td>alfanumérico</td>
+        <td>Datos institucionales de contacto de la persona</td>
+        <td>Dirección, Telefonos, Correo institucional</td>
+        <td>popolo:Membership</td>
+        <td>Medios de contacto institucionales con el funcionario</td>
+    </tr>
+
+    <tr>
+        <td>Miembro</td>
+        <td>miembro_representando</td>
+        <td>alfanumérico</td>
+        <td>Si integra la organización en representación de otra organización</td>
+        <td>Nombre de organización</td>
+        <td>popolo:Membership:onbehalf</td>
+        <td>Si integra la organización en representación de otra organización</td>
+    </tr>
+
+    <tr>
+        <td>Miembro</td>
+        <td>miembro_area_geografica</td>
+        <td>alfanumérico</td>
+        <td>Nombre del área geográfica de donde es la organización de la que es miembro</td>
+        <td>Gualeguay</td>
+        <td>popolo:Membership</td>
+        <td>Lugar donde ejerce el cargo (provincia/localidad)</td>
+    </tr>
+
+</table>
+
+<h3 id="persona"><a class="toclink" href="#persona">Persona</a><a class="headerlink" href="#persona" title="Permanent link">&#128279;</a></h3>
+<table>
+    <tr>
+        <th>clase</th>
+        <th>titulo</th>
+        <th>Tipo de dato</th>
+        <th>descripcion</th>
+        <th>ejemplo</th>
+        <th>estandar_mapeo</th>
+        <th>Notas</th>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_id</td>
+        <td>alfanumérico</td>
+        <td>Identificación de la persona</td>
+        <td>DNI</td>
+        <td>popolo:Person</td>
+        <td>Este campo puede ser el mismo que national_identity</td>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_nombre</td>
+        <td>alfanumérico</td>
+        <td>Nombre y Apellido de la persona</td>
+        <td>nan</td>
+        <td>popolo:Person</td>
+        <td>nan</td>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_genero</td>
+        <td>alfanumérico</td>
+        <td>Genero de la persona.</td>
+        <td>Ver codigos en: https://github.com/idatosabiertos/femicidios-latam/blob/master/docs/introduccion.md</td>
+        <td>popolo:Person</td>
+        <td>nan</td>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_fecha_nacimiento</td>
+        <td>fecha</td>
+        <td>Fecha de nacimiento de la persona</td>
+        <td>aaaa-mm-dd</td>
+        <td>popolo:Person</td>
+        <td>nan</td>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_cv</td>
+        <td>texto</td>
+        <td>CV resumido</td>
+        <td>nan</td>
+        <td>popolo:Person:biography</td>
+        <td>Se considera mas apropiado para un funcionario publico la publicación de su Curriculum Vitae. El termino biografía puede llevar a ambigüedades.</td>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_enlaces</td>
+        <td>URI</td>
+        <td>Enlaces a contenido relacionado con la persona</td>
+        <td>Bio en LinkedIn</td>
+        <td>popolo:Person</td>
+        <td>Enlaces a datos sobre la persona</td>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_email</td>
+        <td>URI:Mailto</td>
+        <td>Cuenta de correo electrónico institucional</td>
+        <td>nan</td>
+        <td>popolo:Person</td>
+        <td>Cuenta de correo institucional</td>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_contacto</td>
+        <td>texto</td>
+        <td>Datos personales de contacto de la persona (opcional)</td>
+        <td>nan</td>
+        <td>popolo:Person</td>
+        <td>Datos personales de contacto (no institucional) - Opcional</td>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_otros_ingresos_descripcion</td>
+        <td>texto</td>
+        <td>Opcional: pero podría ser necesario declarar compensaciones, viaticos, etc.</td>
+        <td>nan</td>
+        <td>nan</td>
+        <td>Opcional: pero podría ser necesario declarar compensaciones, viaticos, etc. del funcionario (persona)</td>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_otros_ingresos_moneda</td>
+        <td>alfanumérico</td>
+        <td>Opcional: tipo moneda para el campo anterior</td>
+        <td>https://en.wikipedia.org/wiki/ISO_4217
+ https://www.currency-iso.org/en/home/tables/table-a1.html</td>
+        <td>nan</td>
+        <td>Opcional: tipo moneda para el campo anterior</td>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>persona_otros_ingresos</td>
+        <td>numerico</td>
+        <td>Opcional: importe para el campo anterior</td>
+        <td>nan</td>
+        <td>nan</td>
+        <td>Opcional: importe para el campo anterior</td>
+    </tr>
+
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.583bbe55.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

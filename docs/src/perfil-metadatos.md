@@ -1007,6 +1007,8 @@ El catálogo debe publicarse en una URL que cumpla alguna de estas 3 condiciones
 * Esté contenida en el dominio argentina.gob.ar o alguno de sus subdominios, bajo el cual el organismo gestione la publicación de sus contenidos.
 * Esté contenida en el dominio datos.gob.ar o alguno de sus subdominios, bajo el cual el organismo gestione la publicación de datos o metadatos bajo su tutela.
 
+Así mismo, tanto la URL donde se publica el catálogo como las URLs de descarga de los archivos en él documentados, **deben contar con certificado SSL** instalado en el servidor.
+
 Se recomienda que el nombre del archivo que contiene el catálogo sea `data.json` o `catalog.xlsx` según el formato original en que se publique, pero esto no es una condición excluyente.
 
 **La URL de descarga del catálogo del organismo deberá figurar en forma visible en la sección de transparencia activa** de su propiedad digital o de su sitio web en el dominio argentina.gob.ar.
