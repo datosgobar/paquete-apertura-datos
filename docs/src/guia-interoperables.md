@@ -162,7 +162,7 @@ Cabe aclarar que las fracciones censales, la cobertura geográfica, los nomencla
 
 ¿Cómo se relacionan estas entidades entre sí? Veremos que estas unidades pueden ordenarse jerárquicamente de modo tal que algunas contienen a las otras, aunque no en todos los casos.  A continuación,  explicamos los conjuntos de entidades que conforman una jerarquía internamente consistente.
 
-![](assets/unidades_territoriales.png)
+![](assets/images/unidades_territoriales.png)
 
 Este sistema de identificadores es consistente con el  usado por la Base de Asentamientos Humanos de la República Argentina ([BAHRA](http://www.bahra.gob.ar/)) para la identificación de localidades, que además lo extiende para incluir la posibilidad de referenciar sitios edificados (sumando 3 dígitos al identificador de una Localidad).
 

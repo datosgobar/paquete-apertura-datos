@@ -118,7 +118,7 @@ Así mismo, este perfil toma elementos del [Perfil Regional de Metadatos](https:
 
 El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Administración Pública Nacional se compone de **3 clases obligatorias** (*Catalog, Dataset y Distribution*), **2 clases recomendadas** (*Field* y *Theme*).
 
-![](assets/der_perfil_metadatos.png)
+![](assets/images/der_perfil_metadatos.png)
 
 ### Clases del perfil
 
