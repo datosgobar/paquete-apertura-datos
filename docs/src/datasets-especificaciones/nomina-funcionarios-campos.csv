@@ -1,4 +1,4 @@
-clase,titulo,Tipo de dato,descripcion,ejemplo,estandar_mapeo,Notas
+clase,titulo,tipo_dato,descripcion,ejemplo,estandar_mapeo,notas
 Organización,organizacion_id,alfanumérico,Debe ser un identificador único para la organización. Se puede utilizar una codificacion en base al presupuesto; ej: Código jurisdicccion:+código sub jurisdicción:+ ...,2,popolo:Organization,Se puede utilizar una codificacion en base al presupuesto; ej: Código jurisdicccion:+código sub jurisdicción:+ ...
 Organización,organizacion_nombre,alfanumérico,"El nombre principal de la organización, por ejemplo su nombre legal",Presidencia de la República,popolo:Organization,
 Organización,organizacion_clasificacion,alfanumérico,"La clasificación de la organización, por ejemplo ""Poder Ejecutivo""",Poder Ejecutivo,popolo:Organization,
