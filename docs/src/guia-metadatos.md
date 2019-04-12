@@ -137,7 +137,7 @@ Según la W3C: "Mediante la utilización de DCAT para describir datasets en cat�
 
 El perfil de metadatos propuesto para la Administración Pública Nacional se compone de 3 clases principales (*Catalog, Dataset y Distribution*) y 2 auxiliares (*Field* y *Theme*) que se relacionan según el siguiente esquema:
 
-![](assets/der_perfil_metadatos.png)
+![](assets/images/der_perfil_metadatos.png)
 
 A continuación, describimos los metadatos que el *data.json* debe contener, para cada una de estas clases.
 

@@ -1,28 +1,27 @@
+# Guía para la apertura de datos en gobiernos provinciales y locales
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Indice
 
-- [Guía para la apertura de datos en gobiernos provinciales y locales](#guia-para-la-apertura-de-datos-en-gobiernos-provinciales-y-locales)
-    - [¿Por qué publicar datos abiertos?](#por-que-publicar-datos-abiertos)
-        - [¿Qué son los datos abiertos?](#que-son-los-datos-abiertos)
-        - [No todos los datos públicos son abiertos](#no-todos-los-datos-publicos-son-abiertos)
-    - [¿Cómo publicar datos abiertos?](#como-publicar-datos-abiertos)
-        - [Equipo](#equipo)
-        - [Plataforma de publicación](#plataforma-de-publicacion)
-        - [Buenas prácticas](#buenas-practicas)
-    - [¿Qué datasets publicar?](#que-datasets-publicar)
-    - [¿Cómo evaluar la política de apertura?](#como-evaluar-la-politica-de-apertura)
-    - [¿Cómo difundir el uso de datos?](#como-difundir-el-uso-de-datos)
-        - [Comunicar la iniciativa](#comunicar-la-iniciativa)
-        - [Sectores reutilizadores](#sectores-reutilizadores)
-        - [Espacios de colaboración](#espacios-de-colaboracion)
-    - [Anexo I: recursos recomendados](#anexo-i-recursos-recomendados)
-    - [Anexo II: índices internacionales y marco normativo que fijan prioridades de publicación](#anexo-ii-indices-internacionales-y-marco-normativo-que-fijan-prioridades-de-publicacion)
-    - [Glosario](#glosario)
+- [¿Por qué publicar datos abiertos?](#por-que-publicar-datos-abiertos)
+    - [¿Qué son los datos abiertos?](#que-son-los-datos-abiertos)
+    - [No todos los datos públicos son abiertos](#no-todos-los-datos-publicos-son-abiertos)
+- [¿Cómo publicar datos abiertos?](#como-publicar-datos-abiertos)
+    - [Equipo](#equipo)
+    - [Plataforma de publicación](#plataforma-de-publicacion)
+    - [Buenas prácticas](#buenas-practicas)
+- [¿Qué datasets publicar?](#que-datasets-publicar)
+- [¿Cómo evaluar la política de apertura?](#como-evaluar-la-politica-de-apertura)
+- [¿Cómo difundir el uso de datos?](#como-difundir-el-uso-de-datos)
+    - [Comunicar la iniciativa](#comunicar-la-iniciativa)
+    - [Sectores reutilizadores](#sectores-reutilizadores)
+    - [Espacios de colaboración](#espacios-de-colaboracion)
+- [Anexo I: recursos recomendados](#anexo-i-recursos-recomendados)
+- [Anexo II: índices internacionales y marco normativo que fijan prioridades de publicación](#anexo-ii-indices-internacionales-y-marco-normativo-que-fijan-prioridades-de-publicacion)
+- [Glosario](#glosario)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Guía para la apertura de datos en gobiernos provinciales y locales
 
 Si formás parte del equipo de trabajo de una provincia o municipio, esta guía te da los conceptos clave y las bases para que puedas diseñar e implementar políticas de datos abiertos. 
 
