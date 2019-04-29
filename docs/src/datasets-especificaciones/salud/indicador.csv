@@ -1,0 +1,2 @@
+indicador_anio,indicador_organizacion_id,indicador_nombre,indicador_descripcion,indicador_periodicidad,indicador_ultima_medicion,indicador_unidad_medida,indicador_valor,indicador_forma_calculo
+2018,2222,Cantidad de camas,Cantidad de camas cada 1000 personas,Anual,2018-12-31,Cantidad de camas,5,Se calcula la cantidad de camas disponibles de acuerdo a la cantidad de afiliados y se pondera el resultado para llevarlo a un valor equivalente sobre una poblacion de 1000 personas.

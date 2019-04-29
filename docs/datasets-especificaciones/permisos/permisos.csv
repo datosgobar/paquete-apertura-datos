@@ -1,0 +1,2 @@
+entidad_id,entidad_nombre,permiso_id,permiso_tipo,permiso_subtipo,permiso_inicio,permiso_fin,permiso_detalles,permiso_area,permiso_geo,permiso_provincia,permiso_localidad,permiso_resolucion_enlace,permiso_es_prorroga,permiso_id_padre,participacion_exacta
+CUIT,,,Permiso/Concesión/Autorización,,,,,,,,,,SI / NO,,numero en porcentaje

@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
@@ -47,7 +47,7 @@
     
     
 	
-      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.3020aac5.css">
       
       
     
@@ -55,7 +55,7 @@
 
     
     
-      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     <script src="../../js/extra.js"></script>
 
@@ -68,7 +68,36 @@
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../../css/table_styles.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-91435482-1", "https://datosgobar.github.io/paquete-apertura-datos/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -125,22 +154,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Paquete de Apertura de Datos de la República Argentina
-              </span>
-              <span class="md-header-nav__topic">
-                Nómina de funcionarios públicos y sus salarios
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Paquete de Apertura de Datos de la República Argentina
+            </span>
+            <span class="md-header-nav__topic">
+              Nómina de funcionarios públicos y sus salarios
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -163,7 +189,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -174,20 +199,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         </div>
       
@@ -251,20 +274,18 @@
 
   
 
-
-  <a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
+<a href="https://github.com/datosgobar/paquete-apertura-datos/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
           </div>
         
       
@@ -504,9 +525,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ejemplo" title="Ejemplo" class="md-nav__link">
-    Ejemplo
+  <a href="#ejemplos" title="Ejemplos" class="md-nav__link">
+    Ejemplos
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recurso-nomina-de-funcionarios" title="Recurso: Nómina de funcionarios" class="md-nav__link">
+    Recurso: Nómina de funcionarios
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -526,29 +560,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#organizacion" title="Organización" class="md-nav__link">
-    Organización
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#puesto" title="Puesto" class="md-nav__link">
-    Puesto
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#miembro" title="Miembro" class="md-nav__link">
-    Miembro
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#persona" title="Persona" class="md-nav__link">
-    Persona
+  <a href="#recurso-nomina-de-funcionarios_1" title="Recurso: Nómina de funcionarios" class="md-nav__link">
+    Recurso: Nómina de funcionarios
   </a>
   
 </li>
@@ -585,47 +598,121 @@
 <li><strong>Formatos</strong>: JSON, XML, CSV</li>
 <li><strong>Ejemplo:</strong>: http://www.popoloproject.com/examples/person.json</li>
 </ul>
-<p><em>Ver cómo incluir lo de Ley/Decreto...</em></p>
-<h2 id="ejemplo"><a class="toclink" href="#ejemplo">Ejemplo</a><a class="headerlink" href="#ejemplo" title="Permanent link">&#128279;</a></h2>
-<p><em>Tabla con un ejemplo</em></p>
-<h2 id="clases"><a class="toclink" href="#clases">Clases</a><a class="headerlink" href="#clases" title="Permanent link">&#128279;</a></h2>
-<p>Un funcionario es una <code>Persona</code> que tiene un determinado <code>Puesto</code> y es <code>Miembro</code> de una <code>Organización</code>. Al publicar la nómina de funcionarios tenemos que tener en cuenta los atributos necesarios de estas 4 clases.</p>
-<p>Descargar clases en <strong><a href="nomina-funcionarios-clases.csv">CSV</a></strong> | <strong><a href="nomina-funcionarios-clases.xlsx">XLSX</a></strong></p>
+<!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
+
+<h2 id="ejemplos"><a class="toclink" href="#ejemplos">Ejemplos</a><a class="headerlink" href="#ejemplos" title="Permanent link">&#128279;</a></h2>
+<h3 id="recurso-nomina-de-funcionarios"><a class="toclink" href="#recurso-nomina-de-funcionarios">Recurso: Nómina de funcionarios</a><a class="headerlink" href="#recurso-nomina-de-funcionarios" title="Permanent link">&#128279;</a></h3>
+<p><strong><a href="nomina-funcionarios.csv">CSV</a></strong> | <strong><a href="nomina-funcionarios.xlsx">XLSX</a></strong></p>
 <table>
     <tr>
-        <th>Nombre</th>
-        <th>Descripción</th>
+        <th>organizacion_id</th>
+        <th>organizacion_nombre</th>
+        <th>organizacion_clasificacion</th>
+        <th>puesto_id</th>
+        <th>puesto_nombre</th>
+        <th>puesto_rol</th>
+        <th>puesto_salario_moneda</th>
+        <th>puesto_salario</th>
+        <th>miembro_fecha_ingreso</th>
+        <th>miembro_fecha_egreso</th>
+        <th>miembro_contacto</th>
+        <th>miembro_representando</th>
+        <th>miembro_area_geografica</th>
+        <th>persona_id</th>
+        <th>persona_nombre</th>
+        <th>persona_genero</th>
+        <th>persona_fecha_nacimiento</th>
+        <th>persona_cv</th>
+        <th>persona_enlaces</th>
+        <th>persona_email</th>
+        <th>persona_contacto</th>
+        <th>persona_otros_ingresos_descripcion</th>
+        <th>persona_otros_ingresos_moneda</th>
+        <th>persona_otros_ingresos</th>
     </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Presidencia de la República</td>
+        <td>Poder Ejecutivo</td>
+        <td>1</td>
+        <td>Intendente</td>
+        <td>Intendente</td>
+        <td>https://en.wikipedia.org/wiki/ISO_4217
+ https://www.currency-iso.org/en/home/tables/table-a1.html</td>
+        <td>190000</td>
+        <td>aaaa-mm-dd</td>
+        <td>aaaa-mm-dd</td>
+        <td>Dirección, Telefonos, Correo institucional</td>
+        <td>Nombre de organización</td>
+        <td>Gualeguay</td>
+        <td>DNI</td>
+        <td></td>
+        <td>Ver codigos en: https://github.com/idatosabiertos/femicidios-latam/blob/master/docs/introduccion.md</td>
+        <td>aaaa-mm-dd</td>
+        <td></td>
+        <td>Bio en LinkedIn</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>https://en.wikipedia.org/wiki/ISO_4217
+ https://www.currency-iso.org/en/home/tables/table-a1.html</td>
+        <td></td>
+    </tr>
+
+</table>
+
+<!-- FIN TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
+
+<!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
+
+<h2 id="clases"><a class="toclink" href="#clases">Clases</a><a class="headerlink" href="#clases" title="Permanent link">&#128279;</a></h2>
+<p>Un funcionario es una <code>Persona</code> que tiene un determinado <code>Puesto</code> y es <code>Miembro</code> de una <code>Organización</code>. Al publicar la nómina de funcionarios tenemos que tener en cuenta los atributos necesarios de estas 4 clases.</p>
+<p>Descargar clases en <strong><a href="../nomina-funcionarios-clases.csv">CSV</a></strong> | <strong><a href="../nomina-funcionarios-clases.xlsx">XLSX</a></strong></p>
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
     <tr>
         <td>Organización</td>
         <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
     </tr>
+
     <tr>
         <td>Puesto</td>
         <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
     </tr>
+
     <tr>
         <td>Miembro</td>
         <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
     </tr>
+
     <tr>
         <td>Persona</td>
         <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
     </tr>
+
 </table>
 
+<!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
+
+<!-- COMIENZO TABLA DE CAMPOS POR CLASE. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
+
 <h2 id="campos"><a class="toclink" href="#campos">Campos</a><a class="headerlink" href="#campos" title="Permanent link">&#128279;</a></h2>
-<p>Descargar campos en <strong><a href="nomina-funcionarios-campos.csv">CSV</a></strong> | <strong><a href="nomina-funcionarios-campos.xlsx">XLSX</a></strong></p>
-<h3 id="organizacion"><a class="toclink" href="#organizacion">Organización</a><a class="headerlink" href="#organizacion" title="Permanent link">&#128279;</a></h3>
+<p>Descargar campos en <strong><a href="../nomina-funcionarios-campos.csv">CSV</a></strong> | <strong><a href="../nomina-funcionarios-campos.xlsx">XLSX</a></strong></p>
+<h3 id="recurso-nomina-de-funcionarios_1"><a class="toclink" href="#recurso-nomina-de-funcionarios_1">Recurso: Nómina de funcionarios</a><a class="headerlink" href="#recurso-nomina-de-funcionarios_1" title="Permanent link">&#128279;</a></h3>
 <table>
     <tr>
         <th>clase</th>
         <th>titulo</th>
-        <th>Tipo de dato</th>
+        <th>tipo_dato</th>
         <th>descripcion</th>
         <th>ejemplo</th>
         <th>estandar_mapeo</th>
-        <th>Notas</th>
+        <th>notas</th>
     </tr>
 
     <tr>
@@ -645,7 +732,7 @@
         <td>El nombre principal de la organización, por ejemplo su nombre legal</td>
         <td>Presidencia de la República</td>
         <td>popolo:Organization</td>
-        <td>nan</td>
+        <td></td>
     </tr>
 
     <tr>
@@ -655,21 +742,7 @@
         <td>La clasificación de la organización, por ejemplo "Poder Ejecutivo"</td>
         <td>Poder Ejecutivo</td>
         <td>popolo:Organization</td>
-        <td>nan</td>
-    </tr>
-
-</table>
-
-<h3 id="puesto"><a class="toclink" href="#puesto">Puesto</a><a class="headerlink" href="#puesto" title="Permanent link">&#128279;</a></h3>
-<table>
-    <tr>
-        <th>clase</th>
-        <th>titulo</th>
-        <th>Tipo de dato</th>
-        <th>descripcion</th>
-        <th>ejemplo</th>
-        <th>estandar_mapeo</th>
-        <th>Notas</th>
+        <td></td>
     </tr>
 
     <tr>
@@ -679,7 +752,7 @@
         <td>Un identificador único para el puesto</td>
         <td>1</td>
         <td>popolo:Membership</td>
-        <td>nan</td>
+        <td></td>
     </tr>
 
     <tr>
@@ -689,7 +762,7 @@
         <td>Una descripción o el nombre del puesto</td>
         <td>Intendente</td>
         <td>popolo:Post:label</td>
-        <td>nan</td>
+        <td></td>
     </tr>
 
     <tr>
@@ -699,7 +772,7 @@
         <td>La función que cumple el titular del puesto</td>
         <td>Intendente</td>
         <td>popolo:Post</td>
-        <td>nan</td>
+        <td></td>
     </tr>
 
     <tr>
@@ -710,7 +783,7 @@
         <td>https://en.wikipedia.org/wiki/ISO_4217
  https://www.currency-iso.org/en/home/tables/table-a1.html</td>
         <td>schema:EmployeeRole</td>
-        <td>nan</td>
+        <td></td>
     </tr>
 
     <tr>
@@ -720,21 +793,7 @@
         <td>Salario asociado al puesto</td>
         <td>190000</td>
         <td>schema:EmployeeRole</td>
-        <td>nan</td>
-    </tr>
-
-</table>
-
-<h3 id="miembro"><a class="toclink" href="#miembro">Miembro</a><a class="headerlink" href="#miembro" title="Permanent link">&#128279;</a></h3>
-<table>
-    <tr>
-        <th>clase</th>
-        <th>titulo</th>
-        <th>Tipo de dato</th>
-        <th>descripcion</th>
-        <th>ejemplo</th>
-        <th>estandar_mapeo</th>
-        <th>Notas</th>
+        <td></td>
     </tr>
 
     <tr>
@@ -787,20 +846,6 @@
         <td>Lugar donde ejerce el cargo (provincia/localidad)</td>
     </tr>
 
-</table>
-
-<h3 id="persona"><a class="toclink" href="#persona">Persona</a><a class="headerlink" href="#persona" title="Permanent link">&#128279;</a></h3>
-<table>
-    <tr>
-        <th>clase</th>
-        <th>titulo</th>
-        <th>Tipo de dato</th>
-        <th>descripcion</th>
-        <th>ejemplo</th>
-        <th>estandar_mapeo</th>
-        <th>Notas</th>
-    </tr>
-
     <tr>
         <td>Persona</td>
         <td>persona_id</td>
@@ -816,9 +861,9 @@
         <td>persona_nombre</td>
         <td>alfanumérico</td>
         <td>Nombre y Apellido de la persona</td>
-        <td>nan</td>
+        <td></td>
         <td>popolo:Person</td>
-        <td>nan</td>
+        <td></td>
     </tr>
 
     <tr>
@@ -828,7 +873,7 @@
         <td>Genero de la persona.</td>
         <td>Ver codigos en: https://github.com/idatosabiertos/femicidios-latam/blob/master/docs/introduccion.md</td>
         <td>popolo:Person</td>
-        <td>nan</td>
+        <td></td>
     </tr>
 
     <tr>
@@ -838,7 +883,7 @@
         <td>Fecha de nacimiento de la persona</td>
         <td>aaaa-mm-dd</td>
         <td>popolo:Person</td>
-        <td>nan</td>
+        <td></td>
     </tr>
 
     <tr>
@@ -846,7 +891,7 @@
         <td>persona_cv</td>
         <td>texto</td>
         <td>CV resumido</td>
-        <td>nan</td>
+        <td></td>
         <td>popolo:Person:biography</td>
         <td>Se considera mas apropiado para un funcionario publico la publicación de su Curriculum Vitae. El termino biografía puede llevar a ambigüedades.</td>
     </tr>
@@ -866,7 +911,7 @@
         <td>persona_email</td>
         <td>URI:Mailto</td>
         <td>Cuenta de correo electrónico institucional</td>
-        <td>nan</td>
+        <td></td>
         <td>popolo:Person</td>
         <td>Cuenta de correo institucional</td>
     </tr>
@@ -876,7 +921,7 @@
         <td>persona_contacto</td>
         <td>texto</td>
         <td>Datos personales de contacto de la persona (opcional)</td>
-        <td>nan</td>
+        <td></td>
         <td>popolo:Person</td>
         <td>Datos personales de contacto (no institucional) - Opcional</td>
     </tr>
@@ -886,8 +931,8 @@
         <td>persona_otros_ingresos_descripcion</td>
         <td>texto</td>
         <td>Opcional: pero podría ser necesario declarar compensaciones, viaticos, etc.</td>
-        <td>nan</td>
-        <td>nan</td>
+        <td></td>
+        <td></td>
         <td>Opcional: pero podría ser necesario declarar compensaciones, viaticos, etc. del funcionario (persona)</td>
     </tr>
 
@@ -898,7 +943,7 @@
         <td>Opcional: tipo moneda para el campo anterior</td>
         <td>https://en.wikipedia.org/wiki/ISO_4217
  https://www.currency-iso.org/en/home/tables/table-a1.html</td>
-        <td>nan</td>
+        <td></td>
         <td>Opcional: tipo moneda para el campo anterior</td>
     </tr>
 
@@ -907,12 +952,14 @@
         <td>persona_otros_ingresos</td>
         <td>numerico</td>
         <td>Opcional: importe para el campo anterior</td>
-        <td>nan</td>
-        <td>nan</td>
+        <td></td>
+        <td></td>
         <td>Opcional: importe para el campo anterior</td>
     </tr>
 
 </table>
+
+<!-- FIN TABLA DE CAMPOS POR CLASE. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
                 
                   
                 
@@ -941,15 +988,13 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../../assets/javascripts/application.dc02f8ce.js"></script>
       
         
         
@@ -967,11 +1012,6 @@
         
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-91435482-1","https://datosgobar.github.io/paquete-apertura-datos/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
   </body>

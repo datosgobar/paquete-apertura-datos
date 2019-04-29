@@ -1,0 +1,84 @@
+{
+    "specs":
+    {
+        "nomina-funcionarios":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=7-nomina-funcionarios-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=7-nomina-funcionarios-clases",
+            "class_explain": "Un funcionario es una `Persona` que tiene un determinado `Puesto` y es `Miembro` de una `Organización`. Al publicar la nómina de funcionarios tenemos que tener en cuenta los atributos necesarios de estas 4 clases."
+        },
+        "declaraciones-juradas":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=5-declaraciones-juradas-campos"
+        },
+        "contrataciones-publicas":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=4-contrataciones-publicas-campos"
+        },
+        "presupuesto":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=2-presupuesto-campos"
+        },
+        "educacion":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=3-educacion-campos"
+        },
+        "denuncias":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=6-denuncias-campos"
+        },
+        "organigrama":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=8-organigrama-campos"
+        },
+        "permisos":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=10-permisos-campos"
+        },
+        "registro-proveedores":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=11-registro-proveedores-campos"
+        },
+        "elecciones":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=12-elecciones-campos"
+        },
+        "servicios":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=13-servicios-campos"
+        },
+        "tramites":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=14-tramites-campos"
+        },
+        "crimen":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=15-crimen-campos"
+        },
+        "normativa":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=16-normativa-campos"
+        },
+        "calidad-agua":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=17-calidad-agua-campos"
+        },
+        "calidad-aire":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=18-calidad-aire-campos"
+        },
+        "salud":
+        {
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=22-salud-campos"
+        }
+    },
+    "tags":
+    {
+        "class_before": "<!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->",
+        "class_after": "<!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->",
+        "field_before": "<!-- COMIENZO TABLA DE CAMPOS POR CLASE. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->",
+        "field_after": "<!-- FIN TABLA DE CAMPOS POR CLASE. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->",
+        "example_before": "<!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->",
+        "example_after": "<!-- FIN TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->"
+    }
+}

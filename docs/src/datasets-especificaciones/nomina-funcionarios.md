@@ -7,11 +7,75 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
 * **Formatos**: JSON, XML, CSV
 * **Ejemplo:**: http://www.popoloproject.com/examples/person.json
 
-*Ver cómo incluir lo de Ley/Decreto...*
+<!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
-## Ejemplo
+## Ejemplos
+    
+### Recurso: Nómina de funcionarios
+**[CSV](nomina-funcionarios/nomina-funcionarios.csv)** | **[XLSX](nomina-funcionarios/nomina-funcionarios.xlsx)**
 
-*Tabla con un ejemplo*
+<table>
+    <tr>
+        <th>organizacion_id</th>
+        <th>organizacion_nombre</th>
+        <th>organizacion_clasificacion</th>
+        <th>puesto_id</th>
+        <th>puesto_nombre</th>
+        <th>puesto_rol</th>
+        <th>puesto_salario_moneda</th>
+        <th>puesto_salario</th>
+        <th>miembro_fecha_ingreso</th>
+        <th>miembro_fecha_egreso</th>
+        <th>miembro_contacto</th>
+        <th>miembro_representando</th>
+        <th>miembro_area_geografica</th>
+        <th>persona_id</th>
+        <th>persona_nombre</th>
+        <th>persona_genero</th>
+        <th>persona_fecha_nacimiento</th>
+        <th>persona_cv</th>
+        <th>persona_enlaces</th>
+        <th>persona_email</th>
+        <th>persona_contacto</th>
+        <th>persona_otros_ingresos_descripcion</th>
+        <th>persona_otros_ingresos_moneda</th>
+        <th>persona_otros_ingresos</th>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Presidencia de la República</td>
+        <td>Poder Ejecutivo</td>
+        <td>1</td>
+        <td>Intendente</td>
+        <td>Intendente</td>
+        <td>https://en.wikipedia.org/wiki/ISO_4217
+ https://www.currency-iso.org/en/home/tables/table-a1.html</td>
+        <td>190000</td>
+        <td>aaaa-mm-dd</td>
+        <td>aaaa-mm-dd</td>
+        <td>Dirección, Telefonos, Correo institucional</td>
+        <td>Nombre de organización</td>
+        <td>Gualeguay</td>
+        <td>DNI</td>
+        <td></td>
+        <td>Ver codigos en: https://github.com/idatosabiertos/femicidios-latam/blob/master/docs/introduccion.md</td>
+        <td>aaaa-mm-dd</td>
+        <td></td>
+        <td>Bio en LinkedIn</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>https://en.wikipedia.org/wiki/ISO_4217
+ https://www.currency-iso.org/en/home/tables/table-a1.html</td>
+        <td></td>
+    </tr>
+        
+</table>
+
+<!-- FIN TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
+
+<!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Clases
 
@@ -19,44 +83,54 @@ Un funcionario es una `Persona` que tiene un determinado `Puesto` y es `Miembro`
 
 Descargar clases en **[CSV](nomina-funcionarios-clases.csv)** | **[XLSX](nomina-funcionarios-clases.xlsx)**
 
+
 <table>
     <tr>
-        <th>Nombre</th>
-        <th>Descripción</th>
+        <th>nombre</th>
+        <th>descripcion</th>
     </tr>
+
     <tr>
         <td>Organización</td>
         <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
     </tr>
+        
     <tr>
         <td>Puesto</td>
         <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
     </tr>
+        
     <tr>
         <td>Miembro</td>
         <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
     </tr>
+        
     <tr>
         <td>Persona</td>
         <td>Atributos que describen a las instituciones públicas de las cuales se quieren publicar la nómina de funcionarios y salarios atributos que describen los cargos o puestos que existen en una organización dada atributos que describen la relación entre las personas y las organizaciones atributos para describir la nómina de funcionarios.</td>
     </tr>
+        
 </table>
+
+<!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
+
+<!-- COMIENZO TABLA DE CAMPOS POR CLASE. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Campos
 
 Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-funcionarios-campos.xlsx)**
 
-### Organización
+### Recurso: Nómina de funcionarios
 
 <table>
     <tr>
         <th>clase</th>
         <th>titulo</th>
-        <th>Tipo de dato</th>
+        <th>tipo_dato</th>
         <th>descripcion</th>
         <th>ejemplo</th>
         <th>estandar_mapeo</th>
-        <th>Notas</th>
+        <th>notas</th>
     </tr>
 
     <tr>
@@ -76,7 +150,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>El nombre principal de la organización, por ejemplo su nombre legal</td>
         <td>Presidencia de la República</td>
         <td>popolo:Organization</td>
-        <td>nan</td>
+        <td></td>
     </tr>
         
     <tr>
@@ -86,25 +160,9 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>La clasificación de la organización, por ejemplo "Poder Ejecutivo"</td>
         <td>Poder Ejecutivo</td>
         <td>popolo:Organization</td>
-        <td>nan</td>
+        <td></td>
     </tr>
         
-</table>
-
-
-### Puesto
-
-<table>
-    <tr>
-        <th>clase</th>
-        <th>titulo</th>
-        <th>Tipo de dato</th>
-        <th>descripcion</th>
-        <th>ejemplo</th>
-        <th>estandar_mapeo</th>
-        <th>Notas</th>
-    </tr>
-
     <tr>
         <td>Puesto</td>
         <td>puesto_id</td>
@@ -112,7 +170,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>Un identificador único para el puesto</td>
         <td>1</td>
         <td>popolo:Membership</td>
-        <td>nan</td>
+        <td></td>
     </tr>
         
     <tr>
@@ -122,7 +180,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>Una descripción o el nombre del puesto</td>
         <td>Intendente</td>
         <td>popolo:Post:label</td>
-        <td>nan</td>
+        <td></td>
     </tr>
         
     <tr>
@@ -132,7 +190,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>La función que cumple el titular del puesto</td>
         <td>Intendente</td>
         <td>popolo:Post</td>
-        <td>nan</td>
+        <td></td>
     </tr>
         
     <tr>
@@ -143,7 +201,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>https://en.wikipedia.org/wiki/ISO_4217
  https://www.currency-iso.org/en/home/tables/table-a1.html</td>
         <td>schema:EmployeeRole</td>
-        <td>nan</td>
+        <td></td>
     </tr>
         
     <tr>
@@ -153,25 +211,9 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>Salario asociado al puesto</td>
         <td>190000</td>
         <td>schema:EmployeeRole</td>
-        <td>nan</td>
+        <td></td>
     </tr>
         
-</table>
-
-
-### Miembro
-
-<table>
-    <tr>
-        <th>clase</th>
-        <th>titulo</th>
-        <th>Tipo de dato</th>
-        <th>descripcion</th>
-        <th>ejemplo</th>
-        <th>estandar_mapeo</th>
-        <th>Notas</th>
-    </tr>
-
     <tr>
         <td>Miembro</td>
         <td>miembro_fecha_ingreso</td>
@@ -222,21 +264,6 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>Lugar donde ejerce el cargo (provincia/localidad)</td>
     </tr>
         
-</table>
-
-### Persona
-
-<table>
-    <tr>
-        <th>clase</th>
-        <th>titulo</th>
-        <th>Tipo de dato</th>
-        <th>descripcion</th>
-        <th>ejemplo</th>
-        <th>estandar_mapeo</th>
-        <th>Notas</th>
-    </tr>
-
     <tr>
         <td>Persona</td>
         <td>persona_id</td>
@@ -252,9 +279,9 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>persona_nombre</td>
         <td>alfanumérico</td>
         <td>Nombre y Apellido de la persona</td>
-        <td>nan</td>
+        <td></td>
         <td>popolo:Person</td>
-        <td>nan</td>
+        <td></td>
     </tr>
         
     <tr>
@@ -264,7 +291,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>Genero de la persona.</td>
         <td>Ver codigos en: https://github.com/idatosabiertos/femicidios-latam/blob/master/docs/introduccion.md</td>
         <td>popolo:Person</td>
-        <td>nan</td>
+        <td></td>
     </tr>
         
     <tr>
@@ -274,7 +301,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>Fecha de nacimiento de la persona</td>
         <td>aaaa-mm-dd</td>
         <td>popolo:Person</td>
-        <td>nan</td>
+        <td></td>
     </tr>
         
     <tr>
@@ -282,7 +309,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>persona_cv</td>
         <td>texto</td>
         <td>CV resumido</td>
-        <td>nan</td>
+        <td></td>
         <td>popolo:Person:biography</td>
         <td>Se considera mas apropiado para un funcionario publico la publicación de su Curriculum Vitae. El termino biografía puede llevar a ambigüedades.</td>
     </tr>
@@ -302,7 +329,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>persona_email</td>
         <td>URI:Mailto</td>
         <td>Cuenta de correo electrónico institucional</td>
-        <td>nan</td>
+        <td></td>
         <td>popolo:Person</td>
         <td>Cuenta de correo institucional</td>
     </tr>
@@ -312,7 +339,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>persona_contacto</td>
         <td>texto</td>
         <td>Datos personales de contacto de la persona (opcional)</td>
-        <td>nan</td>
+        <td></td>
         <td>popolo:Person</td>
         <td>Datos personales de contacto (no institucional) - Opcional</td>
     </tr>
@@ -322,8 +349,8 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>persona_otros_ingresos_descripcion</td>
         <td>texto</td>
         <td>Opcional: pero podría ser necesario declarar compensaciones, viaticos, etc.</td>
-        <td>nan</td>
-        <td>nan</td>
+        <td></td>
+        <td></td>
         <td>Opcional: pero podría ser necesario declarar compensaciones, viaticos, etc. del funcionario (persona)</td>
     </tr>
         
@@ -334,7 +361,7 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>Opcional: tipo moneda para el campo anterior</td>
         <td>https://en.wikipedia.org/wiki/ISO_4217
  https://www.currency-iso.org/en/home/tables/table-a1.html</td>
-        <td>nan</td>
+        <td></td>
         <td>Opcional: tipo moneda para el campo anterior</td>
     </tr>
         
@@ -343,14 +370,11 @@ Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-
         <td>persona_otros_ingresos</td>
         <td>numerico</td>
         <td>Opcional: importe para el campo anterior</td>
-        <td>nan</td>
-        <td>nan</td>
+        <td></td>
+        <td></td>
         <td>Opcional: importe para el campo anterior</td>
     </tr>
         
 </table>
 
-
-
-
-
+<!-- FIN TABLA DE CAMPOS POR CLASE. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->

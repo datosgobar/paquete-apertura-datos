@@ -1,0 +1,5 @@
+contrato_id,contrato_adjudicacion_id,contrato_titulo,contrato_descripcion,contrato_estado,contrato_periodo_inicio,contrato_periodo_fin,contrato_fecha_firma,adjudicacion_moneda,contrato_importe
+,,,,"Pendiente
+ Activo
+ Cancelado
+ Finalizado",,,,,
