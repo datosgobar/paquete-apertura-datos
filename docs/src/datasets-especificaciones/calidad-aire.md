@@ -21,8 +21,8 @@
         <td>1001</td>
         <td>Chapelco</td>
         <td>San Martin de Los Andes</td>
-        <td>-401.808.541.022.993</td>
-        <td>-7.131.843.600.000.000</td>
+        <td>-40.1808541022993</td>
+        <td>-71.31843</td>
         <td>UTC-3</td>
     </tr>
         
@@ -113,7 +113,7 @@ Descargar campos en **[CSV](calidad-aire-campos.csv)** | **[XLSX](calidad-aire-c
         <td>estacion_latitud</td>
         <td>numerico</td>
         <td>Coordenadas geograficas</td>
-        <td>-401.808.541.022.993</td>
+        <td>-40.1808541022993</td>
         <td>schema:GeoCoordinates</td>
         <td></td>
     </tr>
@@ -123,7 +123,7 @@ Descargar campos en **[CSV](calidad-aire-campos.csv)** | **[XLSX](calidad-aire-c
         <td>estacion_longitud</td>
         <td>numerico</td>
         <td>Coordenadas geograficas</td>
-        <td>-7.131.843.600.000.000</td>
+        <td>-71.31843</td>
         <td>schema:GeoCoordinates</td>
         <td></td>
     </tr>
