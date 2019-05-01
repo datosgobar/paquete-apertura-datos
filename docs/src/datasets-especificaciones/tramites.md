@@ -9,9 +9,9 @@ Un índice de trámites y procedimientos que se realicen ante el organismo, así
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Trámite   
-**[CSV](tramites/tramite.csv)** | **[XLSX](tramites/tramite.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites/tramite.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites/tramite.xlsx)**
 
 <table>
     <tr>
@@ -60,7 +60,7 @@ Un índice de trámites y procedimientos que se realicen ante el organismo, así
 
 ## Campos
 
-Descargar campos en **[CSV](tramites-campos.csv)** | **[XLSX](tramites-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites-campos.xlsx)**
 
 ### Recurso: Trámite   
 

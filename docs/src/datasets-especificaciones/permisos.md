@@ -9,9 +9,9 @@ Los permisos, concesiones y autorizaciones otorgados y sus titulares.
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Permisos  
-**[CSV](permisos/permisos.csv)** | **[XLSX](permisos/permisos.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/permisos/permisos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/permisos/permisos.xlsx)**
 
 <table>
     <tr>
@@ -34,22 +34,22 @@ Los permisos, concesiones y autorizaciones otorgados y sus titulares.
     </tr>
 
     <tr>
-        <td>CUIT</td>
+        <td>30-70911317-2</td>
+        <td>Minera del Plata</td>
+        <td>112440</td>
+        <td>Explotación Minera</td>
+        <td>Extracción de plata</td>
+        <td>2019-06-01</td>
+        <td>2029-06-01</td>
+        <td>Con fecha .... se otorga el permiso ....</td>
+        <td>RP4 - RP50 - RP49</td>
+        <td>{"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":{"type":"Polygon","coordinates":[[[-69.19189453125,-42.48830197960225],[-68.97216796875,-42.48830197960225],[-68.97216796875,-42.35854391749705],[-69.19189453125,-42.35854391749705],[-69.19189453125,-42.48830197960225]]]}}]}</td>
+        <td>Chubut</td>
+        <td>Gastre</td>
         <td></td>
+        <td>No</td>
         <td></td>
-        <td>Permiso/Concesión/Autorización</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>SI / NO</td>
-        <td></td>
-        <td>numero en porcentaje</td>
+        <td>40</td>
     </tr>
         
 </table>
@@ -66,7 +66,7 @@ Los permisos, concesiones y autorizaciones otorgados y sus titulares.
 
 ## Campos
 
-Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/permisos-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/permisos-campos.xlsx)**
 
 ### Recurso: Permisos  
 
@@ -86,7 +86,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>entidad_id</td>
         <td>alfanumerico</td>
         <td>Identificacion de la organización/empresa que obtiene el permiso</td>
-        <td>CUIT</td>
+        <td>30-70911317-2</td>
         <td>popolo:Organization
  schema:Organization</td>
         <td></td>
@@ -97,7 +97,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>entidad_nombre</td>
         <td>alfanumerico</td>
         <td>Nombre de la organización/empresa que tiene el permiso</td>
-        <td></td>
+        <td>Minera del Plata</td>
         <td>popolo:Organization
  schema:Organization</td>
         <td></td>
@@ -108,7 +108,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_id</td>
         <td>alfanumerico</td>
         <td>Identificación del permiso</td>
-        <td></td>
+        <td>112440</td>
         <td>schema:GovernmentPermit</td>
         <td></td>
     </tr>
@@ -118,7 +118,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_tipo</td>
         <td>alfanumerico</td>
         <td>Tipo de permiso</td>
-        <td>Permiso/Concesión/Autorización</td>
+        <td>Explotación Minera</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
@@ -128,7 +128,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_subtipo</td>
         <td>alfanumerico</td>
         <td>Otras clasificaciones</td>
-        <td></td>
+        <td>Extracción de plata</td>
         <td>schema:Thing</td>
         <td>Categorizar dependiendo del tipo de permiso</td>
     </tr>
@@ -138,7 +138,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_inicio</td>
         <td>fecha</td>
         <td>Fecha de inicio del permiso/concesión</td>
-        <td></td>
+        <td>2019-06-01</td>
         <td>schema:GovernmentPermit</td>
         <td></td>
     </tr>
@@ -148,7 +148,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_fin</td>
         <td>fecha</td>
         <td>Fecha de fin del permiso/concesión</td>
-        <td></td>
+        <td>2029-06-01</td>
         <td>schema:GovernmentPermit</td>
         <td></td>
     </tr>
@@ -158,7 +158,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_detalles</td>
         <td>texto</td>
         <td>Descripción al detalle del permiso/concesión</td>
-        <td></td>
+        <td>Con fecha .... se otorga el permiso ....</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
@@ -168,7 +168,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_area</td>
         <td>alfanumerico</td>
         <td>Area dónde se realiza la actividad</td>
-        <td></td>
+        <td>RP4 - RP50 - RP49</td>
         <td>schema:Place</td>
         <td></td>
     </tr>
@@ -178,7 +178,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_geo</td>
         <td>geografico</td>
         <td>geoJson u otro formato de georeferenciación del área geográfica donde se realiza la actividad</td>
-        <td></td>
+        <td>{"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":{"type":"Polygon","coordinates":[[[-69.19189453125,-42.48830197960225],[-68.97216796875,-42.48830197960225],[-68.97216796875,-42.35854391749705],[-69.19189453125,-42.35854391749705],[-69.19189453125,-42.48830197960225]]]}}]}</td>
         <td>schema:Place</td>
         <td></td>
     </tr>
@@ -188,7 +188,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_provincia</td>
         <td>alfanumerico</td>
         <td>Provincia dónde se realiza la actividad</td>
-        <td></td>
+        <td>Chubut</td>
         <td>schema:PostalAddress</td>
         <td></td>
     </tr>
@@ -198,7 +198,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_localidad</td>
         <td>alfanumerico</td>
         <td>Localidad dónde se realiza la actividad</td>
-        <td></td>
+        <td>Gastre</td>
         <td>schema:PostalAddress</td>
         <td></td>
     </tr>
@@ -218,7 +218,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>permiso_es_prorroga</td>
         <td>booleano</td>
         <td>Indica si los datos corresponden a una prórroga o al permiso/concesión original</td>
-        <td>SI / NO</td>
+        <td>No</td>
         <td></td>
         <td></td>
     </tr>
@@ -238,7 +238,7 @@ Descargar campos en **[CSV](permisos-campos.csv)** | **[XLSX](permisos-campos.xl
         <td>participacion_exacta</td>
         <td>numerico</td>
         <td>Porcentaje exacto de la participación.</td>
-        <td>numero en porcentaje</td>
+        <td>40</td>
         <td>BO:Share</td>
         <td></td>
     </tr>

@@ -1,2 +1,2 @@
-item_id,item_descripcion,item_clasificacion,item_cantidad,item_unidad
-,,,,
+convocatoria_ocds_id,item_etapa_id,item_id,item_descripcion,item_clasificacion,item_cantidad,item_unidad
+ocds-twb234-0005,,3245,Servicio de consultoria,Soporte y mantenimiento de hardware,1,Cantidad

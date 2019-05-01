@@ -1,17 +1,19 @@
-"recurso Permisos Permisos","clase Entidad (Organización, Empresa, etc) Entidad (Organización, Empresa, etc)","titulo entidad_id entidad_nombre","tipo_dato alfanumerico alfanumerico","descripcion Identificacion de la organización/empresa que obtiene el permiso Nombre de la organización/empresa que tiene el permiso","ejemplo 30-70911317-2 Minera del Plata","estandar_mapeo popolo:Organization
- schema:Organization popolo:Organization
- schema:Organization","notas "
-"Permisos","Permisos / Concesiones","permiso_id","alfanumerico","Identificación del permiso","112440","schema:GovernmentPermit",""
-"Permisos","Permisos / Concesiones","permiso_tipo","alfanumerico","Tipo de permiso","Explotación Minera","schema:Thing",""
-"Permisos","Permisos / Concesiones","permiso_subtipo","alfanumerico","Otras clasificaciones","Extracción de plata","schema:Thing","Categorizar dependiendo del tipo de permiso"
-"Permisos","Permisos / Concesiones","permiso_inicio","fecha","Fecha de inicio del permiso/concesión","2019-06-01","schema:GovernmentPermit",""
-"Permisos","Permisos / Concesiones","permiso_fin","fecha","Fecha de fin del permiso/concesión","2029-06-01","schema:GovernmentPermit",""
-"Permisos","Permisos / Concesiones","permiso_detalles","texto","Descripción al detalle del permiso/concesión","Con fecha .... se otorga el permiso ....","schema:Thing",""
-"Permisos","Permisos / Concesiones","permiso_area","alfanumerico","Area dónde se realiza la actividad","RP4 - RP50 - RP49","schema:Place",""
-"Permisos","Permisos / Concesiones","permiso_geo","geografico","geoJson u otro formato de georeferenciación del área geográfica donde se realiza la actividad","{""type"":""FeatureCollection"",""features"":[{""type"":""Feature"",""properties"":{},""geometry"":{""type"":""Polygon"",""coordinates"":[[[-69.19189453125,-42.48830197960225],[-68.97216796875,-42.48830197960225],[-68.97216796875,-42.35854391749705],[-69.19189453125,-42.35854391749705],[-69.19189453125,-42.48830197960225]]]}}]}","schema:Place",""
-"Permisos","Permisos / Concesiones","permiso_provincia","alfanumerico","Provincia dónde se realiza la actividad","Chubut","schema:PostalAddress",""
-"Permisos","Permisos / Concesiones","permiso_localidad","alfanumerico","Localidad dónde se realiza la actividad","Gastre","schema:PostalAddress",""
-"Permisos","Permisos / Concesiones","permiso_resolucion_enlace","url","Enlace a la resolución que otorga el permiso/concesión/autorización","","schema:Permit",""
-"Permisos","Permisos / Concesiones","permiso_es_prorroga","booleano","Indica si los datos corresponden a una prórroga o al permiso/concesión original","No","",""
-"Permisos","Permisos / Concesiones","permiso_id_padre","alfanumerico","En caso de ser una prorroga, el Id de la concesión original","","schema:GovernmentPermit",""
-"Permisos","Participacion","participacion_exacta","numerico","Porcentaje exacto de la participación.","40","BO:Share",""
+recurso,clase,titulo,tipo_dato,descripcion,ejemplo,estandar_mapeo,notas
+Permisos,"Entidad (Organización, Empresa, etc)",entidad_id,alfanumerico,Identificacion de la organización/empresa que obtiene el permiso,30-70911317-2,"popolo:Organization
+ schema:Organization",
+Permisos,"Entidad (Organización, Empresa, etc)",entidad_nombre,alfanumerico,Nombre de la organización/empresa que tiene el permiso,Minera del Plata,"popolo:Organization
+ schema:Organization",
+Permisos,Permisos / Concesiones,permiso_id,alfanumerico,Identificación del permiso,112440,schema:GovernmentPermit,
+Permisos,Permisos / Concesiones,permiso_tipo,alfanumerico,Tipo de permiso,Explotación Minera,schema:Thing,
+Permisos,Permisos / Concesiones,permiso_subtipo,alfanumerico,Otras clasificaciones,Extracción de plata,schema:Thing,Categorizar dependiendo del tipo de permiso
+Permisos,Permisos / Concesiones,permiso_inicio,fecha,Fecha de inicio del permiso/concesión,2019-06-01,schema:GovernmentPermit,
+Permisos,Permisos / Concesiones,permiso_fin,fecha,Fecha de fin del permiso/concesión,2029-06-01,schema:GovernmentPermit,
+Permisos,Permisos / Concesiones,permiso_detalles,texto,Descripción al detalle del permiso/concesión,Con fecha .... se otorga el permiso ....,schema:Thing,
+Permisos,Permisos / Concesiones,permiso_area,alfanumerico,Area dónde se realiza la actividad,RP4 - RP50 - RP49,schema:Place,
+Permisos,Permisos / Concesiones,permiso_geo,geografico,geoJson u otro formato de georeferenciación del área geográfica donde se realiza la actividad,"{""type"":""FeatureCollection"",""features"":[{""type"":""Feature"",""properties"":{},""geometry"":{""type"":""Polygon"",""coordinates"":[[[-69.19189453125,-42.48830197960225],[-68.97216796875,-42.48830197960225],[-68.97216796875,-42.35854391749705],[-69.19189453125,-42.35854391749705],[-69.19189453125,-42.48830197960225]]]}}]}",schema:Place,
+Permisos,Permisos / Concesiones,permiso_provincia,alfanumerico,Provincia dónde se realiza la actividad,Chubut,schema:PostalAddress,
+Permisos,Permisos / Concesiones,permiso_localidad,alfanumerico,Localidad dónde se realiza la actividad,Gastre,schema:PostalAddress,
+Permisos,Permisos / Concesiones,permiso_resolucion_enlace,url,Enlace a la resolución que otorga el permiso/concesión/autorización,,schema:Permit,
+Permisos,Permisos / Concesiones,permiso_es_prorroga,booleano,Indica si los datos corresponden a una prórroga o al permiso/concesión original,No,,
+Permisos,Permisos / Concesiones,permiso_id_padre,alfanumerico,"En caso de ser una prorroga, el Id de la concesión original",,schema:GovernmentPermit,
+Permisos,Participacion,participacion_exacta,numerico,Porcentaje exacto de la participación.,40,BO:Share,

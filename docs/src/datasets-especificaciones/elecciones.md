@@ -11,9 +11,9 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Eleccion  
-**[CSV](elecciones/eleccion.csv)** | **[XLSX](elecciones/eleccion.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/eleccion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/eleccion.xlsx)**
 
 <table>
     <tr>
@@ -25,16 +25,16 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td>Presidencial / PASO</td>
-        <td></td>
-        <td></td>
+        <td>GenCor2019</td>
+        <td>Elecciones Generales de la Provincia de Córdoba</td>
+        <td>Gobernador y Vice Gobernador</td>
+        <td>2019-05-12</td>
+        <td>2019-05-12</td>
     </tr>
         
 </table>
 ### Recurso: ResultadoOpcion
-**[CSV](elecciones/resultadoopcion.csv)** | **[XLSX](elecciones/resultadoopcion.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultadoopcion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultadoopcion.xlsx)**
 
 <table>
     <tr>
@@ -51,21 +51,21 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>Si/No</td>
-        <td></td>
+        <td>GenCor2019</td>
+        <td>AR-X</td>
+        <td>Provincia de Córdoba</td>
+        <td>4</td>
+        <td>Encuentro por Córdoba</td>
+        <td>1</td>
+        <td>Juan Martinez</td>
+        <td>5000</td>
+        <td>No</td>
+        <td>10</td>
     </tr>
         
 </table>
 ### Recurso: ResultadoMesa
-**[CSV](elecciones/resultadomesa.csv)** | **[XLSX](elecciones/resultadomesa.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultadomesa.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultadomesa.xlsx)**
 
 <table>
     <tr>
@@ -80,19 +80,19 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>GenCor2019</td>
+        <td>AR-X</td>
+        <td>32</td>
+        <td>1</td>
+        <td>4</td>
+        <td>1</td>
+        <td>9009</td>
+        <td>26</td>
     </tr>
         
 </table>
 ### Recurso: ResumenMesa
-**[CSV](elecciones/resumenmesa.csv)** | **[XLSX](elecciones/resumenmesa.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resumenmesa.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resumenmesa.xlsx)**
 
 <table>
     <tr>
@@ -107,14 +107,14 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
     </tr>
 
     <tr>
+        <td>GenCor2019</td>
+        <td>AR-X</td>
+        <td>32</td>
+        <td>1</td>
+        <td>25</td>
+        <td>180</td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>1207</td>
     </tr>
         
 </table>
@@ -131,7 +131,7 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
 
 ## Campos
 
-Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones-campos.xlsx)**
 
 ### Recurso: Eleccion  
 
@@ -151,7 +151,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>eleccion_id</td>
         <td>alfanumérico</td>
         <td>Identificacón única del acto eleccionario</td>
-        <td></td>
+        <td>GenCor2019</td>
         <td>edf:Contest</td>
         <td></td>
     </tr>
@@ -161,7 +161,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>eleccion_nombre</td>
         <td>alfanumérico</td>
         <td>Nombre de la elección</td>
-        <td></td>
+        <td>Elecciones Generales de la Provincia de Córdoba</td>
         <td>edf:Contest</td>
         <td></td>
     </tr>
@@ -171,7 +171,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>eleccion_tipo</td>
         <td>alfanumérico</td>
         <td>Tipo de elección</td>
-        <td>Presidencial / PASO</td>
+        <td>Gobernador y Vice Gobernador</td>
         <td>edf:Contest</td>
         <td></td>
     </tr>
@@ -181,7 +181,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>eleccion_fecha_inicio</td>
         <td>fecha</td>
         <td>Fecha de inicio de la elección</td>
-        <td></td>
+        <td>2019-05-12</td>
         <td>edf:Contest</td>
         <td></td>
     </tr>
@@ -191,7 +191,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>elección_fecha_fin</td>
         <td>fecha</td>
         <td>Fecha de fin de la elección</td>
-        <td></td>
+        <td>2019-05-12</td>
         <td>edf:Contest</td>
         <td></td>
     </tr>
@@ -215,7 +215,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>opcion_eleccion_id</td>
         <td>alfanumérico</td>
         <td>URI unica que identifique el acto eleccionario</td>
-        <td></td>
+        <td>GenCor2019</td>
         <td>edf:Choices</td>
         <td></td>
     </tr>
@@ -225,7 +225,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>opcion_region_id</td>
         <td>alfanumérico</td>
         <td>URI que identifica la region donde se realiza la elección. xx:yy:zzzz donde xx corresponde al codigo de provincia, yy corresponde al código de departamento, zzzz corresponde al codigo de localidad. En caso de no existir un codigo electoral se puede usar la codificación ISO 3166-2</td>
-        <td></td>
+        <td>AR-X</td>
         <td>edf:Choices</td>
         <td></td>
     </tr>
@@ -235,7 +235,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>opcion_region_nombre</td>
         <td>alfanumérico</td>
         <td>Nombre de la región</td>
-        <td></td>
+        <td>Provincia de Córdoba</td>
         <td>edf:Choices</td>
         <td></td>
     </tr>
@@ -245,7 +245,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>opcion_partido_id</td>
         <td>alfanumérico</td>
         <td>URI identificando al partido</td>
-        <td></td>
+        <td>4</td>
         <td>edf:Choices</td>
         <td></td>
     </tr>
@@ -255,7 +255,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>opcion_partido_nombre</td>
         <td>alfanumérico</td>
         <td>Nombre del partido</td>
-        <td></td>
+        <td>Encuentro por Córdoba</td>
         <td>edf:Choices</td>
         <td></td>
     </tr>
@@ -265,7 +265,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>opcion_candidato_id</td>
         <td>alfanumérico</td>
         <td>URI identificando al candidato</td>
-        <td></td>
+        <td>1</td>
         <td>edf:Choices</td>
         <td></td>
     </tr>
@@ -275,7 +275,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>opcion_candidato_nombre</td>
         <td>alfanumérico</td>
         <td>Nombre del candidato</td>
-        <td></td>
+        <td>Juan Martinez</td>
         <td>edf:Choices</td>
         <td></td>
     </tr>
@@ -285,7 +285,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>opcion_candidato_votos</td>
         <td>numérico</td>
         <td></td>
-        <td></td>
+        <td>5000</td>
         <td>edf:Choices</td>
         <td></td>
     </tr>
@@ -295,7 +295,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_elegido</td>
         <td>booleano</td>
         <td>Indica si el candidato fue elegido o no</td>
-        <td>Si/No</td>
+        <td>No</td>
         <td>edf:Results</td>
         <td>Este valor en el estandar se ubica dentro del resultado, pero a los efectos de esta propuesta corresponde que se ubique a nivel del candidato</td>
     </tr>
@@ -305,7 +305,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_orden</td>
         <td>numérico</td>
         <td>Campo que permite ordenar el resultado de la elección</td>
-        <td></td>
+        <td>10</td>
         <td>edf:Results</td>
         <td>Este valor en el estandar se ubica dentro del resultado, pero a los efectos de esta propuesta corresponde que se ubique a nivel del candidato</td>
     </tr>
@@ -329,7 +329,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_eleccion_id</td>
         <td>alfanumérico</td>
         <td>Identificacón única del acto eleccionario</td>
-        <td></td>
+        <td>GenCor2019</td>
         <td>edf:Results</td>
         <td></td>
     </tr>
@@ -339,7 +339,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_region_id</td>
         <td>alfanumérico</td>
         <td>Identifica la region donde se realiza la elección. xx:yy:zzzz donde xx corresponde al codigo de provincia, yy corresponde al código de departamento, zzzz corresponde al codigo de localidad.</td>
-        <td></td>
+        <td>AR-X</td>
         <td>edf:Results</td>
         <td></td>
     </tr>
@@ -349,7 +349,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_circuito_id</td>
         <td>alfanumérico</td>
         <td>Indica circuito de votación</td>
-        <td></td>
+        <td>32</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
@@ -359,7 +359,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_mesa_id</td>
         <td>alfanumérico</td>
         <td>Indica la mesa de votación</td>
-        <td></td>
+        <td>1</td>
         <td>schema:Thing</td>
         <td>Se agrega la mesa de votación para conocer los resultados a un nivel mas desagregado.</td>
     </tr>
@@ -369,7 +369,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_partido_id</td>
         <td>alfanumérico</td>
         <td>Identificación única del partido</td>
-        <td></td>
+        <td>4</td>
         <td>edf:Results</td>
         <td></td>
     </tr>
@@ -379,7 +379,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_candidato_id</td>
         <td>alfanumérico</td>
         <td>Identificación única del candidato</td>
-        <td></td>
+        <td>1</td>
         <td>edf:Results</td>
         <td></td>
     </tr>
@@ -389,7 +389,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_opcion_candidato_id</td>
         <td>alfanumérico</td>
         <td>Identifica la hoja de votación o lista a la que pertenece el candidato</td>
-        <td></td>
+        <td>9009</td>
         <td>edf:Results</td>
         <td></td>
     </tr>
@@ -399,7 +399,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_votos_obtenidos</td>
         <td>numérico</td>
         <td>Cantidad de votos obtenidos por el candidato en esa lista</td>
-        <td></td>
+        <td>26</td>
         <td>edf:Results</td>
         <td></td>
     </tr>
@@ -423,7 +423,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resumen_eleccion_id</td>
         <td>alfanumérico</td>
         <td>Identificacón única del acto eleccionario</td>
-        <td></td>
+        <td>GenCor2019</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
@@ -433,7 +433,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resumen_region_id</td>
         <td>alfanumérico</td>
         <td>Identifica la region donde se realiza la elección. xx:yy:zzzz donde xx corresponde al codigo de provincia, yy corresponde al código de departamento, zzzz corresponde al codigo de localidad.</td>
-        <td></td>
+        <td>AR-X</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
@@ -443,7 +443,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resultado_circuito_id</td>
         <td>alfanumérico</td>
         <td>Indica circuito de votación</td>
-        <td></td>
+        <td>32</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
@@ -453,7 +453,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resumen_mesa_id</td>
         <td>alfanumérico</td>
         <td>Indica la mesa de votación</td>
-        <td></td>
+        <td>1</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
@@ -463,7 +463,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resumen_votos_anulados</td>
         <td>numérico</td>
         <td>Cantidad de votos anulados en la mesa receptora de votos</td>
-        <td></td>
+        <td>25</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
@@ -473,7 +473,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resumen_votos_en_blanco</td>
         <td>numérico</td>
         <td>Cantidad de votos en blanco en la mesa receptora de votos</td>
-        <td></td>
+        <td>180</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
@@ -493,7 +493,7 @@ Descargar campos en **[CSV](elecciones-campos.csv)** | **[XLSX](elecciones-campo
         <td>resumen_votos_emitidos</td>
         <td>alfanumérico</td>
         <td>Total de votos emitidos se compone del total de los votos del resumen por mesa mas los votos obtenidos por cada opcion</td>
-        <td></td>
+        <td>1207</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>

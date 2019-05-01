@@ -10,9 +10,9 @@ Todas las leyes, decretos, resoluciones, ordenanzas, acordadas y estatutos estat
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Norma     
-**[CSV](normativa/norma.csv)** | **[XLSX](normativa/norma.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/norma.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/norma.xlsx)**
 
 <table>
     <tr>
@@ -55,7 +55,7 @@ Todas las leyes, decretos, resoluciones, ordenanzas, acordadas y estatutos estat
         
 </table>
 ### Recurso: Articulo  
-**[CSV](normativa/articulo.csv)** | **[XLSX](normativa/articulo.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/articulo.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/articulo.xlsx)**
 
 <table>
     <tr>
@@ -92,7 +92,7 @@ Todas las leyes, decretos, resoluciones, ordenanzas, acordadas y estatutos estat
 
 ## Campos
 
-Descargar campos en **[CSV](normativa-campos.csv)** | **[XLSX](normativa-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa-campos.xlsx)**
 
 ### Recurso: Norma     
 

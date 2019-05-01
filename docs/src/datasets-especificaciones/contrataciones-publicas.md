@@ -10,9 +10,9 @@ Listado de todos los procesos de contratación, los procesos de contratación de
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Convocatoria
-**[CSV](contrataciones-publicas/convocatoria.csv)** | **[XLSX](contrataciones-publicas/convocatoria.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/convocatoria.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/convocatoria.xlsx)**
 
 <table>
     <tr>
@@ -47,40 +47,40 @@ Listado de todos los procesos de contratación, los procesos de contratación de
 
     <tr>
         <td>ocds-twb234-0005</td>
+        <td>3568999</td>
+        <td>Licitación Pública 3/2019</td>
+        <td>Servicio de soporte de infraestructura informática</td>
+        <td>Activa</td>
+        <td>Ministerio de modernización</td>
+        <td>2000000</td>
+        <td>800000</td>
+        <td>Abierta</td>
+        <td>Todos los interesados pueden enviar ofertas</td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>Abierta/Selectiva/Limitad/Directa
- http://standard.open-contracting.org/latest/en/schema/codelists/#method</td>
-        <td></td>
-        <td></td>
-        <td>Bienes
- Trabajos
- Servicios</td>
-        <td>http://standard.open-contracting.org/latest/en/schema/codelists/#extended-procurement-category</td>
-        <td>http://standard.open-contracting.org/latest/en/schema/codelists/#award-criteria</td>
-        <td></td>
-        <td>En persona/Envío electronico/Escrito/Plataforma para postulación de ofertas</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>Si/No</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Servicios</td>
+        <td>Servicios de consultoria</td>
+        <td>Mejor propuesta</td>
+        <td>60% Propuesta Tecnica
+40% Propuesta Económica</td>
+        <td>En persona, Electrónica</td>
+        <td>Las propuestas se reciben en Mesa de entrada de la calle ..... y por correo electrónico en la cuenta .... o puede ingresarlas al sistema ...</td>
+        <td>2019-03-05</td>
+        <td>2019-03-20</td>
+        <td>2019-03-25</td>
+        <td>15</td>
+        <td>2019-03-05</td>
+        <td>2019-03-15</td>
+        <td>Si</td>
+        <td>10 puntos por experiencia empresarial
+50 puntos por experiencia del equipo
+40 puntos por precio</td>
+        <td>2019-04-15</td>
+        <td>2 años</td>
     </tr>
         
 </table>
 ### Recurso: Adjudicacion
-**[CSV](contrataciones-publicas/adjudicacion.csv)** | **[XLSX](contrataciones-publicas/adjudicacion.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/adjudicacion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/adjudicacion.xlsx)**
 
 <table>
     <tr>
@@ -95,19 +95,19 @@ Listado de todos los procesos de contratación, los procesos de contratación de
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>ocds-twb234-0005</td>
+        <td>3568999</td>
+        <td>Activo</td>
+        <td>2019-03-16</td>
+        <td>30628707093</td>
+        <td>HAL2000</td>
+        <td>ARS</td>
+        <td>2000000</td>
     </tr>
         
 </table>
 ### Recurso: Contrato  
-**[CSV](contrataciones-publicas/contrato.csv)** | **[XLSX](contrataciones-publicas/contrato.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/contrato.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/contrato.xlsx)**
 
 <table>
     <tr>
@@ -124,24 +124,21 @@ Listado de todos los procesos de contratación, los procesos de contratación de
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>Pendiente
- Activo
- Cancelado
- Finalizado</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>3568999-1</td>
+        <td>3568999</td>
+        <td>Licitación Pública 3/2019</td>
+        <td>Servicio de soporte de infraestructura informática</td>
+        <td>Activa</td>
+        <td>2019-05-01</td>
+        <td>2021-04-30</td>
+        <td>2019-04-15</td>
+        <td>ARS</td>
+        <td>2000000</td>
     </tr>
         
 </table>
 ### Recurso: Transaccion
-**[CSV](contrataciones-publicas/transaccion.csv)** | **[XLSX](contrataciones-publicas/transaccion.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/transaccion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/transaccion.xlsx)**
 
 <table>
     <tr>
@@ -157,23 +154,25 @@ Listado de todos los procesos de contratación, los procesos de contratación de
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>896655273</td>
+        <td>3568999-1</td>
+        <td>3568999</td>
+        <td>Prestamo BID AR1505</td>
+        <td>2019-05-31</td>
+        <td>ARS</td>
+        <td>150000</td>
+        <td>Ministerio de modernización</td>
+        <td>HAL2000</td>
     </tr>
         
 </table>
 ### Recurso: <Etapa>_Item
-**[CSV](contrataciones-publicas/etapaitem.csv)** | **[XLSX](contrataciones-publicas/etapaitem.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/etapaitem.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/etapaitem.xlsx)**
 
 <table>
     <tr>
+        <th>convocatoria_ocds_id</th>
+        <th>item_etapa_id</th>
         <th>item_id</th>
         <th>item_descripcion</th>
         <th>item_clasificacion</th>
@@ -182,11 +181,13 @@ Listado de todos los procesos de contratación, los procesos de contratación de
     </tr>
 
     <tr>
+        <td>ocds-twb234-0005</td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>3245</td>
+        <td>Servicio de consultoria</td>
+        <td>Soporte y mantenimiento de hardware</td>
+        <td>1</td>
+        <td>Cantidad</td>
     </tr>
         
 </table>
@@ -203,7 +204,7 @@ Listado de todos los procesos de contratación, los procesos de contratación de
 
 ## Campos
 
-Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](contrataciones-publicas-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas-campos.xlsx)**
 
 ### Recurso: Convocatoria
 
@@ -233,7 +234,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_id</td>
         <td>alfanumérico</td>
         <td>Identificador utilizado internamente a la organización para identificar la convocatoria</td>
-        <td></td>
+        <td>3568999</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -243,7 +244,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_titulo</td>
         <td>alfanumérico</td>
         <td>Titulo de la convocatoria</td>
-        <td></td>
+        <td>Licitación Pública 3/2019</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -253,7 +254,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_descripcion</td>
         <td>texto</td>
         <td>Detalle de lo que se desea adquirir</td>
-        <td></td>
+        <td>Servicio de soporte de infraestructura informática</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -263,7 +264,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_estado</td>
         <td>alfanumérico</td>
         <td>Estado actual de la convocatoria</td>
-        <td></td>
+        <td>Activa</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -273,7 +274,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_entidad_compradora</td>
         <td>alfanumérico</td>
         <td>Nombre de la organización responsable de la adquisición</td>
-        <td></td>
+        <td>Ministerio de modernización</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -283,7 +284,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_valor</td>
         <td>numérico</td>
         <td>Valor máximo que se va a pagar por la compra</td>
-        <td></td>
+        <td>2000000</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -293,7 +294,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_valor_minimo</td>
         <td>numérico</td>
         <td>Valor mínimo que se asegura se va a pagar</td>
-        <td></td>
+        <td>800000</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -303,8 +304,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_metodo_compra</td>
         <td>alfanumérico</td>
         <td>Metodo de compra</td>
-        <td>Abierta/Selectiva/Limitad/Directa
- http://standard.open-contracting.org/latest/en/schema/codelists/#method</td>
+        <td>Abierta</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -314,7 +314,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_metodo_detalles</td>
         <td>alfanumérico</td>
         <td>Detalles adicionales sobre el método de adquisición utilizado. Este campo se puede usar para proporcionar el nombre local del método de adquisición particular utilizado.</td>
-        <td></td>
+        <td>Todos los interesados pueden enviar ofertas</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -334,9 +334,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_categoria_compra</td>
         <td>alfanumérico</td>
         <td></td>
-        <td>Bienes
- Trabajos
- Servicios</td>
+        <td>Servicios</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -346,7 +344,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_categorias_adicionales</td>
         <td>alfanumérico</td>
         <td></td>
-        <td>http://standard.open-contracting.org/latest/en/schema/codelists/#extended-procurement-category</td>
+        <td>Servicios de consultoria</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -356,7 +354,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_criterio_adjudicacion</td>
         <td>alfanumérico</td>
         <td></td>
-        <td>http://standard.open-contracting.org/latest/en/schema/codelists/#award-criteria</td>
+        <td>Mejor propuesta</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -366,7 +364,8 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_criterio_adjudicacion_detalles</td>
         <td>alfanumérico</td>
         <td></td>
-        <td></td>
+        <td>60% Propuesta Tecnica
+40% Propuesta Económica</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -376,7 +375,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_recepcion</td>
         <td>alfanumérico</td>
         <td></td>
-        <td>En persona/Envío electronico/Escrito/Plataforma para postulación de ofertas</td>
+        <td>En persona, Electrónica</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -386,7 +385,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_recepcion_detalles</td>
         <td>alfanumérico</td>
         <td></td>
-        <td></td>
+        <td>Las propuestas se reciben en Mesa de entrada de la calle ..... y por correo electrónico en la cuenta .... o puede ingresarlas al sistema ...</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -396,7 +395,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_periodo_inicio</td>
         <td>fecha</td>
         <td>Inicio de recepción de ofertas</td>
-        <td></td>
+        <td>2019-03-05</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -406,7 +405,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_periodo_fin</td>
         <td>fecha</td>
         <td>Fin de recepción de ofertas</td>
-        <td></td>
+        <td>2019-03-20</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -416,7 +415,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_fecha_limite</td>
         <td>fecha</td>
         <td>En caso de extenderse la convocatoria cual sería la fecha maxima posible</td>
-        <td></td>
+        <td>2019-03-25</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -426,7 +425,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_duracion_en_dias</td>
         <td>numérico</td>
         <td>Duración en cantidad de dias de abierta la convocatoria</td>
-        <td></td>
+        <td>15</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -436,7 +435,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_consultas_inicio</td>
         <td>fecha</td>
         <td>Cuando se pueden realizar consultas</td>
-        <td></td>
+        <td>2019-03-05</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -446,7 +445,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_consultas_fin</td>
         <td>fecha</td>
         <td>Hasta cuando se pueden realizar consultas</td>
-        <td></td>
+        <td>2019-03-15</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -456,7 +455,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_tiene_consultas</td>
         <td>booleano</td>
         <td></td>
-        <td>Si/No</td>
+        <td>Si</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -466,7 +465,9 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_criterio_elegibilidad</td>
         <td>alfanumérico</td>
         <td>Descripción de cualquier criterio de elegibilidad para proveedores potenciales.</td>
-        <td></td>
+        <td>10 puntos por experiencia empresarial
+50 puntos por experiencia del equipo
+40 puntos por precio</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -476,7 +477,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_periodo_evaluacion</td>
         <td>alfanumérico</td>
         <td>Cuanto tiempo toma el período de evaluación, se puede expresar en fecha de inicio y fecha de fin</td>
-        <td></td>
+        <td>2019-04-15</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -486,7 +487,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>convocatoria_periodo_contrato</td>
         <td>alfanumérico</td>
         <td>Duración estimada del contrato</td>
-        <td></td>
+        <td>2 años</td>
         <td>ocds:Release</td>
         <td></td>
     </tr>
@@ -510,7 +511,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>adjudicacion_ocds_id</td>
         <td>alfanumérico</td>
         <td>Numero de Open contracting asignado</td>
-        <td></td>
+        <td>ocds-twb234-0005</td>
         <td>ocds:Award</td>
         <td></td>
     </tr>
@@ -520,7 +521,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>adjudicacion_id</td>
         <td>alfanumérico</td>
         <td>Identificación de la adjudicación</td>
-        <td></td>
+        <td>3568999</td>
         <td>ocds:Award</td>
         <td></td>
     </tr>
@@ -530,7 +531,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>adjudicacion_estado</td>
         <td>alfanumérico</td>
         <td>Estado de la adjudicación</td>
-        <td></td>
+        <td>Activo</td>
         <td>ocds:Award</td>
         <td></td>
     </tr>
@@ -540,7 +541,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>adjudicacion_fecha</td>
         <td>fecha</td>
         <td>Fecha de adjudicación</td>
-        <td></td>
+        <td>2019-03-16</td>
         <td>ocds:Award</td>
         <td></td>
     </tr>
@@ -550,7 +551,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>adjudicacion_proveedor_id</td>
         <td>alfanumérico</td>
         <td>Identificación del proveedor adjudicatario</td>
-        <td></td>
+        <td>30628707093</td>
         <td>ocds:Award</td>
         <td></td>
     </tr>
@@ -560,7 +561,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>adjudicacion_proveedor_nombre</td>
         <td>alfanumérico</td>
         <td>Nombre del proveedor adjudicatario</td>
-        <td></td>
+        <td>HAL2000</td>
         <td>ocds:Award</td>
         <td></td>
     </tr>
@@ -570,7 +571,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>adjudicacion_moneda</td>
         <td>alfanumérico</td>
         <td>Moneda en que se adjudica el llamado</td>
-        <td></td>
+        <td>ARS</td>
         <td>ocds:Award</td>
         <td></td>
     </tr>
@@ -580,7 +581,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>adjudicacion_importe</td>
         <td>alfanumérico</td>
         <td>Importe total adjudicado</td>
-        <td></td>
+        <td>2000000</td>
         <td>ocds:Award</td>
         <td></td>
     </tr>
@@ -604,7 +605,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>contrato_id</td>
         <td>alfanumérico</td>
         <td>Identificación del contrato</td>
-        <td></td>
+        <td>3568999-1</td>
         <td>ocds:Contract</td>
         <td></td>
     </tr>
@@ -614,7 +615,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>contrato_adjudicacion_id</td>
         <td>alfanumérico</td>
         <td>Identificación de la adjudicación</td>
-        <td></td>
+        <td>3568999</td>
         <td>ocds:Contract</td>
         <td></td>
     </tr>
@@ -624,7 +625,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>contrato_titulo</td>
         <td>alfanumérico</td>
         <td>Titulo o descripción breve objeto de la contratación</td>
-        <td></td>
+        <td>Licitación Pública 3/2019</td>
         <td>ocds:Contract</td>
         <td></td>
     </tr>
@@ -634,7 +635,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>contrato_descripcion</td>
         <td>alfanumérico</td>
         <td>Descripción extendida del objeto de la contratación</td>
-        <td></td>
+        <td>Servicio de soporte de infraestructura informática</td>
         <td>ocds:Contract</td>
         <td></td>
     </tr>
@@ -644,10 +645,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>contrato_estado</td>
         <td>alfanumérico</td>
         <td>Estado del contrato.</td>
-        <td>Pendiente
- Activo
- Cancelado
- Finalizado</td>
+        <td>Activa</td>
         <td>ocds:Contract</td>
         <td></td>
     </tr>
@@ -657,7 +655,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>contrato_periodo_inicio</td>
         <td>fecha</td>
         <td>Fecha de inicio del contrato</td>
-        <td></td>
+        <td>2019-05-01</td>
         <td>ocds:Contract</td>
         <td></td>
     </tr>
@@ -667,7 +665,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>contrato_periodo_fin</td>
         <td>fecha</td>
         <td>Fecha de finalización del contrato</td>
-        <td></td>
+        <td>2021-04-30</td>
         <td>ocds:Contract</td>
         <td></td>
     </tr>
@@ -677,7 +675,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>contrato_fecha_firma</td>
         <td>alfanumérico</td>
         <td>Fecha de firmado el contrato</td>
-        <td></td>
+        <td>2019-04-15</td>
         <td>ocds:Contract</td>
         <td></td>
     </tr>
@@ -687,7 +685,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>adjudicacion_moneda</td>
         <td>alfanumérico</td>
         <td>Moneda en que se realiza el contrato</td>
-        <td></td>
+        <td>ARS</td>
         <td>ocds:Contract</td>
         <td></td>
     </tr>
@@ -697,7 +695,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>contrato_importe</td>
         <td>numérico</td>
         <td>Importe total del contrato</td>
-        <td></td>
+        <td>2000000</td>
         <td>ocds:Contract</td>
         <td></td>
     </tr>
@@ -721,7 +719,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>transaccion_id</td>
         <td>alfanumérico</td>
         <td>Identificación de la transacción</td>
-        <td></td>
+        <td>896655273</td>
         <td>ocds:Transaction</td>
         <td></td>
     </tr>
@@ -731,7 +729,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>transaccion_contrato_id</td>
         <td>alfanumérico</td>
         <td>Identificación del contrato</td>
-        <td></td>
+        <td>3568999-1</td>
         <td>ocds:Transaction</td>
         <td></td>
     </tr>
@@ -741,7 +739,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>transaccion_adjudicacion_id</td>
         <td>alfanumérico</td>
         <td>Identificación de la adjudicación</td>
-        <td></td>
+        <td>3568999</td>
         <td>ocds:Transaction</td>
         <td></td>
     </tr>
@@ -751,7 +749,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>transaccion_fuente</td>
         <td>alfanumérico</td>
         <td>Fuente de financiamiento de la transacción</td>
-        <td></td>
+        <td>Prestamo BID AR1505</td>
         <td>ocds:Transaction</td>
         <td></td>
     </tr>
@@ -761,7 +759,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>transaccion_fecha</td>
         <td>fecha</td>
         <td>Fecha de realizada la transacción</td>
-        <td></td>
+        <td>2019-05-31</td>
         <td>ocds:Transaction</td>
         <td></td>
     </tr>
@@ -771,7 +769,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>transaccion_moneda</td>
         <td>alfanumérico</td>
         <td>Moneda de la transacción</td>
-        <td></td>
+        <td>ARS</td>
         <td>ocds:Transaction</td>
         <td></td>
     </tr>
@@ -781,7 +779,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>transaccion_importe</td>
         <td>alfanumérico</td>
         <td>Importe de la transacción</td>
-        <td></td>
+        <td>150000</td>
         <td>ocds:Transaction</td>
         <td></td>
     </tr>
@@ -791,7 +789,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>transaccion_origen</td>
         <td>numérico</td>
         <td>Organización que realiza el pago</td>
-        <td></td>
+        <td>Ministerio de modernización</td>
         <td>ocds:Transaction</td>
         <td></td>
     </tr>
@@ -801,7 +799,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>transaccion_destino</td>
         <td>alfanumérico</td>
         <td>Organización que recibe el pago</td>
-        <td></td>
+        <td>HAL2000</td>
         <td>ocds:Transaction</td>
         <td></td>
     </tr>
@@ -821,11 +819,31 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
     </tr>
 
     <tr>
+        <td>Convocatoria</td>
+        <td>convocatoria_ocds_id</td>
+        <td></td>
+        <td></td>
+        <td>ocds-twb234-0005</td>
+        <td>ocds:Release</td>
+        <td></td>
+    </tr>
+        
+    <tr>
+        <td><Etapa>_Item</td>
+        <td>item_etapa_id</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>ocds:Item</td>
+        <td></td>
+    </tr>
+        
+    <tr>
         <td><Etapa>_Item</td>
         <td>item_id</td>
         <td>alfanumérico</td>
         <td>Identificación del item</td>
-        <td></td>
+        <td>3245</td>
         <td>ocds:Item</td>
         <td></td>
     </tr>
@@ -835,7 +853,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>item_descripcion</td>
         <td>alfanumérico</td>
         <td>Descripción del item</td>
-        <td></td>
+        <td>Servicio de consultoria</td>
         <td>ocds:Item</td>
         <td></td>
     </tr>
@@ -845,7 +863,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>item_clasificacion</td>
         <td>alfanumérico</td>
         <td>Clasificación del item</td>
-        <td></td>
+        <td>Soporte y mantenimiento de hardware</td>
         <td>ocds:Item</td>
         <td></td>
     </tr>
@@ -855,7 +873,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>item_cantidad</td>
         <td>numérico</td>
         <td>Cantidad de items</td>
-        <td></td>
+        <td>1</td>
         <td>ocds:Item</td>
         <td></td>
     </tr>
@@ -865,7 +883,7 @@ Descargar campos en **[CSV](contrataciones-publicas-campos.csv)** | **[XLSX](con
         <td>item_unidad</td>
         <td>alfanumérico</td>
         <td>Unidad de medida para cuantificar el item</td>
-        <td></td>
+        <td>Cantidad</td>
         <td>ocds:Item</td>
         <td></td>
     </tr>

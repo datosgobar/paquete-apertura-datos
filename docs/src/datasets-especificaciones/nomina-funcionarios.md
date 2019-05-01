@@ -10,9 +10,9 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Nómina de funcionarios
-**[CSV](nomina-funcionarios/nomina-funcionarios.csv)** | **[XLSX](nomina-funcionarios/nomina-funcionarios.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios/nomina-funcionarios.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios/nomina-funcionarios.xlsx)**
 
 <table>
     <tr>
@@ -81,7 +81,7 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
 
 Un funcionario es una `Persona` que tiene un determinado `Puesto` y es `Miembro` de una `Organización`. Al publicar la nómina de funcionarios tenemos que tener en cuenta los atributos necesarios de estas 4 clases.
 
-Descargar clases en **[CSV](nomina-funcionarios-clases.csv)** | **[XLSX](nomina-funcionarios-clases.xlsx)**
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios-clases.xlsx)**
 
 
 <table>
@@ -118,7 +118,7 @@ Descargar clases en **[CSV](nomina-funcionarios-clases.csv)** | **[XLSX](nomina-
 
 ## Campos
 
-Descargar campos en **[CSV](nomina-funcionarios-campos.csv)** | **[XLSX](nomina-funcionarios-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios-campos.xlsx)**
 
 ### Recurso: Nómina de funcionarios
 

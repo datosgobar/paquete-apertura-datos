@@ -10,9 +10,9 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Estacion  
-**[CSV](calidad-agua/estacion.csv)** | **[XLSX](calidad-agua/estacion.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-agua/estacion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-agua/estacion.xlsx)**
 
 <table>
     <tr>
@@ -47,7 +47,7 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
         
 </table>
 ### Recurso: Contaminante
-**[CSV](calidad-agua/contaminante.csv)** | **[XLSX](calidad-agua/contaminante.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-agua/contaminante.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-agua/contaminante.xlsx)**
 
 <table>
     <tr>
@@ -86,7 +86,7 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
 
 ## Campos
 
-Descargar campos en **[CSV](calidad-agua-campos.csv)** | **[XLSX](calidad-agua-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-agua-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-agua-campos.xlsx)**
 
 ### Recurso: Estacion  
 

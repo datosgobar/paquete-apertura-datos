@@ -10,9 +10,9 @@ Mecanismos de presentación directa de solicitudes o denuncias a disposición de
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Denuncia  
-**[CSV](denuncias/denuncia.csv)** | **[XLSX](denuncias/denuncia.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias/denuncia.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias/denuncia.xlsx)**
 
 <table>
     <tr>
@@ -83,7 +83,7 @@ Mecanismos de presentación directa de solicitudes o denuncias a disposición de
 
 ## Campos
 
-Descargar campos en **[CSV](denuncias-campos.csv)** | **[XLSX](denuncias-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias-campos.xlsx)**
 
 ### Recurso: Denuncia  
 

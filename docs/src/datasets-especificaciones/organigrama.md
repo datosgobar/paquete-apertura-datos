@@ -10,9 +10,9 @@ Organismos y entidades del estado con su estructura orgánica y funciones.
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Organigrama
-**[CSV](organigrama/organigrama.csv)** | **[XLSX](organigrama/organigrama.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/organigrama/organigrama.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/organigrama/organigrama.xlsx)**
 
 <table>
     <tr>
@@ -61,7 +61,7 @@ Organismos y entidades del estado con su estructura orgánica y funciones.
 
 ## Campos
 
-Descargar campos en **[CSV](organigrama-campos.csv)** | **[XLSX](organigrama-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/organigrama-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/organigrama-campos.xlsx)**
 
 ### Recurso: Organigrama
 

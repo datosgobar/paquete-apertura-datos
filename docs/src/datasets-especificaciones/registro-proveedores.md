@@ -9,9 +9,9 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Declaración
-**[CSV](registro-proveedores/declaracion.csv)** | **[XLSX](registro-proveedores/declaracion.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/declaracion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/declaracion.xlsx)**
 
 <table>
     <tr>
@@ -46,7 +46,7 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
         
 </table>
 ### Recurso: Persona   
-**[CSV](registro-proveedores/persona.csv)** | **[XLSX](registro-proveedores/persona.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/persona.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/persona.xlsx)**
 
 <table>
     <tr>
@@ -69,7 +69,7 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
         
 </table>
 ### Recurso: Intereses 
-**[CSV](registro-proveedores/intereses.csv)** | **[XLSX](registro-proveedores/intereses.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/intereses.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/intereses.xlsx)**
 
 <table>
     <tr>
@@ -102,7 +102,7 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
 
 ## Campos
 
-Descargar campos en **[CSV](registro-proveedores-campos.csv)** | **[XLSX](registro-proveedores-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores-campos.xlsx)**
 
 ### Recurso: Declaración
 

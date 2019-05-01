@@ -100,6 +100,9 @@ doctoc: ## generate table of contents, doctoc command line tool required
 serve:
 	mkdocs serve
 
+specs:
+	python scripts/dataset_specs.py $(SPECS_NAME)
+
 build:
 	mkdocs build
 	rsync -vau --remove-source-files site/ docs/

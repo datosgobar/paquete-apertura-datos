@@ -9,9 +9,9 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Declaración personal
-**[CSV](declaraciones-juradas/declaracion-personal.csv)** | **[XLSX](declaraciones-juradas/declaracion-personal.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-personal.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-personal.xlsx)**
 
 <table>
     <tr>
@@ -66,7 +66,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
         
 </table>
 ### Recurso: Declaración de Grupo Familiar
-**[CSV](declaraciones-juradas/declaracion-grupo-familiar.csv)** | **[XLSX](declaraciones-juradas/declaracion-grupo-familiar.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-grupo-familiar.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-grupo-familiar.xlsx)**
 
 <table>
     <tr>
@@ -97,7 +97,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
         
 </table>
 ### Recurso: Declaración de Bienes y deudas
-**[CSV](declaraciones-juradas/declaracion-bienes-deudas.csv)** | **[XLSX](declaraciones-juradas/declaracion-bienes-deudas.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-bienes-deudas.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-bienes-deudas.xlsx)**
 
 <table>
     <tr>
@@ -138,7 +138,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
         
 </table>
 ### Recurso: Declaración de Postulaciones a cargos electivos
-**[CSV](declaraciones-juradas/declaracion-postulaciones-cargos-electivos.csv)** | **[XLSX](declaraciones-juradas/declaracion-postulaciones-cargos-electivos.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-postulaciones-cargos-electivos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-postulaciones-cargos-electivos.xlsx)**
 
 <table>
     <tr>
@@ -153,7 +153,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
         
 </table>
 ### Recurso: Declaración de Patrimonio, Ingresos y Gastos
-**[CSV](declaraciones-juradas/declaracion-patrimonio-ingresos-gastos.csv)** | **[XLSX](declaraciones-juradas/declaracion-patrimonio-ingresos-gastos.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-patrimonio-ingresos-gastos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-patrimonio-ingresos-gastos.xlsx)**
 
 <table>
     <tr>
@@ -186,7 +186,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
 
 ## Campos
 
-Descargar campos en **[CSV](declaraciones-juradas-campos.csv)** | **[XLSX](declaraciones-juradas-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas-campos.xlsx)**
 
 ### Recurso: Declaración personal
 

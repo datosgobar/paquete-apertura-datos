@@ -13,7 +13,7 @@
         },
         "contrataciones-publicas":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=4-contrataciones-publicas-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=706828557"
         },
         "presupuesto":
         {
@@ -37,7 +37,7 @@
         },
         "permisos":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=10-permisos-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1510338011"
         },
         "registro-proveedores":
         {
@@ -45,7 +45,7 @@
         },
         "elecciones":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=12-elecciones-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1499348528"
         },
         "servicios":
         {

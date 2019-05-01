@@ -9,9 +9,9 @@ Estadísticas sobre niveles de crimen o listado de los mismos.
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Crimen    
-**[CSV](crimen/crimen.csv)** | **[XLSX](crimen/crimen.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/crimen.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/crimen.xlsx)**
 
 <table>
     <tr>
@@ -50,7 +50,7 @@ Estadísticas sobre niveles de crimen o listado de los mismos.
         
 </table>
 ### Recurso: Estadísticas Crimen
-**[CSV](crimen/estadisticas-crimen.csv)** | **[XLSX](crimen/estadisticas-crimen.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/estadisticas-crimen.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/estadisticas-crimen.xlsx)**
 
 <table>
     <tr>
@@ -101,7 +101,7 @@ Estadísticas sobre niveles de crimen o listado de los mismos.
 
 ## Campos
 
-Descargar campos en **[CSV](crimen-campos.csv)** | **[XLSX](crimen-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen-campos.xlsx)**
 
 ### Recurso: Crimen    
 

@@ -3,9 +3,9 @@
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Estacion  
-**[CSV](calidad-aire/estacion.csv)** | **[XLSX](calidad-aire/estacion.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/estacion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/estacion.xlsx)**
 
 <table>
     <tr>
@@ -28,7 +28,7 @@
         
 </table>
 ### Recurso: Contaminante
-**[CSV](calidad-aire/contaminante.csv)** | **[XLSX](calidad-aire/contaminante.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/contaminante.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/contaminante.xlsx)**
 
 <table>
     <tr>
@@ -63,7 +63,7 @@
 
 ## Campos
 
-Descargar campos en **[CSV](calidad-aire-campos.csv)** | **[XLSX](calidad-aire-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire-campos.xlsx)**
 
 ### Recurso: Estacion  
 

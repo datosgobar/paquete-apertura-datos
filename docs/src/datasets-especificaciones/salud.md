@@ -3,9 +3,9 @@
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Organizacion
-**[CSV](salud/organizacion.csv)** | **[XLSX](salud/organizacion.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/organizacion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/organizacion.xlsx)**
 
 <table>
     <tr>
@@ -40,7 +40,7 @@
         
 </table>
 ### Recurso: Indicador 
-**[CSV](salud/indicador.csv)** | **[XLSX](salud/indicador.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/indicador.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/indicador.xlsx)**
 
 <table>
     <tr>
@@ -81,7 +81,7 @@
 
 ## Campos
 
-Descargar campos en **[CSV](salud-campos.csv)** | **[XLSX](salud-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud-campos.xlsx)**
 
 ### Recurso: Organizacion
 

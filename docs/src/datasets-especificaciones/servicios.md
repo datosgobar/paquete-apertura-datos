@@ -9,9 +9,9 @@ Los servicios que brinda el organismo directamente al público, incluyendo norma
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
-    
+
 ### Recurso: Servicio  
-**[CSV](servicios/servicio.csv)** | **[XLSX](servicios/servicio.xlsx)**
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios/servicio.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios/servicio.xlsx)**
 
 <table>
     <tr>
@@ -68,7 +68,7 @@ Los servicios que brinda el organismo directamente al público, incluyendo norma
 
 ## Campos
 
-Descargar campos en **[CSV](servicios-campos.csv)** | **[XLSX](servicios-campos.xlsx)**
+Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios-campos.xlsx)**
 
 ### Recurso: Servicio  
 
