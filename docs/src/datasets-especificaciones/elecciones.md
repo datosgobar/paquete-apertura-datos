@@ -1,4 +1,12 @@
-# Elecciones
+# Resultados Electorales
+
+Resultados de las últimas elecciones municipales o provinciales desagregadas por mesas electorales.
+
+* **Tema**: Gobierno y sector público
+* **Estándar referencia**: Election data format (Open Data Institute)
+* **Formatos**: CSV
+* **Ejemplo:**: https://github.com/theodi/election-data-format/blob/gh-pages/tables/index.md
+
 
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 

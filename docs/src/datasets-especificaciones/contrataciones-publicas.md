@@ -1,5 +1,12 @@
 # Contrataciones Públicas
 
+Listado de todos los procesos de contratación, los procesos de contratación de obras deberían tener un enlace a sus obras, con el fin de poder agrupar todos los contratos de una obra dada (diseño, construccion, fiscalización).
+
+* **Tema**: Gobierno y sector público
+* **Estándar referencia**: [Open Contracting Data Standard]( http://standard.open-contracting.org/latest/en/)
+* **Formatos**: JSON, XML, CSV
+* **Ejemplo:**: http://standard.open-contracting.org/latest/en/schema/merging/, https://github.com/open-contracting/sample-data/blob/master/flat-template/template/
+
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos

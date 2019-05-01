@@ -1,5 +1,12 @@
 # Denuncias
 
+Mecanismos de presentación directa de solicitudes o denuncias a disposición del público en relación a acciones u omisiones del sujeto obligado.
+
+* **Tema**: Gobierno y sector público
+* **Estándar referencia**: https://schema.org/
+* **Formatos**: JSON, XML, CSV
+* **Ejemplo:**: http://www.popoloproject.com/examples/person.json
+
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos

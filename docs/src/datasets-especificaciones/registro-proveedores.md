@@ -1,5 +1,11 @@
 # Registro de Proveedores
 
+Nombre de proveedores adjudicados en contrataciones públicas, así como los socios y accionistas principales, de las sociedades o empresas proveedoras.
+
+* **Tema**: Gobierno y sector público
+* **Estándar referencia**: [Beneficial Ownership](http://standard.openownership.org/en/master/)
+* **Formatos**: JSON, XML, CSV
+
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos

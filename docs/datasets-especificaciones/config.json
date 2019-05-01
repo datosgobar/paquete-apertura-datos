@@ -17,11 +17,15 @@
         },
         "presupuesto":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=2-presupuesto-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=2-presupuesto-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=2-presupuesto-clases",
+            "class_explain": "Un item del `Presupuesto` es un gasto o ingreso asignado a una `Organización` para el financiamiento de sus misiones y funciones."
         },
         "educacion":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=3-educacion-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=3-educacion-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=3-educacion-clases",
+            "class_explain": "Un `Estudiante` concurre a un `Establecimiento` para desarrollar actividades formativas que realiza con un determinado `Rendimiento` como resultado."
         },
         "denuncias":
         {

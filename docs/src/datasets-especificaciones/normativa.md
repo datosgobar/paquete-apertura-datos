@@ -1,5 +1,12 @@
 # Normativa
 
+Todas las leyes, decretos, resoluciones, ordenanzas, acordadas y estatutos estatutos municipales sancionados por el Honorable Concejo Deliberante.
+
+* **Tema**: Justicia, seguridad y legales
+* **Estándar referencia**: Akoma Ntoso
+* **Formatos**: XML
+* **Ejemplo:**: http://docs.oasis-open.org/legaldocml/akn-nc/v1.0/akn-nc-v1.0.html, http://docs.oasis-open.org/legaldocml/akn-core/v1.0/akn-core-v1.0-part2-specs.html
+
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos

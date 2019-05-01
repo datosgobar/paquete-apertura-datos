@@ -1,5 +1,12 @@
 # Calidad del Agua
 
+Listas de los funcionarios con referencia a la entidad a la que pertenecen, la categoría, el salario y el cargo, incluyendo pasantes y personal contratado en el marco de proyectos financiados por organismos multilaterales, detallando sus respectivas funciones y posición en el escalafón.
+
+* **Tema**: Medio ambiente
+* **Estándar referencia**: [Popolo](http://www.popoloproject.com/specs/)
+* **Formatos**: JSON, XML, CSV
+* **Ejemplo:**: http://www.popoloproject.com/examples/person.json
+
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos

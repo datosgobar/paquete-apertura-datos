@@ -1,5 +1,11 @@
 # Permisos
 
+Los permisos, concesiones y autorizaciones otorgados y sus titulares.
+
+* **Tema**: Gobierno y sector público
+* **Estándar referencia**: https://schema.org/
+* **Formatos**: CSV
+
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos

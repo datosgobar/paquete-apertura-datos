@@ -1,5 +1,12 @@
 # Organigrama
 
+Organismos y entidades del estado con su estructura orgánica y funciones.
+
+* **Tema**: Gobierno y sector público
+* **Estándar referencia**: [Organizaciones de Popolo](http://www.popoloproject.com/specs/organization.html)
+* **Formatos**: JSON, XML, CSV
+* **Ejemplo:**: http://www.popoloproject.com/examples/organization.json
+
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos

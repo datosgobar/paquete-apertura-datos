@@ -1,4 +1,9 @@
-# Educación
+# Estadísticas de Educación
+
+Estadísticas de educación, cantidad de alumnos por aula (grado e institución), por sexo, por edad. Si se tiene estadísticas de notas de los alumnos.
+
+* **Tema**: Educación, cultura y deportes
+* **Formatos**: JSON, CSV
 
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 

@@ -1,5 +1,11 @@
 # Declaraciones Juradas
 
+Declaración Jurada Patrimonial Integral de carácter público con su correspondiente relación a la Nómina de Funcionarios.
+
+* **Tema**: Gobierno y sector público
+* **Estándar referencia**: Organizaciones, Personas, Membership de Popolo extendiendo la última para agregar su declaración jurada http://www.popoloproject.com/specs y vCard
+* **Formatos**: JSON, XML, CSV
+
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos

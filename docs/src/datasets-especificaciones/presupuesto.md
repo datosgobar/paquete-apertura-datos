@@ -1,5 +1,11 @@
 # Presupuesto
 
+El presupuesto asignado a cada área, programa o función, las modificaciones durante cada ejercicio anual y el estadode ejecución actualizado en forma trimestral hasta el último nivel de desagregación en que se procese.
+
+* **Tema**: Economía y finanzas
+* **Estándar referencia**: [Open Fiscal Data Package](https://docs.openspending.org/en/latest/contributors/package/)
+* **Formatos**: CSV
+
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos

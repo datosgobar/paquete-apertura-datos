@@ -1,4 +1,10 @@
-# Crímenes
+# Estadísticas del Crimen
+
+Estadísticas sobre niveles de crimen o listado de los mismos.
+
+* **Tema**: Justicia, seguridad y legales
+* **Estándar referencia**: [Open Crime Data Standard](https://github.com/spotcrimebrit/SpotCrime-Open-Crime-Data-Standard)
+* **Formatos**: JSON, CSV
 
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 

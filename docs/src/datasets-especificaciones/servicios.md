@@ -1,5 +1,11 @@
 # Servicios
 
+Los servicios que brinda el organismo directamente al público, incluyendo normas, cartas y protocolos de atención al cliente.
+
+* **Tema**: Gobierno y sector público
+* **Estándar referencia**: https://schema.org/
+* **Formatos**: JSON, XML, CSV
+
 <!-- COMIENZO TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 ## Ejemplos
