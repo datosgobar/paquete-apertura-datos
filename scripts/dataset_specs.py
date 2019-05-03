@@ -313,7 +313,7 @@ def update_dataset_specs(specs_name, config="config-specs.json"):
     md_example = generate_example_section(specs_name)
     if "gsheet_classes" in specs_params:
         md_class = generate_class_section(
-            specs_name, specs_params["class_explain"])
+            specs_name, specs_params.get("class_explain", ""))
     md_field = generate_field_section(specs_name)
 
     # reemplaza las secciones viejas por las nuevas

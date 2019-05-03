@@ -1,31 +1,31 @@
 "recurso","clase","titulo","tipo_dato","descripcion","ejemplo","estandar_mapeo","notas"
-"Denuncia","Organización","organizacion_id","alfanumerico","Debe ser un identificador único para la organización. Se puede utilizar una codificacion en base al presupuesto; ej: Código jurisdicccion:+código sub jurisdicción:+ ...","325","popolo:Organization
+"Denuncias","Organización","organizacion_id","alfanumerico","Debe ser un identificador único para la organización. Se puede utilizar una codificacion en base al presupuesto; ej: Código jurisdicccion:+código sub jurisdicción:+ ...","325","popolo:Organization
  schema:Organization",""
-"Denuncia","Organización","organizacion_nombre","alfanumerio","El nombre principal de la organización, por ejemplo su nombre legal","Municipio de Bahia Blanca","popolo:Organization
+"Denuncias","Organización","organizacion_nombre","alfanumerio","El nombre principal de la organización, por ejemplo su nombre legal.","Municipio de Bahia Blanca","popolo:Organization
  schema:Organization",""
-"Denuncia","Persona","denunciante_id","alfanumerico","","23668249","popolo:Person
+"Denuncias","Persona","denunciante_id","alfanumerico","Identificador de la persona que denuncia.","23668249","popolo:Person
  schema:Person",""
-"Denuncia","Persona","denunciante_nombre","alfanumerico","","Lucía Sánchez","popolo:Person
+"Denuncias","Persona","denunciante_id_tipo","alfanumerico","Tipo de identificación de la persona que denuncia.","DNI","",""
+"Denuncias","Persona","denunciante_nombre","alfanumerico","Nombre completo del denunciante.","Lucía Sánchez","popolo:Person
  schema:Person",""
-"Denuncia","Persona","denunciante_genero","alfanumerico","","Femenino","popolo:Person
+"Denuncias","Persona","denunciante_genero","alfanumerico","Género según el cual se identifica la persona declarado según la normativa vigente para la presentación de declaraciones juradas en el país.","Femenino","popolo:Person
  schema:Person",""
-"Denuncia","Persona","denunciante_edad","numerico","","26","popolo:Person
+"Denuncias","Persona","denunciante_edad","numerico","Edad al momento de la denuncia.","26","popolo:Person
  schema:Person",""
-"Denuncia","Persona","denunciante_ascendencia","alfanumerico","","","",""
-"Denuncia","Denuncia","denuncia_id","alfanumerico","","3384556","schema:Thing",""
-"Denuncia","Denuncia","denuncia_fecha","fecha","","2019-03-12","schema:Thing",""
-"Denuncia","Denuncia","denuncia_hora","fecha","","14:45","schema:Thing",""
-"Denuncia","Denuncia","denuncia_medio","alfanumerico","Indica de que forma fue realizada la denuncia","Página web","",""
-"Denuncia","Denuncia","denuncia_lugar_radicacion","alfanumerico","Oficina o dependencia que recepciono la denuncia ya sea presencial, electrónica, telefónica u otro medio.","","schema:Thing",""
-"Denuncia","Denuncia","denuncia_enlace_seguimiento","url","De existir un enlace para hacer seguimiento a la denuncia, opcional","https://www.bahia.gob.ar/vecinos/","schema:Thing",""
-"Denuncia","Denuncia","denuncia_estado_actual","alfanumerico","Ultimo estado de la denuncia","Activo","",""
-"Denuncia","Denuncia","denuncia_direccion","alfanumerico","","Alsina 1600","schema:PostalAddress",""
-"Denuncia","Denuncia","denuncia_latitud","numerico","","-38.705048","schema:GeoCoordinates",""
-"Denuncia","Denuncia","denuncia_longitud","numerico","","-62.250596","schema:GeoCoordinates",""
-"Denuncia","Denuncia","denuncia_detalle","texto","Detalle brindado por el denunciante al realizar la denuncia","Cable se encuentra colgando desde la columna de alumbrado.","schema:Thing",""
-"Denuncia","Denuncia","denuncia_categoria","alfanumerico","","Alumbrado","schema:Thing",""
-"Denuncia","Denuncia","denuncia_tipo","alfanumerico","","Cable Suelto","schema:Thing",""
-"Denuncia","Denuncia","denuncia_subtipo","alfanumerico","","","schema:Thing",""
-"Denuncia","Denuncia","denuncia_otra_clasificacion","alfanumerico","","","schema:Thing",""
-"Denuncia","Denuncia","denuncia_fecha_ultimo_cambio","fecha","","2019-03-15","schema:Date",""
-"Denuncia","Denuncia","denuncia_comentario_ultimo_cambio","texto","","Se envió equipo a reparar el cable","schema:Thing",""
+"Denuncias","Denuncia","denuncia_id","alfanumerico","Identificador de la denuncia realizada.","3384556","schema:Thing",""
+"Denuncias","Denuncia","denuncia_fecha","fecha","Fecha de la denuncia.","2019-03-12","schema:Thing",""
+"Denuncias","Denuncia","denuncia_hora","fecha","Hora de la denuncia.","14:45","schema:Thing",""
+"Denuncias","Denuncia","denuncia_medio","alfanumerico","Indica de que forma fue realizada la denuncia","Página web","",""
+"Denuncias","Denuncia","denuncia_lugar_radicacion","alfanumerico","Oficina o dependencia que recepciono la denuncia ya sea presencial, electrónica, telefónica u otro medio.","","schema:Thing",""
+"Denuncias","Denuncia","denuncia_enlace_seguimiento","url","De existir un enlace para hacer seguimiento a la denuncia, opcional","https://www.bahia.gob.ar/vecinos/","schema:Thing",""
+"Denuncias","Denuncia","denuncia_estado_actual","alfanumerico","Ultimo estado de la denuncia","Activo","",""
+"Denuncias","Denuncia","denuncia_direccion","alfanumerico","Dirección donde sucedió el hecho denunciado.","Alsina 1600","schema:PostalAddress",""
+"Denuncias","Denuncia","denuncia_latitud","numerico","Latitud donde sucedió el hecho denunciado.","-38.705048","schema:GeoCoordinates",""
+"Denuncias","Denuncia","denuncia_longitud","numerico","Longitud donde sucedió el hecho denunciado.","-62.250596","schema:GeoCoordinates",""
+"Denuncias","Denuncia","denuncia_detalle","texto","Detalle brindado por el denunciante al realizar la denuncia.","Cable se encuentra colgando desde la columna de alumbrado.","schema:Thing",""
+"Denuncias","Denuncia","denuncia_categoria","alfanumerico","Categoría o clasificación del hecho denunciado.","Alumbrado","schema:Thing",""
+"Denuncias","Denuncia","denuncia_tipo","alfanumerico","Tipo de denuncia (esto es una clasificación más específica que ""categoría"").","Cable Suelto","schema:Thing",""
+"Denuncias","Denuncia","denuncia_subtipo","alfanumerico","Subtipo de denuncia (esto es una clasificación más específica que ""tipo"", si aplica).","","schema:Thing",""
+"Denuncias","Denuncia","denuncia_otra_clasificacion","alfanumerico","Categoría o clasificación alternativa del hecho denunciado.","","schema:Thing",""
+"Denuncias","Denuncia","denuncia_fecha_ultimo_cambio","fecha","Fecha de la última modificación que sufrió la denuncia.","2019-03-15","schema:Date",""
+"Denuncias","Denuncia","denuncia_comentario_ultimo_cambio","texto","Comentario agregado a la denuncia en el último cambio.","Se envió equipo a reparar el cable","schema:Thing",""

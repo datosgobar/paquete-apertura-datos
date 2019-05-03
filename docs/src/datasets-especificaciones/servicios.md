@@ -10,8 +10,8 @@ Los servicios que brinda el organismo directamente al público, incluyendo norma
 
 ## Ejemplos
 
-### Recurso: Servicio  
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios/servicio.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios/servicio.xlsx)**
+### Recurso: Servicios 
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios/servicios.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios/servicios.xlsx)**
 
 <table>
     <tr>
@@ -25,7 +25,7 @@ Los servicios que brinda el organismo directamente al público, incluyendo norma
         <th>servicio_fecha_inicio</th>
         <th>servicio_fecha_fin</th>
         <th>servicio_dias_semana</th>
-        <th>servicio_hora inicio</th>
+        <th>servicio_hora_inicio</th>
         <th>servicio_hora_fin</th>
         <th>servicio_costo</th>
         <th>servicio_enlace</th>
@@ -61,6 +61,31 @@ Los servicios que brinda el organismo directamente al público, incluyendo norma
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Organización</td>
+        <td>Atributos de la organización que presta el servicio.</td>
+    </tr>
+        
+    <tr>
+        <td>Servicio</td>
+        <td>Atributos del servicio prestado.</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -70,7 +95,7 @@ Los servicios que brinda el organismo directamente al público, incluyendo norma
 
 Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/servicios-campos.xlsx)**
 
-### Recurso: Servicio  
+### Recurso: Servicios 
 
 <table>
     <tr>
@@ -187,9 +212,9 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         
     <tr>
         <td>Servicio</td>
-        <td>servicio_hora inicio</td>
+        <td>servicio_hora_inicio</td>
         <td>hora</td>
-        <td></td>
+        <td>Hora de inicio del servicio.</td>
         <td>8:00</td>
         <td>schema:OpeningHours</td>
         <td></td>
@@ -199,7 +224,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Servicio</td>
         <td>servicio_hora_fin</td>
         <td>hora</td>
-        <td></td>
+        <td>Hora de cierre del servicio.</td>
         <td>17:00</td>
         <td>schema:OpeningHours</td>
         <td></td>
@@ -249,7 +274,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Servicio</td>
         <td>servicio_tramite_nombre</td>
         <td>alfanumerico</td>
-        <td></td>
+        <td>Nombre o descripción del servicio.</td>
         <td>Poda de árbol, extracción de árbol o corte de raíz.</td>
         <td>schema:Thing</td>
         <td></td>

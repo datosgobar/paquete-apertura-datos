@@ -11,18 +11,18 @@ Mecanismos de presentación directa de solicitudes o denuncias a disposición de
 
 ## Ejemplos
 
-### Recurso: Denuncia  
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias/denuncia.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias/denuncia.xlsx)**
+### Recurso: Denuncias 
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias/denuncias.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias/denuncias.xlsx)**
 
 <table>
     <tr>
         <th>organizacion_id</th>
         <th>organizacion_nombre</th>
         <th>denunciante_id</th>
+        <th>denunciante_id_tipo</th>
         <th>denunciante_nombre</th>
         <th>denunciante_genero</th>
         <th>denunciante_edad</th>
-        <th>denunciante_ascendencia</th>
         <th>denuncia_id</th>
         <th>denuncia_fecha</th>
         <th>denuncia_hora</th>
@@ -46,10 +46,10 @@ Mecanismos de presentación directa de solicitudes o denuncias a disposición de
         <td>325</td>
         <td>Municipio de Bahia Blanca</td>
         <td>23668249</td>
+        <td>DNI</td>
         <td>Lucía Sánchez</td>
         <td>Femenino</td>
         <td>26</td>
-        <td></td>
         <td>3384556</td>
         <td>2019-03-12</td>
         <td>14:45</td>
@@ -76,6 +76,36 @@ Mecanismos de presentación directa de solicitudes o denuncias a disposición de
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Persona</td>
+        <td>Atributos de la persona física que realiza la denuncia.</td>
+    </tr>
+        
+    <tr>
+        <td>Organización</td>
+        <td>Atributos de una organización a la cual o donde se realiza la denuncia.</td>
+    </tr>
+        
+    <tr>
+        <td>Denuncia</td>
+        <td>Atributos de la denuncia realizada por la persona en la organización.</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -85,7 +115,7 @@ Mecanismos de presentación directa de solicitudes o denuncias a disposición de
 
 Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/denuncias-campos.xlsx)**
 
-### Recurso: Denuncia  
+### Recurso: Denuncias 
 
 <table>
     <tr>
@@ -113,7 +143,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Organización</td>
         <td>organizacion_nombre</td>
         <td>alfanumerio</td>
-        <td>El nombre principal de la organización, por ejemplo su nombre legal</td>
+        <td>El nombre principal de la organización, por ejemplo su nombre legal.</td>
         <td>Municipio de Bahia Blanca</td>
         <td>popolo:Organization
  schema:Organization</td>
@@ -124,7 +154,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>denunciante_id</td>
         <td>alfanumerico</td>
-        <td></td>
+        <td>Identificador de la persona que denuncia.</td>
         <td>23668249</td>
         <td>popolo:Person
  schema:Person</td>
@@ -133,9 +163,19 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         
     <tr>
         <td>Persona</td>
+        <td>denunciante_id_tipo</td>
+        <td>alfanumerico</td>
+        <td>Tipo de identificación de la persona que denuncia.</td>
+        <td>DNI</td>
+        <td></td>
+        <td></td>
+    </tr>
+        
+    <tr>
+        <td>Persona</td>
         <td>denunciante_nombre</td>
         <td>alfanumerico</td>
-        <td></td>
+        <td>Nombre completo del denunciante.</td>
         <td>Lucía Sánchez</td>
         <td>popolo:Person
  schema:Person</td>
@@ -146,7 +186,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>denunciante_genero</td>
         <td>alfanumerico</td>
-        <td></td>
+        <td>Género según el cual se identifica la persona declarado según la normativa vigente para la presentación de declaraciones juradas en el país.</td>
         <td>Femenino</td>
         <td>popolo:Person
  schema:Person</td>
@@ -157,7 +197,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>denunciante_edad</td>
         <td>numerico</td>
-        <td></td>
+        <td>Edad al momento de la denuncia.</td>
         <td>26</td>
         <td>popolo:Person
  schema:Person</td>
@@ -165,20 +205,10 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Persona</td>
-        <td>denunciante_ascendencia</td>
-        <td>alfanumerico</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-        
-    <tr>
         <td>Denuncia</td>
         <td>denuncia_id</td>
         <td>alfanumerico</td>
-        <td></td>
+        <td>Identificador de la denuncia realizada.</td>
         <td>3384556</td>
         <td>schema:Thing</td>
         <td></td>
@@ -188,7 +218,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_fecha</td>
         <td>fecha</td>
-        <td></td>
+        <td>Fecha de la denuncia.</td>
         <td>2019-03-12</td>
         <td>schema:Thing</td>
         <td></td>
@@ -198,7 +228,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_hora</td>
         <td>fecha</td>
-        <td></td>
+        <td>Hora de la denuncia.</td>
         <td>14:45</td>
         <td>schema:Thing</td>
         <td></td>
@@ -248,7 +278,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_direccion</td>
         <td>alfanumerico</td>
-        <td></td>
+        <td>Dirección donde sucedió el hecho denunciado.</td>
         <td>Alsina 1600</td>
         <td>schema:PostalAddress</td>
         <td></td>
@@ -258,7 +288,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_latitud</td>
         <td>numerico</td>
-        <td></td>
+        <td>Latitud donde sucedió el hecho denunciado.</td>
         <td>-38.705048</td>
         <td>schema:GeoCoordinates</td>
         <td></td>
@@ -268,7 +298,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_longitud</td>
         <td>numerico</td>
-        <td></td>
+        <td>Longitud donde sucedió el hecho denunciado.</td>
         <td>-62.250596</td>
         <td>schema:GeoCoordinates</td>
         <td></td>
@@ -278,7 +308,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_detalle</td>
         <td>texto</td>
-        <td>Detalle brindado por el denunciante al realizar la denuncia</td>
+        <td>Detalle brindado por el denunciante al realizar la denuncia.</td>
         <td>Cable se encuentra colgando desde la columna de alumbrado.</td>
         <td>schema:Thing</td>
         <td></td>
@@ -288,7 +318,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_categoria</td>
         <td>alfanumerico</td>
-        <td></td>
+        <td>Categoría o clasificación del hecho denunciado.</td>
         <td>Alumbrado</td>
         <td>schema:Thing</td>
         <td></td>
@@ -298,7 +328,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_tipo</td>
         <td>alfanumerico</td>
-        <td></td>
+        <td>Tipo de denuncia (esto es una clasificación más específica que "categoría").</td>
         <td>Cable Suelto</td>
         <td>schema:Thing</td>
         <td></td>
@@ -308,7 +338,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_subtipo</td>
         <td>alfanumerico</td>
-        <td></td>
+        <td>Subtipo de denuncia (esto es una clasificación más específica que "tipo", si aplica).</td>
         <td></td>
         <td>schema:Thing</td>
         <td></td>
@@ -318,7 +348,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_otra_clasificacion</td>
         <td>alfanumerico</td>
-        <td></td>
+        <td>Categoría o clasificación alternativa del hecho denunciado.</td>
         <td></td>
         <td>schema:Thing</td>
         <td></td>
@@ -328,7 +358,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_fecha_ultimo_cambio</td>
         <td>fecha</td>
-        <td></td>
+        <td>Fecha de la última modificación que sufrió la denuncia.</td>
         <td>2019-03-15</td>
         <td>schema:Date</td>
         <td></td>
@@ -338,7 +368,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Denuncia</td>
         <td>denuncia_comentario_ultimo_cambio</td>
         <td>texto</td>
-        <td></td>
+        <td>Comentario agregado a la denuncia en el último cambio.</td>
         <td>Se envió equipo a reparar el cable</td>
         <td>schema:Thing</td>
         <td></td>

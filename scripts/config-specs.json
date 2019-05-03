@@ -9,11 +9,14 @@
         },
         "declaraciones-juradas":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=5-declaraciones-juradas-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=5-declaraciones-juradas-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=5-declaraciones-juradas-clases"
         },
         "contrataciones-publicas":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=706828557"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=706828557",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1425215079",
+            "class_explain": "Una institución pública abre una `Convocatoria` para recibir ofertas de provisión de bienes y servicios. Una vez elegida una oferta realiza la `Adjudicación` al proveedor elegido con el que celebra un `Contrato` que marca las condiciones bajo las cuales se realiza una `Transacción` entre las partes mediante la cual se adquiere un `Item`."
         },
         "presupuesto":
         {
@@ -29,51 +32,63 @@
         },
         "denuncias":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=6-denuncias-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=6-denuncias-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=6-denuncias-clases"
         },
         "organigrama":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=8-organigrama-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=8-organigrama-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=8-organigrama-clases"
         },
         "permisos":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1510338011"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1510338011",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1310586629"
         },
         "registro-proveedores":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=11-registro-proveedores-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=11-registro-proveedores-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=11-registro-proveedores-clases"
         },
         "elecciones":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1499348528"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1499348528",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1630564160"
         },
         "servicios":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=13-servicios-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=13-servicios-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=13-servicios-clases"
         },
         "tramites":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=14-tramites-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=14-tramites-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=14-tramites-clases"
         },
         "crimen":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=15-crimen-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=15-crimen-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=15-crimen-clases"
         },
         "normativa":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=16-normativa-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=16-normativa-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=16-normativa-clases"
         },
         "calidad-agua":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=17-calidad-agua-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=17-calidad-agua-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=17-calidad-agua-clases"
         },
         "calidad-aire":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=18-calidad-aire-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=18-calidad-aire-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=18-calidad-aire-clases"
         },
         "salud":
         {
-            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=22-salud-campos"
+            "gsheet_fields": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=22-salud-campos",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/d/1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA/gviz/tq?tqx=out:csv&sheet=22-salud-clases"
         }
     },
     "tags":

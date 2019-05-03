@@ -10,8 +10,8 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
 
 ## Ejemplos
 
-### Recurso: Declaración
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/declaracion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/declaracion.xlsx)**
+### Recurso: Declaraciones de Proveedores
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/declaraciones-proveedores.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/declaraciones-proveedores.xlsx)**
 
 <table>
     <tr>
@@ -45,8 +45,8 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
     </tr>
         
 </table>
-### Recurso: Persona   
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/persona.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/persona.xlsx)**
+### Recurso: Apoderados o Referentes Legales de Proveedores
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/apoderados-o-referentes-legales-proveedores.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/apoderados-o-referentes-legales-proveedores.xlsx)**
 
 <table>
     <tr>
@@ -68,8 +68,8 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
     </tr>
         
 </table>
-### Recurso: Intereses 
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/intereses.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/intereses.xlsx)**
+### Recurso: Intereses Declarados por los Proveedores
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/intereses-declarados-por-proveedores.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/intereses-declarados-por-proveedores.xlsx)**
 
 <table>
     <tr>
@@ -95,6 +95,41 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Declaración</td>
+        <td>Atributos de la declaración de una organización al momento de consignarse como proveedora.</td>
+    </tr>
+        
+    <tr>
+        <td>Organización</td>
+        <td>Atributos de una empresa u organización que se constituye en un registro de proveedores.</td>
+    </tr>
+        
+    <tr>
+        <td>Persona</td>
+        <td>Atributos de las personas físicas responsables o representantes de la organización que se constituye en proveedora.</td>
+    </tr>
+        
+    <tr>
+        <td>Intereses</td>
+        <td>Atributos de los intereses declarados por la organización respecto de los rubros o áreas en las cuales puede prestar servicios como proveedor.</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -104,7 +139,7 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
 
 Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores-campos.xlsx)**
 
-### Recurso: Declaración
+### Recurso: Declaraciones de Proveedores
 
 <table>
     <tr>
@@ -148,7 +183,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_id</td>
         <td>alfanumérico</td>
         <td>Identificadores oficiales para la entidad (CUIT/CUIL)</td>
@@ -158,7 +193,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_fecha_preinscripcion</td>
         <td>alfanumérico</td>
         <td>Fecha de registro</td>
@@ -168,7 +203,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_tipo</td>
         <td>alfanumérico</td>
         <td>Tipo de entidad (SA / SRL / etc)</td>
@@ -178,7 +213,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_nombre</td>
         <td>alfanumérico</td>
         <td>Nombre de la entidad o Razón social</td>
@@ -188,7 +223,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_jurisdiccion</td>
         <td>alfanumérico</td>
         <td>Jurisdicción expresada utilizando la codificación ISO_3166-2</td>
@@ -198,7 +233,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_correo</td>
         <td>alfanumérico</td>
         <td>Correo electronico de la entidad</td>
@@ -208,7 +243,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_telefono</td>
         <td>alfanumérico</td>
         <td>Telefono de contacto de la entidad</td>
@@ -218,7 +253,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_domicilio_legal</td>
         <td>alfanumérico</td>
         <td>Domicilio leglamente establecido por la entidad</td>
@@ -228,7 +263,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_estado</td>
         <td>alfanumérico</td>
         <td>Estado de la entidad</td>
@@ -238,7 +273,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
 </table>
-### Recurso: Persona   
+### Recurso: Apoderados o Referentes Legales de Proveedores
 
 <table>
     <tr>
@@ -312,7 +347,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
 </table>
-### Recurso: Intereses 
+### Recurso: Intereses Declarados por los Proveedores
 
 <table>
     <tr>

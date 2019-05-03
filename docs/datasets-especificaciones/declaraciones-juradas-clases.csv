@@ -1,0 +1,7 @@
+"nombre","descripcion"
+"Declaración","Atributos de la declaración jurada que realiza una persona."
+"Persona","Atributos de la persona que realiza la declaración jurada o de las personas descriptas en ella."
+"Miembro","Atributos de una persona en su caracter de miembro de una organización."
+"Organización","Atributos de una organización a la que puede pertenecer la persona que realiza la declaración jurada."
+"Bienes","Atributos de los bienes declarados por la persona que realiza la declaración jurada."
+"Deudas","Atributos de las deudas declaradas por la persona que realiza la declaración jurada."

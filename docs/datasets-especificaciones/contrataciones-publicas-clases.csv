@@ -1,0 +1,13 @@
+recurso,clase,titulo,tipo_dato,descripcion,ejemplo,estandar_mapeo,notas
+Estaciones de Medición de la Calidad del Aire,Estacion,estacion_id,alfanumerico,Identificación de la estación,1001,schema:Thing,
+Estaciones de Medición de la Calidad del Aire,Estacion,estacion_nombre,alfanumerico,Nombre de la estación,Chapelco,schema:Thing,
+Estaciones de Medición de la Calidad del Aire,Estacion,estacion_region,alfanumerico,Nombre del país/provincia o localidad,San Martin de Los Andes,schema:Place,
+Estaciones de Medición de la Calidad del Aire,Estacion,estacion_latitud,numerico,Coordenadas geograficas,-40.1808541022993,schema:GeoCoordinates,
+Estaciones de Medición de la Calidad del Aire,Estacion,estacion_longitud,numerico,Coordenadas geograficas,-71.31843,schema:GeoCoordinates,
+Estaciones de Medición de la Calidad del Aire,Estacion,estacion_zonahoraria,alfanumerico,Campo opcional para indicar la zona horaria,UTC-3,schema:BroadcastService,
+Elementos Contaminantes del Aire,Contaminante,contaminante_estacion_id,alfanumerico,Identificación de la estación,1001,schema:Thing,
+Elementos Contaminantes del Aire,Contaminante,contaminante_nombre,alfanumerico,Nombre del contaminante que se esta midiendo,Dióxido de azufre,schema:GeoCoordinates,
+Elementos Contaminantes del Aire,Contaminante,contaminante_unidad,alfanumerico,Unidad de medida en que se establece el valor,µg/m3,schema:GeoCoordinates,
+Elementos Contaminantes del Aire,Contaminante,contaminante_actualizado,fecha,Fecha y hora de actualizado el valor,2019-02-26 0:00:00,schema:Date,
+Elementos Contaminantes del Aire,Contaminante,contaminante_valor,numerico,Valor obtenido en la medición,0.27,schema:Thing,
+Elementos Contaminantes del Aire,Contaminante,contaminante_validez,alfanumerico,Indica la duración de validez del dato,1 hora,schema:Thing,

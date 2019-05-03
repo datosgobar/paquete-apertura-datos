@@ -1,0 +1,2 @@
+mes,provincia_id,provincia_nombre,departamento_id,departamento_nombre,localidad_id,localidad_nombre,barrio_nombre,delito_tipo,victima_sexo,victimario_sexo,victima_edad,victimario_edad,vinculo_victima_victimario,situacion_victimario,casos_cantidad
+2018-02,Buenos Aires,,Bahia Blanca,,Bahia Blanca,,Bella Vista,Homicidio,Mujer,Varón,45,48,Pareja,Suicidio,2

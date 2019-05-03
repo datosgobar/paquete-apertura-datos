@@ -10,8 +10,8 @@ Estadísticas sobre niveles de crimen o listado de los mismos.
 
 ## Ejemplos
 
-### Recurso: Crimen    
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/crimen.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/crimen.xlsx)**
+### Recurso: Crímenes  
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/crimenes.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/crimenes.xlsx)**
 
 <table>
     <tr>
@@ -23,7 +23,7 @@ Estadísticas sobre niveles de crimen o listado de los mismos.
         <th>crimen_codigo_postal</th>
         <th>crimen_seccional</th>
         <th>crimen_lugar</th>
-        <th>crimen_latitude</th>
+        <th>crimen_latitud</th>
         <th>crimen_longitud</th>
         <th>crimen_tipo</th>
         <th>crimen_descripcion</th>
@@ -40,8 +40,8 @@ Estadísticas sobre niveles de crimen o listado de los mismos.
         <td>B8000</td>
         <td>5</td>
         <td>San Lorenzo esq. Garay</td>
-        <td>-387.169.673</td>
-        <td>-622.486.776</td>
+        <td>-38.7169673</td>
+        <td>-62.2486776</td>
         <td>Homicidio</td>
         <td></td>
         <td>865542</td>
@@ -49,33 +49,37 @@ Estadísticas sobre niveles de crimen o listado de los mismos.
     </tr>
         
 </table>
-### Recurso: Estadísticas Crimen
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/estadisticas-crimen.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/estadisticas-crimen.xlsx)**
+### Recurso: Estadísticas Criminales
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/estadisticas-criminales.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen/estadisticas-criminales.xlsx)**
 
 <table>
     <tr>
-        <th>estadistica_anio</th>
-        <th>estadistica_mes</th>
-        <th>estadistica_provincia</th>
-        <th>estadistica_departamento</th>
-        <th>estadistica_localidad</th>
-        <th>estadistica_barrio</th>
-        <th>estadistica_tipo_delito</th>
-        <th>estadistica_genero_victima</th>
-        <th>estadistica_genero_victimario</th>
-        <th>estadistica_edad_victima</th>
-        <th>estadistica_edad_victimario</th>
-        <th>estadistica_vinculo_victima_victimario</th>
-        <th>estadistica_situacion_victimario</th>
-        <th>estadistica_cantidad</th>
+        <th>mes</th>
+        <th>provincia_id</th>
+        <th>provincia_nombre</th>
+        <th>departamento_id</th>
+        <th>departamento_nombre</th>
+        <th>localidad_id</th>
+        <th>localidad_nombre</th>
+        <th>barrio_nombre</th>
+        <th>delito_tipo</th>
+        <th>victima_sexo</th>
+        <th>victimario_sexo</th>
+        <th>victima_edad</th>
+        <th>victimario_edad</th>
+        <th>vinculo_victima_victimario</th>
+        <th>situacion_victimario</th>
+        <th>casos_cantidad</th>
     </tr>
 
     <tr>
-        <td>2018</td>
-        <td>6</td>
+        <td>2018-02</td>
         <td>Buenos Aires</td>
+        <td></td>
         <td>Bahia Blanca</td>
+        <td></td>
         <td>Bahia Blanca</td>
+        <td></td>
         <td>Bella Vista</td>
         <td>Homicidio</td>
         <td>Mujer</td>
@@ -94,6 +98,31 @@ Estadísticas sobre niveles de crimen o listado de los mismos.
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Crimen</td>
+        <td>Atributos de un hecho criminal determinado.</td>
+    </tr>
+        
+    <tr>
+        <td>Indicador Criminal</td>
+        <td>Atributos de un indicador criminal que recoge una cantidad de casos de ocurrencia, con diversas dimensiones de apertura (que son sus atributos).</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -103,7 +132,7 @@ Estadísticas sobre niveles de crimen o listado de los mismos.
 
 Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/crimen-campos.xlsx)**
 
-### Recurso: Crimen    
+### Recurso: Crímenes  
 
 <table>
     <tr>
@@ -198,10 +227,10 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         
     <tr>
         <td>Crimen</td>
-        <td>crimen_latitude</td>
+        <td>crimen_latitud</td>
         <td>numérico</td>
         <td>Coordenadas geograficas expresadas en latitud</td>
-        <td>-387.169.673</td>
+        <td>-38.7169673</td>
         <td>Schema:GeoCoordinates</td>
         <td></td>
     </tr>
@@ -211,7 +240,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>crimen_longitud</td>
         <td>numérico</td>
         <td>Coordenadas geogrñaficas expresadas en longitud</td>
-        <td>-622.486.776</td>
+        <td>-62.2486776</td>
         <td>Schema:GeoCoordinates</td>
         <td></td>
     </tr>
@@ -257,7 +286,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
 </table>
-### Recurso: Estadísticas Crimen
+### Recurso: Estadísticas Criminales
 
 <table>
     <tr>
@@ -271,140 +300,160 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
 
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_anio</td>
+        <td>Indicador Criminal</td>
+        <td>mes</td>
         <td>alfanumérico</td>
-        <td>Año en que se recoge la información estadística a publicar</td>
-        <td>2018</td>
+        <td>Año y mes en que se recoge la información según ISO 8601 (YYYY-MM).</td>
+        <td>2018-02</td>
         <td>Schema:Date</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_mes</td>
+        <td>Indicador Criminal</td>
+        <td>provincia_id</td>
         <td>alfanumérico</td>
-        <td>Mes en que se recoge la información estadistica a publicar</td>
-        <td>6</td>
-        <td>Schema:Date</td>
-        <td></td>
-    </tr>
-        
-    <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_provincia</td>
-        <td>alfanumérico</td>
-        <td>Nombre de la provincia donde se produce el hecho</td>
+        <td>Identificador oficial de la provincia donde de produce el hecho.</td>
         <td>Buenos Aires</td>
         <td>Schema:PostalAddress</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_departamento</td>
+        <td>Indicador Criminal</td>
+        <td>provincia_nombre</td>
         <td>alfanumérico</td>
-        <td>Nombre del departamento donde se produce el hecho</td>
+        <td>Nombre de la provincia donde se produce el hecho.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+        
+    <tr>
+        <td>Indicador Criminal</td>
+        <td>departamento_id</td>
+        <td>alfanumérico</td>
+        <td>Identificador oficial del departamento donde de produce el hecho.</td>
         <td>Bahia Blanca</td>
         <td>Schema:PostalAddress</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_localidad</td>
+        <td>Indicador Criminal</td>
+        <td>departamento_nombre</td>
         <td>alfanumérico</td>
-        <td>Nombre de la localidad donde se produce el hecho</td>
+        <td>Nombre del departamento donde se produce el hecho.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+        
+    <tr>
+        <td>Indicador Criminal</td>
+        <td>localidad_id</td>
+        <td>alfanumérico</td>
+        <td>Identificador oficial de la localidad donde de produce el hecho.</td>
         <td>Bahia Blanca</td>
         <td>Schema:PostalAddress</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_barrio</td>
+        <td>Indicador Criminal</td>
+        <td>localidad_nombre</td>
         <td>alfanumérico</td>
-        <td>Nombre del barrio donde se produce el hecho</td>
+        <td>Nombre de la localidad donde se produce el hecho.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+        
+    <tr>
+        <td>Indicador Criminal</td>
+        <td>barrio_nombre</td>
+        <td>alfanumérico</td>
+        <td>Nombre del barrio donde se produce el hecho.</td>
         <td>Bella Vista</td>
         <td>Schema:PostalAddress</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_tipo_delito</td>
+        <td>Indicador Criminal</td>
+        <td>delito_tipo</td>
         <td>alfanumérico</td>
-        <td>Tipificación del delito</td>
+        <td>Tipificación del delito.</td>
         <td>Homicidio</td>
         <td>Schema:Thing</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_genero_victima</td>
+        <td>Indicador Criminal</td>
+        <td>victima_sexo</td>
         <td>alfanumérico</td>
-        <td>Genero de la victima</td>
+        <td>Genero de la victima.</td>
         <td>Mujer</td>
         <td>Schema:Person</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_genero_victimario</td>
+        <td>Indicador Criminal</td>
+        <td>victimario_sexo</td>
         <td>alfanumérico</td>
-        <td>Genero del victimario</td>
+        <td>Genero del victimario.</td>
         <td>Varón</td>
         <td>Schema:Person</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_edad_victima</td>
+        <td>Indicador Criminal</td>
+        <td>victima_edad</td>
         <td>alfanumérico</td>
-        <td>Las edades pueden ser exactas 20, 25 o por rangos, entre 0 y 10; entre 10 y 25, etc</td>
+        <td>Las edades pueden ser exactas 20, 25 o por rangos, entre 0 y 10; entre 10 y 25, etc.</td>
         <td>45</td>
         <td>Schema:Person</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_edad_victimario</td>
+        <td>Indicador Criminal</td>
+        <td>victimario_edad</td>
         <td>alfanumérico</td>
-        <td>Las edades pueden ser exactas 20, 25 o por rangos, entre 0 y 10; entre 10 y 25, etc</td>
+        <td>Las edades pueden ser exactas 20, 25 o por rangos, entre 0 y 10; entre 10 y 25, etc.</td>
         <td>48</td>
         <td>Schema:Person</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_vinculo_victima_victimario</td>
+        <td>Indicador Criminal</td>
+        <td>vinculo_victima_victimario</td>
         <td>alfanumérico</td>
-        <td>Vinculo si existia entre la victima y el victimario, generalmente aplica a casos de violencia familiar o de genero</td>
+        <td>Vinculo si existia entre la victima y el victimario, generalmente aplica a casos de violencia familiar o de genero.</td>
         <td>Pareja</td>
         <td>vCard:related:type_value</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_situacion_victimario</td>
+        <td>Indicador Criminal</td>
+        <td>situacion_victimario</td>
         <td>alfanumérico</td>
-        <td>Situación actual del victimario</td>
+        <td>Situación actual del victimario.</td>
         <td>Suicidio</td>
         <td>Schema:Thing</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Estadísticas Crimen</td>
-        <td>estadistica_cantidad</td>
+        <td>Indicador Criminal</td>
+        <td>casos_cantidad</td>
         <td>alfanumérico</td>
-        <td>Cantidad en numeros de casos</td>
+        <td>Cantidad en numeros de casos.</td>
         <td>2</td>
         <td>Schema:Thing</td>
         <td></td>

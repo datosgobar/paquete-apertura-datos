@@ -10,8 +10,8 @@ Un índice de trámites y procedimientos que se realicen ante el organismo, así
 
 ## Ejemplos
 
-### Recurso: Trámite   
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites/tramite.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites/tramite.xlsx)**
+### Recurso: Trámites  
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites/tramites.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites/tramites.xlsx)**
 
 <table>
     <tr>
@@ -53,6 +53,31 @@ Un índice de trámites y procedimientos que se realicen ante el organismo, así
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Organización</td>
+        <td>Atributos de la organización que presta el servicio.</td>
+    </tr>
+        
+    <tr>
+        <td>Trámite</td>
+        <td>Atributos del trámite disponible en la organización.</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -62,7 +87,7 @@ Un índice de trámites y procedimientos que se realicen ante el organismo, así
 
 Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/tramites-campos.xlsx)**
 
-### Recurso: Trámite   
+### Recurso: Trámites  
 
 <table>
     <tr>

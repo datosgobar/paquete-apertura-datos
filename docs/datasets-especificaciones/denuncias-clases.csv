@@ -1,0 +1,4 @@
+"nombre","descripcion"
+"Persona","Atributos de la persona física que realiza la denuncia."
+"Organización","Atributos de una organización a la cual o donde se realiza la denuncia."
+"Denuncia","Atributos de la denuncia realizada por la persona en la organización."

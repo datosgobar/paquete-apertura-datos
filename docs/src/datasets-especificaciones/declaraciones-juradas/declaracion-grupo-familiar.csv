@@ -1,2 +1,2 @@
-declaracion_id,persona_id,persona_otro_id,persona_nombre,persona_genero,persona_fecha_nacimiento,persona_nacionalidad,persona_id_relacionado_con,persona_relacionado_con,persona_tipo_relacion
-2011889182,579129534,27461236079,Ana Pérez,Femenino,35947,Argentina,578379323,Juan Pérez,Hija
+declaracion_id,persona_id,persona_id_tipo,persona_otro_id,persona_otro_id_tipo,persona_nombre,persona_genero,persona_fecha_nacimiento,persona_nacionalidad,persona_relacionado_con_id,persona_relacionado_con_nombre,persona_tipo_relacion
+2011889182,579129534,DNI,27461236079,CUIL,Ana Pérez,Femenino,1966-02-18,Argentina,578379323,Juan Pérez,Hija

@@ -12,8 +12,8 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
 
 ## Ejemplos
 
-### Recurso: Eleccion  
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/eleccion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/eleccion.xlsx)**
+### Recurso: Elecciones
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/elecciones.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/elecciones.xlsx)**
 
 <table>
     <tr>
@@ -33,8 +33,8 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
     </tr>
         
 </table>
-### Recurso: ResultadoOpcion
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultadoopcion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultadoopcion.xlsx)**
+### Recurso: Resultados Electorales por Opción Elegible Disponible
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultados-electorales-por-opcion-elegible-disponible.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultados-electorales-por-opcion-elegible-disponible.xlsx)**
 
 <table>
     <tr>
@@ -64,8 +64,8 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
     </tr>
         
 </table>
-### Recurso: ResultadoMesa
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultadomesa.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultadomesa.xlsx)**
+### Recurso: Resultados Electorales por Mesa y Opción Elegible Disponible
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultados-electorales-por-mesa-opcion-elegible-disponible.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultados-electorales-por-mesa-opcion-elegible-disponible.xlsx)**
 
 <table>
     <tr>
@@ -91,8 +91,8 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
     </tr>
         
 </table>
-### Recurso: ResumenMesa
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resumenmesa.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resumenmesa.xlsx)**
+### Recurso: Resumen de Resultados Electorales por Mesa
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resumen-resultados-electorales-por-mesa.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resumen-resultados-electorales-por-mesa.xlsx)**
 
 <table>
     <tr>
@@ -124,6 +124,41 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Elección</td>
+        <td>Atributos de un ejercicio electoral determinado.</td>
+    </tr>
+        
+    <tr>
+        <td>Opción</td>
+        <td>Atributos de una opción elegible disponible en un ejercicio electoral determinado.</td>
+    </tr>
+        
+    <tr>
+        <td>Resultado</td>
+        <td>Atributos del resultado electoral sobre una opción elegible disponible en un ejercicio electoral determinado.</td>
+    </tr>
+        
+    <tr>
+        <td>Resumen por mesa</td>
+        <td>Atributos del resumen de una mesa electoral (que incluye la cantidad de votantes que asistieron, votos positivos, votos en blanco, etc pero no incluye los resultados electorales por opción elegible disponible).</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -133,7 +168,7 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
 
 Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones-campos.xlsx)**
 
-### Recurso: Eleccion  
+### Recurso: Elecciones
 
 <table>
     <tr>
@@ -197,7 +232,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
 </table>
-### Recurso: ResultadoOpcion
+### Recurso: Resultados Electorales por Opción Elegible Disponible
 
 <table>
     <tr>
@@ -284,7 +319,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Opcion</td>
         <td>opcion_candidato_votos</td>
         <td>numérico</td>
-        <td></td>
+        <td>Cantidad de votos obtenidos por el candidato.</td>
         <td>5000</td>
         <td>edf:Choices</td>
         <td></td>
@@ -311,7 +346,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
 </table>
-### Recurso: ResultadoMesa
+### Recurso: Resultados Electorales por Mesa y Opción Elegible Disponible
 
 <table>
     <tr>
@@ -405,7 +440,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
 </table>
-### Recurso: ResumenMesa
+### Recurso: Resumen de Resultados Electorales por Mesa
 
 <table>
     <tr>

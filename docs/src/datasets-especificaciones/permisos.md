@@ -59,6 +59,31 @@ Los permisos, concesiones y autorizaciones otorgados y sus titulares.
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/permisos-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/permisos-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Organización</td>
+        <td>Atributos de la organización o empresa que obtiene el permiso o concesión.</td>
+    </tr>
+        
+    <tr>
+        <td>Permiso</td>
+        <td>Atributos de un permiso o concesión otorgado a una organización o empresa.</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -82,10 +107,10 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
 
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_id</td>
         <td>alfanumerico</td>
-        <td>Identificacion de la organización/empresa que obtiene el permiso</td>
+        <td>Identificacion de la organización/empresa que obtiene el permiso.</td>
         <td>30-70911317-2</td>
         <td>popolo:Organization
  schema:Organization</td>
@@ -93,10 +118,10 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Entidad (Organización, Empresa, etc)</td>
+        <td>Organización</td>
         <td>entidad_nombre</td>
         <td>alfanumerico</td>
-        <td>Nombre de la organización/empresa que tiene el permiso</td>
+        <td>Nombre de la organización/empresa que tiene el permiso.</td>
         <td>Minera del Plata</td>
         <td>popolo:Organization
  schema:Organization</td>
@@ -104,130 +129,130 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_id</td>
         <td>alfanumerico</td>
-        <td>Identificación del permiso</td>
+        <td>Identificación del permiso.</td>
         <td>112440</td>
         <td>schema:GovernmentPermit</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_tipo</td>
         <td>alfanumerico</td>
-        <td>Tipo de permiso</td>
+        <td>Tipo de permiso.</td>
         <td>Explotación Minera</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_subtipo</td>
         <td>alfanumerico</td>
-        <td>Otras clasificaciones</td>
+        <td>Otras clasificaciones.</td>
         <td>Extracción de plata</td>
         <td>schema:Thing</td>
         <td>Categorizar dependiendo del tipo de permiso</td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_inicio</td>
         <td>fecha</td>
-        <td>Fecha de inicio del permiso/concesión</td>
+        <td>Fecha de inicio del permiso/concesión.</td>
         <td>2019-06-01</td>
         <td>schema:GovernmentPermit</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_fin</td>
         <td>fecha</td>
-        <td>Fecha de fin del permiso/concesión</td>
+        <td>Fecha de fin del permiso/concesión.</td>
         <td>2029-06-01</td>
         <td>schema:GovernmentPermit</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_detalles</td>
         <td>texto</td>
-        <td>Descripción al detalle del permiso/concesión</td>
+        <td>Descripción al detalle del permiso/concesión.</td>
         <td>Con fecha .... se otorga el permiso ....</td>
         <td>schema:Thing</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_area</td>
         <td>alfanumerico</td>
-        <td>Area dónde se realiza la actividad</td>
+        <td>Area dónde se realiza la actividad.</td>
         <td>RP4 - RP50 - RP49</td>
         <td>schema:Place</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_geo</td>
         <td>geografico</td>
-        <td>geoJson u otro formato de georeferenciación del área geográfica donde se realiza la actividad</td>
+        <td>geoJson u otro formato de georeferenciación del área geográfica donde se realiza la actividad.</td>
         <td>{"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":{"type":"Polygon","coordinates":[[[-69.19189453125,-42.48830197960225],[-68.97216796875,-42.48830197960225],[-68.97216796875,-42.35854391749705],[-69.19189453125,-42.35854391749705],[-69.19189453125,-42.48830197960225]]]}}]}</td>
         <td>schema:Place</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_provincia</td>
         <td>alfanumerico</td>
-        <td>Provincia dónde se realiza la actividad</td>
+        <td>Provincia dónde se realiza la actividad.</td>
         <td>Chubut</td>
         <td>schema:PostalAddress</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_localidad</td>
         <td>alfanumerico</td>
-        <td>Localidad dónde se realiza la actividad</td>
+        <td>Localidad dónde se realiza la actividad.</td>
         <td>Gastre</td>
         <td>schema:PostalAddress</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_resolucion_enlace</td>
         <td>url</td>
-        <td>Enlace a la resolución que otorga el permiso/concesión/autorización</td>
+        <td>Enlace a la resolución que otorga el permiso/concesión/autorización.</td>
         <td></td>
         <td>schema:Permit</td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_es_prorroga</td>
         <td>booleano</td>
-        <td>Indica si los datos corresponden a una prórroga o al permiso/concesión original</td>
+        <td>Indica si los datos corresponden a una prórroga o al permiso/concesión original.</td>
         <td>No</td>
         <td></td>
         <td></td>
     </tr>
         
     <tr>
-        <td>Permisos / Concesiones</td>
+        <td>Permiso</td>
         <td>permiso_id_padre</td>
         <td>alfanumerico</td>
-        <td>En caso de ser una prorroga, el Id de la concesión original</td>
+        <td>En caso de ser una prorroga, el Id de la concesión original.</td>
         <td></td>
         <td>schema:GovernmentPermit</td>
         <td></td>

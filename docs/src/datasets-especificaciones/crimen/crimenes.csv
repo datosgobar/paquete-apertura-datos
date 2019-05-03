@@ -1,0 +1,2 @@
+crimen_fecha,crimen_hora,crimen_region,crimen_ciudad,crimen_barrio,crimen_codigo_postal,crimen_seccional,crimen_lugar,crimen_latitud,crimen_longitud,crimen_tipo,crimen_descripcion,crimen_id_caso,crimen_id_incidente
+2018-02-02,22:35,Buenos Aires,Bahia Blanca,Bella Vista,B8000,5,San Lorenzo esq. Garay,-38.7169673,-62.2486776,Homicidio,,865542,2336

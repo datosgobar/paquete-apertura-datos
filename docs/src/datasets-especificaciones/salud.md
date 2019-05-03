@@ -4,8 +4,8 @@
 
 ## Ejemplos
 
-### Recurso: Organizacion
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/organizacion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/organizacion.xlsx)**
+### Recurso: Establecimientos de Salud
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/establecimientos-salud.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/establecimientos-salud.xlsx)**
 
 <table>
     <tr>
@@ -39,8 +39,8 @@
     </tr>
         
 </table>
-### Recurso: Indicador 
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/indicador.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/indicador.xlsx)**
+### Recurso: Estadísticas de Salud
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/estadisticas-salud.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/estadisticas-salud.xlsx)**
 
 <table>
     <tr>
@@ -74,6 +74,31 @@
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Organización</td>
+        <td>Atributos de un establecimiento de salud.</td>
+    </tr>
+        
+    <tr>
+        <td>Indicador de Salud</td>
+        <td>Atributos de un indicador de salud.</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -83,7 +108,7 @@
 
 Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud-campos.xlsx)**
 
-### Recurso: Organizacion
+### Recurso: Establecimientos de Salud
 
 <table>
     <tr>
@@ -97,7 +122,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
 
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_id</td>
         <td>alfanumerico</td>
         <td>Debe ser un identificador único para la organización</td>
@@ -107,7 +132,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_nombre</td>
         <td>alfanumerico</td>
         <td>El nombre principal de la organización, por ejemplo su nombre legal</td>
@@ -117,7 +142,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_clasificacion</td>
         <td>alfanumerico</td>
         <td>La clasificación de la organización</td>
@@ -127,7 +152,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_padre_id</td>
         <td>alfanumerico</td>
         <td>Debe referenciar al id de la organización de la cual esta depende. Por ejemplo si es un sanatorio que depende de otra institución mayor</td>
@@ -137,7 +162,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_area</td>
         <td>alfanumerico</td>
         <td>Indica el área geografica donde se ubica la organizacion</td>
@@ -147,7 +172,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_fecha_creacion</td>
         <td>fecha</td>
         <td>Fecha en que fue creada la organización</td>
@@ -157,7 +182,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_imagen</td>
         <td>uri</td>
         <td></td>
@@ -167,7 +192,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_contactos</td>
         <td>alfanumerico</td>
         <td>Mecanismos de contacto con las institución</td>
@@ -177,7 +202,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_direccion</td>
         <td>uri</td>
         <td></td>
@@ -187,7 +212,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_enlaces</td>
         <td>alfanumerico</td>
         <td>URL a la pagina web del centro educativo</td>
@@ -197,7 +222,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_latitud</td>
         <td>numerico</td>
         <td>Telefono del centro educativo</td>
@@ -207,7 +232,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Organizacion</td>
+        <td>Organización</td>
         <td>organizacion_longitud</td>
         <td>numerico</td>
         <td>Correo electronico institucional del establecimiento</td>
@@ -217,7 +242,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
 </table>
-### Recurso: Indicador 
+### Recurso: Estadísticas de Salud
 
 <table>
     <tr>
@@ -231,7 +256,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
 
     <tr>
-        <td>Indicador</td>
+        <td>Indicador de Salud</td>
         <td>indicador_anio</td>
         <td>numerico</td>
         <td>Año en el cual se registra el indicador</td>
@@ -241,7 +266,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Indicador</td>
+        <td>Indicador de Salud</td>
         <td>indicador_organizacion_id</td>
         <td>alfanumérico</td>
         <td>Identificación del establecimiento de salud</td>
@@ -251,7 +276,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Indicador</td>
+        <td>Indicador de Salud</td>
         <td>indicador_nombre</td>
         <td>alfanumérico</td>
         <td>Identificación del indicador</td>
@@ -261,7 +286,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Indicador</td>
+        <td>Indicador de Salud</td>
         <td>indicador_descripcion</td>
         <td>texto</td>
         <td>Descripción de indicador, se puede complementar con información sobre como se relevan los datos.</td>
@@ -271,7 +296,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Indicador</td>
+        <td>Indicador de Salud</td>
         <td>indicador_periodicidad</td>
         <td>alfanumérico</td>
         <td>Cada cuanto tiempo se releva el indicador</td>
@@ -281,7 +306,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Indicador</td>
+        <td>Indicador de Salud</td>
         <td>indicador_ultima_medicion</td>
         <td>fecha</td>
         <td>Ultima fecha en que se obtuvo el indicador</td>
@@ -291,7 +316,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Indicador</td>
+        <td>Indicador de Salud</td>
         <td>indicador_unidad_medida</td>
         <td>alfanumérico</td>
         <td>Unidad de medida</td>
@@ -301,7 +326,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Indicador</td>
+        <td>Indicador de Salud</td>
         <td>indicador_valor</td>
         <td>numerico</td>
         <td>Valor en numeros del indicador</td>
@@ -311,7 +336,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
     <tr>
-        <td>Indicador</td>
+        <td>Indicador de Salud</td>
         <td>indicador_forma_calculo</td>
         <td>alfanumérico</td>
         <td>Especificar como se calcula el indicador, si se calcula en base a datos de otras fuentes.</td>

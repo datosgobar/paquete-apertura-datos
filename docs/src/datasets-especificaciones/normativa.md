@@ -11,8 +11,8 @@ Todas las leyes, decretos, resoluciones, ordenanzas, acordadas y estatutos estat
 
 ## Ejemplos
 
-### Recurso: Norma     
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/norma.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/norma.xlsx)**
+### Recurso: Normas    
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/normas.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/normas.xlsx)**
 
 <table>
     <tr>
@@ -54,8 +54,8 @@ Todas las leyes, decretos, resoluciones, ordenanzas, acordadas y estatutos estat
     </tr>
         
 </table>
-### Recurso: Articulo  
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/articulo.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/articulo.xlsx)**
+### Recurso: Artículos 
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/articulos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa/articulos.xlsx)**
 
 <table>
     <tr>
@@ -85,6 +85,31 @@ Todas las leyes, decretos, resoluciones, ordenanzas, acordadas y estatutos estat
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Norma</td>
+        <td>Atributos de un elemento normativo (ley, decreto, disposición, etc).</td>
+    </tr>
+        
+    <tr>
+        <td>Artículo</td>
+        <td>Atributos de un artículo perteneciente al cuerpo de un elemento normativo.</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -94,7 +119,7 @@ Todas las leyes, decretos, resoluciones, ordenanzas, acordadas y estatutos estat
 
 Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/normativa-campos.xlsx)**
 
-### Recurso: Norma     
+### Recurso: Normas    
 
 <table>
     <tr>
@@ -268,7 +293,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
 </table>
-### Recurso: Articulo  
+### Recurso: Artículos 
 
 <table>
     <tr>

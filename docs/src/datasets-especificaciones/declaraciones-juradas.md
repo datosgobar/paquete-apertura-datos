@@ -10,16 +10,18 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
 
 ## Ejemplos
 
-### Recurso: Declaración personal
+### Recurso: Declaración Personal
 **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-personal.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-personal.xlsx)**
 
 <table>
     <tr>
         <th>declaracion_id</th>
-        <th>declaracion_presentada</th>
+        <th>declaracion_presentacion_fecha</th>
         <th>declaracion_descripcion</th>
         <th>persona_id</th>
+        <th>persona_id_tipo</th>
         <th>persona_otro_id</th>
+        <th>persona_otro_id_tipo</th>
         <th>persona_nombre</th>
         <th>persona_genero</th>
         <th>persona_fecha_nacimiento</th>
@@ -44,7 +46,9 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
         <td>08-02-2017</td>
         <td>Anual 2016 Rectificativa 1</td>
         <td>578379323</td>
+        <td>DNI</td>
         <td>27173460711</td>
+        <td>CUIL</td>
         <td>Juan Pérez</td>
         <td>Masculino</td>
         <td>1966-02-18</td>
@@ -72,23 +76,27 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
     <tr>
         <th>declaracion_id</th>
         <th>persona_id</th>
+        <th>persona_id_tipo</th>
         <th>persona_otro_id</th>
+        <th>persona_otro_id_tipo</th>
         <th>persona_nombre</th>
         <th>persona_genero</th>
         <th>persona_fecha_nacimiento</th>
         <th>persona_nacionalidad</th>
-        <th>persona_id_relacionado_con</th>
-        <th>persona_relacionado_con</th>
+        <th>persona_relacionado_con_id</th>
+        <th>persona_relacionado_con_nombre</th>
         <th>persona_tipo_relacion</th>
     </tr>
 
     <tr>
         <td>2011889182</td>
         <td>579129534</td>
+        <td>DNI</td>
         <td>27461236079</td>
+        <td>CUIL</td>
         <td>Ana Pérez</td>
         <td>Femenino</td>
-        <td>35947</td>
+        <td>1966-02-18</td>
         <td>Argentina</td>
         <td>578379323</td>
         <td>Juan Pérez</td>
@@ -102,16 +110,28 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
 <table>
     <tr>
         <th>declaracion_id</th>
+    </tr>
+
+    <tr>
+        <td>2011889182</td>
+    </tr>
+        
+</table>
+### Recurso: Declaración de Bienes y Deudas
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-bienes-deudas.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-bienes-deudas.xlsx)**
+
+<table>
+    <tr>
         <th>bienes_momento</th>
         <th>bienes_tipo</th>
-        <th>bienes_ descripcion</th>
+        <th>bienes_descripcion</th>
         <th>bienes_origen_fondos</th>
         <th>bienes_porcentaje_titularidad</th>
         <th>bienes_moneda</th>
         <th>bienes_importe</th>
         <th>deudas_momento</th>
         <th>deudas_tipo</th>
-        <th>deudas_ descripcion</th>
+        <th>deudas_descripcion</th>
         <th>deudas_clasificacion</th>
         <th>deudas_radicacion</th>
         <th>deudas_moneda</th>
@@ -119,7 +139,6 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
     </tr>
 
     <tr>
-        <td>2011889182</td>
         <td>Inicio del período</td>
         <td>Inmueble</td>
         <td>Apartamento de 300mts2</td>
@@ -137,7 +156,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
     </tr>
         
 </table>
-### Recurso: Declaración de Postulaciones a cargos electivos
+### Recurso: Declaración de Postulaciones a Cargos Electivos
 **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-postulaciones-cargos-electivos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas/declaracion-postulaciones-cargos-electivos.xlsx)**
 
 <table>
@@ -179,6 +198,51 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Declaración</td>
+        <td>Atributos de la declaración jurada que realiza una persona.</td>
+    </tr>
+        
+    <tr>
+        <td>Persona</td>
+        <td>Atributos de la persona que realiza la declaración jurada o de las personas descriptas en ella.</td>
+    </tr>
+        
+    <tr>
+        <td>Miembro</td>
+        <td>Atributos de una persona en su caracter de miembro de una organización.</td>
+    </tr>
+        
+    <tr>
+        <td>Organización</td>
+        <td>Atributos de una organización a la que puede pertenecer la persona que realiza la declaración jurada.</td>
+    </tr>
+        
+    <tr>
+        <td>Bienes</td>
+        <td>Atributos de los bienes declarados por la persona que realiza la declaración jurada.</td>
+    </tr>
+        
+    <tr>
+        <td>Deudas</td>
+        <td>Atributos de las deudas declaradas por la persona que realiza la declaración jurada.</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -188,7 +252,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
 
 Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/declaraciones-juradas-campos.xlsx)**
 
-### Recurso: Declaración personal
+### Recurso: Declaración Personal
 
 <table>
     <tr>
@@ -205,7 +269,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Declaración</td>
         <td>declaracion_id</td>
         <td>alfanumérico</td>
-        <td>Identificador de la declaración jurada</td>
+        <td>Identificador de la declaración jurada.</td>
         <td>2011889182</td>
         <td>schema:Thing</td>
         <td></td>
@@ -213,9 +277,9 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         
     <tr>
         <td>Declaración</td>
-        <td>declaracion_presentada</td>
+        <td>declaracion_presentacion_fecha</td>
         <td>fecha</td>
-        <td>Fecha en que se presenta la declaración jurada</td>
+        <td>Fecha en que se presenta la declaración jurada.</td>
         <td>08-02-2017</td>
         <td></td>
         <td></td>
@@ -225,7 +289,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Declaración</td>
         <td>declaracion_descripcion</td>
         <td>texto</td>
-        <td>Titulo o descripción de la declaración jurada</td>
+        <td>Título o descripción de la declaración jurada.</td>
         <td>Anual 2016 Rectificativa 1</td>
         <td>schema:Thing</td>
         <td></td>
@@ -235,7 +299,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_id</td>
         <td>alfanumérico</td>
-        <td>DNI</td>
+        <td>Número de identificación de la persona según el sistema de identificación oficial principal en uso en el país donde reside.</td>
         <td>578379323</td>
         <td>popolo:Person</td>
         <td></td>
@@ -243,9 +307,19 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         
     <tr>
         <td>Persona</td>
+        <td>persona_id_tipo</td>
+        <td>alfanumérico</td>
+        <td>Tipo de identificación personal utilizado.</td>
+        <td>DNI</td>
+        <td></td>
+        <td></td>
+    </tr>
+        
+    <tr>
+        <td>Persona</td>
         <td>persona_otro_id</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Número de identificación de la persona según algún sistema de identificación oficial alternativo en uso en el país donde reside.</td>
         <td>27173460711</td>
         <td>popolo:Person</td>
         <td>CUIT/CUIL</td>
@@ -253,9 +327,19 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         
     <tr>
         <td>Persona</td>
+        <td>persona_otro_id_tipo</td>
+        <td>alfanumérico</td>
+        <td>Tipo de identificación personal alternativo utilizado.</td>
+        <td>CUIL</td>
+        <td></td>
+        <td></td>
+    </tr>
+        
+    <tr>
+        <td>Persona</td>
         <td>persona_nombre</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Nombre completo de la persona.</td>
         <td>Juan Pérez</td>
         <td>popolo:Person</td>
         <td></td>
@@ -265,7 +349,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_genero</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Género según el cual se identifica la persona declarado según la normativa vigente para la presentación de declaraciones juradas en el país.</td>
         <td>Masculino</td>
         <td>popolo:Person</td>
         <td></td>
@@ -275,7 +359,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_fecha_nacimiento</td>
         <td>fecha</td>
-        <td></td>
+        <td>Fecha de nacimiento de la persona.</td>
         <td>1966-02-18</td>
         <td>popolo:Person</td>
         <td></td>
@@ -285,7 +369,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_nacionalidad</td>
         <td>numerico</td>
-        <td></td>
+        <td>Nacionalidad de la persona.</td>
         <td>Argentino</td>
         <td>popolo:Person:nationalIdentity</td>
         <td></td>
@@ -295,7 +379,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_estado_civil</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Estado civil de la persona.</td>
         <td>Casado</td>
         <td>popolo:Person</td>
         <td></td>
@@ -315,7 +399,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_retiro_voluntario</td>
         <td>alfanumérico</td>
-        <td>Respuesta a pregunta si se ha acogido a retiro voluntario</td>
+        <td>Respuesta a pregunta si se ha acogido a retiro voluntario.</td>
         <td>No</td>
         <td></td>
         <td></td>
@@ -325,7 +409,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_sin_actividad</td>
         <td>alfanumérico</td>
-        <td>Respuesta a pregunta si ha suspendido actividad o goza de licencia</td>
+        <td>Respuesta a pregunta si ha suspendido actividad o goza de licencia.</td>
         <td>No</td>
         <td></td>
         <td></td>
@@ -335,7 +419,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_sin_actividad_desde</td>
         <td>fecha</td>
-        <td>Fecha desde cuando ha suspendido actividad o goza de licencia</td>
+        <td>Fecha desde cuando ha suspendido actividad o goza de licencia.</td>
         <td></td>
         <td>Schema:Date</td>
         <td></td>
@@ -345,7 +429,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_horas_por_semana</td>
         <td>numerico</td>
-        <td>Carga horaria de trabajo semanal</td>
+        <td>Carga horaria de trabajo semanal.</td>
         <td>40</td>
         <td>Schema:Thing</td>
         <td></td>
@@ -355,7 +439,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_es_proveedor</td>
         <td>alfanumérico</td>
-        <td>Indica si la persona es o fue proveedor, contratista, etc en los últimos 3 años</td>
+        <td>Indica si la persona es o fue proveedor, contratista, etc en los últimos 3 años.</td>
         <td>No</td>
         <td></td>
         <td></td>
@@ -365,7 +449,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Miembro</td>
         <td>miembro_organizacion_id</td>
         <td>alfanumérico</td>
-        <td>Identificador de la organización de la cual es miembro</td>
+        <td>Identificador de la organización de la cual es miembro.</td>
         <td>2</td>
         <td>popolo:Membership</td>
         <td></td>
@@ -375,7 +459,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Miembro</td>
         <td>miembro_fecha_ingreso</td>
         <td>fecha</td>
-        <td></td>
+        <td>Fecha de ingreso a la organización de la cual es miembro.</td>
         <td>2002-31-08</td>
         <td>popolo:Membership</td>
         <td></td>
@@ -449,7 +533,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_id</td>
         <td>alfanumérico</td>
-        <td>DNI</td>
+        <td>Número de identificación de la persona según el sistema de identificación oficial principal en uso en el país donde reside.</td>
         <td>579129534</td>
         <td>popolo:Person</td>
         <td>DNI</td>
@@ -457,9 +541,19 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         
     <tr>
         <td>Persona</td>
+        <td>persona_id_tipo</td>
+        <td>alfanumérico</td>
+        <td>Tipo de identificación personal utilizado.</td>
+        <td>DNI</td>
+        <td></td>
+        <td></td>
+    </tr>
+        
+    <tr>
+        <td>Persona</td>
         <td>persona_otro_id</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Número de identificación de la persona según algún sistema de identificación oficial alternativo en uso en el país donde reside.</td>
         <td>27461236079</td>
         <td>popolo:Person</td>
         <td>CUIT/CUIL</td>
@@ -467,9 +561,19 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         
     <tr>
         <td>Persona</td>
+        <td>persona_otro_id_tipo</td>
+        <td>alfanumérico</td>
+        <td>Tipo de identificación personal alternativo utilizado.</td>
+        <td>CUIL</td>
+        <td></td>
+        <td></td>
+    </tr>
+        
+    <tr>
+        <td>Persona</td>
         <td>persona_nombre</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Nombre completo de la persona.</td>
         <td>Ana Pérez</td>
         <td>popolo:Person</td>
         <td></td>
@@ -479,7 +583,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_genero</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Género según el cual se identifica la persona declarado según la normativa vigente para la presentación de declaraciones juradas en el país.</td>
         <td>Femenino</td>
         <td>popolo:Person</td>
         <td></td>
@@ -489,8 +593,8 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Persona</td>
         <td>persona_fecha_nacimiento</td>
         <td>fecha</td>
-        <td></td>
-        <td>35947</td>
+        <td>Fecha de nacimiento de la persona.</td>
+        <td>1966-02-18</td>
         <td>popolo:Person</td>
         <td></td>
     </tr>
@@ -498,8 +602,8 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     <tr>
         <td>Persona</td>
         <td>persona_nacionalidad</td>
-        <td>alfanumérico</td>
-        <td></td>
+        <td>numerico</td>
+        <td>Nacionalidad de la persona.</td>
         <td>Argentina</td>
         <td>popolo:Person:national_identity</td>
         <td></td>
@@ -507,22 +611,22 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         
     <tr>
         <td>Persona</td>
-        <td>persona_id_relacionado_con</td>
+        <td>persona_relacionado_con_id</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Identificador de la persona con la cual mantiene el vínculo.</td>
         <td>578379323</td>
         <td>vCard:related</td>
-        <td>Identificador de la persona con la cual mantiene el vínculo (URI o texto)</td>
+        <td></td>
     </tr>
         
     <tr>
         <td>Persona</td>
-        <td>persona_relacionado_con</td>
+        <td>persona_relacionado_con_nombre</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Nombre de la persona con la cual mantiene el vínculo.</td>
         <td>Juan Pérez</td>
         <td>foaf:knows</td>
-        <td>Nombre de la persona con la cual mantiene el vínculo</td>
+        <td></td>
     </tr>
         
     <tr>
@@ -553,17 +657,31 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Declaración</td>
         <td>declaracion_id</td>
         <td>alfanumérico</td>
-        <td>Identificador de la declaración jurada</td>
+        <td>Identificador de la declaración jurada.</td>
         <td>2011889182</td>
         <td>Schema:Thing</td>
-        <td>Identificador de la declaración jurada</td>
+        <td></td>
     </tr>
         
+</table>
+### Recurso: Declaración de Bienes y Deudas
+
+<table>
+    <tr>
+        <th>clase</th>
+        <th>titulo</th>
+        <th>tipo_dato</th>
+        <th>descripcion</th>
+        <th>ejemplo</th>
+        <th>estandar_mapeo</th>
+        <th>notas</th>
+    </tr>
+
     <tr>
         <td>Bienes</td>
         <td>bienes_momento</td>
         <td>numerico</td>
-        <td>Describe el momento en el cual se declara el bien</td>
+        <td>Describe el momento en el cual se declara el bien.</td>
         <td>Inicio del período</td>
         <td>Schema:Thing</td>
         <td>Momento en el que se declaran los bienes Inicio del período | Fin del período</td>
@@ -573,47 +691,47 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Bienes</td>
         <td>bienes_tipo</td>
         <td>alfanumérico</td>
-        <td>Tipo de bien</td>
+        <td>Tipo de bien.</td>
         <td>Inmueble</td>
         <td>Schema:Thing</td>
-        <td>Tipo del bien</td>
+        <td></td>
     </tr>
         
     <tr>
         <td>Bienes</td>
-        <td>bienes_ descripcion</td>
+        <td>bienes_descripcion</td>
         <td>texto</td>
-        <td>Descripción del bien</td>
+        <td>Descripción del concepto declarado.</td>
         <td>Apartamento de 300mts2</td>
         <td>Schema:Thing</td>
-        <td>Descripción del concepto declarado</td>
+        <td></td>
     </tr>
         
     <tr>
         <td>Bienes</td>
         <td>bienes_origen_fondos</td>
         <td>alfanumérico</td>
-        <td>Origen de los fondos</td>
+        <td>Origen de los fondos Ingresos propios | Donación, etc.</td>
         <td>Herencia</td>
         <td>Schema:Thing</td>
-        <td>Origen de los fondos Ingresos propios | Donación, etc.</td>
+        <td></td>
     </tr>
         
     <tr>
         <td>Bienes</td>
         <td>bienes_porcentaje_titularidad</td>
         <td>numerico</td>
-        <td>Expresa el porcentaje de la titularidad del bien en números</td>
+        <td>Valor numérico que indica en que porcentaje se es titular del bien. 25, 50, 100, etc</td>
         <td>100</td>
         <td>Schema:Thing</td>
-        <td>Valor numérico que indica en que porcentaje se es titular del bien. 25, 50, 100, etc</td>
+        <td></td>
     </tr>
         
     <tr>
         <td>Bienes</td>
         <td>bienes_moneda</td>
         <td>alfanumérico</td>
-        <td>Tipo de moneda</td>
+        <td>Tipo de moneda.</td>
         <td>USD</td>
         <td>Schema:Thing</td>
         <td>Moneda en la cual se declara el importe. Campo opcional si solo se acepta en moneda nacional.
@@ -624,7 +742,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Bienes</td>
         <td>bienes_importe</td>
         <td>numerico</td>
-        <td>Valor del bien en moneda</td>
+        <td>Valor del bien en moneda.</td>
         <td>450000</td>
         <td>Schema:Thing</td>
         <td></td>
@@ -634,7 +752,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Deudas</td>
         <td>deudas_momento</td>
         <td>alfanumérico</td>
-        <td>Describe el momento en el cual se declara la deuda</td>
+        <td>Describe el momento en el cual se declara la deuda.</td>
         <td>Inicio del período</td>
         <td>Schema:Thing</td>
         <td></td>
@@ -644,7 +762,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Deudas</td>
         <td>deudas_tipo</td>
         <td>alfanumérico</td>
-        <td>Tipo de deuda</td>
+        <td>Tipo de deuda.</td>
         <td>Común</td>
         <td>Schema:Thing</td>
         <td></td>
@@ -652,9 +770,9 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         
     <tr>
         <td>Deudas</td>
-        <td>deudas_ descripcion</td>
+        <td>deudas_descripcion</td>
         <td>texto</td>
-        <td></td>
+        <td>Descripción de las dedudas declaradas.</td>
         <td>Kooj S.A. CUIT 31579842356</td>
         <td>Schema:Thing</td>
         <td></td>
@@ -664,7 +782,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Deudas</td>
         <td>deudas_clasificacion</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Clasificación de las deudas declaradas.</td>
         <td>Otras deudas</td>
         <td>Schema:Thing</td>
         <td></td>
@@ -684,7 +802,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Deudas</td>
         <td>deudas_moneda</td>
         <td>alfanumérico</td>
-        <td>Tipo de moneda</td>
+        <td>Tipo de moneda.</td>
         <td>USD</td>
         <td>Schema:Currency</td>
         <td>Moneda en la cual se declara el importe. Campo opcional si solo se acepta en moneda nacional.
@@ -695,14 +813,14 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Deudas</td>
         <td>deudas_importe</td>
         <td>numerico</td>
-        <td></td>
+        <td>Importe de las dedudas declaradas.</td>
         <td>25000</td>
         <td>Schema:MonetaryAmount</td>
         <td></td>
     </tr>
         
 </table>
-### Recurso: Declaración de Postulaciones a cargos electivos
+### Recurso: Declaración de Postulaciones a Cargos Electivos
 
 <table>
     <tr>
@@ -719,17 +837,17 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Declaración</td>
         <td>declaracion_id</td>
         <td>alfanumérico</td>
-        <td>Identificador de la declaración jurada</td>
+        <td>Identificador de la declaración jurada.</td>
         <td>2011889182</td>
         <td>Schema:Thing</td>
         <td>Identificador de la declaración jurada</td>
     </tr>
         
     <tr>
-        <td>Postulaciones</td>
+        <td>Postulación</td>
         <td>postulacion_descripcion</td>
         <td>alfanumérico</td>
-        <td>Describe el cargo al cual se postuló</td>
+        <td>Describe el cargo al cual se postuló.</td>
         <td>Diputado periodo 2013 - 2017</td>
         <td>Schema:Thing</td>
         <td></td>
@@ -753,7 +871,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Declaración</td>
         <td>declaracion_id</td>
         <td>alfanumérico</td>
-        <td>Identificador de la declaración jurada</td>
+        <td>Identificador de la declaración jurada.</td>
         <td>2011889182</td>
         <td>Schema:Thing</td>
         <td>Identificador de la declaración jurada</td>
@@ -763,7 +881,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Declaración</td>
         <td>patrimonio_ingreso_gasto_tipo</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Tipo del elemento partrimonial, ingreso o gasto declarado.</td>
         <td>Ingreso</td>
         <td>Schema:Thing</td>
         <td>Lista de valores: Patrimonio | Ingreso | Gasto</td>
@@ -773,7 +891,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Declaración</td>
         <td>patrimonio_ingreso_gasto_descripcion</td>
         <td>texto</td>
-        <td></td>
+        <td>Descripción del elemento partrimonial, ingreso o gasto declarado.</td>
         <td>Total de Ingresos 4ta categoría</td>
         <td>Schema:Thing</td>
         <td>Descripción del concepto declarado</td>
@@ -783,7 +901,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Declaración</td>
         <td>patrimonio_ingreso_gasto_moneda</td>
         <td>alfanumérico</td>
-        <td></td>
+        <td>Moneda  del elemento partrimonial, ingreso o gasto declarado.</td>
         <td>ARS</td>
         <td>Schema:Currency</td>
         <td>Tipo de moneda en que se declara. En caso de que sea siempre en moneda nacional, este campo es opcional.
@@ -794,7 +912,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
         <td>Declaración</td>
         <td>patrimonio_ingreso_gasto_importe</td>
         <td>numerico</td>
-        <td></td>
+        <td>Importe o valor del elemento partrimonial, ingreso o gasto declarado.</td>
         <td>2354169</td>
         <td>Schema:MonetaryAmount</td>
         <td>Importe en moneda nacional</td>

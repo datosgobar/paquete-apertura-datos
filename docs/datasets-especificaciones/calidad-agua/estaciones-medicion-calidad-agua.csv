@@ -1,0 +1,2 @@
+estacion_id,estacion_nombre,estacion_region,estacion_latitud,estacion_longitud,estacion_zonahoraria,estacion_tipo,estacion_cuenca,estacion_subcuenca,estacion_fecha_desde,estacion_fecha_hasta,estacion_muestreos
+1001,Chapelco,San Martin de Los Andes,-40.180854,-71.318434,UTC-3,Agua Superficial - Fondo,Lago Lacar,,2010-01-06,2019-03-29,834

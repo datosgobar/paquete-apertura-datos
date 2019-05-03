@@ -1,0 +1,5 @@
+nombre,descripcion
+Elección,Atributos de un ejercicio electoral determinado.
+Opción,Atributos de una opción elegible disponible en un ejercicio electoral determinado.
+Resultado,Atributos del resultado electoral sobre una opción elegible disponible en un ejercicio electoral determinado.
+Resumen por mesa,"Atributos del resumen de una mesa electoral (que incluye la cantidad de votantes que asistieron, votos positivos, votos en blanco, etc pero no incluye los resultados electorales por opción elegible disponible)."

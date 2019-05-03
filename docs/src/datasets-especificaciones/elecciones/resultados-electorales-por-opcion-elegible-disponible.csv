@@ -1,0 +1,2 @@
+opcion_eleccion_id,opcion_region_id,opcion_region_nombre,opcion_partido_id,opcion_partido_nombre,opcion_candidato_id,opcion_candidato_nombre,opcion_candidato_votos,resultado_elegido,resultado_orden
+GenCor2019,AR-X,Provincia de Córdoba,4,Encuentro por Córdoba,1,Juan Martinez,5000,No,10

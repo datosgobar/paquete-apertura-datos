@@ -4,8 +4,8 @@
 
 ## Ejemplos
 
-### Recurso: Estacion  
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/estacion.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/estacion.xlsx)**
+### Recurso: Estaciones de Medición de la Calidad del Aire
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/estaciones-medicion-calidad-aire.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/estaciones-medicion-calidad-aire.xlsx)**
 
 <table>
     <tr>
@@ -27,8 +27,8 @@
     </tr>
         
 </table>
-### Recurso: Contaminante
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/contaminante.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/contaminante.xlsx)**
+### Recurso: Elementos Contaminantes del Aire
+**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/elementos-contaminantes-aire.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire/elementos-contaminantes-aire.xlsx)**
 
 <table>
     <tr>
@@ -56,6 +56,31 @@
 
 <!-- COMIENZO TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
+## Clases
+
+
+
+Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire-clases.xlsx)**
+
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+    </tr>
+
+    <tr>
+        <td>Estación</td>
+        <td>Atributos del punto de medición de calidad del aire.</td>
+    </tr>
+        
+    <tr>
+        <td>Contaminante</td>
+        <td>Atributos de la medición de un contaminante registrada en una estación.</td>
+    </tr>
+        
+</table>
+
 <!-- FIN TABLA DE CLASES. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->
 
 
@@ -65,7 +90,7 @@
 
 Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/calidad-aire-campos.xlsx)**
 
-### Recurso: Estacion  
+### Recurso: Estaciones de Medición de la Calidad del Aire
 
 <table>
     <tr>
@@ -139,7 +164,7 @@ Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
     </tr>
         
 </table>
-### Recurso: Contaminante
+### Recurso: Elementos Contaminantes del Aire
 
 <table>
     <tr>
