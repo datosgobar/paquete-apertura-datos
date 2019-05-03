@@ -23,11 +23,12 @@ import re
 import requests
 import pandas as pd
 from unidecode import unidecode
+import urllib.parse
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 SPECS_DIR = os.path.join(
     PROJECT_DIR, "docs", "src", "datasets-especificaciones")
-
+DOCS_DOWNLOAD_URL = "https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/"
 
 STOP_WORDS = [
     "el", "la", "los", "las",
@@ -146,11 +147,16 @@ def generate_example(df, specs_name, resource_field="recurso"):
             specs_dataset_dir,
             title_to_name(recurso) + ".csv"
         )
+        example_filename_url = urllib.parse.urljoin(
+            DOCS_DOWNLOAD_URL,
+            specs_name,
+            os.path.basename(example_filename)
+        )
 
         text_elements.append("### Recurso: {}".format(recurso.ljust(10)))
         text_elements.append("**[CSV]({})** | **[XLSX]({})**".format(
-            example_filename,
-            example_filename.replace(".csv", ".xlsx")
+            example_filename_url,
+            example_filename_url.replace(".csv", ".xlsx")
         ))
         text_elements.append(df_to_html(
             get_example_from_fields(
@@ -178,6 +184,16 @@ def generate_example_section(specs_name):
 def generate_field_section(specs_name):
     specs_fields_csv = os.path.join(SPECS_DIR, specs_name + "-campos.csv")
     specs_fields_xlsx = os.path.join(SPECS_DIR, specs_name + "-campos.xlsx")
+    specs_fields_csv_url = urllib.parse.urljoin(
+        DOCS_DOWNLOAD_URL,
+        specs_name,
+        os.path.basename(specs_fields_csv)
+    )
+    specs_fields_xlsx_url = urllib.parse.urljoin(
+        DOCS_DOWNLOAD_URL,
+        specs_name,
+        os.path.basename(specs_fields_xlsx)
+    )
 
     df = pd.read_csv(specs_fields_csv)
     df.to_excel(specs_fields_xlsx, encoding="utf8", index=False)
@@ -187,8 +203,8 @@ def generate_field_section(specs_name):
 Descargar campos en **[CSV]({})** | **[XLSX]({})**
 
 {}""".format(
-        specs_fields_csv,
-        specs_fields_xlsx,
+        specs_fields_csv_url,
+        specs_fields_xlsx_url,
         generate_specs_tables(df)
     )
 
@@ -198,6 +214,16 @@ Descargar campos en **[CSV]({})** | **[XLSX]({})**
 def generate_class_section(specs_name, class_explain):
     specs_class_csv = os.path.join(SPECS_DIR, specs_name + "-clases.csv")
     specs_class_xlsx = os.path.join(SPECS_DIR, specs_name + "-clases.xlsx")
+    specs_class_csv_url = urllib.parse.urljoin(
+        DOCS_DOWNLOAD_URL,
+        specs_name,
+        os.path.basename(specs_class_csv)
+    )
+    specs_class_xlsx_url = urllib.parse.urljoin(
+        DOCS_DOWNLOAD_URL,
+        specs_name,
+        os.path.basename(specs_class_xlsx)
+    )
 
     df = pd.read_csv(specs_class_csv)
     df.to_excel(specs_class_xlsx, encoding="utf8", index=False)
@@ -210,8 +236,8 @@ Descargar clases en **[CSV]({})** | **[XLSX]({})**
 
 {}""".format(
         class_explain,
-        specs_class_csv,
-        specs_class_xlsx,
+        specs_class_csv_url,
+        specs_class_xlsx_url,
         df_to_html(df)
     )
 

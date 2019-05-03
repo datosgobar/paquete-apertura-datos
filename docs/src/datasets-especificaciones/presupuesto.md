@@ -11,7 +11,7 @@ El presupuesto asignado a cada área, programa o función, las modificaciones du
 ## Ejemplos
 
 ### Recurso: Presupuesto
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/presupuesto/presupuesto.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/presupuesto/presupuesto.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)**
 
 <table>
     <tr>
@@ -75,7 +75,7 @@ El presupuesto asignado a cada área, programa o función, las modificaciones du
 
 Un item del `Presupuesto` es un gasto o ingreso asignado a una `Organización` para el financiamiento de sus misiones y funciones.
 
-Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/presupuesto-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/presupuesto-clases.xlsx)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)**
 
 
 <table>
@@ -103,7 +103,7 @@ Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
 
 ## Campos
 
-Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/presupuesto-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/presupuesto-campos.xlsx)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)**
 
 ### Recurso: Presupuesto
 

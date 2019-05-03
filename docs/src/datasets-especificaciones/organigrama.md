@@ -12,7 +12,7 @@ Organismos y entidades del estado con su estructura orgánica y funciones.
 ## Ejemplos
 
 ### Recurso: Organigrama
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/organigrama/organigrama.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/organigrama/organigrama.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)**
 
 <table>
     <tr>
@@ -58,7 +58,7 @@ Organismos y entidades del estado con su estructura orgánica y funciones.
 
 
 
-Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/organigrama-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/organigrama-clases.xlsx)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)**
 
 
 <table>
@@ -81,7 +81,7 @@ Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
 
 ## Campos
 
-Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/organigrama-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/organigrama-campos.xlsx)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)**
 
 ### Recurso: Organigrama
 

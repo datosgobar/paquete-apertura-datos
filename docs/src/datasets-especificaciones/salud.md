@@ -5,7 +5,7 @@
 ## Ejemplos
 
 ### Recurso: Establecimientos de Salud
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/establecimientos-salud.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/establecimientos-salud.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/salud)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/salud)**
 
 <table>
     <tr>
@@ -40,7 +40,7 @@
         
 </table>
 ### Recurso: Estadísticas de Salud
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/estadisticas-salud.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud/estadisticas-salud.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/salud)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/salud)**
 
 <table>
     <tr>
@@ -78,7 +78,7 @@
 
 
 
-Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud-clases.xlsx)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/salud)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/salud)**
 
 
 <table>
@@ -106,7 +106,7 @@ Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
 
 ## Campos
 
-Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/salud-campos.xlsx)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/salud)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/salud)**
 
 ### Recurso: Establecimientos de Salud
 

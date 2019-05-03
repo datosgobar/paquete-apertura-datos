@@ -12,7 +12,7 @@ Listado de todos los procesos de contratación, los procesos de contratación de
 ## Ejemplos
 
 ### Recurso: Convocatorias
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/convocatorias.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/convocatorias.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)**
 
 <table>
     <tr>
@@ -80,7 +80,7 @@ Listado de todos los procesos de contratación, los procesos de contratación de
         
 </table>
 ### Recurso: Adjudicaciones
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/adjudicaciones.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/adjudicaciones.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)**
 
 <table>
     <tr>
@@ -107,7 +107,7 @@ Listado de todos los procesos de contratación, los procesos de contratación de
         
 </table>
 ### Recurso: Contratos 
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/contratos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/contratos.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)**
 
 <table>
     <tr>
@@ -138,7 +138,7 @@ Listado de todos los procesos de contratación, los procesos de contratación de
         
 </table>
 ### Recurso: Transacciones
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/transacciones.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/transacciones.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)**
 
 <table>
     <tr>
@@ -167,7 +167,7 @@ Listado de todos los procesos de contratación, los procesos de contratación de
         
 </table>
 ### Recurso: Items Adquiridos
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/items-adquiridos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas/items-adquiridos.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)**
 
 <table>
     <tr>
@@ -201,7 +201,7 @@ Listado de todos los procesos de contratación, los procesos de contratación de
 
 Una institución pública abre una `Convocatoria` para recibir ofertas de provisión de bienes y servicios. Una vez elegida una oferta realiza la `Adjudicación` al proveedor elegido con el que celebra un `Contrato` que marca las condiciones bajo las cuales se realiza una `Transacción` entre las partes mediante la cual se adquiere un `Item`.
 
-Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas-clases.xlsx)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)**
 
 
 <table>
@@ -357,7 +357,7 @@ Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
 
 ## Campos
 
-Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/contrataciones-publicas-campos.xlsx)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas)**
 
 ### Recurso: Convocatorias
 

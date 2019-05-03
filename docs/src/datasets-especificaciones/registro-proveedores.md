@@ -11,7 +11,7 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
 ## Ejemplos
 
 ### Recurso: Declaraciones de Proveedores
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/declaraciones-proveedores.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/declaraciones-proveedores.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/registro-proveedores)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/registro-proveedores)**
 
 <table>
     <tr>
@@ -46,7 +46,7 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
         
 </table>
 ### Recurso: Apoderados o Referentes Legales de Proveedores
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/apoderados-o-referentes-legales-proveedores.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/apoderados-o-referentes-legales-proveedores.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/registro-proveedores)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/registro-proveedores)**
 
 <table>
     <tr>
@@ -69,7 +69,7 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
         
 </table>
 ### Recurso: Intereses Declarados por los Proveedores
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/intereses-declarados-por-proveedores.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores/intereses-declarados-por-proveedores.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/registro-proveedores)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/registro-proveedores)**
 
 <table>
     <tr>
@@ -99,7 +99,7 @@ Nombre de proveedores adjudicados en contrataciones públicas, así como los soc
 
 
 
-Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores-clases.xlsx)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/registro-proveedores)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/registro-proveedores)**
 
 
 <table>
@@ -137,7 +137,7 @@ Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
 
 ## Campos
 
-Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/registro-proveedores-campos.xlsx)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/registro-proveedores)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/registro-proveedores)**
 
 ### Recurso: Declaraciones de Proveedores
 

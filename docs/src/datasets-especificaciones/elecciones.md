@@ -13,7 +13,7 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
 ## Ejemplos
 
 ### Recurso: Elecciones
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/elecciones.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/elecciones.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)**
 
 <table>
     <tr>
@@ -34,7 +34,7 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
         
 </table>
 ### Recurso: Resultados Electorales por Opción Elegible Disponible
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultados-electorales-por-opcion-elegible-disponible.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultados-electorales-por-opcion-elegible-disponible.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)**
 
 <table>
     <tr>
@@ -65,7 +65,7 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
         
 </table>
 ### Recurso: Resultados Electorales por Mesa y Opción Elegible Disponible
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultados-electorales-por-mesa-opcion-elegible-disponible.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resultados-electorales-por-mesa-opcion-elegible-disponible.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)**
 
 <table>
     <tr>
@@ -92,7 +92,7 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
         
 </table>
 ### Recurso: Resumen de Resultados Electorales por Mesa
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resumen-resultados-electorales-por-mesa.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones/resumen-resultados-electorales-por-mesa.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)**
 
 <table>
     <tr>
@@ -128,7 +128,7 @@ Resultados de las últimas elecciones municipales o provinciales desagregadas po
 
 
 
-Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones-clases.xlsx)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)**
 
 
 <table>
@@ -166,7 +166,7 @@ Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
 
 ## Campos
 
-Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/elecciones-campos.xlsx)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/elecciones)**
 
 ### Recurso: Elecciones
 

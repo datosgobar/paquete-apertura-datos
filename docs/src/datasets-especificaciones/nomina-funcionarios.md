@@ -12,7 +12,7 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
 ## Ejemplos
 
 ### Recurso: Nómina de funcionarios
-**[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios/nomina-funcionarios.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios/nomina-funcionarios.xlsx)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/nomina-funcionarios)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/nomina-funcionarios)**
 
 <table>
     <tr>
@@ -81,7 +81,7 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
 
 Un funcionario es una `Persona` que tiene un determinado `Puesto` y es `Miembro` de una `Organización`. Al publicar la nómina de funcionarios tenemos que tener en cuenta los atributos necesarios de estas 4 clases.
 
-Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios-clases.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios-clases.xlsx)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/nomina-funcionarios)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/nomina-funcionarios)**
 
 
 <table>
@@ -118,7 +118,7 @@ Descargar clases en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/s
 
 ## Campos
 
-Descargar campos en **[CSV](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios-campos.csv)** | **[XLSX](/Users/abenassi/github/paquete-apertura-datos/docs/src/datasets-especificaciones/nomina-funcionarios-campos.xlsx)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/nomina-funcionarios)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/nomina-funcionarios)**
 
 ### Recurso: Nómina de funcionarios
 
