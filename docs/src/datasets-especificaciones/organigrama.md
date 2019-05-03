@@ -12,7 +12,7 @@ Organismos y entidades del estado con su estructura orgánica y funciones.
 ## Ejemplos
 
 ### Recurso: Organigrama
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama/organigrama.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama/organigrama.xlsx)**
 
 <table>
     <tr>
@@ -58,7 +58,7 @@ Organismos y entidades del estado con su estructura orgánica y funciones.
 
 
 
-Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama/organigrama-clases.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama/organigrama-clases.xlsx)**
 
 
 <table>
@@ -81,7 +81,7 @@ Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos
 
 ## Campos
 
-Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama/organigrama-campos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/organigrama/organigrama-campos.xlsx)**
 
 ### Recurso: Organigrama
 

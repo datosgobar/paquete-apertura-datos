@@ -11,7 +11,7 @@ Los permisos, concesiones y autorizaciones otorgados y sus titulares.
 ## Ejemplos
 
 ### Recurso: Permisos  
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos/permisos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos/permisos.xlsx)**
 
 <table>
     <tr>
@@ -63,7 +63,7 @@ Los permisos, concesiones y autorizaciones otorgados y sus titulares.
 
 
 
-Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos/permisos-clases.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos/permisos-clases.xlsx)**
 
 
 <table>
@@ -91,7 +91,7 @@ Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos
 
 ## Campos
 
-Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos/permisos-campos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/permisos/permisos-campos.xlsx)**
 
 ### Recurso: Permisos  
 

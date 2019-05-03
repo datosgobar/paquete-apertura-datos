@@ -11,7 +11,7 @@ El presupuesto asignado a cada área, programa o función, las modificaciones du
 ## Ejemplos
 
 ### Recurso: Presupuesto
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto/presupuesto.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto/presupuesto.xlsx)**
 
 <table>
     <tr>
@@ -75,7 +75,7 @@ El presupuesto asignado a cada área, programa o función, las modificaciones du
 
 Un item del `Presupuesto` es un gasto o ingreso asignado a una `Organización` para el financiamiento de sus misiones y funciones.
 
-Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto/presupuesto-clases.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto/presupuesto-clases.xlsx)**
 
 
 <table>
@@ -103,7 +103,7 @@ Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos
 
 ## Campos
 
-Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto/presupuesto-campos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/presupuesto/presupuesto-campos.xlsx)**
 
 ### Recurso: Presupuesto
 

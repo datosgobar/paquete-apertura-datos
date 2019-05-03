@@ -12,7 +12,7 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
 ## Ejemplos
 
 ### Recurso: Estaciones de Medición de la Calidad del Agua
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua/estaciones-medicion-calidad-agua.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua/estaciones-medicion-calidad-agua.xlsx)**
 
 <table>
     <tr>
@@ -47,7 +47,7 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
         
 </table>
 ### Recurso: Elementos Contaminantes del Agua
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua/elementos-contaminantes-agua.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua/elementos-contaminantes-agua.xlsx)**
 
 <table>
     <tr>
@@ -83,7 +83,7 @@ Listas de los funcionarios con referencia a la entidad a la que pertenecen, la c
 
 
 
-Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua/calidad-agua-clases.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua/calidad-agua-clases.xlsx)**
 
 
 <table>
@@ -111,7 +111,7 @@ Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos
 
 ## Campos
 
-Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua/calidad-agua-campos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-agua/calidad-agua-campos.xlsx)**
 
 ### Recurso: Estaciones de Medición de la Calidad del Agua
 

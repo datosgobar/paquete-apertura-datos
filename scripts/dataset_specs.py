@@ -149,8 +149,7 @@ def generate_example(df, specs_name, resource_field="recurso"):
         )
         example_filename_url = urllib.parse.urljoin(
             DOCS_DOWNLOAD_URL,
-            specs_name,
-            os.path.basename(example_filename)
+            specs_name + "/" + os.path.basename(example_filename)
         )
 
         text_elements.append("### Recurso: {}".format(recurso.ljust(10)))
@@ -186,13 +185,11 @@ def generate_field_section(specs_name):
     specs_fields_xlsx = os.path.join(SPECS_DIR, specs_name + "-campos.xlsx")
     specs_fields_csv_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name,
-        os.path.basename(specs_fields_csv)
+        specs_name + "/" + os.path.basename(specs_fields_csv)
     )
     specs_fields_xlsx_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name,
-        os.path.basename(specs_fields_xlsx)
+        specs_name + "/" + os.path.basename(specs_fields_xlsx)
     )
 
     df = pd.read_csv(specs_fields_csv)
@@ -216,13 +213,11 @@ def generate_class_section(specs_name, class_explain):
     specs_class_xlsx = os.path.join(SPECS_DIR, specs_name + "-clases.xlsx")
     specs_class_csv_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name,
-        os.path.basename(specs_class_csv)
+        specs_name + "/" + os.path.basename(specs_class_csv)
     )
     specs_class_xlsx_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name,
-        os.path.basename(specs_class_xlsx)
+        specs_name + "/" + os.path.basename(specs_class_xlsx)
     )
 
     df = pd.read_csv(specs_class_csv)

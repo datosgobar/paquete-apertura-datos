@@ -11,7 +11,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
 ## Ejemplos
 
 ### Recurso: Declaración Personal
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-personal.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-personal.xlsx)**
 
 <table>
     <tr>
@@ -70,7 +70,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
         
 </table>
 ### Recurso: Declaración de Grupo Familiar
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-grupo-familiar.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-grupo-familiar.xlsx)**
 
 <table>
     <tr>
@@ -105,7 +105,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
         
 </table>
 ### Recurso: Declaración de Bienes y deudas
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-bienes-deudas.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-bienes-deudas.xlsx)**
 
 <table>
     <tr>
@@ -118,7 +118,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
         
 </table>
 ### Recurso: Declaración de Bienes y Deudas
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-bienes-deudas.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-bienes-deudas.xlsx)**
 
 <table>
     <tr>
@@ -157,7 +157,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
         
 </table>
 ### Recurso: Declaración de Postulaciones a Cargos Electivos
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-postulaciones-cargos-electivos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-postulaciones-cargos-electivos.xlsx)**
 
 <table>
     <tr>
@@ -172,7 +172,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
         
 </table>
 ### Recurso: Declaración de Patrimonio, Ingresos y Gastos
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-patrimonio-ingresos-gastos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaracion-patrimonio-ingresos-gastos.xlsx)**
 
 <table>
     <tr>
@@ -202,7 +202,7 @@ Declaración Jurada Patrimonial Integral de carácter público con su correspond
 
 
 
-Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaraciones-juradas-clases.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaraciones-juradas-clases.xlsx)**
 
 
 <table>
@@ -250,7 +250,7 @@ Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos
 
 ## Campos
 
-Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaraciones-juradas-campos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/declaraciones-juradas/declaraciones-juradas-campos.xlsx)**
 
 ### Recurso: Declaración Personal
 

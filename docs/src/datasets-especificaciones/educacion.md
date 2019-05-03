@@ -10,7 +10,7 @@ Estadísticas de educación, cantidad de alumnos por aula (grado e institución)
 ## Ejemplos
 
 ### Recurso: Establecimientos Educativos
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion/establecimientos-educativos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion/establecimientos-educativos.xlsx)**
 
 <table>
     <tr>
@@ -53,7 +53,7 @@ Estadísticas de educación, cantidad de alumnos por aula (grado e institución)
         
 </table>
 ### Recurso: Rendimiento de los Estudiantes
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion/rendimiento-estudiantes.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion/rendimiento-estudiantes.xlsx)**
 
 <table>
     <tr>
@@ -95,7 +95,7 @@ Estadísticas de educación, cantidad de alumnos por aula (grado e institución)
 
 Un `Estudiante` concurre a un `Establecimiento` para desarrollar actividades formativas que realiza con un determinado `Rendimiento` como resultado.
 
-Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion/educacion-clases.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion/educacion-clases.xlsx)**
 
 
 <table>
@@ -128,7 +128,7 @@ Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos
 
 ## Campos
 
-Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion/educacion-campos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/educacion/educacion-campos.xlsx)**
 
 ### Recurso: Establecimientos Educativos
 

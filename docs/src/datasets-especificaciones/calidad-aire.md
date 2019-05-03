@@ -5,7 +5,7 @@
 ## Ejemplos
 
 ### Recurso: Estaciones de Medición de la Calidad del Aire
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire/estaciones-medicion-calidad-aire.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire/estaciones-medicion-calidad-aire.xlsx)**
 
 <table>
     <tr>
@@ -28,7 +28,7 @@
         
 </table>
 ### Recurso: Elementos Contaminantes del Aire
-**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire)**
+**[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire/elementos-contaminantes-aire.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire/elementos-contaminantes-aire.xlsx)**
 
 <table>
     <tr>
@@ -60,7 +60,7 @@
 
 
 
-Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire)**
+Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire/calidad-aire-clases.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire/calidad-aire-clases.xlsx)**
 
 
 <table>
@@ -88,7 +88,7 @@ Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos
 
 ## Campos
 
-Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire)**
+Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire/calidad-aire-campos.csv)** | **[XLSX](https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/calidad-aire/calidad-aire-campos.xlsx)**
 
 ### Recurso: Estaciones de Medición de la Calidad del Aire
 
