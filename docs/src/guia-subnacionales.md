@@ -4,6 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Indice
 
+- [Agradecimientos](#agradecimientos)
 - [Sobre esta guía](#sobre-esta-guia)
 - [1. ¿Qué son los datos abiertos?](#1-que-son-los-datos-abiertos)
     - [Formatos reutilizables](#formatos-reutilizables)
@@ -27,6 +28,12 @@
 - [Reflexiones finales](#reflexiones-finales)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Agradecimientos
+
+Este documento fue realizado por el equipo de la Dirección Nacional de Datos e Información Pública  junto con la Iniciativa Latinoamericana por los Datos Abiertos (ILDA).
+
+La preparación de esta guía de implementación ha sido posible gracias al financiamiento del fondo de transparencia del BID, que se beneficia de las generosas contribuciones de los gobiernos de Canadá, Noruega y Suecia, así como de Mastercard Corporation.
 
 ## Sobre esta guía
 
@@ -343,7 +350,7 @@ A la hora de elaborar el inventario de tu provincia o localidad, te recomendamos
     </tr>
     <tr>
         <td>Gobierno y Sector Público</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/declaraciones-juradas/">Declaraciones juradas</a></td>
+        <td>Declaraciones juradas</td>
         <td>Declaración Jurada Patrimonial Integral de carácter público con su correspondiente relación a la Nómina de Funcionarios.</td>
     </tr>
     <tr>
@@ -353,15 +360,15 @@ A la hora de elaborar el inventario de tu provincia o localidad, te recomendamos
     </tr>
     <tr>
         <td>Economía y Finanzas</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/presupuesto-ingresos/">Presupuesto de Ingresos</a></td>
+        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/presupuesto/">Presupuesto</a></td>
         <td>El presupuesto asignado a cada área, programa o función, las modificaciones durante cada ejercicio anual y el estado de ejecución actualizado en forma trimestral hasta el último nivel de desagregación en que se procese.</td>
     </tr>
-    <tr>
+<!--     <tr>
         <td>Economía y Finanzas</td>
         <td>Presupuesto de egresos</td>
         <td>Presupuesto del gobierno municipal a un nivel alto, el gasto gubernamental previsto para el próximo año: Presupuesto por oficina de gobierno Presupuesto por sub-secretaría Descripciones de la secciones del presupuesto.</td>
     </tr>
-    <tr>
+ -->    <tr>
         <td>Gobierno y Sector Público</td>
         <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/registro-proveedores/">Registro de proveedores</a></td>
         <td>Nombre de proveedores adjudicados en contrataciones públicas, así como los socios y accionistas principales, de las sociedades o empresas proveedoras.</td>
@@ -443,8 +450,8 @@ A la hora de elaborar el inventario de tu provincia o localidad, te recomendamos
     </tr>
     <tr>
         <td>Educación</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/educacion/">Educación</a></td>
-        <td>Estadísticas de educación, cantidad de alumnos por aula (grado e institución), por sexo, por edad. Si se tiene estadísticas de notas de los alumnos.</td>
+        <td>Educación</td>
+        <td>Estadísticas de educación, cantidad de alumnos por aula (grado e institución), por sexo, por edad. Si se tiene estadísticas de calidad educativa, incluir.</td>
     </tr>
     <tr>
         <td>Salud</td>
@@ -470,8 +477,6 @@ Incluir y hacer participar a estos segmentos en el proceso de lanzamiento de la 
 El conjunto de funcionarios y empleados de nuestro propio Gobierno son parte de la comunidad de usuarios y consumidores de los datos abiertos. Probablemente sea el segmento más importante dado que tener un portal que concentre diferentes activos de datos facilita su labor diaria y a la vez les permite seguir agregando valor en la gestión pública.
 
 Un ejemplo de este tipo de interacción es el “Mapa de Oportunidades Comerciales” (MOC), una iniciativa del Gobierno de la Ciudad de Buenos Aires. El sitio cuenta con información detallada por zona y rubro para ayudar a los usuarios a elegir la ubicación de un futuro emprendimiento comercial en la Ciudad.
-
-*IMAGEN: Mapa de Oportunidades Comerciales*
 
 El MOC brinda información detallada del panorama comercial a empresas y emprendedores para hacer más eficiente la toma de decisiones a la hora de abrir o potenciar los locales. Algunos de los datos con los que cuenta la plataforma son:
 
@@ -505,8 +510,6 @@ Puntualmente para los emprendedores, la disponibilidad de datos oficiales siempr
 Los datos son un recurso educativo importante en todos los niveles de formación. No sólo se pueden convertir en objeto de estudio y material fundamental para el desarrollo de investigaciones aplicadas, sino que además se pueden incorporar al planteamiento de problemas y trabajos prácticos. Insertar la temática y difundir la iniciativa en el sector académico es una prioridad ya que pone en valor datos reales para solucionar problemáticas existentes del municipio o la provincia.
 
 Ejemplo del uso de los datos para desarrollar investigaciones académicas es la tesis de maestría Yo, reutilizador de datos de Federico Baylé. Para su tesis, Baylé desarrolló un mapa de detección automática que permitía conocer la evolución de los asentamientos en La Matanza. Esta investigación inicial luego dio paso a la creación de DymaxionLab, un emprendimiento tecnológico que desarrolló una plataforma de monitoreo de barrios de emergencia y asentamientos con un monitor de inundaciones, que permite observar y supervisar el avance de inundaciones en tiempo casi real y una aplicación para verificar modificaciones en el uso del suelo. Para esto, utiliza imágenes satelitales y datos abiertos generados por distintos actores. Entre ellos, los datos geoespaciales de la NASA y la Agencia Espacial Europea y datos de los portales del Ministerio de Energía, de las provincias de Buenos Aires, Córdoba y de la Ciudad de Buenos Aires, entre otros.
-
-*IMAGEN: barrios satelital*
 
 ### Espacios de colaboración
 
@@ -595,3 +598,9 @@ Como te contamos al principio, este ejemplar forma parte de una amplia serie de 
 * **Guía para la apertura de datos en la Administración Pública Nacional**. Te compartimos los recursos necesarios para publicar datos en los organismos de la APN. Aprendé cómo mejorar la calidad, identificar activos de datos y publicarlos como un servicio.
 
 Esperamos que esta guía te haya inspirado nuevas ideas y conectado con formas alternativas de gestionar. Esperamos -porque anhelamos ser cada vez más los que buscamos mejorar la forma en que hacemos las cosas- que esta lectura se convierta en un primer paso al que le sucedan las manos a la obra.
+
+## Anexo: material para talleristas
+
+* [Marco de trabajo para talleristas](./guia-subnacionales/taller.md)
+* [Presentación base para taller de sensibilización](https://docs.google.com/presentation/d/1cmuh7750Ruhl0DFhA3EJKI-A-7LTG2wOm-3ZsVMtyA8/edit?usp=sharing)
+* [Presentación base para taller de co-creación](https://docs.google.com/presentation/d/1jFnqXhGl-B-BTWPIgdOHoNKbhL9221NdILDJP58ijaA/edit?usp=sharing)

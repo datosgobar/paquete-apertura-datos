@@ -18,11 +18,6 @@ Mecanismos de presentación directa de solicitudes o denuncias a disposición de
     <tr>
         <th>organizacion_id</th>
         <th>organizacion_nombre</th>
-        <th>denunciante_id</th>
-        <th>denunciante_id_tipo</th>
-        <th>denunciante_nombre</th>
-        <th>denunciante_genero</th>
-        <th>denunciante_edad</th>
         <th>denuncia_id</th>
         <th>denuncia_fecha</th>
         <th>denuncia_hora</th>
@@ -45,11 +40,6 @@ Mecanismos de presentación directa de solicitudes o denuncias a disposición de
     <tr>
         <td>325</td>
         <td>Municipio de Bahia Blanca</td>
-        <td>23668249</td>
-        <td>DNI</td>
-        <td>Lucía Sánchez</td>
-        <td>Femenino</td>
-        <td>26</td>
         <td>3384556</td>
         <td>2019-03-12</td>
         <td>14:45</td>
@@ -89,11 +79,6 @@ Descargar clases en **[CSV](https://github.com/datosgobar/paquete-apertura-datos
         <th>descripcion</th>
     </tr>
 
-    <tr>
-        <td>Persona</td>
-        <td>Atributos de la persona física que realiza la denuncia.</td>
-    </tr>
-        
     <tr>
         <td>Organización</td>
         <td>Atributos de una organización a la cual o donde se realiza la denuncia.</td>
@@ -147,60 +132,6 @@ Descargar campos en **[CSV](https://github.com/datosgobar/paquete-apertura-datos
         <td>Municipio de Bahia Blanca</td>
         <td>popolo:Organization
  schema:Organization</td>
-        <td></td>
-    </tr>
-        
-    <tr>
-        <td>Persona</td>
-        <td>denunciante_id</td>
-        <td>alfanumerico</td>
-        <td>Identificador de la persona que denuncia.</td>
-        <td>23668249</td>
-        <td>popolo:Person
- schema:Person</td>
-        <td></td>
-    </tr>
-        
-    <tr>
-        <td>Persona</td>
-        <td>denunciante_id_tipo</td>
-        <td>alfanumerico</td>
-        <td>Tipo de identificación de la persona que denuncia.</td>
-        <td>DNI</td>
-        <td></td>
-        <td></td>
-    </tr>
-        
-    <tr>
-        <td>Persona</td>
-        <td>denunciante_nombre</td>
-        <td>alfanumerico</td>
-        <td>Nombre completo del denunciante.</td>
-        <td>Lucía Sánchez</td>
-        <td>popolo:Person
- schema:Person</td>
-        <td></td>
-    </tr>
-        
-    <tr>
-        <td>Persona</td>
-        <td>denunciante_genero</td>
-        <td>alfanumerico</td>
-        <td>Género según el cual se identifica la persona declarado según la normativa vigente para la presentación de declaraciones juradas en el país.</td>
-        <td>Femenino</td>
-        <td>popolo:Person
- schema:Person</td>
-        <td></td>
-    </tr>
-        
-    <tr>
-        <td>Persona</td>
-        <td>denunciante_edad</td>
-        <td>numerico</td>
-        <td>Edad al momento de la denuncia.</td>
-        <td>26</td>
-        <td>popolo:Person
- schema:Person</td>
         <td></td>
     </tr>
         

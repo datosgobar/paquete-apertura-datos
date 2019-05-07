@@ -3,15 +3,6 @@
  schema:Organization",""
 "Denuncias","Organización","organizacion_nombre","alfanumerio","El nombre principal de la organización, por ejemplo su nombre legal.","Municipio de Bahia Blanca","popolo:Organization
  schema:Organization",""
-"Denuncias","Persona","denunciante_id","alfanumerico","Identificador de la persona que denuncia.","23668249","popolo:Person
- schema:Person",""
-"Denuncias","Persona","denunciante_id_tipo","alfanumerico","Tipo de identificación de la persona que denuncia.","DNI","",""
-"Denuncias","Persona","denunciante_nombre","alfanumerico","Nombre completo del denunciante.","Lucía Sánchez","popolo:Person
- schema:Person",""
-"Denuncias","Persona","denunciante_genero","alfanumerico","Género según el cual se identifica la persona declarado según la normativa vigente para la presentación de declaraciones juradas en el país.","Femenino","popolo:Person
- schema:Person",""
-"Denuncias","Persona","denunciante_edad","numerico","Edad al momento de la denuncia.","26","popolo:Person
- schema:Person",""
 "Denuncias","Denuncia","denuncia_id","alfanumerico","Identificador de la denuncia realizada.","3384556","schema:Thing",""
 "Denuncias","Denuncia","denuncia_fecha","fecha","Fecha de la denuncia.","2019-03-12","schema:Thing",""
 "Denuncias","Denuncia","denuncia_hora","fecha","Hora de la denuncia.","14:45","schema:Thing",""

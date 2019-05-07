@@ -21,7 +21,7 @@ Los servicios que brinda el organismo directamente al público, incluyendo norma
         <th>servicio_nombre</th>
         <th>servicio_proveedor</th>
         <th>servicio_contacto</th>
-        <th>servicio_descripcion</th>
+        <th class="description">servicio_descripcion</th>
         <th>servicio_fecha_inicio</th>
         <th>servicio_fecha_fin</th>
         <th>servicio_dias_semana</th>
@@ -33,27 +33,25 @@ Los servicios que brinda el organismo directamente al público, incluyendo norma
         <th>servicio_tramite_inicio_id</th>
         <th>servicio_tramite_nombre</th>
     </tr>
-
-    <tr>
-        <td>325</td>
-        <td>Municipio de Bahia Blanca</td>
-        <td></td>
-        <td>Poda</td>
-        <td>Arbolado urbano</td>
-        <td>Parque de Mayo s/n - 2914880350</td>
-        <td>Los vecinos deben solicitar al municipio autorización para podar o extraer un árbol. Para ello, ingresando al Centro de Atención al Vecino en la web del Municipio de Bahía Blanca, el vecino puede solicitar un turno para la realización del trabajo, justificando los motivos de la solicitud (interferencia peatonal, interferencia vehicular, interferencia con luminarias o carteles, riesgo de caída de ramas, etc.), indicando, además, la dirección de referencia para intervención, las observaciones que quiera formular e, incluso, puede adjuntar una foto del árbol a intervenir.</td>
-        <td>2019-03-01</td>
-        <td>2019-09-30</td>
-        <td>Lunes a Viernes</td>
-        <td>8:00</td>
-        <td>17:00</td>
-        <td>Sin costo</td>
-        <td>https://www.bahia.gob.ar/arbolado/poda/</td>
-        <td>https://www.bahia.gob.ar/arbolado/poda/</td>
-        <td>333</td>
-        <td>Poda de árbol, extracción de árbol o corte de raíz.</td>
-    </tr>
-        
+        <tr>
+            <td>325</td>
+            <td>Municipio de Bahia Blanca</td>
+            <td></td>
+            <td>Poda</td>
+            <td>Arbolado urbano</td>
+            <td>Parque de Mayo s/n - 2914880350</td>
+            <td>Los vecinos deben solicitar al municipio autorización para podar o extraer un árbol. Para ello, ingresando al Centro de Atención al Vecino en la web del Municipio de Bahía Blanca, el vecino puede solicitar un turno para la realización del trabajo, justificando los motivos de la solicitud (interferencia peatonal, interferencia vehicular, interferencia con luminarias o carteles, riesgo de caída de ramas, etc.), indicando, además, la dirección de referencia para intervención, las observaciones que quiera formular e, incluso, puede adjuntar una foto del árbol a intervenir.</td>
+            <td>2019-03-01</td>
+            <td>2019-09-30</td>
+            <td>Lunes a Viernes</td>
+            <td>8:00</td>
+            <td>17:00</td>
+            <td>Sin costo</td>
+            <td>https://www.bahia.gob.ar/arbolado/poda/</td>
+            <td>https://www.bahia.gob.ar/arbolado/poda/</td>
+            <td>333</td>
+            <td>Poda de árbol, extracción de árbol o corte de raíz.</td>
+        </tr>
 </table>
 
 <!-- FIN TABLA DE EJEMPLO. Dejar este comentario para edicion automatica. No editar manualmente el contenido, usar el script.  -->

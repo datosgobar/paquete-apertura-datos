@@ -11,7 +11,7 @@ nav:
     - Guía para la publicación de datos en formatos abiertos: guia-abiertos.md
     - Guía para la identificación y uso de entidades interoperables: guia-interoperables.md
     - Guía para el uso y la publicación de metadatos: guia-metadatos.md
-    # - "Datasets sugeridos: especificaciones": datasets-especificaciones.md
+    - "Datasets sugeridos: especificaciones": datasets-especificaciones.md
   - Guías de implementación:
     - Guía para la apertura de datos en organismos de la Administración Pública Nacional: guia-apn.md
     - Guía para la apertura de datos en gobiernos provinciales y locales: guia-subnacionales.md
