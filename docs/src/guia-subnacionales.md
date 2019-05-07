@@ -602,5 +602,5 @@ Esperamos que esta guía te haya inspirado nuevas ideas y conectado con formas a
 ## Anexo: material para talleristas
 
 * [Marco de trabajo para talleristas](./guia-subnacionales/taller.md)
-* [Presentación base para taller de sensibilización](https://docs.google.com/presentation/d/1cmuh7750Ruhl0DFhA3EJKI-A-7LTG2wOm-3ZsVMtyA8/edit?usp=sharing)
-* [Presentación base para taller de co-creación](https://docs.google.com/presentation/d/1jFnqXhGl-B-BTWPIgdOHoNKbhL9221NdILDJP58ijaA/edit?usp=sharing)
+* [Descargá la presentación base para el taller de sensibilización](https://docs.google.com/presentation/d/1cmuh7750Ruhl0DFhA3EJKI-A-7LTG2wOm-3ZsVMtyA8/export/pptx?id=1cmuh7750Ruhl0DFhA3EJKI-A-7LTG2wOm-3ZsVMtyA8&pageid=g569e770ac0_0_161)
+* [Presentación base para taller de co-creación](https://docs.google.com/presentation/d/1jFnqXhGl-B-BTWPIgdOHoNKbhL9221NdILDJP58ijaA/export/pptx?id=1jFnqXhGl-B-BTWPIgdOHoNKbhL9221NdILDJP58ijaA&pageid=g513ab9e99d_1_0)
