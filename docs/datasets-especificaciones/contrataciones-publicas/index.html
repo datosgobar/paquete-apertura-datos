@@ -837,146 +837,33 @@
 <p>Descargar clases en <strong><a href="https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas/contrataciones-publicas-clases.csv">CSV</a></strong> | <strong><a href="https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/contrataciones-publicas/contrataciones-publicas-clases.xlsx">XLSX</a></strong></p>
 <table>
     <tr>
-        <th>recurso</th>
-        <th>clase</th>
-        <th>titulo</th>
-        <th>tipo_dato</th>
+        <th>nombre</th>
         <th>descripcion</th>
-        <th>ejemplo</th>
-        <th>estandar_mapeo</th>
-        <th>notas</th>
     </tr>
 
     <tr>
-        <td>Estaciones de Medición de la Calidad del Aire</td>
-        <td>Estacion</td>
-        <td>estacion_id</td>
-        <td>alfanumerico</td>
-        <td>Identificación de la estación</td>
-        <td>1001</td>
-        <td>schema:Thing</td>
-        <td></td>
+        <td>Convocatoria</td>
+        <td>Atributos del proceso que abre una institución pública en el que declara la necesidad de adquirir bienes o servicios y las condiciones para recibir ofertas de terceros que los provean.</td>
     </tr>
 
     <tr>
-        <td>Estaciones de Medición de la Calidad del Aire</td>
-        <td>Estacion</td>
-        <td>estacion_nombre</td>
-        <td>alfanumerico</td>
-        <td>Nombre de la estación</td>
-        <td>Chapelco</td>
-        <td>schema:Thing</td>
-        <td></td>
+        <td>Adjudicación</td>
+        <td>Atributos de la adjudicación del proceso de compra a un tercero que previamente ofertó en la etapa de convocatoria, y cuya oferta fue elegida.</td>
     </tr>
 
     <tr>
-        <td>Estaciones de Medición de la Calidad del Aire</td>
-        <td>Estacion</td>
-        <td>estacion_region</td>
-        <td>alfanumerico</td>
-        <td>Nombre del país/provincia o localidad</td>
-        <td>San Martin de Los Andes</td>
-        <td>schema:Place</td>
-        <td></td>
+        <td>Contrato</td>
+        <td>Atributos del instrumento contractual firmado por las partes para legalizar las condiciones de provisión de los bienes o servicios adquiridos.</td>
     </tr>
 
     <tr>
-        <td>Estaciones de Medición de la Calidad del Aire</td>
-        <td>Estacion</td>
-        <td>estacion_latitud</td>
-        <td>numerico</td>
-        <td>Coordenadas geograficas</td>
-        <td>-40.1808541022993</td>
-        <td>schema:GeoCoordinates</td>
-        <td></td>
+        <td>Transacción</td>
+        <td>Atributos de las transacciones realizadas en el cumplimiento del contrato firmado para la provisión de bienes y servicios.</td>
     </tr>
 
     <tr>
-        <td>Estaciones de Medición de la Calidad del Aire</td>
-        <td>Estacion</td>
-        <td>estacion_longitud</td>
-        <td>numerico</td>
-        <td>Coordenadas geograficas</td>
-        <td>-71.31843</td>
-        <td>schema:GeoCoordinates</td>
-        <td></td>
-    </tr>
-
-    <tr>
-        <td>Estaciones de Medición de la Calidad del Aire</td>
-        <td>Estacion</td>
-        <td>estacion_zonahoraria</td>
-        <td>alfanumerico</td>
-        <td>Campo opcional para indicar la zona horaria</td>
-        <td>UTC-3</td>
-        <td>schema:BroadcastService</td>
-        <td></td>
-    </tr>
-
-    <tr>
-        <td>Elementos Contaminantes del Aire</td>
-        <td>Contaminante</td>
-        <td>contaminante_estacion_id</td>
-        <td>alfanumerico</td>
-        <td>Identificación de la estación</td>
-        <td>1001</td>
-        <td>schema:Thing</td>
-        <td></td>
-    </tr>
-
-    <tr>
-        <td>Elementos Contaminantes del Aire</td>
-        <td>Contaminante</td>
-        <td>contaminante_nombre</td>
-        <td>alfanumerico</td>
-        <td>Nombre del contaminante que se esta midiendo</td>
-        <td>Dióxido de azufre</td>
-        <td>schema:GeoCoordinates</td>
-        <td></td>
-    </tr>
-
-    <tr>
-        <td>Elementos Contaminantes del Aire</td>
-        <td>Contaminante</td>
-        <td>contaminante_unidad</td>
-        <td>alfanumerico</td>
-        <td>Unidad de medida en que se establece el valor</td>
-        <td>µg/m3</td>
-        <td>schema:GeoCoordinates</td>
-        <td></td>
-    </tr>
-
-    <tr>
-        <td>Elementos Contaminantes del Aire</td>
-        <td>Contaminante</td>
-        <td>contaminante_actualizado</td>
-        <td>fecha</td>
-        <td>Fecha y hora de actualizado el valor</td>
-        <td>2019-02-26 0:00:00</td>
-        <td>schema:Date</td>
-        <td></td>
-    </tr>
-
-    <tr>
-        <td>Elementos Contaminantes del Aire</td>
-        <td>Contaminante</td>
-        <td>contaminante_valor</td>
-        <td>numerico</td>
-        <td>Valor obtenido en la medición</td>
-        <td>0.27</td>
-        <td>schema:Thing</td>
-        <td></td>
-    </tr>
-
-    <tr>
-        <td>Elementos Contaminantes del Aire</td>
-        <td>Contaminante</td>
-        <td>contaminante_validez</td>
-        <td>alfanumerico</td>
-        <td>Indica la duración de validez del dato</td>
-        <td>1 hora</td>
-        <td>schema:Thing</td>
-        <td></td>
+        <td>Item</td>
+        <td>Atributos de los items adquiridos en las transacciones entre el proveedor y la institución pública compradora.</td>
     </tr>
 
 </table>

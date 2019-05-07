@@ -100,6 +100,8 @@ doctoc: ## generate table of contents, doctoc command line tool required
 serve:
 	mkdocs serve
 
+# make specs
+# make specs SPECS_NAME=contrataciones-publicas
 specs:
 	python scripts/dataset_specs.py $(SPECS_NAME)
 

@@ -15,7 +15,7 @@
         "contrataciones-publicas":
         {
             "gsheet_fields": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=706828557",
-            "gsheet_classes": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1425215079",
+            "gsheet_classes": "https://docs.google.com/spreadsheets/export?format=csv&id=1OtlIabrWHjbBR_2a2GqJb9GGKW3knKCVr1bmUi_x_QA&gid=1528115716",
             "class_explain": "Una institución pública abre una `Convocatoria` para recibir ofertas de provisión de bienes y servicios. Una vez elegida una oferta realiza la `Adjudicación` al proveedor elegido con el que celebra un `Contrato` que marca las condiciones bajo las cuales se realiza una `Transacción` entre las partes mediante la cual se adquiere un `Item`."
         },
         "presupuesto":
