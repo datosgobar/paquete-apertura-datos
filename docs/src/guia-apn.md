@@ -206,7 +206,32 @@ Para comenzar te recomendamos leer nuestro [Kit de Datos Abiertos](https://www.a
 
 ## Anexos
 
+### Crear un catálogo en Excel
+
+Para crear un catálogo en Excel:
+
+1. [**Descargá este modelo**](https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/catalog.xlsx) diseñado para cumplir con el perfil de metadatos.
+2. Completá los metadatos de tus datasets, distribuciones y campos.
+3. Subí el catálogo a una URL pública y comunicala al equipo de Datos Argentina.
+4. Mantené siempre actualizado tu catálogo.
+
+Cada columna del Excel corresponde con un metadato que se verá en datos.gob.ar. Cuando hagas cambios en el Excel, verás los cambios reflejados en datos.gob.ar dentro de las próximas 24hs:
+
+![](assets/images/mapeo_metadatos_andino_1.png)
+
+El modelo Excel contiene una serie de validaciones para evitar errores en su uso, pero debe tenerse en cuenta que:
+
+* En las hojas de distribución (`distribution`) y campo (`field`) **sólo deben asignarse los ids de los dataset o distribuciones "padre" que los incluyen**, el título se trae automáticamente de la hoja correspondiente con una fórmula.
+* **Todas las columnas sean de tipo "texto"** (no "número") salvo aquellas que en el modelo contienen fórmulas para asegurar que una distribución o campo documentado, sean asignados al dataset o distribución correctos.
+    - Especialmente las columnas de identificadores (Excel a veces las convierte a número cuando el identificador elegido no contiene letras u otros caracteres).
+* **La hoja "referencias" explica el código de colores** para saber qué campos son obligatorios, recomendados, opcionales o avanzados / especiales.
+* El modelo contiene comentarios en las celdas para explicar brevemente qué se debe poner en cada una, pero en esta guía se puede consultar la referencia detallada.
+
 ### Series de tiempo
+
+Si tu catálogo es un Portal Andino, revisá la sección [Publicar series de tiempo en Andino](https://datosgobar.github.io/portal-andino/time-series/).
+
+Si tu catálogo es un Excel, revisá la sección [Publicar series en la API de Series de Tiempo](https://datosgobar.github.io/series-tiempo-ar-api/publish/).
 
 #### Precisión de series con números enteros y decimales
 

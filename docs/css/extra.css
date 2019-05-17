@@ -131,7 +131,7 @@ tbody {
 
 .md-typeset .admonition,
 .md-typeset details {
-    font-size: 1.6rem
+    font-size: 1em;
 }
 
 h1 .toclink,
