@@ -231,7 +231,7 @@ El modelo Excel contiene una serie de validaciones para evitar errores en su uso
 
 Si tu catálogo es un Portal Andino, revisá la sección [Publicar series de tiempo en Andino](https://datosgobar.github.io/portal-andino/time-series/).
 
-Si tu catálogo es un Excel, revisá la sección [Publicar series en la API de Series de Tiempo](https://datosgobar.github.io/series-tiempo-ar-api/publish/).
+Si tu catálogo es un Excel, revisá la sección [Publicar series en la API de Series de Tiempo](https://datosgobar.github.io/series-tiempo-ar-api/publishers/quick_start/).
 
 #### Precisión de series con números enteros y decimales
 
