@@ -71,6 +71,13 @@
     <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/datosgobar/series-tiempo-ar-explorer@ts_components_2.6.2/dist/js/components.js'></script>
 </head>
 
+<style>
+    .panel-card-column {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+</style>
+
 
 <body role="document" class="html not-front not-logged-in no-sidebars page-node page-node- page-node-75394 node-type-book og-context og-context-node og-context-node-3 i18n-es">
     <noscript>
@@ -177,35 +184,33 @@
                                 <div class="pane-content">
                                     <h3>Secretaría de Gobierno de Modernización</h3>
                                     <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-4 panel-card-column">
                                             <a class="panel panel-default" href="#">
                                                 <div class="panel-body">
                                                     <h3>XLSX</h3>
                                                     <p class="text-muted">Catálogo en formato Excel.</p>
                                                 </div>
                                             </a>
+                                            <div id='modernizacion-datasets'></div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-4 panel-card-column">
                                             <a class="panel panel-default" href="#">
                                                 <div class="panel-body">
                                                     <h3>JSON</h3>
                                                     <p class="text-muted">Catálogo en formato JSON.</p>
                                                 </div>
                                             </a>
+                                            <div id='modernizacion-distribuciones'></div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-4 panel-card-column">
                                             <a class="panel panel-default" href="#">
                                                 <div class="panel-body">
                                                     <h3>Datos.gob.ar</h3>
                                                     <p class="text-muted">Org. en el portal nacional.</p>
                                                 </div>
                                             </a>
+                                            <div id='modernizacion-datasets-federados'></div>
                                         </div>
-                                    </div>
-                                    <div class="row ts">
-                                        <div class="col-md-3" id='modernizacion-datasets'></div>
-                                        <div class="col-md-3" id='modernizacion-distribuciones'></div>
-                                        <div class="col-md-3" id='modernizacion-datasets-federados'></div>
                                     </div>
                                     <p><strong>E-mail de contacto:</strong> <a href="mailto:datos@modernizacion.gob.ar">datos@modernizacion.gob.ar</a></p>
                                 </div>
