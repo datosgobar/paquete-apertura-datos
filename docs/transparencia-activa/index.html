@@ -219,64 +219,70 @@
                                 <div class="pane-content">
                                     <h3>Arsat</h3>
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-4 panel-card-column">
                                             <a class="panel panel-default" href="http://datos.arsat.com.ar/data.json">
                                                 <div class="panel-body">
                                                     <h3>JSON</h3>
                                                     <p class="text-muted">Catálogo en formato JSON.</p>
                                                 </div>
                                             </a>
+                                            <div id='arsat-datasets'></div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4 panel-card-column">
                                             <a class="panel panel-default" href="https://datos.gob.ar/dataset?organization=arsat">
                                                 <div class="panel-body">
                                                     <h3>Datos.gob.ar</h3>
                                                     <p class="text-muted">Org. en el portal nacional.</p>
                                                 </div>
                                             </a>
+                                            <div id='arsat-distribuciones'></div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4 panel-card-column">
                                             <a class="panel panel-default" href="http://datos.arsat.com.ar/home">
                                                 <div class="panel-body">
                                                     <h3>Portal</h3>
                                                     <p class="text-muted">Portal web del organismo.</p>
                                                 </div>
                                             </a>
+                                            <div id='arsat-datasets-federados'></div>
                                         </div>
                                     </div>
-                                    <p><strong>E-mail de contacto:</strong> <a href="mailto:datos@modernizacion.gob.ar">datos@modernizacion.gob.ar</a></p>
+                                    <p><strong>E-mail de contacto:</strong> <a href="mailto:datosabiertos@arsat.com.ar">datosabiertos@arsat.com.ar</a></p>
                                 </div>
                             </div>
                             <div class="panel-pane pane-texto">
                                 <div class="pane-content">
                                     <h3>Enacom</h3>
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-4 panel-card-column">
                                             <a class="panel panel-default" href="http://datosabiertos.enacom.gob.ar/data.json">
                                                 <div class="panel-body">
                                                     <h3>JSON</h3>
                                                     <p class="text-muted">Catálogo en formato JSON.</p>
                                                 </div>
                                             </a>
+                                            <div id='enacom-datasets'></div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4 panel-card-column">
                                             <a class="panel panel-default" href="http://datos.gob.ar/dataset?organization=enacom">
                                                 <div class="panel-body">
                                                     <h3>Datos.gob.ar</h3>
                                                     <p class="text-muted">Org. en el portal nacional.</p>
                                                 </div>
                                             </a>
+                                            <div id='enacom-distribuciones'></div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4 panel-card-column">
                                             <a class="panel panel-default" href="http://datosabiertos.enacom.gob.ar/">
                                                 <div class="panel-body">
                                                     <h3>Portal</h3>
                                                     <p class="text-muted">Portal web del organismo.</p>
                                                 </div>
                                             </a>
+                                            <div id='enacom-datasets-federados'></div>
                                         </div>
                                     </div>
-                                    <p><strong>E-mail de contacto:</strong> <a href="mailto:datos@modernizacion.gob.ar">datos@modernizacion.gob.ar</a></p>
+                                    <p><strong>E-mail de contacto:</strong> <a href="mailto:contacto@enacom.gob.ar">contacto@enacom.gob.ar</a></p>
                                 </div>
                             </div>
                         </article>
@@ -357,19 +363,19 @@
     	// COLORES SUGERIDOS "#0072BB","#2E7D33","#C62828","#F9A822","#6A1B99", "#EC407A","#C2185B","#6A1B99","#039BE5","#6EA100"
     TSComponents.Card.render('modernizacion-datasets', {    
         serieId: 'ddaa_apn_002',
-            color: '#F9A822',
-            links: 'none',
-            hasChart: "none",
-            title: "Cantidad de datasets",
+        color: '#F9A822',
+        links: 'none',
+        hasChart: "none",
+        title: "Cantidad de datasets",
         source: "",
         units: ""
     })
 
     TSComponents.Card.render('modernizacion-distribuciones', {    
         serieId: 'ddaa_apn_009',
-            links: 'none',
-            hasChart: "none",
-            title: "Cantidad de distribuciones",
+        links: 'none',
+        hasChart: "none",
+        title: "Cantidad de distribuciones",
         source: "",
         units: ""
     })
@@ -377,9 +383,67 @@
     TSComponents.Card.render('modernizacion-datasets-federados', {    
         serieId: 'ddaa_apn_005',
         color: "#6A1B99",
-            links: 'none',
-            hasChart: "none",
-            title: "Datasets federados en datos.gob.ar (%)",
+        links: 'none',
+        hasChart: "none",
+        title: "Datasets federados en datos.gob.ar (%)",
+        source: "",
+        units: ""
+    })
+
+    TSComponents.Card.render('arsat-datasets', {    
+        serieId: 'ddaa_apn_002',
+        color: '#F9A822',
+        links: 'none',
+        hasChart: "none",
+        title: "Cantidad de datasets",
+        source: "",
+        units: ""
+    })
+
+    TSComponents.Card.render('arsat-distribuciones', {    
+        serieId: 'ddaa_apn_009',
+        links: 'none',
+        hasChart: "none",
+        title: "Cantidad de distribuciones",
+        source: "",
+        units: ""
+    })
+
+    TSComponents.Card.render('arsat-datasets-federados', {    
+        serieId: 'ddaa_apn_005',
+        color: "#6A1B99",
+        links: 'none',
+        hasChart: "none",
+        title: "Datasets federados en datos.gob.ar (%)",
+        source: "",
+        units: ""
+    })
+
+    TSComponents.Card.render('enacom-datasets', {    
+        serieId: 'ddaa_apn_002',
+        color: '#F9A822',
+        links: 'none',
+        hasChart: "none",
+        title: "Cantidad de datasets",
+        source: "",
+        units: ""
+    })
+
+    TSComponents.Card.render('enacom-distribuciones', {    
+        serieId: 'ddaa_apn_009',
+        links: 'none',
+        hasChart: "none",
+        title: "Cantidad de distribuciones",
+        source: "",
+        units: ""
+    })
+
+    TSComponents.Card.render('enacom-datasets-federados', {    
+        serieId: 'ddaa_apn_005',
+        color: "#6A1B99",
+        links: 'none',
+        hasChart: "none",
+        title: "Datasets federados en datos.gob.ar (%)",
         source: "",
         units: ""
     })
