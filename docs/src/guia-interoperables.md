@@ -77,7 +77,7 @@ Consideramos a los estándares que recomendamos en este documento como suficient
 
 #### Países o territorios internacionales
 
-Los nombres y códigos de países o territorios internacionales deben seguir el estándar [ISO 3166-1](https://es.wikipedia.org/wiki/ISO_3166-1). Recomendamos que el dataset contenga un campo con el código alfabético de 3 dígitos del estándar (Código alfa-3) y otro con el nombre completo del país en español. Para esto, recomendamos usar los "Nombres de uso común" de la [lista de países y sus códigos alfa-3 que publica INDEC](http://www.indec.gov.ar/ftp/cuadros/territorio/codigo_paises.xls).
+Los nombres y códigos de países o territorios internacionales deben seguir el estándar [ISO 3166-1](https://es.wikipedia.org/wiki/ISO_3166-1). Recomendamos que el dataset contenga un campo con el código alfabético de 3 dígitos del estándar (Código alfa-3) y otro con el nombre completo del país en español. Para esto, recomendamos usar los "Nombres de uso común" de la [lista de países y sus códigos alfa-3 que publica INDEC](http://www.indec.gob.ar/ftp/cuadros/territorio/codigo_paises.xls).
 
 En esta guía, elegimos incluir los nombres de países oficiales y en castellano. Sin embargo, la denominación de los países varía de acuerdo al idioma que se utilice. Por eso, hacemos énfasis en la necesidad de incluir el código de país según el estándar ISO 3166, que es ampliamente usado por organismos internacionales.
 
