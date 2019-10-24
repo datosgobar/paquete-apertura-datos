@@ -1,8 +1,8 @@
 <head>
     <!-- INICIO estilos y JS de tarjetas de indicadores -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/datosgobar/series-tiempo-ar-explorer@ts_components_2.6.7/dist/css/components.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/datosgobar/series-tiempo-ar-explorer@ts_components_2.6.8/dist/css/components.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" type="text/css">
-    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/datosgobar/series-tiempo-ar-explorer@ts_components_2.6.7/dist/js/components.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/datosgobar/series-tiempo-ar-explorer@ts_components_2.6.8/dist/js/components.js'></script>
     <!-- FIN estilos y JS de tarjetas de indicadores -->
 </head>
 <!-- incluir bloque de style para que queden bien las tarjetas -->
@@ -12,16 +12,16 @@
     padding-right: 9px;
 }
 </style>
-<!-- INICIO bloque de indicadores de "apn" -->
-<!-- debe reemplazarse "apn" por el identificador del catálogo que corresponda -->
+<!-- INICIO bloque de indicadores de "modernizacion" -->
+<!-- debe reemplazarse "modernizacion" por el identificador del catálogo que corresponda -->
 <div class="row">
-    <div class="col-md-4 panel-card-column" id='apn-datasets'></div>
-    <div class="col-md-4 panel-card-column" id='apn-distribuciones'></div>
-    <div class="col-md-4 panel-card-column" id='apn-datasets-federados'></div>
+    <div class="col-md-4 panel-card-column" id='modernizacion-datasets'></div>
+    <div class="col-md-4 panel-card-column" id='modernizacion-distribuciones'></div>
+    <div class="col-md-4 panel-card-column" id='modernizacion-datasets-federados'></div>
 </div>
-<!-- FIN bloque de indicadores de "apn" -->
+<!-- FIN bloque de indicadores de "modernizacion" -->
 <script>
-// INICIO funciones para crear cada tipo de indicador: NO EDITAR
+// INICIO funciones para crear cada tipo de indicador: NO EDITAR!
 function datasetsIndicatorCard(catalogId) {
     TSComponents.Card.render(catalogId + '-datasets', {    
         serieId: 'ddaa_' + catalogId + '_002',
@@ -53,16 +53,17 @@ function datasetsFederadosIndicatorCard(catalogId) {
         hasChart: "none",
         title: "Datasets federados en datos.gob.ar (%)",
         source: "",
-        units: ""
+        units: "",
+        decimals: 0
     })
 }
-// FIN funciones para crear cada tipo de indicador: NO EDITAR
+// FIN funciones para crear cada tipo de indicador: NO EDITAR!
 
-// Crea indicadores para toda la "apn"
-// "apn" debe ser reemplazado por el id del catálogo que corresponda
-datasetsIndicatorCard("apn")
-distribucionesIndicatorCard("apn")
-datasetsFederadosIndicatorCard("apn")
+// Crea indicadores para "modernizacion"
+// "modernizacion" debe ser reemplazado por el id del catálogo que corresponda
+datasetsIndicatorCard("modernizacion")
+distribucionesIndicatorCard("modernizacion")
+datasetsFederadosIndicatorCard("modernizacion")
 
 // Agregar bloques de estas 3 funciones para cada catálogo adicional necesario
 // datasetsIndicatorCard("catalog_id")
