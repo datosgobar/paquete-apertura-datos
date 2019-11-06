@@ -6,7 +6,7 @@ repo_url: https://github.com/datosgobar/paquete-apertura-datos/
 
 nav:
   - Inicio: index.md
-  - Material introductorio: https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf
+  - Material introductorio: https://www.argentina.gob.ar/sites/default/files/datos_-_brochure_datos_abiertos.pdf
   - Guías de buenas prácticas:
     - Guía para la publicación de datos en formatos abiertos: guia-abiertos.md
     - Guía para la identificación y uso de entidades interoperables: guia-interoperables.md
