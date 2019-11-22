@@ -1,5 +1,7 @@
 # Guía para la identificación y uso de entidades interoperables
 
+La última versión de este documento se encuentra en https://datosgobar.github.io/paquete-apertura-datos/guia-interoperables/.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Indice

@@ -1,5 +1,7 @@
 # Guía para la publicación de datos en formatos abiertos
 
+La última versión de este documento se encuentra en https://datosgobar.github.io/paquete-apertura-datos/guia-abiertos/.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Indice

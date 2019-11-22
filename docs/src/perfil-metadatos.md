@@ -1,5 +1,7 @@
 # Perfil de Aplicación Nacional de Metadatos para Datos Abiertos
 
+La última versión de este documento se encuentra en https://datosgobar.github.io/paquete-apertura-datos/perfil-metadatos/.
+
 <center>**Metadatos del documento**</center>
 
 <table>
@@ -13,11 +15,11 @@
     </tr>
     <tr>
         <td>Fecha de publicación</td>
-        <td>TBD</td>
+        <td>2019-11-22</td>
     </tr>
     <tr>
         <td>Estado</td>
-        <td>Pendiente de aprobación</td>
+        <td>Aprobado</td>
     </tr>
     <tr>
         <td>Versión</td>
@@ -54,8 +56,8 @@
     </tr>
     <tr>
         <td>1.2</td>
-        <td>TBD</td>
-        <td>Pendiente de aprobación</td>
+        <td>2019-11-22</td>
+        <td>Aprobado</td>
     </tr>
 </table>
 
