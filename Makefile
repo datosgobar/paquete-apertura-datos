@@ -123,9 +123,9 @@ build:
 	cp -rf docs/perfil-metadatos docs/perfil_metadatos
 
 pdf:
-	mkdocs_datosgobar md2pdf docs/guia-abiertos.md docs/pdf/guia-abiertos.pdf
-	mkdocs_datosgobar md2pdf docs/guia-interoperables.md docs/pdf/guia-interoperables.pdf
-	mkdocs_datosgobar md2pdf docs/guia-metadatos.md docs/pdf/guia-metadatos.pdf
-	mkdocs_datosgobar md2pdf docs/guia-apn.md docs/pdf/guia-apn.pdf
-	mkdocs_datosgobar md2pdf docs/guia-subnacionales.md docs/pdf/guia-subnacionales.pdf
-	mkdocs_datosgobar md2pdf docs/perfil-metadatos.md docs/pdf/perfil-metadatos.pdf
+	mkdocs_datosgobar md2pdf docs/src/guia-abiertos.md docs/pdf/guia-abiertos.pdf
+	mkdocs_datosgobar md2pdf docs/src/guia-interoperables.md docs/pdf/guia-interoperables.pdf
+	mkdocs_datosgobar md2pdf docs/src/guia-metadatos.md docs/pdf/guia-metadatos.pdf
+	mkdocs_datosgobar md2pdf docs/src/guia-apn.md docs/pdf/guia-apn.pdf
+	mkdocs_datosgobar md2pdf docs/src/guia-subnacionales.md docs/pdf/guia-subnacionales.pdf
+	mkdocs_datosgobar md2pdf docs/src/perfil-metadatos.md docs/pdf/perfil-metadatos.pdf

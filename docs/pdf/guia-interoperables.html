@@ -3,6 +3,9 @@
         <h1 id="guia-para-la-identificacion-y-uso-de-entidades-interoperables">
  Guía para la identificación y uso de entidades interoperables
 </h1>
+<p>
+ La última versión de este documento se encuentra en https://datosgobar.github.io/paquete-apertura-datos/guia-interoperables/.
+</p>
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <h2 id="indice">
@@ -45,60 +48,6 @@
     <a href="#geograficas">
      Geográficas
     </a>
-    <ul>
-     <li>
-      <a href="#paises-o-territorios-internacionales">
-       Países o territorios internacionales
-      </a>
-     </li>
-     <li>
-      <a href="#divisiones-o-unidades-territoriales-internas">
-       Divisiones o unidades territoriales internas
-      </a>
-      <ul>
-       <li>
-        <a href="#a-provincias-departamentos---fracciones-censales---radios-censales-pdfr">
-         A. Provincias -&gt; Departamentos -&gt; Fracciones Censales -&gt; Radios Censales (PDFR)
-        </a>
-       </li>
-       <li>
-        <a href="#b-provincias-municipios-pm">
-         B. Provincias -&gt; Municipios (PM)
-        </a>
-       </li>
-       <li>
-        <a href="#c-provincias-departamentos---localidades-pdl">
-         C. Provincias -&gt; Departamentos -&gt; Localidades (PDL)
-        </a>
-       </li>
-       <li>
-        <a href="#d-aglomerados">
-         D. Aglomerados
-        </a>
-       </li>
-       <li>
-        <a href="#e-como-nombrar-los-campos">
-         E. ¿Cómo nombrar los campos?
-        </a>
-       </li>
-       <li>
-        <a href="#la-ciudad-autonoma-de-buenos-aires">
-         F. La Ciudad Autónoma de Buenos Aires
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li>
-      <a href="#direcciones-y-lugares">
-       Direcciones y lugares
-      </a>
-     </li>
-     <li>
-      <a href="#codigos-postales">
-       Códigos postales
-      </a>
-     </li>
-    </ul>
    </li>
    <li>
     <a href="#personas-fisicas">
@@ -337,7 +286,7 @@
   ISO 3166-1
  </a>
  . Recomendamos que el dataset contenga un campo con el código alfabético de 3 dígitos del estándar (Código alfa-3) y otro con el nombre completo del país en español. Para esto, recomendamos usar los "Nombres de uso común" de la
- <a href="http://www.indec.gov.ar/ftp/cuadros/territorio/codigo_paises.xls">
+ <a href="http://www.indec.gob.ar/ftp/cuadros/territorio/codigo_paises.xls">
   lista de países y sus códigos alfa-3 que publica INDEC
  </a>
  .
@@ -484,7 +433,7 @@
 <ul>
  <li>
   Provincias (
-  <a href="http://www.ign.gob.ar/descargas/geodatos/departamento.csv">
+  <a href="http://www.ign.gob.ar/descargas/geodatos/provincia.csv">
    CSV
   </a>
   |
@@ -555,7 +504,7 @@
  ¿Cómo se relacionan estas entidades entre sí? Veremos que estas unidades pueden ordenarse jerárquicamente de modo tal que algunas contienen a las otras, aunque no en todos los casos.  A continuación,  explicamos los conjuntos de entidades que conforman una jerarquía internamente consistente.
 </p>
 <p>
- <img alt="" src="assets/unidades_territoriales.png"/>
+ <img alt="" src="assets/images/unidades_territoriales.png"/>
 </p>
 <p>
  Este sistema de identificadores es consistente con el  usado por la Base de Asentamientos Humanos de la República Argentina (

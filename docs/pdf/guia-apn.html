@@ -40,28 +40,6 @@
     <a href="#documenta-tus-datos">
      Documentá tus datos
     </a>
-    <ul>
-     <li>
-      <a href="#que-datos-documento">
-       ¿Qué datos documento?
-      </a>
-     </li>
-     <li>
-      <a href="#tengo-datos-en-archivos-pdf">
-       Tengo datos en archivos PDF
-      </a>
-     </li>
-     <li>
-      <a href="#tengo-datos-en-tablas-html-paginas-web">
-       Tengo datos en tablas HTML (páginas web)
-      </a>
-     </li>
-     <li>
-      <a href="#tengo-presentaciones-informes-libros">
-       Tengo presentaciones, informes, libros...
-      </a>
-     </li>
-    </ul>
    </li>
    <li>
     <a href="#suma-tu-cat%C3%A1logo-a-datosgobar">
@@ -113,6 +91,18 @@
   <a href="#tenes-dudas-escribinos">
    ¿Tenés dudas? Escribinos
   </a>
+ </li>
+ <li>
+  <a href="#anexos">
+   Anexos
+  </a>
+  <ul>
+   <li>
+    <a href="#series-de-tiempo">
+     Series de tiempo
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -580,8 +570,12 @@
 </ul>
 <p>
  Te recomendamos revisar
- <a href="http://apis.datos.gob.ar/series/">
+ <a href="https://readthedocs.org/">
   Read the Docs
+ </a>
+ ,
+ <a href="https://www.mkdocs.org/">
+  Mkdocs
  </a>
  y
  <a href="https://swagger.io/">
@@ -744,6 +738,227 @@
  . También podés
  <a href="mailto:datos@modernizacion.gob.ar">
   contactarnos
+ </a>
+ .
+</p>
+<h2 id="anexos">
+ Anexos
+</h2>
+<h3 id="crear-un-catalogo-en-excel">
+ Crear un catálogo en Excel
+</h3>
+<p>
+ Para crear un catálogo en Excel:
+</p>
+<ol>
+ <li>
+  <a href="https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/catalog.xlsx">
+   <strong>
+    Descargá este modelo
+   </strong>
+  </a>
+  diseñado para cumplir con el perfil de metadatos.
+ </li>
+ <li>
+  Completá los metadatos de tus datasets, distribuciones y campos.
+ </li>
+ <li>
+  Subí el catálogo a una URL pública y comunicala al equipo de Datos Argentina.
+ </li>
+ <li>
+  Mantené siempre actualizado tu catálogo.
+ </li>
+</ol>
+<p>
+ Cada columna del Excel corresponde con un metadato que se verá en datos.gob.ar. Cuando hagas cambios en el Excel, verás los cambios reflejados en datos.gob.ar dentro de las próximas 24hs:
+</p>
+<p>
+ <img alt="" src="assets/images/mapeo_metadatos_andino_1.png"/>
+</p>
+<p>
+ El modelo Excel contiene una serie de validaciones para evitar errores en su uso, pero debe tenerse en cuenta que:
+</p>
+<ul>
+ <li>
+  En las hojas de distribución (
+  <code>
+   distribution
+  </code>
+  ) y campo (
+  <code>
+   field
+  </code>
+  )
+  <strong>
+   sólo deben asignarse los ids de los dataset o distribuciones "padre" que los incluyen
+  </strong>
+  , el título se trae automáticamente de la hoja correspondiente con una fórmula.
+ </li>
+ <li>
+  <strong>
+   Todas las columnas sean de tipo "texto"
+  </strong>
+  (no "número") salvo aquellas que en el modelo contienen fórmulas para asegurar que una distribución o campo documentado, sean asignados al dataset o distribución correctos.
+  <ul>
+   <li>
+    Especialmente las columnas de identificadores (Excel a veces las convierte a número cuando el identificador elegido no contiene letras u otros caracteres).
+   </li>
+  </ul>
+ </li>
+ <li>
+  <strong>
+   La hoja "referencias" explica el código de colores
+  </strong>
+  para saber qué campos son obligatorios, recomendados, opcionales o avanzados / especiales.
+ </li>
+ <li>
+  El modelo contiene comentarios en las celdas para explicar brevemente qué se debe poner en cada una, pero en esta guía se puede consultar la referencia detallada.
+ </li>
+</ul>
+<h3 id="series-de-tiempo">
+ Series de tiempo
+</h3>
+<p>
+ Si tu catálogo es un Portal Andino, revisá la sección
+ <a href="https://datosgobar.github.io/portal-andino/time-series/">
+  Publicar series de tiempo en Andino
+ </a>
+ .
+</p>
+<p>
+ Si tu catálogo es un Excel, revisá la sección
+ <a href="https://datosgobar.github.io/series-tiempo-ar-api/publishers/quick_start/">
+  Publicar series en la API de Series de Tiempo
+ </a>
+ .
+</p>
+<h4 id="precision-de-series-con-numeros-enteros-y-decimales">
+ Precisión de series con números enteros y decimales
+</h4>
+<p>
+ Las series deben contener valores con
+ <strong>
+  números enteros
+ </strong>
+ (
+ <code>
+  277441
+ </code>
+ ) o con
+ <strong>
+  números decimales
+ </strong>
+ (
+ <code>
+  277441.31725
+ </code>
+ ) pero no deben mezclarse dentro de la misma serie, si se desea preservar la precisión. Un número "entero" dentro de una serie decimal debe incluir
+ <code>
+  .0
+ </code>
+ al final (
+ <code>
+  277441.0
+ </code>
+ ).
+</p>
+<p>
+ Los
+ <strong>
+  números enteros
+ </strong>
+ pueden tener cualquier cantidad de cifras, mientras que los
+ <strong>
+  números decimales
+ </strong>
+ sólo pueden tener
+ <strong>
+  hasta 12 cifras en total
+ </strong>
+ , incluyendo la parte entera y la parte decimal:
+</p>
+<ul>
+ <li>
+  <code>
+   0.12345678901
+  </code>
+  está bien  (
+  <em>
+   serie decimal
+  </em>
+  )
+ </li>
+ <li>
+  <code>
+   12345678901.1
+  </code>
+  está bien  (
+  <em>
+   serie decimal
+  </em>
+  )
+ </li>
+ <li>
+  <code>
+   1234567.01234
+  </code>
+  está bien  (
+  <em>
+   serie decimal
+  </em>
+  )
+ </li>
+ <li>
+  <code>
+   0.1234567890123456789
+  </code>
+  NO está bien  (
+  <em>
+   serie decimal
+  </em>
+  )
+ </li>
+ <li>
+  <code>
+   123456789.01234567891
+  </code>
+  NO está bien  (
+  <em>
+   serie decimal
+  </em>
+  )
+ </li>
+ <li>
+  <code>
+   1234567890123456789.1
+  </code>
+  NO está bien  (
+  <em>
+   serie decimal
+  </em>
+  )
+ </li>
+ <li>
+  <code>
+   123456789123456789123
+  </code>
+  está bien (
+  <em>
+   serie entera
+  </em>
+  )
+ </li>
+</ul>
+<p>
+ Casi todos los
+ <em>
+  software
+ </em>
+ que manejan números pueden usar decimales con hasta 12 cifras sin pérdida de precisión. Si bien existe software estadístico capaz de manejar decimales con más de 12 cifras, este límite debe ser analizado en cada caso y no está garantizado por la
+ <a href="https://apis.datos.gob.ar/series">
+  <strong>
+   API de Series de Tiempo de la República Argentina
+  </strong>
  </a>
  .
 </p>
