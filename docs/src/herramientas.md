@@ -19,7 +19,7 @@
 * Herramientas para la apertura de datos
     - **pydatajson** ([Documentación](https://pydatajson.readthedocs.io/) | [Github](https://github.com/datosgobar/pydatajson)). Librería en python para analizar, generar y validar metadatos en formato data.json.
     - **monitoreo-apertura** ([Github](https://github.com/datosgobar/monitoreo-apertura)). Aplicación web para monitoreo de la red de nodos de datos abiertos de la Administración Pública Nacional.
-    - **data-cleaner** ([Documentación](https://data-cleaner.readthedocs.io/) | [Github](https://github.com/datosgobar/data-cleaner)). Librería en python para para limpieza de datos, según estándares del Equipo de Datos Argentina.
+    - **data-cleaner** ([Documentación](https://data-cleaner.readthedocs.io/) | [Github](https://github.com/datosgobar/data-cleaner)). Librería en python para limpieza de datos, según estándares del Equipo de Datos Argentina.
     - **django-datajsonar** ([Github](https://github.com/datosgobar/django-datajsonar)). Aplicación en _Django_ para administrar acciones sobre la red de nodos de catálogos, basada en el Perfil Nacional de Metadatos de la Política de Apertura de Datos.
 
 ## Servicios
