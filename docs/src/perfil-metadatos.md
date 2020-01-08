@@ -1,65 +1,8 @@
+ANEXO I
+
 # Perfil de Aplicación Nacional de Metadatos para Datos Abiertos
 
 La última versión de este documento se encuentra en https://datosgobar.github.io/paquete-apertura-datos/perfil-metadatos/.
-
-<center>**Metadatos del documento**</center>
-
-<table>
-    <tr>
-        <th>Propiedad</th>
-        <th>Valor</th>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Perfil de Aplicación Nacional de Metadatos para Datos Abiertos en Argentina Versión 1.2</td>
-    </tr>
-    <tr>
-        <td>Fecha de publicación</td>
-        <td>2019-11-22</td>
-    </tr>
-    <tr>
-        <td>Estado</td>
-        <td>Aprobado</td>
-    </tr>
-    <tr>
-        <td>Versión</td>
-        <td>1.2</td>
-    </tr>
-    <tr>
-        <td>Resumen</td>
-        <td>Este documento incorpora los cambios al perfil de metadatos desde la versión 1.1 y se separa de la guía de metadatos para su aprobación normativa.</td>
-    </tr>
-</table>
-
-<center>**Versiones**</center>
-
-<table>
-    <tr>
-        <th>Versión</th>
-        <th>Fecha</th>
-        <th>Descripción</th>
-    </tr>
-    <tr>
-        <td>0.1</td>
-        <td>2016-11-16</td>
-        <td>Primer borrador</td>
-    </tr>
-    <tr>
-        <td>1.0</td>
-        <td>2017-02-07</td>
-        <td>Publicación digital de la primer versión</td>
-    </tr>
-    <tr>
-        <td>1.1</td>
-        <td>2017-11-17</td>
-        <td>Publicación digital de la versión 1.1</td>
-    </tr>
-    <tr>
-        <td>1.2</td>
-        <td>2019-11-22</td>
-        <td>Aprobado</td>
-    </tr>
-</table>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -177,7 +120,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
   <tr>
     <td>Identificador</td>
     <td>Recomendado</td>
-    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (https://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
+    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección de Datos Públicos cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (https://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
     <td>"enacom"<br/>
     "energia"<br/>
     "desarrollo-social"<br/>
@@ -206,7 +149,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Autor</td>
     <td>Sí</td>
     <td>Responsable de la publicación del catálogo.</td>
-    <td>Secretaría de Gobierno de Modernización</td>
+    <td>Jefatura de Gabinete de Ministros</td>
     <td>publisher -> name</td>
     <td>String</td>
   </tr>
@@ -214,7 +157,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Correo electrónico del autor</td>
     <td>Sí</td>
     <td>Correo electrónico de contacto del responsable de la publicación del catálogo.</td>
-    <td>datos@modernizacion.gob.ar</td>
+    <td>datos@jgm.gob.ar</td>
     <td>publisher -> mbox</td>
     <td>String</td>
   </tr>
@@ -359,7 +302,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Autor</td>
     <td>Sí</td>
     <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (<a href="https://datos.gob.ar/dataset/jgm-estructura-organica-autoridades-poder-ejecutivo-nacional">https://datos.gob.ar/dataset/estructura-organica-pen</a>), deberá utilizarse la denominación allí documentada.</td>
-    <td>Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones.</td>
+    <td>Jefatura de Gabinete de Ministros. Secretaría de Innovación Administrativa. Oficina Nacional de Contrataciones.</td>
     <td>publisher -> name</td>
     <td>String</td>
   </tr>
@@ -367,7 +310,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Correo electrónico del autor</td>
     <td>Recomendado</td>
     <td>Correo electrónico de contacto del responsable de la publicación del dataset.</td>
-    <td>onc@modernizacion.gob.ar</td>
+    <td>onc@jgm.gob.ar</td>
     <td>publisher -> mbox</td>
     <td>String</td>
   </tr>
@@ -375,7 +318,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Área/Persona de contacto</td>
     <td>Recomendado</td>
     <td>Área/persona de contacto que puede brindar información relevante sobre el dataset.</td>
-    <td>Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.</td>
+    <td>Jefatura de Gabinete de Ministros. Secretaría de Innovación Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.</td>
     <td>contactPoint -> fn</td>
     <td>String</td>
   </tr>
@@ -383,7 +326,7 @@ El Perfil de Aplicación Nacional de Metadatos para Datos Abiertos de la Adminis
     <td>Correo electrónico del área/persona de contacto</td>
     <td>Recomendado</td>
     <td>Correo electrónico del área/persona de contacto que puede brindar información relevante sobre el dataset.</td>
-    <td>onc-compraselectronicas@modernizacion.gob.ar</td>
+    <td>onc-compraselectronicas@jgm.gob.ar</td>
     <td>contactPoint -> hasEmail</td>
     <td>String</td>
   </tr>
@@ -795,7 +738,7 @@ Especificación para documentar **distribuciones que contienen series de tiempo*
 
 La [API de Series de Tiempo de la República Argentina](https://apis.datos.gob.ar/series) puede leer cualquier distribución publicada por un organismo de la Administración Pública Nacional bajo esta especificación.
 
-La evolución de las posibilidades soportadas por esta extensión está directamente relacionada con la evolución de los sistemas desarrollados por la Dirección Nacional de Datos e Información Pública.
+La evolución de las posibilidades soportadas por esta extensión está directamente relacionada con la evolución de los sistemas desarrollados por la Dirección de Datos Públicos.
 
 ##### Distribución de series de tiempo
 
@@ -1303,8 +1246,8 @@ Este es un [ejemplo de catálogo en data.json](https://github.com/datosgobar/paq
   "title": "Datos Argentina",
   "description": "Portal de Datos Abiertos del Gobierno de la República Argentina",
   "publisher": {
-    "name": "Secretaría de Gobierno de Modernización",
-    "mbox": "datos@modernizacion.gob.ar"
+    "name": "Jefatura de Gabinete de Ministros",
+    "mbox": "datos@jgm.gob.ar"
   },
   "issued": "2016-04-14T19:48:05.433640-03:00",
   "modified": "2016-04-19T19:48:05.433640-03:00",
@@ -1353,12 +1296,12 @@ Este es un [ejemplo de catálogo en data.json](https://github.com/datosgobar/paq
       "title": "Sistema de Contrataciones Electrónicas (Argentina Compra)",
       "description": "Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Compra)",
       "publisher": {
-        "name": "Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones",
-        "mbox": "onc@modernizacion.gob.ar"
+        "name": "Jefatura de Gabinete de Ministros. Secretaría de Innovación Administrativa. Oficina Nacional de Contrataciones",
+        "mbox": "onc@jgm.gob.ar"
       },
       "contactPoint": {
-        "fn": "Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.",
-        "hasEmail": "onc-compraselectronicas@modernizacion.gob.ar"
+        "fn": "Jefatura de Gabinete de Ministros. Secretaría de Innovación Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.",
+        "hasEmail": "onc-compraselectronicas@jgm.gob.ar"
       },
       "superTheme": [
         "ECON"
@@ -1468,8 +1411,8 @@ Este es el mismo [ejemplo de catálogo en texto](https://github.com/datosgobar/p
 Portal de Datos Abiertos del Gobierno de la República Argentina
 
 * Derechos sobre el catálogo: Derechos especificados en la licencia.
-* Correo electrónico del autor: datos@modernizacion.gob.ar
-* Autor: Secretaría de Gobierno de Modernización
+* Correo electrónico del autor: datos@jgm.gob.ar
+* Autor: Jefatura de Gabinete de Ministros
 * Licencia: Creative Commons Attribution 4.0
 * Idioma(s): spa
 * Fecha de creación o publicación: 2016-04-14T19:48:05.433640-03:00
@@ -1493,8 +1436,8 @@ Portal de Datos Abiertos del Gobierno de la República Argentina
 
 Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Compra)
 
-* **Correo electrónico del autor**: onc@modernizacion.gob.ar
-* **Autor**: Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones
+* **Correo electrónico del autor**: onc@jgm.gob.ar
+* **Autor**: Jefatura de Gabinete de Ministros. Secretaría de Innovación Administrativa. Oficina Nacional de Contrataciones
 * **Página de referencias**: [https://datos.gob.ar/dataset/modernizacion-sistema-contrataciones-electronicas-argentina-comprampra)
 * **Temática(s) globales**: ECON
 * **Fecha de publicación**: 2016-04-14T19:48:05.433640-03:00
@@ -1506,8 +1449,8 @@ Datos correspondientes al Sistema de Contrataciones Electrónicas (Argentina Com
 * **Frecuencia de actualización**: R/P1Y
 * **Cobertura geográfica**: ARG
 * **Licencia**: Creative Commons Attribution 4.0
-* **Correo electrónico del área/persona de contacto**: onc-compraselectronicas@modernizacion.gob.ar
-* **Área/Persona de contacto**: Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.
+* **Correo electrónico del área/persona de contacto**: onc-compraselectronicas@jgm.gob.ar
+* **Área/Persona de contacto**: Jefatura de Gabinete de Ministros. Secretaría de Innovación Administrativa. Oficina Nacional de Contrataciones. Dirección de Compras Electrónicas.
 * **Identificador**: 99db6631-d1c9-470b-a73e-c62daa32c420
 
 *Distribuciones*

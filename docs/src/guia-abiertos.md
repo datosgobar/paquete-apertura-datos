@@ -1,3 +1,5 @@
+ANEXO II
+
 # Guía para la publicación de datos en formatos abiertos
 
 La última versión de este documento se encuentra en https://datosgobar.github.io/paquete-apertura-datos/guia-abiertos/.
@@ -37,7 +39,7 @@ Esta es **una guía de buenas prácticas para la publicación de datos en format
 Estas recomendaciones se basan en:
 
 * Estándares usados a nivel nacional e internacional.
-* La experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública de la Secretaría de Gobierno de Modernización de la Jefatura de Gabinete de Ministros de la Nación.
+* La experiencia de trabajo del equipo de la Dirección de Datos Públicos de la Jefatura de Gabinete de Ministros de la Nación.
 
 Esta es **una guía colaborativa y en progreso**. Valoramos, y alentamos, a organizaciones y ciudadanos a plantear ideas, sugerencias, y comentarios que nos ayuden a crear un mejor documento.
 
@@ -784,7 +786,7 @@ Insistimos: CSV es el formato más recomendado para la publicación de archivos 
 
 ## Estándares según el tipo de Datos
 
-El formato recomendado para los distintos tipos de datos está mayormente basado en las especificaciones de la [W3C](https://www.w3.org/TR/tabular-data-model/). En los otros casos, las recomendaciones surgen de la experiencia de trabajo del equipo de la Dirección Nacional de Datos e Información Pública y del esfuerzo realizado en la búsqueda de estándares más adecuados.
+El formato recomendado para los distintos tipos de datos está mayormente basado en las especificaciones de la [W3C](https://www.w3.org/TR/tabular-data-model/). En los otros casos, las recomendaciones surgen de la experiencia de trabajo del equipo de la Dirección de Datos Públicos y del esfuerzo realizado en la búsqueda de estándares más adecuados.
 
 ### Texto
 
