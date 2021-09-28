@@ -1352,7 +1352,7 @@
   <tr>
     <td>Identificador</td>
     <td>Recomendado</td>
-    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Nacional de Datos e Información Pública cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (https://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
+    <td>En Argentina, es el identificador único del catálogo dentro de la Red de Nodos de Datos Abiertos de la Administración Pública Nacional. Este identificador es otorgado por la Dirección Datos Abiertos cuando un nuevo nodo pide ser incorporado a la red para su federación en el nodo concentrador de datos abiertos de la APN (https://www.datos.gob.ar).<br/> <br/> El identificador debe ser una o más palabras en minúsculas, separadas con guiones medios, sin usar caracteres especiales. Identifica en forma breve, sucinta y declarativa al nodo.</td>
     <td>"enacom"<br/>
     "energia"<br/>
     "desarrollo-social"<br/>
@@ -1532,7 +1532,7 @@
   <tr>
     <td>Autor</td>
     <td>Sí</td>
-    <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (<a href="https://datos.gob.ar/dataset/jgm-estructura-organica-autoridades-poder-ejecutivo-nacional">https://datos.gob.ar/dataset/estructura-organica-pen</a>), deberá utilizarse la denominación allí documentada.</td>
+    <td>Responsable de la publicación del dataset. En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (<a href="https://datos.gob.ar/dataset/jgm-estructura-organica-autoridades-poder-ejecutivo-nacional">https://datos.gob.ar/dataset/jgm-estructura-organica-autoridades-poder-ejecutivo-nacional</a>), deberá utilizarse la denominación allí documentada.</td>
     <td>Secretaría de Gobierno de Modernización. Secretaría de Modernización Administrativa. Oficina Nacional de Contrataciones.</td>
     <td>publisher -> name</td>
     <td>String</td>
@@ -1612,7 +1612,7 @@
   <tr>
     <td>Fuente primaria</td>
     <td>No</td>
-    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/><br/> En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (https://datos.gob.ar/dataset/estructura-organica-pen), deberá utilizarse la denominación allí documentada.</td>
+    <td>Fuente original o primaria de los datos publicados en el dataset. Se utiliza cuando la entidad responsable de la publicación del dataset, no es la entidad que produce los datos.<br/><br/> En el caso de organizaciones, detallar la estructura jerárquica separada por puntos, de manera jerárquicamente descendiente. Si la organización es parte de la Administración Pública Nacional y está listada en el dataset llamado "Estructura Organica del Poder Ejecutivo Nacional" (<a href="https://datos.gob.ar/dataset/jgm-estructura-organica-autoridades-poder-ejecutivo-nacional">https://datos.gob.ar/dataset/jgm-estructura-organica-autoridades-poder-ejecutivo-nacional</a>), deberá utilizarse la denominación allí documentada.</td>
     <td>Ministerio de Hacienda. Instituto Nacional de Estadísticas y Censos. Dirección Nacional de Cuentas Nacionales.</td>
     <td>source</td>
     <td>String</td>
@@ -1763,7 +1763,7 @@
   <tr>
     <td>Formato del archivo</td>
     <td>Recomendado</td>
-    <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (https://www.iana.org/assignments/media-types/media-types.xml), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
+    <td>Indica el formato del archivo de la distribución. Si el tipo de la distribución está definido por IANA (<a href="https://www.iana.org/assignments/media-types/media-types.xml">https://www.iana.org/assignments/media-types/media-types.xml</a>), debe usarse esa definición. En caso contrario deberán ponerse los caracteres después del punto final del archivo, que determinan el formato (cuando no está definido por IANA).</td>
     <td>CSV</td>
     <td>format</td>
     <td>String</td>
@@ -1795,7 +1795,7 @@
   <tr>
     <td>Tipo de archivo</td>
     <td>No</td>
-    <td>Indica el tipo de archivo de la distribución, sólo si este está definido por IANA (https://www.iana.org/assignments/media-types/media-types.xml). En caso contrario este campo permanece vacío.</td>
+    <td>Indica el tipo de archivo de la distribución, sólo si este está definido por IANA (<a href="https://www.iana.org/assignments/media-types/media-types.xml">https://www.iana.org/assignments/media-types/media-types.xml</a>). En caso contrario este campo permanece vacío.</td>
     <td>"text/csv" definición de IANA "" cuando el formato no tiene definición en IANA</td>
     <td>mediaType</td>
     <td>String</td>
@@ -1840,7 +1840,7 @@
   <tr>
     <td>Tipo</td>
     <td>Recomendado</td>
-    <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (<a href="https://okfnlabs.org/recline/docs/models.html#types">https://okfnlabs.org/recline/docs/models.html#types</a>).
+    <td>El tipo de dato contenido en el campo según la lista utilizada por la librería recline.js (<a href="https://okfnlabs.org/projects/reclinejs/">https://okfnlabs.org/projects/reclinejs/</a>).
     <br/><br/>Los tipos incluidos en esta lista son:<br/><br/>
     string (text): Valores de texto.<br/>
     number (double, float, numeric): Números que puedan no ser enteros (incluyen decimales).<br/>
@@ -2051,7 +2051,7 @@
 
 <p>Ver ejemplo completo de una <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/series_tiempo/distributions/oferta-demanda-global-precios-constantes-desestacionalizados-base-1993-valores-anuales.csv">distribución de series de tiempo</a> en el repositorio digital de este documento.</p>
 <h5 id="tipo-especial-indice-de-tiempo"><a class="toclink" href="#tipo-especial-indice-de-tiempo">Tipo especial: indice de tiempo</a><a class="headerlink" href="#tipo-especial-indice-de-tiempo" title="Permanent link">&#128279;</a></h5>
-<p>Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando el primero de sus campos como "índice de tiempo" y aclarando la frecuencia que tiene (Ver el <a href="#anexo-iii-especificacion-de-frecuencias-segun-iso-8601">Anexo III - Especificación de frecuencias (según ISO-8601)</a>).</p>
+<p>Una distribución de series de tiempo puede ser documentada fácilmente en un catálogo especificando el primero de sus campos como "índice de tiempo" y aclarando la frecuencia que tiene (Ver el <a href="#anexo-i-especificacion-de-frecuencias">Anexo I - Especificación de frecuencias (según ISO-8601)</a>).</p>
 <p>Dentro de la variable <code>field</code> de la distribución:</p>
 <div class="codehilite"><pre><span></span>    <span class="p">{</span>
         <span class="nt">&quot;specialType&quot;</span><span class="p">:</span> <span class="s2">&quot;time_index&quot;</span><span class="p">,</span>
@@ -2160,7 +2160,7 @@ Para una frecuencia dada (anual, semestral, trimestral, mensual o diaria) donde 
 
 <h2 id="condiciones-de-cumplimiento-del-perfil"><a class="toclink" href="#condiciones-de-cumplimiento-del-perfil">Condiciones de cumplimiento del perfil</a><a class="headerlink" href="#condiciones-de-cumplimiento-del-perfil" title="Permanent link">&#128279;</a></h2>
 <h3 id="proveedores-de-metadatos"><a class="toclink" href="#proveedores-de-metadatos">Proveedores de metadatos</a><a class="headerlink" href="#proveedores-de-metadatos" title="Permanent link">&#128279;</a></h3>
-<p>Los organismos de la Administración Pública Nacional deben generar y administrar en forma permanente su propio catálogo incluyendo todos los activos de datos digitales publicados en línea bajo su autoridad, tutela o responsabilidad (ver sub-sección <a href="#activos-de-datos">"Alcance"</a> de esta sección).</p>
+<p>Los organismos de la Administración Pública Nacional deben generar y administrar en forma permanente su propio catálogo incluyendo todos los activos de datos digitales publicados en línea bajo su autoridad, tutela o responsabilidad (ver sub-sección <a href="#alcance">"Alcance"</a> de esta sección).</p>
 <p>El catálogo debe estar publicado según las pautas de este documento, en formato <a href="https://github.com/datosgobar/paquete-apertura-datos/blob/master/examples/data.json">JSON</a> o <a href="https://raw.githubusercontent.com/datosgobar/paquete-apertura-datos/master/examples/catalog.xlsx">XLSX</a> de estructura compatible.</p>
 <p>El catálogo debe publicarse en una URL que cumpla alguna de estas 3 condiciones:</p>
 <ul>
