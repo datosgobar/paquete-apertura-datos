@@ -4,7 +4,7 @@ Portal de Datos Abiertos del Gobierno de la República Argentina
 
 * **Derechos sobre el catálogo:** Derechos especificados en la licencia.
 
-* **Correo electrónico del autor**: datos@modernizacion.gob.ar
+* **Correo electrónico del autor**: datosargentina@jefatura.gob.ar
 
 * **Autor**: Ministerio de Modernización
 

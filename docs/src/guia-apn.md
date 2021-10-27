@@ -116,13 +116,13 @@ En cualquier caso, **no se espera encontrar este tipo de elementos en un catálo
 
 Leé más sobre cómo documentar tus datos en nuestra **[Guía para el uso y la publicación de metadatos](https://datosgobar.github.io/paquete-apertura-datos/guia-metadatos/)**.
 
-El [equipo de Datos](https://datosgobar.github.io/) del Ministerio de Modernización está para ayudarte en este proceso contactanos a [datos@modernizacion.gob.ar](mailto:datos@modernizacion.gob.ar) para que te asistamos en cómo hacerlo mejor y cómo planificar tus próximos pasos.
+El [equipo de Datos](https://datosgobar.github.io/) del Ministerio de Modernización está para ayudarte en este proceso contactanos a [datosargentina@jefatura.gob.ar](mailto:datosargentina@jefatura.gob.ar) para que te asistamos en cómo hacerlo mejor y cómo planificar tus próximos pasos.
 
 ### Sumá tu catálogo a datos.gob.ar
 
 Si tu catálogo cumple con el **[Perfil Nacional de Metadatos para Datos Abiertos](https://datosgobar.github.io/paquete-apertura-datos/guia-metadatos/#campos-del-perfil)** puede integrarse a datos.gob.ar. Cualquier modificación en tu catálogo se verá reflejada automáticamente en datos.gob.ar.
 
-* Escribinos a [datos@modernizacion.gob.ar](mailto:datos@modernizacion.gob.ar) con la URL de tu catálogo para que te sumemos a **[datos.gob.ar](http://datos.gob.ar)**.
+* Escribinos a [datosargentina@jefatura.gob.ar](mailto:datosargentina@jefatura.gob.ar) con la URL de tu catálogo para que te sumemos a **[datos.gob.ar](http://datos.gob.ar)**.
 * Si sos desarrollador, y querés ver si tu catalogo está listo para estar en datos.gob.ar [validalo con **pydatajson**](https://pydatajson.readthedocs.io/es/stable/MANUAL.html#validacion).
 
 A partir de que nos enviás la URL de tu catálogo, el equipo de Datos Argentina analiza cada dataset nuevo que publicás y te ayuda a mejorar la calidad de sus datos y metadatos, antes de agregarlo a **[datos.gob.ar](http://datos.gob.ar)**.
@@ -186,7 +186,7 @@ Para sumar tus series a la API:
 
 * Publicá tus indicadores o estadísticas en archivos CSV, siguiendo [este formato estándar](https://datosgobar.github.io/paquete-apertura-datos/guia-metadatos/#distribucion-de-series-de-tiempo).
 * [Documentá tus archivos CSV con series de tiempo](https://datosgobar.github.io/paquete-apertura-datos/guia-metadatos/#documentar-un-dataset-de-series-de-tiempo) en tu **catálogo de datos abiertos**.
-* [Avisanos que tu catálogo tiene series de tiempo](mailto:datos@modernizacion.gob.ar), para que lo agreguemos a la API.
+* [Avisanos que tu catálogo tiene series de tiempo](mailto:datosargentina@jefatura.gob.ar), para que lo agreguemos a la API.
 
 Si sos desarrollador, tenés tus series de tiempo en archivos Excel y es difícil convertirlos al formato estándar en CSV, podés usar el **[Scraper de Series de Tiempo](https://github.com/datosgobar/series-tiempo-ar-scraping)**.
 
@@ -202,7 +202,7 @@ Una vez que catalogaste los activos de datos que ya estaban en línea, trabajast
 
 ## ¿Tenés dudas? Escribinos
 
-Para comenzar te recomendamos leer nuestro [Kit de Datos Abiertos](https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf). También podés [contactarnos](mailto:datos@modernizacion.gob.ar).
+Para comenzar te recomendamos leer nuestro [Kit de Datos Abiertos](https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf). También podés [contactarnos](mailto:datosargentina@jefatura.gob.ar).
 
 ## Anexos
 

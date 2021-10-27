@@ -34,6 +34,6 @@ Si querés contribuir activamente con las guías o ir mirando lo que se viene en
 
 Te invitamos a [crearnos un issue](https://github.com/datosgobar/paquete-apertura-datos/issues/new) en caso de que encuentres algún bug o tengas feedback de alguna parte de `paquete-apertura-datos`.
 
-Para todo lo demás, podés mandarnos tu comentario o consulta a [datos@modernizacion.gob.ar](mailto:datos@modernizacion.gob.ar).
+Para todo lo demás, podés mandarnos tu comentario o consulta a [datosargentina@jefatura.gob.ar](mailto:datosargentina@jefatura.gob.ar).
 
 

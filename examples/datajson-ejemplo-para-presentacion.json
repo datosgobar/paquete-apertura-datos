@@ -3,7 +3,7 @@
   "description": "Portal de Datos Abiertos del Gobierno de la República Argentina",
   "publisher": {
     "name": "Ministerio de Modernización",
-    "mbox": "datos@modernizacion.gob.ar"
+    "mbox": "datosargentina@jefatura.gob.ar"
   },
   "superThemeTaxonomy": "http://datos.gob.ar/superThemeTaxonomy.json",
     "dataset": [
