@@ -1,3 +1,20 @@
+# build de mkdocs
+site/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# notebooks
 .ipynb_checkpoints
-.DS_Store
+
+# editores / SO
 .idea/
+.vscode/
+.DS_Store
+
+# backups de sed (scripts/fix_github_links.sh)
+*.bu

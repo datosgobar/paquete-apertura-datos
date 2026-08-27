@@ -27,7 +27,7 @@ import urllib.parse
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 SPECS_DIR = os.path.join(
-    PROJECT_DIR, "docs", "src", "datasets-especificaciones")
+    PROJECT_DIR, "docs", "datasets-especificaciones")
 DOCS_DOWNLOAD_URL = "https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/"
 
 STOP_WORDS = [
@@ -185,11 +185,11 @@ def generate_field_section(specs_name):
     specs_fields_xlsx = os.path.join(SPECS_DIR, specs_name + "-campos.xlsx")
     specs_fields_csv_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name + "/" + os.path.basename(specs_fields_csv)
+        os.path.basename(specs_fields_csv)
     )
     specs_fields_xlsx_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name + "/" + os.path.basename(specs_fields_xlsx)
+        os.path.basename(specs_fields_xlsx)
     )
 
     df = pd.read_csv(specs_fields_csv)
@@ -213,11 +213,11 @@ def generate_class_section(specs_name, class_explain):
     specs_class_xlsx = os.path.join(SPECS_DIR, specs_name + "-clases.xlsx")
     specs_class_csv_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name + "/" + os.path.basename(specs_class_csv)
+        os.path.basename(specs_class_csv)
     )
     specs_class_xlsx_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name + "/" + os.path.basename(specs_class_xlsx)
+        os.path.basename(specs_class_xlsx)
     )
 
     df = pd.read_csv(specs_class_csv)

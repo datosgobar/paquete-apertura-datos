@@ -87,7 +87,7 @@ hr {
 }
 
 .md-typeset .md-typeset__table table {
-    width: auto;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -131,7 +131,7 @@ tbody {
 
 .md-typeset .admonition,
 .md-typeset details {
-    font-size: 1em;
+    font-size: 1.6rem
 }
 
 h1 .toclink,
@@ -164,4 +164,5 @@ body {
 .no-recomendado {
     color: red;
 }
+
 

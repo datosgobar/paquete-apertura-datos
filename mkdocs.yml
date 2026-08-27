@@ -23,9 +23,24 @@ nav:
   - Herramientas: herramientas.md
   - Glosario: glosario.md
 
-docs_dir: docs/src
+docs_dir: docs
+plugins:
+  - search
+  # URLs legacy con guion bajo -> guion medio. Reemplaza el `cp -rf` que
+  # duplicaba el sitio entero en el Makefile.
+  - redirects:
+      redirect_maps:
+        guia_abiertos.md: guia-abiertos.md
+        guia_interoperables.md: guia-interoperables.md
+        guia_metadatos.md: guia-metadatos.md
+        guia_apn.md: guia-apn.md
+        guia_subnacionales.md: guia-subnacionales.md
+        perfil_metadatos.md: perfil-metadatos.md
+
 theme:
   name: material
+  analytics:
+    gtag: G-WFY4MZM8FP
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -42,6 +57,12 @@ theme:
 
 # # extensiones recomendadas con este theme
 markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
   - markdown.extensions.toc:
       anchorlink: true
       permalink: '&#128279;'
@@ -53,4 +74,7 @@ extra_css:
   # - css/extra_rtd.css
   - css/table_styles.css
 
-google_analytics: ['UA-91435482-1', "https://datosgobar.github.io/paquete-apertura-datos/"]
+extra:
+  analytics:
+    provider: google
+    property: UA-91435482-1
