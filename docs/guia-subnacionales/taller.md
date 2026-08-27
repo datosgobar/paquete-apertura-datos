@@ -12,10 +12,10 @@ Este documento es una guía de campo para los y las talleristas responsables de 
 - [Metodología](#metodologia)
 - [Requisitos logísticos](#requisitos-logisticos)
 - [Participantes](#participantes)
-- [Capacitación y sensibilización](#capacitacion-y-sensibilizaci%C3%B3n)
+- [Capacitación y sensibilización](#capacitacion-y-sensibilizacion)
     - [Contenidos](#contenidos)
 - [Taller de co-creación](#taller-de-co-creacion)
-    - [Contenidos](#contenidos-1)
+    - [Contenidos](#contenidos_1)
 - [Lienzo de datos abiertos](#lienzo-de-datos-abiertos)
     - [Guía de trabajo](#guia-de-trabajo)
 - [Dinámicas](#dinamicas)
@@ -104,62 +104,16 @@ IMAGEN: lienzo*
 
 ### Guía de trabajo
 
-<table>
-    <tr>
-        <th>#</th>
-        <th>Contenido</th>
-        <th>Canvas</th>
-        <th>Recursos</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Relevamiento de activos de información y detección de fuentes de datos. Niveles de digitalización y estado de los sistemas de información.</td>
-        <td>Datos</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Tipos de usuarios que podrían encontrar utilidad en los datos publicados. Actores claves dentro o fuera del gobierno.</td>
-        <td>Demanda</td>
-        <td>Cómo difundir </td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>El valor potencial detrás de los activos relevados.</td>
-        <td>Valor de la reutilización</td>
-        <td>Qué publicar</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Normativa, formatos estándares, frecuencias de publicación, licencias.</td>
-        <td>La política de apertura</td>
-        <td>Marco normativo<br>No todos los datos públicos son abiertos </td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Roles y tareas del equipo responsable de la iniciativa de apertura de datos.</td>
-        <td>El equipo</td>
-        <td>Equipo</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>La tecnología y el modelo de gestión para la iniciativa.</td>
-        <td>El portal</td>
-        <td>Plataforma de publicación</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>Acciones concretas para conectar con los potenciales reutilizadores.</td>
-        <td>Fomento de la demanda</td>
-        <td>Espacios de colaboración</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Los indicadores de éxito y los mecanismos de evaluación.</td>
-        <td>Impacto</td>
-        <td>Cómo evaluar la política </td>
-    </tr>
-</table>
+| #   | Contenido                                                    | Canvas                    | Recursos |
+| --- | ------------------------------------------------------------ | ------------------------- | ----------------------------------------------------------- |
+| 1   | Relevamiento de activos de información y detección de fuentes de datos. Niveles de digitalización y estado de los sistemas de información. | Datos                     | |
+| 2   | Tipos de usuarios que podrían encontrar utilidad en los datos publicados. Actores claves dentro o fuera del gobierno. | Demanda                   | Cómo difundir |
+| 3   | El valor potencial detrás de los activos relevados.          | Valor de la reutilización | Qué publicar |
+| 4   | Normativa, formatos estándares, frecuencias de publicación, licencias. | La política de apertura   | Marco normativo<br>No todos los datos públicos son abiertos |
+| 5   | Roles y tareas del equipo responsable de la iniciativa de apertura de datos. | El equipo                 | Equipo |
+| 6   | La tecnología y el modelo de gestión para la iniciativa.     | El portal                 | Plataforma de publicación |
+| 7   | Acciones concretas para conectar con los potenciales reutilizadores. | Fomento de la demanda     | Espacios de colaboración |
+| 8   | Los indicadores de éxito y los mecanismos de evaluación.     | Impacto                   | Cómo evaluar la política |
 
 Si sos tallerista te podés descargar una presentación modelo para ayudarte en la exposición.
 
@@ -187,100 +141,32 @@ Se recomienda finalizar el taller con la realización de un reporte de campo por
 
 [Presentación base para taller de sensibilización](https://docs.google.com/presentation/d/1cmuh7750Ruhl0DFhA3EJKI-A-7LTG2wOm-3ZsVMtyA8/edit?usp=sharing)
 
-<table>
-    <tr>
-        <th>Hora</th>
-        <th>Actividad</th>
-    </tr>
-    <tr>
-        <td>08:00</td>
-        <td>Bienvenida por parte de las autoridades</td>
-    </tr>
-    <tr>
-        <td>08:15</td>
-        <td>Dinámica de presentación (opcional)</td>
-    </tr>
-    <tr>
-        <td>08:30</td>
-        <td>Presentación general: apertura de datos en gobiernos provinciales y locales</td>
-    </tr>
-    <tr>
-        <td>09:30</td>
-        <td>Espacio de preguntas y respuestas</td>
-    </tr>
-    <tr>
-        <td>09:45</td>
-        <td>Break</td>
-    </tr>
-    <tr>
-        <td>10:00</td>
-        <td>Presentación del lienzo de datos abiertos</td>
-    </tr>
-    <tr>
-        <td>10:15</td>
-        <td>Dinámica de grupos</td>
-    </tr>
-    <tr>
-        <td>10:45</td>
-        <td>¿Qué activos de información tiene mi organismo?</td>
-    </tr>
-    <tr>
-        <td>11:30</td>
-        <td>¿Quién usará nuestros datos y qué datos abrimos primero?</td>
-    </tr>
-    <tr>
-        <td>12:30</td>
-        <td>Cierre</td>
-    </tr>
-</table>
+| Hora  | Actividad |
+| ----- | ------------------------------------------------------------ |
+| 08:00 | Bienvenida por parte de las autoridades |
+| 08:15 | Dinámica de presentación (opcional) |
+| 08:30 | Presentación general: apertura de datos en gobiernos provinciales y locales |
+| 09:30 | Espacio de preguntas y respuestas |
+| 09:45 | Break |
+| 10:00 | Presentación del lienzo de datos abiertos |
+| 10:15 | Dinámica de grupos |
+| 10:45 | ¿Qué activos de información tiene mi organismo? |
+| 11:30 | ¿Quién usará nuestros datos y qué datos abrimos primero? |
+| 12:30 | Cierre |
 
 ### Taller de Co - Creación
 
 [Presentación base para taller de co-creación](https://docs.google.com/presentation/d/1jFnqXhGl-B-BTWPIgdOHoNKbhL9221NdILDJP58ijaA/edit?usp=sharing)
 
-<table>
-    <tr>
-        <th>Hora</th>
-        <th>Actividad</th>
-    </tr>
-    <tr>
-        <td>08:00</td>
-        <td>Bienvenida</td>
-    </tr>
-    <tr>
-        <td>08:15</td>
-        <td>Presentación del lienzo de datos abiertos</td>
-    </tr>
-    <tr>
-        <td>08:30</td>
-        <td>Dinámica de grupos</td>
-    </tr>
-    <tr>
-        <td>08:45</td>
-        <td>¿Qué activos de información tiene mi organismo?</td>
-    </tr>
-    <tr>
-        <td>09:30</td>
-        <td>Break</td>
-    </tr>
-    <tr>
-        <td>10:00</td>
-        <td>Quién usará nuestros datos y qué datos abrimos primero?</td>
-    </tr>
-    <tr>
-        <td>10:45</td>
-        <td>¿Qué recursos, normas y herramientas preciso?</td>
-    </tr>
-    <tr>
-        <td>11:30</td>
-        <td>¿Cuáles son nuestros próximos pasos y cómo evaluarlos?</td>
-    </tr>
-    <tr>
-        <td>12:00</td>
-        <td>Puesta en común</td>
-    </tr>
-    <tr>
-        <td>12:30</td>
-        <td>Cierre</td>
-    </tr>
-</table>
+| Hora  | Actividad |
+| ----- | ------------------------------------------------------- |
+| 08:00 | Bienvenida |
+| 08:15 | Presentación del lienzo de datos abiertos |
+| 08:30 | Dinámica de grupos |
+| 08:45 | ¿Qué activos de información tiene mi organismo? |
+| 09:30 | Break |
+| 10:00 | Quién usará nuestros datos y qué datos abrimos primero? |
+| 10:45 | ¿Qué recursos, normas y herramientas preciso? |
+| 11:30 | ¿Cuáles son nuestros próximos pasos y cómo evaluarlos? |
+| 12:00 | Puesta en común |
+| 12:30 | Cierre |

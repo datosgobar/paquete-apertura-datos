@@ -8,7 +8,7 @@
 - [Sobre esta guía](#sobre-esta-guia)
 - [1. ¿Qué son los datos abiertos?](#1-que-son-los-datos-abiertos)
     - [Formatos reutilizables](#formatos-reutilizables)
-    - [Estándares y buenas prácticas](#estandares-y-buenas-pr%C3%A1cticas)
+    - [Estándares y buenas prácticas](#estandares-y-buenas-practicas)
     - [Licencia libre](#licencia-libre)
 - [2. ¿Qué se necesita para hacer apertura de datos?](#2-que-se-necesita-para-hacer-apertura-de-datos)
     - [Equipo](#equipo)
@@ -153,74 +153,18 @@ Las áreas de sistemas, por lo general, ayudan en los procesos de extracción y 
 
 La Iniciativa Latinoamericana por los Datos Abiertos (ILDA) desarrolló un lienzo modelo que puede ser útil en las primeras :
 
-<table>
-    <tr>
-        <th>Etapa</th>
-        <th>Acciones</th>
-        <th>Objetivo</th>
-        <th>Responsables</th>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>Concientización</td>
-        <td>Comenzar el proceso</td>
-        <td>Líder político</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Sensibilización</td>
-        <td>Sumar al liderazgo técnico y funcionariado al proyecto</td>
-        <td>Líder político/ Coordinador</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Reclutamiento</td>
-        <td>Conformar el equipo, con recursos propios o de terceros</td>
-        <td>Líder político/ Coordinador</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Capacitación</td>
-        <td>Compartir conceptos, visión y necesidades para llevar adelante la política</td>
-        <td>Equipo de datos</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Relevamiento de activos</td>
-        <td>Identificar los datos existentes, su estado y potencial de reutilización</td>
-        <td>Coordinador, Analista y Áreas de gobierno</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Priorización de apertura</td>
-        <td>Una vez identificados los datos, proyectar etapas de apertura según criterios técnicos y de reutilización</td>
-        <td>Coordinador, Analista y Áreas de gobierno</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Desarrollo del portal</td>
-        <td>Construir un espacio donde publicar los datos abiertos</td>
-        <td>Técnico/ Equipos de Soporte</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>Preparación de los datos</td>
-        <td>En paralelo con el desarrollo del portal, se deben preparar y documentar los conjuntos de datos a publicar</td>
-        <td>Técnico/ Analista y Áreas de gobierno</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Publicación del portal</td>
-        <td>Lanzamiento comunicacional de la iniciativa</td>
-        <td>Equipo de datos, Líder político y Áreas de Soporte</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>Fomento de la reutilización</td>
-        <td>Convocatoria a actores intermediarios para trabajar con los datos publicados</td>
-        <td>Técnico y Analista</td>
-    </tr>
-</table>
+| Etapa | Acciones                    | Objetivo                                                     | Responsables |
+| ----- | --------------------------- | ------------------------------------------------------------ | -------------------------------------------------- |
+| 0     | Concientización             | Comenzar el proceso                                          | Líder político |
+| 1     | Sensibilización             | Sumar al liderazgo técnico y funcionariado al proyecto       | Líder político/ Coordinador |
+| 2     | Reclutamiento               | Conformar el equipo, con recursos propios o de terceros      | Líder político/ Coordinador |
+| 3     | Capacitación                | Compartir conceptos, visión y necesidades para llevar adelante la política | Equipo de datos |
+| 4     | Relevamiento de activos     | Identificar los datos existentes, su estado y potencial de reutilización | Coordinador, Analista y Áreas de gobierno |
+| 5     | Priorización de apertura    | Una vez identificados los datos, proyectar etapas de apertura según criterios técnicos y de reutilización | Coordinador, Analista y Áreas de gobierno |
+| 6     | Desarrollo del portal       | Construir un espacio donde publicar los datos abiertos       | Técnico/ Equipos de Soporte |
+| 7     | Preparación de los datos    | En paralelo con el desarrollo del portal, se deben preparar y documentar los conjuntos de datos a publicar | Técnico/ Analista y Áreas de gobierno |
+| 8     | Publicación del portal      | Lanzamiento comunicacional de la iniciativa                  | Equipo de datos, Líder político y Áreas de Soporte |
+| 9     | Fomento de la reutilización | Convocatoria a actores intermediarios para trabajar con los datos publicados | Técnico y Analista |
 
 ### El equipo según la escala de gobierno
 
@@ -337,128 +281,34 @@ A la hora de elaborar el inventario de tu provincia o localidad, te recomendamos
 
 ### Listado de datasets recomendados
 
-<table>
-    <tr>
-        <th>Área</th>
-        <th>Conjunto de Datos</th>
-        <th>Descripción</th>
-    </tr>
-    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/nomina-funcionarios/">Nómina de funcionarios públicos y sus salarios</a></td>
-        <td>Listas de los funcionarios con referencia a la entidad a la que pertenecen, la categoría y el cargo, incluyendo pasantes y personal contratado en el marco de proyectos financiados por organismos multilaterales, detallando sus respectivas funciones y posición en el escalafón. En el caso de autoridades superiores se recomienda publicar los salarios.</td>
-    </tr>
-    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td>Declaraciones juradas</td>
-        <td>Declaración Jurada Patrimonial Integral de carácter público con su correspondiente relación a la Nómina de Funcionarios.</td>
-    </tr>
-    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/organigrama/">Organigrama</a></td>
-        <td>Organismos y entidades del estado con su estructura orgánica y funciones.</td>
-    </tr>
-    <tr>
-        <td>Economía y Finanzas</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/presupuesto/">Presupuesto</a></td>
-        <td>El presupuesto asignado a cada área, programa o función, las modificaciones durante cada ejercicio anual y el estado de ejecución actualizado en forma trimestral hasta el último nivel de desagregación en que se procese.</td>
-    </tr>
-<!--     <tr>
-        <td>Economía y Finanzas</td>
-        <td>Presupuesto de egresos</td>
-        <td>Presupuesto del gobierno municipal a un nivel alto, el gasto gubernamental previsto para el próximo año: Presupuesto por oficina de gobierno Presupuesto por sub-secretaría Descripciones de la secciones del presupuesto.</td>
-    </tr>
- -->    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/registro-proveedores/">Registro de proveedores</a></td>
-        <td>Nombre de proveedores adjudicados en contrataciones públicas, así como los socios y accionistas principales, de las sociedades o empresas proveedoras.</td>
-    </tr>
-    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/contrataciones-publicas/">Contrataciones públicas</a></td>
-        <td>Listado de todos los procesos de contratación, los procesos de contratación de obras deberían tener un enlace a sus obras, con el fin de poder agrupar todos los contratos de una obra dada (diseño, construcción, fiscalización).</td>
-    </tr>
-    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td>Pagos de las contrataciones públicas</td>
-        <td>Registros del gasto real (pasado) del gobierno municipal en un nivel transaccional detallado, incluyendo el objeto de gasto, monto y oficina gubernamental que realizó el gasto. Además sus beneficiarios.</td>
-    </tr>
-    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/servicios/">Servicios</a></td>
-        <td>Los servicios que brinda el organismo directamente al público, incluyendo normas, cartas y protocolos de atención al cliente.</td>
-    </tr>
-    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/tramites/">Trámites</a></td>
-        <td>Un índice de trámites y procedimientos que se realicen ante el organismo, así como los requisitos y criterios de asignación para acceder a las prestaciones.</td>
-    </tr>
-    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/denuncias/">Denuncias</a></td>
-        <td>Mecanismos de presentación directa de solicitudes o denuncias a disposición del público en relación a acciones u omisiones del sujeto obligado.</td>
-    </tr>
-    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/permisos/">Permisos</a></td>
-        <td>Los permisos, concesiones y autorizaciones otorgados y sus titulares.</td>
-    </tr>
-    <tr>
-        <td>Regiones y Ciudades</td>
-        <td>Límites administrativos</td>
-        <td>Datos sobre unidades administrativas o áreas definidas para el propósito de administración por el gobierno (local). Nivel de frontera 1 Nivel de frontera 2 Cordenadas (latitud y longitud) Nombre del polígono (barrio, ciudad) Bordes de los polígonos.</td>
-    </tr>
-    <tr>
-        <td>Transporte</td>
-        <td>Transporte Público</td>
-        <td>Horarios del transporte público y los recorridos de cada línea de transporte.</td>
-    </tr>
-    <tr>
-        <td>Regiones y Ciudades</td>
-        <td>Mapa</td>
-        <td>Mapa completo de la ciudad con información actualizada, listados sobre centros de salud, establecimientos educativos, centros de atención ciudadana y los espacios públicos de la ciudad.</td>
-    </tr>
-    <tr>
-        <td>Regiones y Ciudades</td>
-        <td>Catastro y dueños</td>
-        <td>Catastro de las tierras e información sobre los dueños de las mismas.</td>
-    </tr>
-    <tr>
-        <td>Justicia, Seguridad y Legales</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/normativa/">Leyes, decretos, resoluciones, ordenanzas, acordadas</a></td>
-        <td>Todas las leyes y los estatutos municipales sancionados por el Honorable Concejo Deliberante.</td>
-    </tr>
-    <tr>
-        <td>Gobierno y Sector Público</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/elecciones/">Resultados de las elecciones</a></td>
-        <td>Resultados de las últimas elecciones locales desagregadas por mesas electorales.</td>
-    </tr>
-    <tr>
-        <td>Medio ambiente</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/calidad-aire/">Calidad de aire</a></td>
-        <td>Concentración de contaminantes perjudiciales para la salud humana en agua y aire. Estaciones de monitoreo de aire y monitoreo de fuentes de agua.</td>
-    </tr>
-    <tr>
-        <td>Medio ambiente</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/calidad-agua/">Calidad de agua</a></td>
-        <td>Concentración de contaminantes perjudiciales para la salud humana en agua y aire. Estaciones de monitoreo de aire y monitoreo de fuentes de agua.</td>
-    </tr>
-    <tr>
-        <td>Justicia, Seguridad y Legales</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/crimen/">Crimen</a></td>
-        <td>Estadísticas sobre niveles de crimen o listado de los mismos.</td>
-    </tr>
-    <tr>
-        <td>Educación</td>
-        <td>Educación</td>
-        <td>Estadísticas de educación, cantidad de alumnos por aula (grado e institución), por sexo, por edad. Si se tiene estadísticas de calidad educativa, incluir.</td>
-    </tr>
-    <tr>
-        <td>Salud</td>
-        <td><a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-especificaciones/salud/">Salud</a></td>
-        <td>Disponibilidad de medicina, cantidad de pacientes atendidos por servicios de salud, etc.</td>
-    </tr>
-</table>
+| Área                          | Conjunto de Datos                                            | Descripción |
+| ----------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Gobierno y Sector Público     | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/nomina-funcionarios/">Nómina de funcionarios públicos y sus salarios</a> | Listas de los funcionarios con referencia a la entidad a la que pertenecen, la categoría y el cargo, incluyendo pasantes y personal contratado en el marco de proyectos financiados por organismos multilaterales, detallando sus respectivas funciones y posición en el escalafón. En el caso de autoridades superiores se recomienda publicar los salarios. |
+| Gobierno y Sector Público     | Declaraciones juradas                                        | Declaración Jurada Patrimonial Integral de carácter público con su correspondiente relación a la Nómina de Funcionarios. |
+| Gobierno y Sector Público     | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/organigrama/">Organigrama</a> | Organismos y entidades del estado con su estructura orgánica y funciones. |
+| Economía y Finanzas           | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/presupuesto/">Presupuesto</a> | El presupuesto asignado a cada área, programa o función, las modificaciones durante cada ejercicio anual y el estado de ejecución actualizado en forma trimestral hasta el último nivel de desagregación en que se procese. |
+| Gobierno y Sector Público     | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/registro-proveedores/">Registro de proveedores</a> | Nombre de proveedores adjudicados en contrataciones públicas, así como los socios y accionistas principales, de las sociedades o empresas proveedoras. |
+| Gobierno y Sector Público     | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/contrataciones-publicas/">Contrataciones públicas</a> | Listado de todos los procesos de contratación, los procesos de contratación de obras deberían tener un enlace a sus obras, con el fin de poder agrupar todos los contratos de una obra dada (diseño, construcción, fiscalización). |
+| Gobierno y Sector Público     | Pagos de las contrataciones públicas                         | Registros del gasto real (pasado) del gobierno municipal en un nivel transaccional detallado, incluyendo el objeto de gasto, monto y oficina gubernamental que realizó el gasto. Además sus beneficiarios. |
+| Gobierno y Sector Público     | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/servicios/">Servicios</a> | Los servicios que brinda el organismo directamente al público, incluyendo normas, cartas y protocolos de atención al cliente. |
+| Gobierno y Sector Público     | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/tramites/">Trámites</a> | Un índice de trámites y procedimientos que se realicen ante el organismo, así como los requisitos y criterios de asignación para acceder a las prestaciones. |
+| Gobierno y Sector Público     | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/denuncias/">Denuncias</a> | Mecanismos de presentación directa de solicitudes o denuncias a disposición del público en relación a acciones u omisiones del sujeto obligado. |
+| Gobierno y Sector Público     | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/permisos/">Permisos</a> | Los permisos, concesiones y autorizaciones otorgados y sus titulares. |
+| Regiones y Ciudades           | Límites administrativos                                      | Datos sobre unidades administrativas o áreas definidas para el propósito de administración por el gobierno (local). Nivel de frontera 1 Nivel de frontera 2 Cordenadas (latitud y longitud) Nombre del polígono (barrio, ciudad) Bordes de los polígonos. |
+| Transporte                    | Transporte Público                                           | Horarios del transporte público y los recorridos de cada línea de transporte. |
+| Regiones y Ciudades           | Mapa                                                         | Mapa completo de la ciudad con información actualizada, listados sobre centros de salud, establecimientos educativos, centros de atención ciudadana y los espacios públicos de la ciudad. |
+| Regiones y Ciudades           | Catastro y dueños                                            | Catastro de las tierras e información sobre los dueños de las mismas. |
+| Justicia, Seguridad y Legales | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/normativa/">Leyes, decretos, resoluciones, ordenanzas, acordadas</a> | Todas las leyes y los estatutos municipales sancionados por el Honorable Concejo Deliberante. |
+| Gobierno y Sector Público     | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/elecciones/">Resultados de las elecciones</a> | Resultados de las últimas elecciones locales desagregadas por mesas electorales. |
+| Medio ambiente                | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/calidad-aire/">Calidad de aire</a> | Concentración de contaminantes perjudiciales para la salud humana en agua y aire. Estaciones de monitoreo de aire y monitoreo de fuentes de agua. |
+| Medio ambiente                | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/calidad-agua/">Calidad de agua</a> | Concentración de contaminantes perjudiciales para la salud humana en agua y aire. Estaciones de monitoreo de aire y monitoreo de fuentes de agua. |
+| Justicia, Seguridad y Legales | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/crimen/">Crimen</a> | Estadísticas sobre niveles de crimen o listado de los mismos. |
+| Educación                     | Educación                                                    | Estadísticas de educación, cantidad de alumnos por aula (grado e institución), por sexo, por edad. Si se tiene estadísticas de calidad educativa, incluir. |
+| Salud                         | <a href="https://datosgobar.github.io/paquete-apertura-datos/datasets-sugeridos/salud/">Salud</a> | Disponibilidad de medicina, cantidad de pacientes atendidos por servicios de salud, etc. |
+
+<!-- fila desactivada:
+| Economía y Finanzas | Presupuesto de egresos | Presupuesto del gobierno municipal a un nivel alto, el gasto gubernamental previsto para el próximo año: Presupuesto por oficina de gobierno Presupuesto por sub-secretaría Descripciones de la secciones del presupuesto. |
+-->
 
 ## 4. Acercate a tu comunidad
 

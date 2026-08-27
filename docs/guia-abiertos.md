@@ -67,74 +67,18 @@ Algunos de estos formatos, no siempre se adecuan a los niveles de apertura desea
 
 En este cuadro consideramos algunos de los formatos más usados y evaluamos su nivel de apertura:
 
-<table id="left-align-col-2">
-  <tr>
-    <th>Formato</th>
-    <th>Descripción breve</th>
-    <th>Tipo de datos</th>
-    <th>Nivel de apertura</th>
-  </tr>
-  <tr>
-    <td>PDF</td>
-    <td>Los PDF son archivos de texto que no se encuentran en formato estructurado. Se utilizan para la generación de documentos, no para publicar o almacenar datos.</td>
-    <td>Texto</td>
-    <td>Muy bajo</td>
-  </tr>
-  <tr>
-    <td>XLS</td>
-    <td>Los XLS son archivos de planilla de cálculo. Es un formato propietario de Microsoft.</td>
-    <td>Tabulares</td>
-    <td>Bajo</td>
-  </tr>
-  <tr>
-    <td>XLSX</td>
-    <td>Los XLSX también son archivos de planilla de cálculo cuyo formato fue desarrollado por Microsoft pero su especificación es abierta (ISO/IEC 29500:2008). Es el formato por defecto del Excel 2007 en adelante.</td>
-    <td>Tabulares</td>
-    <td>Medio</td>
-  </tr>
-  <tr>
-    <td>ODS</td>
-    <td>Los ODS son archivos con la estructura de un XML. Es un formato abierto basado en OASIS OpenDocument Format (ISO/IEC 26300). Es el formato por defecto del procesador de planillas de cálculo Open Office.</td>
-    <td>Tabulares</td>
-    <td>Medio</td>
-  </tr>
-  <tr>
-    <td>CSV</td>
-    <td>Los archivos CSV son archivos de texto plano donde las columnas se separan por comas y las filas por saltos de línea. Es un formato abierto.</td>
-    <td>Tabulares</td>
-    <td>Alto</td>
-  </tr>
-  <tr>
-    <td>JSON</td>
-    <td>Es un formato para el intercambio de datos entre sistemas. Es un formato abierto no tabular basado en la especificación RFC 7159. </td>
-    <td style="font-size: 12px" >Estructurados</td>
-    <td>Alto</td>
-  </tr>
-  <tr>
-    <td>SHP</td>
-    <td>ESRI Shapefile (SHP) es un formato propietario de datos espaciales desarrollado por ESRI, quien crea y comercializa software para Sistemas de Información Geográfica. Actualmente se ha convertido en formato estándar de facto para el intercambio de información geográfica entre SIG.</td>
-    <td style="font-size: 12px" >Geográficos</td>
-    <td>Medio</td>
-  </tr>
-  <tr>
-    <td>KML</td>
-    <td>Es un formato abierto para datos geográficos basado en el estándar XML.</td>
-    <td style="font-size: 12px" >Geográficos</td>
-    <td>Alto</td>
-  </tr>
-  <tr>
-    <td>GEOJSON</td>
-    <td>Es un formato estándar abierto diseñado para representar elementos geográficos sencillos, junto con sus atributos no espaciales.</td>
-    <td style="font-size: 12px" >Geográficos</td>
-    <td>Alto</td>
-  </tr>
-  <tr>
-    <td>GEOPACKAGE</td>
-    <td>Es un formato de datos geoespaciales implementado como un contenedor de base de datos SQLite.</td>
-    <td style="font-size: 12px" >Geográficos</td>
-    <td>Alto</td>
-  </tr>
-</table>
+| Formato    | Descripción breve                                            | Tipo de datos | Nivel de apertura |
+| ---------- | ------------------------------------------------------------ | ------------- | ----------------- |
+| PDF        | Los PDF son archivos de texto que no se encuentran en formato estructurado. Se utilizan para la generación de documentos, no para publicar o almacenar datos. | Texto         | Muy bajo |
+| XLS        | Los XLS son archivos de planilla de cálculo. Es un formato propietario de Microsoft. | Tabulares     | Bajo |
+| XLSX       | Los XLSX también son archivos de planilla de cálculo cuyo formato fue desarrollado por Microsoft pero su especificación es abierta (ISO/IEC 29500:2008). Es el formato por defecto del Excel 2007 en adelante. | Tabulares     | Medio |
+| ODS        | Los ODS son archivos con la estructura de un XML. Es un formato abierto basado en OASIS OpenDocument Format (ISO/IEC 26300). Es el formato por defecto del procesador de planillas de cálculo Open Office. | Tabulares     | Medio |
+| CSV        | Los archivos CSV son archivos de texto plano donde las columnas se separan por comas y las filas por saltos de línea. Es un formato abierto. | Tabulares     | Alto |
+| JSON       | Es un formato para el intercambio de datos entre sistemas. Es un formato abierto no tabular basado en la especificación RFC 7159. | Estructurados | Alto |
+| SHP        | ESRI Shapefile (SHP) es un formato propietario de datos espaciales desarrollado por ESRI, quien crea y comercializa software para Sistemas de Información Geográfica. Actualmente se ha convertido en formato estándar de facto para el intercambio de información geográfica entre SIG. | Geográficos   | Medio |
+| KML        | Es un formato abierto para datos geográficos basado en el estándar XML. | Geográficos   | Alto |
+| GEOJSON    | Es un formato estándar abierto diseñado para representar elementos geográficos sencillos, junto con sus atributos no espaciales. | Geográficos   | Alto |
+| GEOPACKAGE | Es un formato de datos geoespaciales implementado como un contenedor de base de datos SQLite. | Geográficos   | Alto |
 
 Antes de seguir, introduciremos dos conceptos que se usarán a lo largo de toda la guía:
 
@@ -312,24 +256,11 @@ Los campos que sean identificadores o códigos, deberán incluir el sufijo "_id"
 
 <span class="recomendado">**Recomendado**</span>
 
-<table>
-  <tr>
-    <th>sucursal_id</th>
-    <th>sucursal_nombre</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Nueva Pompeya</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Barracas</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>La Quiaca</td>
-  </tr>
-</table>
+| sucursal_id | sucursal_nombre |
+| ----------- | --------------- |
+| 1           | Nueva Pompeya |
+| 2           | Barracas |
+| 3           | La Quiaca |
 
 
 #### Nivel de granularidad de los datos
@@ -340,92 +271,23 @@ Dicho esto, el dato agregado "convenios firmados por provincia" siempre se puede
 
 <span class="no-recomendado">**No recomendado**</span> - datos con subtotales y/o totales incluidos (diferentes niveles de granularidad)
 
-<table>
-  <colgroup>
-    <col style="width:21%">
-    <col style="width:21%">
-    <col style="width:28%">
-    <col style="width:30%">
-  </colgroup>
-  <tr>
-    <th style="font-size: 11px">provincia_nombre</th>
-    <th style="font-size: 11px">municipio_nombre</th>
-    <th style="font-size: 11px">convenios_firmados_anio</th>
-    <th style="font-size: 11px">convenios_firmados_numero</th>
-  </tr>
-  <tr>
-    <td> </td>
-    <td>Provincia X</td>
-    <td>Municipio W</td>
-    <td>2011</td>
-  </tr>
-  <tr>
-    <td>Provincia X</td>
-    <td>Municipio X</td>
-    <td>2011</td>
-    <td>15</td>
-  </tr>
-  <tr>
-    <td>Provincia X</td>
-    <td>Subtotal</td>
-    <td>2011</td>
-    <td>25</td>
-  </tr>
-  <tr>
-    <td>Provincia Y</td>
-    <td>Municipio Z</td>
-    <td>2011</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td>Provincia Y</td>
-    <td>Subtotal</td>
-    <td>2011</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>TOTAL</td>
-    <td>2011</td>
-    <td>30</td>
-  </tr>
-</table>
+| provincia_nombre | municipio_nombre | convenios_firmados_anio | convenios_firmados_numero |
+| ---------------- | ---------------- | ----------------------- | ------------------------- |
+|                  | Provincia X      | Municipio W             | 2011 |
+| Provincia X      | Municipio X      | 2011                    | 15 |
+| Provincia X      | Subtotal         | 2011                    | 25 |
+| Provincia Y      | Municipio Z      | 2011                    | 5 |
+| Provincia Y      | Subtotal         | 2011                    | 5 |
+|                  | TOTAL            | 2011                    | 30 |
 
 
 <span class="recomendado">**Recomendado**</span> - datos de un mismo nivel de granularidad
 
-<table>
-  <colgroup>
-    <col style="width:21%">
-    <col style="width:21%">
-    <col style="width:28%">
-    <col style="width:30%">
-  </colgroup>
-  <tr>
-    <th style="font-size: 11px">provincia_nombre</th>
-    <th style="font-size: 11px">municipio_nombre</th>
-    <th style="font-size: 11px">convenios_firmados_anio</th>
-    <th style="font-size: 11px">convenios_firmados_numero</th>
-  </tr>
-  <tr>
-    <td>Provincia X</td>
-    <td>Municipio W</td>
-    <td>2011</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>Provincia X</td>
-    <td>Municipio X</td>
-    <td>2011</td>
-    <td>15</td>
-  </tr>
-  <tr>
-    <td>Provincia Y</td>
-    <td>Municipio Z</td>
-    <td>2011</td>
-    <td>5</td>
-  </tr>
-</table>
+| provincia_nombre | municipio_nombre | convenios_firmados_anio | convenios_firmados_numero |
+| ---------------- | ---------------- | ----------------------- | ------------------------- |
+| Provincia X      | Municipio W      | 2011                    | 10 |
+| Provincia X      | Municipio X      | 2011                    | 15 |
+| Provincia Y      | Municipio Z      | 2011                    | 5 |
 
 
 #### Usar orientación vertical en lugar de horizontal
@@ -434,56 +296,17 @@ Es preferible que la orientación de los datos sea "vertical" en lugar de “hor
 
 <span class="no-recomendado">**No recomendado**</span> - Orientación horizontal
 
-<table>
-  <colgroup>
-    <col style="width:19%">
-    <col style="width:17%">
-    <col style="width:27%">
-    <col style="width:28%">
-  </colgroup>
-  <tr>
-    <th style="font-size: 11px">municipio_nombre</th>
-    <th style="font-size: 11px">solicitudes_anio</th>
-    <th style="font-size:11px;">solicitudes_poda_y_arbolado_numero</th>
-    <th style="font-size:11px;">solicitudes_recoleccion_residuos_numero</th>
-  </tr>
-  <tr>
-    <td>Municipalidad X</td>
-    <td>2015</td>
-    <td>340</td>
-    <td>198</td>
-</table>
+| municipio_nombre | solicitudes_anio | solicitudes_poda_y_arbolado_numero | solicitudes_recoleccion_residuos_numero |
+| ---------------- | ---------------- | ---------------------------------- | --------------------------------------- |
+| Municipalidad X  | 2015             | 340                                | 198 |
 
 
 <span class="recomendado">**Recomendado**</span> - Orientación vertical
 
-<table>
-  <colgroup>
-    <col style="width:19%">
-    <col style="width:17%">
-    <col style="width:27%">
-    <col style="width:28%">
-  </colgroup>
-
-  <tr>
-    <th style="font-size: 11px">municipio_nombre</th>
-    <th style="font-size: 11px">solicitudes_anio</th>
-    <th style="font-size:11px;">solicitudes_categoria</th>
-    <th style="font-size:11px;">solicitudes_numero</th>
-  </tr>
-  <tr>
-    <td>Municipalidad X</td>
-    <td>2015</td>
-    <td>Poda y arbolado</td>
-    <td>340</td>
-  </tr>
-  <tr>
-    <td>Municipalidad X</td>
-    <td>2015</td>
-    <td>Recolección de residuos</td>
-    <td>198</td>
-  </tr>
-</table>
+| municipio_nombre | solicitudes_anio | solicitudes_categoria   | solicitudes_numero |
+| ---------------- | ---------------- | ----------------------- | ------------------ |
+| Municipalidad X  | 2015             | Poda y arbolado         | 340 |
+| Municipalidad X  | 2015             | Recolección de residuos | 198 |
 
 
 #### Incluir sólo un atributo por campo
@@ -492,43 +315,17 @@ Se recomienda definir los campos de forma atómica de modo de incluir un sólo a
 
 <span class="no-recomendado">**No recomendado**</span> - múltiples datos en una celda
 
-<table>
-  <tr>
-    <th>municipio_nombre</th>
-    <th>solicitudes_anio</th>
-    <th style="font-size:11px;">categoria_solicitudes_numero_y_tipo</th>
-  </tr>
-  <tr>
-    <td>Municipalidad X</td>
-    <td>2015</td>
-    <td>Poda y arbolado - 340
-Recolección de residuos - 198</td>
-  </tr>
-</table>
+| municipio_nombre | solicitudes_anio | categoria_solicitudes_numero_y_tipo |
+| ---------------- | ---------------- | --------------------------------------------------- |
+| Municipalidad X  | 2015             | Poda y arbolado - 340 Recolección de residuos - 198 |
 
 
 <span class="recomendado">**Recomendado**</span> - un dato por celda
 
-<table>
-  <tr>
-    <th>municipio_nombre</th>
-    <th>solicitudes_anio</th>
-    <th>solicitudes_categoria</th>
-    <th>solicitudes_numero</th>
-  </tr>
-  <tr>
-    <td>Municipalidad X</td>
-    <td>2015</td>
-    <td>Poda y arbolado</td>
-    <td>340</td>
-  </tr>
-  <tr>
-    <td>Municipalidad X</td>
-    <td>2015</td>
-    <td>Recolección de residuos</td>
-    <td>198</td>
-  </tr>
-</table>
+| municipio_nombre | solicitudes_anio | solicitudes_categoria   | solicitudes_numero |
+| ---------------- | ---------------- | ----------------------- | ------------------ |
+| Municipalidad X  | 2015             | Poda y arbolado         | 340 |
+| Municipalidad X  | 2015             | Recolección de residuos | 198 |
 
 
 #### Valores nulos, desconocidos o en blanco en campos numéricos
@@ -541,69 +338,27 @@ Es importante destacar, por ejemplo, que cuando un valor numérico sea "0" siemp
 
 <span class="no-recomendado">**No recomendado**</span> - texto presente en campos numéricos
 
-<table id="una-columna">
-  <tr>
-    <th>solicitudes_numero</th>
-  </tr>
-  <tr>
-    <td>34</td>
-  </tr>
-  <tr>
-    <td>NA</td>
-  </tr>
-  <tr>
-  </tr>
-  <tr>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-  </tr>
-  <tr>
-    <td>567</td>
-  </tr>
-</table>
+| solicitudes_numero |
+| ------------------ |
+| 34 |
+| NA |
+| ... |
+|  |
+|  |
+| 567 |
 
 
 <span class="recomendado">**Recomendado**</span> - texto excluido de campos numéricos
 
-<table>
-  <tr>
-    <th>solicitudes_numero</th>
-    <th>solicitudes_numero_missing_nombre</th>
-  </tr>
-  <tr>
-    <td>34</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>No disponible</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>No sabe / No contesta</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Valor ausente</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Valor ausente</td>
-  </tr>
-  <tr>
-    <td>0</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>567</td>
-    <td></td>
-  </tr>
-</table>
+| solicitudes_numero | solicitudes_numero_missing_nombre |
+| ------------------ | --------------------------------- |
+| 34                 | |
+|                    | No disponible |
+|                    | No sabe / No contesta |
+|                    | Valor ausente |
+|                    | Valor ausente |
+| 0                  | |
+| 567                | |
 
 
 ### Recomendaciones para estructurar planillas de cálculo
@@ -635,18 +390,9 @@ Recomendamos usar celdas simples y, en ningún caso, combinar celdas.
 
 <span class="recomendado">**Recomendado**</span> - celdas simples, sin combinar
 
-<table>
-  <tr>
-    <th>proveedor_nombre</th>
-    <th>contacto_correo_electronico</th>
-    <th>contacto_telefono</th>
-  </tr>
-  <tr>
-    <td>Ejemplo Sociedad Anónima</td>
-    <td>ejemplo@ejemplo.com.ar</td>
-    <td>1143XXXXXX</td>
-  </tr>
-</table>
+| proveedor_nombre         | contacto_correo_electronico | contacto_telefono |
+| ------------------------ | --------------------------- | ----------------- |
+| Ejemplo Sociedad Anónima | ejemplo@ejemplo.com.ar      | 1143XXXXXX |
 
 
 #### Fila de encabezado
@@ -655,38 +401,17 @@ Los datos deben contener sólo una fila de encabezado. Desde la segunda fila en 
 
 <span class="no-recomendado">**No recomendado**</span> - múltiples filas de encabezado
 
-<table>
-  <tr>
-    <th>Nombre del</th>
-    <th>Dirección de correo</th>
-    <th>Teléfono de</th>
-  </tr>
-  <tr>
-    <td>proveedor</td>
-    <td>electrónico de contacto</td>
-    <td>contacto</td>
-  </tr>
-    <td>Ejemplo Sociedad Anónima</td>
-    <td>ejemplo@ejemplo.com.ar</td>
-    <td>1143XXXXXX</td>
-  </tr>
-</table>
+| Nombre del               | Dirección de correo     | Teléfono de |
+| ------------------------ | ----------------------- | ----------- |
+| proveedor                | electrónico de contacto | contacto |
+| Ejemplo Sociedad Anónima | ejemplo@ejemplo.com.ar  | 1143XXXXXX |
 
 
 <span class="recomendado">**Recomendado**</span> - encabezado de una única fila
 
-<table>
-  <tr>
-    <th>proveedor_nombre</th>
-    <th>contacto_correo_electronico</th>
-    <th>contacto_telefono</th>
-  </tr>
-  <tr>
-    <td>Ejemplo Sociedad Anónima</td>
-    <td>ejemplo@ejemplo.com.ar</td>
-    <td>1143XXXXXX</td>
-  </tr>
-</table>
+| proveedor_nombre         | contacto_correo_electronico | contacto_telefono |
+| ------------------------ | --------------------------- | ----------------- |
+| Ejemplo Sociedad Anónima | ejemplo@ejemplo.com.ar      | 1143XXXXXX |
 
 
 #### Celdas vacías en filas para agrupar conceptos
@@ -697,78 +422,28 @@ Este error es muy común en la construcción de planillas de cálculo y suele ge
 
 <span class="no-recomendado">**No recomendado**</span> - primera celda de la segunda fila vacía
 
-<table>
-  <tr>
-    <th>municipio_nombre</th>
-    <th>solicitudes_anio</th>
-    <th>solicitudes_categoria</th>
-    <th>solicitudes_numero</th>
-  </tr>
-  <tr>
-    <td>Municipalidad X</td>
-    <td>2015</td>
-    <td>Poda y arbolado</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>2015</td>
-    <td>Recolección de residuos</td>
-    <td>198</td>
-  </tr>
-</table>
+| municipio_nombre | solicitudes_anio | solicitudes_categoria   | solicitudes_numero |
+| ---------------- | ---------------- | ----------------------- | ------------------ |
+| Municipalidad X  | 2015             | Poda y arbolado         | |
+|                  | 2015             | Recolección de residuos | 198 |
 
 
 <span class="recomendado">**Recomendado**</span> - primera celda de la segunda fila completa
 
-<table>
-  <tr>
-    <th>municipio_nombre</th>
-    <th>solicitudes_anio</th>
-    <th>solicitudes_categoria</th>
-    <th>solicitudes_numero</th>
-  </tr>
-  <tr>
-    <td>Municipalidad X</td>
-    <td>2015</td>
-    <td>Poda y arbolado</td>
-    <td>340</td>
-  </tr>
-  <tr>
-    <td>Municipalidad X</td>
-    <td>2015</td>
-    <td>Recolección de residuos</td>
-    <td>198</td>
-  </tr>
-</table>
+| municipio_nombre | solicitudes_anio | solicitudes_categoria   | solicitudes_numero |
+| ---------------- | ---------------- | ----------------------- | ------------------ |
+| Municipalidad X  | 2015             | Poda y arbolado         | 340 |
+| Municipalidad X  | 2015             | Recolección de residuos | 198 |
 
 
 #### Formato de celdas
 
 Las celdas de una planilla de cálculo deben estar formateadas acorde al tipo de datos de que se trate. Específicamente, **los números** siempre deben estar en celdas de formato/tipo "número", **los campos de tipo textual** deben estar en celdas de formato/tipo “texto” y **los campos de tipo fecha** deben estar en celdas de formato/tipo “fecha”.
 
-<table>
-  <colgroup>
-    <col style="width:30%">
-    <col style="width:40%">
-    <col style="width:30%">
-  </colgroup>
-  <tr>
-    <th>audiencia_fecha_hora</th>
-    <th>audiencia_sujeto_obligado_nombre</th>
-    <th>audiencia_numero</th>
-  </tr>
-  <tr>
-    <td>1/3/16</td>
-    <td>Juan</td>
-    <td>3456</td>
-  </tr>
-  <tr>
-    <td>(Fecha)</td>
-    <td>(Texto)</td>
-    <td>(Número)</td>
-  </tr>
-</table>
+| audiencia_fecha_hora | audiencia_sujeto_obligado_nombre | audiencia_numero |
+| -------------------- | -------------------------------- | ---------------- |
+| 1/3/16               | Juan                             | 3456 |
+| (Fecha)              | (Texto)                          | (Número) |
 
 
 Mantener el formato correcto de las celdas según el tipo de datos que contengan:
@@ -801,43 +476,22 @@ Las entidades que aparezcan entre los datos de un campo textual deben tener una 
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table id="una-columna">
-  <tr>
-    <th>localidad_nombre</th>
-  </tr>
-  <tr>
-    <td>Ciudad Autónoma de Buenos Aires</td>
-  </tr>
-  <tr>
-    <td>CABA</td>
-  </tr>
-  <tr>
-    <td>Capital Federal</td>
-  <tr>
-    <td>Ciudad de Buenos Aires</td>
-  </tr>
-</table>
+| localidad_nombre |
+| ------------------------------- |
+| Ciudad Autónoma de Buenos Aires |
+| CABA |
+| Capital Federal |
+| Ciudad de Buenos Aires |
 
 
 <span class="recomendado">**Recomendado**</span> 
 
-<table  id="una-columna">
-  <tr>
-    <th>localidad_nombre</th>
-  </tr>
-  <tr>
-    <td>Ciudad Autónoma de Buenos Aires</td>
-  </tr>
-  <tr>
-    <td>Ciudad Autónoma de Buenos Aires</td>
-  </tr>
-  <tr>
-    <td>Ciudad Autónoma de Buenos Aires</td>
-  </tr>
-  <tr>
-    <td>Ciudad Autónoma de Buenos Aires</td>
-  </tr>
-</table>
+| localidad_nombre |
+| ------------------------------- |
+| Ciudad Autónoma de Buenos Aires |
+| Ciudad Autónoma de Buenos Aires |
+| Ciudad Autónoma de Buenos Aires |
+| Ciudad Autónoma de Buenos Aires |
 
 
 En el ejemplo anterior, los cuatro valores de texto refieren a la misma entidad. Debe elegirse una única forma de referirse a la misma y usarla en todos los casos.
@@ -881,28 +535,11 @@ A nivel internacional, el estándar para los números telefónicos fue desarroll
 
 Para el caso de los números nacionales, el ENACOM tiene la competencia sobre el sistema de numeración telefónica. Este organismo determina que el número nacional de abonado debe estar compuesto por 10 dígitos. Estos 10 dígitos están conformados por un indicativo interurbano más un número de abonado. Pudiendo el indicativo interurbano tener entre 2 y 4 dígitos, y el número de abonado entre 6 y 8 dígitos.
 
-<table>
-  <tr>
-    <th>Indicativo interurbano (ámbito geográfico al que corresponde)</th>
-    <th>Número de abonado</th>
-    <th>Número Nacional interurbano = Indicativo interurbano + Número de abonado</th>
-  </tr>
-  <tr>
-    <td>11 (AMBA)</td>
-    <td>4343XXXX</td>
-    <td>114343XXXX</td>
-  </tr>
-  <tr>
-    <td>351 (Ciudad de Córdoba)</td>
-    <td>434XXXX</td>
-    <td>351434XXXX</td>
-  </tr>
-  <tr>
-    <td>3837 (Tinogasta)</td>
-    <td>43XXXX</td>
-    <td>383743XXXX</td>
-  </tr>
-</table>
+| Indicativo interurbano (ámbito geográfico al que corresponde) | Número de abonado | Número Nacional interurbano = Indicativo interurbano + Número de abonado |
+| ------------------------------------------------------------ | ----------------- | ------------------------------------------------------------ |
+| 11 (AMBA)                                                    | 4343XXXX          | 114343XXXX |
+| 351 (Ciudad de Córdoba)                                      | 434XXXX           | 351434XXXX |
+| 3837 (Tinogasta)                                             | 43XXXX            | 383743XXXX |
 
 Esta numeración es válida para los teléfonos móviles, pero dado que para llamar a un móvil desde un teléfono fijo es necesario anteponer "15" al número de abonado, es necesario que el registro del número telefónico especifique de alguna manera si se trata de un móvil o de un teléfono fijo.
 
@@ -910,32 +547,12 @@ Al no existir estándares nacionales para la inclusión de números telefónicos
 
 <span class="no-recomendado">**No recomendado**</span> - Múltiples formas de indicar un número telefónico
 
-<table>
-  <tr>
-    <th>proveedor_nombre</th>
-    <th>contacto_correo_electronico</th>
-    <th>contacto_telefono</th>
-  </tr>
-  <tr>
-    <td>Ejemplo Sociedad Anónima</td>
-    <td>ejemplo@ejemplo.com.ar</td>
-    <td>01143XXXXXX</td>
-  </tr>
-    <td>Ejemplo2 Sociedad Anónima</td>
-    <td>ejemplo2@ejemplo2.com.ar</td>
-    <td>011-45XXXXXX</td>
-  </tr>
-  <tr>
-    <td>Ejemplo3 Sociedad Anónima</td>
-    <td>ejemplo3@ejemplo3.com.ar</td>
-    <td>351 434-XXXX</td>
-  </tr>
-  <tr>
-    <td>Ejemplo4 Sociedad Anónima</td>
-    <td>ejemplo4@ejemplo4.com.ar</td>
-    <td>011 15 6344-XXXX</td>
-  </tr>
-</table>
+| proveedor_nombre          | contacto_correo_electronico | contacto_telefono |
+| ------------------------- | --------------------------- | ----------------- |
+| Ejemplo Sociedad Anónima  | ejemplo@ejemplo.com.ar      | 01143XXXXXX |
+| Ejemplo2 Sociedad Anónima | ejemplo2@ejemplo2.com.ar    | 011-45XXXXXX |
+| Ejemplo3 Sociedad Anónima | ejemplo3@ejemplo3.com.ar    | 351 434-XXXX |
+| Ejemplo4 Sociedad Anónima | ejemplo4@ejemplo4.com.ar    | 011 15 6344-XXXX |
 
 
 Para los recursos que contengan números telefónicos nacionales recomendamos como mínimo:
@@ -948,50 +565,12 @@ Con las salvedades que comentaremos al final de este apartado, un posible aborda
 
 <span class="recomendado">**Recomendado**</span> - adecuado al estándar del Número Nacional Interurbano
 
-<table>
-  <colgroup>
-    <col style="width:16%">
-    <col style="width:22%">
-    <col style="width:18%">
-    <col style="width:26%">
-    <col style="width:18%">
-  </colgroup>
-  <tr>
-    <th>proveedor_nombre</th>
-    <th>contacto_correo_electronico</th>
-    <th>tipo_numero_telefono</th>
-    <th>contacto_telefono_indicativo_interurbano</th>
-    <th>contacto_telefono_numero_abonado</th>
-  </tr>
-  <tr>
-    <td>Ejemplo Sociedad Anónima</td>
-    <td  style="font-size:11px;">ejemplo@ejemplo.com.ar</td>
-    <td>Fijo</td>
-    <td>11</td>
-    <td>43XXXXXX</td>
-  </tr>
-  <tr>
-    <td>Ejemplo2 Sociedad Anónima</td>
-    <td style="font-size:11px;">ejemplo2@ejemplo2.com.ar</td>
-    <td>Fijo</td>
-    <td>11</td>
-    <td>45XXXXXX</td>
-  </tr>
-  <tr>
-    <td>Ejemplo3 Sociedad Anónima</td>
-    <td style="font-size:11px;">ejemplo3@ejemplo3.com.ar</td>
-    <td>Fijo</td>
-    <td>351</td>
-    <td>434XXXX</td>
-  </tr>
-  <tr>
-    <td>Ejemplo4 Sociedad Anónima</td>
-    <td style="font-size:11px;">ejemplo4@ejemplo4.com.ar</td>
-    <td>Móvil</td>
-    <td>11</td>
-    <td>6344XXXX</td>
-  </tr>
-</table>
+| proveedor_nombre          | contacto_correo_electronico | tipo_numero_telefono | contacto_telefono_indicativo_interurbano | contacto_telefono_numero_abonado |
+| ------------------------- | --------------------------- | -------------------- | ---------------------------------------- | -------------------------------- |
+| Ejemplo Sociedad Anónima  | ejemplo@ejemplo.com.ar      | Fijo                 | 11                                       | 43XXXXXX |
+| Ejemplo2 Sociedad Anónima | ejemplo2@ejemplo2.com.ar    | Fijo                 | 11                                       | 45XXXXXX |
+| Ejemplo3 Sociedad Anónima | ejemplo3@ejemplo3.com.ar    | Fijo                 | 351                                      | 434XXXX |
+| Ejemplo4 Sociedad Anónima | ejemplo4@ejemplo4.com.ar    | Móvil                | 11                                       | 6344XXXX |
 
 Esta recomendación no contempla estos casos específicos:
 
@@ -1006,30 +585,16 @@ Para registrar datos de coordenadas geográficas de puntos, usamos números deci
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table>
-  <tr>
-    <th>latitud</th>
-    <th>longitud</th>
-  </tr>
-  <tr>
-    <td>34º 11' 30''</td>
-    <td>58º 43' 20''</td>
-  </tr>
-</table>
+| latitud      | longitud |
+| ------------ | ------------ |
+| 34º 11' 30'' | 58º 43' 20'' |
 
 
 <span class="recomendado">**Recomendado**</span>
 
-<table>
-  <tr>
-    <th>latitud</th>
-    <th>longitud</th>
-  </tr>
-  <tr>
-    <td>-34.6043222</td>
-    <td>-58.4134862</td>
-  </tr>
-</table>
+| latitud     | longitud |
+| ----------- | ----------- |
+| -34.6043222 | -58.4134862 |
 
 Para datos geográficos que no sean coordenadas/puntos (por ejemplo líneas o polígonos) recomendamos su especificación en [WKT (Well Known Text)](https://www.opengeospatial.org/standards/wkt-crs). Los puntos/coordenadas también se pueden representar en WKT, pero en estos casos recomendamos utilizar latitud y longitud para representarlos.
 

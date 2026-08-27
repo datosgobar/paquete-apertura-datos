@@ -91,60 +91,17 @@ Se recomienda también que el nombre del campo del código sea "pais_id" o, en e
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table>
-<tbody>
-  <tr>
-    <td>pais_origen</td>
-    <td>pais_destino</td>
-    <td>valor_usd</td>
-  </tr>
-  <tr>
-    <td>Argentina</td>
-    <td>China</td>
-    <td>1405678</td>
-  </tr>
-  <tr>
-    <td>República Popular China</td>
-    <td>argentina</td>
-    <td>2456786</td>
-  </tr>
-</tbody>
-</table>
+| pais_origen             | pais_destino | valor_usd |
+| ----------------------- | ------------ | --------- |
+| Argentina               | China        | 1405678 |
+| República Popular China | argentina    | 2456786 |
 
 <span class="recomendado">**Recomendado**</span>
 
-<table>
- <colgroup>
-    <col style="width:18%">
-    <col style="width:22%">
-    <col style="width:18%">
-    <col style="width:24%">
-    <col style="width:18%">
-  </colgroup>
-<tbody>
-  <tr>
-    <td>origen_pais_id</td>
-    <td>origen_pais_nombre</td>
-    <td>destino_pais_id</td>
-    <td>destino_pais_nombre</td>
-    <td>valor_usd</td>
-  </tr>
-  <tr>
-    <td>ARG</td>
-    <td>Argentina</td>
-    <td>CHN</td>
-    <td>China</td>
-    <td>1405678</td>
-  </tr>
-  <tr>
-    <td>CHN</td>
-    <td>China</td>
-    <td>ARG</td>
-    <td>Argentina</td>
-    <td>2456786</td>
-  </tr>
-</tbody>
-</table>
+| origen_pais_id | origen_pais_nombre | destino_pais_id | destino_pais_nombre | valor_usd |
+| -------------- | ------------------ | --------------- | ------------------- | --------- |
+| ARG            | Argentina          | CHN             | China               | 1405678 |
+| CHN            | China              | ARG             | Argentina           | 2456786 |
 
 
 #### Divisiones o unidades territoriales internas
@@ -188,28 +145,9 @@ Para bordes de localidades el radio urbano puede bajar a 200 viviendas, aproxima
 
 Los identificadores de cada una de estas divisiones se componen, sucesivamente, así:
 
-<table id="identificadores-geograficos">
-  <tr>
-    <td><bold>Provincia</bold><br/>
-    2 dígitos<br/>
-    "06"<br/>
-    Buenos Aires
-    </td>
-    <td><bold>Departamento</bold><br/>
-    5 dígitos<br/>
-    "06007"<br/>
-    Adolfo Alsina
-    </td>
-    <td><bold>Fracción Censal</bold><br/>
-    7 dígitos<br/>
-    "0600702"
-    </td>
-    <td><bold>Radio Censal</bold><br/>
-    9 dígitos<br/>
-    "060070201"
-    </td>
-  </tr>
-</table>
+| Provincia                             | Departamento                              | Fracción Censal          | Radio Censal |
+| ------------------------------------- | ----------------------------------------- | ------------------------ | -------------------------- |
+| 2 dígitos<br/> "06"<br/> Buenos Aires | 5 dígitos<br/> "06007"<br/> Adolfo Alsina | 7 dígitos<br/> "0600702" | 9 dígitos<br/> "060070201" |
 
 * **Provincia**: 2 dígitos. Ej.: "06" es la Provincia de "Buenos Aires".
 * **Departamento** (Partido -Provincia de Buenos Aires- o Comuna -Ciudad de Buenos Aires-): 5 dígitos. - Ej.: "06007" es el Departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
@@ -221,25 +159,9 @@ Los identificadores de cada una de estas divisiones se componen, sucesivamente, 
 Las localidades censales están contenidas tanto por los departamentos como por los municipios. Para componer el identificador se deben usar los departamentos, de tal manera que los primeros 5 dígitos del identificador de una localidad corresponden al identificador del departamento que lo contiene, **los siguientes 3 dígitos son propios de la localidad**:
 
 
-<table style="width: 70%" id="identificadores-geograficos">
-  <tr>
-    <td><bold>Provincia</bold><br/>
-    2 dígitos<br/>
-    "06"<br/>
-    Buenos Aires
-    </td>
-    <td><bold>Departamento</bold><br/>
-    5 dígitos<br/>
-    "06007"<br/>
-    Adolfo Alsina
-    </td>
-    <td><bold>Localidad</bold><br/>
-    8 dígitos<br/>
-    "06007010"<br/>
-    Carhué
-    </td>
-      </tr>
-</table>
+| Provincia                             | Departamento                              | Localidad |
+| ------------------------------------- | ----------------------------------------- | ------------------------------------- |
+| 2 dígitos<br/> "06"<br/> Buenos Aires | 5 dígitos<br/> "06007"<br/> Adolfo Alsina | 8 dígitos<br/> "06007010"<br/> Carhué |
 
 * **Localidades**: 8 dígitos. - Ej.: "06007010" es la localidad "Carhué" del departamento "Adolfo Alsina" de la provincia de "Buenos Aires".
 
@@ -254,20 +176,9 @@ Sin embargo, un municipio siempre está completamente contenido por una sola pro
 Los identificadores de los municipios se componen entonces con los de las provincias, así:
 
 
-<table id="identificadores-geograficos" style="width: 50%" >
-  <tr>
-    <td><bold>Provincia</bold><br/>
-    2 dígitos<br/>
-    "14"<br/>
-    Córdoba
-    </td>
-    <td><bold>Municipio</bold><br/>
-    6 dígitos<br/>
-    "140399"<br/>
-    Camerillo
-    </td>
-  </tr>
-</table>
+| Provincia                        | Municipio |
+| -------------------------------- | -------------------------------------- |
+| 2 dígitos<br/> "14"<br/> Córdoba | 6 dígitos<br/> "140399"<br/> Camerillo |
 
 * **Municipios**: 6 dígitos. - Ej.: "140399" es el Municipio "Camerillo" de la provincia de "Córdoba".
 
@@ -276,15 +187,9 @@ Los identificadores de los municipios se componen entonces con los de las provin
 Los aglomerados están definidos como conjuntos de localidades y tienen un* id *simple de 4 dígitos (no compuesto) ya que un aglomerado puede cruzar el límite entre 2 municipios, departamentos o provincias.
 
 
-<table style="width: 30%" id="identificadores-geograficos">
-  <tr>
-    <td><bold>Aglomerado</bold><br/>
-    4 dígitos<br/>
-    "0001"<br/>
-    Gran Buenos Aires
-    </td>
-    </tr>
-</table>
+| Aglomerado |
+| -------------------------------------------- |
+| 4 dígitos<br/> "0001"<br/> Gran Buenos Aires |
 
 
 ##### E. ¿Cómo nombrar los campos?
@@ -307,73 +212,22 @@ Resaltamos la importancia de que el tipo de datos del campo de un identificador 
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table>
-<tbody>
-  <tr>
-    <td>provincia</td>
-    <td>flujo_comercial_tipo</td>
-    <td>valor_usd</td>
-  </tr>
-  <tr>
-    <td>Santiago del Estero</td>
-    <td>Exportación</td>
-    <td>1405678</td>
-  </tr>
-  <tr>
-    <td>Stgo. del Estero</td>
-    <td>Importación</td>
-    <td>2456786</td>
-  </tr>
-  <tr>
-    <td>Buenos Aires</td>
-    <td>Exportación</td>
-    <td>44949874</td>
-  </tr>
-  <tr>
-    <td>BA</td>
-    <td>Importación</td>
-    <td>44040711</td>
-  </tr>
-</tbody>
-</table>
+| provincia           | flujo_comercial_tipo | valor_usd |
+| ------------------- | -------------------- | --------- |
+| Santiago del Estero | Exportación          | 1405678 |
+| Stgo. del Estero    | Importación          | 2456786 |
+| Buenos Aires        | Exportación          | 44949874 |
+| BA                  | Importación          | 44040711 |
 
 
 <span class="recomendado">**Recomendado**</span>
 
-<table>
-<tbody>
-  <tr>
-    <td>provincia_id</td>
-    <td>provincia_nombre</td>
-    <td>flujo_comercial_tipo</td>
-    <td>valor_usd</td>
-  </tr>
-  <tr>
-    <td>86</td>
-    <td>Santiago del Estero</td>
-    <td>Exportación</td>
-    <td>1405678</td>
-  </tr>
-  <tr>
-    <td>86</td>
-    <td>Santiago del Estero</td>
-    <td>Importación</td>
-    <td>2456786</td>
-  </tr>
-  <tr>
-    <td>06</td>
-    <td>Buenos Aires</td>
-    <td>Exportación</td>
-    <td>44949874</td>
-  </tr>
-  <tr>
-    <td>06</td>
-    <td>Buenos Aires</td>
-    <td>Importación</td>
-    <td>440407</td>
-  </tr>
-</tbody>
-</table>
+| provincia_id | provincia_nombre    | flujo_comercial_tipo | valor_usd |
+| ------------ | ------------------- | -------------------- | --------- |
+| 86           | Santiago del Estero | Exportación          | 1405678 |
+| 86           | Santiago del Estero | Importación          | 2456786 |
+| 06           | Buenos Aires        | Exportación          | 44949874 |
+| 06           | Buenos Aires        | Importación          | 440407 |
 
 ##### F. La Ciudad Autónoma de Buenos Aires
 
@@ -403,106 +257,30 @@ Si el dataset incluye direcciones fuera del territorio argentino, deben además 
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table>
-
-<tbody>
-  <tr>
-    <td>lugar_nombre</td>
-    <td>calle_nombre</td>
-    <td>calle_numero</td>
-    <td>ciudad</td>
-  </tr>
-  <tr>
-    <td>Teatro Colón</td>
-    <td>Cerrito</td>
-    <td>604</td>
-    <td>Ciudad Autónoma de Buenos Aires, CABA</td>
-  </tr>
-</tbody>
-</table>
+| lugar_nombre | calle_nombre | calle_numero | ciudad |
+| ------------ | ------------ | ------------ | ------------------------------------- |
+| Teatro Colón | Cerrito      | 604          | Ciudad Autónoma de Buenos Aires, CABA |
 
 
 **Aceptable 1** - sólo dirección normalizada
 
-<table>
- <colgroup>
-    <col style="width:14%">
-    <col style="width:14%">
-    <col style="width:14%">
-    <col style="width:14%">
-     <col style="width:15%">
-    <col style="width:13%">
-    <col style="width:16%">
-  </colgroup>
-<tbody>
-  <tr>
-    <td style="font-size:11px;">lugar_nombre</td>
-    <td style="font-size:11px;">calle_nombre</td>
-    <td style="font-size:11px;">calle_numero</td>
-    <td style="font-size:11px;">localidad_id</td>
-    <td style="font-size:11px;">localidad_nombre</td>
-    <td style="font-size:11px;">provincia_id</td>
-    <td style="font-size:11px;">provincia_nombre</td>
-  </tr>
-  <tr>
-    <td>Teatro Colón</td>
-    <td>Cerrito</td>
-    <td>604</td>
-    <td>02001010</td>
-    <td style="font-size:11px;">Ciudad de Buenos Aires</td>
-    <td>02</td>
-    <td style="font-size:11px;">Ciudad Autónoma de Buenos Aires</td>
-  </tr>
-</tbody>
-</table>
+| lugar_nombre | calle_nombre | calle_numero | localidad_id | localidad_nombre       | provincia_id | provincia_nombre |
+| ------------ | ------------ | ------------ | ------------ | ---------------------- | ------------ | ------------------------------- |
+| Teatro Colón | Cerrito      | 604          | 02001010     | Ciudad de Buenos Aires | 02           | Ciudad Autónoma de Buenos Aires |
 
 
 **Aceptable 2** - sólo coordenadas
 
-<table>
-<tbody>
-  <tr>
-    <td>lugar_nombre</td>
-    <td>latitud</td>
-    <td>longitud</td>
-  </tr>
-  <tr>
-    <td>Teatro Colón</td>
-    <td>-34.601041</td>
-    <td>-58.383079</td>
-  </tr>
-</tbody>
-</table>
+| lugar_nombre | latitud    | longitud |
+| ------------ | ---------- | ---------- |
+| Teatro Colón | -34.601041 | -58.383079 |
 
 
 <span class="recomendado">**Recomendado**</span> - coordenadas y dirección normalizada
 
-<table>
-<tbody>
-  <tr>
-    <td  style="font-size:11px;">lugar_nombre</td>
-    <td style="font-size:11px;">calle_nombre</td>
-    <td style="font-size:11px;">calle_numero</td>
-    <td style="font-size:11px;">localidad_id</td>
-    <td style="font-size:11px;">localidad_nombre</td>
-    <td style="font-size:11px;">provincia_id</td>
-    <td style="font-size:11px;">provincia_nombre</td>
-    <td style="font-size:11px;">latitud</td>
-    <td style="font-size:11px;">longitud</td>
-  </tr>
-  <tr>
-    <td style="font-size:10px;">Teatro Colón</td>
-    <td style="font-size:9px;">Cerrito</td>
-    <td style="font-size:10px;">604</td>
-    <td style="font-size:10px;">02001010</td>
-    <td style="font-size:10px;">Ciudad de Buenos Aires</td>
-    <td style="font-size:10px;">02</td>
-    <td style="font-size:10px;">Ciudad Autónoma de Buenos Aires</td>
-    <td style="font-size:10px;">-34.601041</td>
-    <td style="font-size:10px;">-58.383079</td>
-  </tr>
-</tbody>
-</table>
+| lugar_nombre | calle_nombre | calle_numero | localidad_id | localidad_nombre       | provincia_id | provincia_nombre                | latitud    | longitud |
+| ------------ | ------------ | ------------ | ------------ | ---------------------- | ------------ | ------------------------------- | ---------- | ---------- |
+| Teatro Colón | Cerrito      | 604          | 02001010     | Ciudad de Buenos Aires | 02           | Ciudad Autónoma de Buenos Aires | -34.601041 | -58.383079 |
 
 
 #### Códigos postales
@@ -521,48 +299,22 @@ Ej.: C1426BMD
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table  id="una-columna">
-<tbody>
-  <tr>
-    <td>codigo_postal</td>
-  </tr>
-  <tr>
-    <td>1426</td>
-  </tr>
-  <tr>
-    <td>C 1426 BMD</td>
-  </tr>
-  <tr>
-    <td>c1426bmd</td>
-  </tr>
-  <tr>
-    <td>C1426</td>
-  </tr>
-</tbody>
-</table>
+| codigo_postal |
+| ------------- |
+| 1426 |
+| C 1426 BMD |
+| c1426bmd |
+| C1426 |
 
 
 <span class="recomendado">**Recomendado**</span>
 
-<table id="una-columna">
-<tbody>
-  <tr>
-    <td>codigo_postal</td>
-  </tr>
-  <tr>
-    <td>C1426BMD</td>
-  </tr>
-  <tr>
-    <td>C1426BMD</td>
-  </tr>
-  <tr>
-    <td>C1426BMD</td>
-  </tr>
-  <tr>
-    <td>C1426BMD</td>
-  </tr>
-</tbody>
-</table>
+| codigo_postal |
+| ------------- |
+| C1426BMD |
+| C1426BMD |
+| C1426BMD |
+| C1426BMD |
 
 
 ### Personas físicas
@@ -588,124 +340,32 @@ Tal como explicamos en el caso de países o territorios internacionales, si hubi
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table>
-<tbody>
-  <tr>
-    <td>sujeto_obligado</td>
-    <td>representante</td>
-  </tr>
-  <tr>
-    <td>José Pérez</td>
-    <td>Carlos Gómez</td>
-  </tr>
-  <tr>
-    <td>josé Pérez</td>
-    <td>Carlos J. Gómez</td>
-  </tr>
-  <tr>
-    <td>Pérez, José</td>
-    <td>Gómez, Carlos</td>
-  </tr>
-  <tr>
-    <td>Pérez, José</td>
-    <td>Gómez, Carlos J.</td>
-  </tr>
-</tbody>
-</table>
+| sujeto_obligado | representante |
+| --------------- | ---------------- |
+| José Pérez      | Carlos Gómez |
+| josé Pérez      | Carlos J. Gómez |
+| Pérez, José     | Gómez, Carlos |
+| Pérez, José     | Gómez, Carlos J. |
 
 
 **Aceptable**
 
-<table>
-<tbody>
-  <tr>
-    <td  style="font-size:11px;">sujeto_obligado_nombre</td>
-    <td style="font-size:11px;">sujeto_obligado_apellido</td>
-    <td style="font-size:11px;">representante_nombre</td>
-    <td style="font-size:11px;">representante_apellido</td>
-  </tr>
-  <tr>
-    <td>José</td>
-    <td>Pérez</td>
-    <td>Carlos Jorge</td>
-    <td>Gómez</td>
-  </tr>
-  <tr>
-    <td>José</td>
-    <td>Pérez</td>
-    <td>Carlos Jorge</td>
-    <td>Gómez</td>
-  </tr>
-  <tr>
-    <td>José</td>
-    <td>Pérez</td>
-    <td>Carlos Jorge</td>
-    <td>Gómez</td>
-  </tr>
-  <tr>
-    <td>José</td>
-    <td>Pérez</td>
-    <td>Carlos Jorge</td>
-    <td>Gómez</td>
-  </tr>
-</tbody>
-</table>
+| sujeto_obligado_nombre | sujeto_obligado_apellido | representante_nombre | representante_apellido |
+| ---------------------- | ------------------------ | -------------------- | ---------------------- |
+| José                   | Pérez                    | Carlos Jorge         | Gómez |
+| José                   | Pérez                    | Carlos Jorge         | Gómez |
+| José                   | Pérez                    | Carlos Jorge         | Gómez |
+| José                   | Pérez                    | Carlos Jorge         | Gómez |
 
 
 <span class="recomendado">**Recomendado**</span>
 
-<table>
-<colgroup>
-    <col style="width:20%">
-    <col style="width:15%">
-    <col style="width:15%">
-    <col style="width:15%">
-    <col style="width:15%">
-    <col style="width:20%">
-  </colgroup>
-  <tbody>
-  <tr>
-    <td style="font-size:10px;">sujeto_obligado_nombre</td>
-    <td style="font-size:10px;">sujeto_obligado_apellido</td>
-    <td style="font-size:10px;">sujeto_obligado_id</td>
-    <td style="font-size:10px;">sujeto_obligado_tipo_id</td>
-    <td style="font-size:10px;">sujeto_obligado_pais_id</td>
-    <td style="font-size:10px;">sujeto_obligado_pais_nombre</td>
-  </tr>
-  <tr>
-    <td>José</td>
-    <td>Pérez</td>
-    <td style="font-size:10px;">11111111</td>
-    <td>DNI</td>
-    <td>ARG</td>
-    <td>Argentina</td>
-  </tr>
-  <tr>
-    <td>José</td>
-    <td>Pérez</td>
-    <td style="font-size:10px;">11111111</td>
-    <td>DNI</td>
-    <td>ARG</td>
-    <td>Argentina</td>
-  </tr>
-  <tr>
-    <td>José</td>
-    <td>Pérez</td>
-    <td style="font-size:10px;">11111111</td>
-    <td>DNI</td>
-    <td>ARG</td>
-    <td>Argentina</td>
-  </tr>
-  <tr>
-    <td>José</td>
-    <td>Pérez</td>
-    <td style="font-size:10px;">11111111</td>
-    <td>DNI</td>
-    <td>ARG</td>
-    <td>Argentina</td>
-  </tr>
-</tbody>
-</table>
+| sujeto_obligado_nombre | sujeto_obligado_apellido | sujeto_obligado_id | sujeto_obligado_tipo_id | sujeto_obligado_pais_id | sujeto_obligado_pais_nombre |
+| ---------------------- | ------------------------ | ------------------ | ----------------------- | ----------------------- | --------------------------- |
+| José                   | Pérez                    | 11111111           | DNI                     | ARG                     | Argentina |
+| José                   | Pérez                    | 11111111           | DNI                     | ARG                     | Argentina |
+| José                   | Pérez                    | 11111111           | DNI                     | ARG                     | Argentina |
+| José                   | Pérez                    | 11111111           | DNI                     | ARG                     | Argentina |
 
 
 ### Personas jurídicas
@@ -717,53 +377,22 @@ Las entidades con personería jurídica local (Ej.: empresas argentinas, ONGs ar
 
 <span class="no-recomendado">**No recomendado**</span>
 
-<table id="una-columna">
-<tbody>
-  <tr>
-    <td>exportador</td>
-  </tr>
-  <tr>
-    <td>Los Tomates Andinos</td>
-  </tr>
-  <tr>
-    <td>Los Tomates</td>
-  </tr>
-  <tr>
-    <td>Los Tomates Andinos SRL</td>
-  </tr>
-  <tr>
-    <td>Tomates Andinos</td>
-  </tr>
-</tbody>
-</table>
+| exportador |
+| ----------------------- |
+| Los Tomates Andinos |
+| Los Tomates |
+| Los Tomates Andinos SRL |
+| Tomates Andinos |
 
 
 <span class="recomendado">**Recomendado**</span>
 
-<table>
-<tbody>
-  <tr>
-    <td>exportador_cuit</td>
-    <td>exportador_razon_social</td>
-  </tr>
-  <tr>
-    <td>33111111117</td>
-    <td>Los Tomates Andinos SRL</td>
-  </tr>
-  <tr>
-    <td >33111111117</td>
-    <td>Los Tomates Andinos SRL</td>
-  </tr>
-  <tr>
-    <td >33111111117</td>
-    <td>Los Tomates Andinos SRL</td>
-  </tr>
-  <tr>
-    <td >33111111117</td>
-    <td>Los Tomates Andinos SRL</td>
-  </tr>
-</tbody>
-</table>
+| exportador_cuit | exportador_razon_social |
+| --------------- | ----------------------- |
+| 33111111117     | Los Tomates Andinos SRL |
+| 33111111117     | Los Tomates Andinos SRL |
+| 33111111117     | Los Tomates Andinos SRL |
+| 33111111117     | Los Tomates Andinos SRL |
 
 
 Si el dataset sólo contiene personas jurídicas registradas en la jurisdicción argentina, el enfoque recomendado para nombrar los campos es el de agregar "_cuit" y "_razon_social" ya que es una nomenclatura específica mucho más descriptiva para el usuario que "_id" y "_nombre". Da cuenta del tipo de "_id" de que se trate y del tipo de descripción asociada.
@@ -780,52 +409,12 @@ En el caso de que el dataset pueda contener personas jurídicas fuera de la juri
 
 <span class="recomendado">**Recomendado**</span>
 
-<table>
- <colgroup>
-    <col style="width:20%">
-    <col style="width:20%">
-    <col style="width:17%">
-    <col style="width:20%">
-    <col style="width:23%">
-  </colgroup>
-<tbody>
-  <tr>
-    <td>inversor_id</td>
-    <td>inversor_tipo_id</td>
-    <td>inversor_nombre</td>
-    <td>inversor_pais_id</td>
-    <td>inversor_pais_nombre</td>
-  </tr>
-  <tr>
-    <td style="font-size:11px;">33111111117</td>
-    <td>CUIT</td>
-    <td>Los Tomates Andinos SRL</td>
-    <td>ARG</td>
-    <td>Argentina</td>
-  </tr>
-  <tr>
-    <td style="font-size:11px;">33111111117</td>
-    <td>CUIT</td>
-    <td>Los Tomates Andinos SRL</td>
-    <td>ARG</td>
-    <td>Argentina</td>
-  </tr>
-  <tr>
-    <td style="font-size:11px;">1234567890</td>
-    <td>TIN</td>
-    <td>Tomatoes Inc.</td>
-    <td>USA</td>
-    <td>Estados Unidos</td>
-  </tr>
-  <tr>
-    <td style="font-size:11px;">987654321</td>
-    <td>Steuer-Id</td>
-    <td>Tomate</td>
-    <td>DEU</td>
-    <td>Alemania</td>
-  </tr>
-</tbody>
-</table>
+| inversor_id | inversor_tipo_id | inversor_nombre         | inversor_pais_id | inversor_pais_nombre |
+| ----------- | ---------------- | ----------------------- | ---------------- | -------------------- |
+| 33111111117 | CUIT             | Los Tomates Andinos SRL | ARG              | Argentina |
+| 33111111117 | CUIT             | Los Tomates Andinos SRL | ARG              | Argentina |
+| 1234567890  | TIN              | Tomatoes Inc.           | USA              | Estados Unidos |
+| 987654321   | Steuer-Id        | Tomate                  | DEU              | Alemania |
 
 
 Dependiendo de la forma de recolección de los datos, la temática particular del dataset y las capacidades del organismo responsable del mantenimiento del activo de datos, puede ser difícil la recolección comprehensible de "_id" y "_tipo_id" de las personas jurídicas de jurisdicción extranjera. Por eso, estos campos pueden llegar a quedar frecuentemente en blanco (valor ausente). Sin embargo, recomendamos con especial énfasis registrar el nombre ("_nombre") de la entidad en cuestión y el país bajo cuya jurisdicción se encuentra.

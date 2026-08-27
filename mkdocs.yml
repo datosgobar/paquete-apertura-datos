@@ -11,7 +11,7 @@ nav:
     - Guía para la publicación de datos en formatos abiertos: guia-abiertos.md
     - Guía para la identificación y uso de entidades interoperables: guia-interoperables.md
     - Guía para el uso y la publicación de metadatos: guia-metadatos.md
-    - "Datasets sugeridos: especificaciones": datasets-especificaciones.md
+    - Datasets sugeridos: datasets-sugeridos.md
   - Guías de implementación:
     - Guía para la apertura de datos en organismos de la Administración Pública Nacional: guia-apn.md
     - Guía para la apertura de datos en gobiernos provinciales y locales: guia-subnacionales.md
@@ -36,11 +36,29 @@ plugins:
         guia_apn.md: guia-apn.md
         guia_subnacionales.md: guia-subnacionales.md
         perfil_metadatos.md: perfil-metadatos.md
+        datasets-especificaciones.md: datasets-sugeridos.md
+        datasets-especificaciones/calidad-agua.md: datasets-sugeridos/calidad-agua.md
+        datasets-especificaciones/calidad-aire.md: datasets-sugeridos/calidad-aire.md
+        datasets-especificaciones/contrataciones-publicas.md: datasets-sugeridos/contrataciones-publicas.md
+        datasets-especificaciones/crimen.md: datasets-sugeridos/crimen.md
+        datasets-especificaciones/declaraciones-juradas.md: datasets-sugeridos/declaraciones-juradas.md
+        datasets-especificaciones/denuncias.md: datasets-sugeridos/denuncias.md
+        datasets-especificaciones/elecciones.md: datasets-sugeridos/elecciones.md
+        datasets-especificaciones/nomina-funcionarios.md: datasets-sugeridos/nomina-funcionarios.md
+        datasets-especificaciones/normativa.md: datasets-sugeridos/normativa.md
+        datasets-especificaciones/organigrama.md: datasets-sugeridos/organigrama.md
+        datasets-especificaciones/permisos.md: datasets-sugeridos/permisos.md
+        datasets-especificaciones/presupuesto-ingresos.md: datasets-sugeridos/presupuesto-ingresos.md
+        datasets-especificaciones/presupuesto.md: datasets-sugeridos/presupuesto.md
+        datasets-especificaciones/registro-proveedores.md: datasets-sugeridos/registro-proveedores.md
+        datasets-especificaciones/salud.md: datasets-sugeridos/salud.md
+        datasets-especificaciones/servicios.md: datasets-sugeridos/servicios.md
+        datasets-especificaciones/template.md: datasets-sugeridos/template.md
+        datasets-especificaciones/tramites.md: datasets-sugeridos/tramites.md
 
 theme:
   name: material
-  analytics:
-    gtag: G-WFY4MZM8FP
+  logo: assets/images/Logo_Datos.svg
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -57,6 +75,7 @@ theme:
 
 # # extensiones recomendadas con este theme
 markdown_extensions:
+  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -70,11 +89,7 @@ markdown_extensions:
   - codehilite
   - admonition
 
-extra_css:
-  # - css/extra_rtd.css
-  - css/table_styles.css
-
 extra:
   analytics:
     provider: google
-    property: UA-91435482-1
+    property: G-WFY4MZM8FP
