@@ -47,6 +47,6 @@ make help      # el resto de los comandos
 
 Te invitamos a [crearnos un issue](https://github.com/datosgobar/paquete-apertura-datos/issues/new) en caso de que encuentres algún bug o tengas feedback de alguna parte de `paquete-apertura-datos`.
 
-Para todo lo demás, podés mandarnos tu comentario o consulta a [datosargentina@jefatura.gob.ar](mailto:datosargentina@jefatura.gob.ar).
+Para todo lo demás, podés mandarnos tu comentario o consulta a [datosargentina@sicyt.gob.ar](mailto:datosargentina@sicyt.gob.ar).
 
 
