@@ -1,0 +1,47 @@
+---
+title: Paquete de Apertura de Datos de la República Argentina
+template: splash
+tableOfContents: false
+editUrl: false
+prev: false
+next: false
+hero:
+  actions:
+    - text: Empezar
+      link: /paquete-apertura-datos/empezar/
+      icon: right-arrow
+    - text: Herramientas
+      link: /paquete-apertura-datos/herramientas/
+      variant: secondary
+    - text: Glosario
+      link: /paquete-apertura-datos/glosario/
+      variant: secondary
+  tagline: Conjunto de guías y herramientas desarrolladas para facilitar la apertura de datos de organismos de la Administración Pública Nacional argentina, así como de gobiernos provinciales y locales.
+---
+import SeccionGuias from '../../components/SeccionGuias.astro';
+
+{/* Mismo texto y enlaces que docs/index.md; solo cambia el formato. */}
+
+<SeccionGuias titulo="Guías de buenas prácticas" items={[
+  { titulo: 'Guía para la publicación de datos en formatos abiertos', slug: 'guia-abiertos' },
+  { titulo: 'Guía para la identificación y uso de entidades interoperables', slug: 'guia-interoperables' },
+  { titulo: 'Guía para el uso y la publicación de metadatos', slug: 'guia-metadatos' },
+]} />
+
+<SeccionGuias titulo="Guías de implementación" items={[
+  { titulo: 'Guía para la apertura de datos en organismos de la Administración Pública Nacional', slug: 'guia-apn' },
+  { titulo: 'Guía para la apertura de datos en gobiernos provinciales y locales', slug: 'guia-subnacionales' },
+]} />
+
+<SeccionGuias titulo="Marco legal" variante="lista" items={[
+  { titulo: 'Decreto 117/2016 "Plan de Apertura de Datos"', slug: 'decreto-117-2016' },
+  { titulo: 'Perfil de Aplicación Nacional de Metadatos para Datos Abiertos', slug: 'perfil-metadatos' },
+]} />
+
+<div class="colabora">
+
+Tanto las guías como las herramientas desarrolladas para implementar la apertura de datos son un trabajo colaborativo y en progreso. Valoramos e invitamos a todas las organizaciones y ciudadanos a plantear ideas, sugerencias y comentarios que contribuyan a crear mejores documentos y mejores herramientas.
+
+Podés colaborar con las guías cargando un nuevo issue, o respondiendo a un issue ya existente. Lo mismo te invitamos a hacer en el repositorio correspondiente de cada herramienta.
+
+</div>

@@ -1,6 +1,0 @@
-nombre,descripcion
-Convocatoria,Atributos del proceso que abre una institución pública en el que declara la necesidad de adquirir bienes o servicios y las condiciones para recibir ofertas de terceros que los provean.
-Adjudicación,"Atributos de la adjudicación del proceso de compra a un tercero que previamente ofertó en la etapa de convocatoria, y cuya oferta fue elegida."
-Contrato,Atributos del instrumento contractual firmado por las partes para legalizar las condiciones de provisión de los bienes o servicios adquiridos.
-Transacción,Atributos de las transacciones realizadas en el cumplimiento del contrato firmado para la provisión de bienes y servicios.
-Item,Atributos de los items adquiridos en las transacciones entre el proveedor y la institución pública compradora.

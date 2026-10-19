@@ -1,4 +1,0 @@
-organizacion_id,organizacion_nombre,organizacion_clasificacion,puesto_id,puesto_nombre,puesto_rol,puesto_salario_moneda,puesto_salario,miembro_fecha_ingreso,miembro_fecha_egreso,miembro_contacto,miembro_representando,miembro_area_geografica,persona_id,persona_nombre,persona_genero,persona_fecha_nacimiento,persona_cv,persona_enlaces,persona_email,persona_contacto,persona_otros_ingresos_descripcion,persona_otros_ingresos_moneda,persona_otros_ingresos
-2,Presidencia de la República,Poder Ejecutivo,1,Intendente,Intendente,"https://en.wikipedia.org/wiki/ISO_4217
- https://www.currency-iso.org/en/home/tables/table-a1.html",190000,aaaa-mm-dd,aaaa-mm-dd,"Dirección, Telefonos, Correo institucional",Nombre de organización,Gualeguay,DNI,,Ver codigos en: https://github.com/idatosabiertos/femicidios-latam/blob/master/docs/introduccion.md,aaaa-mm-dd,,Bio en LinkedIn,,,,"https://en.wikipedia.org/wiki/ISO_4217
- https://www.currency-iso.org/en/home/tables/table-a1.html",

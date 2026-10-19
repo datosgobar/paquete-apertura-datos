@@ -26,9 +26,10 @@ from unidecode import unidecode
 import urllib.parse
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-SPECS_DIR = os.path.join(
-    PROJECT_DIR, "docs", "src", "datasets-especificaciones")
-DOCS_DOWNLOAD_URL = "https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-especificaciones/"
+# Planillas descargables (las sirve el sitio desde public/) y páginas de cada especificación.
+SPECS_DIR = os.path.join(PROJECT_DIR, "public", "datasets-sugeridos")
+SPECS_MD_DIR = os.path.join(PROJECT_DIR, "src", "content", "docs", "datasets-sugeridos")
+DOCS_DOWNLOAD_URL = "/paquete-apertura-datos/datasets-sugeridos/"
 
 STOP_WORDS = [
     "el", "la", "los", "las",
@@ -38,48 +39,28 @@ STOP_WORDS = [
 ]
 
 
-def _df_cols_to_th(df):
-    th_cols = ["        <th>{}</th>".format(col) for col in df.columns]
-    return "\n".join(th_cols)
+def _md_cell(value):
+    """Una celda de tabla markdown: en una sola linea y con los | escapados."""
+    return re.sub(r"\s+", " ", str(value)).strip().replace("|", "\\|")
 
 
-def _df_rows_to_tr(df):
-
-    td_rows = []
-    for row in df.iterrows():
-        td_row = "\n        ".join([
-            "<td>{}</td>".format(element)
-            for element in list(row[1])
-        ])
-        td_rows.append(td_row)
-
-    tr_rows = [
-        """
-    <tr>
-        {}
-    </tr>
-        """.format(td_row) for td_row in td_rows
-    ]
-
-    return "".join(tr_rows)
-
-
-def df_to_html(df):
-
+def df_to_markdown(df, tope=60):
+    """Tabla markdown alineada. El padding se topea porque hay celdas de 1400+
+    caracteres: alinear a eso da lineas de 1700 casi todas espacios."""
     df = df.fillna("")
+    filas = [[_md_cell(c) for c in df.columns]]
+    filas += [[_md_cell(v) for v in row] for row in df.itertuples(index=False)]
+    ancho = [max(3, min(max(len(f[k]) for f in filas), tope))
+             for k in range(len(filas[0]))]
 
-    html = """
-<table>
-    <tr>
-{columns}
-    </tr>
-{rows}
-</table>""".format(
-        columns=_df_cols_to_th(df),
-        rows=_df_rows_to_tr(df)
-    )
+    def linea(cs):
+        return "| " + " | ".join(c.ljust(ancho[k]) for k, c in enumerate(cs)).rstrip() + " |"
 
-    return html
+    out = [linea(filas[0]), "| " + " | ".join("-" * a for a in ancho) + " |"]
+    out += [linea(f) for f in filas[1:]]
+    # las lineas en blanco alrededor son obligatorias: sin ellas python-markdown
+    # se sigue comiendo lo que venga despues como parte de la tabla
+    return "\n" + "\n".join(out) + "\n"
 
 
 def generate_specs_tables(df, resource_field="recurso"):
@@ -87,7 +68,7 @@ def generate_specs_tables(df, resource_field="recurso"):
 
     for recurso in df[resource_field].unique():
         text_elements.append("### Recurso: {}".format(recurso.ljust(10)))
-        text_elements.append(df_to_html(
+        text_elements.append(df_to_markdown(
             df[df.recurso == recurso].drop("recurso", axis=1)
         ))
 
@@ -100,8 +81,7 @@ def get_example_from_fields(df, filename):
     df_transposed = df_transposed.drop("titulo")
 
     df_transposed.to_csv(filename, encoding="utf8", index=False)
-    df_transposed.to_excel(filename.replace(
-        ".csv", ".xlsx"), encoding="utf8", index=False)
+    df_transposed.to_excel(filename.replace(".csv", ".xlsx"), index=False)
 
     return df_transposed
 
@@ -157,7 +137,7 @@ def generate_example(df, specs_name, resource_field="recurso"):
             example_filename_url,
             example_filename_url.replace(".csv", ".xlsx")
         ))
-        text_elements.append(df_to_html(
+        text_elements.append(df_to_markdown(
             get_example_from_fields(
                 df[df.recurso == recurso].drop("recurso", axis=1),
                 example_filename
@@ -185,15 +165,15 @@ def generate_field_section(specs_name):
     specs_fields_xlsx = os.path.join(SPECS_DIR, specs_name + "-campos.xlsx")
     specs_fields_csv_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name + "/" + os.path.basename(specs_fields_csv)
+        os.path.basename(specs_fields_csv)
     )
     specs_fields_xlsx_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name + "/" + os.path.basename(specs_fields_xlsx)
+        os.path.basename(specs_fields_xlsx)
     )
 
     df = pd.read_csv(specs_fields_csv)
-    df.to_excel(specs_fields_xlsx, encoding="utf8", index=False)
+    df.to_excel(specs_fields_xlsx, index=False)
 
     fields_section = """## Campos
 
@@ -213,15 +193,15 @@ def generate_class_section(specs_name, class_explain):
     specs_class_xlsx = os.path.join(SPECS_DIR, specs_name + "-clases.xlsx")
     specs_class_csv_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name + "/" + os.path.basename(specs_class_csv)
+        os.path.basename(specs_class_csv)
     )
     specs_class_xlsx_url = urllib.parse.urljoin(
         DOCS_DOWNLOAD_URL,
-        specs_name + "/" + os.path.basename(specs_class_xlsx)
+        os.path.basename(specs_class_xlsx)
     )
 
     df = pd.read_csv(specs_class_csv)
-    df.to_excel(specs_class_xlsx, encoding="utf8", index=False)
+    df.to_excel(specs_class_xlsx, index=False)
 
     class_section = """## Clases
 
@@ -233,7 +213,7 @@ Descargar clases en **[CSV]({})** | **[XLSX]({})**
         class_explain,
         specs_class_csv_url,
         specs_class_xlsx_url,
-        df_to_html(df)
+        df_to_markdown(df)
     )
 
     return class_section
@@ -338,7 +318,7 @@ def update_dataset_specs(specs_name, config="config-specs.json"):
     md_field = generate_field_section(specs_name)
 
     # reemplaza las secciones viejas por las nuevas
-    specs_md_file = os.path.join(SPECS_DIR, specs_name + ".md")
+    specs_md_file = os.path.join(SPECS_MD_DIR, specs_name + ".md")
     with open(specs_md_file, "r") as f:
         specs_md = f.read()
 

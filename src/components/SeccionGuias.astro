@@ -1,0 +1,47 @@
+---
+// Sección de la portada. `temas`: cada guía con sus secciones principales (sus propios h2).
+// `lista`: solo los títulos. Los textos vienen de la portada (index.mdx) y de las guías.
+import { getEntry, render } from 'astro:content';
+
+interface Props {
+	titulo: string;
+	variante?: 'temas' | 'lista';
+	items: { titulo: string; slug: string }[];
+}
+const { titulo, variante = 'temas', items } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Fuera del índice: intro, créditos, cierre y anexos.
+const RELLENO = /^(introducción|objetivo|glosario|agradecimientos|sobre esta guía|anexo|¿tenés dudas|reflexiones)/i;
+const guias = await Promise.all(items.map(async (it) => {
+	const { headings } = variante === 'temas' ? await render((await getEntry('docs', it.slug))!) : { headings: [] };
+	return { ...it, href: `${base}/${it.slug}/`, temas: headings.filter((h) => h.depth === 2 && !RELLENO.test(h.text)) };
+}));
+---
+<section class:list={['sg not-content', variante]}>
+	<h2>{titulo}</h2>
+	{variante === 'lista' ? (
+		<ul class="grid">{guias.map((g) => <li><a class="nombre" href={g.href}>{g.titulo}</a></li>)}</ul>
+	) : (
+		<div class="grid">
+			{guias.map((g) => (
+				<div>
+					<a class="nombre" href={g.href}>{g.titulo}</a>
+					<ul>{g.temas.map((t) => <li><a href={`${g.href}#${t.slug}`}>{t.text}</a></li>)}</ul>
+				</div>
+			))}
+		</div>
+	)}
+</section>
+
+<style>
+	.sg { margin-top: 3rem; }
+	.sg h2 { margin: 0 0 1.25rem; font-size: 1.35rem; font-weight: 700; color: var(--sl-color-white); border: 0; }
+	.sg ul { list-style: none; margin: 0; padding: 0; }
+	.sg a { color: var(--sl-color-gray-1); text-decoration: none; }
+	.sg a:hover { color: var(--sl-color-text-accent); text-decoration: underline; text-underline-offset: 0.2em; }
+	.grid { display: grid; gap: 2rem 2.5rem; }
+	@media (min-width: 50rem) { .grid { grid-template-columns: repeat(3, 1fr); } }
+	.nombre { display: block; padding-bottom: 0.75rem; margin-bottom: 0.5rem; border-bottom: 2px solid var(--sl-color-white); font-weight: 700; line-height: 1.35; }
+	.temas li a { display: block; padding: 0.3rem 0; font-size: 0.9rem; color: var(--sl-color-gray-2); }
+</style>
