@@ -11,12 +11,16 @@ import sys
 
 import markdown
 import pdfkit
+import re
 import shutil
+
+PDF_CSS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pdf.css")
 
 
 def main(input_path, output_path):
     with open(input_path) as input_file:
-        html = markdown.markdown(input_file.read())
+        # saca el frontmatter de Starlight (--- title: ... ---)
+        html = markdown.markdown(re.sub(r"\A---\n.*?\n---\n", "", input_file.read(), flags=re.S))
 
         # guarda html
         with open(output_path.replace(".pdf", ".html"), "wb") as output_html:
@@ -25,13 +29,13 @@ def main(input_path, output_path):
             """ + html
             output_html.write(html_with_style.encode("utf-8"))
             shutil.copyfile(
-                "docs/css/pdf.css",
+                PDF_CSS,
                 os.path.join(os.path.dirname(output_path), "pdf.css")
             )
 
         # guarda pdf
         pdfkit.from_string(html, output_path, options={"encoding": "utf8"},
-                           css="docs/css/pdf.css")
+                           css=PDF_CSS)
 
 
 if __name__ == '__main__':

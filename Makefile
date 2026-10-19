@@ -1,30 +1,27 @@
-.PHONY: help serve build pdf specs doctoc clean
+.PHONY: help install serve build pdf specs clean
 .DEFAULT_GOAL := help
+
+GUIAS := guia-abiertos guia-interoperables guia-metadatos guia-apn guia-subnacionales perfil-metadatos
 
 help: ## muestra esta ayuda
 	@grep -hE '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
 		awk 'BEGIN {FS = ":.*?## "}; {printf "%-12s %s\n", $$1, $$2}'
 
-serve: ## levanta el sitio en local con recarga automatica
-	mkdocs serve
+install: ## instala las dependencias del sitio (Node) y de los scripts (Python)
+	npm ci
+	pip install -r requirements.txt
 
-build: ## construye el sitio estatico en site/
-	mkdocs build
+serve: ## levanta el sitio en local con recarga automatica
+	npm run dev
+
+build: ## construye el sitio estatico en dist/
+	npm run build
 
 clean: ## borra el sitio construido
-	rm -rf site/
+	rm -rf dist/ .astro/
 
-pdf: ## genera los PDF de las guias en docs/pdf/
-	mkdocs_datosgobar md2pdf docs/guia-abiertos.md docs/pdf/guia-abiertos.pdf
-	mkdocs_datosgobar md2pdf docs/guia-interoperables.md docs/pdf/guia-interoperables.pdf
-	mkdocs_datosgobar md2pdf docs/guia-metadatos.md docs/pdf/guia-metadatos.pdf
-	mkdocs_datosgobar md2pdf docs/guia-apn.md docs/pdf/guia-apn.pdf
-	mkdocs_datosgobar md2pdf docs/guia-subnacionales.md docs/pdf/guia-subnacionales.pdf
-	mkdocs_datosgobar md2pdf docs/perfil-metadatos.md docs/pdf/perfil-metadatos.pdf
+pdf: ## genera los PDF de las guias en public/pdf/ (requiere wkhtmltopdf)
+	for g in $(GUIAS); do python scripts/md2pdf.py src/content/docs/$$g.md public/pdf/$$g.pdf; done
 
 specs: ## regenera una especificacion de dataset. uso: make specs SPECS_NAME=salud
 	python scripts/dataset_specs.py $(SPECS_NAME)
-
-doctoc: ## regenera los indices de los .md (requiere doctoc)
-	doctoc --maxlevel 3 --gitlab --title "## Indice" docs/
-	find docs/ -name "*.md" -exec bash scripts/fix_github_links.sh {} \;

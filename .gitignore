@@ -1,6 +1,3 @@
-# build de mkdocs
-site/
-
 # python
 __pycache__/
 *.py[cod]
@@ -16,5 +13,7 @@ venv/
 .vscode/
 .DS_Store
 
-# backups de sed (scripts/fix_github_links.sh)
-*.bu
+# astro
+node_modules/
+dist/
+.astro/

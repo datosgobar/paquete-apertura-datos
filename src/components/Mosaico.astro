@@ -1,0 +1,44 @@
+---
+// Motivo signature Datos Abiertos: tiles de color, un glifo por tile, sin rótulos.
+// Glifos del mosaico original de las guías.
+const tiles = [
+	['{ }', 'navy', 'c2 r2'],
+	[',', 'violeta', ''],
+	['á', 'gris', ''],
+	['≠', 'indigo', 'c2'],
+	['…', 'violeta', ''],
+];
+---
+<div class="mosaico" aria-hidden="true">
+	{tiles.map(([g, color, span]) => <span class:list={['tile', color, ...span.split(' ').filter(Boolean)]}>{g}</span>)}
+</div>
+
+<style>
+	.mosaico {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: 1fr;
+		grid-auto-flow: dense;
+		gap: 0.4rem;
+		width: min(100%, 20rem);
+		aspect-ratio: 1;
+	}
+	@media (max-width: 50rem) {
+		.mosaico { width: min(100%, 15rem); }
+	}
+	.tile {
+		display: grid;
+		place-items: center;
+		border-radius: 0.35rem;
+		font-weight: 600;
+		font-size: clamp(1.25rem, 3vw, 1.9rem);
+		color: #fff;
+	}
+	.c2 { grid-column: span 2; }
+	.r2 { grid-row: span 2; }
+	.navy { background: var(--da-navy); }
+	.indigo { background: var(--da-indigo); }
+	.violeta { background: var(--da-violeta); color: var(--da-navy); }
+	.gris { background: var(--da-gris-tile); color: var(--da-indigo); }
+	:global([data-theme='dark']) .navy { background: #2f3b66; }
+</style>

@@ -26,9 +26,10 @@ from unidecode import unidecode
 import urllib.parse
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-SPECS_DIR = os.path.join(
-    PROJECT_DIR, "docs", "datasets-sugeridos")
-DOCS_DOWNLOAD_URL = "https://github.com/datosgobar/paquete-apertura-datos/raw/master/docs/datasets-sugeridos/"
+# Planillas descargables (las sirve el sitio desde public/) y páginas de cada especificación.
+SPECS_DIR = os.path.join(PROJECT_DIR, "public", "datasets-sugeridos")
+SPECS_MD_DIR = os.path.join(PROJECT_DIR, "src", "content", "docs", "datasets-sugeridos")
+DOCS_DOWNLOAD_URL = "/paquete-apertura-datos/datasets-sugeridos/"
 
 STOP_WORDS = [
     "el", "la", "los", "las",
@@ -317,7 +318,7 @@ def update_dataset_specs(specs_name, config="config-specs.json"):
     md_field = generate_field_section(specs_name)
 
     # reemplaza las secciones viejas por las nuevas
-    specs_md_file = os.path.join(SPECS_DIR, specs_name + ".md")
+    specs_md_file = os.path.join(SPECS_MD_DIR, specs_name + ".md")
     with open(specs_md_file, "r") as f:
         specs_md = f.read()
 

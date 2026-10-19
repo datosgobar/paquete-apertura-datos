@@ -1,7 +1,5 @@
-# Publica el sitio en la rama gh-pages. Reemplaza el `make build` manual que
-# commiteaba el HTML generado dentro de docs/.
-#
-# Requiere, una sola vez: Settings -> Pages -> Source = rama `gh-pages`.
+# Genera el sitio Astro y lo publica en GitHub Pages.
+# Requiere, una sola vez: Settings -> Pages -> Source = GitHub Actions.
 name: Publicar sitio
 
 on:
@@ -10,15 +8,29 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: withastro/action@v3
         with:
-          python-version: '3.x'
-      - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+          node-version: 22
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

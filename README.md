@@ -26,21 +26,22 @@ Si querés contribuir activamente con las guías o ir mirando lo que se viene en
 ## Estructura del repositorio
 
 * **assets**: archivos auxiliares para la generación de ejemplos.
-* **docs**: fuente de la documentación y las guías (markdown + sus descargas). Es el `docs_dir` de mkdocs.
+* **src/content/docs**: fuente de la documentación y las guías (markdown de [Starlight](https://starlight.astro.build/)).
+* **public**: descargables que sirve el sitio tal cual (PDF de las guías, planillas de los datasets sugeridos, imágenes).
 * **examples**: ejemplos generados para las guías de buenas prácticas.
 * **scripts**: generadores (especificaciones de datasets, notebooks) y utilidades del repo.
 * **standards**: recursos que compilan estándares recomendados en las guías o listas curadas de valores admitidos para algún campo (especialmente en metadatos), en formatos fáciles de consumir desde un script.
 
-El sitio construido **no se commitea**: lo genera `mkdocs` y lo publica en la rama
-`gh-pages` el workflow `.github/workflows/publicar-sitio.yml`. `site/` está ignorado.
+El sitio se genera con [Astro Starlight](https://starlight.astro.build/) y **no se commitea**: lo construye y lo
+publica en GitHub Pages el workflow `.github/workflows/publicar-sitio.yml` en cada push a `master`. `dist/` está ignorado.
 
 ### Trabajar en local
 
 ```bash
-pip install -r requirements.txt
-make serve     # http://127.0.0.1:8000
-make build     # sitio estatico en site/
-make help      # el resto de los comandos
+make install   # dependencias de Node (sitio) y de Python (scripts)
+make serve     # http://localhost:4321/paquete-apertura-datos/
+make build     # sitio estatico en dist/
+make help      # el resto de los comandos (PDF de las guias, especificaciones de datasets)
 ```
 
 ## Contacto
